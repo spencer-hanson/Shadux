@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://xcb.freedesktop.org/dist/xcb-proto-1.6.tar.bz2"
+MD5SUMLIST="04313e1d914b44d0e457f6c494fc178b"
+REQUIRES="python2"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure $XORG_CONFIG
+
+make DESTDIR=${FAKEROOT} install
+install -dv -m755 ${FAKEROOT}${XORG_PREFIX}/share/doc/xcb-proto-1.6
+install -v -m644 doc/* ${FAKEROOT}${XORG_PREFIX}/share/doc/xcb-proto-1.6
+
+#################
+} # END OF FILE #
+#################
+

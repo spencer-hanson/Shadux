@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/gconf-editor/3.2/gconf-editor-2.30.0.tar.bz2"
+MD5SUMLIST="2a941e3c64843be69190f38891470580"
+REQUIRES="gconf gnome-doc-utils gtk+2 orbit2 pkgconfig which"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+            --sysconfdir=/etc/gnome/3.2.2 \
+            --localstatedir=/var/lib
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

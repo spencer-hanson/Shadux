@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci//pciutils-3.1.8.tar.gz"
+MD5SUMLIST="79312f138311d29291c7d44d624cd37e"
+REQUIRES="wget which"
+POSTINST="true"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -i -e 's/^PCI_COMPRESSED_IDS=/&0/' update-pciids.sh 
+
+make PREFIX=/usr ZLIB=no
+
+make DESTDIR=${FAKEROOT} PREFIX=/usr install
+
+make DESTDIR=${FAKEROOT} PREFIX=/usr install-lib
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+# (*) Get a current version of the pci.ids data file.
+update-pciids
+
+#################
+} # END OF FILE #
+#################
+

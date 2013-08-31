@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.de.debian.org/debian/pool/main/r/recode/recode_3.6.orig.tar.gz
+          http://www.linuxfromscratch.org/patches/blfs/svn/recode-3.6-fixes-2.patch"
+MD5SUMLIST="be3f40ad2e93dae5cd5f628264bf1877
+            dontverify"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../recode-3.6-fixes-2.patch
+./configure --prefix=/usr --without-included-gettext
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

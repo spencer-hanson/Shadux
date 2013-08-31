@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/pidgin/pidgin-2.10.0.tar.bz2"
+MD5SUMLIST="e1453c9093c4f32beec19abd14069a3f"
+REQUIRES="gtk+2 perl-xml-parser"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+LIBS="-lm -lX11" ./configure --prefix=/usr --disable-screensaver \
+  --disable-meanwhile --disable-avahi --disable-nm --disable-tcl \
+  --disable-nss --disable-gnutls --disable-idn --disable-vv \
+  --disable-gtkspell --disable-gstreamer --disable-dbus \
+  --with-gconf-schema-file-dir=$GNOME_SYSCONFDIR/gconf/schemas
+make
+
+make DESTDIR=${FAKEROOT} install
+mkdir ${FAKEROOT}/usr/share/doc/pidgin-2.10.0
+cp README doc/gtkrc-2.0 ${FAKEROOT}/usr/share/doc/pidgin-2.10.0
+
+mkdir ${FAKEROOT}/usr/share/doc/pidgin-2.10.0/api
+cp doc/html/* ${FAKEROOT}/usr/share/doc/pidgin-2.10.0/api
+
+#################
+} # END OF FILE #
+#################
+

@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://www.exim.org/ftp/exim4/old/exim-4.67.tar.bz2
+          http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-20120206.tar.bz2"
+MD5SUMLIST="9ee83186d9ac99e5ff297112aa6fddf0
+            dontverify"
+REQUIRES="db"
+TAGS="preinst"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -e 's,^BIN_DIR.*$,BIN_DIRECTORY=/usr/sbin,' \
+    -e 's,^CONF.*$,CONFIGURE_FILE=/etc/exim.conf,' \
+    -e 's,^EXIM_USER.*$,EXIM_USER=exim,' \
+    -e 's,^EXIM_MONITOR,#EXIM_MONITOR,' src/EDITME > Local/Makefile
+make
+
+make DESTDIR=${FAKEROOT} install
+install -v -m644 doc/exim.8 ${FAKEROOT}/usr/share/man/man8
+install -v -d -m755 ${FAKEROOT}/usr/share/doc/exim-4.67
+install -v -m644 doc/* ${FAKEROOT}/usr/share/doc/exim-4.67
+ln -sv exim ${FAKEROOT}/usr/sbin/sendmail
+
+cat >> ${FAKEROOT}/etc/aliases << "EOF"
+postmaster: root
+MAILER-DAEMON: root
+EOF
+exim -v -bi
+/usr/sbin/exim -bd -q15m
+
+includeBootscript exim
+
+#################################################
+}; preinst() { # PRE-INSTALLATION CONFIGURATION #
+#################################################
+
+groupadd -g 31 exim
+useradd -d /dev/null -c "Exim Daemon" -g exim -s /bin/false -u 31 exim
+
+#################
+} # END OF FILE #
+#################
+

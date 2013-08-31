@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnu.org/pub/gnu/emacs/emacs-23.4.tar.gz"
+MD5SUMLIST="34405165fcd978fbc8b304cbd99ccf4f"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr \
+            --libexecdir=/usr/lib \
+            --localstatedir=/var
+make bootstrap
+
+make DESTDIR=${FAKEROOT} install
+chown -v -R root:root ${FAKEROOT}/usr/share/emacs/23.4
+
+#################
+} # END OF FILE #
+#################
+

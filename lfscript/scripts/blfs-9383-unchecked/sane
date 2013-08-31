@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://alioth.debian.org/download.php/2318/sane-backends-1.0.19.tar.gz"
+MD5SUMLIST="8c0936272dcfd4e98c51512699f1c06f"
+POSTINST="now"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+groupadd -g 70 scanner
+
+sed -i 's/SYSFS/ATTRS/g' tools/sane-desc.c
+./configure --prefix=/usr --sysconfdir=/etc
+make
+
+make DESTDIR=${FAKEROOT} install
+install -m 644 -v tools/udev/libsane.rules ${FAKEROOT}/etc/udev/rules.d/65-scanner.rules
+
+./configure --prefix=/usr
+make
+
+make DESTDIR=${FAKEROOT} install
+install -v -m644 doc/sane.png xscanimage-icon-48x48-2.png \
+    ${FAKEROOT}/usr/share/sane
+
+ln -v -s ../../../../bin/xscanimage ${FAKEROOT}/usr/lib/gimp/2.0/plug-ins
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+SIGHUP
+
+#################
+} # END OF FILE #
+#################
+

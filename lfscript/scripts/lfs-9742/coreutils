@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Linux From Scratch 7.1' (SVN-20120211 / r9742) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Linux From Scratch is released under the MIT license.
+# Copyright (C) 1999-2012, Gerard Beekmans
+
+WGETLIST="http://ftp.gnu.org/gnu/coreutils/coreutils-8.15.tar.xz
+          http://www.linuxfromscratch.org/patches/lfs/development/coreutils-8.15-i18n-1.patch
+          http://www.linuxfromscratch.org/patches/lfs/development/coreutils-8.15-uname-1.patch"
+MD5SUMLIST="094909fafa86110140b32e4948941545
+            70953451fa1d0e950266b3d0477adb8d
+            500481b75892e5c07e19e9953a690e54"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+case `uname -m` in
+ i?86 | x86_64) patch -Np1 -i ../coreutils-8.15-uname-1.patch ;;
+esac
+
+patch -Np1 -i ../coreutils-8.15-i18n-1.patch
+
+./configure --prefix=/usr         \
+            --libexecdir=/usr/lib \
+            --enable-no-install-program=kill,uptime
+
+make
+
+make DESTDIR=${FAKEROOT} install
+
+mv -v ${FAKEROOT}/usr/bin/{cat,chgrp,chmod,chown,cp,date,dd,df,echo} ${FAKEROOT}/bin
+mv -v ${FAKEROOT}/usr/bin/{false,ln,ls,mkdir,mknod,mv,pwd,rm} ${FAKEROOT}/bin
+mv -v ${FAKEROOT}/usr/bin/{rmdir,stty,sync,true,uname} ${FAKEROOT}/bin
+mv -v ${FAKEROOT}/usr/bin/chroot ${FAKEROOT}/usr/sbin
+mv -v ${FAKEROOT}/usr/share/man/man1/chroot.1 ${FAKEROOT}/usr/share/man/man8/chroot.8
+sed -i s/\"1\"/\"8\"/1 ${FAKEROOT}/usr/share/man/man8/chroot.8
+
+mv -v ${FAKEROOT}/usr/bin/{head,sleep,nice} ${FAKEROOT}/bin
+
+######################################################
+}; preparation() { # CONSTRUCTING A TEMPORARY SYSTEM #
+######################################################
+
+./configure --prefix=/tools --enable-install-program=hostname
+
+make
+
+make install
+
+cp -v src/su /tools/bin/su-tools
+
+#################
+} # END OF FILE #
+#################
+

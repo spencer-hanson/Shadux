@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://mirrors.zerg.biz/nongnu/acl/acl-2.2.51.src.tar.gz"
+MD5SUMLIST="3fc0ce99dc5253bdcce4c9cd437bc267"
+REQUIRES="attr"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -i -e 's|/@pkg_name@|&-@pkg_version@|' \
+       -e 's|@prefix|$(DESTDIR)&|'         \
+       -e 's|@libexec|$(DESTDIR)&|'        \
+    include/builddefs.in
+
+./configure --prefix=/usr --libexecdir=/usr/lib
+make
+
+make prefix=${FAKEROOT}/usr install install-dev install-lib
+install -dv -m755          ${FAKEROOT}/usr/share/doc/acl-2.2.51
+install -v -m644 doc/*.txt ${FAKEROOT}/usr/share/doc/acl-2.2.51
+chmod   -v 755             ${FAKEROOT}/usr/lib/libacl.{so.1.1.0,la}
+chown   -v root.root       ${FAKEROOT}/usr/lib/libacl.{so.1.1.0,la,a}
+chown   -v root.root       ${FAKEROOT}/usr/share/man/man*/*acl*
+
+#################
+} # END OF FILE #
+#################
+

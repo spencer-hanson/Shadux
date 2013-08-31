@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# This file is part of LFScript. LFScript is released under the MIT license.
+# Copyright (C) 2007-2012 Marcel van den Boer
+
+WGETLIST="http://pub.mate-desktop.org/releases/1.1/mate-corba-1.1.0.tar.bz2"
+MD5SUMLIST="dontverify"
+REQUIRES="mate-doc-utils gtk-doc libidl" # libidl
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./autogen.sh --prefix=${MATE_PREFIX} \
+        --sysconfdir=/etc/mate/${MATE_RELEASE} \
+\
+        --disable-static
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

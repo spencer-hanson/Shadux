@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://archive.apache.org/dist/subversion/subversion-1.7.1.tar.bz2"
+MD5SUMLIST="8a4fa74385df85a9702141b6b68b8307"
+REQUIRES="apache sqlite"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr
+make
+
+make javahl
+
+make swig-pl
+make swig-py
+make swig-rb
+
+make check-swig-pl
+make check-swig-py
+make check-swig-rb
+
+make DESTDIR=${FAKEROOT} install
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/subversion-1.7.1
+cp      -v -R       doc/* \
+                    ${FAKEROOT}/usr/share/doc/subversion-1.7.1
+
+make DESTDIR=${FAKEROOT} install-javahl
+
+make DESTDIR=${FAKEROOT} install-swig-pl
+make DESTDIR=${FAKEROOT} install-swig-py
+make DESTDIR=${FAKEROOT} install-swig-rb
+
+#################
+} # END OF FILE #
+#################
+

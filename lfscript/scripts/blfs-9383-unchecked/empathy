@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/empathy/3.2/empathy-3.2.2.tar.xz"
+MD5SUMLIST="1e55c9052cbee9cb065e23cb358a6720"
+REQUIRES="evolution-data-server gnome-doc-utils libcanberra libgnome-keyring libnotify libunique telepathy-farsight which"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=$GNOME_PREFIX \
+            --sysconfdir=$GNOME_SYSCONFDIR \
+            --libexecdir=$GNOME_PREFIX/lib/empathy
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

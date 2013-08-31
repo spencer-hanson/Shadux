@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Linux From Scratch 7.1' (SVN-20120211 / r9742) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Linux From Scratch is released under the MIT license.
+# Copyright (C) 1999-2012, Gerard Beekmans
+
+WGETLIST="http://ftp.gnu.org/gnu/gawk/gawk-4.0.0.tar.bz2"
+MD5SUMLIST="7cdc48e99b885a4bbe0e98dcf1706b22"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr --libexecdir=/usr/lib
+
+make
+
+make DESTDIR=${FAKEROOT} install
+
+mkdir -v ${FAKEROOT}/usr/share/doc/gawk-4.0.0
+cp    -v doc/{awkforai.txt,*.{eps,pdf,jpg}} \
+         ${FAKEROOT}/usr/share/doc/gawk-4.0.0
+
+######################################################
+}; preparation() { # CONSTRUCTING A TEMPORARY SYSTEM #
+######################################################
+
+./configure --prefix=/tools
+
+make
+
+make install
+
+#################
+} # END OF FILE #
+#################
+

@@ -1,0 +1,107 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/gdm/3.2/gdm-3.2.1.1.tar.xz
+          http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-20120206.tar.bz2"
+MD5SUMLIST="df3f38061066f5e0816676b4eef7854a
+            dontverify"
+REQUIRES="accountsservice gnome-panel linux-pam x7lib"
+TAGS="preinst"
+POSTINST="now"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+
+./configure --prefix=$GNOME_PREFIX \
+            --sysconfdir=$GNOME_SYSCONFDIR \
+            --libexecdir=$GNOME_PREFIX/lib/gdm \
+            --localstatedir=/var \
+            --with-pam-prefix=/etc
+make
+
+make DESTDIR=${FAKEROOT} install
+ln -fsv $GNOME_PREFIX/lib/gnome-settings-daemon-2.0/gnome-settings-daemon \
+        $GNOME_PREFIX/lib/gdm
+ln -fsv ${FAKEROOT}/usr/lib/ConsoleKit/ck-get-x11-display-device \
+        $GNOME_PREFIX/lib/gdm
+ln -fsv ${FAKEROOT}/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 \
+        $GNOME_PREFIX/lib/gdm
+
+cat > ${FAKEROOT}/etc/pam.d/gdm << "EOF"
+auth        required    pam_env.so
+auth        required    pam_unix.so
+account     required    pam_nologin.so
+account     required    pam_unix.so
+password    required    pam_unix.so
+session     optional    pam_keyinit.so force revoke
+session     required    pam_unix.so
+session     required    pam_loginuid.so
+session     optional    pam_console.so
+
+EOF
+cat > ${FAKEROOT}/etc/pam.d/gdm-autologin << "EOF"
+auth        required    pam_env.so
+auth        required    pam_permit.so
+account     required    pam_nologin.so
+account     required    pam_unix.so
+password    required    pam_unix.so
+session     optional    pam_keyinit.so force revoke
+session     required    pam_unix.so
+session     required    pam_loginuid.so
+session     optional    pam_console.so
+
+EOF
+cat > ${FAKEROOT}/etc/pam.d/gdm-welcome << "EOF"
+auth        required    pam_env.so
+auth        required    pam_permit.so
+account     required    pam_nologin.so
+account     required    pam_unix.so
+password    required    pam_unix.so
+session     required    pam_loginuid.so
+session     optional    pam_keyinit.so force revoke
+session     required    pam_unix.so
+
+EOF
+
+cat > $GNOME_PREFIX/share/xsessions/gnome-dbus.desktop << "EOF"
+[Desktop Entry]
+Encoding=UTF-8
+Name=GNOME with D-BUS
+Comment=GNOME Desktop with D-BUS support
+Exec=dbus-launch --exit-with-session gnome-session
+TryExec=/usr/bin/dbus-launch
+Icon=
+Type=Application
+
+EOF
+chmod -v 644 $GNOME_PREFIX/share/xsessions/gnome-dbus.desktop
+
+includeBootscript gdm
+
+#################################################
+}; preinst() { # PRE-INSTALLATION CONFIGURATION #
+#################################################
+
+groupadd -fg 21 gdm
+useradd -c "GDM Daemon Owner" -d /var/lib/gdm -u 21 \
+    -g gdm -s /bin/false gdm  || [ $? == 9 ]
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+sed -i 's/id:3:initdefault:/id:5:initdefault:/' \
+    /etc/inittab
+
+#################
+} # END OF FILE #
+#################
+

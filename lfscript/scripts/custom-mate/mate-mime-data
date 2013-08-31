@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# This file is part of LFScript. LFScript is released under the MIT license.
+# Copyright (C) 2007-2012 Marcel van den Boer
+
+WGETLIST="http://pub.mate-desktop.org/releases/1.1/mate-mime-data-1.1.0.tar.bz2"
+MD5SUMLIST="dontverify"
+REQUIRES="libmatecomponent" # orbit2 perl-xml-parser pkgconfig
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./autogen.sh --prefix=${MATE_PREFIX} \
+        --sysconfdir=/etc \
+\
+        --mandir=${MATE_PREFIX}/share/man \
+\
+        --localstatedir=/var
+make
+
+make DESTDIR=${FAKEROOT} install
+
+install -v -m644 -D man/mate-vfs-mime.5 \
+        ${FAKEROOT}${MATE_PREFIX}/share/man/man5/mate-vfs-mime.5
+
+#################
+} # END OF FILE #
+#################
+

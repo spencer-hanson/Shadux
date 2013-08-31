@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# This file is part of LFScript. LFScript is released under the MIT license.
+# Copyright (C) 2007-2012 Marcel van den Boer
+
+TAGS="group"
+REQUIRES="libmate libmatecanvas libmatecomponent libmatecomponentui libmatekbd
+          libmatekeyring libmatenotify libmateui libmateweather
+          mate-backgrounds mate-common mate-conf mate-control-center mate-corba
+          mate-desktop mate-dialogs mate-doc-utils mate-file-manager
+          mate-icon-theme mate-keyring mate-menus mate-mime-data
+          mate-notification-daemon mate-panel mate-polkit mate-session-manager
+          mate-settings-daemon mate-themes mate-vfs mate-window-manager"
+

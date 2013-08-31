@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="https://ftp.mozilla.org/pub/mozilla.org/js/js185-1.0.0.tar.gz
+          http://www.linuxfromscratch.org/patches/blfs/svn/js185-1.0.0-DESTDIR-1.patch"
+MD5SUMLIST="a4574365938222adca0a6bd33329cb32
+            dontverify"
+REQUIRES="nspr python2 zip"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../js185-1.0.0-DESTDIR-1.patch
+cd js/src
+./configure --prefix=/usr \
+            --enable-threadsafe \
+            --with-system-nspr
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

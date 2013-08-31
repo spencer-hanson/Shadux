@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://www.tazenda.demon.co.uk/phil/net-tools/net-tools-1.60.tar.bz2
+          http://www.linuxfromscratch.org/patches/blfs/svn/net-tools-1.60-gcc34-3.patch
+          http://www.linuxfromscratch.org/patches/blfs/svn/net-tools-1.60-kernel_headers-2.patch
+          http://www.linuxfromscratch.org/patches/blfs/svn/net-tools-1.60-mii_ioctl-1.patch"
+MD5SUMLIST="888774accab40217dde927e21979c165
+            dontverify
+            dontverify
+            dontverify"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../net-tools-1.60-gcc34-3.patch
+patch -Np1 -i ../net-tools-1.60-kernel_headers-2.patch
+patch -Np1 -i ../net-tools-1.60-mii_ioctl-1.patch
+yes "" | make config
+sed -i -e 's|HAVE_IP_TOOLS 0|HAVE_IP_TOOLS 1|g' \
+       -e 's|HAVE_MII 0|HAVE_MII 1|g' config.h
+sed -i -e 's|# HAVE_IP_TOOLS=0|HAVE_IP_TOOLS=1|g' \
+       -e 's|# HAVE_MII=0|HAVE_MII=1|g' config.make
+make
+
+make DESTDIR=${FAKEROOT} update
+
+#################
+} # END OF FILE #
+#################
+

@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# The version in a current edition of BLFS is not compatible with the rest
+# of the scripts. Until the incompatibility can be resolved, this script
+# provides an older version of the software as it appeared in BLFS.
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/libsoup/3.2/libsoup-2.30.2.tar.bz2"
+MD5SUMLIST="f33b62063e76a9b1d5503363a3ed6a84"
+REQUIRES="glib2 libmatekeyring libproxy libxml2 mate-conf sqlite"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+# (*) Convert source code to Mate
+convertToMate
+mv -v docs/reference/tmpl/soup-{gnome,mate}-features.sgml
+mv -v docs/reference/html/libsoup-2.4-soup-{gnome,mate}-features.html
+mv -v libsoup-{gnome,mate}-2.4.pc.in
+mv -v libsoup/soup-proxy-resolver-{gnome,mate}.h
+mv -v libsoup/soup-password-manager-{gnome,mate}.c
+mv -v libsoup/soup-{gnome,mate}.h
+mv -v libsoup/soup-{gnome,mate}-features.h
+mv -v libsoup/soup-proxy-resolver-{gnome,mate}.c
+mv -v libsoup/soup-{gnome,mate}-features.c
+mv -v libsoup/soup-password-manager-{gnome,mate}.h
+
+./configure --prefix=/usr --disable-ssl
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

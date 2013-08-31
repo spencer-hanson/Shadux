@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://mirrors.isc.org/pub/kde/stable/kdepim-4.4.10/src/kdepim-4.4.10.tar.bz2"
+MD5SUMLIST="c32690ed08a3eeb7010a2a0eefbf6f4c"
+REQUIRES="kde4pimlibs python2"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+mkdir build
+cd build
+
+cmake -DCMAKE_INSTALL_PREFIX=$KDE4_PREFIX \
+    -DKDE_DEFAULT_HOME=.kde4 \
+    -DSYSCONF_INSTALL_DIR=/etc/sysconfig \
+    ..
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

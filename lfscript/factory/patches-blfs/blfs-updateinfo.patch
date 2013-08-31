@@ -1,0 +1,116 @@
+diff -rupN old//BOOK/general/genutils/gperf.xml new//BOOK/general/genutils/gperf.xml
+--- old//BOOK/general/genutils/gperf.xml	2011-11-18 21:09:42.000000000 +0100
++++ new//BOOK/general/genutils/gperf.xml	2012-01-10 19:12:54.587492000 +0100
+@@ -82,14 +82,9 @@ make</userinput></screen>
+ 
+ <screen role="root"><userinput>make install &amp;&amp;
+ install -m644 -v doc/gperf.{dvi,ps,pdf,txt} \
+-                 /usr/share/doc/gperf-&gperf-version; &amp;&amp;
++                 /usr/share/doc/gperf-&gperf-version;</userinput></screen>
+ 
+-pushd /usr/share/info &amp;&amp;
+-rm -v dir &amp;&amp;
+-for FILENAME in *; do
+-    install-info $FILENAME dir 2>/dev/null
+-done &amp;&amp;
+-popd</userinput></screen>
++    &update-info-dir;
+ 
+   </sect2>
+ 
+@@ -100,10 +95,6 @@ popd</userinput></screen>
+     This command installs documentation. Modify the command (remove ',txt') if
+     you did not build the text version.</para>
+ 
+-    <para><command>pushd ... popd</command>: This set of commands rebuilds the
+-    <filename>/usr/share/info/dir</filename> file as the installation failed
+-    to do so.</para>
+-
+   </sect2>
+ 
+   <sect2 role="content">
+diff -rupN old//BOOK/general/prog/nasm.xml new//BOOK/general/prog/nasm.xml
+--- old//BOOK/general/prog/nasm.xml	2011-12-05 23:58:00.000000000 +0100
++++ new//BOOK/general/prog/nasm.xml	2012-01-10 19:10:26.999492001 +0100
+@@ -99,10 +99,9 @@ make</userinput></screen>
+ <screen role="root"><userinput>install -m755 -d         /usr/share/doc/nasm-&NASM-version;/html &amp;&amp; 
+ cp -v doc/html/*.html    /usr/share/doc/nasm-&NASM-version;/html &amp;&amp;
+ cp -v doc/*.{txt,ps,pdf} /usr/share/doc/nasm-&NASM-version;      &amp;&amp;
+-cp -v doc/info/*         /usr/share/info                  &amp;&amp;
+-pushd /usr/share/info                                     &amp;&amp;
+-install-info nasm.info dir                                &amp;&amp;
+-popd</userinput></screen>
++cp -v doc/info/*         /usr/share/info</userinput></screen>
++
++    &update-info-dir;
+ 
+ <!-- install_rdf &amp;&amp;
+ install -v -m755 -d /usr/share/doc/nasm-&NASM-version;/html &amp;&amp;
+diff -rupN old//BOOK/general/sysutils/gpm.xml new//BOOK/general/sysutils/gpm.xml
+--- old//BOOK/general/sysutils/gpm.xml	2011-12-29 06:13:05.000000000 +0100
++++ new//BOOK/general/sysutils/gpm.xml	2012-01-10 19:10:27.003492001 +0100
+@@ -94,9 +94,6 @@ make</userinput></screen>
+ 
+ <screen role="root"><userinput>make install                                                       &amp;&amp;
+ 
+-install-info --dir-file=/usr/share/info/dir \
+-             /usr/share/info/gpm.info                              &amp;&amp;
+-
+ ln -v -s libgpm.so.2.1.0 /usr/lib/libgpm.so                        &amp;&amp;
+ install -v -m644 conf/gpm-root.conf /etc                           &amp;&amp;
+ 
+@@ -106,15 +103,12 @@ chmod   -v   644    doc/{changes/*,suppo
+ cp      -v -R       doc/{FAQ,HACK_GPM,README*,changes,support} \
+                     /usr/share/doc/gpm-&gpm-version;</userinput></screen>
+ 
++    &update-info-dir;
+   </sect2>
+ 
+   <sect2 role="commands">
+     <title>Command Explanations</title>
+ 
+-    <para><command>install-info ...</command>: This package installs a
+-    <filename class="extension">.info</filename> file, but does not update the
+-    system <filename>dir</filename> file. This command makes the update.</para>
+-
+     <para><command>ln -v -s libgpm.so.2.1.0 /usr/lib/libgpm.so</command>: This
+     command is used to create the <filename class="extension">.so</filename>
+     symlink to the library.</para>
+diff -rupN old//BOOK/general.ent new//BOOK/general.ent
+--- old//BOOK/general.ent	2012-01-08 21:53:26.000000000 +0100
++++ new//BOOK/general.ent	2012-01-10 19:12:01.991492001 +0100
+@@ -63,6 +63,14 @@ $Date: 2012-01-08 21:53:26 +0100 (zo, 08
+ 
+ <!ENTITY blfs-wiki                    "http://wiki.&lfs-domainname;/blfs/wiki">
+ 
++<!-- Used to annotate a package's inability to install info files correctly -->
++<!ENTITY update-info-dir "<important><para>This package does not install it's
++                         Info files correctly. When you are finished installing
++                         software, be sure to <ulink
++                         url='http://www.linuxfromscratch.org/lfs/view/development/chapter06/texinfo.html'>rebuild
++                         /usr/share/info/dir</ulink>, as described in Linux
++                         From Scratch.</para></important>">
++
+ <!-- These entities are used to annotate the current status of a package as it
+      relates to the version of LFS it will build/work against -->
+ <!ENTITY lfs65_checked        "<para>This package is known to build and work
+diff -rupN old//BOOK/postlfs/security/mitkrb.xml new//BOOK/postlfs/security/mitkrb.xml
+--- old//BOOK/postlfs/security/mitkrb.xml	2011-11-09 18:37:35.000000000 +0100
++++ new//BOOK/postlfs/security/mitkrb.xml	2012-01-10 19:10:27.679492001 +0100
+@@ -126,14 +126,14 @@ ln -v -sf ../../lib/libkrb5support.so.0.
+ 
+ install -m644 -v ../doc/*.info* /usr/share/info &amp;&amp;
+ for INFOFILE in 425 5-admin 5-install 5-user; do
+-    install-info --info-dir=/usr/share/info \
+-                 /usr/share/info/krb$INFOFILE.info
+     rm ../doc/krb$INFOFILE.info*
+ done &amp;&amp;
+ 
+ install -m755 -v -d /usr/share/doc/krb5-&mitkrb-version; &amp;&amp;
+ cp -Rv ../doc/* /usr/share/doc/krb5-&mitkrb-version;</userinput></screen>
+ 
++    &update-info-dir;
++
+     <warning>
+       <para><command>login.krb5</command> does not support
+       <application>Shadow</application> passwords. As a result, when the

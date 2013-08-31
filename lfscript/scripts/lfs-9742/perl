@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Linux From Scratch 7.1' (SVN-20120211 / r9742) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Linux From Scratch is released under the MIT license.
+# Copyright (C) 1999-2012, Gerard Beekmans
+
+WGETLIST="http://www.cpan.org/src/5.0/perl-5.14.2.tar.bz2
+          http://www.linuxfromscratch.org/patches/lfs/development/perl-5.14.2-libc-1.patch
+          http://www.linuxfromscratch.org/patches/lfs/development/perl-5.14.2-security_fix-1.patch"
+MD5SUMLIST="04a4c5d3c1f9f19d77daff8e8cd19a26
+            23682f20b6785e97f99d33be7719c9d6
+            7fa3e7e11fecf9d75f65452d700c3dd5"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+echo "127.0.0.1 localhost $(hostname)" > /etc/hosts
+
+patch -Np1 -i ../perl-5.14.2-security_fix-1.patch
+
+sed -i -e "s|BUILD_ZLIB\s*= True|BUILD_ZLIB = False|"           \
+       -e "s|INCLUDE\s*= ./zlib-src|INCLUDE    = /usr/include|" \
+       -e "s|LIB\s*= ./zlib-src|LIB        = /usr/lib|"         \
+    cpan/Compress-Raw-Zlib/config.in
+
+sh Configure -des -Dprefix=/usr \
+                  -Dvendorprefix=/usr           \
+                  -Dman1dir=/usr/share/man/man1 \
+                  -Dman3dir=/usr/share/man/man3 \
+                  -Dpager="/usr/bin/less -isR"  \
+                  -Duseshrplib
+
+make
+
+make DESTDIR=${FAKEROOT} install
+
+######################################################
+}; preparation() { # CONSTRUCTING A TEMPORARY SYSTEM #
+######################################################
+
+patch -Np1 -i ../perl-5.14.2-libc-1.patch
+
+sh Configure -des -Dprefix=/tools
+
+make
+
+cp -v perl cpan/podlators/pod2man /tools/bin
+mkdir -pv /tools/lib/perl5/5.14.2
+cp -Rv lib/* /tools/lib/perl5/5.14.2
+
+#################
+} # END OF FILE #
+#################
+

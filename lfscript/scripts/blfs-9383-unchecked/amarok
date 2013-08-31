@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://anduin.linuxfromscratch.org/sources/BLFS/svn/a/amarok-1.4.8.tar.bz2"
+MD5SUMLIST="7f65c4a8f3f0ff9042a5b5dd21b36cc8"
+REQUIRES="kdelibs ruby"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=$(kde-config --prefix) \
+            --sysconfdir=/etc/kde \
+            --disable-debug \
+            --disable-dependency-tracking
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

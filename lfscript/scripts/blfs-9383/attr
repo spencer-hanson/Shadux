@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="ftp://oss.sgi.com/projects/xfs/cmd_tars-oct_09/attr-2.4.44.src.tar.gz"
+MD5SUMLIST="adeefe65c5ad1febe46da185c5bfd5d4"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+cat > test/sort-getfattr-output << "EOF"
+#! /usr/bin/perl -w
+undef $/;
+print join("\n\n", sort split(/\n\n/, <>)), "\n\n";
+EOF
+
+chmod 755 test/sort-getfattr-output
+sed -i -e 's|/@pkg_name@|&-@pkg_version@|' \
+       -e 's|@prefix|$(DESTDIR)&|'         \
+       -e 's|@libexec|$(DESTDIR)&|'        \
+    include/builddefs.in
+
+./configure --prefix=/usr --libexecdir=/usr/lib
+make
+
+make prefix=${FAKEROOT}/usr install install-dev install-lib
+chmod -v 755 ${FAKEROOT}/usr/lib/libattr.{so.1.1.0,la}
+chown -v root.root ${FAKEROOT}/usr/lib/libattr.{a,la,so.1.1.0}
+chown -v root.root ${FAKEROOT}/usr/share/man/man*/*attr*
+
+#################
+} # END OF FILE #
+#################
+

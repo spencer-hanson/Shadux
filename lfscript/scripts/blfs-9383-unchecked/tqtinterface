@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://anduin.linuxfromscratch.org/sources/trinity/tqtinterface-3.5.13.tar.gz"
+MD5SUMLIST="d54cc9fd0b35555298efd17c32471a2b"
+REQUIRES="qt"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -i -e '/PKG/s@/usr@${EXEC_INSTALL_PREFIX}@' CMakeLists.txt
+BUILD=/tmp/tqt
+TQT=`pwd`
+rm -rf   $BUILD
+mkdir -p $BUILD
+cd       $BUILD
+
+cmake $TQT                               \
+  -DCMAKE_INSTALL_PREFIX=$TRINITY_PREFIX \
+  -DCMAKE_VERBOSE_MAKEFILE=ON            \
+  -DQT_VERSION=3
+
+unset TQT BUILD
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

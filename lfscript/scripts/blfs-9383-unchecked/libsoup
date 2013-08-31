@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/libsoup/2.36/libsoup-2.36.1.tar.xz"
+MD5SUMLIST="5e6dcf0dfdbf58f67f576ed67f8923b9"
+REQUIRES="libmatekeyring libproxy libxml2 mate-conf sqlite"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+# (*) Convert source code to Mate
+convertToMate
+mv -v docs/reference/tmpl/soup-{gnome,mate}-features.sgml
+mv -v docs/reference/html/libsoup-2.4-soup-{gnome,mate}-features.html
+mv -v libsoup-{gnome,mate}-2.4.pc.in
+mv -v libsoup/soup-proxy-resolver-{gnome,mate}.h
+mv -v libsoup/soup-password-manager-{gnome,mate}.c
+mv -v libsoup/soup-{gnome,mate}.h
+mv -v libsoup/soup-{gnome,mate}-features.h
+mv -v libsoup/soup-proxy-resolver-{gnome,mate}.c
+mv -v libsoup/soup-{gnome,mate}-features.c
+mv -v libsoup/soup-password-manager-{gnome,mate}.h
+
+./configure --prefix=/usr --disable-ssl
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

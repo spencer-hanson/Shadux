@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/libgnomeui/2.24/libgnomeui-2.24.5.tar.bz2"
+MD5SUMLIST="d4bb506b1916015323928faab5aa708b"
+REQUIRES="libbonoboui libgnome-keyring orbit2 pkgconfig x7lib"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+            --libexecdir=$(pkg-config \
+                --variable=prefix ORBit-2.0)/lib/libgnomeui
+make
+
+make DESTDIR=${FAKEROOT} install
+
+# (*) Get around the problem that some applications cannot properly discover
+#     where the libglade interface library has been installed.
+echo "export LIBGLADE_MODULE_PATH=${GNOME_PREFIX}/lib/libglade/2.0" \
+        > ${FAKEROOT}/etc/profile.d/libgnomeui.sh
+
+#################
+} # END OF FILE #
+#################
+

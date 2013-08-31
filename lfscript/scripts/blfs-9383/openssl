@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://www.openssl.org/source/openssl-1.0.0e.tar.gz
+          http://www.linuxfromscratch.org/patches/blfs/svn/openssl-1.0.0e-fix_manpages-1.patch"
+MD5SUMLIST="7040b89c4c58c7a1016c0dfa6e821c86
+            dontverify"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../openssl-1.0.0e-fix_manpages-1.patch
+
+./config --prefix=/usr         \
+         --openssldir=/etc/ssl \
+         shared                \
+         zlib-dynamic
+make
+
+make INSTALL_PREFIX=${FAKEROOT} MANDIR=/usr/share/man install
+install -v -d -m755 ${FAKEROOT}/usr/share/doc/openssl-1.0.0e
+cp      -v -r       doc/{HOWTO,README,*.{txt,html,gif}} \
+                    ${FAKEROOT}/usr/share/doc/openssl-1.0.0e
+
+#################
+} # END OF FILE #
+#################
+

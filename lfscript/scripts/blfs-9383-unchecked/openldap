@@ -1,0 +1,73 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://gd.tuwien.ac.at/infosys/network/OpenLDAP/openldap-release/openldap-2.4.23.tgz
+          http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-20120206.tar.bz2
+          http://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.4.23-bdb5-1.patch"
+MD5SUMLIST="90150b8c0d0192e10b30157e68844ddf
+            dontverify
+            dontverify"
+REQUIRES="db"
+POSTINST="now"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../openldap-2.4.23-bdb5-1.patch
+./configure --prefix=/usr \
+            --sysconfdir=/etc \
+            --disable-debug \
+            --enable-dynamic \
+            --enable-slapd=no
+
+patch -Np1 -i ../openldap-2.4.23-bdb5-1.patch
+./configure --prefix=/usr \
+            --libexecdir=/usr/sbin \
+            --sysconfdir=/etc \
+            --localstatedir=/srv/ldap \
+            --disable-debug \
+            --enable-dynamic \
+            --enable-crypt \
+            --enable-modules \
+            --enable-rlookups \
+            --enable-backends \
+            --enable-overlays \
+            --disable-sql
+make depend
+make
+
+make DESTDIR=${FAKEROOT} install
+
+for LINK in lber ldap ldap_r; do
+    chmod -v 0755 ${FAKEROOT}/usr/lib/$(readlink ${FAKEROOT}/usr/lib/lib${LINK}.so)
+done
+
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/openldap-2.4.23/{drafts,guide,rfc}
+install -v -m644    doc/drafts/* \
+                    ${FAKEROOT}/usr/share/doc/openldap-2.4.23/drafts
+install -v -m644    doc/rfc/* \
+                    ${FAKEROOT}/usr/share/doc/openldap-2.4.23/rfc
+cp -v -R            doc/guide/* \
+                    ${FAKEROOT}/usr/share/doc/openldap-2.4.23/guide
+
+includeBootscript openldap1
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+/etc/rc.d/init.d/openldap start
+
+ldapsearch -x -b '' -s base '(objectclass=*)' namingContexts
+
+#################
+} # END OF FILE #
+#################
+

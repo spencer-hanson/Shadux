@@ -1,0 +1,15 @@
+# Last update: 2012-02-09 (LFS SVN-20120206)
+
+# =====================================
+# === General Network Configuration ===
+# =====================================
+
+# (*) Verify we're not installing to a disk image (loop device)
+local INSTALL_DEVICE="$(mountpoint -d /)"
+[ "${INSTALL_DEVICE:0:2}" == "7:" ] && return
+
+# Creating stable names for network interfaces
+for NIC in /sys/class/net/* ; do
+    INTERFACE=${NIC##*/} udevadm test --action=add $NIC
+done
+

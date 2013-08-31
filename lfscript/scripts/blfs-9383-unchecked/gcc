@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnu.org/gnu/gcc/gcc-4.5.1/gcc-4.5.1.tar.bz2"
+MD5SUMLIST="48231a8e33ed6e058a341c53b819de1a"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+make ins-all prefix=<Your build directory>/gnat
+
+cd ..
+rm -rf gnat-2010-i686-gnu-linux-libc2.3-bin
+
+PATH_HOLD=$PATH
+export PATH=<Your build directory>/gnat/bin:$PATH_HOLD
+
+#################
+} # END OF FILE #
+#################
+

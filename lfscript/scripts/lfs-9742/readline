@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Linux From Scratch 7.1' (SVN-20120211 / r9742) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Linux From Scratch is released under the MIT license.
+# Copyright (C) 1999-2012, Gerard Beekmans
+
+WGETLIST="http://ftp.gnu.org/gnu/readline/readline-6.2.tar.gz
+          http://www.linuxfromscratch.org/patches/lfs/development/readline-6.2-fixes-1.patch"
+MD5SUMLIST="67948acb2ca081f23359d0256e9a271c
+            3c185f7b76001d3d0af614f6f2cd5dfa"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -i '/MV.*old/d' Makefile.in
+sed -i '/{OLDSUFF}/c:' support/shlib-install
+
+patch -Np1 -i ../readline-6.2-fixes-1.patch
+
+./configure --prefix=/usr --libdir=/lib
+
+make SHLIB_LIBS=-lncurses
+
+make DESTDIR=${FAKEROOT} install
+
+mv -v ${FAKEROOT}/lib/lib{readline,history}.a ${FAKEROOT}/usr/lib
+
+rm -v ${FAKEROOT}/lib/lib{readline,history}.so
+ln -sfv ../../lib/libreadline.so.6 ${FAKEROOT}/usr/lib/libreadline.so
+ln -sfv ../../lib/libhistory.so.6 ${FAKEROOT}/usr/lib/libhistory.so
+
+mkdir   -v       ${FAKEROOT}/usr/share/doc/readline-6.2
+install -v -m644 doc/*.{ps,pdf,html,dvi} \
+                 ${FAKEROOT}/usr/share/doc/readline-6.2
+
+#################
+} # END OF FILE #
+#################
+

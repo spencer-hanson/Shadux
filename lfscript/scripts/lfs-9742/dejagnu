@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Linux From Scratch 7.1' (SVN-20120211 / r9742) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Linux From Scratch is released under the MIT license.
+# Copyright (C) 1999-2012, Gerard Beekmans
+
+WGETLIST="http://ftp.gnu.org/gnu/dejagnu/dejagnu-1.5.tar.gz"
+MD5SUMLIST="3df1cbca885e751e22d3ebd1ac64dc3c"
+
+###################################################
+preparation() { # CONSTRUCTING A TEMPORARY SYSTEM #
+###################################################
+
+./configure --prefix=/tools
+
+make install
+
+#################
+} # END OF FILE #
+#################
+

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://samba.org/ftp/ppp/ppp-2.4.5.tar.gz"
+MD5SUMLIST="4621bc56167b6953ec4071043fe0ec57"
+TAGS="preinst"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+rm include/linux/if_pppol2tp.h
+./configure --prefix=/usr
+make
+
+make DESTDIR=${FAKEROOT}/usr install
+install -d ${FAKEROOT}/etc/ppp/peers
+
+#################################################
+}; preinst() { # PRE-INSTALLATION CONFIGURATION #
+#################################################
+
+groupadd -g 52 pppusers
+
+#################
+} # END OF FILE #
+#################
+

@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnu.org/gnu/gperf/gperf-3.0.4.tar.gz"
+MD5SUMLIST="c1f1db32fb6598d6a93e6e88796a8632"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr --docdir=/usr/share/doc/gperf-3.0.4
+make
+
+makeinfo -o doc/gperf.txt --plaintext doc/gperf.texi
+
+make DESTDIR=${FAKEROOT} install
+install -m644 -v doc/gperf.{dvi,ps,pdf,txt} \
+                 ${FAKEROOT}/usr/share/doc/gperf-3.0.4
+
+#################
+} # END OF FILE #
+#################
+

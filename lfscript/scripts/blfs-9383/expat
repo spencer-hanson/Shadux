@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/expat/expat-2.0.1.tar.gz
+          http://www.linuxfromscratch.org/patches/blfs/svn/expat-2.0.1-fixes-3.patch"
+MD5SUMLIST="ee8b492592568805593f81f8cdf2a04c
+            dontverify"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../expat-2.0.1-fixes-3.patch
+./configure --prefix=/usr
+make
+
+make DESTDIR=${FAKEROOT} install
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/expat-2.0.1
+install -v -m644 doc/*.{html,png,css} ${FAKEROOT}/usr/share/doc/expat-2.0.1
+
+#################
+} # END OF FILE #
+#################
+

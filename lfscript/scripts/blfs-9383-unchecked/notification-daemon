@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/notification-daemon/0.7/notification-daemon-0.7.3.tar.xz"
+MD5SUMLIST="3cf4b7c286cf898156eeba65c473379c"
+REQUIRES="gconf libglade libnotify libsexy libwnck"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr \
+            --libexecdir=/usr/lib/notification-daemon-1.0 \
+            --with-gconf-schema-file-dir=$GNOME_SYSCONFDIR/gconf/schemas
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

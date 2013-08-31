@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://mirror.sit.wisc.edu/pub/net/mail/pine/pine4.64.tar.bz2
+          http://www.linuxfromscratch.org/patches/blfs/svn/pine-4.64-utf8-1.patch"
+MD5SUMLIST="39ca07b3d305b4cd0d6aaf4585123275
+            dontverify"
+REQUIRES="openssl"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../pine-4.64-utf8-1.patch
+sed -i "s@/usr/local/lib/pine@/etc/pine@g" \
+    $(grep -lr /usr/local/lib/pine *)
+./build DEBUG=-O MAILSPOOL=/var/mail \
+    SSLDIR=/usr SSLCERTS=/etc/ssl/certs slx
+
+install -v -m644 doc/*.1 ${FAKEROOT}/usr/share/man/man1
+install -v -p -m644 doc/tech-notes/*.html ${FAKEROOT}/usr/share/doc/pine4.64
+install -v -m755 \
+bin/{pine,imapd,ipop2d,ipop3d,mailutil,mtest,pico,pilot,rpdump,rpload} \
+    ${FAKEROOT}/usr/bin
+
+#################
+} # END OF FILE #
+#################
+

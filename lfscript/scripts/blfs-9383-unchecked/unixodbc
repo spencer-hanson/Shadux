@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://www.unixodbc.org/unixODBC-2.3.0.tar.gz"
+MD5SUMLIST="f2ad22cbdffe836c58987ed2332c2e99"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr \
+            --sysconfdir=/etc/unixodbc
+make
+
+make DESTDIR=${FAKEROOT} install
+
+find doc -name "Makefile*" -exec rm {} \;
+chmod 644 doc/{lst,ProgrammerManual/Tutorial}/*
+
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/unixODBC-2.3.0
+cp -v -R doc/* ${FAKEROOT}/usr/share/doc/unixODBC-2.3.0
+
+#################
+} # END OF FILE #
+#################
+

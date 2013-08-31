@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="ftp://invisible-island.net/xterm/xterm-276.tgz"
+MD5SUMLIST="50ca8ee40e8a0992019f8f35042c9abb"
+REQUIRES="x7app"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -i '/v0/,+1s/new:/new:kb=^?:/' termcap
+echo -e '\tkbs=\\177,' >>terminfo
+TERMINFO=/usr/lib/terminfo ./configure $XORG_CONFIG \
+    --enable-luit --enable-wide-chars \
+    --with-app-defaults=/etc/X11/app-defaults
+make
+
+make DESTDIR=${FAKEROOT} install
+make DESTDIR=${FAKEROOT} install-ti
+
+cat >> ${FAKEROOT}/etc/X11/app-defaults/XTerm << "EOF"
+*VT100*locale: true
+*VT100*faceName: Monospace
+*VT100*faceSize: 10
+*backarrowKeyIsErase: true
+*ptyInitialErase: true
+EOF
+
+#################
+} # END OF FILE #
+#################
+

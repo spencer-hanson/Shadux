@@ -1,0 +1,87 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Linux From Scratch 7.1' (SVN-20120211 / r9742) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Linux From Scratch is released under the MIT license.
+# Copyright (C) 1999-2012, Gerard Beekmans
+
+WGETLIST="http://ftp.gnu.org/gnu/binutils/binutils-2.22.tar.bz2"
+MD5SUMLIST="ee0f10756c84979622b992a4a61ea3f5"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+rm -fv etc/standards.info
+sed -i.bak '/^INFO/s/standards.info //' etc/Makefile.in
+
+sed -i "/exception_defines.h/d" ld/testsuite/ld-elf/new.cc
+sed -i "s/-fvtable-gc //" ld/testsuite/ld-selective/selective.exp
+
+mkdir -v ../binutils-build
+cd ../binutils-build
+
+../binutils-2.22/configure --prefix=/usr --enable-shared
+
+make tooldir=/usr
+
+make DESTDIR=${FAKEROOT} tooldir=/usr install
+
+cp -v ../binutils-2.22/include/libiberty.h ${FAKEROOT}/usr/include
+
+#####################################################################
+}; preparation_pass1() { # CONSTRUCTING A TEMPORARY SYSTEM (PASS 1) #
+#####################################################################
+
+mkdir -v ../binutils-build
+cd ../binutils-build
+
+../binutils-2.22/configure \
+    --target=$LFS_TGT --prefix=/tools \
+    --disable-nls --disable-werror
+
+make
+
+case $(uname -m) in
+  x86_64) mkdir -v /tools/lib && ln -sv lib /tools/lib64 ;;
+esac
+
+make install
+
+#########################################################################
+}; preparation_pass2() { # CONSTRUCTING A THE TEMPORARY SYSTEM (PASS 2) #
+#########################################################################
+
+mkdir -v ../binutils-build
+cd ../binutils-build
+
+CC="$LFS_TGT-gcc -B/tools/lib/" \
+   AR=$LFS_TGT-ar RANLIB=$LFS_TGT-ranlib \
+   ../binutils-2.22/configure --prefix=/tools \
+   --disable-nls --with-lib-path=/tools/lib
+
+make
+
+make install
+
+make -C ld clean
+make -C ld LIB_PATH=/usr/lib:/lib
+cp -v ld/ld-new /tools/bin
+
+#########################################################################
+}; preparation() { # CONSTRUCTING A TEMPORARY SYSTEM (SCRIPT DELEGATOR) #
+#########################################################################
+
+if [ "${BINUTILS_PASS1}" != "completed" ]; then
+    preparation_pass1
+    BINUTILS_PASS1="completed"
+else
+    preparation_pass2
+fi
+
+#################
+} # END OF FILE #
+#################
+

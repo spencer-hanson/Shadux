@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="ftp://tug.org/texlive/historic/2011/texlive-20110705-source.tar.xz
+          http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz"
+MD5SUMLIST="968d238949e8a34a1fd74c374ddfe6f1
+            dontverify"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+tar -xf install-tl-unx.tar.gz
+cd install-tl-20111204 
+
+TEXLIVE_INSTALL_PREFIX=/opt/texlive ./install-tl
+
+cat >>> /etc/profile.d/extrapaths.sh << "EOF"
+pathappend /usr/share/man                   MANPATH
+pathappend /opt/texlive/2011/texmf/doc/man  MANPATH
+pathappend /usr/share/info                  INFOPATH
+pathappend /opt/texlive/2011/texmf/doc/info INFOPATH
+pathappend /opt/texlive/2011/bin/x86_64-linux 
+EOF
+
+--without-x
+
+--disable-xdvipdfmx
+
+./configure --prefix=/usr                  \
+            --disable-native-texlive-build \
+            --without-luatex               \
+            --enable-mktextex-default      \
+            --with-banner-add=" - BLFS"
+make
+
+make install
+
+make DESTDIR=$PWD/livetex-tmp install
+
+find livetex-tmp/usr/bin -type f -exec cp -v {} /opt/texlive/2011/bin/x86_64-linux \;
+
+#################
+} # END OF FILE #
+#################
+

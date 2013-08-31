@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# This file is part of LFScript. LFScript is released under the MIT license.
+# Copyright (C) 2007-2012 Marcel van den Boer
+
+WGETLIST="http://pub.mate-desktop.org/releases/1.1/libmateui-1.1.2.tar.bz2"
+MD5SUMLIST="dontverify"
+REQUIRES="mate-keyring" # libbonoboui libgnome-keyring orbit2 pkgconfig x7lib
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./autogen.sh --prefix=${MATE_PREFIX} \
+        --libexecdir=${MATE_PREFIX}/lib/libmateui \
+\
+        --localstatedir=/var \
+        --sysconfdir=/etc \
+        --disable-static
+make
+
+make DESTDIR=${FAKEROOT} install
+
+## (*) Get around the problem that some applications cannot properly discover
+##     where the libglade interface library has been installed.
+#echo "export LIBGLADE_MODULE_PATH=${GNOME_PREFIX}/lib/libglade/2.0" \
+#        > ${FAKEROOT}/etc/profile.d/libgnomeui.sh
+
+#################
+} # END OF FILE #
+#################
+

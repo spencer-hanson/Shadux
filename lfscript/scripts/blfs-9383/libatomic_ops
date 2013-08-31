@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://www.hpl.hp.com/research/linux/atomic_ops/download/libatomic_ops-1.2.tar.gz"
+MD5SUMLIST="1b65e48271c81e3fa2d7a9a69bab7504"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -i \
+    's|datadir)/@PACKAGE@|datadir)/doc/@PACKAGE@/@PACKAGE_VERSION@|' \
+    doc/Makefile.in
+./configure --prefix=/usr
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

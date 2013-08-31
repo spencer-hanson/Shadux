@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/junit/junit4.8.1.zip"
+MD5SUMLIST="86aae1041d5f36ab9b2fd7f53fb531c6"
+REQUIRES="unzip"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+install -v -m755 -d ${FAKEROOT}/usr/share/{,doc/}junit-4.8.1
+chown -R root:root .
+cp -v -R junit* org  ${FAKEROOT}/usr/share/junit-4.8.1
+cp -v -R *.html *doc ${FAKEROOT}/usr/share/doc/junit-4.8.1
+
+export CLASSPATH=$CLASSPATH:\
+/usr/share/junit-4.8.1/junit-4.8.1.jar:/usr/share/junit-4.8.1
+
+java org.junit.runner.JUnitCore org.junit.tests.AllTests
+
+#################
+} # END OF FILE #
+#################
+

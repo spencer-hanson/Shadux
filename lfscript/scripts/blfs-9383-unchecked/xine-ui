@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/xine/xine-ui-0.99.6.tar.xz"
+MD5SUMLIST="d468b4e7fe39ff19888261e1da9be914"
+REQUIRES="shared-mime-info xine-lib"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -i -e 's/info_ptr->//'                                            \
+       -e '/RGB/icolor_type = png_get_color_type(png_ptr, info_ptr);' \
+                                       src/xitk/Imlib-light/load.c
+sed -i -e '/#include.*curl.types.h*/d' src/xitk/download.c
+./configure --prefix=/usr --disable-lirc
+make
+
+make DESTDIR=${FAKEROOT} docsdir=/usr/share/doc/xine-ui-0.99.6 install
+
+#################
+} # END OF FILE #
+#################
+

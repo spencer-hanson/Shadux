@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://pkgconfig.freedesktop.org/releases/pkg-config-0.26.tar.gz"
+MD5SUMLIST="47525c26a9ba7ba14bf85e01509a7234"
+REQUIRES="glib2"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -i -e '21s/EXPECT_RETURN=1/EXPECT_RETURN=0/' check/check-cmd-options
+
+GLIB_LIBS=-lglib-2.0  GLIB_CFLAGS=-I/usr/include/glib-2.0  \
+./configure --prefix=/usr
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

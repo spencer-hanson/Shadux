@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/epiphany/3.2/epiphany-3.2.1.tar.xz"
+MD5SUMLIST="b07a47656a07f695c70eb56b628f9df7"
+REQUIRES="gconf gnome-doc-utils iso-codes libgnome-keyring nss startup-notification webkitgtk"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=$GNOME_PREFIX \
+            --with-ca-file=/etc/ssl/ca-bundle.crt
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

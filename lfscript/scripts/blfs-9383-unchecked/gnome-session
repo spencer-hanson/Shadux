@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/gnome-session/3.2/gnome-session-2.30.2.tar.bz2"
+MD5SUMLIST="d93a2da931ac0b9c0d98f6b68a17a730"
+REQUIRES="gconf gtk+2 orbit2 pkgconfig startup-notification upower"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+            --sysconfdir=/etc/gnome/3.2.2 \
+            --libexecdir=$(pkg-config \
+                --variable=prefix ORBit-2.0)/lib \
+            --mandir=$(pkg-config \
+                --variable=prefix ORBit-2.0)/share/man
+make
+
+make DESTDIR=${FAKEROOT} install
+
+# (*) Configuring the Core GNOME Packages
+echo "exec gnome-session" \
+        > ${FAKEROOT}/etc/X11/app-defaults/xinitrc.d/gnome.xinitrc
+
+echo "exec dbus-launch --exit-with-session gnome-session" \
+        > ${FAKEROOT}/etc/X11/app-defaults/xinitrc.d/gnome_w_dbus.xinitrc
+
+#################
+} # END OF FILE #
+#################
+

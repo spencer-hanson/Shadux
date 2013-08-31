@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Linux From Scratch 7.1' (SVN-20120211 / r9742) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Linux From Scratch is released under the MIT license.
+# Copyright (C) 1999-2012, Gerard Beekmans
+
+WGETLIST="http://prdownloads.sourceforge.net/e2fsprogs/e2fsprogs-1.42.tar.gz"
+MD5SUMLIST="a3c4ffd7352310ab5e9412965d575610"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+mkdir -v build
+cd build
+
+PKG_CONFIG=/tools/bin/true LDFLAGS="-lblkid -luuid" \
+    ../configure --prefix=/usr --with-root-prefix="" \
+    --enable-elf-shlibs --disable-libblkid --disable-libuuid \
+    --disable-uuidd --disable-fsck
+
+make
+
+make DESTDIR=${FAKEROOT} install
+
+make DESTDIR=${FAKEROOT} install-libs
+
+chmod -v u+w ${FAKEROOT}/usr/lib/{libcom_err,libe2p,libext2fs,libss}.a
+
+gunzip -v ${FAKEROOT}/usr/share/info/libext2fs.info.gz
+#install-info --dir-file=/usr/share/info/dir \
+#             ${FAKEROOT}/usr/share/info/libext2fs.info
+
+makeinfo -o      doc/com_err.info ../lib/et/com_err.texinfo
+install -v -m644 doc/com_err.info ${FAKEROOT}/usr/share/info
+#install-info --dir-file=/usr/share/info/dir \
+#             ${FAKEROOT}/usr/share/info/com_err.info
+
+#################
+} # END OF FILE #
+#################
+

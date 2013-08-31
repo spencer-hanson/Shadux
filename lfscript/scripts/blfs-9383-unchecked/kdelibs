@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://anduin.linuxfromscratch.org/sources/trinity/kdelibs-3.5.13.tar.gz"
+MD5SUMLIST="f62eefb63b4ba2141b4c576f859806dd"
+REQUIRES="tqtinterface"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+MAKEDIR=/tmp/buildlibs
+KDELIBS=`pwd`
+rm -rf   $MAKEDIR
+mkdir -p $MAKEDIR
+cd       $MAKEDIR
+
+cmake -DCMAKE_INSTALL_PREFIX=$TRINITY_PREFIX \
+      -DCMAKE_VERBOSE_MAKEFILE=ON            \
+      $KDELIBS
+unset KDELIBS MAKEDIR
+
+find -name link.txt -exec sed -i -e "s@-lX11@& -L$XORG_PREFIX/lib@" {} \;
+
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

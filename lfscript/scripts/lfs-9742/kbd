@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Linux From Scratch 7.1' (SVN-20120211 / r9742) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Linux From Scratch is released under the MIT license.
+# Copyright (C) 1999-2012, Gerard Beekmans
+
+WGETLIST="http://anduin.linuxfromscratch.org/sources/LFS/lfs-packages/conglomeration/kbd/kbd-1.15.2.tar.gz
+          http://www.linuxfromscratch.org/patches/lfs/development/kbd-1.15.2-backspace-1.patch"
+MD5SUMLIST="77d0b51454522bc6c170bbdc6e31202a
+            f75cca16a38da6caa7d52151f7136895"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../kbd-1.15.2-backspace-1.patch
+
+./configure --prefix=/usr --datadir=/lib/kbd
+
+make
+
+make DESTDIR=${FAKEROOT} install
+
+mv -v ${FAKEROOT}/usr/bin/{kbd_mode,loadkeys,openvt,setfont} ${FAKEROOT}/bin
+
+mkdir -v ${FAKEROOT}/usr/share/doc/kbd-1.15.2
+cp -R -v doc/* \
+         ${FAKEROOT}/usr/share/doc/kbd-1.15.2
+
+#################
+} # END OF FILE #
+#################
+

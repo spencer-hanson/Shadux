@@ -1,0 +1,897 @@
+<!-- LFScript.org Package Dump (2012-02-12 14:18:18 UTC) -->
+
+<lfscriptPackages>
+<package>
+<scriptname>btrfs-progs</scriptname>
+
+== Sources ==
+* <sourcecode>http://lfscript.org/sources/btrfs-progs_2012_01_27.tar.bz2</sourcecode>
+
+<md5>1afa2d828ec80cf21aa530ae2a8caf99  btrfs-progs_2012_01_27.tar.bz2</md5>
+
+== Dependencies ==
+* <dependency>attr</dependency>
+
+If you want to be able to mount <code>btrfs</code> file systems, you will need to add support for it to your kernel:
+
+<pre>File systems --->
+  Btrfs filesystem (EXPERIMENTAL) Unstable disk format</pre>
+
+== Installation ==
+<build>make</build>
+
+<build user="root">make prefix=/usr install</build>
+</package>
+<package>
+[[SquashFS Tools]] provides the <code>mksquashfs</code> utility, which allows one to create a compressed read-only file system.
+
+
+<scriptname>squashfs-tools</scriptname>
+
+== Sources ==
+* <sourcecode>http://kent.dl.sourceforge.net/sourceforge/squashfs/squashfs4.2.tar.gz</sourcecode>
+
+<md5>1b7a781fb4cf8938842279bd3e8ee852  squashfs4.2.tar.gz</md5>
+
+== Dependencies ==
+This package has no dependencies outside of LFS. However, if you want to be able to mount <code>squashfs</code> file systems, you will need to add support for it to your kernel:
+
+<pre>File systems --->
+  Miscellaneous filesystems --->
+    SquashFS 4.0 - Squashed file system support --->
+      Include support for ZLIB compressed file systems
+      Include support for LZO compressed file systems
+      Include support for XZ compressed file systems</pre>
+
+== Installation ==
+<build>pushd squashfs-tools</build>
+
+<build>sed "s/#XZ_SUPPORT/XZ_SUPPORT/" -i Makefile
+make</build>
+
+<build user="root">make INSTALL_DIR=/usr/bin install</build>
+
+<build>popd</build>
+
+== Packaging note ==
+<destdir>INSTALL_DIR</destdir>
+</package>
+
+<package>
+This page defines one of the core features of LFScript; The ability to create a [[Live CD]].
+
+This page is set up in way so that it can be imported into LFScript automatically, just like the pages for the other [[Extra packages]] are. Al though you should be able to run these commands yourself, it is intended for them to be [[Creating a Live CD|executed by LFScript]].
+
+<scriptname>buildiso</scriptname>
+
+== Sources ==
+* <sourcecode>rootfs-$(uname -m).img</sourcecode>
+
+'''Note:''' You obviously can not download this file, it [[Creating a Live CD|can only be created by you]].
+
+== Dependencies ==
+* <dependency value="buildiso-dep"></dependency>[[BuildISO Dependencies]]
+
+== Installation ==
+
+=== isolinux.cfg ===
+This creates a default configuration file for the [[Syslinux|isolinux]] boot loader. If you have created a [[BuildISO Customisation|custom configuration]], this file file be ignored:
+
+<build>cat > isolinux.cfg << EOF
+DEFAULT menu.c32
+PROMPT 0
+MENU TITLE Select an option...
+TIMEOUT 300
+
+LABEL live
+    MENU LABEL ^Boot the live system ($(uname -m))
+    MENU DEFAULT
+    KERNEL /boot/$(uname -m)/vmlinuz
+    APPEND initrd=/boot/$(uname -m)/initram.fs quiet
+
+LABEL harddisk
+    MENU LABEL Boot from first ^Hard disk
+    LOCALBOOT 0x80
+
+EOF</build>
+
+=== Init script ===
+This creates the core initialisation script for the Live CD. It is this script that runs immediately after the Linux kernel has been loaded by the boot loader. It is responsible for locating and mounting the CD medium, mounting the root file system image and then give control to the Operating System inside that image:
+
+
+<build>cat > init.sh << "EndOfFile"
+#!/bin/busybox sh
+
+# Initramfs boot script 1.3.1 (2012-02-09)
+# Copyright (c) 2010-2012   Marcel van den Boer
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# FS layout at the start of this script:
+# - /boot/id_label
+# - /bin/busybox
+# - /dev/console (created by kernel)
+# - /init (this file)
+
+set -e
+
+ARCH="<ARCH>"
+
+###########################################
+copyBindMount() { # COPY/BIND LIVECD MODE #
+###########################################
+
+# This function bind-mounts directories which are designed to be capable of
+# read-only access and copies the remaining directories to a tmpfs.
+#
+# The downside of this method is that the resulting root filesystem is not
+# fully writable. So, for example, installation of new programs will not be
+# possible.
+#
+# However, this function can be used without any modification to the kernel and
+# is therefore perfect for use as a fallback if other options are not available.
+
+# Mount a tmpfs where the new rootfs will be.
+mount -t tmpfs tmpfs ${ROOT} # Allows remounting root in the bootscripts
+
+# Bind mount read-only filesystems, copy the rest
+cd /mnt/system
+for dir in $(ls -1); do
+    case ${dir} in
+        lost+found)
+            ;;
+        bin | boot | lib | opt | sbin | usr)
+            mkdir ${ROOT}/${dir}
+            mount --bind ${dir} ${ROOT}/${dir}
+            ;;
+        *)
+            cp -R ${dir} ${ROOT}
+            ;;
+    esac
+done
+cd /
+
+#########################################
+}; unionMount() { # UNIONFS LIVECD MODE #
+#########################################
+
+# A union mount takes one or more directories and combines them transparantly
+# in a third. This function creates a writable directory in memory (tmpfs) and
+# uses it to overlay the read-only system image, resulting in a fully writable
+# root file system.
+#
+# The only downside to this method is that it requires a union type filesystem
+# in the kernel, which can only be accomplished by patching the kernel as there
+# is no such feature in a vanilla kernel.
+
+mkdir -p /mnt/writable
+mount -t tmpfs -o rw tmpfs /mnt/writable
+
+UNIONFSOPT="/mnt/writable=rw:/mnt/system=ro"
+mount -t unionfs -o dirs=${UNIONFSOPT} unionfs ${ROOT} 2> /dev/null || {
+
+    # If UnionFS fails, fall back to copy/bind mounting
+    copyBindMount
+}
+
+######################
+} # END OF FUNCTIONS #
+######################
+
+# Make required applets easier to access
+for applet in cat chmod cp cut grep ls mkdir mknod mount umount switch_root; do
+    /bin/busybox ln /bin/busybox /bin/${applet}
+done
+
+# Clear the screen
+#clear # Don't! This will clear the Linux boot logo when using a framebuffer.
+       # If you want to clear the screen on boot add the "clear" command to
+       # '/usr/share/live/sec_init.sh' in the system image.
+
+# Create device nodes required to run this script
+# Note: /dev/console will already be available in the ramfs
+mknod /dev/null c  1  3
+
+mknod /dev/scd0 b 11  0  # +--------
+mknod /dev/scd1 b 11  1  # |
+mknod /dev/scd2 b 11  2  # |
+mknod /dev/scd3 b 11  3  # |
+                         # |
+mknod /dev/sda  b  8  0  # |
+mknod /dev/sda1 b  8  1  # |
+mknod /dev/sda2 b  8  2  # |
+mknod /dev/sda3 b  8  3  # |
+mknod /dev/sda4 b  8  4  # |
+                         # |
+mknod /dev/sdb  b  8 16  # |    <----
+mknod /dev/sdb1 b  8 17  # |        Devices which could be or contain the
+mknod /dev/sdb2 b  8 18  # |        boot medium...
+mknod /dev/sdb3 b  8 19  # |
+mknod /dev/sdb4 b  8 20  # |
+                         # |
+mknod /dev/sdc  b  8 32  # |
+mknod /dev/sdc1 b  8 33  # |
+mknod /dev/sdc2 b  8 34  # |
+mknod /dev/sdc3 b  8 35  # |
+mknod /dev/sdc4 b  8 36  # |
+                         # |
+mknod /dev/sdd  b  8 48  # |
+mknod /dev/sdd1 b  8 49  # |
+mknod /dev/sdd2 b  8 50  # |
+mknod /dev/sdd3 b  8 51  # |
+mknod /dev/sdd4 b  8 52  # +--------
+
+# Create mount points for filesystems
+mkdir -p /mnt/medium
+mkdir -p /mnt/system
+mkdir -p /mnt/rootfs
+
+# Mount the /proc filesystem (enables filesystem detection for 'mount')
+mkdir /proc
+mount -t proc proc /proc
+
+# Search for, and mount the boot medium
+LABEL="$(cat /boot/id_label)"
+for device in $(ls /dev); do
+    [ "${device}" == "console" ] && continue
+    [ "${device}" == "null"    ] && continue
+
+    mount -o ro /dev/${device} /mnt/medium 2> /dev/null && \
+    if [ "$(cat /mnt/medium/boot/${ARCH}/id_label)" != "${LABEL}" ]; then
+        umount /mnt/medium
+    else
+        DEVICE="${device}"
+        break
+    fi
+done
+
+if [ "${DEVICE}" == "" ]; then
+    echo "FATAL: Boot medium not found."
+    exec /bin/busybox sh
+fi
+
+# Mount the system image
+mount -t squashfs -o ro,loop /mnt/medium/boot/${ARCH}/root.sfs /mnt/system || {
+    echo "FATAL: Boot medium found, but system image is missing."
+    exec /bin/busybox sh
+}
+
+# Define where the new root filesystem will be
+ROOT="/mnt/rootfs" # Also needed for /usr/share/live/sec_init.sh
+
+# Select LiveCD mode
+unionMount # Might fall back to copyBindMount
+
+# Move current mounts to directories accessible in the new root
+cd /mnt
+for dir in $(ls -1); do
+    if [ "${dir}" != "rootfs" ]; then
+        mkdir -p ${ROOT}/mnt/.boot/${dir}
+        mount --move /mnt/${dir} ${ROOT}/mnt/.boot/${dir}
+    fi
+done
+cd /
+
+# If the boot medium is a CD, eject it on shutdown
+[ "$(mount | grep iso9660)" != "" ] && \
+cat > ${ROOT}/etc/rc.d/rc0.d/S98eject << EOF
+#!/bin/sh
+
+if [ -x /usr/bin/cdrecord ]; then
+    /usr/bin/cdrecord -eject dev=/dev/${DEVICE} &> /dev/null
+
+    echo -e "\033[31m"
+    echo -en "Remove the boot medium, close the tray (if any), "
+    echo -en "then press ENTER to power off."
+    echo -e "\033[0m"
+
+    read
+fi
+EOF
+chmod +x ${ROOT}/etc/rc.d/rc0.d/S98eject
+
+# Run secondary initialization (if the system provides it)
+if [ -x ${ROOT}/usr/share/live/sec_init.sh ]; then
+    . ${ROOT}/usr/share/live/sec_init.sh
+fi
+
+# Clean up
+umount /proc
+
+# Switch to the new root and launch INIT!
+exec switch_root -c /dev/console ${ROOT} /sbin/init
+
+EndOfFile</build>
+
+=== Identifying the boot medium ===
+The initialisation script must have some way of identifying the medium from which it has been started.
+
+The following command saves a 512-bit random number, to be used as a unique identifier. It will later be copied to the <code>initramfs</code> created after this and to the ISO file system itself:
+<build>dd if=/dev/random of=id_label bs=1 count=64</build>
+
+=== The initramfs ===
+The initialisation script relies on certain system commands to be available during boot. However, because the root file system is not available yet (the very purpose of <code>init.sh</code> is to set it up), these commands must be available in advance.
+
+Luckily, Linux supports the use of an initial RAM disk or <code>initramfs</code>. With this, we can provide the kernel with a file which has a minimal set of utilities (and <code>init.sh</code>) embedded. The kernel will automatically copy the contents of the file to a temporary root filesystem, and then turn over control to <code>/init</code> (<code>init.sh</code>).
+
+In stead of copying the required utilities from the system image, many Live CD's opt to use a statically linked [[BusyBox]] in stead. This makes the <code>initramfs</code> not dependent on any libraries in the system image. And because <code>busybox</code> is only a single binary file, it makes the creation of the initial file system easy:
+
+
+<build>mkdir -pv mnt_init/{bin,boot}
+cp -v id_label mnt_init/boot
+cp -v /bin/busybox mnt_init/bin
+mv init.sh mnt_init/init
+sed -i "s/<ARCH>/$(uname -m)/g" mnt_init/init
+chmod +x mnt_init/init</build>
+
+Once populated, compress the initial file system. The Linux kernel expects an <code>cpio</code> file, optionally compressed with <code>gzip</code>:
+<build>pushd mnt_init
+find . | /bin/busybox cpio -o -H newc -F ../initramfs.cpio
+popd
+gzip -9 initramfs.cpio
+rm -rf mnt_init</build>
+
+=== Mount, verify and compress the system image ===
+In order to compress the system image, it must be mounted (read-only) first:
+
+<build>mkdir mnt
+mount -o loop,ro rootfs-$(uname -m).img mnt</build>
+
+This next block performs some verification on the system image to ensure it can be used as a root file system. If you are executing the commands on this page manually, you should skip this block:
+<build>FAIL="0"
+
+if [ ! -r mnt/usr/bin/$(uname -m)-*linux-gnu-gcc ]; then
+    echo -n "ERROR: Unable to verify image architecture; Your system image does"
+    echo " not contain the file '/usr/bin/$(uname -m)-*linux-gnu-gcc'"
+    FAIL="1"
+fi
+
+if [ ! -d mnt/etc ]; then
+    echo "ERROR: Your system image does not contain the directory '/etc'"
+    FAIL="1"
+fi
+
+if [ ! -x mnt/sbin/init ]; then
+    echo "ERROR: Your system image does not contain the executable '/sbin/init'"
+    FAIL="1"
+fi
+
+if [ ! -e mnt/dev/console ]; then
+    echo "ERROR: Your system image does not contain the device '/dev/console'"
+    FAIL="1"
+fi
+
+if [ "${FAIL}" == "1" ]; then
+    return 1
+fi</build>
+
+Then, proceed to compress the system image:
+<build>mksquashfs mnt root.sfs -comp xz</build>
+
+=== Create the ISO image ===
+Now that all components are ready, it's time to package it all up in a single ISO file.
+
+First, copy the boot loader and Linux kernel to the CD file system:
+<build>mkdir -p live/boot/{isolinux,$(uname -m)}
+cp -v /usr/share/syslinux/isolinux.bin live/boot/isolinux
+cp -v /boot/vmlinuz-*                  live/boot/$(uname -m)/vmlinuz
+cp -v /boot/config-*                   live/boot/$(uname -m)/config</build>
+
+Copy all files from the root file system image that have been prepared to [[BuildISO Customisation|customize the Live CD]]:
+<build>if [ -e "mnt/usr/share/live/medium" ]; then
+    cp -vR mnt/usr/share/live/medium/* live
+fi</build>
+
+Now, unmount the root file system image as it is no longer needed:
+
+<build>umount mnt
+rm -rf mnt</build>
+
+Unless a customised configuration has been copied a moment ago, use the boot loader configuration created when we started:
+<build>if [ ! -e "live/boot/isolinux/isolinux.cfg" ]; then
+    cp -v /usr/share/syslinux/menu.c32 live/boot/isolinux
+    mv -v isolinux.cfg                 live/boot/isolinux
+else
+    rm -rf isolinux.cfg
+fi</build>
+
+Move the various components to the CD file system:
+<build>mv -v root.sfs live/boot/$(uname -m)
+mv -v id_label live/boot/$(uname -m)
+mv -v initramfs.cpio.gz live/boot/$(uname -m)/initram.fs</build>
+
+Write out the final ISO:
+<build>mkisofs -o system-$(uname -m).iso     \
+        -b boot/isolinux/isolinux.bin \
+        -c boot.cat                   \
+        -no-emul-boot                 \
+        -boot-load-size 4             \
+        -boot-info-table              \
+        -joliet -l -R                 \
+        live
+rm -rf live</build>
+
+Move the ISO image to LFScript's <code>newpackages</code> directory (you can skip this if you are running these commands manually):
+
+<build>mkdir -p /sources/buildmgr/newpackages
+mv -v system-$(uname -m).iso /sources/buildmgr/newpackages</build>
+
+Done!
+</package>
+<package>
+This [[Package Group]] contains all dependencies for the [[BuildISO]] script. This makes it possible to build a system which has all the tools required to create a [[Live CD]].
+
+<scriptname>buildiso-dep</scriptname>
+
+== Dependencies ==
+* <dependency value="busybox"></dependency>[[BusyBox]]
+* <dependency value="squashfs-tools"></dependency>[[SquashFS Tools]]
+* <dependency value="syslinux"></dependency>[[Syslinux]]
+* <dependency>cdrtools</dependency>
+
+== Installation ==
+This is a [[Package Group]]. If it is selected in LFScript, it will simply install all dependencies listed above.
+</package>
+<package>
+<scriptname>busybox</scriptname>
+
+== Sources ==
+* <sourcecode>http://busybox.net/downloads/busybox-1.19.3.tar.bz2</sourcecode>
+
+<md5>c3938e1ac59602387009bbf1dd1af7f6  busybox-1.19.3.tar.bz2</md5>
+
+== Installation ==
+Like the Linux kernel, [[BusyBox]] can be configured using <code>make menuconfig</code>. However, the following commands build a <code>busybox</code> executable suitable for use in a [[Live CD]]:
+
+
+<build>make defconfig &&
+sed 's/# CONFIG_STATIC is not set/CONFIG_STATIC=y/' -i .config</build>
+
+Do not build with <code>RPC</code> support, because it has been removed from Glibc 2.14:
+<build>sed 's/CONFIG_FEATURE_HAVE_RPC=y/# CONFIG_FEATURE_HAVE_RPC is not set/' \
+        -i .config
+sed 's/CONFIG_FEATURE_MOUNT_NFS=y/# CONFIG_FEATURE_MOUNT_NFS is not set/' \
+        -i .config
+sed 's/CONFIG_FEATURE_INETD_RPC=y/# CONFIG_FEATURE_INETD_RPC is not set/' \
+        -i .config</build>
+
+<build>make</build>
+
+<build user="root">cp -v busybox /bin</build>
+
+</package>
+<package>
+[[Syslinux]] provides a set of boot loaders, among them <code>isolinux</code> which is used to make a [[Live CD]] bootable.
+
+<scriptname>syslinux</scriptname>
+
+== Sources ==
+* <sourcecode>http://www.kernel.org/pub/linux/utils/boot/syslinux/4.xx/syslinux-4.04.tar.bz2</sourcecode>
+
+<md5>a3936208767eb7ced65320abe2e33a10  syslinux-4.04.tar.bz2</md5>
+
+== Dependencies ==
+* <dependency>NASM</dependency>
+
+* <dependency>python</dependency>
+
+== Installation ==
+<build>make spotless</build>
+
+<build>sed -i 's@win32/syslinux.exe@@g' Makefile
+sed -i 's@win64/syslinux64.exe@@g' Makefile
+make</build>
+
+<build user="root">make install</build>
+
+== Packaging note ==
+<destdir>INSTALLROOT</destdir>
+
+</package>
+<package>
+<scriptname>memtest86+</scriptname>
+
+== Sources ==
+* <sourcecode>http://www.memtest.org/download/4.20/memtest86+-4.20.tar.gz</sourcecode>
+
+<md5>ef62c2f5be616676c8c62066dedc46b3  memtest86+-4.20.tar.gz</md5>
+
+== Installation ==
+<build>make</build>
+
+<build user="root">cp -v memtest.bin /boot/memtest86</build>
+
+== Notes ==
+Currently, this package does not compile on <code>x86_64</code> systems.
+</package>
+<package>
+<scriptname>os-prober</scriptname>
+
+== Sources ==
+* <sourcecode>http://ftp.de.debian.org/debian/pool/main/o/os-prober/os-prober_1.49.tar.gz</sourcecode>
+
+<md5>5a981493a7c16174e6454fcf6b39b1b5  os-prober_1.49.tar.gz</md5>
+
+== Dependencies ==
+* <dependency>which</dependency>
+
+This dependency is not actually for [[OS Prober]], but for <code>grub</code> which needs it to locate [[OS Prober]].
+
+== Installation ==
+<build>make</build>
+
+<build user="root">mkdir -pv /usr/{lib,share}/os-prober
+cp -v os-prober /usr/bin
+cp -v linux-boot-prober /usr/bin
+cp -v newns /usr/lib/os-prober
+cp -v common.sh /usr/share/os-prober</build>
+
+<build user="root">mkdir -pv /usr/lib/linux-boot-probes/mounted
+mkdir -pv /usr/lib/os-probes/{init,mounted}</build>
+
+<build user="root">cp -v linux-boot-probes/common/*         /usr/lib/linux-boot-probes
+cp -v linux-boot-probes/mounted/common/* /usr/lib/linux-boot-probes/mounted
+cp -v linux-boot-probes/mounted/x86/*    /usr/lib/linux-boot-probes/mounted</build>
+
+<build user="root">cp -v os-probes/common/*         /usr/lib/os-probes
+cp -v os-probes/init/common/*    /usr/lib/os-probes/init
+cp -v os-probes/mounted/common/* /usr/lib/os-probes/mounted
+cp -v os-probes/mounted/x86/*    /usr/lib/os-probes/mounted</build>
+
+<build user="root">mkdir -pv /var/lib/os-prober</build>
+</package>
+<package>
+<scriptname>compiz-fusion</scriptname>
+
+== Dependencies ==
+* <dependency value="ccsm"></dependency>[[CompizConfig Settings Manager]]
+* <dependency value="compiz-plugins-main"></dependency>[[Compiz Plugins Main]]
+* <dependency value="emerald"></dependency>[[Emerald]]
+
+The [[Emerald]] dependency is optional, but will be installed by LFScript anyway.
+
+== Installation ==
+This is a [[Package Group]]. If it is selected in LFScript, it will simply install all dependencies listed above.
+
+</package>
+<package>
+<scriptname>compiz</scriptname>
+
+== Sources ==
+* <sourcecode>http://releases.compiz-fusion.org/0.8.8/compiz-0.8.8.tar.bz2</sourcecode>
+
+<md5>d14508f2a0e129b147fc0d905984c1fc  compiz-0.8.8.tar.bz2</md5>
+
+== Dependencies ==
+* <dependency>startup-notification</dependency>
+* <dependency>gtk+2</dependency>
+
+* <dependency value="libwnck_compat"></dependency>[[libwnck]]
+
+It is possible to build this software without <code>gtk+2</code> and <code>libwnck</code> installed. However, without them <code>gtk-window-decorator</code> will not be built and you will have to install [[Emerald]] if you want framed windows under [[Compiz]].
+
+== Installation ==
+<build>./configure --prefix=/usr \
+        --disable-gconf
+make</build>
+
+The <code>--disable-gconf</code> switch allows [[Compiz]] to be built without a GConf backend. I'm avoiding GConf at the moment, because it complicates the current transition to the [[Mate Desktop Environment]].
+
+
+<build user="root">make install</build>
+
+<build user="root">cat > /etc/X11/app-defaults/xinitrc.d/Compiz_\(with_an_XTerm\).xinitrc << "EOF"
+compiz ccp &
+exec xterm
+EOF</build>
+</package>
+<package>
+<scriptname>compiz-bcop</scriptname>
+
+== Sources ==
+* <sourcecode>http://releases.compiz-fusion.org/0.8.8/compiz-bcop-0.8.8.tar.bz2</sourcecode>
+
+== Dependencies ==
+* <dependency>libxslt</dependency>
+* <dependency>pkgconfig</dependency>
+
+== Installation ==
+<build>./configure --prefix=/usr &&
+make</build>
+
+<build user="root">make install</build>
+</package>
+<package>
+
+<scriptname>compiz-plugins-main</scriptname>
+
+== Sources ==
+* <sourcecode>http://releases.compiz-fusion.org/0.8.6/compiz-plugins-main-0.8.6.tar.bz2</sourcecode>
+
+== Dependencies ==
+* <dependency value="compiz-bcop"></dependency>[[BCOP]]
+* <dependency value="compiz"></dependency>[[Compiz]]
+* <dependency>libjpeg</dependency>
+
+== Installation ==
+<build>./configure --prefix=/usr &&
+make</build>
+
+<build user="root">make install</build>
+</package>
+<package>
+<scriptname>libcompizconfig</scriptname>
+
+== Sources ==
+* <sourcecode>http://releases.compiz-fusion.org/0.8.8/libcompizconfig-0.8.8.tar.bz2</sourcecode>
+
+== Dependencies ==
+* <dependency value="compiz"></dependency>[[Compiz]]
+
+== Installation ==
+<build>./configure --prefix=/usr \
+        --sysconfdir=/etc &&
+make</build>
+
+<build user="root">make install</build>
+</package>
+<package>
+<scriptname>compizconfig-python</scriptname>
+
+== Sources ==
+* <sourcecode>http://releases.compiz-fusion.org/0.8.4/compizconfig-python-0.8.4.tar.bz2</sourcecode>
+
+== Dependencies ==
+* <dependency value="libcompizconfig"></dependency>[[Libcompizconfig]]
+* <dependency value="python-pyrex"></dependency>[[Pyrex]]
+
+== Installation ==
+<build>./configure --prefix=/usr &&
+make</build>
+
+<build user="root">make install</build>
+</package>
+<package>
+<scriptname>ccsm</scriptname>
+
+== Sources ==
+* <sourcecode>http://releases.compiz-fusion.org/0.8.4/ccsm-0.8.4.tar.bz2</sourcecode>
+
+== Dependencies ==
+* <dependency value="compizconfig-python"></dependency>[[CompizConfig Python]]
+* <dependency>python-pygtk</dependency>
+
+== Installation ==
+<build>make</build>
+
+<build user="root">make PREFIX=/usr install</build>
+
+== Packaging note ==
+<destdir>PREFIX</destdir>
+</package>
+<package>
+<scriptname>emerald</scriptname>
+
+== Sources ==
+* <sourcecode>http://releases.compiz-fusion.org/components/emerald/emerald-0.8.8.tar.bz2</sourcecode>
+
+== Dependencies ==
+* <dependency value="compiz"></dependency>[[Compiz]]
+* <dependency value="libwnck_compat"></dependency>[[libwnck]]
+
+== Installation ==
+Make [[Emerald]] link against <code>libM</code> and <code>libDL</code> (needed for newer versions of GCC):
+<build>sed 's@$(emerald_LDADD)@$(emerald_LDADD) -lm -ldl@g' -i src/Makefile.in</build>
+
+<build>./configure --prefix=/usr &&
+make</build>
+
+<build user="root">make install</build>
+</package>
+<package>
+Adobe's Flash Player is closed source software. If you run the commands on this page, only a script is installed which facilitates the installation of the actual plugin.
+
+<scriptname>flash-plugin</scriptname>
+
+== Dependencies ==
+* <dependency>wget</dependency>
+
+You might also want to install <code>firefox</code>...
+
+== Installation ==
+
+<build user="root">cat > /usr/sbin/install-flash-plugin << "EOF"
+#!/bin/sh
+# This script downloads and installs Adobe Flash Player.
+set -e
+
+getFlashPlayer() {
+    local ARCH="$(uname -m)"
+    case $(uname -m) in
+        i?86) local ARCH="i386" ;;
+    esac
+
+    local FILENAME="install_flash_player_11_linux.${ARCH}.tar.gz"
+    local URL="http://fpdownload.macromedia.com/get/flashplayer/pdc/11.1.102.55/${FILENAME}"
+
+    local TEMP_DIR="$(mktemp -d)"
+    pushd "${TEMP_DIR}"
+
+    wget "${URL}"
+    tar xf "${FILENAME}"
+
+    cp -vR usr /
+    mkdir -p /usr/lib/mozilla/plugins
+    cp -v libflashplayer.so /usr/lib/mozilla/plugins
+
+    popd
+    rm -rf "${TMP_DIR}"
+
+    echo "Done!"
+}
+
+getFlashPlayer
+EOF</build>
+
+<build user="root">chmod 755 /usr/sbin/install-flash-plugin</build>
+
+== Usage ==
+After you have booted your OS for the first time, run the following command as '''root''' to install the flash plugin:
+
+<pre>install-flash-plugin</pre>
+</package>
+<package>
+<scriptname>slim</scriptname>
+
+== Sources ==
+* <sourcecode>http://download.berlios.de/slim/slim-1.3.2.tar.gz</sourcecode>
+
+== Dependencies ==
+* <dependency>libjpeg</dependency>
+
+* <dependency>x-window-system</dependency>
+
+== Installation ==
+
+Allow slim to compile against libpng 1.5:
+<build>sed 's@png_ptr->jmpbuf@png_jmpbuf(png_ptr)@g' -i png.c
+sed 's@-lpng12@-lpng15@g' -i Makefile</build>
+
+By default, Slim uses the <code>.xinitrc</code> file in a users home directory to set up an X session. Change this to use the system-wide <code>xinitrc</code> in stead:
+<build>sed 's@~/.@/etc/X11/app-defaults/@g' -i slim.conf</build>
+
+Compile the package:
+<build>sed 's@/bin/slim@/sbin/slim@g' -i Makefile
+make</build>
+
+<build user="root">make install</build>
+
+The next two code blocks will install a custom boot script, which will launch the Slim Display Manager on boot.
+<build user="root">cat > /etc/rc.d/init.d/slim << "EOF"
+#!/bin/sh
+# Written by Marcel van den Boer
+
+. /lib/lsb/init-functions
+
+case "$1" in
+    start)
+        log_info_msg "Starting the Slim Display Manager..."
+
+        # Update sessions list
+        if [ -r /etc/X11/app-defaults/xinitrc.d/functions ]; then
+            . /etc/X11/app-defaults/xinitrc.d/functions
+            SESSIONS="$(listSessions)"
+            sed "s@^sessions.*\$@sessions ${SESSIONS}@g" -i /etc/slim.conf
+        fi
+
+        /usr/sbin/slim -d
+        evaluate_retval
+        ;;
+
+    stop)
+        log_info_msg "Stopping the Slim Display Manager..."
+        killall slim || failed=1
+        killall X || failed=1
+
+        (exit ${failed})
+        evaluate_retval
+
+        rm -rf /var/run/slim.lock
+        ;;
+
+    restart)
+        ${0} stop
+        sleep 1
+        ${0} start
+        ;;
+
+    *)
+        echo "Usage: ${0} {start|stop|restart}"
+        exit 1
+        ;;
+esac
+EOF
+chmod 755 /etc/rc.d/init.d/slim</build>
+
+<build user="root">for n in 0 1 2 3 4 6; do
+    ln -svf ../init.d/slim /etc/rc.d/rc${n}.d/K05slim
+done
+ln -svf ../init.d/slim /etc/rc.d/rc5.d/S95slim</build>
+</package>
+
+<package>
+<scriptname>python-pyrex</scriptname>
+
+== Sources ==
+* <sourcecode>http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/Pyrex-0.9.9.tar.gz</sourcecode>
+
+== Dependencies ==
+* <dependency>python</dependency>
+
+== Installation ==
+<build user="root">python setup.py install</build>
+</package>
+<package>
+
+<scriptname>fsos</scriptname>
+
+== Dependencies ==
+
+* ''Non-graphical Environment:''
+** <dependency value="fsos-nox"></dependency>[[fsOS without X11]]
+
+* ''Desktop Environment:''
+** <dependency value="mate"></dependency>[[Mate Desktop Environment]]
+** <dependency value="slim"></dependency>[[Slim Display Manager]]
+** <dependency value="compiz-fusion"></dependency>[[Compiz Fusion]]
+
+* ''Desktop Utilities:''
+** <dependency value="nm-applet"></dependency>[[nm-applet]]
+
+* ''Browser:''
+** <dependency>firefox</dependency>
+** <dependency value="flash-plugin"></dependency>[[Flash Plugin]]
+
+== Installation ==
+This is a [[Package Group]]. If it is selected in LFScript, it will simply install all dependencies listed above.
+</package>
+<package>
+<scriptname>fsos-32</scriptname>
+
+== Dependencies ==
+* <dependency value="fsos"></dependency>[[fsOS]]
+* <dependency value="fsos-nox-32"></dependency>[[fsOS without X11, 32-bit]]
+
+== Installation ==
+This is a [[Package Group]]. If it is selected in LFScript, it will simply install all dependencies listed above.
+</package>
+<package>
+<scriptname>fsos-nox-32</scriptname>
+
+== Dependencies ==
+* <dependency value="fsos-nox"></dependency>[[fsOS without X11]]
+* <dependency value="memtest86+"></dependency>[[Memtest86+]]
+
+== Installation ==
+This is a [[Package Group]]. If it is selected in LFScript, it will simply install all dependencies listed above.
+</package>
+</lfscriptPackages>
+<userPackages>
+</userPackages>
+

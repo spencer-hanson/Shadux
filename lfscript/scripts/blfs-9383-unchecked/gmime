@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/gmime/2.4/gmime-2.4.21.tar.bz2"
+MD5SUMLIST="61e8b07ea941975c861f4d69eda293ad"
+REQUIRES="glib2"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr
+make
+
+pushd docs/tutorial
+docbook2html --nochunks gmime-tut.sgml
+docbook2pdf             gmime-tut.sgml
+docbook2ps              gmime-tut.sgml
+docbook2txt             gmime-tut.sgml
+popd
+
+make DESTDIR=${FAKEROOT} install
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/gmime-2.4.21
+install -v -m644    README \
+                    ${FAKEROOT}/usr/share/doc/gmime-2.4.21
+
+install -v -m644    docs/tutorial/gmime* \
+                    ${FAKEROOT}/usr/share/doc/gmime-2.4.21
+
+#################
+} # END OF FILE #
+#################
+

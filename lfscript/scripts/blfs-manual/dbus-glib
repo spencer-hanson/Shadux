@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Last update: BLFS r9302 (2012-02-07)
+
+WGETLIST="http://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.98.tar.gz"
+MD5SUMLIST="3f7f117dc7c8d899d9acfdcbf9253fb8"
+REQUIRES="dbus expat glib2 pkgconfig"
+
+# Adding 'pkgconfig' to the dependencies fixes:
+#   configure: error: The pkg-config script could not be found or is too old.
+#   Make sure it is in your PATH or set the PKG_CONFIG environment variable to
+#   the full path to pkg-config.
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr \
+            --sysconfdir=/etc \
+            --libexecdir=/usr/lib/dbus-1.0/dbus-1
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

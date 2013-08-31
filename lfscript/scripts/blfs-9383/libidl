@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/libIDL/0.8/libIDL-0.8.14.tar.bz2"
+MD5SUMLIST="bb8e10a218fac793a52d404d14adedcb"
+REQUIRES="glib2 pkgconfig"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr
+make
+
+makeinfo --plaintext -o libIDL2.txt libIDL2.texi
+
+make DESTDIR=${FAKEROOT} install
+
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/libIDL-0.8.14
+install -v -m644    README libIDL2.{txt,texi} \
+                    ${FAKEROOT}/usr/share/doc/libIDL-0.8.14
+
+#################
+} # END OF FILE #
+#################
+

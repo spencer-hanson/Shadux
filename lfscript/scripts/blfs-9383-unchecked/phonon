@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="ftp://ftp.kde.org/pub/kde/stable/phonon/4.4.4/src/phonon-4.4.4.tar.bz2"
+MD5SUMLIST="1deb14ecb2185e1f2fe2741a0bd46852"
+REQUIRES="glib2 qt4"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+mkdir build
+cd build
+
+cmake -DCMAKE_INSTALL_PREFIX=$QT4DIR \
+      ..
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

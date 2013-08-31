@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/lesstif/lesstif-0.95.2.tar.bz2
+          http://www.linuxfromscratch.org/patches/blfs/svn/lesstif-0.95.2-testsuite_fix-1.patch"
+MD5SUMLIST="754187dbac09fcf5d18296437e72a32f
+            dontverify"
+REQUIRES="x7lib"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../lesstif-0.95.2-testsuite_fix-1.patch
+./configure --prefix=/usr \
+            --sysconfdir=/etc/X11 \
+            --disable-debug \
+            --enable-production \
+            --with-xdnd \
+            --x-includes=$XORG_PREFIX/include \
+            --x-libraries=$XORG_PREFIX/lib
+sed -i "s@libdir)/X11/mwm@sysconfdir)/mwm@" clients/Motif-2.1/mwm/Makefile
+make rootdir=/usr/share/doc/lesstif-0.95.2
+
+make DESTDIR=${FAKEROOT} rootdir=/usr/share/doc/lesstif-0.95.2 install
+ldconfig
+
+ln -v -sf ${FAKEROOT}/etc/X11/mwm $XORG_PREFIX/lib/X11
+
+#################
+} # END OF FILE #
+#################
+

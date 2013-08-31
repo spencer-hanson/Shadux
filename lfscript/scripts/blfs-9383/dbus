@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://dbus.freedesktop.org/releases/dbus/dbus-1.4.16.tar.gz
+          http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-20120206.tar.bz2"
+MD5SUMLIST="44a2a10678e7e50460879c3eb4453a65
+            dontverify"
+REQUIRES="expat libxml2"
+TAGS="preinst"
+POSTINST="true"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr                   \
+            --sysconfdir=/etc               \
+            --libexecdir=/usr/lib/dbus-1.0  \
+            --localstatedir=/var
+make
+
+make DESTDIR=${FAKEROOT} install
+mv -v ${FAKEROOT}/usr/share/doc/dbus ${FAKEROOT}/usr/share/doc/dbus-1.4.16
+
+includeBootscript dbus
+
+#################################################
+}; preinst() { # PRE-INSTALLATION CONFIGURATION #
+#################################################
+
+groupadd -g 18 messagebus
+useradd -c "D-BUS Message Daemon User" -d /dev/null \
+        -u 18 -g messagebus -s /bin/false messagebus
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+# (*) Ensure that /var/lib/dbus/machine-id exists
+dbus-uuidgen --ensure
+
+#################
+} # END OF FILE #
+#################
+

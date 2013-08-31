@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/w3m/w3m-0.5.2.tar.gz"
+MD5SUMLIST="ba06992d3207666ed1bf2dcf7c72bf58"
+REQUIRES="gc"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr \
+            --libexecdir=/usr/lib \
+            --sysconfdir=/etc
+make
+
+make DESTDIR=${FAKEROOT} install
+install -v -m644 -D doc/keymap.default ${FAKEROOT}/etc/w3m/keymap
+install -v -m644    doc/menu.default ${FAKEROOT}/etc/w3m/menu
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/w3m-0.5.2
+install -v -m644    doc/{HISTORY,READ*,keymap.*,menu.*,*.html} \
+                    ${FAKEROOT}/usr/share/doc/w3m-0.5.2
+
+#################
+} # END OF FILE #
+#################
+

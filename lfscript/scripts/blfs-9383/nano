@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://www.nano-editor.org/dist/v2.1/nano-2.1.10.tar.gz"
+MD5SUMLIST="f55bd9efeccf9da98950b54a4b0d872e"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr --sysconfdir=/etc/nano \
+    --enable-color --enable-multibuffer --enable-nanorc
+make
+
+make DESTDIR=${FAKEROOT} install
+install -v -m644 -D doc/nanorc.sample ${FAKEROOT}/etc/nano/nanorc.sample
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/nano-2.1.10
+install -v -m644 doc/{,man/,texinfo/}*.html ${FAKEROOT}/usr/share/doc/nano-2.1.10
+
+# (*) Configure and use sample configuration
+cp -v ${FAKEROOT}/etc/nano/nanorc{.sample,}
+sed -i "s/^# include/include/g" ${FAKEROOT}/etc/nano/nanorc
+
+#################
+} # END OF FILE #
+#################
+

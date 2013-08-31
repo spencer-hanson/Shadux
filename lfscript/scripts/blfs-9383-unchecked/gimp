@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://gd.tuwien.ac.at/graphics/gimp/gimp/v2.6/gimp-2.6.12.tar.bz2"
+MD5SUMLIST="9f876ee63a0c4a4c83f50f32fb3bbe63"
+REQUIRES="fontconfig gegl gtk+2 intltool"
+POSTINST="now"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr --sysconfdir=/etc
+make
+
+make DESTDIR=${FAKEROOT} install
+
+make DESTDIR=${FAKEROOT} install
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+echo '(web-browser "<browser> %s")' >> /etc/gimp/2.0/gimprc
+
+#################
+} # END OF FILE #
+#################
+

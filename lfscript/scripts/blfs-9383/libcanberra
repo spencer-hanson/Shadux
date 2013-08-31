@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.28.tar.gz"
+MD5SUMLIST="c198b4811598c4c161ff505e4531b02c"
+REQUIRES="libvorbis mate-conf"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+# (*) Convert source code to Mate
+convertToMate
+
+./configure --prefix=/usr --sysconfdir=/etc \
+        --with-mateconf-schema-file-dir=/etc/mate/1.1/mateconf/schemas
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

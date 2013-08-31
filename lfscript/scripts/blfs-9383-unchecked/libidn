@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnu.org/gnu/libidn/libidn-1.22.tar.gz"
+MD5SUMLIST="893a1df0cf3b28b72d248382eaeaca71"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr
+make
+
+make DESTDIR=${FAKEROOT} install
+find doc -name "Makefile*" -exec rm {} \;
+
+install -v -m755 -d \
+    ${FAKEROOT}/usr/share/doc/libidn-1.22/{api,java,specifications,tld}
+install -v -m644 doc/components* \
+                 doc/libidn.{pdf,ps,html} \
+    ${FAKEROOT}/usr/share/doc/libidn-1.22
+install -v -m644 doc/reference/html/* \
+    ${FAKEROOT}/usr/share/doc/libidn-1.22/api
+install -v -m644 doc/specifications/* \
+    ${FAKEROOT}/usr/share/doc/libidn-1.22/specifications
+install -v -m644 doc/tld/* ${FAKEROOT}/usr/share/doc/libidn-1.22/tld
+cp -v -R doc/java/* ${FAKEROOT}/usr/share/doc/libidn-1.22/java
+
+#################
+} # END OF FILE #
+#################
+

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://webkitgtk.org/webkit-1.6.1.tar.gz"
+MD5SUMLIST="c11743694b1b71dad287b2e7a9e73b05"
+REQUIRES="gperf gst-plugins-base gtk+2 gtk+3 icu libjpeg libpng libsoup libxslt sqlite which"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr --with-gtk=3.0 \
+            --enable-introspection
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

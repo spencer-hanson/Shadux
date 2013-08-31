@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# This file is part of LFScript. LFScript is released under the MIT license.
+# Copyright (C) 2007-2012 Marcel van den Boer
+
+WGETLIST="http://pub.mate-desktop.org/releases/1.1/mate-doc-utils-1.1.0.tar.bz2"
+MD5SUMLIST="dontverify"
+REQUIRES="mate-common which intltool pkgconfig libxslt rarian" # intltool libxml2 libxslt orbit2 pkgconfig python2 rarian
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./autogen.sh --prefix=${MATE_PREFIX} \
+        --mandir=${MATE_PREFIX}/share/man \
+\
+        --localstatedir=/var \
+        --sysconfdir=/etc \
+        --disable-scrollkeeper
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

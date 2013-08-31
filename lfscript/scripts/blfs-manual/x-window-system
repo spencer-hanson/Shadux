@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Last update: BLFS r9302 (2012-02-07)
+
+TAGS="group"
+REQUIRES="util-macros x7proto makedepend libXau libXdmcp libpthread-stubs
+          xcb-proto libxcb x7lib xcb-util mesalib x7app xcursorthemes x7font
+          xkeyboard-config x7server x7driver xterm"
+

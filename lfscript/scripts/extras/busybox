@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# This file is part of LFScript. LFScript is released under the MIT license.
+# Copyright (C) 2007-2012 Marcel van den Boer
+
+WGETLIST="http://busybox.net/downloads/busybox-1.19.3.tar.bz2"
+MD5SUMLIST="c3938e1ac59602387009bbf1dd1af7f6"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+make defconfig
+sed 's/# CONFIG_STATIC is not set/CONFIG_STATIC=y/' -i .config
+
+sed 's/CONFIG_FEATURE_HAVE_RPC=y/# CONFIG_FEATURE_HAVE_RPC is not set/' \
+        -i .config
+sed 's/CONFIG_FEATURE_MOUNT_NFS=y/# CONFIG_FEATURE_MOUNT_NFS is not set/' \
+        -i .config
+sed 's/CONFIG_FEATURE_INETD_RPC=y/# CONFIG_FEATURE_INETD_RPC is not set/' \
+        -i .config
+
+make
+
+cp -v busybox ${FAKEROOT}/bin
+
+#################
+} # END OF FILE #
+#################
+

@@ -1,0 +1,577 @@
+diff -Naur old//BOOK/general/genlib/libdrm.xml new//BOOK/general/genlib/libdrm.xml
+--- old//BOOK/general/genlib/libdrm.xml	2011-12-06 20:16:56.000000000 +0100
++++ new//BOOK/general/genlib/libdrm.xml	2012-01-31 19:19:11.850563776 +0100
+@@ -77,7 +77,7 @@
+     <para>Install <application>libdrm</application> by running the following
+     commands:</para>
+ 
+-<screen><userinput>./configure --prefix=$XORG_PREFIX &amp;&amp;
++<screen><userinput>./configure --prefix=$XORG_PREFIX --enable-nouveau-experimental-api &amp;&amp;
+ make</userinput></screen>
+ 
+     <para>To check the results, issue <command>make check</command>. Note that
+diff -Naur old//BOOK/general/genlib/libgcrypt.xml new//BOOK/general/genlib/libgcrypt.xml
+--- old//BOOK/general/genlib/libgcrypt.xml	2011-12-05 23:58:00.000000000 +0100
++++ new//BOOK/general/genlib/libgcrypt.xml	2012-01-31 19:19:11.850563776 +0100
+@@ -88,11 +88,11 @@
+     (you must have <!--<xref linkend="tetex"/> or--> <xref linkend="texlive"/>
+     installed to build the PDF and PostScript), then issue the following
+     commands:</para>
+-
++<!--
+ <screen><userinput>make -C doc pdf ps html &amp;&amp;
+ makeinfo --html --no-split -o doc/gcrypt_nochunks.html doc/gcrypt.texi &amp;&amp;
+ makeinfo --plaintext       -o doc/gcrypt.txt           doc/gcrypt.texi</userinput></screen>
+-
++-->
+     <para>To test the results, issue: <command>make check</command>.</para>
+ 
+     <para>Now, as the <systemitem class="username">root</systemitem>
+@@ -106,7 +106,7 @@
+     <para>If you built the additional documentation, install it by issuing the
+     following commands as the <systemitem class="username">root</systemitem>
+     user:</para>
+-
++<!--
+ <screen role="root"><userinput>install -v -m755 -d /usr/share/doc/libgcrypt-&libgcrypt-version;/html &amp;&amp;
+ install -v -m644 doc/gcrypt.html/* \
+                     /usr/share/doc/libgcrypt-&libgcrypt-version;/html &amp;&amp;
+@@ -114,7 +114,7 @@
+                     /usr/share/doc/libgcrypt-&libgcrypt-version; &amp;&amp;
+ install -v -m644 doc/gcrypt.{pdf,ps,dvi,txt,texi} \
+                     /usr/share/doc/libgcrypt-&libgcrypt-version;</userinput></screen>
+-
++-->
+   </sect2>
+ 
+   <sect2 role="content">
+diff -Naur old//BOOK/general/genlib/libidl.xml new//BOOK/general/genlib/libidl.xml
+--- old//BOOK/general/genlib/libidl.xml	2011-12-13 21:22:21.000000000 +0100
++++ new//BOOK/general/genlib/libidl.xml	2012-01-31 19:19:11.850563776 +0100
+@@ -82,14 +82,14 @@
+ make &amp;&amp;
+ 
+ makeinfo --plaintext -o libIDL2.txt libIDL2.texi</userinput></screen>
+-
++<!--
+     <para>If you have <application>teTeX</application> or
+     <application>Live TeX</application> installed and wish to
+     build alternate forms of the documentation, issue the following
+     command:</para>
+ 
+ <screen><userinput>make pdf ps</userinput></screen>
+-
++-->
+     <para>This package does not come with a test suite.</para>
+ 
+     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+@@ -99,13 +99,14 @@
+ install -v -m755 -d /usr/share/doc/libIDL-&libidl-version; &amp;&amp;
+ install -v -m644    README libIDL2.{txt,texi} \
+                     /usr/share/doc/libIDL-&libidl-version;</userinput></screen>
+-
++<!--
+     <para>If you built the additional documentation, issue the following
+     command as the <systemitem class="username">root</systemitem> user to
+     install it:</para>
+ 
+ <screen role="root"><userinput>install -v -m644 libIDL2.{pdf,dvi,ps} \
+                  /usr/share/doc/libIDL-&libidl-version;</userinput></screen>
++-->
+   </sect2>
+ 
+   <sect2 role="content">
+diff -Naur old//BOOK/general/genlib/libusb.xml new//BOOK/general/genlib/libusb.xml
+--- old//BOOK/general/genlib/libusb.xml	2011-11-16 00:41:27.000000000 +0100
++++ new//BOOK/general/genlib/libusb.xml	2012-01-31 19:19:11.850563776 +0100
+@@ -75,25 +75,25 @@
+ 
+ <screen><userinput>./configure --prefix=/usr &amp;&amp;
+ make</userinput></screen>
+-
++<!--
+     <para>If <application>Doxygen</application> is installed and you wish to
+     build the API documentation, issue the following command:</para>
+ 
+-<screen><userinput>make -C doc docs</userinput></screen> <!-- tested with doxygen -->
++<screen><userinput>make -C doc docs</userinput></screen>--> <!-- tested with doxygen -->
+ 
+     <para>This package does not come with a test suite.</para>
+ 
+     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+ 
+ <screen role="root"><userinput>make install</userinput></screen>
+-
++<!--
+     <para>If you built the API documentation, install it using the following
+     commands as the <systemitem class="username">root</systemitem> user:</para>
+ 
+ <screen role="root"><userinput>install -v -d -m755 /usr/share/doc/libusb-&libusb-version;/apidocs &amp;&amp;
+ install -v -m644    doc/html/* \
+                     /usr/share/doc/libusb-&libusb-version;/apidocs</userinput></screen>
+-
++-->
+   </sect2>
+ 
+   <sect2 role="configuration">
+diff -Naur old//BOOK/general/genlib/popt.xml new//BOOK/general/genlib/popt.xml
+--- old//BOOK/general/genlib/popt.xml	2011-10-24 22:28:43.000000000 +0200
++++ new//BOOK/general/genlib/popt.xml	2012-01-31 19:19:11.850563776 +0100
+@@ -81,14 +81,14 @@
+     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+ 
+ <screen role="root"><userinput>make install</userinput></screen>
+-
++<!--
+     <para>If you built the API documentation, install it using the following
+     commands issued by the <systemitem class="username">root</systemitem>
+     user:</para>
+ 
+ <screen role="root"><userinput>install -v -m755 -d /usr/share/doc/popt-&popt-version; &amp;&amp;
+ install -v -m644 doxygen/html/* /usr/share/doc/popt-&popt-version;</userinput></screen>
+-
++-->
+   </sect2>
+ 
+   <sect2 role="content">
+diff -Naur old//BOOK/general/sysutils/dbus.xml new//BOOK/general/sysutils/dbus.xml
+--- old//BOOK/general/sysutils/dbus.xml	2011-12-16 20:54:18.000000000 +0100
++++ new//BOOK/general/sysutils/dbus.xml	2012-01-31 19:19:11.854563796 +0100
+@@ -145,13 +145,13 @@
+     build of <application>D-BUS</application>.  If you would like to run the
+     unit tests, issue the following commands:</para>
+ 
+-    
++<!--
+ <screen><userinput>make distclean &amp;&amp;
+ ./configure --enable-tests --enable-asserts &amp;&amp;
+ make &amp;&amp;
+ make check &amp;&amp;
+ make distclean</userinput></screen>
+-
++-->
+     <para>Note there has been a report that the tests may fail if running
+     inside a Midnight Commander shell.</para>
+ 
+@@ -229,7 +229,7 @@
+       class="directory">/usr/local/share/dbus-1/services</filename> can
+       be added by performing the following commands as the
+       <systemitem class="username">root</systemitem> user:</para>
+-
++<!--
+ <screen role="root"><userinput>cat &gt; /etc/dbus-1/session-local.conf &lt;&lt; "EOF"
+ <literal>&lt;!DOCTYPE busconfig PUBLIC
+  "-//freedesktop//DTD D-BUS Bus Configuration 1.0//EN"
+@@ -241,7 +241,7 @@
+ 
+ &lt;/busconfig&gt;</literal>
+ EOF</userinput></screen>
+-
++-->
+       <!-- <para>Many packages will refuse to run if the file
+       <literal>/var/lib/dbus/machine-id</literal> does not exist, and
+       complain that <application>dbus</application> has not been properly
+@@ -306,7 +306,7 @@
+           session daemon when the specified program is stopped. You can also
+           start the session daemon in your system or personal startup scripts
+           by adding the following lines:</para>
+-
++<!--
+ <screen><userinput><literal># Start the D-BUS session daemon
+ eval `dbus-launch`
+ export DBUS_SESSION_BUS_ADDRESS</literal></userinput></screen>
+@@ -317,6 +317,7 @@
+ 
+ <screen><userinput><literal># Kill the D-BUS session daemon
+ kill $DBUS_SESSION_BUS_PID</literal></userinput></screen>
++-->
+         </listitem>
+ 
+         <listitem>
+diff -Naur old//BOOK/gnome/core/gconf.xml new//BOOK/gnome/core/gconf.xml
+--- old//BOOK/gnome/core/gconf.xml	2012-01-25 02:50:49.000000000 +0100
++++ new//BOOK/gnome/core/gconf.xml	2012-01-31 19:19:11.874563891 +0100
+@@ -139,7 +139,7 @@
+     the <quote>action</quote> file installed by
+     <application>GConf</application>. Issue the following commands as the
+     <systemitem class="username">root</systemitem> user:</para>
+-
++<!--
+ <screen role="root"><userinput>cat &gt; /etc/dbus-1/session-local.conf &lt;&lt; "EOF"
+ <literal>&lt;!DOCTYPE busconfig PUBLIC
+  "-//freedesktop//DTD D-BUS Bus Configuration 1.0//EN"
+@@ -155,7 +155,7 @@
+ ln -s -v <envar>$GNOME_PREFIX</envar>/share/polkit-1/actions/org.gnome.gconf.defaults.policy \
+          /usr/share/polkit-1/actions
+ </userinput></screen>
+-
++-->
+   </sect2>
+ 
+   <sect2 role="commands">
+diff -Naur old//BOOK/multimedia/libdriv/alsa-lib.xml new//BOOK/multimedia/libdriv/alsa-lib.xml
+--- old//BOOK/multimedia/libdriv/alsa-lib.xml	2012-01-24 04:05:41.000000000 +0100
++++ new//BOOK/multimedia/libdriv/alsa-lib.xml	2012-01-31 19:19:11.874563891 +0100
+@@ -100,6 +100,7 @@
+ install -v -m644 -D doc/asoundrc.txt \
+     /usr/share/doc/alsa-lib-&alsa-lib-version;/asoundrc.txt</userinput></screen>
+ 
++<!--
+    <para>If you have <application>Doxygen</application> installed and you wish to
+     build the library API documentation, run the following
+     commands from the top-level directory of the source tree:</para>
+@@ -111,7 +112,7 @@
+ 
+ <screen role="root"><userinput>install -v -d -m755 /usr/share/doc/alsa-&alsa-lib-version;/html &amp;&amp;
+ install -v -m644 doc/doxygen/html/* /usr/share/doc/alsa-&alsa-lib-version;/html</userinput></screen>
+-
++-->
+   </sect2>
+ 
+   <sect2 role="commands">
+diff -Naur old//BOOK/multimedia/libdriv/esound.xml new//BOOK/multimedia/libdriv/esound.xml
+--- old//BOOK/multimedia/libdriv/esound.xml	2012-01-24 04:05:41.000000000 +0100
++++ new//BOOK/multimedia/libdriv/esound.xml	2012-01-31 19:19:11.874563891 +0100
+@@ -90,9 +90,9 @@
+ 
+     <para>If you have <application>DocBook-utils</application> installed, still
+     as the <systemitem class="username">root</systemitem> user:</para>
+-
++<!--
+ <screen role="root"><userinput>chown -v root:root /usr/share/doc/esound-&esound-version;/*</userinput></screen>
+-
++-->
+   </sect2>
+ 
+   <sect2 role="commands">
+diff -Naur old//BOOK/multimedia/libdriv/libcanberra.xml new//BOOK/multimedia/libdriv/libcanberra.xml
+--- old//BOOK/multimedia/libdriv/libcanberra.xml	2012-01-25 01:52:39.000000000 +0100
++++ new//BOOK/multimedia/libdriv/libcanberra.xml	2012-01-31 19:19:11.878563908 +0100
+@@ -85,8 +85,11 @@
+     <para>Install <application>libcanberra</application> by running the following
+     commands:</para>
+ 
++<screen><userinput># (*) Convert source code to Mate
++convertToMate</userinput></screen>
++
+ <screen><userinput>./configure --prefix=/usr --sysconfdir=/etc \
+-    --with-gconf-schema-file-dir=$GNOME_SYSCONFDIR/gconf/schemas &amp;&amp;
++        --with-mateconf-schema-file-dir=/etc/mate/1.1/mateconf/schemas
+ make</userinput></screen>
+ 
+     <para>This package does not come with a test suite.</para>
+diff -Naur old//BOOK/networking/connect/dhcpcd.xml new//BOOK/networking/connect/dhcpcd.xml
+--- old//BOOK/networking/connect/dhcpcd.xml	2011-10-22 16:34:24.000000000 +0200
++++ new//BOOK/networking/connect/dhcpcd.xml	2012-01-31 19:19:11.882563930 +0100
+@@ -133,7 +133,7 @@
+       <indexterm zone="dhcpcd dhcpcd-config2">
+         <primary sortas="e-etc-sysconfig-dhcpcd">/etc/sysconfig/ifconfig.eth0 (dhcpcd)</primary>
+       </indexterm>
+-
++<!--
+ <screen role='root'><userinput>cat &gt; /etc/sysconfig/ifconfig.eth0 &lt;&lt; "EOF"
+ <literal>ONBOOT="yes"
+ IFACE="eth0"
+@@ -141,7 +141,7 @@
+ DHCP_START="<replaceable>&lt;insert appropriate start options here&gt;</replaceable>"
+ DHCP_STOP="-k <replaceable>&lt;insert additional stop options here&gt;</replaceable>"</literal>
+ EOF</userinput></screen>
+-
++-->
+       <para>For more information on the appropriate <envar>DHCP_START</envar> and
+       <envar>DHCP_STOP</envar> values, examine the man page for
+       <command>dhcpcd</command>.</para>
+diff -Naur old//BOOK/networking/connect/ppp.xml new//BOOK/networking/connect/ppp.xml
+--- old//BOOK/networking/connect/ppp.xml	2011-11-17 18:27:16.000000000 +0100
++++ new//BOOK/networking/connect/ppp.xml	2012-01-31 19:19:11.886563957 +0100
+@@ -155,7 +155,7 @@
+       </indexterm>
+ 
+     </sect3>
+-
++<!--
+     <sect3>
+       <title>Configuration Information</title>
+ 
+@@ -296,14 +296,14 @@
+ 
+     <sect4>
+       <title>Dialup Modem Connection</title>
+-
++-->
+ <!-- This section has been tested with various ISPs in Yekaterinburg,
+      Russia using Lucent WinModem. I cannot test it anymore, because
+      there is no free PCI slot for the modem in my new computer. However,
+      it is similar enough to GPRS for me to be sure that it still works,
+      and nobody complained about non-working dialup on the LFS LiveCD.
+      - Alexander E. Patrakov -->
+-
++<!--
+       <para>Dialup connections are established with the help of a modem
+       connected to a computer and the telephone line. The modem dials a
+       telephone number of the ISP's modem, and they exchange data using
+@@ -368,7 +368,7 @@
+ 
+     <sect4>
+       <title>GPRS and EDGE Connections</title>
+-
++-->
+ <!-- This section has been tested with GPRS service from MOTIV in
+      Yekaterinburg, Russia. According to forum messages, the procedure
+      also works with EDGE, but my cellular phone (Motorola C350) does not
+@@ -396,7 +396,7 @@
+       In most cases, billing is based on the telephone number, and the
+       username/password pair is not needed, as assumed in the example
+       below.</para>
+-
++<!--
+       <para>In order to configure a GPRS connection, two files have to
+       be created: a chat script that automates the connection procedure
+       (common for all GPRS accounts), and a peer file that provides
+@@ -454,7 +454,7 @@
+ 
+       <para>In order to stop the connection, run:</para>
+ <screen><userinput>killall pppd</userinput></screen>
+-
++-->
+       <!--  There are an infinite number of ways that computers can be
+       connected together. Trying to write a bootscript that can cope with every
+       possible network configuration is the road to madness. Andrew Benton -->
+diff -Naur old//BOOK/networking/netlibs/libsoup.xml new//BOOK/networking/netlibs/libsoup.xml
+--- old//BOOK/networking/netlibs/libsoup.xml	2010-10-17 19:55:40.000000000 +0200
++++ new//BOOK/networking/netlibs/libsoup.xml	2012-01-31 19:19:11.894563990 +0100
+@@ -88,7 +88,20 @@
+     <para>Install <application>libsoup</application> by running the following
+     commands:</para>
+ 
+-<screen><userinput>./configure --prefix=/usr &amp;&amp;
++<screen><userinput># (*) Convert source code to Mate
++convertToMate
++mv -v docs/reference/tmpl/soup-{gnome,mate}-features.sgml
++mv -v docs/reference/html/libsoup-2.4-soup-{gnome,mate}-features.html
++mv -v libsoup-{gnome,mate}-2.4.pc.in
++mv -v libsoup/soup-proxy-resolver-{gnome,mate}.h
++mv -v libsoup/soup-password-manager-{gnome,mate}.c
++mv -v libsoup/soup-{gnome,mate}.h
++mv -v libsoup/soup-{gnome,mate}-features.h
++mv -v libsoup/soup-proxy-resolver-{gnome,mate}.c
++mv -v libsoup/soup-{gnome,mate}-features.c
++mv -v libsoup/soup-password-manager-{gnome,mate}.h</userinput></screen>
++
++<screen><userinput>./configure --prefix=/usr --disable-ssl &amp;&amp;
+ make</userinput></screen>
+ 
+     <para>To test the results, issue: <command>make check</command>.</para>
+diff -Naur old//BOOK/postlfs/security/consolekit.xml new//BOOK/postlfs/security/consolekit.xml
+--- old//BOOK/postlfs/security/consolekit.xml	2010-04-21 21:10:06.000000000 +0200
++++ new//BOOK/postlfs/security/consolekit.xml	2012-01-31 19:19:11.894563990 +0100
+@@ -90,8 +90,7 @@
+     commands:</para>
+ 
+ <screen><userinput>./configure --prefix=/usr --sysconfdir=/etc \
+-    --libexecdir=/usr/lib/ConsoleKit --localstatedir=/var \
+-    --enable-pam-module &amp;&amp;
++    --libexecdir=/usr/lib/ConsoleKit --localstatedir=/var
+ make</userinput></screen>
+ 
+     <para>This package does not come with a test suite.</para>
+diff -Naur old//BOOK/postlfs/security/nss.xml new//BOOK/postlfs/security/nss.xml
+--- old//BOOK/postlfs/security/nss.xml	2011-11-29 02:44:50.000000000 +0100
++++ new//BOOK/postlfs/security/nss.xml	2012-01-31 19:19:11.898564015 +0100
+@@ -90,11 +90,16 @@
+     <para>Install <application>NSS</application> by running the following
+     commands:</para>
+ 
+-<screen><userinput>bash
++<screen><userinput># (*) Fixes 'error: "__GNUC_MINOR" is not defined' in network-manager
++sed 's/__GNUC__ > 3/defined(__GNUC__) \&amp;\&amp; (__GNUC__ > 3)/g' \
++        -i mozilla/security/nss/lib/util/pkcs11n.h
++sed 's/__GNUC_MINOR &lt; 5/__GNUC_MINOR__ &lt; 5/g' \
++        -i mozilla/security/nss/lib/util/pkcs11n.h</userinput></screen>
++
++<screen><userinput>(
+ [ $(arch) = x86_64 ] &amp;&amp; export USE_64=1
+ export BUILD_OPT=1 &amp;&amp;
+-cat /usr/include/sqlite3.h &amp;&gt; /dev/null &amp;&amp;
+-export NSS_USE_SYSTEM_SQLITE=1
++cat /usr/include/sqlite3.h &amp;&gt; /dev/null &amp;&amp; export NSS_USE_SYSTEM_SQLITE=1
+ export NSPR_INCLUDE_DIR=/usr/include/nspr &amp;&amp;
+ export USE_SYSTEM_ZLIB=1 &amp;&amp;
+ export ZLIB_LIBS=-lz &amp;&amp;
+@@ -115,7 +120,7 @@
+     recommendation of
+     <command>"export HOST=localhost DOMSUF=localdomain"</command> and issue the
+     following commands:</para>
+-
++<!--
+ <screen><userinput>bash
+ 
+ export NSS_LINUXDIR=$(basename `ls -d $PWD/mozilla/dist/Linux*`) &amp;&amp;
+@@ -130,7 +135,7 @@
+ grep Passed $TEST_RESULTSDIR/$(hostname).1/results.html | wc -l &amp;&amp;
+ 
+ exit</userinput></screen>
+-
++-->
+     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+ 
+ <screen role="root"><userinput>export NSS_LINUXDIR=$(basename `ls -d $PWD/mozilla/dist/Linux*`) &amp;&amp;
+@@ -147,7 +152,7 @@
+     shell started at the beginning of the installation to restore the
+     environment to the original state.</para>
+ 
+-<screen><userinput>exit</userinput></screen>
++<screen><userinput>)</userinput></screen>
+ 
+   </sect2>
+ 
+diff -Naur old//BOOK/pst/xml/docbook-xsl.xml new//BOOK/pst/xml/docbook-xsl.xml
+--- old//BOOK/pst/xml/docbook-xsl.xml	2011-10-26 06:34:14.000000000 +0200
++++ new//BOOK/pst/xml/docbook-xsl.xml	2012-01-31 19:19:11.898564015 +0100
+@@ -172,7 +172,7 @@
+            "http://docbook.sourceforge.net/release/xsl/current" \
+            "/usr/share/xml/docbook/xsl-stylesheets-&docbook-xsl-version;" \
+     /etc/xml/catalog</userinput></screen>
+-
++<!--
+       <para>Occasionally, you may find the need to install other versions of
+       the XSL stylesheets as some projects reference a specific version. One
+       example is BLFS-6.0, which required the 1.67.2 version. In these instances
+@@ -189,7 +189,7 @@
+            "http://docbook.sourceforge.net/release/xsl/<replaceable>&lt;version&gt;</replaceable>" \
+            "/usr/share/xml/docbook/xsl-stylesheets-<replaceable>&lt;version&gt;</replaceable>" \
+     /etc/xml/catalog</userinput></screen>
+-
++-->
+ <!-- Commented uot until be sure that there is no objetions from any of the
+      {C,H}LFS editors
+ 
+diff -Naur old//BOOK/x/installing/libxcb.xml new//BOOK/x/installing/libxcb.xml
+--- old//BOOK/x/installing/libxcb.xml	2011-12-09 04:40:04.000000000 +0100
++++ new//BOOK/x/installing/libxcb.xml	2012-01-31 19:19:11.902564026 +0100
+@@ -132,7 +132,7 @@
+       cases. If it is found that these bugs affect an application in use, add
+       the following to your system or personal profile:</para>
+ 
+-<screen><literal>export LIBXCB_ALLOW_SLOPPY_LOCK=1</literal></screen>
++<screen><userinput>export LIBXCB_ALLOW_SLOPPY_LOCK=1</userinput></screen>
+ 
+     </sect3>
+ 
+diff -Naur old//BOOK/x/installing/mesalib.xml new//BOOK/x/installing/mesalib.xml
+--- old//BOOK/x/installing/mesalib.xml	2011-12-11 00:42:19.000000000 +0100
++++ new//BOOK/x/installing/mesalib.xml	2012-01-31 19:19:11.906564047 +0100
+@@ -127,9 +127,11 @@
+     Execute the following command as the
+     <systemitem class="username">root</systemitem> user:</para>
+ 
+-<screen role="root"><userinput>ln -s -v ${XORG_PREFIX}/include/GL  /usr/include &amp;&amp;
+-ln -s -v ${XORG_PREFIX}/include/EGL /usr/include &amp;&amp;
+-ln -s -v ${XORG_PREFIX}/include/KHR /usr/include</userinput></screen>
++<screen role="root"><userinput>if [ "${XORG_PREFIX}" != "/usr" ]; then
++    ln -s -v ${XORG_PREFIX}/include/GL  /usr/include &amp;&amp;
++    ln -s -v ${XORG_PREFIX}/include/EGL /usr/include &amp;&amp;
++    ln -s -v ${XORG_PREFIX}/include/KHR /usr/include
++fi</userinput></screen>
+ 
+   </sect2>
+ 
+diff -Naur old//BOOK/x/installing/x7lib.xml new//BOOK/x/installing/x7lib.xml
+--- old//BOOK/x/installing/x7lib.xml	2011-12-06 20:16:56.000000000 +0100
++++ new//BOOK/x/installing/x7lib.xml	2012-01-31 19:19:11.906564047 +0100
+@@ -154,9 +154,11 @@
+     to satisfy the expected environment of several packages.
+     Execute the following commands as the root user:</para>
+ 
+-<screen role="root"><userinput>ln -sv $XORG_PREFIX/lib/X11 /usr/lib/X11 &amp;&amp;
+-ln -sv $XORG_PREFIX/include/X11 /usr/include/X11 &amp;&amp;
+-ln -sv $XORG_PREFIX /usr/X11R6</userinput></screen>
++<screen role="root"><userinput>if [ "${XORG_PREFIX}" != "/usr" ]; then
++    ln -sv $XORG_PREFIX/lib/X11 /usr/lib/X11 &amp;&amp;
++    ln -sv $XORG_PREFIX/include/X11 /usr/include/X11 &amp;&amp;
++    ln -sv $XORG_PREFIX /usr/X11R6
++fi</userinput></screen>
+ 
+   </sect2>
+ 
+diff -Naur old//BOOK/x/lib/gtk+2.xml new//BOOK/x/lib/gtk+2.xml
+--- old//BOOK/x/lib/gtk+2.xml	2011-12-12 06:30:20.000000000 +0100
++++ new//BOOK/x/lib/gtk+2.xml	2012-01-31 19:19:11.914564088 +0100
+@@ -130,10 +130,10 @@
+       must be copied and/or generated. Generate them using the following
+       commands as the <systemitem class="username">root</systemitem>
+       user:</para>
+-
++<!--
+ <screen role="root"><userinput>gdk-pixbuf-query-loaders > /etc/gtk-2.0/gdk-pixbuf.loaders &amp;&amp;
+ gtk-query-immodules-2.0  > /etc/gtk-2.0/gtk.immodules</userinput></screen>
+-
++-->
+     </warning>
+ 
+   </sect2>
+@@ -191,7 +191,7 @@
+        <xref linkend="gnome-themes"/>) or a Gtk icon theme (such as
+        <xref linkend="gnome-icon-theme"/>) you can set your prefences in
+        <filename>~/.gtkrc-2.0</filename>:</para>
+-
++<!--
+ <screen><userinput>cat &gt; ~/.gtkrc-2.0 &lt;&lt; "EOF"
+ include "/usr/share/themes/<replaceable>Glider</replaceable>/gtk-2.0/gtkrc"
+ gtk-icon-theme-name = "<replaceable>hicolor</replaceable>"
+@@ -216,7 +216,7 @@
+       themes you like.</para>
+ 
+     </sect3>
+-
++-->
+   </sect2>
+ 
+   <sect2 role="content">
+diff -Naur old//BOOK/x/lib/pango.xml new//BOOK/x/lib/pango.xml
+--- old//BOOK/x/lib/pango.xml	2011-12-03 21:54:08.000000000 +0100
++++ new//BOOK/x/lib/pango.xml	2012-01-31 19:19:11.914564088 +0100
+@@ -146,12 +146,12 @@
+ 
+     <sect3>
+       <title>Configuration Information</title>
+-
++<!--
+       <para>The <application>Pango</application> module path is specified by
+       the key <userinput><parameter>Pango/ModulesPath</parameter></userinput>
+       in the <application>Pango</application> config database, which is read
+       from the config files listed above.</para>
+-
++-->
+     </sect3>
+ 
+   </sect2>
+diff -Naur old//BOOK/xsoft/graphweb/firefox.xml new//BOOK/xsoft/graphweb/firefox.xml
+--- old//BOOK/xsoft/graphweb/firefox.xml	2012-01-28 16:46:15.000000000 +0100
++++ new//BOOK/xsoft/graphweb/firefox.xml	2012-01-31 19:20:55.951072829 +0100
+@@ -147,7 +147,7 @@
+ # ac_add_options --with-system-libevent
+ 
+ mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir
+-ac_add_options --enable-official-branding
++# ac_add_options --enable-official-branding
+ ac_add_options --prefix=/usr
+ 
+ # The rest of these options have no effect if you&apos;re
+@@ -197,7 +197,7 @@
+     <para>If you <emphasis>have</emphasis> linked against an already installed
+     <application>Xulrunner</application>, as the
+     <systemitem class="username">root</systemitem> user:</para>
+-
++<!--
+ <screen role="root"><userinput>make -C firefox-build-dir install &amp;&amp;
+ rm /usr/bin/firefox &amp;&amp;
+ cat &gt; /usr/bin/firefox &lt;&lt; "EOF" &amp;&amp;
+@@ -208,6 +208,7 @@
+ mkdir -p /usr/lib/mozilla/plugins &amp;&amp;
+ ln -sv ../mozilla/plugins /usr/lib/firefox-&firefox-version; &amp;&amp;
+ chown -R -v root:root /usr/lib/firefox-&firefox-version;</userinput></screen>
++-->
+   </sect2>
+ 
+   <sect2 role="commands">

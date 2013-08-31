@@ -1,0 +1,73 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="ftp://ftp.isc.org/isc/dhcp/4.2.3-P2/dhcp-4.2.3-P2.tar.gz
+          http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-20120206.tar.bz2
+          http://www.linuxfromscratch.org/patches/blfs/svn/dhcp-4.2.3-P2-iproute2-1.patch
+          http://www.linuxfromscratch.org/patches/blfs/svn/dhcp-4.2.3-P2-missing_ipv6-1.patch"
+MD5SUMLIST="14f57fd580d01633d0fad4809007a801
+            dontverify
+            dontverify
+            dontverify"
+REQUIRES="net-tools"
+POSTINST="now"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../dhcp-4.2.3-P2-missing_ipv6-1.patch
+
+patch -Np1 -i ../dhcp-4.2.3-P2-iproute2-1.patch
+
+sed -i 's%\(^sbindir =\).*%\1 @prefix@@sbindir@%' server/Makefile.in
+./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+            --sbindir=/sbin                                      \
+            --with-srv-lease-file=/var/state/dhcp/dhcpd.leases   \
+            --with-srv6-lease-file=/var/state/dhcp/dhcpd6.leases \
+            --with-cli-lease-file=/var/state/dhclient.leases     \
+            --with-cli6-lease-file=/var/state/dhclient6.leases
+sed -i 's/-Werror//' {client,common,dst,omapip,relay,server,tests}/Makefile
+
+sed -i 's/ client//' Makefile
+
+sed -i 's/ dhcpctl relay server//' Makefile
+
+make
+
+make DESTDIR=${FAKEROOT} install
+install -v -m755 client/scripts/linux ${FAKEROOT}/sbin/dhclient-script
+
+mkdir -pv ${FAKEROOT}/var/state/dhcp
+
+mkdir -pv ${FAKEROOT}/var/state
+
+includeBootscript dhcp
+
+cat > ${FAKEROOT}/etc/dhcpd.conf << "EOF"
+default-lease-time 72000;
+max-lease-time 144000;
+
+subnet <192.168.5.0> netmask <255.255.255.0> {
+  range <192.168.5.10> <192.168.5.240>;
+  option broadcast-address <192.168.5.255>;
+  option routers <192.168.5.1>;
+}
+EOF
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+touch /var/state/dhcp/dhcpd.leases
+
+#################
+} # END OF FILE #
+#################
+

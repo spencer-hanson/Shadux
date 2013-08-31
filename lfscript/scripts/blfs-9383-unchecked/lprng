@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://sourceforge.net/projects/lprng/files/lprng/LPRng-3.8.B/LPRng-3.8.B.tar.gz
+          http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-20120206.tar.bz2"
+MD5SUMLIST="74c384b262c490dee31d7e2fa28ecf1d
+            dontverify"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr               \
+            --libexecdir=/usr/lib/lprng \
+            --sysconfdir=/etc           \
+            --enable-shared
+make
+
+make DESTDIR=${FAKEROOT} install
+
+includeBootscript lprng
+
+#################
+} # END OF FILE #
+#################
+

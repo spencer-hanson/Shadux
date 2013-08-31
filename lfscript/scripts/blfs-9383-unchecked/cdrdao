@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/cdrdao/cdrdao-1.2.2.tar.bz2
+          http://www.linuxfromscratch.org/patches/blfs/svn/cdrdao-1.2.2-gcc43_fixes-2.patch
+          http://www.linuxfromscratch.org/patches/blfs/svn/cdrdao-1.2.2-glibc210_fixes-1.patch"
+MD5SUMLIST="f0cbf36907406cb4f4c568f9e6669a34
+            dontverify
+            dontverify"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../cdrdao-1.2.2-gcc43_fixes-2.patch
+patch -Np1 -i ../cdrdao-1.2.2-glibc210_fixes-1.patch
+./configure --prefix=/usr
+make
+
+make DESTDIR=${FAKEROOT} install
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/cdrdao-1.2.2
+install -v -m644 README* ${FAKEROOT}/usr/share/doc/cdrdao-1.2.2
+
+#################
+} # END OF FILE #
+#################
+

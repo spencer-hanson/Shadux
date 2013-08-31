@@ -1,0 +1,57 @@
+#!/bin/bash
+set -e
+
+BOOK="${1}"
+shift
+
+if [ "${BOOK}" == "lfs" ]; then
+    REV="9742"
+elif [ "${BOOK}" == "blfs" ]; then
+    REV="9383"
+    rm -rf NEW_SCRIPTS/{extras,contrib}
+    mkdir -p NEW_SCRIPTS/{extras,contrib}
+else
+    echo "Usage: bash factory [lfs | blfs] header"
+    exit 1
+fi
+
+rm -rf NEW_SCRIPTS/${BOOK}-${REV}{,-unchecked}
+mkdir -p NEW_SCRIPTS/${BOOK}-${REV}{,-unchecked}
+
+bash fetch ${BOOK} ${REV}
+
+echo "*** Running ScriptFactoryII"
+case $(uname -m) in
+i?86)
+    ARCH="i386"
+    ;;
+*)
+    ARCH="$(uname -m)"
+    ;;
+esac
+
+JAVA="../lfc/build/vm-${ARCH}"
+if [ "$(which java 2> /dev/null)" != "" ]; then
+    JAVA="java"
+fi
+
+time (
+    ${JAVA} -cp ../lfc/build/libLFClass.jar org.lfscript.factory2.XMLFactory \
+            ${BOOK} patched-xml/${BOOK}-${REV}-xml \
+            NEW_SCRIPTS/${BOOK}-${REV}-unchecked r${REV} ${@}
+)
+
+rm -rf patched-xml
+
+# Whitelist
+if [ "${BOOK}" == "blfs" ] && [ -r blfs-${REV}.list ]; then
+    echo -n "*** Processing whitelist... "
+    for f in $(cat blfs-${REV}.list | grep -v "^#"); do
+        mv NEW_SCRIPTS/blfs-${REV}{-unchecked,}/${f}
+    done
+    echo "OK"
+else
+    rm -rf NEW_SCRIPTS/${BOOK}-${REV}
+    mv NEW_SCRIPTS/${BOOK}-${REV}{-unchecked,}
+fi
+

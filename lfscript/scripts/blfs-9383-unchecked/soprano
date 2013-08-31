@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/soprano/soprano-2.5.63.tar.bz2
+          http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-20120206.tar.bz2"
+MD5SUMLIST="bef6147f1245cd99aa9ad1a37f7d48ac
+            dontverify"
+REQUIRES="cmake qt4 raptor rasqal redland"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+mkdir build
+cd build
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+make
+
+make DESTDIR=${FAKEROOT} install
+
+install -m755 -d ${FAKEROOT}/srv/soprano
+
+cat > ${FAKEROOT}/etc/sysconfig/soprano <<EOF
+# Begin ${FAKEROOT}/etc/sysconfig/soprano
+
+SOPRANO_STORAGE="/srv/soprano"
+SOPRANO_BACKEND="virtuosobackend"        # virtuoso, sesame2, redland
+SOPRANO_OPTIONS="--with-index"           # using CLucene index
+#SOPRANO_OPTIONS="$SOPRANO_OPTIONS --port 4711"  # Default port is 5000
+
+# End ${FAKEROOT}/etc/sysconfig/soprano
+EOF
+
+includeBootscript soprano
+
+#################
+} # END OF FILE #
+#################
+

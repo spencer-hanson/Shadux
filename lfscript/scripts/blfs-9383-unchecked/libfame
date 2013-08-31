@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/fame/libfame-0.9.1.tar.gz
+          http://www.linuxfromscratch.org/patches/blfs/svn/libfame-0.9.1-gcc34-1.patch"
+MD5SUMLIST="880085761e17a3b4fc41f4f6f198fd3b
+            dontverify"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../libfame-0.9.1-gcc34-1.patch
+sed -i 's/$CC --version/$CC -dumpversion/' configure
+./configure --prefix=/usr
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

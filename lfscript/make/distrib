@@ -1,0 +1,76 @@
+#!/bin/bash
+# Builds a redistributable archive containing LFScript.
+# Usage: "sudo bash distrib $(whoami)"
+set -e
+
+main() {
+    local LFSCRIPT="lfscript4-revision21"
+
+    if [ "$(whoami)" != "root" ]; then
+        echo "Please run this script as root."
+        exit 1
+    fi
+
+    # Prepare
+    rm -rf tmp ${LFSCRIPT}.tar.bz2
+    mkdir -p tmp/${LFSCRIPT}/make
+
+    # Copy files that make up lfscript
+    cp    ../lfscript     tmp/${LFSCRIPT}
+    cp -R ../lfc          tmp/${LFSCRIPT}
+    cp -R ../scripts      tmp/${LFSCRIPT}
+    cp -R ../fsos         tmp/${LFSCRIPT}
+    cp -R ../factory      tmp/${LFSCRIPT}
+    cp -R ../make/sources tmp/${LFSCRIPT}
+
+    cp -R ../make/distrib tmp/${LFSCRIPT}/make
+
+    pushd tmp
+    pushd ${LFSCRIPT}
+
+    # Rebuild LFClass jar and 32-bit binary from source
+    pushd lfc
+    bash build.sh purge # Purge to test download sites are still avialable
+    bash build.sh bin
+    rm -rf build/lfclass-i386 # Remove embedded LFC, leave the VM
+    bash build.sh pure
+    bash build.sh jar
+    cp -v ../../../vm-x86_64 build # Add prebuilt 64-bit binary
+    popd # lfscript
+
+    # Remove old scripts
+    pushd scripts
+    rm -rf blfs-*-unchecked contrib extras
+    rm -rf $(ls | grep '^blfs-[0-9]\{4,5\}$')
+    rm -rf $(ls | grep '^lfs-[0-9]\{4,5\}$')
+    popd # lfscript
+
+    # Rebuild scripts using ScriptFactory
+    pushd factory
+    rm -rf NEW_SCRIPTS patched-xml
+    bash factory lfs header
+    bash factory blfs header
+    mv -v NEW_SCRIPTS/* ../scripts
+    rm -rf NEW_SCRIPTS books
+    popd # lfscript
+
+    # Set proper permissions and archive
+    popd # tmp
+    find . -type d -exec chmod 755 {} \;
+    find . -type f -exec chmod 644 {} \;
+    chmod 755 ${LFSCRIPT}/lfscript
+    chmod 755 ${LFSCRIPT}/lfc/build/vm-i386
+    chmod 755 ${LFSCRIPT}/lfc/build/vm-x86_64
+    chmod 755 ${LFSCRIPT}/fsos/merge_cds
+    chown -R root:root ${LFSCRIPT}
+    tar cjf ../${LFSCRIPT}.tar.bz2 ${LFSCRIPT}
+    popd # make
+    rm -rf tmp
+
+    if [ "${1}" != "" ]; then
+        chown ${1}:${1} ${LFSCRIPT}.tar.bz2
+    fi
+}
+
+main $@
+

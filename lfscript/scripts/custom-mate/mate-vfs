@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# This file is part of LFScript. LFScript is released under the MIT license.
+# Copyright (C) 2007-2012 Marcel van den Boer
+
+WGETLIST="http://pub.mate-desktop.org/releases/1.1/mate-vfs-1.1.0.tar.bz2"
+MD5SUMLIST="dontverify"
+REQUIRES="mate-mime-data" # dbus-glib gconf gnome-mime-data orbit2 pkgconfig
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./autogen.sh --prefix=${MATE_PREFIX} \
+        --sysconfdir=/etc/mate/${MATE_RELEASE} \
+        --libexecdir=${MATE_PREFIX}/lib/mate-vfs \
+\
+        --localstatedir=/var \
+        --disable-static \
+        --disable-hal \
+        --disable-howl \
+        --disable-gnutls \
+        --enable-avahi \
+        --enable-openssl \
+        --enable-samba
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# This file is part of LFScript. LFScript is released under the MIT license.
+# Copyright (C) 2007-2012 Marcel van den Boer
+
+WGETLIST="http://pub.mate-desktop.org/releases/1.1/mate-panel-1.1.1.tar.bz2"
+MD5SUMLIST="dontverify"
+REQUIRES="mate-control-center librsvg" # gnome-desktop gnome-menus libbonoboui libcanberra libgweather librsvg libwnck orbit2 pkgconfig
+POSTINST="true"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./autogen.sh --prefix=${MATE_PREFIX} \
+        --sysconfdir=/etc/mate/${MATE_RELEASE} \
+        --localstatedir=/var/lib \
+        --libexecdir=${MATE_PREFIX}/lib/mate-panel \
+\
+        --mandir=${MATE_PREFIX}/share/man \
+\
+        --disable-static \
+        --disable-scrollkeeper \
+        --enable-introspection \
+        --enable-matecomponent
+make
+
+make DESTDIR=${FAKEROOT} install
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+# (*) Set up and populate Mate's panels
+pushd /etc/mate/*/mateconf/schemas
+
+mateconftool-2 \
+    --config-source="$(mateconftool-2 --get-default-source)" --direct \
+    --load panel-default-setup.entries
+
+popd
+
+#################
+} # END OF FILE #
+#################
+

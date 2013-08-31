@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Last update: BLFS r9302 (2012-02-07)
+
+WGETLIST="http://cpan.org/authors/id/G/GR/GRANTM/XML-Simple-2.18.tar.gz"
+MD5SUMLIST="dontverify"
+REQUIRES="perl-xml-parser perl-tie-ixhash"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+perl Makefile.PL
+make
+make test
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

@@ -1,0 +1,74 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://www.gnucash.org/pub/gnucash/sources/stable/gnucash-2.2.4.tar.bz2"
+MD5SUMLIST="f521cea858ee7223325114ec98de86ca"
+REQUIRES="goffice gtkhtml guile slib"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -i 's|xml::${sysconfdir}|xml::${GNOME_SYSCONFDIR}|' configure
+
+./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --libexecdir=/usr/lib \
+    --with-gconf-schema-file-dir=$GNOME_SYSCONFDIR/gconf/schemas
+make
+
+make DESTDIR=${FAKEROOT} install
+
+mv -v ${FAKEROOT}/usr/share/gnucash/doc ${FAKEROOT}/usr/share/doc/gnucash-2.2.4
+ln -v -s ../doc/gnucash-2.2.4 ${FAKEROOT}/usr/share/gnucash/doc
+
+for FILENAME in doc/{misc*,gnome*,generic*,build*}.txt \
+                doc/{gtkrc*,TRANSLATION_HOWTO,README.translator.txt} \
+                doc/README.{build-system,OFX,HBCI}
+do
+    install -v -m644 ${FILENAME} ${FAKEROOT}/usr/share/doc/gnucash-2.2.4
+done
+
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/gnucash-2.2.4/api/engine
+install -v -m644    src/doc/{TODO*,*.txt,*.html} \
+                    ${FAKEROOT}/usr/share/doc/gnucash-2.2.4/api
+install -v -m644    src/engine/*.txt \
+                    ${FAKEROOT}/usr/share/doc/gnucash-2.2.4/api/engine
+
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/gnucash-2.2.4/{design,api}/html
+install -v -m644    src/doc/design/gnucash-design.html/* \
+                    ${FAKEROOT}/usr/share/doc/gnucash-2.2.4/design/html
+install -v -m644    src/doc/design/gnucash-design.{pdf,ps,dvi} \
+                    ${FAKEROOT}/usr/share/doc/gnucash-2.2.4/design
+install -v -m644    src/doc/html/* \
+                    ${FAKEROOT}/usr/share/doc/gnucash-2.2.4/api/html
+
+./configure --prefix=/usr \
+            --localstatedir=/var/lib
+make
+
+make -C help  html
+make -C guide html
+make -C guide pdf
+
+make DESTDIR=${FAKEROOT} install
+
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/gnucash-2.2.0/{users_guide,help}
+cp -v -R            help/C/gnucash-help/* \
+                    ${FAKEROOT}/usr/share/doc/gnucash-2.2.0/help
+cp -v -R            guide/C/gnucash-guide/* \
+                    ${FAKEROOT}/usr/share/doc/gnucash-2.2.0/users_guide
+install -v -m644    guide/C/gnucash-guide.pdf \
+                    ${FAKEROOT}/usr/share/doc/gnucash-2.2.0
+
+#################
+} # END OF FILE #
+#################
+

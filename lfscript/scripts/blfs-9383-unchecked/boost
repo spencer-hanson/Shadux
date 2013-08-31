@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/boost/boost_1_45_0.tar.bz2"
+MD5SUMLIST="d405c606354789d0426bc07bea617e58"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./bootstrap.sh --prefix=/usr --libdir=/usr/lib
+./bjam install
+
+#################
+} # END OF FILE #
+#################
+

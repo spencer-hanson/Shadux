@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# This file is part of LFScript. LFScript is released under the MIT license.
+# Copyright (C) 2007-2012 Marcel van den Boer
+
+WGETLIST="http://pub.mate-desktop.org/releases/1.1/mate-conf-1.1.1.tar.bz2"
+MD5SUMLIST="dontverify"
+REQUIRES="mate-corba gobject-introspection dbus-glib polkit gtk+2" # dbus-glib gtk+2 orbit2 pkgconfig polkit
+# gtk+2 req'd for building mate-session-manager -> "mateconf-sanity-check-2"
+POSTINST="true"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+# Fix hardcoded sysconf path (was GConf-2.28.1-sysconfdir-1.patch):
+sed 's_/etc/mateconf_@sysmateconfdir@_g' -i mateconf/default.path.in
+sed 's@"xml:merged:/etc/mateconf/mateconf.xml.system"@g_strconcat("xml:merged:", MATECONF_ETCDIR, "/mateconf.xml.system", NULL)@g' \
+        -i mateconf/mateconfd.c
+
+./autogen.sh --prefix=${MATE_PREFIX} \
+        --sysconfdir=/etc/mate/${MATE_RELEASE} \
+        --libexecdir=${MATE_PREFIX}/lib/MateConf \
+\
+            --mandir=${MATE_PREFIX}/share/man \
+\
+        --localstatedir=/var \
+        --disable-static \
+        --enable-defaults-service \
+        --enable-gsettings-backend=no \
+        --enable-introspection
+make
+
+make DESTDIR=${FAKEROOT} install
+install -v -m755 -d \
+        ${FAKEROOT}/etc/mate/${MATE_RELEASE}/mateconf/mateconf.xml.system
+
+#cat > ${FAKEROOT}/etc/dbus-1/system-local.conf << "EOF"
+#<!DOCTYPE busconfig PUBLIC
+# "-//freedesktop//DTD D-BUS Bus Configuration 1.0//EN"
+# "http://www.freedesktop.org/standards/dbus/1.0/busconfig.dtd">
+#<busconfig>
+#
+#  <!-- Search for .conf files in /etc/gnome/2.30.2/dbus-1/system.d -->
+#  <includedir>/etc/gnome/2.30.2/dbus-1/system.d</includedir>
+#
+#  <!-- Search for .service files in $GNOME_PREFIX/share/dbus-1/system-services -->
+#  <!-- <servicedir>$GNOME_PREFIX/share/dbus-1/system-services</servicedir> -->
+#
+#</busconfig>
+#EOF
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+# (*) Install MateConf schemas
+unset MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL
+export MATECONF_CONFIG_SOURCE="$(mateconftool-2 --get-default-source)"
+for schemas in $(ls -1 /etc/mate/*/mateconf/schemas/*.schemas); do
+    mateconftool-2 --makefile-install-rule ${schemas}
+done
+
+#################
+} # END OF FILE #
+#################
+

@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/nautilus/3.2/nautilus-2.30.1.tar.bz2"
+MD5SUMLIST="e1bda55f9c6cd223561da066dbc4e863"
+REQUIRES="gnome-desktop libunique orbit2 pkgconfig shared-mime-info"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+            --sysconfdir=/etc/gnome/3.2.2 \
+            --libexecdir=$(pkg-config \
+                --variable=prefix ORBit-2.0)/lib/nautilus
+make
+
+make DESTDIR=${FAKEROOT} install
+install -v -m755 -d $(pkg-config \
+    --variable=prefix ORBit-2.0)/share/doc/nautilus-2.30.1
+install -v -m644 docs/*.{txt,dia,pdf,sxw,faq,html} $(pkg-config \
+    --variable=prefix ORBit-2.0)/share/doc/nautilus-2.30.1
+
+#################
+} # END OF FILE #
+#################
+

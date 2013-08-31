@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.8.9/src/nspr-4.8.9.tar.gz
+          http://www.linuxfromscratch.org/patches/downloads/nspr/nspr-4.8.9-pkgconfig-2.patch"
+MD5SUMLIST="60770d45dc08c0f181b22cdfce5be3e8
+            dontverify"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../nspr-4.8.9-pkgconfig-2.patch
+cd mozilla/nsprpub
+sed -i 's#^\(RELEASE_BINS =\).*#\1#' pr/src/misc/Makefile.in
+./configure --prefix=/usr --with-mozilla --with-pthreads \
+  $([ $(arch) = x86_64 ] && echo --enable-64bit)
+make
+
+make DESTDIR=${FAKEROOT} install
+cp -v -LR dist/include/nspr ${FAKEROOT}/usr/include
+
+#################
+} # END OF FILE #
+#################
+

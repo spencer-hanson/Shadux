@@ -1,0 +1,99 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://anduin.linuxfromscratch.org/sources/BLFS/svn/m/mysql-5.5.17.tar.gz
+          http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-20120206.tar.bz2"
+MD5SUMLIST="dcb6a06e68c5e8f30f57b15300730c9c
+            dontverify"
+TAGS="preinst"
+POSTINST="now"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+cmake
+
+cmake .
+    -LH
+
+cmake .                                     \
+   -DSYSCONFDIR=/etc                           \
+   -DMYSQL_DATADIR=/srv/mysql                  \
+   -DINSTALL_MYSQLDATADIR=/srv/mysql           \
+   -DCMAKE_INSTALL_PREFIX=/usr                 \
+   -DINSTALL_BINDIR=bin                        \
+   -DINSTALL_SBINDIR=sbin                      \
+   -DINSTALL_DOCDIR=share/doc/mysql            \
+   -DINSTALL_DOCREADMEDIR=share/doc/mysql      \
+   -DINSTALL_INCLUDEDIR=include/mysql          \
+   -DINSTALL_INFODIR=share/info                \
+   -DINSTALL_LIBDIR=lib                        \
+   -DINSTALL_MANDIR=share/man                  \
+   -DINSTALL_MYSQLSHAREDIR=share/mysql         \
+   -DINSTALL_MYSQLTESTDIR=share/mysql-test     \
+   -DINSTALL_PLUGINDIR=lib/plugin              \
+   -DINSTALL_SCRIPTDIR=bin                     \
+   -DINSTALL_SHAREDIR=share/mysql              \
+   -DINSTALL_SQLBENCHDIR=share/mysql-bench     \
+   -DINSTALL_SUPPORTFILESDIR=share/mysql/support-files \
+   -DWITH_ZLIB=system                          \
+   -DWITH_SSL=system                           \
+   -DWITH_READLINE=system                      \
+   -DMYSQL_UNIX_ADDR=/var/run/mysql/mysql.sock \
+   -DWITH_ARCHIVE_STORAGE_ENGINE=1             \
+   -DWITH_FEDERATED_STORAGE_ENGINE=1           \
+   -DWITH_BLACKHOLE_STORAGE_ENGINE=1           \
+   -DMYSQL_MAINTAINER_MODE=OFF                 \
+   -DWITH_DEBUG=OFF
+make
+
+SEGMENTS="Client Server IniFiles ManPages"
+SEGMENTS="$SEGMENTS Development Documentation Info Readme"
+
+for segment in $SEGMENTS; do
+   cmake DESTDIR=${FAKEROOT} -DCMAKE_INSTALL_COMPONENT=$segment -P cmake_install.cmake
+done
+
+unset SEGMENTS
+
+cmake .
+make mysqlclient libmysql
+
+make DESTDIR=${FAKEROOT} install
+
+install -v -m644 ${FAKEROOT}/usr/share/mysql/support-files/my-medium.cnf ${FAKEROOT}/etc/my.cnf
+
+install -v -m755 -o mysql -g mysql -d ${FAKEROOT}/var/run/mysql
+mysqld_safe --user=mysql 2>&1 > ${FAKEROOT}/dev/null &
+
+includeBootscript mysql
+
+#################################################
+}; preinst() { # PRE-INSTALLATION CONFIGURATION #
+#################################################
+
+groupadd -g 40 mysql
+useradd -c "MySQL Server" -d /dev/null -g mysql -s /bin/false -u 40 mysql
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+mysql_install_db --basedir=/usr --datadir=/srv/mysql --user=mysql
+chgrp -v mysql /srv/mysql{,/test,/mysql}
+
+mysqladmin -u root password <new-password>
+
+mysqladmin -p shutdown
+
+#################
+} # END OF FILE #
+#################
+

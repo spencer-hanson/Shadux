@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/gnome-games/3.2/gnome-games-2.30.2.tar.bz2
+          http://ftp.gnome.org/pub/gnome/sources/gnome-games-extra-data/3.2/gnome-games-extra-data-2.30.0.tar.bz2"
+MD5SUMLIST="1fc03fe2209aa8a70da8f25d6eae1735
+            dontverify"
+REQUIRES="clutter-gtk gconf gnome-doc-utils guile libcanberra librsvg orbit2 pkgconfig pygtk which"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+install -v -m755 -d ${FAKEROOT}/var/lib/games
+groupadd -fg 60 games
+useradd -c 'Games High Score Owner' -d ${FAKEROOT}/var/lib/games \
+        -g games -s ${FAKEROOT}/bin/false -u 60 games || [ $? == 9 ]
+chown -v games:games ${FAKEROOT}/var/lib/games
+
+./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+            --sysconfdir=/etc/gnome/3.2.2 \
+            --localstatedir=/var/lib \
+            --disable-tests
+make
+
+make DESTDIR=${FAKEROOT} install
+
+tar -xvf ../gnome-games-extra-data-2.30.0.tar.bz2
+cd gnome-games-extra-data-2.30.0
+./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0)
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

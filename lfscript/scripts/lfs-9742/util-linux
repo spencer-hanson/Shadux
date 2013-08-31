@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Linux From Scratch 7.1' (SVN-20120211 / r9742) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Linux From Scratch is released under the MIT license.
+# Copyright (C) 1999-2012, Gerard Beekmans
+
+WGETLIST="ftp://ftp.infradead.org/pub/util-linux/v2.20/util-linux-2.20.1.tar.bz2"
+MD5SUMLIST="079b37517fd4e002a2e6e992e8b4e361"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -e 's@etc/adjtime@var/lib/hwclock/adjtime@g' \
+    -i $(grep -rl '/etc/adjtime' .)
+
+mkdir -pv ${FAKEROOT}/var/lib/hwclock
+
+./configure --enable-arch --enable-partx --enable-write
+
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

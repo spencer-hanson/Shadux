@@ -1,0 +1,158 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://www.h5l.org/dist/src/heimdal-1.4.tar.gz
+          http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-20120206.tar.bz2
+          http://www.linuxfromscratch.org/patches/blfs/svn/heimdal-1.4-otp_fixes-1.patch"
+MD5SUMLIST="31d08bbf47a77827fe97ef3f52b4c9c4
+            dontverify
+            dontverify"
+REQUIRES="db"
+POSTINST="now"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+patch -Np1 -i ../heimdal-1.4-otp_fixes-1.patch
+sed -i 's|/var/heimdal|/var/lib/heimdal|' \
+       `grep -lr "/var/heimdal" doc kadmin kdc lib`
+
+./configure --prefix=/usr \
+            --sysconfdir=/etc/heimdal \
+            --libexecdir=/usr/sbin \
+            --localstatedir=/var/lib/heimdal \
+            --datadir=/var/lib/heimdal \
+            --with-hdbdir=/var/lib/heimdal \
+            --with-readline=/usr \
+            --enable-kcm
+make
+
+install -v -m755 -d doc/html
+make -C doc html
+mv -v doc/heimdal.html doc/html/heimdal
+mv -v doc/hx509.html   doc/html/hx509
+makeinfo --html --no-split -o doc/heimdal.html doc/heimdal.texi
+makeinfo --html --no-split -o doc/hx509.html   doc/hx509.texi
+makeinfo --plaintext       -o doc/heimdal.txt  doc/heimdal.texi
+makeinfo --plaintext       -o doc/hx509.txt    doc/hx509.texi
+
+pushd doc
+texi2pdf            heimdal.texi
+texi2dvi            heimdal.texi
+dvips -o heimdal.ps heimdal.dvi
+texi2pdf            hx509.texi
+texi2dvi            hx509.texi
+dvips -o hx509.ps   hx509.dvi
+popd
+
+make DESTDIR=${FAKEROOT} install
+
+install -v -m755 -d ${FAKEROOT}/usr/share/doc/heimdal-1.4
+install -v -m644    doc/{heimdal,hx509}.{html,txt} \
+                    doc/{init-creds,layman.asc}    \
+                    ${FAKEROOT}/usr/share/doc/heimdal-1.4
+cp      -v -R       doc/html \
+                    destdir/usr/share/doc/heimdal-1.4
+
+mv -v ${FAKEROOT}/bin/login          ${FAKEROOT}/bin/login.SHADOW
+mv -v ${FAKEROOT}/bin/su             ${FAKEROOT}/bin/su.SHADOW
+mv -v ${FAKEROOT}/usr/bin/{login,su} ${FAKEROOT}/bin
+ln -v -sf ../../bin/login ${FAKEROOT}/usr/bin
+
+for LINK in   \
+    lib{otp,kafs,krb5,hx509,sqlite3,asn1,roken,crypto,wind}; do
+        mv -v     ${FAKEROOT}/usr/lib/${LINK}.so.* ${FAKEROOT}/lib
+        ln -v -sf ../../lib/$(readlink  ${FAKEROOT}/usr/lib/${LINK}.so) \
+                  ${FAKEROOT}/usr/lib/${LINK}.so
+done
+
+mv -v     ${FAKEROOT}/usr/lib/$(readlink ${FAKEROOT}/usr/lib/libdb.so) \
+          ${FAKEROOT}/usr/lib/libdb-?.so \
+          ${FAKEROOT}/lib
+ln -v -sf ../../lib/$(readlink ${FAKEROOT}/usr/lib/libdb.so) \
+          ${FAKEROOT}/usr/lib/libdb.so
+
+ldconfig
+
+install -v -m644 doc/{heimdal,hx509}.{dvi,ps,pdf} \
+                 ${FAKEROOT}/usr/share/doc/heimdal-1.4
+
+sed -e 's|/usr/pkg|/usr|' \
+    -e 's|/usr/lib/cracklib_dict|/lib/cracklib/pw_dict|' \
+    -e 's|/var/heimdal|/var/lib/heimdal|' \
+        lib/kadm5/check-cracklib.pl \
+     > ${FAKEROOT}/bin/krb5-check-cracklib.pl
+
+chmod -v 755 ${FAKEROOT}/bin/krb5-check-cracklib.pl
+
+install -v -m755 -d ${FAKEROOT}/etc/heimdal
+cat > ${FAKEROOT}/etc/heimdal/krb5.conf << "EOF"
+# Begin /etc/heimdal/krb5.conf
+
+[libdefaults]
+    default_realm = <EXAMPLE.COM>
+    encrypt = true
+
+[realms]
+    <EXAMPLE.COM> = {
+        kdc = <hostname.example.com>
+        admin_server = <hostname.example.com>
+        kpasswd_server = <hostname.example.com>
+    }
+
+[domain_realm]
+    .<example.com> = <EXAMPLE.COM>
+
+[logging]
+    kdc = FILE:/var/log/kdc.log
+    admin_server = FILE:/var/log/kadmin.log
+    default = FILE:/var/log/krb.log
+
+# End /etc/heimdal/krb5.conf
+EOF
+chmod -v 644 ${FAKEROOT}/etc/heimdal/krb5.conf
+
+install -v -m755 -d ${FAKEROOT}/var/lib/heimdal
+kstash
+
+includeBootscript heimdal
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+kadmin -l
+
+init <EXAMPLE.COM>
+
+add <loginname>
+
+add --random-key host/<hostname.example.com>
+
+ext host/<hostname.example.com>
+
+add --random-key ftp/<hostname.example.com>
+
+ext ftp/<hostname.example.com>
+
+/usr/sbin/kdc &
+
+kinit <loginname>
+
+klist
+
+ktutil list
+
+sed -i 's|pw_dict|&\n\t\t/lib/cracklib/pw_dict|' Cracklib.pm
+
+#################
+} # END OF FILE #
+#################
+

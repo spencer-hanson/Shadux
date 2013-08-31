@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Linux From Scratch 7.1' (SVN-20120211 / r9742) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Linux From Scratch is released under the MIT license.
+# Copyright (C) 1999-2012, Gerard Beekmans
+
+WGETLIST="ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2"
+MD5SUMLIST="5b9510a17074e2b37d8bb38ae09edbf2"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+echo '#define SYS_VIMRC_FILE "/etc/vimrc"' >> src/feature.h
+
+./configure --prefix=/usr --enable-multibyte
+
+make
+
+make DESTDIR=${FAKEROOT} install
+
+ln -sv vim ${FAKEROOT}/usr/bin/vi
+for L in  ${FAKEROOT}/usr/share/man/{,*/}man1/vim.1; do
+    ln -sv vim.1 $(dirname $L)/vi.1
+done
+
+ln -sv ../vim/vim73/doc ${FAKEROOT}/usr/share/doc/vim-7.3
+
+cat > ${FAKEROOT}/etc/vimrc << "EOF"
+" Begin /etc/vimrc
+
+set nocompatible
+set backspace=2
+syntax on
+if (&term == "iterm") || (&term == "putty")
+  set background=dark
+endif
+
+" End /etc/vimrc
+EOF
+
+#################
+} # END OF FILE #
+#################
+

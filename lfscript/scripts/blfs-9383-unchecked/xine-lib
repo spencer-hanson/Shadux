@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/xine/xine-lib-1.2.0.tar.xz"
+MD5SUMLIST="2227791afa6edb17f2b768365a7fb27f"
+REQUIRES="alsa arts esound ffmpeg pulseaudio x-window-system"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+sed -i 's#gzgetc(#gzgetc_(#' src/xine-engine/osd.c
+./configure --prefix=/usr --disable-musepack --disable-vcd \
+  --docdir=/usr/share/doc/xine-lib-1.2.0
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

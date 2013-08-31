@@ -1,0 +1,111 @@
+#!/bin/bash
+set -E
+trap error ERR
+
+error() {
+  echo "*** FAILURE ***" 1>&2
+  exit 1
+}
+
+getStableLFS() {
+  local DOWNLOAD="http://www.linuxfromscratch.org/lfs/downloads"
+
+  if [ ! -r "books/LFS-BOOK-${VERSION}-XML.tar.bz2" ]; then
+    echo "*** Downloading LFS ${VERSION}..."
+    mkdir -p books
+    cd books
+    wget "${DOWNLOAD}/${VERSION}/LFS-BOOK-${VERSION}-XML.tar.bz2" 2> /dev/null
+    cd ../
+  fi
+
+  echo "*** Extracting LFS ${VERSION}..."
+  rm -rf tmp patched-xml/lfs-${VERSION}-xml
+  mkdir tmp
+  mkdir -p patched-xml
+  cd tmp
+  tar xf ../books/LFS-BOOK-${VERSION}-XML.tar.bz2
+  mv * ../patched-xml/lfs-${VERSION}-xml
+  cd ../
+  rm -rf tmp
+}
+
+getStableBLFS() {
+  echo "*** Stable BLFS books are not supported at this time. ***"
+  exit 1
+}
+
+getSvn() {
+  if [ ! -r "books/${BOOK_L}-svn-${VERSION}.tar.bz2" ]; then
+    echo "*** Downloading ${BOOK_U} development revision ${VERSION}..."
+    mkdir -p books
+    rm -rf tmp
+    mkdir tmp
+    cd tmp
+    svn export ${SVN_URL} -r ${VERSION} > /dev/null
+
+    echo "*** Archiving ${BOOK_U} development revision ${VERSION} for later use..."
+    mv * ${BOOK_L}-${VERSION}-xml
+    tar jcf ../books/${BOOK_L}-svn-${VERSION}.tar.bz2 *
+    cd ../
+    rm -rf tmp
+  fi
+
+  echo "*** Extracting ${BOOK_U} development revision ${VERSION}..."
+  rm -rf patched-xml/${BOOK_L}-${VERSION}-xml
+  mkdir -p patched-xml
+  cd patched-xml
+  tar xf ../books/${BOOK_L}-svn-${VERSION}.tar.bz2
+  cd ../
+}
+
+# Book selection
+BOOK_L="${1}"
+if [ "${1}" == "lfs" ]; then
+  BOOK_U="LFS"
+elif [ "${1}" == "blfs" ]; then
+  BOOK_U="BLFS"
+else
+  echo "Select either 'lfs' or 'blfs'"
+  exit 1
+fi
+
+# Svn URL preparation
+if [ "${BOOK_L}" == "lfs" ]; then
+  SVN_URL="svn://svn.linuxfromscratch.org/LFS/trunk"
+elif [ "${BOOK_L}" == "blfs" ]; then
+  SVN_URL="svn://svn.linuxfromscratch.org/BLFS/trunk"
+fi
+
+# Version selection and download
+if [ "$(echo ${2} | grep '\.')" != "" ]; then
+  VERSION="${2}"
+  getStable${BOOK_U}
+else
+  if [ "${2}" == "" ]; then
+    echo "*** Looking up current revision of ${BOOK_U}..."
+    VERSION="$(svn info ${SVN_URL} | grep Revision | cut -d' ' -f2)"
+  else
+    VERSION="${2}"
+  fi
+
+  getSvn
+fi
+
+# Apply patch, created using:
+# $ diff -Naur old/ new/ > diff.patch
+if [ "${3}" != "nopatch" ] && [ "$(ls patches-${BOOK_L}/*.patch)" != "" ]; then
+    echo "*** Patching the XML sources"
+    pushd patched-xml/${BOOK_L}-${VERSION}-xml > /dev/null
+
+    for PATCH in $(ls ../../patches-${BOOK_L}/*.patch); do
+        echo "--- $(basename ${PATCH}) ---"
+        patch -p1 < ${PATCH}
+    done
+
+    popd > /dev/null
+else
+ (echo "WARNING: There was no patch file found for ${BOOK_U} ${VERSION}." &&
+  echo "         This means that ScriptFactory is not guaranteed to deliver" &&
+  echo "         proper scripts using this source.") 1>&2
+fi
+

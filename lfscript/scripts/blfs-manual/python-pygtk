@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Last update: BLFS r9313 (2012-02-08)
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/pygtk/2.17/pygtk-2.17.0.tar.bz2"
+MD5SUMLIST="43d704343d7ca04a6e4ddd4fa73a3c55"
+REQUIRES="python-pygobject python-py2cairo gtk+2"
+
+# The 'gtk+2' dependency enables the build of the 'gtk' module, which is
+# required for 'ccsm'.
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

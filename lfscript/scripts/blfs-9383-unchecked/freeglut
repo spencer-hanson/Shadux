@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://downloads.sourceforge.net/freeglut/freeglut-2.6.0.tar.gz"
+MD5SUMLIST="39f0f2de89f399529d2b981188082218"
+REQUIRES="mesalib"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=<$XORG_PREFIX>
+make
+
+make DESTDIR=${FAKEROOT} install
+install -v -D -m644 doc/freeglut_user_interface.html \
+    ${FAKEROOT}/usr/share/doc/freeglut-2.6.0/freeglut_user_interface.html
+
+#################
+} # END OF FILE #
+#################
+

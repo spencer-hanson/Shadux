@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://archive.apache.org/dist/xmlgraphics/fop/source/fop-1.0-src.tar.gz"
+MD5SUMLIST="95dcc4c2dd08b4bc88ce9ce1ee88c439"
+REQUIRES="apache-ant xorg7"
+POSTINST="now"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+cp ../offo-hyphenation/hyph/* hyph
+rm -rf ../offo-hyphenation
+
+FOP_PKG_DIR=$(pwd)/..
+pushd $JAVA_HOME
+sh $FOP_PKG_DIR/jai-1_1_3-lib-linux-i586-jdk.bin
+popd
+
+sed -i -e "s/all,javadocs,docs/all,javadocs/" \
+       -e '\#${dist.bin.result.dir}/docs#,\#</copy>#d' build.xml
+
+ant dist
+
+install -v -d -m755      ${FAKEROOT}/opt/fop-1.0
+mv -v dist-bin/fop-1.0/* ${FAKEROOT}/opt/fop-1.0
+ln -v -sf fop-1.0 ${FAKEROOT}/opt/fop
+
+cat > ~/.foprc << "EOF"
+FOP_OPTS="-Xmx<RAM_Installed>m"
+FOP_HOME="/opt/fop"
+
+EOF
+
+###################################################
+}; postinst() { # POST-INSTALLATION CONFIGURATION #
+###################################################
+
+FOP_OPTS="-Xmx768m"
+
+#################
+} # END OF FILE #
+#################
+

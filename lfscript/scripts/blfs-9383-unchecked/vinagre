@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.gnome.org/pub/gnome/sources/vinagre/3.2/vinagre-2.30.2.tar.bz2"
+MD5SUMLIST="2483369947e7914b5ac2aae8200f6452"
+REQUIRES="gconf gnome-doc-utils gtk-vnc libgnome-keyring orbit2 pkgconfig"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+            --sysconfdir=/etc/gnome/3.2.2 \
+            --libexecdir=$(pkg-config \
+                --variable=prefix ORBit-2.0)/lib/vinagre-1 \
+            --disable-applet \
+            --disable-avahi \
+            --disable-scrollkeeper
+make
+
+make DESTDIR=${FAKEROOT} install
+
+#################
+} # END OF FILE #
+#################
+

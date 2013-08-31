@@ -1,0 +1,88 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://releases.mozilla.org/pub/mozilla.org/thunderbird/releases/10.0-real/source/thunderbird-10.0.source.tar.bz2"
+MD5SUMLIST="6f76f25894ba746a2e33614d3dd8dbab"
+REQUIRES="alsa-lib gtk+2 unzip zip"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+cat > mozconfig << "EOF"
+# If you have a multicore machine you can speed up the build by running
+# several jobs at once, but if you have a single core, delete this line:
+mk_add_options MOZ_MAKE_FLAGS="-j4"
+
+# If you have installed Yasm delete this option:
+ac_add_options --disable-webm
+
+# If you have installed DBus-Glib delete this option:
+ac_add_options --disable-dbus
+
+# If you have installed wireless-tools delete this option:
+ac_add_options --disable-necko-wifi
+
+# If you have installed libnotify delete this option:
+ac_add_options --disable-libnotify
+
+# Uncomment these if you have installed them:
+# ac_add_options --with-system-nspr
+# ac_add_options --with-system-nss
+# ac_add_options --enable-system-sqlite
+# ac_add_options --with-system-libvpx
+# ac_add_options --enable-startup-notification
+# ac_add_options --enable-system-hunspell
+# ac_add_options --with-system-libevent
+
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/thunderbuild
+ac_add_options --enable-official-branding
+ac_add_options --with-pthreads
+ac_add_options --enable-system-ffi
+ac_add_options --with-system-jpeg
+ac_add_options --with-system-png
+ac_add_options --enable-system-cairo
+ac_add_options --with-system-zlib
+ac_add_options --enable-shared
+ac_add_options --disable-static
+ac_add_options --disable-debug
+ac_add_options --disable-crashreporter
+ac_add_options --disable-installer
+ac_add_options --disable-updater
+ac_add_options --disable-tests
+EOF
+
+sed -i 's#VPX_CODEC_USE_INPUT_PARTITION#VPX_CODEC_USE_INPUT_FRAGMENTS#' \
+  mozilla/configure
+make -f client.mk
+make -C thunderbuild/mail/installer
+
+mkdir -p ${FAKEROOT}/usr/lib/thunderbird-10.0
+tar xf thunderbuild/mozilla/dist/thunderbird-*.tar.bz2 -C ${FAKEROOT}/usr/lib/thunderbird-10.0 --strip-components=1
+ln -s ../lib/thunderbird-10.0/thunderbird ${FAKEROOT}/usr/bin/thunderbird
+
+cat > ${FAKEROOT}/usr/share/applications/thunderbird.desktop << "EOF"
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Thunderbird
+Comment=Fetch Your Email
+Icon=thunderbird
+Exec=thunderbird
+Categories=Network;GTK;Application;Email;News;
+StartupNotify=true
+Terminal=false
+EOF
+ln -sv -f ${FAKEROOT}/usr/lib/thunderbird-10.0/chrome/icons/default/default256.png \
+  ${FAKEROOT}/usr/share/pixmaps/thunderbird.png
+
+#################
+} # END OF FILE #
+#################
+

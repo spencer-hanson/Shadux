@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# The instructions in this file are extracted from
+# 'Beyond Linux From Scratch' (2012-02-12 / r9383) but are modified for use
+# with LFScript 4 which installs the software to a fake root directory.
+#
+# Beyond Linux From Scratch is released under the MIT license.
+# Copyright (C) 2001-2012, The BLFS Development Team
+
+WGETLIST="http://ftp.uni-erlangen.de/pub/utilities/screen/screen-4.0.3.tar.gz"
+MD5SUMLIST="8506fd205028a96c741e4037de6e3c42"
+
+###############################################
+installation() { # INSTALLING SYSTEM SOFTWARE #
+###############################################
+
+./configure --prefix=/usr --with-socket-dir=/var/run/screen \
+    --with-sys-screenrc=/etc/screenrc
+sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%" {etc,doc}/*
+make
+
+make DESTDIR=${FAKEROOT} install
+install -m 644 etc/etcscreenrc ${FAKEROOT}/etc/screenrc
+
+#################
+} # END OF FILE #
+#################
+
