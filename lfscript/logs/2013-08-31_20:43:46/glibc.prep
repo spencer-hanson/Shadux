@@ -1,0 +1,1841 @@
+patching file nptl/sysdeps/pthread/pt-initfini.c
+patching file sysdeps/unix/sysv/linux/i386/sysdep.h
+patching file sysdeps/i386/configure
+mkdir: created directory `../glibc-build'
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-lfs-linux-gnu
+checking for i686-lfs-linux-gnu-gcc... no
+checking for gcc... gcc
+configure: WARNING: using cross tools not prefixed with host triplet
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for gcc... gcc
+checking how to run the C preprocessor... gcc -E
+checking for i686-lfs-linux-gnu-g++... no
+checking for i686-lfs-linux-gnu-c++... no
+checking for i686-lfs-linux-gnu-gpp... no
+checking for i686-lfs-linux-gnu-aCC... no
+checking for i686-lfs-linux-gnu-CC... no
+checking for i686-lfs-linux-gnu-cxx... no
+checking for i686-lfs-linux-gnu-cc++... no
+checking for i686-lfs-linux-gnu-cl.exe... no
+checking for i686-lfs-linux-gnu-FCC... no
+checking for i686-lfs-linux-gnu-KCC... no
+checking for i686-lfs-linux-gnu-RCC... no
+checking for i686-lfs-linux-gnu-xlC_r... no
+checking for i686-lfs-linux-gnu-xlC... no
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+configure: running configure fragment for add-on libidn
+configure: running configure fragment for add-on nptl
+checking for assembler gnu_indirect_function symbol type support... yes
+checking whether .text pseudo-op must be used... yes
+checking for assembler global-symbol directive... .globl
+checking for assembler .type directive prefix... @
+checking sysdep dirs... sysdeps/i386/elf nptl/sysdeps/unix/sysv/linux/i386/i686 sysdeps/unix/sysv/linux/i386/i686 nptl/sysdeps/unix/sysv/linux/i386 sysdeps/unix/sysv/linux/i386 nptl/sysdeps/unix/sysv/linux nptl/sysdeps/pthread sysdeps/pthread sysdeps/unix/sysv/linux sysdeps/gnu sysdeps/unix/common sysdeps/unix/mman sysdeps/unix/inet sysdeps/unix/sysv/i386 nptl/sysdeps/unix/sysv sysdeps/unix/sysv sysdeps/unix/i386 nptl/sysdeps/unix sysdeps/unix sysdeps/posix sysdeps/i386/i686/fpu sysdeps/i386/i686/multiarch nptl/sysdeps/i386/i686 sysdeps/i386/i686 sysdeps/i386/i486 nptl/sysdeps/i386/i486 sysdeps/i386/fpu nptl/sysdeps/i386 sysdeps/i386 sysdeps/wordsize-32 sysdeps/ieee754/ldbl-96 sysdeps/ieee754/dbl-64 sysdeps/ieee754/flt-32 sysdeps/ieee754 sysdeps/generic/elf sysdeps/generic
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking whether as is GNU as... yes
+checking whether ld is GNU ld... yes
+checking for as... as
+checking version of as... 2.22, ok
+checking for ld... ld
+checking version of ld... 2.22, ok
+checking for pwd... /bin/pwd
+checking for i686-lfs-linux-gnu-gcc... gcc
+checking version of gcc... 4.7.2, ok
+checking for gnumake... no
+checking for gmake... no
+checking for make... make
+checking version of make... 3.81, ok
+checking for gnumsgfmt... no
+checking for gmsgfmt... no
+checking for msgfmt... msgfmt
+checking version of msgfmt... 0.18.1, ok
+checking for makeinfo... makeinfo
+checking version of makeinfo... 4.13, ok
+checking for sed... sed
+checking version of sed... 4.2.1, ok
+checking for autoconf... no
+configure: WARNING:
+*** These auxiliary programs are missing or incompatible versions: autoconf
+*** some features will be disabled.
+*** Check the INSTALL file for required versions.
+checking LD_LIBRARY_PATH variable... ok
+checking whether GCC supports -static-libgcc... -static-libgcc
+checking for bash... /bin/bash
+checking for gawk... gawk
+checking for perl... /usr/bin/perl
+checking for install-info... /usr/bin/install-info
+checking for bison... /usr/bin/bison
+checking for signed size_t type... no
+checking for libc-friendly stddef.h... yes
+checking whether we need to use -P to assemble .S files... no
+checking for .set assembler directive... yes
+checking for assembler gnu_unique_object symbol type... yes
+checking for .symver assembler directive... yes
+checking for ld --version-script... yes
+checking for .previous assembler directive... yes
+checking for .protected and .hidden assembler directive... yes
+checking whether __attribute__((visibility())) is supported... yes
+checking for broken __attribute__((visibility()))... no
+checking for broken __attribute__((alias()))... no
+checking whether to put _rtld_local into .sdata section... no
+checking for .preinit_array/.init_array/.fini_array support... yes
+checking for libunwind-support in compiler... no
+checking for -z nodelete option... yes
+checking for -z nodlopen option... yes
+checking for -z initfirst option... yes
+checking for -z relro option... yes
+checking for -Bgroup option... yes
+checking for libgcc_s suffix... 
+checking for --as-needed option... yes
+checking whether --noexecstack is desirable for .S files... yes
+checking for -z combreloc... yes
+checking for -z execstack... yes
+checking for -fpie... yes
+checking for --hash-style option... yes
+checking for -fno-toplevel-reorder -fno-section-anchors... yes
+checking for -fstack-protector... yes
+checking for -fgnu89-inline... yes
+checking whether cc puts quotes around section names... no
+checking for assembler .weak directive... yes
+checking whether CFI directives are supported... yes
+checking for ld --no-whole-archive... yes
+checking for gcc -fexceptions... yes
+checking for __builtin_expect... yes
+checking for __builtin_memset... yes
+checking for redirection of built-in functions... yes
+checking for __thread... yes
+checking for tls_model attribute... yes
+checking for libgd... no
+checking for is_selinux_enabled in -lselinux... no
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking size of long double... 12
+running configure fragment for sysdeps/i386/elf
+checking for i386 TLS support... yes
+running configure fragment for nptl/sysdeps/pthread
+checking for forced unwind support... (cached) yes
+checking for C cleanup handling... (cached) yes
+running configure fragment for sysdeps/pthread
+running configure fragment for sysdeps/unix/sysv/linux
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking installed Linux kernel header files... 2.0.10 or later
+checking for kernel header at least 2.6.25... ok
+running configure fragment for sysdeps/i386
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for cpuid.h... yes
+checking if -g produces usable source locations for assembler-with-cpp... yes
+checking for SSE4 support... yes
+checking for assembler -mtune=i686 support... yes
+checking for AVX support... yes
+checking for -mno-vzeroupper support... yes
+checking for old glibc 2.0.x headers... no
+checking whether -fPIC is default... no
+configure: creating ./config.status
+config.status: creating config.make
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing default commands
+make -r PARALLELMFLAGS="" CVSOPTS="" -C ../glibc-2.14.1 objdir=`pwd` all
+make[1]: Entering directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1'
+(echo 'sysd-rules-sysdirs := sysdeps/i386/elf nptl/sysdeps/unix/sysv/linux/i386/i686 sysdeps/unix/sysv/linux/i386/i686 nptl/sysdeps/unix/sysv/linux/i386 sysdeps/unix/sysv/linux/i386 nptl/sysdeps/unix/sysv/linux nptl/sysdeps/pthread sysdeps/pthread sysdeps/unix/sysv/linux sysdeps/gnu sysdeps/unix/common sysdeps/unix/mman sysdeps/unix/inet sysdeps/unix/sysv/i386 nptl/sysdeps/unix/sysv sysdeps/unix/sysv sysdeps/unix/i386 nptl/sysdeps/unix sysdeps/unix sysdeps/posix sysdeps/i386/i686/fpu sysdeps/i386/i686/multiarch nptl/sysdeps/i386/i686 sysdeps/i386/i686 sysdeps/i386/i486 nptl/sysdeps/i386/i486 sysdeps/i386/fpu nptl/sysdeps/i386 sysdeps/i386 sysdeps/wordsize-32 sysdeps/ieee754/ldbl-96 sysdeps/ieee754/dbl-64 sysdeps/ieee754/flt-32 sysdeps/ieee754 sysdeps/generic/elf sysdeps/generic';		      \
+	 for dir in sysdeps/i386/elf nptl/sysdeps/unix/sysv/linux/i386/i686 sysdeps/unix/sysv/linux/i386/i686 nptl/sysdeps/unix/sysv/linux/i386 sysdeps/unix/sysv/linux/i386 nptl/sysdeps/unix/sysv/linux nptl/sysdeps/pthread sysdeps/pthread sysdeps/unix/sysv/linux sysdeps/gnu sysdeps/unix/common sysdeps/unix/mman sysdeps/unix/inet sysdeps/unix/sysv/i386 nptl/sysdeps/unix/sysv sysdeps/unix/sysv sysdeps/unix/i386 nptl/sysdeps/unix sysdeps/unix sysdeps/posix sysdeps/i386/i686/fpu sysdeps/i386/i686/multiarch nptl/sysdeps/i386/i686 sysdeps/i386/i686 sysdeps/i386/i486 nptl/sysdeps/i386/i486 sysdeps/i386/fpu nptl/sysdeps/i386 sysdeps/i386 sysdeps/wordsize-32 sysdeps/ieee754/ldbl-96 sysdeps/ieee754/dbl-64 sysdeps/ieee754/flt-32 sysdeps/ieee754 sysdeps/generic/elf sysdeps/generic; do				      \
+	   case "$dir" in						      \
+	   /*) ;;							      \
+	   *) dir="\$(..)$dir" ;;					      \
+	   esac;							      \
+	   asm='.S .s';							      \
+	   						      \
+	   for o in .o .os .op .og .ob .oS; do				      \
+	     set % % rtld-% rtld-% rtld-% % m_% s_% ptw-% %;			      \
+	     while [ $# -ge 2 ]; do					      \
+	       t=$1; shift; 						      \
+	       d=$1; shift;						      \
+	       v=${t%%%}; [ x"$v" = x ] || v="\$(${v}CPPFLAGS)";	      \
+	       for s in $asm .c; do					      \
+		 echo "\$(objpfx)$t$o: $dir/$d$s \$(before-compile)";  \
+		 echo "	\$(compile-command$s) $v";			      \
+	       done;							      \
+	     done;							      \
+	   done;							      \
+	   echo "\$(inst_includedir)/%.h: $dir/%.h \$(+force)";	      \
+	   echo "	\$(do-install)"; 				      \
+	 done;								      \
+	 echo 'sysd-rules-done = t') > /sources/builddir/glibc-build/sysd-rulesT
+mv -f /sources/builddir/glibc-build/sysd-rulesT /sources/builddir/glibc-build/sysd-rules
+for dir in /sources/builddir/glibc-build sysdeps/i386/elf nptl/sysdeps/unix/sysv/linux/i386/i686 sysdeps/unix/sysv/linux/i386/i686 nptl/sysdeps/unix/sysv/linux/i386 sysdeps/unix/sysv/linux/i386 nptl/sysdeps/unix/sysv/linux nptl/sysdeps/pthread sysdeps/pthread sysdeps/unix/sysv/linux sysdeps/gnu sysdeps/unix/common sysdeps/unix/mman sysdeps/unix/inet sysdeps/unix/sysv/i386 nptl/sysdeps/unix/sysv sysdeps/unix/sysv sysdeps/unix/i386 nptl/sysdeps/unix sysdeps/unix sysdeps/posix sysdeps/i386/i686/fpu sysdeps/i386/i686/multiarch nptl/sysdeps/i386/i686 sysdeps/i386/i686 sysdeps/i386/i486 nptl/sysdeps/i386/i486 sysdeps/i386/fpu nptl/sysdeps/i386 sysdeps/i386 sysdeps/wordsize-32 sysdeps/ieee754/ldbl-96 sysdeps/ieee754/dbl-64 sysdeps/ieee754/flt-32 sysdeps/ieee754 sysdeps/generic/elf sysdeps/generic  nptl; do \
+	  test -f $dir/syscalls.list && \
+	  { sysdirs='sysdeps/i386/elf nptl/sysdeps/unix/sysv/linux/i386/i686 sysdeps/unix/sysv/linux/i386/i686 nptl/sysdeps/unix/sysv/linux/i386 sysdeps/unix/sysv/linux/i386 nptl/sysdeps/unix/sysv/linux nptl/sysdeps/pthread sysdeps/pthread sysdeps/unix/sysv/linux sysdeps/gnu sysdeps/unix/common sysdeps/unix/mman sysdeps/unix/inet sysdeps/unix/sysv/i386 nptl/sysdeps/unix/sysv sysdeps/unix/sysv sysdeps/unix/i386 nptl/sysdeps/unix sysdeps/unix sysdeps/posix sysdeps/i386/i686/fpu sysdeps/i386/i686/multiarch nptl/sysdeps/i386/i686 sysdeps/i386/i686 sysdeps/i386/i486 nptl/sysdeps/i386/i486 sysdeps/i386/fpu nptl/sysdeps/i386 sysdeps/i386 sysdeps/wordsize-32 sysdeps/ieee754/ldbl-96 sysdeps/ieee754/dbl-64 sysdeps/ieee754/flt-32 sysdeps/ieee754 sysdeps/generic/elf sysdeps/generic' \
+	    asm_CPP='gcc -c  -Iinclude  -I/sources/builddir/glibc-build -Isysdeps/i386/elf -Inptl/sysdeps/unix/sysv/linux/i386/i686 -Isysdeps/unix/sysv/linux/i386/i686 -Inptl/sysdeps/unix/sysv/linux/i386 -Isysdeps/unix/sysv/linux/i386 -Inptl/sysdeps/unix/sysv/linux -Inptl/sysdeps/pthread -Isysdeps/pthread -Isysdeps/unix/sysv/linux -Isysdeps/gnu -Isysdeps/unix/common -Isysdeps/unix/mman -Isysdeps/unix/inet -Isysdeps/unix/sysv/i386 -Inptl/sysdeps/unix/sysv -Isysdeps/unix/sysv -Isysdeps/unix/i386 -Inptl/sysdeps/unix -Isysdeps/unix -Isysdeps/posix -Isysdeps/i386/i686/fpu -Isysdeps/i386/i686/multiarch -Inptl/sysdeps/i386/i686 -Isysdeps/i386/i686 -Isysdeps/i386/i486 -Inptl/sysdeps/i386/i486 -Isysdeps/i386/fpu -Inptl/sysdeps/i386 -Isysdeps/i386 -Isysdeps/wordsize-32 -Isysdeps/ieee754/ldbl-96 -Isysdeps/ieee754/dbl-64 -Isysdeps/ieee754/flt-32 -Isysdeps/ieee754 -Isysdeps/generic/elf -Isysdeps/generic -Inptl   -Ilibio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -D_LIBC_REENTRANT -include include/libc-symbols.h       -DASSEMBLER  -DGAS_SYNTAX -g -Wa,--noexecstack   -E -x assembler-with-cpp' \
+	    /bin/sh sysdeps/unix/make-syscalls.sh $dir || exit 1; }; \
+	  test $dir = sysdeps/unix && break; \
+	done > /sources/builddir/glibc-build/sysd-syscallsT
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+In file included from ./sysdeps/unix/sysdep.h:21:0,
+                 from ./sysdeps/unix/i386/sysdep.h:19,
+                 from sysdeps/unix/sysv/linux/i386/sysdep.h:25,
+                 from <stdin>:1:
+sysdeps/unix/sysv/linux/sys/syscall.h:25:24: fatal error: asm/unistd.h: No such file or directory
+compilation terminated.
+mv -f /sources/builddir/glibc-build/sysd-syscallsT /sources/builddir/glibc-build/sysd-syscalls
+gawk -f scripts/gen-sorted.awk \
+	       -v subdirs='csu assert ctype locale intl catgets math setjmp signal stdlib stdio-common libio malloc string wcsmbs time dirent grp pwd posix io termios resource misc socket sysvipc gmon gnulib iconv iconvdata wctype manual shadow gshadow po argp crypt nss localedata timezone rt conform debug libidn dlfcn elf' \
+	       -v srcpfx='' \
+	       nptl/sysdeps/pthread/Subdirs sysdeps/unix/inet/Subdirs sysdeps/unix/Subdirs assert/Depend intl/Depend catgets/Depend stdlib/Depend stdio-common/Depend libio/Depend malloc/Depend string/Depend wcsmbs/Depend time/Depend posix/Depend iconvdata/Depend nss/Depend localedata/Depend rt/Depend debug/Depend > /sources/builddir/glibc-build/sysd-sorted-tmp
+mv -f /sources/builddir/glibc-build/sysd-sorted-tmp /sources/builddir/glibc-build/sysd-sorted
+make[1]: Leaving directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1'
+make[1]: Entering directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1'
+{ echo '#include "posix/bits/posix1_lim.h"';		\
+	  echo '#define _LIBC 1';					\
+	  echo '#include "misc/sys/uio.h"'; } |			\
+	gcc -E -dM -MD -MP -MF /sources/builddir/glibc-build/bits/stdio_lim.dT -MT '/sources/builddir/glibc-build/bits/stdio_lim.h /sources/builddir/glibc-build/bits/stdio_lim.d' 	\
+	      -Iinclude  -I/sources/builddir/glibc-build -Isysdeps/i386/elf -Inptl/sysdeps/unix/sysv/linux/i386/i686 -Isysdeps/unix/sysv/linux/i386/i686 -Inptl/sysdeps/unix/sysv/linux/i386 -Isysdeps/unix/sysv/linux/i386 -Inptl/sysdeps/unix/sysv/linux -Inptl/sysdeps/pthread -Isysdeps/pthread -Isysdeps/unix/sysv/linux -Isysdeps/gnu -Isysdeps/unix/common -Isysdeps/unix/mman -Isysdeps/unix/inet -Isysdeps/unix/sysv/i386 -Inptl/sysdeps/unix/sysv -Isysdeps/unix/sysv -Isysdeps/unix/i386 -Inptl/sysdeps/unix -Isysdeps/unix -Isysdeps/posix -Isysdeps/i386/i686/fpu -Isysdeps/i386/i686/multiarch -Inptl/sysdeps/i386/i686 -Isysdeps/i386/i686 -Isysdeps/i386/i486 -Inptl/sysdeps/i386/i486 -Isysdeps/i386/fpu -Inptl/sysdeps/i386 -Isysdeps/i386 -Isysdeps/wordsize-32 -Isysdeps/ieee754/ldbl-96 -Isysdeps/ieee754/dbl-64 -Isysdeps/ieee754/flt-32 -Isysdeps/ieee754 -Isysdeps/generic/elf -Isysdeps/generic -Inptl   -Ilibio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -xc - -o /sources/builddir/glibc-build/bits/stdio_lim.hT
+In file included from posix/bits/posix1_lim.h:157:0,
+                 from <stdin>:1:
+nptl/sysdeps/unix/sysv/linux/bits/local_lim.h:39:26: fatal error: linux/limits.h: No such file or directory
+compilation terminated.
+/bin/sh scripts/gen-libc-abis \
+		 i386-lfs-linux-gnu \
+		 < libc-abis > /sources/builddir/glibc-build/libc-abis.hT
+/bin/sh scripts/move-if-change /sources/builddir/glibc-build/libc-abis.hT /sources/builddir/glibc-build/libc-abis.h
+touch /sources/builddir/glibc-build/libc-abis.stamp
+sed '/^[ 	]*%/!s/#.*$//;/^[ 	]*$/d;s/^[ 	]*%/#/' \
+	    nptl/shlib-versions libidn/shlib-versions nptl_db/shlib-versions shlib-versions \
+	| gcc -E -undef  -Iinclude  -I/sources/builddir/glibc-build -Isysdeps/i386/elf -Inptl/sysdeps/unix/sysv/linux/i386/i686 -Isysdeps/unix/sysv/linux/i386/i686 -Inptl/sysdeps/unix/sysv/linux/i386 -Isysdeps/unix/sysv/linux/i386 -Inptl/sysdeps/unix/sysv/linux -Inptl/sysdeps/pthread -Isysdeps/pthread -Isysdeps/unix/sysv/linux -Isysdeps/gnu -Isysdeps/unix/common -Isysdeps/unix/mman -Isysdeps/unix/inet -Isysdeps/unix/sysv/i386 -Inptl/sysdeps/unix/sysv -Isysdeps/unix/sysv -Isysdeps/unix/i386 -Inptl/sysdeps/unix -Isysdeps/unix -Isysdeps/posix -Isysdeps/i386/i686/fpu -Isysdeps/i386/i686/multiarch -Inptl/sysdeps/i386/i686 -Isysdeps/i386/i686 -Isysdeps/i386/i486 -Inptl/sysdeps/i386/i486 -Isysdeps/i386/fpu -Inptl/sysdeps/i386 -Isysdeps/i386 -Isysdeps/wordsize-32 -Isysdeps/ieee754/ldbl-96 -Isysdeps/ieee754/dbl-64 -Isysdeps/ieee754/flt-32 -Isysdeps/ieee754 -Isysdeps/generic/elf -Isysdeps/generic -Inptl   -Ilibio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -D_LIBC_REENTRANT -include include/libc-symbols.h       -x assembler-with-cpp - \
+		   > /sources/builddir/glibc-build/shlib-versions.v.iT
+mv -f /sources/builddir/glibc-build/shlib-versions.v.iT /sources/builddir/glibc-build/shlib-versions.v.i
+sed '/^[ 	]*#/d;/^[ 	]*$/d' /sources/builddir/glibc-build/shlib-versions.v.i > /sources/builddir/glibc-build/shlib-versions.vT
+mv -f /sources/builddir/glibc-build/shlib-versions.vT /sources/builddir/glibc-build/shlib-versions.v
+gawk -v default_setname='' \
+	       -v cpu='i686' \
+	       -v vendor='lfs' \
+	       -v os='linux-gnu' \
+	       -f scripts/soversions.awk /sources/builddir/glibc-build/shlib-versions.v > /sources/builddir/glibc-build/soversions.iT
+mv -f /sources/builddir/glibc-build/soversions.iT /sources/builddir/glibc-build/soversions.i
+sed '/^[ 	]*%/!s/#.*$//;/^[ 	]*$/d;s/^[ 	]*%/#/' \
+	    Versions.def \
+	| gcc -E -undef  -Iinclude  -I/sources/builddir/glibc-build -Isysdeps/i386/elf -Inptl/sysdeps/unix/sysv/linux/i386/i686 -Isysdeps/unix/sysv/linux/i386/i686 -Inptl/sysdeps/unix/sysv/linux/i386 -Isysdeps/unix/sysv/linux/i386 -Inptl/sysdeps/unix/sysv/linux -Inptl/sysdeps/pthread -Isysdeps/pthread -Isysdeps/unix/sysv/linux -Isysdeps/gnu -Isysdeps/unix/common -Isysdeps/unix/mman -Isysdeps/unix/inet -Isysdeps/unix/sysv/i386 -Inptl/sysdeps/unix/sysv -Isysdeps/unix/sysv -Isysdeps/unix/i386 -Inptl/sysdeps/unix -Isysdeps/unix -Isysdeps/posix -Isysdeps/i386/i686/fpu -Isysdeps/i386/i686/multiarch -Inptl/sysdeps/i386/i686 -Isysdeps/i386/i686 -Isysdeps/i386/i486 -Inptl/sysdeps/i386/i486 -Isysdeps/i386/fpu -Inptl/sysdeps/i386 -Isysdeps/i386 -Isysdeps/wordsize-32 -Isysdeps/ieee754/ldbl-96 -Isysdeps/ieee754/dbl-64 -Isysdeps/ieee754/flt-32 -Isysdeps/ieee754 -Isysdeps/generic/elf -Isysdeps/generic -Inptl   -Ilibio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -D_LIBC_REENTRANT -include include/libc-symbols.h       -x assembler-with-cpp - \
+		   > /sources/builddir/glibc-build/Versions.def.v.iT
+mv -f /sources/builddir/glibc-build/Versions.def.v.iT /sources/builddir/glibc-build/Versions.def.v.i
+sed '/^[ 	]*#/d;/^[ 	]*$/d' /sources/builddir/glibc-build/Versions.def.v.i > /sources/builddir/glibc-build/Versions.def.vT
+mv -f /sources/builddir/glibc-build/Versions.def.vT /sources/builddir/glibc-build/Versions.def.v
+{ while read which lib version setname; do \
+	    test x"$which" = xDEFAULT || continue; \
+	    test -z "$setname" || echo "$lib : $setname"; \
+	  done < /sources/builddir/glibc-build/soversions.i; \
+	  cat /sources/builddir/glibc-build/Versions.def.v; \
+	} | LC_ALL=C gawk -f scripts/firstversions.awk > /sources/builddir/glibc-build/Versions.allT
+mv -f /sources/builddir/glibc-build/Versions.allT /sources/builddir/glibc-build/Versions.all
+LC_ALL=C gawk -v oldest_abi=default -f scripts/abi-versions.awk /sources/builddir/glibc-build/Versions.all > /sources/builddir/glibc-build/abi-versions.hT
+mv -f /sources/builddir/glibc-build/abi-versions.hT /sources/builddir/glibc-build/abi-versions.h
+rm -f /sources/builddir/glibc-build/tls.makeT /sources/builddir/glibc-build/tls.make.dT
+(echo '# Generated from tls.make.c by Makerules.'; \
+	 gcc -std=gnu99 -fgnu89-inline -O2 -Wall -Winline -Wwrite-strings -fmerge-all-constants -g -march=i486 -mtune=native -Wstrict-prototypes -mpreferred-stack-boundary=2     -Iinclude  -I/sources/builddir/glibc-build -Isysdeps/i386/elf -Inptl/sysdeps/unix/sysv/linux/i386/i686 -Isysdeps/unix/sysv/linux/i386/i686 -Inptl/sysdeps/unix/sysv/linux/i386 -Isysdeps/unix/sysv/linux/i386 -Inptl/sysdeps/unix/sysv/linux -Inptl/sysdeps/pthread -Isysdeps/pthread -Isysdeps/unix/sysv/linux -Isysdeps/gnu -Isysdeps/unix/common -Isysdeps/unix/mman -Isysdeps/unix/inet -Isysdeps/unix/sysv/i386 -Inptl/sysdeps/unix/sysv -Isysdeps/unix/sysv -Isysdeps/unix/i386 -Inptl/sysdeps/unix -Isysdeps/unix -Isysdeps/posix -Isysdeps/i386/i686/fpu -Isysdeps/i386/i686/multiarch -Inptl/sysdeps/i386/i686 -Isysdeps/i386/i686 -Isysdeps/i386/i486 -Inptl/sysdeps/i386/i486 -Isysdeps/i386/fpu -Inptl/sysdeps/i386 -Isysdeps/i386 -Isysdeps/wordsize-32 -Isysdeps/ieee754/ldbl-96 -Isysdeps/ieee754/dbl-64 -Isysdeps/ieee754/flt-32 -Isysdeps/ieee754 -Isysdeps/generic/elf -Isysdeps/generic -Inptl   -Ilibio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -D_LIBC_REENTRANT -include include/libc-symbols.h       -E -DASSEMBLER tls.make.c \
+	       -MD -MP -MT '$(common-objpfx)tls.make' -MF /sources/builddir/glibc-build/tls.make.dT \
+	 | sed -n '/@@@/{s/@@@[	 ]*\(.*\)@@@/\1/;s/[	 ]*$//p;}'; \
+	 echo 'common-generated += tls.make'; \
+	 sed -e 's@ /sources/builddir/glibc-build/@ $(common-objpfx)@g' -e 's@^/sources/builddir/glibc-build/@$(common-objpfx)@g' -e 's@  *\([^ 	\/$][^ 	\]*\)@ $(..)\1@g' -e 's@^\([^ 	\/$][^ 	\]*\)@$(..)\1@g' /sources/builddir/glibc-build/tls.make.dT; \
+	 rm -f /sources/builddir/glibc-build/tls.make.dT) > /sources/builddir/glibc-build/tls.makeT
+In file included from ./posix/bits/posix1_lim.h:157:0,
+                 from include/bits/posix1_lim.h:1,
+                 from include/limits.h:145,
+                 from nptl/sysdeps/pthread/allocalim.h:21,
+                 from include/alloca.h:21,
+                 from ./stdlib/stdlib.h:497,
+                 from include/stdlib.h:8,
+                 from nptl/sysdeps/i386/i686/../tls.h:28,
+                 from nptl/sysdeps/i386/i686/tls.h:34,
+                 from include/tls.h:6,
+                 from tls.make.c:3:
+nptl/sysdeps/unix/sysv/linux/bits/local_lim.h:39:26: fatal error: linux/limits.h: No such file or directory
+compilation terminated.
+sed: can't read /sources/builddir/glibc-build/tls.make.dT: No such file or directory
+mv -f /sources/builddir/glibc-build/tls.makeT /sources/builddir/glibc-build/tls.make
+sed '/^[ 	]*%/!s/#.*$//;/^[ 	]*$/d;s/^[ 	]*%/#/' \
+	    csu/Versions iconv/Versions locale/Versions assert/Versions ctype/Versions intl/Versions catgets/Versions math/Versions setjmp/Versions signal/Versions stdlib/Versions stdio-common/Versions libio/Versions dlfcn/Versions malloc/Versions string/Versions wcsmbs/Versions time/Versions dirent/Versions grp/Versions pwd/Versions posix/Versions io/Versions termios/Versions resource/Versions misc/Versions socket/Versions sysvipc/Versions gmon/Versions wctype/Versions shadow/Versions gshadow/Versions argp/Versions crypt/Versions nptl/Versions resolv/Versions nss/Versions rt/Versions debug/Versions libidn/Versions nptl_db/Versions inet/Versions hesiod/Versions sunrpc/Versions nis/Versions streams/Versions login/Versions elf/Versions sysdeps/i386/elf/Versions sysdeps/unix/sysv/linux/i386/Versions nptl/sysdeps/unix/sysv/linux/Versions sysdeps/pthread/Versions sysdeps/unix/sysv/linux/Versions sysdeps/unix/sysv/Versions sysdeps/i386/i686/multiarch/Versions sysdeps/i386/i486/Versions sysdeps/i386/fpu/Versions sysdeps/i386/Versions sysdeps/wordsize-32/Versions \
+	| gcc -E -undef  -Iinclude  -I/sources/builddir/glibc-build -Isysdeps/i386/elf -Inptl/sysdeps/unix/sysv/linux/i386/i686 -Isysdeps/unix/sysv/linux/i386/i686 -Inptl/sysdeps/unix/sysv/linux/i386 -Isysdeps/unix/sysv/linux/i386 -Inptl/sysdeps/unix/sysv/linux -Inptl/sysdeps/pthread -Isysdeps/pthread -Isysdeps/unix/sysv/linux -Isysdeps/gnu -Isysdeps/unix/common -Isysdeps/unix/mman -Isysdeps/unix/inet -Isysdeps/unix/sysv/i386 -Inptl/sysdeps/unix/sysv -Isysdeps/unix/sysv -Isysdeps/unix/i386 -Inptl/sysdeps/unix -Isysdeps/unix -Isysdeps/posix -Isysdeps/i386/i686/fpu -Isysdeps/i386/i686/multiarch -Inptl/sysdeps/i386/i686 -Isysdeps/i386/i686 -Isysdeps/i386/i486 -Inptl/sysdeps/i386/i486 -Isysdeps/i386/fpu -Inptl/sysdeps/i386 -Isysdeps/i386 -Isysdeps/wordsize-32 -Isysdeps/ieee754/ldbl-96 -Isysdeps/ieee754/dbl-64 -Isysdeps/ieee754/flt-32 -Isysdeps/ieee754 -Isysdeps/generic/elf -Isysdeps/generic -Inptl   -Ilibio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -D_LIBC_REENTRANT -include include/libc-symbols.h       -x assembler-with-cpp - \
+		   > /sources/builddir/glibc-build/Versions.v.iT
+mv -f /sources/builddir/glibc-build/Versions.v.iT /sources/builddir/glibc-build/Versions.v.i
+sed '/^[ 	]*#/d;/^[ 	]*$/d' /sources/builddir/glibc-build/Versions.v.i > /sources/builddir/glibc-build/Versions.vT
+mv -f /sources/builddir/glibc-build/Versions.vT /sources/builddir/glibc-build/Versions.v
+( echo 'sysd-versions-subdirs = csu iconv locale localedata iconvdata assert ctype intl catgets math setjmp signal stdlib stdio-common libio dlfcn malloc string wcsmbs timezone time dirent grp pwd posix io termios resource misc socket sysvipc gmon gnulib wctype manual shadow gshadow po argp crypt nptl resolv nss rt conform debug libidn nptl_db inet hesiod sunrpc nis nscd streams login elf sysdeps/i386/elf nptl/sysdeps/unix/sysv/linux/i386/i686 sysdeps/unix/sysv/linux/i386/i686 nptl/sysdeps/unix/sysv/linux/i386 sysdeps/unix/sysv/linux/i386 nptl/sysdeps/unix/sysv/linux nptl/sysdeps/pthread sysdeps/pthread sysdeps/unix/sysv/linux sysdeps/gnu sysdeps/unix/common sysdeps/unix/mman sysdeps/unix/inet sysdeps/unix/sysv/i386 nptl/sysdeps/unix/sysv sysdeps/unix/sysv sysdeps/unix/i386 nptl/sysdeps/unix sysdeps/unix sysdeps/posix sysdeps/i386/i686/fpu sysdeps/i386/i686/multiarch nptl/sysdeps/i386/i686 sysdeps/i386/i686 sysdeps/i386/i486 nptl/sysdeps/i386/i486 sysdeps/i386/fpu nptl/sysdeps/i386 sysdeps/i386 sysdeps/wordsize-32 sysdeps/ieee754/ldbl-96 sysdeps/ieee754/dbl-64 sysdeps/ieee754/flt-32 sysdeps/ieee754 sysdeps/generic/elf sysdeps/generic' ; \
+	  cat /sources/builddir/glibc-build/Versions.v \
+	  | LC_ALL=C gawk -v buildroot=/sources/builddir/glibc-build/ -v defsfile=/sources/builddir/glibc-build/Versions.all \
+			    -v move_if_change='/bin/sh scripts/move-if-change' \
+			    -f scripts/versions.awk; \
+	) > /sources/builddir/glibc-build/sysd-versionsT
+mv -f /sources/builddir/glibc-build/sysd-versionsT /sources/builddir/glibc-build/sysd-versions
+(seen_DEFAULT=0; seen_WORDSIZE32=0; seen_WORDSIZE64=0; \
+	 while read which lib number setname; do \
+	   eval seen_$which=1; \
+	   test x"$which" != xABI || echo abi-name = "$lib"; \
+	   test x"$which" = xDEFAULT || continue; \
+	   case $number in \
+	     [0-9]*) echo "$lib.so-version=.$number"; \
+		     echo "all-sonames+=$lib=$lib.so\$($lib.so-version)";;\
+	     *)	     echo "$lib.so-version=$number"; \
+		     echo "all-sonames+=$lib=\$($lib.so-version)";;\
+	   esac; \
+	 done; \
+	 case "$seen_DEFAULT$seen_WORDSIZE32$seen_WORDSIZE64" in \
+	   100) echo biarch = no;; \
+	   101) echo biarch = 32;; \
+	   ?1?) echo biarch = 64;; \
+	   *) echo >&2 BUG; exit 2;; \
+	 esac; \
+	 echo soversions.mk-done = t;) < /sources/builddir/glibc-build/soversions.i > /sources/builddir/glibc-build/soversions.mkT; exit 0
+mv -f /sources/builddir/glibc-build/soversions.mkT /sources/builddir/glibc-build/soversions.mk
+make[1]: Leaving directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1'
+make[1]: Entering directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1'
+{ echo '#include "posix/bits/posix1_lim.h"';		\
+	  echo '#define _LIBC 1';					\
+	  echo '#include "misc/sys/uio.h"'; } |			\
+	gcc -E -dM -MD -MP -MF /sources/builddir/glibc-build/bits/stdio_lim.dT -MT '/sources/builddir/glibc-build/bits/stdio_lim.h /sources/builddir/glibc-build/bits/stdio_lim.d' 	\
+	      -Iinclude  -I/sources/builddir/glibc-build -Isysdeps/i386/elf -Inptl/sysdeps/unix/sysv/linux/i386/i686 -Isysdeps/unix/sysv/linux/i386/i686 -Inptl/sysdeps/unix/sysv/linux/i386 -Isysdeps/unix/sysv/linux/i386 -Inptl/sysdeps/unix/sysv/linux -Inptl/sysdeps/pthread -Isysdeps/pthread -Isysdeps/unix/sysv/linux -Isysdeps/gnu -Isysdeps/unix/common -Isysdeps/unix/mman -Isysdeps/unix/inet -Isysdeps/unix/sysv/i386 -Inptl/sysdeps/unix/sysv -Isysdeps/unix/sysv -Isysdeps/unix/i386 -Inptl/sysdeps/unix -Isysdeps/unix -Isysdeps/posix -Isysdeps/i386/i686/fpu -Isysdeps/i386/i686/multiarch -Inptl/sysdeps/i386/i686 -Isysdeps/i386/i686 -Isysdeps/i386/i486 -Inptl/sysdeps/i386/i486 -Isysdeps/i386/fpu -Inptl/sysdeps/i386 -Isysdeps/i386 -Isysdeps/wordsize-32 -Isysdeps/ieee754/ldbl-96 -Isysdeps/ieee754/dbl-64 -Isysdeps/ieee754/flt-32 -Isysdeps/ieee754 -Isysdeps/generic/elf -Isysdeps/generic -Inptl   -Ilibio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -xc - -o /sources/builddir/glibc-build/bits/stdio_lim.hT
+In file included from posix/bits/posix1_lim.h:157:0,
+                 from <stdin>:1:
+nptl/sysdeps/unix/sysv/linux/bits/local_lim.h:39:26: fatal error: linux/limits.h: No such file or directory
+compilation terminated.
+./scripts/mkinstalldirs /sources/builddir/glibc-build/gnu
+mkdir /sources/builddir/glibc-build/gnu
+LC_ALL=C gawk -f scripts/lib-names.awk /sources/builddir/glibc-build/soversions.i > /sources/builddir/glibc-build/gnu/lib-names.T
+/bin/sh scripts/move-if-change /sources/builddir/glibc-build/gnu/lib-names.T /sources/builddir/glibc-build/gnu/lib-names.h
+touch /sources/builddir/glibc-build/gnu/lib-names.stmp
+rm -f /sources/builddir/glibc-build/tls.makeT /sources/builddir/glibc-build/tls.make.dT
+(echo '# Generated from tls.make.c by Makerules.'; \
+	 gcc -std=gnu99 -fgnu89-inline -O2 -Wall -Winline -Wwrite-strings -fmerge-all-constants -g -march=i486 -mtune=native -Wstrict-prototypes -mpreferred-stack-boundary=2     -Iinclude  -I/sources/builddir/glibc-build -Isysdeps/i386/elf -Inptl/sysdeps/unix/sysv/linux/i386/i686 -Isysdeps/unix/sysv/linux/i386/i686 -Inptl/sysdeps/unix/sysv/linux/i386 -Isysdeps/unix/sysv/linux/i386 -Inptl/sysdeps/unix/sysv/linux -Inptl/sysdeps/pthread -Isysdeps/pthread -Isysdeps/unix/sysv/linux -Isysdeps/gnu -Isysdeps/unix/common -Isysdeps/unix/mman -Isysdeps/unix/inet -Isysdeps/unix/sysv/i386 -Inptl/sysdeps/unix/sysv -Isysdeps/unix/sysv -Isysdeps/unix/i386 -Inptl/sysdeps/unix -Isysdeps/unix -Isysdeps/posix -Isysdeps/i386/i686/fpu -Isysdeps/i386/i686/multiarch -Inptl/sysdeps/i386/i686 -Isysdeps/i386/i686 -Isysdeps/i386/i486 -Inptl/sysdeps/i386/i486 -Isysdeps/i386/fpu -Inptl/sysdeps/i386 -Isysdeps/i386 -Isysdeps/wordsize-32 -Isysdeps/ieee754/ldbl-96 -Isysdeps/ieee754/dbl-64 -Isysdeps/ieee754/flt-32 -Isysdeps/ieee754 -Isysdeps/generic/elf -Isysdeps/generic -Inptl   -Ilibio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -D_LIBC_REENTRANT -include include/libc-symbols.h       -E -DASSEMBLER tls.make.c \
+	       -MD -MP -MT '$(common-objpfx)tls.make' -MF /sources/builddir/glibc-build/tls.make.dT \
+	 | sed -n '/@@@/{s/@@@[	 ]*\(.*\)@@@/\1/;s/[	 ]*$//p;}'; \
+	 echo 'common-generated += tls.make'; \
+	 sed -e 's@ /sources/builddir/glibc-build/@ $(common-objpfx)@g' -e 's@^/sources/builddir/glibc-build/@$(common-objpfx)@g' -e 's@  *\([^ 	\/$][^ 	\]*\)@ $(..)\1@g' -e 's@^\([^ 	\/$][^ 	\]*\)@$(..)\1@g' /sources/builddir/glibc-build/tls.make.dT; \
+	 rm -f /sources/builddir/glibc-build/tls.make.dT) > /sources/builddir/glibc-build/tls.makeT
+In file included from ./posix/bits/posix1_lim.h:157:0,
+                 from include/bits/posix1_lim.h:1,
+                 from include/limits.h:145,
+                 from nptl/sysdeps/pthread/allocalim.h:21,
+                 from include/alloca.h:21,
+                 from ./stdlib/stdlib.h:497,
+                 from include/stdlib.h:8,
+                 from nptl/sysdeps/i386/i686/../tls.h:28,
+                 from nptl/sysdeps/i386/i686/tls.h:34,
+                 from include/tls.h:6,
+                 from tls.make.c:3:
+nptl/sysdeps/unix/sysv/linux/bits/local_lim.h:39:26: fatal error: linux/limits.h: No such file or directory
+compilation terminated.
+sed: can't read /sources/builddir/glibc-build/tls.make.dT: No such file or directory
+mv -f /sources/builddir/glibc-build/tls.makeT /sources/builddir/glibc-build/tls.make
+make[1]: Leaving directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1'
+make[1]: Entering directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1'
+{ echo '#include "posix/bits/posix1_lim.h"';		\
+	  echo '#define _LIBC 1';					\
+	  echo '#include "misc/sys/uio.h"'; } |			\
+	gcc -E -dM -MD -MP -MF /sources/builddir/glibc-build/bits/stdio_lim.dT -MT '/sources/builddir/glibc-build/bits/stdio_lim.h /sources/builddir/glibc-build/bits/stdio_lim.d' 	\
+	      -Iinclude  -I/sources/builddir/glibc-build -Isysdeps/i386/elf -Inptl/sysdeps/unix/sysv/linux/i386/i686 -Isysdeps/unix/sysv/linux/i386/i686 -Inptl/sysdeps/unix/sysv/linux/i386 -Isysdeps/unix/sysv/linux/i386 -Inptl/sysdeps/unix/sysv/linux -Inptl/sysdeps/pthread -Isysdeps/pthread -Isysdeps/unix/sysv/linux -Isysdeps/gnu -Isysdeps/unix/common -Isysdeps/unix/mman -Isysdeps/unix/inet -Isysdeps/unix/sysv/i386 -Inptl/sysdeps/unix/sysv -Isysdeps/unix/sysv -Isysdeps/unix/i386 -Inptl/sysdeps/unix -Isysdeps/unix -Isysdeps/posix -Isysdeps/i386/i686/fpu -Isysdeps/i386/i686/multiarch -Inptl/sysdeps/i386/i686 -Isysdeps/i386/i686 -Isysdeps/i386/i486 -Inptl/sysdeps/i386/i486 -Isysdeps/i386/fpu -Inptl/sysdeps/i386 -Isysdeps/i386 -Isysdeps/wordsize-32 -Isysdeps/ieee754/ldbl-96 -Isysdeps/ieee754/dbl-64 -Isysdeps/ieee754/flt-32 -Isysdeps/ieee754 -Isysdeps/generic/elf -Isysdeps/generic -Inptl   -Ilibio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -xc - -o /sources/builddir/glibc-build/bits/stdio_lim.hT
+In file included from posix/bits/posix1_lim.h:157:0,
+                 from <stdin>:1:
+nptl/sysdeps/unix/sysv/linux/bits/local_lim.h:39:26: fatal error: linux/limits.h: No such file or directory
+compilation terminated.
+rm -f /sources/builddir/glibc-build/stamp.o; > /sources/builddir/glibc-build/stamp.o
+rm -f /sources/builddir/glibc-build/stamp.os; > /sources/builddir/glibc-build/stamp.os
+rm -f /sources/builddir/glibc-build/stamp.oS; > /sources/builddir/glibc-build/stamp.oS
+make  subdir=csu -C csu ..=../ subdir_lib
+make[2]: Entering directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1/csu'
+{ echo '#include "../posix/bits/posix1_lim.h"';		\
+	  echo '#define _LIBC 1';					\
+	  echo '#include "../misc/sys/uio.h"'; } |			\
+	gcc -E -dM -MD -MP -MF /sources/builddir/glibc-build/bits/stdio_lim.dT -MT '/sources/builddir/glibc-build/bits/stdio_lim.h /sources/builddir/glibc-build/bits/stdio_lim.d' 	\
+	      -I../include -I/sources/builddir/glibc-build/csu -I/sources/builddir/glibc-build -I../sysdeps/i386/elf -I../nptl/sysdeps/unix/sysv/linux/i386/i686 -I../sysdeps/unix/sysv/linux/i386/i686 -I../nptl/sysdeps/unix/sysv/linux/i386 -I../sysdeps/unix/sysv/linux/i386 -I../nptl/sysdeps/unix/sysv/linux -I../nptl/sysdeps/pthread -I../sysdeps/pthread -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv/i386 -I../nptl/sysdeps/unix/sysv -I../sysdeps/unix/sysv -I../sysdeps/unix/i386 -I../nptl/sysdeps/unix -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/i386/i686/fpu -I../sysdeps/i386/i686/multiarch -I../nptl/sysdeps/i386/i686 -I../sysdeps/i386/i686 -I../sysdeps/i386/i486 -I../nptl/sysdeps/i386/i486 -I../sysdeps/i386/fpu -I../nptl/sysdeps/i386 -I../sysdeps/i386 -I../sysdeps/wordsize-32 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic -I../nptl  -I.. -I../libio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -xc - -o /sources/builddir/glibc-build/bits/stdio_lim.hT
+In file included from ../posix/bits/posix1_lim.h:157:0,
+                 from <stdin>:1:
+../nptl/sysdeps/unix/sysv/linux/bits/local_lim.h:39:26: fatal error: linux/limits.h: No such file or directory
+compilation terminated.
+.././scripts/mkinstalldirs /sources/builddir/glibc-build/csu
+.././scripts/mkinstalldirs /sources/builddir/glibc-build/csu
+mkdir /sources/builddir/glibc-build/csu
+(case linux-gnu in \
+	   linux*) version=`(printf '%s\n%s\n' \
+				    '#include <linux/version.h>' \
+				    UTS_RELEASE \
+			     | gcc  -I../include -I/sources/builddir/glibc-build/csu -I/sources/builddir/glibc-build -I../sysdeps/i386/elf -I../nptl/sysdeps/unix/sysv/linux/i386/i686 -I../sysdeps/unix/sysv/linux/i386/i686 -I../nptl/sysdeps/unix/sysv/linux/i386 -I../sysdeps/unix/sysv/linux/i386 -I../nptl/sysdeps/unix/sysv/linux -I../nptl/sysdeps/pthread -I../sysdeps/pthread -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv/i386 -I../nptl/sysdeps/unix/sysv -I../sysdeps/unix/sysv -I../sysdeps/unix/i386 -I../nptl/sysdeps/unix -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/i386/i686/fpu -I../sysdeps/i386/i686/multiarch -I../nptl/sysdeps/i386/i686 -I../sysdeps/i386/i686 -I../sysdeps/i386/i486 -I../nptl/sysdeps/i386/i486 -I../sysdeps/i386/fpu -I../nptl/sysdeps/i386 -I../sysdeps/i386 -I../sysdeps/wordsize-32 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic -I../nptl  -I.. -I../libio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h       -DHAVE_INITFINI -O -E -P - -DNOT_IN_libc=1 | \
+			     sed -e 's/"\([^"]*\)".*/\1/p' -e d) 2>/dev/null`;\
+		   if [ -z "$version" ]; then \
+		     version=`(printf '%s\n%s\n' \
+				      '#include <linux/version.h>' \
+				       LINUX_VERSION_CODE \
+			       | gcc  -I../include -I/sources/builddir/glibc-build/csu -I/sources/builddir/glibc-build -I../sysdeps/i386/elf -I../nptl/sysdeps/unix/sysv/linux/i386/i686 -I../sysdeps/unix/sysv/linux/i386/i686 -I../nptl/sysdeps/unix/sysv/linux/i386 -I../sysdeps/unix/sysv/linux/i386 -I../nptl/sysdeps/unix/sysv/linux -I../nptl/sysdeps/pthread -I../sysdeps/pthread -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv/i386 -I../nptl/sysdeps/unix/sysv -I../sysdeps/unix/sysv -I../sysdeps/unix/i386 -I../nptl/sysdeps/unix -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/i386/i686/fpu -I../sysdeps/i386/i686/multiarch -I../nptl/sysdeps/i386/i686 -I../sysdeps/i386/i686 -I../sysdeps/i386/i486 -I../nptl/sysdeps/i386/i486 -I../sysdeps/i386/fpu -I../nptl/sysdeps/i386 -I../sysdeps/i386 -I../sysdeps/wordsize-32 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic -I../nptl  -I.. -I../libio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h       -DHAVE_INITFINI -O -E -P - -DNOT_IN_libc=1 \
+			       | sed -n -e '/^[123456789].*/p' \
+			       | awk '{v=$1; \
+				       printf("%d.%d.%d\n", \
+					      v/65535, v/256%256, v%256)}') \
+				2>/dev/null`; \
+		   fi; \
+		   if [ -z "$version" ]; then \
+		     if [ -r /proc/version ]; then \
+		       version=`sed 's/.*Linux version \([^ ]*\) .*/>>\1<</' \
+				< /proc/version`; \
+		     else \
+		       version=`uname -r`; \
+		     fi; \
+		   fi; \
+		   os=`uname -s 2> /dev/null`; \
+		   if [ -z "$os" ]; then \
+		     os=Linux; \
+		   fi; \
+		   printf '"Compiled on a %s %s system on %s.\\n"\n' \
+			  "$os" "$version" "`date +%Y-%m-%d`";; \
+	   *) ;; \
+	 esac; \
+	 files="../crypt/Banner ../libidn/Banner ../nptl/Banner ../resolv/Banner";				\
+	 if test -n "$files"; then				\
+	   printf '"Available extensions:\\n"\n';		\
+	   sed -e '/^#/d' -e 's/^[[:space:]]*/	/'		\
+	       -e 's/^\(.*\)$/\"\1\\n\"/' $files;		\
+	 fi) > /sources/builddir/glibc-build/csu/version-info.hT
+rm -f /sources/builddir/glibc-build/csu/abi-tag.h.new
+sed -e 's/#.*$//' -e '/^[	]*$/d' ../abi-tags | \
+	while read conf tagos tagver; do \
+	  test `expr 'i686-lfs-linux-gnu' \
+		     : "$conf"` != 0 || continue; \
+	  ( echo "$tagos" | \
+	    sed -e 's/[^0-9xXa-fA-F 	]//' \
+		-e 's/^/#define __ABI_TAG_OS /'; \
+	    echo "#ifndef __ABI_TAG_VERSION"; \
+	    echo "$tagver" | \
+	    sed -e 's/[^0-9xXa-fA-F]/ /g' -e 's/ *$//' \
+	      -e 's/ /,/g' -e 's/^/# define __ABI_TAG_VERSION /'; \
+	    echo "#endif" ) > /sources/builddir/glibc-build/csu/abi-tag.h.new; \
+	done
+if test -r /sources/builddir/glibc-build/csu/abi-tag.h.new; then mv -f /sources/builddir/glibc-build/csu/abi-tag.h.new /sources/builddir/glibc-build/csu/abi-tag.h; \
+	else echo >&2 'This configuration not matched in ../abi-tags'; exit 1; fi
+mv -f /sources/builddir/glibc-build/csu/version-info.hT /sources/builddir/glibc-build/csu/version-info.h
+make[2]: Leaving directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1/csu'
+make[1]: *** [csu/subdir_lib] Error 2
+make[1]: Leaving directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1'
+make: *** [all] Error 2
+
+    *** BUILD_PROBLEM_DETECTED ***
+
+LANGUAGE=C LC_ALL=C; export LANGUAGE LC_ALL; \
+	make -r PARALLELMFLAGS="" CVSOPTS="" -C ../glibc-2.14.1 objdir=`pwd` install
+make[1]: Entering directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1'
+{ echo '#include "posix/bits/posix1_lim.h"';		\
+	  echo '#define _LIBC 1';					\
+	  echo '#include "misc/sys/uio.h"'; } |			\
+	gcc -E -dM -MD -MP -MF /sources/builddir/glibc-build/bits/stdio_lim.dT -MT '/sources/builddir/glibc-build/bits/stdio_lim.h /sources/builddir/glibc-build/bits/stdio_lim.d' 	\
+	      -Iinclude  -I/sources/builddir/glibc-build -Isysdeps/i386/elf -Inptl/sysdeps/unix/sysv/linux/i386/i686 -Isysdeps/unix/sysv/linux/i386/i686 -Inptl/sysdeps/unix/sysv/linux/i386 -Isysdeps/unix/sysv/linux/i386 -Inptl/sysdeps/unix/sysv/linux -Inptl/sysdeps/pthread -Isysdeps/pthread -Isysdeps/unix/sysv/linux -Isysdeps/gnu -Isysdeps/unix/common -Isysdeps/unix/mman -Isysdeps/unix/inet -Isysdeps/unix/sysv/i386 -Inptl/sysdeps/unix/sysv -Isysdeps/unix/sysv -Isysdeps/unix/i386 -Inptl/sysdeps/unix -Isysdeps/unix -Isysdeps/posix -Isysdeps/i386/i686/fpu -Isysdeps/i386/i686/multiarch -Inptl/sysdeps/i386/i686 -Isysdeps/i386/i686 -Isysdeps/i386/i486 -Inptl/sysdeps/i386/i486 -Isysdeps/i386/fpu -Inptl/sysdeps/i386 -Isysdeps/i386 -Isysdeps/wordsize-32 -Isysdeps/ieee754/ldbl-96 -Isysdeps/ieee754/dbl-64 -Isysdeps/ieee754/flt-32 -Isysdeps/ieee754 -Isysdeps/generic/elf -Isysdeps/generic -Inptl   -Ilibio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -xc - -o /sources/builddir/glibc-build/bits/stdio_lim.hT
+In file included from posix/bits/posix1_lim.h:157:0,
+                 from <stdin>:1:
+nptl/sysdeps/unix/sysv/linux/bits/local_lim.h:39:26: fatal error: linux/limits.h: No such file or directory
+compilation terminated.
+make  subdir=csu -C csu ..=../ subdir_lib
+make[2]: Entering directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1/csu'
+{ echo '#include "../posix/bits/posix1_lim.h"';		\
+	  echo '#define _LIBC 1';					\
+	  echo '#include "../misc/sys/uio.h"'; } |			\
+	gcc -E -dM -MD -MP -MF /sources/builddir/glibc-build/bits/stdio_lim.dT -MT '/sources/builddir/glibc-build/bits/stdio_lim.h /sources/builddir/glibc-build/bits/stdio_lim.d' 	\
+	      -I../include -I/sources/builddir/glibc-build/csu -I/sources/builddir/glibc-build -I../sysdeps/i386/elf -I../nptl/sysdeps/unix/sysv/linux/i386/i686 -I../sysdeps/unix/sysv/linux/i386/i686 -I../nptl/sysdeps/unix/sysv/linux/i386 -I../sysdeps/unix/sysv/linux/i386 -I../nptl/sysdeps/unix/sysv/linux -I../nptl/sysdeps/pthread -I../sysdeps/pthread -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv/i386 -I../nptl/sysdeps/unix/sysv -I../sysdeps/unix/sysv -I../sysdeps/unix/i386 -I../nptl/sysdeps/unix -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/i386/i686/fpu -I../sysdeps/i386/i686/multiarch -I../nptl/sysdeps/i386/i686 -I../sysdeps/i386/i686 -I../sysdeps/i386/i486 -I../nptl/sysdeps/i386/i486 -I../sysdeps/i386/fpu -I../nptl/sysdeps/i386 -I../sysdeps/i386 -I../sysdeps/wordsize-32 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic -I../nptl  -I.. -I../libio -I. -nostdinc -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include -isystem /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed -isystem /tools/include -xc - -o /sources/builddir/glibc-build/bits/stdio_lim.hT
+In file included from ../posix/bits/posix1_lim.h:157:0,
+                 from <stdin>:1:
+../nptl/sysdeps/unix/sysv/linux/bits/local_lim.h:39:26: fatal error: linux/limits.h: No such file or directory
+compilation terminated.
+make[2]: Leaving directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1/csu'
+make[1]: *** [csu/subdir_lib] Error 2
+make[1]: Leaving directory `/shadux/lfscript/builddir.17729.tmp/sources/builddir/glibc-2.14.1'
+make: *** [install] Error 2
+
+    *** BUILD_PROBLEM_DETECTED ***
+
