@@ -1,0 +1,788 @@
+checking for a BSD-compatible install... /tools/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /tools/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for ranlib... ranlib
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /tools/bin/grep
+checking for egrep... /tools/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for inline... inline
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for btowc... yes
+checking for gettimeofday... yes
+checking for lstat... yes
+checking for mbsinit... yes
+checking for mbrtowc... yes
+checking for mbrlen... yes
+checking for mprotect... yes
+checking for pathconf... yes
+checking for isblank... yes
+checking for iswctype... yes
+checking for wcscoll... yes
+checking for wcrtomb... yes
+checking for wctob... yes
+checking for iswcntrl... yes
+checking for isatty... yes
+checking for bcopy... yes
+checking for bzero... yes
+checking for isascii... yes
+checking for memcpy... yes
+checking for memset... yes
+checking for strchr... yes
+checking for strtoul... yes
+checking for popen... yes
+checking for fchown... yes
+checking for fchmod... yes
+checking for setlocale... yes
+checking for nl_langinfo and CODESET... yes
+checking for a traditional french locale... none
+checking whether system is Windows or MSDOS... no
+checking whether // is distinct from /... no
+checking whether the preprocessor supports include_next... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for stdint.h... (cached) yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking for stdlib.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for string.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking io.h usability... no
+checking io.h presence... no
+checking for io.h... no
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking alloca.h usability... yes
+checking alloca.h presence... yes
+checking for alloca.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking mcheck.h usability... yes
+checking mcheck.h presence... yes
+checking for mcheck.h... yes
+checking for complete errno.h... yes
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... yes
+checking whether getdelim is declared... yes
+checking whether getline is declared... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for getopt_long_only... yes
+checking whether optreset is declared... no
+checking for working GNU getopt function... yes
+checking whether getenv is declared... yes
+checking for C/C++ restrict keyword... __restrict
+checking for struct timeval... yes
+checking whether getc_unlocked is declared... yes
+checking whether we are using the GNU C Library 2.1 or newer... yes
+checking whether malloc, realloc, calloc are POSIX compliant... yes
+checking for mbstate_t... yes
+checking for a traditional japanese locale... none
+checking for a transitional chinese locale... none
+checking for a french Unicode locale... none
+checking whether mbrtowc handles incomplete characters... guessing yes
+checking whether mbrtowc works as well as mbtowc... guessing yes
+checking whether mbrtowc handles a NULL string argument... guessing yes
+checking whether mbrtowc has a correct return value... guessing yes
+checking whether mbrtowc returns 0 when parsing a NUL character... guessing yes
+checking for mmap... yes
+checking for MAP_ANONYMOUS... yes
+checking for memchr... yes
+checking whether memchr works... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking for library containing setfilecon... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for long long int... yes
+checking for unsigned long long int... yes
+checking for working strerror function... yes
+checking whether strndup is declared... yes
+checking whether strnlen is declared... yes
+checking whether stat file-mode macros are broken... no
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... yes
+checking whether ferror_unlocked is declared... yes
+checking whether fflush_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking whether fputc_unlocked is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether fread_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether getchar_unlocked is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking for wint_t... yes
+checking sys/acl.h usability... no
+checking sys/acl.h presence... no
+checking for sys/acl.h... no
+checking for alloca as a compiler built-in... yes
+checking whether btowc(EOF) is correct... guessing yes
+checking whether // is distinct from /... (cached) no
+checking for error_at_line... yes
+checking for getdelim... yes
+checking for getline... yes
+checking for working getline function... yes
+checking for getpagesize... yes
+checking for gettimeofday with POSIX signature... yes
+checking whether gettimeofday clobbers localtime buffer... no
+checking whether the compiler generally respects inline... yes
+checking whether lstat dereferences a symlink specified with a trailing slash... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes
+checking whether mbrtowc handles a NULL string argument... (cached) guessing yes
+checking whether mbrtowc has a correct return value... (cached) guessing yes
+checking whether mbrtowc returns 0 when parsing a NUL character... (cached) guessing yes
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes
+checking for working mkstemp... yes
+checking for obstacks... yes
+checking for working re_compile_pattern... yes
+checking whether rename is broken with a trailing slash... no
+checking whether rename is broken when the destination exists... no
+checking selinux/selinux.h usability... no
+checking selinux/selinux.h presence... no
+checking for selinux/selinux.h... no
+checking selinux/context.h usability... no
+checking selinux/context.h presence... no
+checking for selinux/context.h... no
+checking for ssize_t... yes
+checking whether stdint.h conforms to C99... yes
+checking for random.h... no
+checking for struct random_data... yes
+checking for working strndup... yes
+checking for working strnlen... yes
+checking for strverscmp... yes
+checking for nlink_t... yes
+checking for a thread-safe mkdir -p... /tools/bin/mkdir -p
+checking for a thread-safe mkdir -p... /tools/bin/mkdir -p
+checking whether <wchar.h> is standalone... yes
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes
+checking whether wcrtomb return value is correct... guessing yes
+checking whether wctob works... guessing yes
+checking whether wctob is declared... yes
+checking whether iswcntrl works... yes
+checking for long file names... yes
+checking whether -lcP is needed... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking whether NLS is requested... yes
+checking for msgfmt... /tools/bin/msgfmt
+checking for gmsgfmt... /tools/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by GCC... /mnt/hd/shadux/lfscript/builddir.1791.tmp/tools/i686-pc-linux-gnu/bin/ld
+checking if the linker (/mnt/hd/shadux/lfscript/builddir.1791.tmp/tools/i686-pc-linux-gnu/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for lstat... (cached) yes
+checking for readlink... yes
+checking whether UTF-8 case folding tests should pass... no
+configure: creating ./config.status
+config.status: creating bootstrap.sh
+config.status: creating testsuite/version.good
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating sed/Makefile
+config.status: creating testsuite/Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+make  all-recursive
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1'
+Making all in lib
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ./alloca.in.h; \
+} > alloca.h-t
+rm -f configmake.h-t
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  echo '#define PREFIX "/tools"'; \
+  echo '#define EXEC_PREFIX "/tools"'; \
+  echo '#define BINDIR "/tools/bin"'; \
+  echo '#define SBINDIR "/tools/sbin"'; \
+  echo '#define LIBEXECDIR "/tools/libexec"'; \
+  echo '#define DATAROOTDIR "/tools/share"'; \
+  echo '#define DATADIR "/tools/share"'; \
+  echo '#define SYSCONFDIR "/tools/etc"'; \
+  echo '#define SHAREDSTATEDIR "/tools/com"'; \
+  echo '#define LOCALSTATEDIR "/tools/var"'; \
+  echo '#define INCLUDEDIR "/tools/include"'; \
+  echo '#define OLDINCLUDEDIR "/usr/include"'; \
+  echo '#define DOCDIR "/tools/share/doc/sed"'; \
+  echo '#define INFODIR "/tools/share/info"'; \
+  echo '#define HTMLDIR "/tools/share/doc/sed"'; \
+  echo '#define DVIDIR "/tools/share/doc/sed"'; \
+  echo '#define PDFDIR "/tools/share/doc/sed"'; \
+  echo '#define PSDIR "/tools/share/doc/sed"'; \
+  echo '#define LIBDIR "/tools/lib"'; \
+  echo '#define LISPDIR ""'; \
+  echo '#define LOCALEDIR "/tools/share/locale"'; \
+  echo '#define MANDIR "/tools/share/man"'; \
+  echo '#define MANEXT ""'; \
+  echo '#define PKGDATADIR "/tools/share/sed"'; \
+  echo '#define PKGINCLUDEDIR "/tools/include/sed"'; \
+  echo '#define PKGLIBDIR "/tools/lib/sed"'; \
+  echo '#define PKGLIBEXECDIR ""'; \
+} | sed '/""/d' > configmake.h-t
+mv -f alloca.h-t alloca.h
+rm -f selinux/selinux.h-t selinux/selinux.h
+/tools/bin/mkdir -p selinux
+if test -f configmake.h && cmp configmake.h-t configmake.h > /dev/null; then \
+  rm -f configmake.h-t; \
+else \
+  rm -f configmake.h; mv configmake.h-t configmake.h; \
+fi
+cp ./se-selinux.in.h selinux/selinux.h-t
+chmod a-x selinux/selinux.h-t
+mv selinux/selinux.h-t selinux/selinux.h
+rm -f selinux/context.h-t selinux/context.h
+/tools/bin/mkdir -p selinux
+rm -f stdio.h-t stdio.h
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''NEXT_STDIO_H''@|<stdio.h>|g' \
+      -e 's|@''GNULIB_FPRINTF''@|1|g' \
+      -e 's|@''GNULIB_FPRINTF_POSIX''@|0|g' \
+      -e 's|@''GNULIB_PRINTF''@|1|g' \
+      -e 's|@''GNULIB_PRINTF_POSIX''@|0|g' \
+      -e 's|@''GNULIB_SNPRINTF''@|0|g' \
+      -e 's|@''GNULIB_SPRINTF_POSIX''@|0|g' \
+      -e 's|@''GNULIB_VFPRINTF''@|1|g' \
+      -e 's|@''GNULIB_VFPRINTF_POSIX''@|0|g' \
+      -e 's|@''GNULIB_VPRINTF''@|1|g' \
+      -e 's|@''GNULIB_VPRINTF_POSIX''@|0|g' \
+      -e 's|@''GNULIB_VSNPRINTF''@|0|g' \
+      -e 's|@''GNULIB_VSPRINTF_POSIX''@|0|g' \
+      -e 's|@''GNULIB_DPRINTF''@|0|g' \
+      -e 's|@''GNULIB_VDPRINTF''@|0|g' \
+      -e 's|@''GNULIB_VASPRINTF''@|0|g' \
+      -e 's|@''GNULIB_OBSTACK_PRINTF''@|0|g' \
+      -e 's|@''GNULIB_OBSTACK_PRINTF_POSIX''@|0|g' \
+      -e 's|@''GNULIB_FOPEN''@|0|g' \
+      -e 's|@''GNULIB_FREOPEN''@|0|g' \
+      -e 's|@''GNULIB_FSEEK''@|0|g' \
+      -e 's|@''GNULIB_FSEEKO''@|0|g' \
+      -e 's|@''GNULIB_FTELL''@|0|g' \
+      -e 's|@''GNULIB_FTELLO''@|0|g' \
+      -e 's|@''GNULIB_FFLUSH''@|0|g' \
+      -e 's|@''GNULIB_FPURGE''@|0|g' \
+      -e 's|@''GNULIB_FCLOSE''@|0|g' \
+      -e 's|@''GNULIB_FPUTC''@|1|g' \
+      -e 's|@''GNULIB_PUTC''@|1|g' \
+      -e 's|@''GNULIB_PUTCHAR''@|1|g' \
+      -e 's|@''GNULIB_FPUTS''@|1|g' \
+      -e 's|@''GNULIB_PUTS''@|1|g' \
+      -e 's|@''GNULIB_FWRITE''@|1|g' \
+      -e 's|@''GNULIB_GETDELIM''@|1|g' \
+      -e 's|@''GNULIB_GETLINE''@|1|g' \
+      -e 's|@''GNULIB_PERROR''@|0|g' \
+      -e 's|@''GNULIB_STDIO_H_SIGPIPE''@|0|g' \
+      -e 's|@''REPLACE_STDIO_WRITE_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_FPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VFPRINTF''@|0|g' \
+      -e 's|@''REPLACE_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_VPRINTF''@|0|g' \
+      -e 's|@''REPLACE_SNPRINTF''@|0|g' \
+      -e 's|@''HAVE_DECL_SNPRINTF''@|1|g' \
+      -e 's|@''REPLACE_VSNPRINTF''@|0|g' \
+      -e 's|@''HAVE_DECL_VSNPRINTF''@|1|g' \
+      -e 's|@''REPLACE_SPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSPRINTF''@|0|g' \
+      -e 's|@''HAVE_DPRINTF''@|1|g' \
+      -e 's|@''REPLACE_DPRINTF''@|0|g' \
+      -e 's|@''HAVE_VDPRINTF''@|1|g' \
+      -e 's|@''REPLACE_VDPRINTF''@|0|g' \
+      -e 's|@''HAVE_VASPRINTF''@|1|g' \
+      -e 's|@''REPLACE_VASPRINTF''@|0|g' \
+      -e 's|@''HAVE_DECL_OBSTACK_PRINTF''@|1|g' \
+      -e 's|@''REPLACE_OBSTACK_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_FOPEN''@|0|g' \
+      -e 's|@''REPLACE_FREOPEN''@|0|g' \
+      -e 's|@''REPLACE_FSEEKO''@|0|g' \
+      -e 's|@''REPLACE_FSEEK''@|0|g' \
+      -e 's|@''REPLACE_FTELLO''@|0|g' \
+      -e 's|@''REPLACE_FTELL''@|0|g' \
+      -e 's|@''REPLACE_FFLUSH''@|0|g' \
+      -e 's|@''REPLACE_FPURGE''@|0|g' \
+      -e 's|@''HAVE_DECL_FPURGE''@|1|g' \
+      -e 's|@''REPLACE_FCLOSE''@|0|g' \
+      -e 's|@''HAVE_DECL_GETDELIM''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLINE''@|1|g' \
+      -e 's|@''REPLACE_GETLINE''@|0|g' \
+      -e 's|@''REPLACE_PERROR''@|0|g' \
+      -e '/definition of GL_LINK_WARNING/r ../build-aux/link-warning.h' \
+      < ./stdio.in.h; \
+} > stdio.h-t
+cp ./se-context.in.h selinux/context.h-t
+chmod a-x selinux/context.h-t
+mv selinux/context.h-t selinux/context.h
+rm -f stdlib.h-t stdlib.h
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''NEXT_STDLIB_H''@|<stdlib.h>|g' \
+      -e 's|@''HAVE_RANDOM_H''@|0|g' \
+      -e 's|@''GNULIB_MALLOC_POSIX''@|1|g' \
+      -e 's|@''GNULIB_REALLOC_POSIX''@|1|g' \
+      -e 's|@''GNULIB_CALLOC_POSIX''@|0|g' \
+      -e 's|@''GNULIB_ATOLL''@|0|g' \
+      -e 's|@''GNULIB_GETLOADAVG''@|0|g' \
+      -e 's|@''GNULIB_GETSUBOPT''@|0|g' \
+      -e 's|@''GNULIB_MKDTEMP''@|0|g' \
+      -e 's|@''GNULIB_MKSTEMP''@|1|g' \
+      -e 's|@''GNULIB_PUTENV''@|0|g' \
+      -e 's|@''GNULIB_RANDOM_R''@|0|g' \
+      -e 's|@''GNULIB_RPMATCH''@|0|g' \
+      -e 's|@''GNULIB_SETENV''@|0|g' \
+      -e 's|@''GNULIB_STRTOD''@|0|g' \
+      -e 's|@''GNULIB_STRTOLL''@|0|g' \
+      -e 's|@''GNULIB_STRTOULL''@|0|g' \
+      -e 's|@''GNULIB_UNSETENV''@|0|g' \
+      -e 's|@''HAVE_ATOLL''@|1|g' \
+      -e 's|@''HAVE_CALLOC_POSIX''@|1|g' \
+      -e 's|@''HAVE_GETSUBOPT''@|1|g' \
+      -e 's|@''HAVE_MALLOC_POSIX''@|1|g' \
+      -e 's|@''HAVE_MKDTEMP''@|1|g' \
+      -e 's|@''HAVE_REALLOC_POSIX''@|1|g' \
+      -e 's|@''HAVE_RANDOM_R''@|1|g' \
+      -e 's|@''HAVE_RPMATCH''@|1|g' \
+      -e 's|@''HAVE_SETENV''@|1|g' \
+      -e 's|@''HAVE_STRTOD''@|1|g' \
+      -e 's|@''HAVE_STRTOLL''@|1|g' \
+      -e 's|@''HAVE_STRTOULL''@|1|g' \
+      -e 's|@''HAVE_STRUCT_RANDOM_DATA''@|1|g' \
+      -e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \
+      -e 's|@''HAVE_UNSETENV''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \
+      -e 's|@''REPLACE_MKSTEMP''@|0|g' \
+      -e 's|@''REPLACE_PUTENV''@|0|g' \
+      -e 's|@''REPLACE_STRTOD''@|0|g' \
+      -e 's|@''VOID_UNSETENV''@|0|g' \
+      -e '/definition of GL_LINK_WARNING/r ../build-aux/link-warning.h' \
+      < ./stdlib.in.h; \
+} > stdlib.h-t
+mv stdlib.h-t stdlib.h
+rm -f string.h-t string.h
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+      -e 's|@''GNULIB_MBSLEN''@|0|g' \
+      -e 's|@''GNULIB_MBSNLEN''@|0|g' \
+      -e 's|@''GNULIB_MBSCHR''@|0|g' \
+      -e 's|@''GNULIB_MBSRCHR''@|0|g' \
+      -e 's|@''GNULIB_MBSSTR''@|0|g' \
+      -e 's|@''GNULIB_MBSCASECMP''@|0|g' \
+      -e 's|@''GNULIB_MBSNCASECMP''@|0|g' \
+      -e 's|@''GNULIB_MBSPCASECMP''@|0|g' \
+      -e 's|@''GNULIB_MBSCASESTR''@|0|g' \
+      -e 's|@''GNULIB_MBSCSPN''@|0|g' \
+      -e 's|@''GNULIB_MBSPBRK''@|0|g' \
+      -e 's|@''GNULIB_MBSSPN''@|0|g' \
+      -e 's|@''GNULIB_MBSSEP''@|0|g' \
+      -e 's|@''GNULIB_MBSTOK_R''@|0|g' \
+      -e 's|@''GNULIB_MEMCHR''@|1|g' \
+      -e 's|@''GNULIB_MEMMEM''@|0|g' \
+      -e 's|@''GNULIB_MEMPCPY''@|0|g' \
+      -e 's|@''GNULIB_MEMRCHR''@|0|g' \
+      -e 's|@''GNULIB_RAWMEMCHR''@|0|g' \
+      -e 's|@''GNULIB_STPCPY''@|0|g' \
+      -e 's|@''GNULIB_STPNCPY''@|0|g' \
+      -e 's|@''GNULIB_STRCHRNUL''@|0|g' \
+      -e 's|@''GNULIB_STRDUP''@|0|g' \
+      -e 's|@''GNULIB_STRNDUP''@|1|g' \
+      -e 's|@''GNULIB_STRNLEN''@|1|g' \
+      -e 's|@''GNULIB_STRPBRK''@|0|g' \
+      -e 's|@''GNULIB_STRSEP''@|0|g' \
+      -e 's|@''GNULIB_STRSTR''@|0|g' \
+      -e 's|@''GNULIB_STRCASESTR''@|0|g' \
+      -e 's|@''GNULIB_STRTOK_R''@|0|g' \
+      -e 's|@''GNULIB_STRERROR''@|1|g' \
+      -e 's|@''GNULIB_STRSIGNAL''@|0|g' \
+      -e 's|@''GNULIB_STRVERSCMP''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+      -e 's|@''HAVE_MEMPCPY''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+      -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+      -e 's|@''HAVE_STPCPY''@|1|g' \
+      -e 's|@''HAVE_STPNCPY''@|1|g' \
+      -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+      -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+      -e 's|@''HAVE_STRNDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNLEN''@|1|g' \
+      -e 's|@''HAVE_STRPBRK''@|1|g' \
+      -e 's|@''HAVE_STRSEP''@|1|g' \
+      -e 's|@''HAVE_STRCASESTR''@|1|g' \
+      -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRERROR''@|1|g' \
+      -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+      -e 's|@''HAVE_STRVERSCMP''@|1|g' \
+      -e 's|@''REPLACE_MEMCHR''@|0|g' \
+      -e 's|@''REPLACE_MEMMEM''@|0|g' \
+      -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+      -e 's|@''REPLACE_STRDUP''@|0|g' \
+      -e 's|@''REPLACE_STRSTR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR''@|0|g' \
+      -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+      -e '/definition of GL_LINK_WARNING/r ../build-aux/link-warning.h' \
+      < ./string.in.h; \
+} > string.h-t
+mv stdio.h-t stdio.h
+/tools/bin/mkdir -p sys
+rm -f sys/stat.h-t sys/stat.h
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''NEXT_SYS_STAT_H''@|<sys/stat.h>|g' \
+      -e 's|@''GNULIB_LCHMOD''@|0|g' \
+      -e 's|@''GNULIB_LSTAT''@|1|g' \
+      -e 's|@''HAVE_LCHMOD''@|1|g' \
+      -e 's|@''HAVE_LSTAT''@|1|g' \
+      -e 's|@''REPLACE_LSTAT''@|0|g' \
+      -e 's|@''REPLACE_MKDIR''@|0|g' \
+      -e '/definition of GL_LINK_WARNING/r ../build-aux/link-warning.h' \
+      < ./sys_stat.in.h; \
+} > sys/stat.h-t
+mv sys/stat.h-t sys/stat.h
+rm -f unistd.h-t unistd.h
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''HAVE_UNISTD_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+      -e 's|@''GNULIB_CHOWN''@|0|g' \
+      -e 's|@''GNULIB_CLOSE''@|0|g' \
+      -e 's|@''GNULIB_DUP2''@|0|g' \
+      -e 's|@''GNULIB_ENVIRON''@|0|g' \
+      -e 's|@''GNULIB_EUIDACCESS''@|0|g' \
+      -e 's|@''GNULIB_FCHDIR''@|0|g' \
+      -e 's|@''GNULIB_FSYNC''@|0|g' \
+      -e 's|@''GNULIB_FTRUNCATE''@|0|g' \
+      -e 's|@''GNULIB_GETCWD''@|0|g' \
+      -e 's|@''GNULIB_GETDOMAINNAME''@|0|g' \
+      -e 's|@''GNULIB_GETDTABLESIZE''@|0|g' \
+      -e 's|@''GNULIB_GETHOSTNAME''@|0|g' \
+      -e 's|@''GNULIB_GETLOGIN_R''@|0|g' \
+      -e 's|@''GNULIB_GETPAGESIZE''@|1|g' \
+      -e 's|@''GNULIB_GETUSERSHELL''@|0|g' \
+      -e 's|@''GNULIB_LCHOWN''@|0|g' \
+      -e 's|@''GNULIB_LINK''@|0|g' \
+      -e 's|@''GNULIB_LSEEK''@|0|g' \
+      -e 's|@''GNULIB_READLINK''@|0|g' \
+      -e 's|@''GNULIB_SLEEP''@|0|g' \
+      -e 's|@''GNULIB_UNISTD_H_SIGPIPE''@|0|g' \
+      -e 's|@''GNULIB_WRITE''@|0|g' \
+      -e 's|@''HAVE_DUP2''@|1|g' \
+      -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+      -e 's|@''HAVE_FSYNC''@|1|g' \
+      -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+      -e 's|@''HAVE_GETDOMAINNAME''@|1|g' \
+      -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+      -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_GETUSERSHELL''@|1|g' \
+      -e 's|@''HAVE_LINK''@|1|g' \
+      -e 's|@''HAVE_READLINK''@|1|g' \
+      -e 's|@''HAVE_SLEEP''@|1|g' \
+      -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+      -e 's|@''HAVE_OS_H''@|0|g' \
+      -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+      -e 's|@''REPLACE_CHOWN''@|0|g' \
+      -e 's|@''REPLACE_CLOSE''@|0|g' \
+      -e 's|@''REPLACE_FCHDIR''@|0|g' \
+      -e 's|@''REPLACE_GETCWD''@|0|g' \
+      -e 's|@''REPLACE_GETPAGESIZE''@|0|g' \
+      -e 's|@''REPLACE_LCHOWN''@|0|g' \
+      -e 's|@''REPLACE_LSEEK''@|0|g' \
+      -e 's|@''REPLACE_WRITE''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e '/definition of GL_LINK_WARNING/r ../build-aux/link-warning.h' \
+      < ./unistd.in.h; \
+} > unistd.h-t
+mv string.h-t string.h
+mv unistd.h-t unistd.h
+make  all-recursive
+make[3]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+make[4]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT set-mode-acl.o -MD -MP -MF .deps/set-mode-acl.Tpo -c -o set-mode-acl.o set-mode-acl.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT copy-acl.o -MD -MP -MF .deps/copy-acl.Tpo -c -o copy-acl.o copy-acl.c
+mv -f .deps/copy-acl.Tpo .deps/copy-acl.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT file-has-acl.o -MD -MP -MF .deps/file-has-acl.Tpo -c -o file-has-acl.o file-has-acl.c
+mv -f .deps/set-mode-acl.Tpo .deps/set-mode-acl.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT c-ctype.o -MD -MP -MF .deps/c-ctype.Tpo -c -o c-ctype.o c-ctype.c
+mv -f .deps/file-has-acl.Tpo .deps/file-has-acl.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT localcharset.o -MD -MP -MF .deps/localcharset.Tpo -c -o localcharset.o localcharset.c
+mv -f .deps/c-ctype.Tpo .deps/c-ctype.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT xalloc-die.o -MD -MP -MF .deps/xalloc-die.Tpo -c -o xalloc-die.o xalloc-die.c
+mv -f .deps/xalloc-die.Tpo .deps/xalloc-die.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT xstrndup.o -MD -MP -MF .deps/xstrndup.Tpo -c -o xstrndup.o xstrndup.c
+mv -f .deps/xstrndup.Tpo .deps/xstrndup.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT basename.o -MD -MP -MF .deps/basename.Tpo -c -o basename.o basename.c
+mv -f .deps/localcharset.Tpo .deps/localcharset.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT dirname.o -MD -MP -MF .deps/dirname.Tpo -c -o dirname.o dirname.c
+mv -f .deps/dirname.Tpo .deps/dirname.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT exitfail.o -MD -MP -MF .deps/exitfail.Tpo -c -o exitfail.o exitfail.c
+mv -f .deps/basename.Tpo .deps/basename.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT quote.o -MD -MP -MF .deps/quote.Tpo -c -o quote.o quote.c
+mv -f .deps/exitfail.Tpo .deps/exitfail.Po
+mv -f .deps/quote.Tpo .deps/quote.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT quotearg.o -MD -MP -MF .deps/quotearg.Tpo -c -o quotearg.o quotearg.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT stripslash.o -MD -MP -MF .deps/stripslash.Tpo -c -o stripslash.o stripslash.c
+mv -f .deps/stripslash.Tpo .deps/stripslash.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT tempname.o -MD -MP -MF .deps/tempname.Tpo -c -o tempname.o tempname.c
+mv -f .deps/tempname.Tpo .deps/tempname.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib   -g -O2 -MT xmalloc.o -MD -MP -MF .deps/xmalloc.Tpo -c -o xmalloc.o xmalloc.c
+mv -f .deps/xmalloc.Tpo .deps/xmalloc.Po
+rm -f t-charset.alias charset.alias
+/bin/sh ./config.charset 'i686-pc-linux-gnu' > t-charset.alias
+mv t-charset.alias charset.alias
+rm -f t-ref-add.sed ref-add.sed
+sed -e '/^#/d' -e 's/@''PACKAGE''@/sed/g' ref-add.sin > t-ref-add.sed
+mv t-ref-add.sed ref-add.sed
+rm -f t-ref-del.sed ref-del.sed
+sed -e '/^#/d' -e 's/@''PACKAGE''@/sed/g' ref-del.sin > t-ref-del.sed
+mv t-ref-del.sed ref-del.sed
+mv -f .deps/quotearg.Tpo .deps/quotearg.Po
+rm -f libsed.a
+ar cru libsed.a set-mode-acl.o copy-acl.o file-has-acl.o c-ctype.o localcharset.o xalloc-die.o xstrndup.o basename.o dirname.o exitfail.o quote.o quotearg.o stripslash.o tempname.o xmalloc.o 
+ranlib libsed.a
+make[4]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+make[3]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+Making all in po
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/po'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/po'
+Making all in sed
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/sed'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib -DLOCALEDIR=\"/tools/share/locale\"   -g -O2 -MT sed.o -MD -MP -MF .deps/sed.Tpo -c -o sed.o sed.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib -DLOCALEDIR=\"/tools/share/locale\"   -g -O2 -MT compile.o -MD -MP -MF .deps/compile.Tpo -c -o compile.o compile.c
+mv -f .deps/sed.Tpo .deps/sed.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib -DLOCALEDIR=\"/tools/share/locale\"   -g -O2 -MT execute.o -MD -MP -MF .deps/execute.Tpo -c -o execute.o execute.c
+mv -f .deps/compile.Tpo .deps/compile.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib -DLOCALEDIR=\"/tools/share/locale\"   -g -O2 -MT regexp.o -MD -MP -MF .deps/regexp.Tpo -c -o regexp.o regexp.c
+mv -f .deps/execute.Tpo .deps/execute.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib -DLOCALEDIR=\"/tools/share/locale\"   -g -O2 -MT fmt.o -MD -MP -MF .deps/fmt.Tpo -c -o fmt.o fmt.c
+mv -f .deps/regexp.Tpo .deps/regexp.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib -DLOCALEDIR=\"/tools/share/locale\"   -g -O2 -MT mbcs.o -MD -MP -MF .deps/mbcs.Tpo -c -o mbcs.o mbcs.c
+mv -f .deps/mbcs.Tpo .deps/mbcs.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I.. -I../lib -DLOCALEDIR=\"/tools/share/locale\"   -g -O2 -MT utils.o -MD -MP -MF .deps/utils.Tpo -c -o utils.o utils.c
+mv -f .deps/fmt.Tpo .deps/fmt.Po
+mv -f .deps/utils.Tpo .deps/utils.Po
+gcc  -g -O2   -o sed sed.o compile.o execute.o regexp.o fmt.o mbcs.o utils.o ../lib/libsed.a    
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/sed'
+Making all in doc
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/doc'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/doc'
+Making all in testsuite
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/testsuite'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/testsuite'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1'
+Making install in lib
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+make  install-recursive
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+make[3]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+make[4]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+if test yes = no; then \
+  case 'linux-gnu' in \
+    darwin[56]*) \
+      need_charset_alias=true ;; \
+    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+      need_charset_alias=false ;; \
+    *) \
+      need_charset_alias=true ;; \
+  esac ; \
+else \
+  need_charset_alias=false ; \
+fi ; \
+if $need_charset_alias; then \
+  /bin/sh /sources/builddir/sed-4.2.1/build-aux/install-sh -d /tools/lib ; \
+fi ; \
+if test -f /tools/lib/charset.alias; then \
+  sed -f ref-add.sed /tools/lib/charset.alias > /tools/lib/charset.tmp ; \
+  /tools/bin/install -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+  rm -f /tools/lib/charset.tmp ; \
+else \
+  if $need_charset_alias; then \
+    sed -f ref-add.sed charset.alias > /tools/lib/charset.tmp ; \
+    /tools/bin/install -c -m 644 /tools/lib/charset.tmp /tools/lib/charset.alias ; \
+    rm -f /tools/lib/charset.tmp ; \
+  fi ; \
+fi
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+make[3]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/lib'
+Making install in po
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/po'
+/tools/bin/mkdir -p /tools/share
+installing af.gmo as /tools/share/locale/af/LC_MESSAGES/sed.mo
+installing ca.gmo as /tools/share/locale/ca/LC_MESSAGES/sed.mo
+installing cs.gmo as /tools/share/locale/cs/LC_MESSAGES/sed.mo
+installing da.gmo as /tools/share/locale/da/LC_MESSAGES/sed.mo
+installing de.gmo as /tools/share/locale/de/LC_MESSAGES/sed.mo
+installing el.gmo as /tools/share/locale/el/LC_MESSAGES/sed.mo
+installing eo.gmo as /tools/share/locale/eo/LC_MESSAGES/sed.mo
+installing es.gmo as /tools/share/locale/es/LC_MESSAGES/sed.mo
+installing et.gmo as /tools/share/locale/et/LC_MESSAGES/sed.mo
+installing eu.gmo as /tools/share/locale/eu/LC_MESSAGES/sed.mo
+installing fi.gmo as /tools/share/locale/fi/LC_MESSAGES/sed.mo
+installing fr.gmo as /tools/share/locale/fr/LC_MESSAGES/sed.mo
+installing ga.gmo as /tools/share/locale/ga/LC_MESSAGES/sed.mo
+installing gl.gmo as /tools/share/locale/gl/LC_MESSAGES/sed.mo
+installing he.gmo as /tools/share/locale/he/LC_MESSAGES/sed.mo
+installing hr.gmo as /tools/share/locale/hr/LC_MESSAGES/sed.mo
+installing hu.gmo as /tools/share/locale/hu/LC_MESSAGES/sed.mo
+installing id.gmo as /tools/share/locale/id/LC_MESSAGES/sed.mo
+installing it.gmo as /tools/share/locale/it/LC_MESSAGES/sed.mo
+installing ja.gmo as /tools/share/locale/ja/LC_MESSAGES/sed.mo
+installing ko.gmo as /tools/share/locale/ko/LC_MESSAGES/sed.mo
+installing nl.gmo as /tools/share/locale/nl/LC_MESSAGES/sed.mo
+installing pl.gmo as /tools/share/locale/pl/LC_MESSAGES/sed.mo
+installing pt.gmo as /tools/share/locale/pt/LC_MESSAGES/sed.mo
+installing pt_BR.gmo as /tools/share/locale/pt_BR/LC_MESSAGES/sed.mo
+installing ro.gmo as /tools/share/locale/ro/LC_MESSAGES/sed.mo
+installing ru.gmo as /tools/share/locale/ru/LC_MESSAGES/sed.mo
+installing sk.gmo as /tools/share/locale/sk/LC_MESSAGES/sed.mo
+installing sl.gmo as /tools/share/locale/sl/LC_MESSAGES/sed.mo
+installing sr.gmo as /tools/share/locale/sr/LC_MESSAGES/sed.mo
+installing sv.gmo as /tools/share/locale/sv/LC_MESSAGES/sed.mo
+installing tr.gmo as /tools/share/locale/tr/LC_MESSAGES/sed.mo
+installing uk.gmo as /tools/share/locale/uk/LC_MESSAGES/sed.mo
+installing vi.gmo as /tools/share/locale/vi/LC_MESSAGES/sed.mo
+installing zh_CN.gmo as /tools/share/locale/zh_CN/LC_MESSAGES/sed.mo
+installing zh_TW.gmo as /tools/share/locale/zh_TW/LC_MESSAGES/sed.mo
+if test "sed" = "gettext-tools"; then \
+  /tools/bin/mkdir -p /tools/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /tools/bin/install -c -m 644 ./$file \
+		    /tools/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /tools/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/po'
+Making install in sed
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/sed'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/sed'
+test -z "/tools/bin" || /tools/bin/mkdir -p "/tools/bin"
+make[2]: Nothing to be done for `install-data-am'.
+  /tools/bin/install -c 'sed' '/tools/bin/sed'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/sed'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/sed'
+Making install in doc
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/doc'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/doc'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/tools/share/info" || /tools/bin/mkdir -p "/tools/share/info"
+test -z "/tools/share/man/man1" || /tools/bin/mkdir -p "/tools/share/man/man1"
+ /tools/bin/install -c -m 644 './sed.1' '/tools/share/man/man1/sed.1'
+ /tools/bin/install -c -m 644 './sed.info' '/tools/share/info/sed.info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/sed.info'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/doc'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/doc'
+Making install in testsuite
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/testsuite'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/testsuite'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/testsuite'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1/testsuite'
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/sed-4.2.1'

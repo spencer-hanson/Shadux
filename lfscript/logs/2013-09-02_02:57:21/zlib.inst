@@ -1,0 +1,69 @@
+Checking for gcc...
+Checking for shared library support...
+Building shared library libz.so.1.2.6 with gcc.
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+Checking for unistd.h... Yes.
+Checking for stdarg.h... Yes.
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+Checking for vsnprintf() in stdio.h... Yes.
+Checking for return value of vsnprintf()... Yes.
+Checking for attribute(visibility) support... Yes.
+gcc -O3  -D_LARGEFILE64_SOURCE=1 -I. -c -o example.o test/example.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o adler32.o adler32.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o crc32.o crc32.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o deflate.o deflate.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o infback.o infback.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o inffast.o inffast.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o inflate.o inflate.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o inftrees.o inftrees.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o trees.o trees.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o zutil.o zutil.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o compress.o compress.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o uncompr.o uncompr.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o gzclose.o gzclose.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o gzlib.o gzlib.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o gzread.o gzread.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1   -c -o gzwrite.o gzwrite.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1 -I. -c -o minigzip.o test/minigzip.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/adler32.o adler32.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/crc32.o crc32.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/deflate.o deflate.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/infback.o infback.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/inffast.o inffast.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/inflate.o inflate.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/inftrees.o inftrees.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/trees.o trees.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/zutil.o zutil.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/compress.o compress.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/uncompr.o uncompr.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/gzclose.o gzclose.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/gzlib.o gzlib.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/gzread.o gzread.c
+gcc -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -DPIC -c -o objs/gzwrite.o gzwrite.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1 -I. -D_FILE_OFFSET_BITS=64 -c -o example64.o test/example.c
+gcc -O3  -D_LARGEFILE64_SOURCE=1 -I. -D_FILE_OFFSET_BITS=64 -c -o minigzip64.o test/minigzip.c
+ar rc libz.a adler32.o crc32.o deflate.o infback.o inffast.o inflate.o inftrees.o trees.o zutil.o compress.o uncompr.o gzclose.o gzlib.o gzread.o gzwrite.o 
+gcc -O3  -D_LARGEFILE64_SOURCE=1 -o example example.o -L. libz.a
+gcc -O3  -D_LARGEFILE64_SOURCE=1 -o minigzip minigzip.o -L. libz.a
+gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -O3  -fPIC -D_LARGEFILE64_SOURCE=1 -o libz.so.1.2.6 adler32.lo crc32.lo deflate.lo infback.lo inffast.lo inflate.lo inftrees.lo trees.lo zutil.lo compress.lo uncompr.lo gzclose.lo gzlib.lo gzread.lo gzwrite.lo  -lc 
+gcc -O3  -D_LARGEFILE64_SOURCE=1 -o example64 example64.o -L. libz.a
+rm -f libz.so libz.so.1
+ln -s libz.so.1.2.6 libz.so
+ln -s libz.so.1.2.6 libz.so.1
+gcc -O3  -D_LARGEFILE64_SOURCE=1 -o minigzip64 minigzip64.o -L. libz.a
+gcc -O3  -D_LARGEFILE64_SOURCE=1 -o examplesh example.o -L. libz.so.1.2.6
+gcc -O3  -D_LARGEFILE64_SOURCE=1 -o minigzipsh minigzip.o -L. libz.so.1.2.6
+cp libz.a /sources/buildmgr/pkgroot/usr/lib
+chmod 644 /sources/buildmgr/pkgroot/usr/lib/libz.a
+cp libz.so.1.2.6 /sources/buildmgr/pkgroot/usr/lib
+chmod 755 /sources/buildmgr/pkgroot/usr/lib/libz.so.1.2.6
+cp zlib.3 /sources/buildmgr/pkgroot/usr/share/man/man3
+chmod 644 /sources/buildmgr/pkgroot/usr/share/man/man3/zlib.3
+cp zlib.pc /sources/buildmgr/pkgroot/usr/lib/pkgconfig
+chmod 644 /sources/buildmgr/pkgroot/usr/lib/pkgconfig/zlib.pc
+cp zlib.h zconf.h /sources/buildmgr/pkgroot/usr/include
+chmod 644 /sources/buildmgr/pkgroot/usr/include/zlib.h /sources/buildmgr/pkgroot/usr/include/zconf.h
+`/sources/buildmgr/pkgroot/usr/lib/libz.so.1' -> `/sources/buildmgr/pkgroot/lib/libz.so.1'
+`/sources/buildmgr/pkgroot/usr/lib/libz.so.1.2.6' -> `/sources/buildmgr/pkgroot/lib/libz.so.1.2.6'
+`/sources/buildmgr/pkgroot/usr/lib/libz.so' -> `../../lib/libz.so.1.2.6'

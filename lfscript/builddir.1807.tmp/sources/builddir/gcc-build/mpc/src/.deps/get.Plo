@@ -1,0 +1,79 @@
+get.lo: ../../../gcc-4.6.2/mpc/src/get.c ../config.h \
+ /usr/include/complex.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/cmathcalls.h ../../../gcc-4.6.2/mpc/src/mpc-impl.h \
+ /usr/include/stdlib.h \
+ /usr/lib/gcc/i486-pc-linux-gnu/4.6.2/include/stddef.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/sys/types.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/time.h /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h ../../../gcc-4.6.2/mpc/src/mpc.h \
+ /sources/builddir/gcc-build/./gmp/gmp.h \
+ /sources/builddir/gcc-build/../gcc-4.6.2/mpfr/src/mpfr.h
+
+../config.h:
+
+/usr/include/complex.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/cmathcalls.h:
+
+../../../gcc-4.6.2/mpc/src/mpc-impl.h:
+
+/usr/include/stdlib.h:
+
+/usr/lib/gcc/i486-pc-linux-gnu/4.6.2/include/stddef.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+../../../gcc-4.6.2/mpc/src/mpc.h:
+
+/sources/builddir/gcc-build/./gmp/gmp.h:
+
+/sources/builddir/gcc-build/../gcc-4.6.2/mpfr/src/mpfr.h:

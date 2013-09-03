@@ -1,0 +1,1 @@
+../../../gcc-4.6.2/gmp/mpn/generic/bdiv_q_1.c

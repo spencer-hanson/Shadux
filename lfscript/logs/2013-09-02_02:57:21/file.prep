@@ -1,0 +1,334 @@
+checking for a BSD-compatible install... /tools/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /tools/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for builtin ELF support... yes
+checking for ELF core file support... yes
+checking for file formats in man section 5... no
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking whether gcc and cc understand -c and -o together... yes
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /mnt/hd/shadux/lfscript/builddir.1791.tmp/tools/i686-pc-linux-gnu/bin/ld
+checking if the linker (/mnt/hd/shadux/lfscript/builddir.1791.tmp/tools/i686-pc-linux-gnu/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /tools/bin/nm -B
+checking the name lister (/tools/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /mnt/hd/shadux/lfscript/builddir.1791.tmp/tools/i686-pc-linux-gnu/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /tools/bin/nm -B output from gcc object... ok
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/mnt/hd/shadux/lfscript/builddir.1791.tmp/tools/i686-pc-linux-gnu/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for ANSI C header files... (cached) yes
+checking whether sys/types.h defines makedev... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for stdint.h... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking err.h usability... yes
+checking err.h presence... yes
+checking for err.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking sys/utime.h usability... no
+checking sys/utime.h presence... no
+checking for sys/utime.h... no
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking zlib.h usability... no
+checking zlib.h presence... no
+checking for zlib.h... no
+checking for an ANSI C-conforming const... yes
+checking for off_t... yes
+checking for size_t... yes
+checking for struct stat.st_rdev... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_gmtoff... no
+checking for struct tm.tm_zone... no
+checking for tm_zone in struct tm... yes
+checking whether tzname is declared... yes
+checking for tzname... yes
+checking for tm_isdst in struct tm... yes
+checking whether daylight is declared... yes
+checking for daylight... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for mbstate_t... yes
+checking for struct option in getopt... yes
+checking for pid_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for int32_t... yes
+checking for uint64_t... yes
+checking for int64_t... yes
+checking size of long long... 8
+checking for gcc compiler warnings... yes
+checking for mmap... yes
+checking for strerror... yes
+checking for strndup... yes
+checking for strtoul... yes
+checking for mbrtowc... yes
+checking for mkstemp... yes
+checking for utimes... yes
+checking for utime... yes
+checking for wcwidth... yes
+checking for strtof... yes
+checking for fork... yes
+checking for getopt_long... yes
+checking for asprintf... yes
+checking for vasprintf... yes
+checking for strlcpy... no
+checking for strlcat... no
+checking for getline... yes
+checking for gzopen in -lz... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating magic/Makefile
+config.status: creating tests/Makefile
+config.status: creating doc/Makefile
+config.status: creating python/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10'
+Making all in src
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/src'
+  CC     magic.lo
+  CC     apprentice.lo
+  CC     softmagic.lo
+softmagic.c: In function 'mprint':
+softmagic.c:378:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:382:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:399:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:404:8: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:421:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:425:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:436:3: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:446:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:453:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:465:3: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:474:3: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:483:7: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:492:7: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:506:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:510:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:526:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:530:4: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:546:3: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:560:5: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+softmagic.c:569:5: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+  CC     ascmagic.lo
+  CC     encoding.lo
+  CC     compress.lo
+  CC     is_tar.lo
+  CC     readelf.lo
+  CC     print.lo
+  CC     fsmagic.lo
+  CC     funcs.lo
+  CC     apptype.lo
+  CC     cdf.lo
+  CC     cdf_time.lo
+  CC     readcdf.lo
+  CC     strlcpy.lo
+  CC     strlcat.lo
+  CC     file.o
+  CCLD   libmagic.la
+  CCLD   file
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/src'
+Making all in magic
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/magic'
+../src/file -C -m magic
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/magic'
+Making all in tests
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/tests'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/tests'
+Making all in doc
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/doc'
+sed -e s@__CSECTION__@1@g \
+    -e s@__FSECTION__@4@g \
+    -e s@__VERSION__@5.10@g \
+    -e s@__MAGIC__@/tools/share/misc/magic@g ./file.man > file.1
+sed -e s@__CSECTION__@1@g \
+    -e s@__FSECTION__@4@g \
+    -e s@__VERSION__@5.10@g \
+    -e s@__MAGIC__@/tools/share/misc/magic@g ./magic.man > magic.4
+sed -e s@__CSECTION__@1@g \
+    -e s@__FSECTION__@4@g \
+    -e s@__VERSION__@5.10@g \
+    -e s@__MAGIC__@/tools/share/misc/magic@g ./libmagic.man > libmagic.3
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/doc'
+Making all in python
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/python'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/python'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10'
+Making install in src
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/src'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/src'
+test -z "/tools/lib" || /tools/bin/mkdir -p "/tools/lib"
+test -z "/tools/include" || /tools/bin/mkdir -p "/tools/include"
+ /bin/sh ../libtool   --mode=install /tools/bin/install -c   libmagic.la '/tools/lib'
+ /tools/bin/install -c -m 644 magic.h '/tools/include'
+libtool: install: /tools/bin/install -c .libs/libmagic.so.1.0.0 /tools/lib/libmagic.so.1.0.0
+libtool: install: (cd /tools/lib && { ln -s -f libmagic.so.1.0.0 libmagic.so.1 || { rm -f libmagic.so.1 && ln -s libmagic.so.1.0.0 libmagic.so.1; }; })
+libtool: install: (cd /tools/lib && { ln -s -f libmagic.so.1.0.0 libmagic.so || { rm -f libmagic.so && ln -s libmagic.so.1.0.0 libmagic.so; }; })
+libtool: install: /tools/bin/install -c .libs/libmagic.lai /tools/lib/libmagic.la
+libtool: install: /tools/bin/install -c .libs/libmagic.a /tools/lib/libmagic.a
+libtool: install: chmod 644 /tools/lib/libmagic.a
+libtool: install: ranlib /tools/lib/libmagic.a
+libtool: finish: PATH="/tools/bin:/bin:/usr/bin:/sbin" ldconfig -n /tools/lib
+ldconfig: /tools/lib/libstdc++.so.6.0.16-gdb.py is not an ELF file - it has the wrong magic bytes at the start.
+
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /tools/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+test -z "/tools/bin" || /tools/bin/mkdir -p "/tools/bin"
+  /bin/sh ../libtool   --mode=install /tools/bin/install -c file '/tools/bin'
+libtool: install: /tools/bin/install -c .libs/file /tools/bin/file
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/src'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/src'
+Making install in magic
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/magic'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/magic'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/tools/share/misc" || /tools/bin/mkdir -p "/tools/share/misc"
+ /tools/bin/install -c -m 644 magic.mgc '/tools/share/misc'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/magic'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/magic'
+Making install in tests
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/tests'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/tests'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/tests'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/tests'
+Making install in doc
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/doc'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/doc'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/tools/share/man/man1" || /tools/bin/mkdir -p "/tools/share/man/man1"
+test -z "/tools/share/man/man3" || /tools/bin/mkdir -p "/tools/share/man/man3"
+ /tools/bin/install -c -m 644 file.1 '/tools/share/man/man1'
+ /tools/bin/install -c -m 644 libmagic.3 '/tools/share/man/man3'
+test -z "/tools/share/man/man4" || /tools/bin/mkdir -p "/tools/share/man/man4"
+test -z "/tools/share/man/man5" || /tools/bin/mkdir -p "/tools/share/man/man5"
+ /tools/bin/install -c -m 644 magic.4 '/tools/share/man/man4'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/doc'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/doc'
+Making install in python
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/python'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/python'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/python'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10/python'
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/file-5.10'

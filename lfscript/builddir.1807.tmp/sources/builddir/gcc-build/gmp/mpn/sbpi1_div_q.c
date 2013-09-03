@@ -1,0 +1,1 @@
+../../../gcc-4.6.2/gmp/mpn/generic/sbpi1_div_q.c

@@ -1,0 +1,5 @@
+for i in man?; do \
+	install -d -m 755 /sources/buildmgr/pkgroot/usr/share/man/"$i" || exit $?; \
+	install -m 644 "$i"/* /sources/buildmgr/pkgroot/usr/share/man/"$i" || exit $?; \
+done; \
+

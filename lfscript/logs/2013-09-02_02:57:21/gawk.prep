@@ -1,0 +1,390 @@
+checking for a BSD-compatible install... ./install-sh -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /tools/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for egrep... (cached) /bin/grep -E
+checking for bison... bison -y
+checking whether ln -s works... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether make sets $(MAKE)... (cached) yes
+checking for special development options... no
+checking for z/OS USS compilation... no
+checking for strerror in -lcposix... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking for AIX compilation hacks... no
+checking for Linux/Alpha compilation hacks... no
+checking for function prototypes... yes
+checking for string.h... (cached) yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for ld used by GCC... /mnt/hd/shadux/lfscript/builddir.1791.tmp/tools/i686-pc-linux-gnu/bin/ld
+checking if the linker (/mnt/hd/shadux/lfscript/builddir.1791.tmp/tools/i686-pc-linux-gnu/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for ANSI C header files... (cached) yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking mcheck.h usability... yes
+checking mcheck.h presence... yes
+checking for mcheck.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for string.h... (cached) yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking stropts.h usability... yes
+checking stropts.h presence... yes
+checking for stropts.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking for memory.h... (cached) yes
+checking for pid_t... yes
+checking return type of signal handlers... void
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking for long long int... yes
+checking for unsigned long long int... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for ssize_t... yes
+checking size of unsigned int... 4
+checking size of unsigned long... 4
+checking for socklen_t... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for sys/time.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for alarm... yes
+checking for working mktime... yes
+checking for getaddrinfo... yes
+checking for fmod in -lm... yes
+checking for isinf in -lm... yes
+checking for ismod in -lm... no
+checking for libsigsegv... no, consider installing GNU libsigsegv
+checking for atexit... yes
+checking for btowc... yes
+checking for fmod... yes
+checking for getgrent... yes
+checking for getgroups... yes
+checking for grantpt... yes
+checking for isascii... yes
+checking for iswctype... yes
+checking for iswlower... yes
+checking for iswupper... yes
+checking for mbrlen... yes
+checking for memcmp... yes
+checking for memcpy... yes
+checking for memcpy_ulong... no
+checking for memmove... yes
+checking for memset... yes
+checking for memset_ulong... no
+checking for mkstemp... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for snprintf... yes
+checking for strchr... yes
+checking for strerror... yes
+checking for strftime... yes
+checking for strncasecmp... yes
+checking for strcoll... yes
+checking for strtod... yes
+checking for strtoul... yes
+checking for system... yes
+checking for tmpfile... yes
+checking for towlower... yes
+checking for towupper... yes
+checking for tzset... yes
+checking for usleep... yes
+checking for wcrtomb... yes
+checking for wcscoll... yes
+checking for wcscoll... (cached) yes
+checking for wctype... yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking for library containing dlopen... -ldl
+checking whether getpgrp requires zero arguments... yes
+checking for printf %F format... yes
+checking for gethostbyname... yes
+checking for connect... yes
+checking where to find the socket library calls... the standard library
+checking whether readline via "-lreadline" is present and sane... no
+checking whether readline via "-lreadline -ltermcap" is present and sane... no
+checking whether readline via "-lreadline -lcurses" is present and sane... no
+checking whether readline via "-lreadline -lncurses" is present and sane... no
+checking for struct stat.st_blksize... yes
+checking whether time.h and sys/time.h may both be included... (cached) yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking whether char is unsigned... no
+checking for an ANSI C-conforming const... yes
+checking for C/C++ restrict keyword... __restrict
+checking for inline... inline
+checking for preprocessor stringizing operator... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating awklib/Makefile
+config.status: creating doc/Makefile
+config.status: creating po/Makefile.in
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+make 'CFLAGS=-g -O2' 'LDFLAGS=-export-dynamic' all-recursive
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0'
+Making all in .
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0'
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT array.o -MD -MP -MF .deps/array.Tpo -c -o array.o array.c
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT awkgram.o -MD -MP -MF .deps/awkgram.Tpo -c -o awkgram.o awkgram.c
+mv -f .deps/array.Tpo .deps/array.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT builtin.o -MD -MP -MF .deps/builtin.Tpo -c -o builtin.o builtin.c
+mv -f .deps/awkgram.Tpo .deps/awkgram.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT dfa.o -MD -MP -MF .deps/dfa.Tpo -c -o dfa.o dfa.c
+mv -f .deps/builtin.Tpo .deps/builtin.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT ext.o -MD -MP -MF .deps/ext.Tpo -c -o ext.o ext.c
+mv -f .deps/ext.Tpo .deps/ext.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT field.o -MD -MP -MF .deps/field.Tpo -c -o field.o field.c
+mv -f .deps/field.Tpo .deps/field.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT floatcomp.o -MD -MP -MF .deps/floatcomp.Tpo -c -o floatcomp.o floatcomp.c
+mv -f .deps/floatcomp.Tpo .deps/floatcomp.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT gawkmisc.o -MD -MP -MF .deps/gawkmisc.Tpo -c -o gawkmisc.o gawkmisc.c
+mv -f .deps/gawkmisc.Tpo .deps/gawkmisc.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT getopt.o -MD -MP -MF .deps/getopt.Tpo -c -o getopt.o getopt.c
+mv -f .deps/getopt.Tpo .deps/getopt.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT getopt1.o -MD -MP -MF .deps/getopt1.Tpo -c -o getopt1.o getopt1.c
+mv -f .deps/getopt1.Tpo .deps/getopt1.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT io.o -MD -MP -MF .deps/io.Tpo -c -o io.o io.c
+mv -f .deps/dfa.Tpo .deps/dfa.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
+mv -f .deps/io.Tpo .deps/io.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT msg.o -MD -MP -MF .deps/msg.Tpo -c -o msg.o msg.c
+mv -f .deps/main.Tpo .deps/main.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT node.o -MD -MP -MF .deps/node.Tpo -c -o node.o node.c
+mv -f .deps/msg.Tpo .deps/msg.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT random.o -MD -MP -MF .deps/random.Tpo -c -o random.o random.c
+mv -f .deps/random.Tpo .deps/random.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT re.o -MD -MP -MF .deps/re.Tpo -c -o re.o re.c
+mv -f .deps/node.Tpo .deps/node.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT regex.o -MD -MP -MF .deps/regex.Tpo -c -o regex.o regex.c
+mv -f .deps/re.Tpo .deps/re.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT replace.o -MD -MP -MF .deps/replace.Tpo -c -o replace.o replace.c
+mv -f .deps/replace.Tpo .deps/replace.Po
+/bin/sh ./config.status --file=version.c:version.in
+config.status: creating version.c
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT eval.o -MD -MP -MF .deps/eval.Tpo -c -o eval.o eval.c
+mv -f .deps/eval.Tpo .deps/eval.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT profile.o -MD -MP -MF .deps/profile.Tpo -c -o profile.o profile.c
+mv -f .deps/profile.Tpo .deps/profile.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT eval_p.o -MD -MP -MF .deps/eval_p.Tpo -c -o eval_p.o eval_p.c
+mv -f .deps/regex.Tpo .deps/regex.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT profile_p.o -MD -MP -MF .deps/profile_p.Tpo -c -o profile_p.o profile_p.c
+mv -f .deps/eval_p.Tpo .deps/eval_p.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT eval_d.o -MD -MP -MF .deps/eval_d.Tpo -c -o eval_d.o eval_d.c
+mv -f .deps/profile_p.Tpo .deps/profile_p.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT command.o -MD -MP -MF .deps/command.Tpo -c -o command.o command.c
+mv -f .deps/command.Tpo .deps/command.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT debug.o -MD -MP -MF .deps/debug.Tpo -c -o debug.o debug.c
+mv -f .deps/eval_d.Tpo .deps/eval_d.Po
+gcc -DDEFPATH='".:/tools/share/awk"' -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/tools/share/locale"' -I.     -g -O2 -MT version.o -MD -MP -MF .deps/version.Tpo -c -o version.o version.c
+mv -f .deps/version.Tpo .deps/version.Po
+gcc  -g -O2  -export-dynamic -o gawk array.o awkgram.o builtin.o dfa.o ext.o field.o floatcomp.o gawkmisc.o getopt.o getopt1.o io.o main.o msg.o node.o random.o re.o regex.o replace.o version.o eval.o profile.o    -ldl -lm -lm 
+gcc  -g -O2  -export-dynamic -o pgawk array.o awkgram.o builtin.o dfa.o ext.o field.o floatcomp.o gawkmisc.o getopt.o getopt1.o io.o main.o msg.o node.o random.o re.o regex.o replace.o version.o eval_p.o profile_p.o    -ldl -lm -lm 
+mv -f .deps/debug.Tpo .deps/debug.Po
+gcc  -g -O2  -export-dynamic -o dgawk array.o awkgram.o builtin.o dfa.o ext.o field.o floatcomp.o gawkmisc.o getopt.o getopt1.o io.o main.o msg.o node.o random.o re.o regex.o replace.o version.o eval_d.o profile.o command.o debug.o     -ldl -lm -lm 
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0'
+Making all in awklib
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/awklib'
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I..   -g -O2 ./eg/lib/pwcat.c -export-dynamic -o pwcat
+gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I..   -g -O2 ./eg/lib/grcat.c -export-dynamic -o grcat
+cp ./eg/prog/igawk.sh igawk ; chmod 755 igawk
+sed 's;/usr/local/libexec/awk;/tools/libexec/awk;' < ./eg/lib/passwdawk.in > passwd.awk
+sed 's;/usr/local/libexec/awk;/tools/libexec/awk;' < ./eg/lib/groupawk.in > group.awk
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/awklib'
+Making all in doc
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/doc'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/doc'
+Making all in po
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/po'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/po'
+Making all in test
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/test'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/test'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0'
+Making install in .
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0'
+make[2]: Nothing to be done for `install-data-am'.
+test -z "/tools/bin" || /tools/bin/mkdir -p "/tools/bin"
+  ./install-sh -c gawk pgawk dgawk '/tools/bin'
+make 'CFLAGS=-g -O2' 'LDFLAGS=-export-dynamic' install-exec-hook
+make[3]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0'
+(cd /tools/bin; \
+ln gawk gawk-4.0.0 2>/dev/null ; \
+ln pgawk pgawk-4.0.0 2>/dev/null ; \
+if [ ! -f awk ]; \
+then	ln -s gawk awk; \
+fi; exit 0)
+make[3]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0'
+Making install in awklib
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/awklib'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/awklib'
+test -z "/tools/bin" || /tools/bin/mkdir -p "/tools/bin"
+test -z "/tools/libexec/awk" || /tools/bin/mkdir -p "/tools/libexec/awk"
+make[2]: Nothing to be done for `install-data-am'.
+ .././install-sh -c igawk '/tools/bin'
+  .././install-sh -c pwcat grcat '/tools/libexec/awk'
+make  install-exec-hook
+make[3]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/awklib'
+/bin/sh ../mkinstalldirs /tools/share/awk
+mkdir -p -- /tools/share/awk
+for i in passwd.awk group.awk ./eg/lib/*.awk ; do \
+	progname=`echo $i | sed 's;.*/;;'` ; \
+	.././install-sh -c -m 644 $i /tools/share/awk/$progname ; \
+done
+make[3]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/awklib'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/awklib'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/awklib'
+Making install in doc
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/doc'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/doc'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/tools/share/info" || /tools/bin/mkdir -p "/tools/share/info"
+test -z "/tools/share/man/man1" || /tools/bin/mkdir -p "/tools/share/man/man1"
+ .././install-sh -c -m 644 gawk.1 igawk.1 '/tools/share/man/man1'
+ .././install-sh -c -m 644 ./gawk.info ./gawkinet.info '/tools/share/info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/gawk.info'
+ install-info --info-dir='/tools/share/info' '/tools/share/info/gawkinet.info'
+make  install-data-hook
+make[3]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/doc'
+(cd /tools/share/man/man1; \
+ln -f gawk.1 pgawk.1 2>/dev/null ; \
+exit 0)
+make[3]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/doc'
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/doc'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/doc'
+Making install in po
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/po'
+installing da.gmo as /tools/share/locale/da/LC_MESSAGES/gawk.mo
+installing de.gmo as /tools/share/locale/de/LC_MESSAGES/gawk.mo
+installing es.gmo as /tools/share/locale/es/LC_MESSAGES/gawk.mo
+installing fi.gmo as /tools/share/locale/fi/LC_MESSAGES/gawk.mo
+installing fr.gmo as /tools/share/locale/fr/LC_MESSAGES/gawk.mo
+installing it.gmo as /tools/share/locale/it/LC_MESSAGES/gawk.mo
+installing ja.gmo as /tools/share/locale/ja/LC_MESSAGES/gawk.mo
+installing nl.gmo as /tools/share/locale/nl/LC_MESSAGES/gawk.mo
+installing pl.gmo as /tools/share/locale/pl/LC_MESSAGES/gawk.mo
+installing sv.gmo as /tools/share/locale/sv/LC_MESSAGES/gawk.mo
+if test "gawk" = "gettext-tools"; then \
+  /tools/bin/mkdir -p /tools/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    .././install-sh -c -m 644 ./$file \
+		    /tools/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /tools/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/po'
+Making install in test
+make[1]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/test'
+make[2]: Entering directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/test'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/test'
+make[1]: Leaving directory `/mnt/hd/shadux/lfscript/builddir.1791.tmp/sources/builddir/gawk-4.0.0/test'
