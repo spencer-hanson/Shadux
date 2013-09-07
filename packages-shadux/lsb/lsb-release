@@ -1,0 +1,5 @@
+LSB_VERSION="1.4"
+DISTRIB_ID="Shadux"
+DISTRIB_RELEASE="0.2"
+DISTRIB_CODENAME="Shadux"
+DISTRIB_DESCRIPTION="SOS - Shadux Operating System Developed by Spencer Hanson"
