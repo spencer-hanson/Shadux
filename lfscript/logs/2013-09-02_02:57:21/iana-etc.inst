@@ -1,8 +1,0 @@
-ln -f -s protocol-numbers.dist protocol-numbers
-ln -f -s port-numbers.dist port-numbers
-gawk --re-interval -f protocols.gawk -v strip=no \
-    protocol-numbers > protocols
-gawk -f services.gawk -v strip=no port-numbers > services
-install -d /sources/buildmgr/pkgroot/etc
-install -m 644 protocols /sources/buildmgr/pkgroot/etc
-install -m 644 services /sources/buildmgr/pkgroot/etc

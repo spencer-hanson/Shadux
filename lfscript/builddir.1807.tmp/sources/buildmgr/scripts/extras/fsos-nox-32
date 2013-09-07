@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# This file is part of LFScript. LFScript is released under the MIT license.
-# Copyright (C) 2007-2012 Marcel van den Boer
-
-REQUIRES="fsos-nox memtest86+"
-TAGS="group"
-

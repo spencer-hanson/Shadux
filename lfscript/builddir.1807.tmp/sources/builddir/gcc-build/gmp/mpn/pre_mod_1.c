@@ -1,1 +1,0 @@
-../../../gcc-4.6.2/gmp/mpn/generic/pre_mod_1.c

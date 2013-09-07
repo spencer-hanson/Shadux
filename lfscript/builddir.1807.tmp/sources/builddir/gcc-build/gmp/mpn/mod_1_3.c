@@ -1,1 +1,0 @@
-../../../gcc-4.6.2/gmp/mpn/generic/mod_1_3.c
