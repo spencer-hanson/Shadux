@@ -23,7 +23,7 @@ fi
 
 if [ "$1" = "--install" ] ; then
         echo Installing linuxpam...
-        cp data/#*.tar* linuxpam
+        cp data/Linux-PAM-*.tar* linuxpam
         cd linuxpam
         tar xf Linux-PAM-*tar.*
 	cd Linux-PAM-*
@@ -33,12 +33,12 @@ if [ "$1" = "--install" ] ; then
             --disable-nis
 	make
 	install -v -m755 -d /etc/pam.d
-	cat > /etc/pam.d/other << "EOF"
-	auth     required       pam_deny.so
-	account  required       pam_deny.so
-	password required       pam_deny.so
-	session  required       pam_deny.so
-	EOF
+cat > /etc/pam.d/other << "EOF"
+auth     required       pam_deny.so
+account  required       pam_deny.so
+password required       pam_deny.so
+session  required       pam_deny.so
+EOF
 	make check
 	rm -rfv /etc/pam.d
 	make install

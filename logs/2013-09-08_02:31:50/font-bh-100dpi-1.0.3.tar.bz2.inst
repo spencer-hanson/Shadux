@@ -1,0 +1,1624 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... none
+checking for gcc option to accept ISO C99... -std=gnu99
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for root directory for font files... /usr/share/fonts/X11
+checking for directory for 100dpi files... ${FONTROOTDIR}/100dpi
+checking for fc-cache... /usr/bin/fc-cache
+checking for mkfontdir... /usr/bin/mkfontdir
+checking for bdftopcf... /usr/bin/bdftopcf
+checking font compression method... gzip
+checking for gzip... /bin/gzip
+checking for ucs2any... /usr/bin/ucs2any
+checking for MAPS... yes
+checking for ucs2any encoding data files... /usr/share/fonts/X11/util
+checking whether to build ISO8859-1 fonts... yes
+checking whether to build ISO8859-2 fonts... yes
+checking whether to build ISO8859-3 fonts... yes
+checking whether to build ISO8859-4 fonts... yes
+checking whether to build ISO8859-9 fonts... yes
+checking whether to build ISO8859-10 fonts... yes
+checking whether to build ISO8859-13 fonts... yes
+checking whether to build ISO8859-14 fonts... yes
+checking whether to build ISO8859-15 fonts... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: executing depfiles commands
+  GEN    lubB10.pcf.gz
+  GEN    lubB12.pcf.gz
+  GEN    lubB14.pcf.gz
+  GEN    lubB18.pcf.gz
+  GEN    lubB19.pcf.gz
+  GEN    lubB24.pcf.gz
+  GEN    lubBI08.pcf.gz
+  GEN    lubBI10.pcf.gz
+  GEN    lubBI12.pcf.gz
+  GEN    lubBI18.pcf.gz
+  GEN    lubBI19.pcf.gz
+  GEN    lubBI24.pcf.gz
+  GEN    lubI08.pcf.gz
+  GEN    lubI10.pcf.gz
+  GEN    lubI12.pcf.gz
+  GEN    lubI14.pcf.gz
+  GEN    lubI18.pcf.gz
+  GEN    lubI19.pcf.gz
+  GEN    lubI24.pcf.gz
+  GEN    luBIS08.pcf.gz
+  GEN    luBIS10.pcf.gz
+  GEN    luBIS12.pcf.gz
+  GEN    luBIS14.pcf.gz
+  GEN    luBIS18.pcf.gz
+  GEN    luBIS19.pcf.gz
+  GEN    luBIS24.pcf.gz
+  GEN    lubR08.pcf.gz
+  GEN    lubR10.pcf.gz
+  GEN    lubR12.pcf.gz
+  GEN    lubR14.pcf.gz
+  GEN    lubR18.pcf.gz
+  GEN    lubR19.pcf.gz
+  GEN    lubR24.pcf.gz
+  GEN    luBS08.pcf.gz
+  GEN    luBS10.pcf.gz
+  GEN    luBS12.pcf.gz
+  GEN    luBS14.pcf.gz
+  GEN    luBS18.pcf.gz
+  GEN    luBS19.pcf.gz
+  GEN    luBS24.pcf.gz
+  GEN    luIS08.pcf.gz
+  GEN    luIS10.pcf.gz
+  GEN    luIS12.pcf.gz
+  GEN    luIS14.pcf.gz
+  GEN    luIS18.pcf.gz
+  GEN    luIS19.pcf.gz
+  GEN    luIS24.pcf.gz
+  GEN    luRS08.pcf.gz
+  GEN    luRS10.pcf.gz
+  GEN    luRS12.pcf.gz
+  GEN    luRS14.pcf.gz
+  GEN    luRS18.pcf.gz
+  GEN    luRS19.pcf.gz
+  GEN    luRS24.pcf.gz
+  GEN    lubB08-ISO8859-1.bdf
+  GEN    lubB10-ISO8859-1.bdf
+Writing 192 characters into file 'lubB08-ISO8859-1.bdf'.
+  GEN    lubB12-ISO8859-1.bdf
+Writing 192 characters into file 'lubB10-ISO8859-1.bdf'.
+  GEN    lubB14-ISO8859-1.bdf
+Writing 192 characters into file 'lubB12-ISO8859-1.bdf'.
+  GEN    lubB18-ISO8859-1.bdf
+Writing 192 characters into file 'lubB14-ISO8859-1.bdf'.
+  GEN    lubB19-ISO8859-1.bdf
+Writing 192 characters into file 'lubB18-ISO8859-1.bdf'.
+  GEN    lubB24-ISO8859-1.bdf
+Writing 192 characters into file 'lubB19-ISO8859-1.bdf'.
+  GEN    lubBI08-ISO8859-1.bdf
+Writing 192 characters into file 'lubBI08-ISO8859-1.bdf'.
+  GEN    lubBI10-ISO8859-1.bdf
+Writing 192 characters into file 'lubB24-ISO8859-1.bdf'.
+  GEN    lubBI12-ISO8859-1.bdf
+Writing 192 characters into file 'lubBI10-ISO8859-1.bdf'.
+  GEN    lubBI14-ISO8859-1.bdf
+Writing 192 characters into file 'lubBI12-ISO8859-1.bdf'.
+  GEN    lubBI18-ISO8859-1.bdf
+Writing 192 characters into file 'lubBI14-ISO8859-1.bdf'.
+  GEN    lubBI19-ISO8859-1.bdf
+Writing 192 characters into file 'lubBI18-ISO8859-1.bdf'.
+  GEN    lubBI24-ISO8859-1.bdf
+Writing 192 characters into file 'lubBI19-ISO8859-1.bdf'.
+  GEN    lubI08-ISO8859-1.bdf
+Writing 192 characters into file 'lubI08-ISO8859-1.bdf'.
+Writing 192 characters into file 'lubBI24-ISO8859-1.bdf'.
+  GEN    lubI10-ISO8859-1.bdf
+  GEN    lubI12-ISO8859-1.bdf
+Writing 192 characters into file 'lubI10-ISO8859-1.bdf'.
+Writing 192 characters into file 'lubI12-ISO8859-1.bdf'.
+  GEN    lubI14-ISO8859-1.bdf
+  GEN    lubI18-ISO8859-1.bdf
+Writing 192 characters into file 'lubI14-ISO8859-1.bdf'.
+  GEN    lubI19-ISO8859-1.bdf
+Writing 192 characters into file 'lubI18-ISO8859-1.bdf'.
+  GEN    lubI24-ISO8859-1.bdf
+Writing 192 characters into file 'lubI19-ISO8859-1.bdf'.
+  GEN    luBIS08-ISO8859-1.bdf
+Writing 192 characters into file 'lubI24-ISO8859-1.bdf'.
+Writing 192 characters into file 'luBIS08-ISO8859-1.bdf'.
+  GEN    luBIS10-ISO8859-1.bdf
+  GEN    luBIS12-ISO8859-1.bdf
+Writing 192 characters into file 'luBIS10-ISO8859-1.bdf'.
+Writing 192 characters into file 'luBIS12-ISO8859-1.bdf'.
+  GEN    luBIS14-ISO8859-1.bdf
+  GEN    luBIS18-ISO8859-1.bdf
+Writing 192 characters into file 'luBIS14-ISO8859-1.bdf'.
+  GEN    luBIS19-ISO8859-1.bdf
+Writing 192 characters into file 'luBIS18-ISO8859-1.bdf'.
+  GEN    luBIS24-ISO8859-1.bdf
+Writing 192 characters into file 'luBIS19-ISO8859-1.bdf'.
+  GEN    lubR08-ISO8859-1.bdf
+Writing 192 characters into file 'lubR08-ISO8859-1.bdf'.
+Writing 192 characters into file 'luBIS24-ISO8859-1.bdf'.
+  GEN    lubR12-ISO8859-1.bdf
+Writing 192 characters into file 'lubR10-ISO8859-1.bdf'.
+Writing 192 characters into file 'lubR12-ISO8859-1.bdf'.
+  GEN    lubR14-ISO8859-1.bdf
+  GEN    lubR18-ISO8859-1.bdf
+Writing 192 characters into file 'lubR14-ISO8859-1.bdf'.
+  GEN    lubR19-ISO8859-1.bdf
+Writing 192 characters into file 'lubR18-ISO8859-1.bdf'.
+  GEN    lubR24-ISO8859-1.bdf
+Writing 192 characters into file 'lubR19-ISO8859-1.bdf'.
+  GEN    luBS08-ISO8859-1.bdf
+Writing 192 characters into file 'lubR24-ISO8859-1.bdf'.
+Writing 192 characters into file 'luBS08-ISO8859-1.bdf'.
+  GEN    luBS10-ISO8859-1.bdf
+  GEN    luBS12-ISO8859-1.bdf
+Writing 192 characters into file 'luBS10-ISO8859-1.bdf'.
+Writing 192 characters into file 'luBS12-ISO8859-1.bdf'.
+  GEN    luBS14-ISO8859-1.bdf
+  GEN    luBS18-ISO8859-1.bdf
+Writing 192 characters into file 'luBS14-ISO8859-1.bdf'.
+  GEN    luBS19-ISO8859-1.bdf
+Writing 192 characters into file 'luBS18-ISO8859-1.bdf'.
+  GEN    luBS24-ISO8859-1.bdf
+Writing 192 characters into file 'luBS19-ISO8859-1.bdf'.
+  GEN    luIS08-ISO8859-1.bdf
+Writing 192 characters into file 'luIS08-ISO8859-1.bdf'.
+Writing 192 characters into file 'luBS24-ISO8859-1.bdf'.
+  GEN    luIS10-ISO8859-1.bdf
+  GEN    luIS12-ISO8859-1.bdf
+Writing 192 characters into file 'luIS10-ISO8859-1.bdf'.
+Writing 192 characters into file 'luIS12-ISO8859-1.bdf'.
+  GEN    luIS14-ISO8859-1.bdf
+  GEN    luIS18-ISO8859-1.bdf
+Writing 192 characters into file 'luIS14-ISO8859-1.bdf'.
+  GEN    luIS19-ISO8859-1.bdf
+Writing 192 characters into file 'luIS18-ISO8859-1.bdf'.
+  GEN    luIS24-ISO8859-1.bdf
+Writing 192 characters into file 'luIS19-ISO8859-1.bdf'.
+  GEN    luRS08-ISO8859-1.bdf
+Writing 192 characters into file 'luIS24-ISO8859-1.bdf'.
+Writing 192 characters into file 'luRS08-ISO8859-1.bdf'.
+  GEN    luRS10-ISO8859-1.bdf
+  GEN    luRS12-ISO8859-1.bdf
+Writing 192 characters into file 'luRS10-ISO8859-1.bdf'.
+Writing 192 characters into file 'luRS12-ISO8859-1.bdf'.
+  GEN    luRS14-ISO8859-1.bdf
+  GEN    luRS18-ISO8859-1.bdf
+Writing 192 characters into file 'luRS14-ISO8859-1.bdf'.
+  GEN    luRS19-ISO8859-1.bdf
+Writing 192 characters into file 'luRS18-ISO8859-1.bdf'.
+  GEN    luRS24-ISO8859-1.bdf
+Writing 192 characters into file 'luRS19-ISO8859-1.bdf'.
+  GEN    lubB08-ISO8859-2.bdf
+Writing 192 characters into file 'luRS24-ISO8859-1.bdf'.
+Writing 192 characters into file 'lubB08-ISO8859-2.bdf'.
+  GEN    lubB10-ISO8859-2.bdf
+  GEN    lubB12-ISO8859-2.bdf
+Writing 192 characters into file 'lubB10-ISO8859-2.bdf'.
+Writing 192 characters into file 'lubB12-ISO8859-2.bdf'.
+  GEN    lubB14-ISO8859-2.bdf
+  GEN    lubB18-ISO8859-2.bdf
+Writing 192 characters into file 'lubB14-ISO8859-2.bdf'.
+  GEN    lubB19-ISO8859-2.bdf
+Writing 192 characters into file 'lubB18-ISO8859-2.bdf'.
+  GEN    lubB24-ISO8859-2.bdf
+Writing 192 characters into file 'lubB19-ISO8859-2.bdf'.
+  GEN    lubBI08-ISO8859-2.bdf
+Writing 192 characters into file 'lubB24-ISO8859-2.bdf'.
+Writing 192 characters into file 'lubBI08-ISO8859-2.bdf'.
+  GEN    lubBI10-ISO8859-2.bdf
+  GEN    lubBI12-ISO8859-2.bdf
+Writing 192 characters into file 'lubBI10-ISO8859-2.bdf'.
+Writing 192 characters into file 'lubBI12-ISO8859-2.bdf'.
+  GEN    lubBI14-ISO8859-2.bdf
+  GEN    lubBI18-ISO8859-2.bdf
+Writing 192 characters into file 'lubBI14-ISO8859-2.bdf'.
+  GEN    lubBI19-ISO8859-2.bdf
+Writing 192 characters into file 'lubBI18-ISO8859-2.bdf'.
+  GEN    lubBI24-ISO8859-2.bdf
+Writing 192 characters into file 'lubBI19-ISO8859-2.bdf'.
+  GEN    lubI08-ISO8859-2.bdf
+Writing 192 characters into file 'lubBI24-ISO8859-2.bdf'.
+Writing 192 characters into file 'lubI08-ISO8859-2.bdf'.
+  GEN    lubI10-ISO8859-2.bdf
+  GEN    lubI12-ISO8859-2.bdf
+Writing 192 characters into file 'lubI10-ISO8859-2.bdf'.
+Writing 192 characters into file 'lubI12-ISO8859-2.bdf'.
+  GEN    lubI14-ISO8859-2.bdf
+  GEN    lubI18-ISO8859-2.bdf
+Writing 192 characters into file 'lubI14-ISO8859-2.bdf'.
+  GEN    lubI19-ISO8859-2.bdf
+Writing 192 characters into file 'lubI18-ISO8859-2.bdf'.
+  GEN    lubI24-ISO8859-2.bdf
+Writing 192 characters into file 'lubI19-ISO8859-2.bdf'.
+  GEN    luBIS08-ISO8859-2.bdf
+Writing 192 characters into file 'lubI24-ISO8859-2.bdf'.
+Writing 192 characters into file 'luBIS08-ISO8859-2.bdf'.
+  GEN    luBIS10-ISO8859-2.bdf
+  GEN    luBIS12-ISO8859-2.bdf
+Writing 192 characters into file 'luBIS10-ISO8859-2.bdf'.
+  GEN    luBIS14-ISO8859-2.bdf
+Writing 192 characters into file 'luBIS12-ISO8859-2.bdf'.
+  GEN    luBIS18-ISO8859-2.bdf
+Writing 192 characters into file 'luBIS14-ISO8859-2.bdf'.
+  GEN    luBIS19-ISO8859-2.bdf
+Writing 192 characters into file 'luBIS18-ISO8859-2.bdf'.
+  GEN    luBIS24-ISO8859-2.bdf
+Writing 192 characters into file 'luBIS19-ISO8859-2.bdf'.
+  GEN    lubR08-ISO8859-2.bdf
+Writing 192 characters into file 'lubR08-ISO8859-2.bdf'.
+Writing 192 characters into file 'luBIS24-ISO8859-2.bdf'.
+  GEN    lubR10-ISO8859-2.bdf
+  GEN    lubR12-ISO8859-2.bdf
+Writing 192 characters into file 'lubR10-ISO8859-2.bdf'.
+Writing 192 characters into file 'lubR12-ISO8859-2.bdf'.
+  GEN    lubR14-ISO8859-2.bdf
+  GEN    lubR18-ISO8859-2.bdf
+Writing 192 characters into file 'lubR14-ISO8859-2.bdf'.
+  GEN    lubR19-ISO8859-2.bdf
+Writing 192 characters into file 'lubR18-ISO8859-2.bdf'.
+  GEN    lubR24-ISO8859-2.bdf
+Writing 192 characters into file 'lubR19-ISO8859-2.bdf'.
+  GEN    luBS08-ISO8859-2.bdf
+Writing 192 characters into file 'lubR24-ISO8859-2.bdf'.
+Writing 192 characters into file 'luBS08-ISO8859-2.bdf'.
+  GEN    luBS10-ISO8859-2.bdf
+  GEN    luBS12-ISO8859-2.bdf
+Writing 192 characters into file 'luBS10-ISO8859-2.bdf'.
+Writing 192 characters into file 'luBS12-ISO8859-2.bdf'.
+  GEN    luBS14-ISO8859-2.bdf
+  GEN    luBS18-ISO8859-2.bdf
+Writing 192 characters into file 'luBS14-ISO8859-2.bdf'.
+  GEN    luBS19-ISO8859-2.bdf
+Writing 192 characters into file 'luBS18-ISO8859-2.bdf'.
+  GEN    luBS24-ISO8859-2.bdf
+Writing 192 characters into file 'luBS19-ISO8859-2.bdf'.
+  GEN    luIS08-ISO8859-2.bdf
+Writing 192 characters into file 'luIS08-ISO8859-2.bdf'.
+Writing 192 characters into file 'luBS24-ISO8859-2.bdf'.
+  GEN    luIS10-ISO8859-2.bdf
+Writing 192 characters into file 'luIS10-ISO8859-2.bdf'.
+Writing 192 characters into file 'luIS12-ISO8859-2.bdf'.
+  GEN    luIS14-ISO8859-2.bdf
+  GEN    luIS18-ISO8859-2.bdf
+Writing 192 characters into file 'luIS14-ISO8859-2.bdf'.
+  GEN    luIS19-ISO8859-2.bdf
+Writing 192 characters into file 'luIS18-ISO8859-2.bdf'.
+  GEN    luIS24-ISO8859-2.bdf
+Writing 192 characters into file 'luIS19-ISO8859-2.bdf'.
+  GEN    luRS08-ISO8859-2.bdf
+Writing 192 characters into file 'luIS24-ISO8859-2.bdf'.
+Writing 192 characters into file 'luRS08-ISO8859-2.bdf'.
+  GEN    luRS10-ISO8859-2.bdf
+  GEN    luRS12-ISO8859-2.bdf
+Writing 192 characters into file 'luRS10-ISO8859-2.bdf'.
+Writing 192 characters into file 'luRS12-ISO8859-2.bdf'.
+  GEN    luRS14-ISO8859-2.bdf
+  GEN    luRS18-ISO8859-2.bdf
+Writing 192 characters into file 'luRS14-ISO8859-2.bdf'.
+  GEN    luRS19-ISO8859-2.bdf
+Writing 192 characters into file 'luRS18-ISO8859-2.bdf'.
+  GEN    luRS24-ISO8859-2.bdf
+Writing 192 characters into file 'luRS19-ISO8859-2.bdf'.
+  GEN    lubB08-ISO8859-3.bdf
+Writing 192 characters into file 'luRS24-ISO8859-2.bdf'.
+Writing 185 characters into file 'lubB08-ISO8859-3.bdf'.
+  GEN    lubB10-ISO8859-3.bdf
+  GEN    lubB12-ISO8859-3.bdf
+Writing 185 characters into file 'lubB10-ISO8859-3.bdf'.
+Writing 185 characters into file 'lubB12-ISO8859-3.bdf'.
+  GEN    lubB14-ISO8859-3.bdf
+  GEN    lubB18-ISO8859-3.bdf
+Writing 185 characters into file 'lubB14-ISO8859-3.bdf'.
+  GEN    lubB19-ISO8859-3.bdf
+Writing 185 characters into file 'lubB18-ISO8859-3.bdf'.
+  GEN    lubB24-ISO8859-3.bdf
+Writing 185 characters into file 'lubB19-ISO8859-3.bdf'.
+  GEN    lubBI08-ISO8859-3.bdf
+Writing 185 characters into file 'lubBI08-ISO8859-3.bdf'.
+Writing 185 characters into file 'lubB24-ISO8859-3.bdf'.
+  GEN    lubBI10-ISO8859-3.bdf
+  GEN    lubBI12-ISO8859-3.bdf
+Writing 185 characters into file 'lubBI10-ISO8859-3.bdf'.
+Writing 185 characters into file 'lubBI12-ISO8859-3.bdf'.
+  GEN    lubBI14-ISO8859-3.bdf
+  GEN    lubBI18-ISO8859-3.bdf
+Writing 185 characters into file 'lubBI14-ISO8859-3.bdf'.
+Writing 185 characters into file 'lubBI18-ISO8859-3.bdf'.
+  GEN    lubBI19-ISO8859-3.bdf
+  GEN    lubBI24-ISO8859-3.bdf
+Writing 185 characters into file 'lubBI19-ISO8859-3.bdf'.
+  GEN    lubI08-ISO8859-3.bdf
+Writing 185 characters into file 'lubBI24-ISO8859-3.bdf'.
+Writing 185 characters into file 'lubI08-ISO8859-3.bdf'.
+  GEN    lubI10-ISO8859-3.bdf
+  GEN    lubI12-ISO8859-3.bdf
+Writing 185 characters into file 'lubI10-ISO8859-3.bdf'.
+  GEN    lubI14-ISO8859-3.bdf
+Writing 185 characters into file 'lubI12-ISO8859-3.bdf'.
+  GEN    lubI18-ISO8859-3.bdf
+Writing 185 characters into file 'lubI14-ISO8859-3.bdf'.
+  GEN    lubI19-ISO8859-3.bdf
+Writing 185 characters into file 'lubI18-ISO8859-3.bdf'.
+  GEN    lubI24-ISO8859-3.bdf
+Writing 185 characters into file 'lubI19-ISO8859-3.bdf'.
+  GEN    luBIS08-ISO8859-3.bdf
+Writing 185 characters into file 'luBIS08-ISO8859-3.bdf'.
+Writing 185 characters into file 'lubI24-ISO8859-3.bdf'.
+  GEN    luBIS10-ISO8859-3.bdf
+  GEN    luBIS12-ISO8859-3.bdf
+Writing 185 characters into file 'luBIS10-ISO8859-3.bdf'.
+Writing 185 characters into file 'luBIS12-ISO8859-3.bdf'.
+  GEN    luBIS14-ISO8859-3.bdf
+  GEN    luBIS18-ISO8859-3.bdf
+Writing 185 characters into file 'luBIS14-ISO8859-3.bdf'.
+  GEN    luBIS19-ISO8859-3.bdf
+Writing 185 characters into file 'luBIS18-ISO8859-3.bdf'.
+  GEN    luBIS24-ISO8859-3.bdf
+Writing 185 characters into file 'luBIS19-ISO8859-3.bdf'.
+  GEN    lubR08-ISO8859-3.bdf
+Writing 185 characters into file 'luBIS24-ISO8859-3.bdf'.
+Writing 185 characters into file 'lubR08-ISO8859-3.bdf'.
+  GEN    lubR12-ISO8859-3.bdf
+Writing 185 characters into file 'lubR10-ISO8859-3.bdf'.
+Writing 185 characters into file 'lubR12-ISO8859-3.bdf'.
+  GEN    lubR14-ISO8859-3.bdf
+  GEN    lubR18-ISO8859-3.bdf
+Writing 185 characters into file 'lubR14-ISO8859-3.bdf'.
+Writing 185 characters into file 'lubR18-ISO8859-3.bdf'.
+  GEN    lubR19-ISO8859-3.bdf
+  GEN    lubR24-ISO8859-3.bdf
+Writing 185 characters into file 'lubR19-ISO8859-3.bdf'.
+  GEN    luBS08-ISO8859-3.bdf
+Writing 185 characters into file 'lubR24-ISO8859-3.bdf'.
+Writing 185 characters into file 'luBS08-ISO8859-3.bdf'.
+  GEN    luBS10-ISO8859-3.bdf
+  GEN    luBS12-ISO8859-3.bdf
+Writing 185 characters into file 'luBS10-ISO8859-3.bdf'.
+  GEN    luBS14-ISO8859-3.bdf
+Writing 185 characters into file 'luBS12-ISO8859-3.bdf'.
+  GEN    luBS18-ISO8859-3.bdf
+Writing 185 characters into file 'luBS14-ISO8859-3.bdf'.
+  GEN    luBS19-ISO8859-3.bdf
+Writing 185 characters into file 'luBS18-ISO8859-3.bdf'.
+  GEN    luBS24-ISO8859-3.bdf
+Writing 185 characters into file 'luBS19-ISO8859-3.bdf'.
+  GEN    luIS08-ISO8859-3.bdf
+Writing 185 characters into file 'luIS08-ISO8859-3.bdf'.
+Writing 185 characters into file 'luBS24-ISO8859-3.bdf'.
+  GEN    luIS10-ISO8859-3.bdf
+  GEN    luIS12-ISO8859-3.bdf
+Writing 185 characters into file 'luIS10-ISO8859-3.bdf'.
+  GEN    luIS14-ISO8859-3.bdf
+Writing 185 characters into file 'luIS12-ISO8859-3.bdf'.
+  GEN    luIS18-ISO8859-3.bdf
+Writing 185 characters into file 'luIS14-ISO8859-3.bdf'.
+  GEN    luIS19-ISO8859-3.bdf
+Writing 185 characters into file 'luIS18-ISO8859-3.bdf'.
+  GEN    luIS24-ISO8859-3.bdf
+Writing 185 characters into file 'luIS19-ISO8859-3.bdf'.
+  GEN    luRS08-ISO8859-3.bdf
+Writing 185 characters into file 'luRS08-ISO8859-3.bdf'.
+Writing 185 characters into file 'luIS24-ISO8859-3.bdf'.
+  GEN    luRS10-ISO8859-3.bdf
+  GEN    luRS12-ISO8859-3.bdf
+Writing 185 characters into file 'luRS10-ISO8859-3.bdf'.
+Writing 185 characters into file 'luRS12-ISO8859-3.bdf'.
+  GEN    luRS14-ISO8859-3.bdf
+  GEN    luRS18-ISO8859-3.bdf
+Writing 185 characters into file 'luRS14-ISO8859-3.bdf'.
+  GEN    luRS19-ISO8859-3.bdf
+Writing 185 characters into file 'luRS18-ISO8859-3.bdf'.
+  GEN    luRS24-ISO8859-3.bdf
+Writing 185 characters into file 'luRS19-ISO8859-3.bdf'.
+  GEN    lubB08-ISO8859-4.bdf
+Writing 185 characters into file 'luRS24-ISO8859-3.bdf'.
+Writing 192 characters into file 'lubB08-ISO8859-4.bdf'.
+  GEN    lubB10-ISO8859-4.bdf
+  GEN    lubB12-ISO8859-4.bdf
+Writing 192 characters into file 'lubB10-ISO8859-4.bdf'.
+Writing 192 characters into file 'lubB12-ISO8859-4.bdf'.
+  GEN    lubB14-ISO8859-4.bdf
+  GEN    lubB18-ISO8859-4.bdf
+Writing 192 characters into file 'lubB14-ISO8859-4.bdf'.
+  GEN    lubB19-ISO8859-4.bdf
+Writing 192 characters into file 'lubB18-ISO8859-4.bdf'.
+  GEN    lubB24-ISO8859-4.bdf
+Writing 192 characters into file 'lubB19-ISO8859-4.bdf'.
+  GEN    lubBI08-ISO8859-4.bdf
+Writing 192 characters into file 'lubB24-ISO8859-4.bdf'.
+Writing 192 characters into file 'lubBI08-ISO8859-4.bdf'.
+  GEN    lubBI10-ISO8859-4.bdf
+  GEN    lubBI12-ISO8859-4.bdf
+Writing 192 characters into file 'lubBI10-ISO8859-4.bdf'.
+Writing 192 characters into file 'lubBI12-ISO8859-4.bdf'.
+  GEN    lubBI14-ISO8859-4.bdf
+  GEN    lubBI18-ISO8859-4.bdf
+Writing 192 characters into file 'lubBI14-ISO8859-4.bdf'.
+  GEN    lubBI19-ISO8859-4.bdf
+Writing 192 characters into file 'lubBI18-ISO8859-4.bdf'.
+  GEN    lubBI24-ISO8859-4.bdf
+Writing 192 characters into file 'lubBI19-ISO8859-4.bdf'.
+  GEN    lubI08-ISO8859-4.bdf
+Writing 192 characters into file 'lubBI24-ISO8859-4.bdf'.
+Writing 192 characters into file 'lubI08-ISO8859-4.bdf'.
+  GEN    lubI10-ISO8859-4.bdf
+  GEN    lubI12-ISO8859-4.bdf
+Writing 192 characters into file 'lubI10-ISO8859-4.bdf'.
+Writing 192 characters into file 'lubI12-ISO8859-4.bdf'.
+  GEN    lubI14-ISO8859-4.bdf
+  GEN    lubI18-ISO8859-4.bdf
+Writing 192 characters into file 'lubI14-ISO8859-4.bdf'.
+  GEN    lubI19-ISO8859-4.bdf
+Writing 192 characters into file 'lubI18-ISO8859-4.bdf'.
+  GEN    lubI24-ISO8859-4.bdf
+Writing 192 characters into file 'lubI19-ISO8859-4.bdf'.
+  GEN    luBIS08-ISO8859-4.bdf
+Writing 192 characters into file 'lubI24-ISO8859-4.bdf'.
+Writing 192 characters into file 'luBIS08-ISO8859-4.bdf'.
+  GEN    luBIS10-ISO8859-4.bdf
+  GEN    luBIS12-ISO8859-4.bdf
+Writing 192 characters into file 'luBIS10-ISO8859-4.bdf'.
+Writing 192 characters into file 'luBIS12-ISO8859-4.bdf'.
+  GEN    luBIS14-ISO8859-4.bdf
+  GEN    luBIS18-ISO8859-4.bdf
+Writing 192 characters into file 'luBIS14-ISO8859-4.bdf'.
+  GEN    luBIS19-ISO8859-4.bdf
+Writing 192 characters into file 'luBIS18-ISO8859-4.bdf'.
+  GEN    luBIS24-ISO8859-4.bdf
+Writing 192 characters into file 'luBIS19-ISO8859-4.bdf'.
+  GEN    lubR08-ISO8859-4.bdf
+Writing 192 characters into file 'luBIS24-ISO8859-4.bdf'.
+Writing 192 characters into file 'lubR08-ISO8859-4.bdf'.
+  GEN    lubR12-ISO8859-4.bdf
+Writing 192 characters into file 'lubR10-ISO8859-4.bdf'.
+Writing 192 characters into file 'lubR12-ISO8859-4.bdf'.
+  GEN    lubR14-ISO8859-4.bdf
+  GEN    lubR18-ISO8859-4.bdf
+Writing 192 characters into file 'lubR14-ISO8859-4.bdf'.
+  GEN    lubR19-ISO8859-4.bdf
+Writing 192 characters into file 'lubR18-ISO8859-4.bdf'.
+  GEN    lubR24-ISO8859-4.bdf
+Writing 192 characters into file 'lubR19-ISO8859-4.bdf'.
+  GEN    luBS08-ISO8859-4.bdf
+Writing 192 characters into file 'lubR24-ISO8859-4.bdf'.
+Writing 192 characters into file 'luBS08-ISO8859-4.bdf'.
+  GEN    luBS10-ISO8859-4.bdf
+  GEN    luBS12-ISO8859-4.bdf
+Writing 192 characters into file 'luBS10-ISO8859-4.bdf'.
+Writing 192 characters into file 'luBS12-ISO8859-4.bdf'.
+  GEN    luBS14-ISO8859-4.bdf
+  GEN    luBS18-ISO8859-4.bdf
+Writing 192 characters into file 'luBS14-ISO8859-4.bdf'.
+  GEN    luBS19-ISO8859-4.bdf
+Writing 192 characters into file 'luBS18-ISO8859-4.bdf'.
+  GEN    luBS24-ISO8859-4.bdf
+Writing 192 characters into file 'luBS19-ISO8859-4.bdf'.
+  GEN    luIS08-ISO8859-4.bdf
+Writing 192 characters into file 'luIS08-ISO8859-4.bdf'.
+Writing 192 characters into file 'luBS24-ISO8859-4.bdf'.
+  GEN    luIS10-ISO8859-4.bdf
+  GEN    luIS12-ISO8859-4.bdf
+Writing 192 characters into file 'luIS10-ISO8859-4.bdf'.
+Writing 192 characters into file 'luIS12-ISO8859-4.bdf'.
+  GEN    luIS14-ISO8859-4.bdf
+  GEN    luIS18-ISO8859-4.bdf
+Writing 192 characters into file 'luIS14-ISO8859-4.bdf'.
+  GEN    luIS19-ISO8859-4.bdf
+Writing 192 characters into file 'luIS18-ISO8859-4.bdf'.
+  GEN    luIS24-ISO8859-4.bdf
+Writing 192 characters into file 'luIS19-ISO8859-4.bdf'.
+  GEN    luRS08-ISO8859-4.bdf
+Writing 192 characters into file 'luIS24-ISO8859-4.bdf'.
+Writing 192 characters into file 'luRS08-ISO8859-4.bdf'.
+  GEN    luRS10-ISO8859-4.bdf
+  GEN    luRS12-ISO8859-4.bdf
+Writing 192 characters into file 'luRS10-ISO8859-4.bdf'.
+Writing 192 characters into file 'luRS12-ISO8859-4.bdf'.
+  GEN    luRS14-ISO8859-4.bdf
+  GEN    luRS18-ISO8859-4.bdf
+Writing 192 characters into file 'luRS14-ISO8859-4.bdf'.
+  GEN    luRS19-ISO8859-4.bdf
+Writing 192 characters into file 'luRS18-ISO8859-4.bdf'.
+  GEN    luRS24-ISO8859-4.bdf
+Writing 192 characters into file 'luRS19-ISO8859-4.bdf'.
+  GEN    lubB08-ISO8859-9.bdf
+Writing 192 characters into file 'luRS24-ISO8859-4.bdf'.
+Writing 192 characters into file 'lubB08-ISO8859-9.bdf'.
+  GEN    lubB10-ISO8859-9.bdf
+  GEN    lubB12-ISO8859-9.bdf
+Writing 192 characters into file 'lubB10-ISO8859-9.bdf'.
+Writing 192 characters into file 'lubB12-ISO8859-9.bdf'.
+  GEN    lubB14-ISO8859-9.bdf
+  GEN    lubB18-ISO8859-9.bdf
+Writing 192 characters into file 'lubB14-ISO8859-9.bdf'.
+  GEN    lubB19-ISO8859-9.bdf
+Writing 192 characters into file 'lubB18-ISO8859-9.bdf'.
+  GEN    lubB24-ISO8859-9.bdf
+Writing 192 characters into file 'lubB19-ISO8859-9.bdf'.
+  GEN    lubBI08-ISO8859-9.bdf
+Writing 192 characters into file 'lubB24-ISO8859-9.bdf'.
+Writing 192 characters into file 'lubBI08-ISO8859-9.bdf'.
+  GEN    lubBI10-ISO8859-9.bdf
+  GEN    lubBI12-ISO8859-9.bdf
+Writing 192 characters into file 'lubBI10-ISO8859-9.bdf'.
+  GEN    lubBI14-ISO8859-9.bdf
+Writing 192 characters into file 'lubBI12-ISO8859-9.bdf'.
+  GEN    lubBI18-ISO8859-9.bdf
+Writing 192 characters into file 'lubBI14-ISO8859-9.bdf'.
+  GEN    lubBI19-ISO8859-9.bdf
+Writing 192 characters into file 'lubBI18-ISO8859-9.bdf'.
+  GEN    lubBI24-ISO8859-9.bdf
+Writing 192 characters into file 'lubBI19-ISO8859-9.bdf'.
+  GEN    lubI08-ISO8859-9.bdf
+Writing 192 characters into file 'lubI08-ISO8859-9.bdf'.
+Writing 192 characters into file 'lubBI24-ISO8859-9.bdf'.
+  GEN    lubI12-ISO8859-9.bdf
+Writing 192 characters into file 'lubI10-ISO8859-9.bdf'.
+Writing 192 characters into file 'lubI12-ISO8859-9.bdf'.
+  GEN    lubI14-ISO8859-9.bdf
+  GEN    lubI18-ISO8859-9.bdf
+Writing 192 characters into file 'lubI14-ISO8859-9.bdf'.
+Writing 192 characters into file 'lubI18-ISO8859-9.bdf'.
+  GEN    lubI19-ISO8859-9.bdf
+  GEN    lubI24-ISO8859-9.bdf
+Writing 192 characters into file 'lubI19-ISO8859-9.bdf'.
+  GEN    luBIS08-ISO8859-9.bdf
+Writing 192 characters into file 'lubI24-ISO8859-9.bdf'.
+Writing 192 characters into file 'luBIS08-ISO8859-9.bdf'.
+  GEN    luBIS10-ISO8859-9.bdf
+  GEN    luBIS12-ISO8859-9.bdf
+Writing 192 characters into file 'luBIS10-ISO8859-9.bdf'.
+Writing 192 characters into file 'luBIS12-ISO8859-9.bdf'.
+  GEN    luBIS14-ISO8859-9.bdf
+  GEN    luBIS18-ISO8859-9.bdf
+Writing 192 characters into file 'luBIS14-ISO8859-9.bdf'.
+  GEN    luBIS19-ISO8859-9.bdf
+Writing 192 characters into file 'luBIS18-ISO8859-9.bdf'.
+  GEN    luBIS24-ISO8859-9.bdf
+Writing 192 characters into file 'luBIS19-ISO8859-9.bdf'.
+  GEN    lubR08-ISO8859-9.bdf
+Writing 192 characters into file 'luBIS24-ISO8859-9.bdf'.
+Writing 192 characters into file 'lubR08-ISO8859-9.bdf'.
+  GEN    lubR10-ISO8859-9.bdf
+  GEN    lubR12-ISO8859-9.bdf
+Writing 192 characters into file 'lubR10-ISO8859-9.bdf'.
+Writing 192 characters into file 'lubR12-ISO8859-9.bdf'.
+  GEN    lubR14-ISO8859-9.bdf
+  GEN    lubR18-ISO8859-9.bdf
+Writing 192 characters into file 'lubR14-ISO8859-9.bdf'.
+  GEN    lubR19-ISO8859-9.bdf
+Writing 192 characters into file 'lubR18-ISO8859-9.bdf'.
+  GEN    lubR24-ISO8859-9.bdf
+Writing 192 characters into file 'lubR19-ISO8859-9.bdf'.
+  GEN    luBS08-ISO8859-9.bdf
+Writing 192 characters into file 'lubR24-ISO8859-9.bdf'.
+Writing 192 characters into file 'luBS08-ISO8859-9.bdf'.
+  GEN    luBS10-ISO8859-9.bdf
+  GEN    luBS12-ISO8859-9.bdf
+Writing 192 characters into file 'luBS10-ISO8859-9.bdf'.
+Writing 192 characters into file 'luBS12-ISO8859-9.bdf'.
+  GEN    luBS14-ISO8859-9.bdf
+  GEN    luBS18-ISO8859-9.bdf
+Writing 192 characters into file 'luBS14-ISO8859-9.bdf'.
+  GEN    luBS19-ISO8859-9.bdf
+Writing 192 characters into file 'luBS18-ISO8859-9.bdf'.
+  GEN    luBS24-ISO8859-9.bdf
+Writing 192 characters into file 'luBS19-ISO8859-9.bdf'.
+  GEN    luIS08-ISO8859-9.bdf
+Writing 192 characters into file 'luIS08-ISO8859-9.bdf'.
+Writing 192 characters into file 'luBS24-ISO8859-9.bdf'.
+  GEN    luIS10-ISO8859-9.bdf
+Writing 192 characters into file 'luIS10-ISO8859-9.bdf'.
+Writing 192 characters into file 'luIS12-ISO8859-9.bdf'.
+  GEN    luIS14-ISO8859-9.bdf
+  GEN    luIS18-ISO8859-9.bdf
+Writing 192 characters into file 'luIS14-ISO8859-9.bdf'.
+  GEN    luIS19-ISO8859-9.bdf
+Writing 192 characters into file 'luIS18-ISO8859-9.bdf'.
+  GEN    luIS24-ISO8859-9.bdf
+Writing 192 characters into file 'luIS19-ISO8859-9.bdf'.
+  GEN    luRS08-ISO8859-9.bdf
+Writing 192 characters into file 'luIS24-ISO8859-9.bdf'.
+Writing 192 characters into file 'luRS08-ISO8859-9.bdf'.
+  GEN    luRS10-ISO8859-9.bdf
+  GEN    luRS12-ISO8859-9.bdf
+Writing 192 characters into file 'luRS10-ISO8859-9.bdf'.
+Writing 192 characters into file 'luRS12-ISO8859-9.bdf'.
+  GEN    luRS14-ISO8859-9.bdf
+  GEN    luRS18-ISO8859-9.bdf
+Writing 192 characters into file 'luRS14-ISO8859-9.bdf'.
+  GEN    luRS19-ISO8859-9.bdf
+Writing 192 characters into file 'luRS18-ISO8859-9.bdf'.
+  GEN    luRS24-ISO8859-9.bdf
+Writing 192 characters into file 'luRS19-ISO8859-9.bdf'.
+  GEN    lubB08-ISO8859-10.bdf
+Writing 192 characters into file 'luRS24-ISO8859-9.bdf'.
+Writing 192 characters into file 'lubB08-ISO8859-10.bdf'.
+  GEN    lubB10-ISO8859-10.bdf
+  GEN    lubB12-ISO8859-10.bdf
+Writing 192 characters into file 'lubB10-ISO8859-10.bdf'.
+Writing 192 characters into file 'lubB12-ISO8859-10.bdf'.
+  GEN    lubB14-ISO8859-10.bdf
+  GEN    lubB18-ISO8859-10.bdf
+Writing 192 characters into file 'lubB14-ISO8859-10.bdf'.
+  GEN    lubB19-ISO8859-10.bdf
+Writing 192 characters into file 'lubB18-ISO8859-10.bdf'.
+  GEN    lubB24-ISO8859-10.bdf
+Writing 192 characters into file 'lubB19-ISO8859-10.bdf'.
+  GEN    lubBI08-ISO8859-10.bdf
+Writing 192 characters into file 'lubBI08-ISO8859-10.bdf'.
+Writing 192 characters into file 'lubB24-ISO8859-10.bdf'.
+  GEN    lubBI12-ISO8859-10.bdf
+  GEN    lubBI10-ISO8859-10.bdf
+Writing 192 characters into file 'lubBI10-ISO8859-10.bdf'.
+Writing 192 characters into file 'lubBI12-ISO8859-10.bdf'.
+  GEN    lubBI14-ISO8859-10.bdf
+  GEN    lubBI18-ISO8859-10.bdf
+Writing 192 characters into file 'lubBI14-ISO8859-10.bdf'.
+  GEN    lubBI19-ISO8859-10.bdf
+Writing 192 characters into file 'lubBI18-ISO8859-10.bdf'.
+  GEN    lubBI24-ISO8859-10.bdf
+Writing 192 characters into file 'lubBI19-ISO8859-10.bdf'.
+  GEN    lubI08-ISO8859-10.bdf
+Writing 192 characters into file 'lubBI24-ISO8859-10.bdf'.
+Writing 192 characters into file 'lubI08-ISO8859-10.bdf'.
+  GEN    lubI10-ISO8859-10.bdf
+  GEN    lubI12-ISO8859-10.bdf
+Writing 192 characters into file 'lubI10-ISO8859-10.bdf'.
+Writing 192 characters into file 'lubI12-ISO8859-10.bdf'.
+  GEN    lubI14-ISO8859-10.bdf
+  GEN    lubI18-ISO8859-10.bdf
+Writing 192 characters into file 'lubI14-ISO8859-10.bdf'.
+  GEN    lubI19-ISO8859-10.bdf
+Writing 192 characters into file 'lubI18-ISO8859-10.bdf'.
+  GEN    lubI24-ISO8859-10.bdf
+Writing 192 characters into file 'lubI19-ISO8859-10.bdf'.
+  GEN    luBIS08-ISO8859-10.bdf
+Writing 192 characters into file 'luBIS08-ISO8859-10.bdf'.
+Writing 192 characters into file 'lubI24-ISO8859-10.bdf'.
+  GEN    luBIS10-ISO8859-10.bdf
+  GEN    luBIS12-ISO8859-10.bdf
+Writing 192 characters into file 'luBIS10-ISO8859-10.bdf'.
+Writing 192 characters into file 'luBIS12-ISO8859-10.bdf'.
+  GEN    luBIS14-ISO8859-10.bdf
+  GEN    luBIS18-ISO8859-10.bdf
+Writing 192 characters into file 'luBIS14-ISO8859-10.bdf'.
+  GEN    luBIS19-ISO8859-10.bdf
+Writing 192 characters into file 'luBIS18-ISO8859-10.bdf'.
+  GEN    luBIS24-ISO8859-10.bdf
+Writing 192 characters into file 'luBIS19-ISO8859-10.bdf'.
+  GEN    lubR08-ISO8859-10.bdf
+Writing 192 characters into file 'lubR08-ISO8859-10.bdf'.
+Writing 192 characters into file 'luBIS24-ISO8859-10.bdf'.
+  GEN    lubR10-ISO8859-10.bdf
+Writing 192 characters into file 'lubR10-ISO8859-10.bdf'.
+Writing 192 characters into file 'lubR12-ISO8859-10.bdf'.
+  GEN    lubR14-ISO8859-10.bdf
+  GEN    lubR18-ISO8859-10.bdf
+Writing 192 characters into file 'lubR14-ISO8859-10.bdf'.
+Writing 192 characters into file 'lubR18-ISO8859-10.bdf'.
+  GEN    lubR19-ISO8859-10.bdf
+  GEN    lubR24-ISO8859-10.bdf
+Writing 192 characters into file 'lubR19-ISO8859-10.bdf'.
+  GEN    luBS08-ISO8859-10.bdf
+Writing 192 characters into file 'lubR24-ISO8859-10.bdf'.
+Writing 192 characters into file 'luBS08-ISO8859-10.bdf'.
+  GEN    luBS10-ISO8859-10.bdf
+  GEN    luBS12-ISO8859-10.bdf
+Writing 192 characters into file 'luBS10-ISO8859-10.bdf'.
+  GEN    luBS14-ISO8859-10.bdf
+Writing 192 characters into file 'luBS12-ISO8859-10.bdf'.
+  GEN    luBS18-ISO8859-10.bdf
+Writing 192 characters into file 'luBS14-ISO8859-10.bdf'.
+  GEN    luBS19-ISO8859-10.bdf
+Writing 192 characters into file 'luBS18-ISO8859-10.bdf'.
+  GEN    luBS24-ISO8859-10.bdf
+Writing 192 characters into file 'luBS19-ISO8859-10.bdf'.
+  GEN    luIS08-ISO8859-10.bdf
+Writing 192 characters into file 'luIS08-ISO8859-10.bdf'.
+Writing 192 characters into file 'luBS24-ISO8859-10.bdf'.
+  GEN    luIS10-ISO8859-10.bdf
+  GEN    luIS12-ISO8859-10.bdf
+Writing 192 characters into file 'luIS10-ISO8859-10.bdf'.
+Writing 192 characters into file 'luIS12-ISO8859-10.bdf'.
+  GEN    luIS14-ISO8859-10.bdf
+  GEN    luIS18-ISO8859-10.bdf
+Writing 192 characters into file 'luIS14-ISO8859-10.bdf'.
+  GEN    luIS19-ISO8859-10.bdf
+Writing 192 characters into file 'luIS18-ISO8859-10.bdf'.
+  GEN    luIS24-ISO8859-10.bdf
+Writing 192 characters into file 'luIS19-ISO8859-10.bdf'.
+  GEN    luRS08-ISO8859-10.bdf
+Writing 192 characters into file 'luIS24-ISO8859-10.bdf'.
+Writing 192 characters into file 'luRS08-ISO8859-10.bdf'.
+  GEN    luRS10-ISO8859-10.bdf
+Writing 192 characters into file 'luRS10-ISO8859-10.bdf'.
+Writing 192 characters into file 'luRS12-ISO8859-10.bdf'.
+  GEN    luRS14-ISO8859-10.bdf
+  GEN    luRS18-ISO8859-10.bdf
+Writing 192 characters into file 'luRS14-ISO8859-10.bdf'.
+Writing 192 characters into file 'luRS18-ISO8859-10.bdf'.
+  GEN    luRS19-ISO8859-10.bdf
+  GEN    luRS24-ISO8859-10.bdf
+Writing 192 characters into file 'luRS19-ISO8859-10.bdf'.
+  GEN    lubB08-ISO8859-13.bdf
+Writing 192 characters into file 'luRS24-ISO8859-10.bdf'.
+  GEN    lubB10-ISO8859-13.bdf
+  GEN    lubB12-ISO8859-13.bdf
+Writing 192 characters into file 'lubB10-ISO8859-13.bdf'.
+  GEN    lubB14-ISO8859-13.bdf
+Writing 192 characters into file 'lubB12-ISO8859-13.bdf'.
+  GEN    lubB18-ISO8859-13.bdf
+Writing 192 characters into file 'lubB14-ISO8859-13.bdf'.
+  GEN    lubB19-ISO8859-13.bdf
+Writing 192 characters into file 'lubB18-ISO8859-13.bdf'.
+  GEN    lubB24-ISO8859-13.bdf
+Writing 192 characters into file 'lubB19-ISO8859-13.bdf'.
+  GEN    lubBI08-ISO8859-13.bdf
+Writing 192 characters into file 'lubBI08-ISO8859-13.bdf'.
+Writing 192 characters into file 'lubB24-ISO8859-13.bdf'.
+  GEN    lubBI10-ISO8859-13.bdf
+  GEN    lubBI12-ISO8859-13.bdf
+Writing 192 characters into file 'lubBI10-ISO8859-13.bdf'.
+Writing 192 characters into file 'lubBI12-ISO8859-13.bdf'.
+  GEN    lubBI14-ISO8859-13.bdf
+  GEN    lubBI18-ISO8859-13.bdf
+Writing 192 characters into file 'lubBI14-ISO8859-13.bdf'.
+  GEN    lubBI19-ISO8859-13.bdf
+Writing 192 characters into file 'lubBI18-ISO8859-13.bdf'.
+  GEN    lubBI24-ISO8859-13.bdf
+Writing 192 characters into file 'lubBI19-ISO8859-13.bdf'.
+  GEN    lubI08-ISO8859-13.bdf
+Writing 192 characters into file 'lubBI24-ISO8859-13.bdf'.
+Writing 192 characters into file 'lubI08-ISO8859-13.bdf'.
+  GEN    lubI12-ISO8859-13.bdf
+Writing 192 characters into file 'lubI10-ISO8859-13.bdf'.
+Writing 192 characters into file 'lubI12-ISO8859-13.bdf'.
+  GEN    lubI14-ISO8859-13.bdf
+  GEN    lubI18-ISO8859-13.bdf
+Writing 192 characters into file 'lubI14-ISO8859-13.bdf'.
+Writing 192 characters into file 'lubI18-ISO8859-13.bdf'.
+  GEN    lubI19-ISO8859-13.bdf
+  GEN    lubI24-ISO8859-13.bdf
+Writing 192 characters into file 'lubI19-ISO8859-13.bdf'.
+  GEN    luBIS08-ISO8859-13.bdf
+Writing 192 characters into file 'lubI24-ISO8859-13.bdf'.
+Writing 192 characters into file 'luBIS08-ISO8859-13.bdf'.
+  GEN    luBIS10-ISO8859-13.bdf
+  GEN    luBIS12-ISO8859-13.bdf
+Writing 192 characters into file 'luBIS10-ISO8859-13.bdf'.
+  GEN    luBIS14-ISO8859-13.bdf
+Writing 192 characters into file 'luBIS12-ISO8859-13.bdf'.
+  GEN    luBIS18-ISO8859-13.bdf
+Writing 192 characters into file 'luBIS14-ISO8859-13.bdf'.
+  GEN    luBIS19-ISO8859-13.bdf
+Writing 192 characters into file 'luBIS18-ISO8859-13.bdf'.
+  GEN    luBIS24-ISO8859-13.bdf
+Writing 192 characters into file 'luBIS19-ISO8859-13.bdf'.
+  GEN    lubR08-ISO8859-13.bdf
+Writing 192 characters into file 'luBIS24-ISO8859-13.bdf'.
+Writing 192 characters into file 'lubR08-ISO8859-13.bdf'.
+  GEN    lubR12-ISO8859-13.bdf
+Writing 192 characters into file 'lubR10-ISO8859-13.bdf'.
+Writing 192 characters into file 'lubR12-ISO8859-13.bdf'.
+  GEN    lubR14-ISO8859-13.bdf
+  GEN    lubR18-ISO8859-13.bdf
+Writing 192 characters into file 'lubR14-ISO8859-13.bdf'.
+  GEN    lubR19-ISO8859-13.bdf
+Writing 192 characters into file 'lubR18-ISO8859-13.bdf'.
+  GEN    lubR24-ISO8859-13.bdf
+Writing 192 characters into file 'lubR19-ISO8859-13.bdf'.
+  GEN    luBS08-ISO8859-13.bdf
+Writing 192 characters into file 'lubR24-ISO8859-13.bdf'.
+Writing 192 characters into file 'luBS08-ISO8859-13.bdf'.
+  GEN    luBS10-ISO8859-13.bdf
+  GEN    luBS12-ISO8859-13.bdf
+Writing 192 characters into file 'luBS10-ISO8859-13.bdf'.
+Writing 192 characters into file 'luBS12-ISO8859-13.bdf'.
+  GEN    luBS14-ISO8859-13.bdf
+  GEN    luBS18-ISO8859-13.bdf
+Writing 192 characters into file 'luBS14-ISO8859-13.bdf'.
+  GEN    luBS19-ISO8859-13.bdf
+Writing 192 characters into file 'luBS18-ISO8859-13.bdf'.
+  GEN    luBS24-ISO8859-13.bdf
+Writing 192 characters into file 'luBS19-ISO8859-13.bdf'.
+  GEN    luIS08-ISO8859-13.bdf
+Writing 192 characters into file 'luIS08-ISO8859-13.bdf'.
+Writing 192 characters into file 'luBS24-ISO8859-13.bdf'.
+  GEN    luIS10-ISO8859-13.bdf
+  GEN    luIS12-ISO8859-13.bdf
+Writing 192 characters into file 'luIS10-ISO8859-13.bdf'.
+Writing 192 characters into file 'luIS12-ISO8859-13.bdf'.
+  GEN    luIS14-ISO8859-13.bdf
+  GEN    luIS18-ISO8859-13.bdf
+Writing 192 characters into file 'luIS14-ISO8859-13.bdf'.
+  GEN    luIS19-ISO8859-13.bdf
+Writing 192 characters into file 'luIS18-ISO8859-13.bdf'.
+  GEN    luIS24-ISO8859-13.bdf
+Writing 192 characters into file 'luIS19-ISO8859-13.bdf'.
+  GEN    luRS08-ISO8859-13.bdf
+Writing 192 characters into file 'luIS24-ISO8859-13.bdf'.
+Writing 192 characters into file 'luRS08-ISO8859-13.bdf'.
+  GEN    luRS10-ISO8859-13.bdf
+  GEN    luRS12-ISO8859-13.bdf
+Writing 192 characters into file 'luRS10-ISO8859-13.bdf'.
+  GEN    luRS14-ISO8859-13.bdf
+Writing 192 characters into file 'luRS12-ISO8859-13.bdf'.
+  GEN    luRS18-ISO8859-13.bdf
+Writing 192 characters into file 'luRS14-ISO8859-13.bdf'.
+  GEN    luRS19-ISO8859-13.bdf
+Writing 192 characters into file 'luRS18-ISO8859-13.bdf'.
+  GEN    luRS24-ISO8859-13.bdf
+Writing 192 characters into file 'luRS19-ISO8859-13.bdf'.
+  GEN    lubB08-ISO8859-14.bdf
+Writing 192 characters into file 'luRS24-ISO8859-13.bdf'.
+Writing 192 characters into file 'lubB08-ISO8859-14.bdf'.
+  GEN    lubB10-ISO8859-14.bdf
+  GEN    lubB12-ISO8859-14.bdf
+Writing 192 characters into file 'lubB10-ISO8859-14.bdf'.
+Writing 192 characters into file 'lubB12-ISO8859-14.bdf'.
+  GEN    lubB14-ISO8859-14.bdf
+  GEN    lubB18-ISO8859-14.bdf
+Writing 192 characters into file 'lubB14-ISO8859-14.bdf'.
+Writing 192 characters into file 'lubB18-ISO8859-14.bdf'.
+  GEN    lubB19-ISO8859-14.bdf
+  GEN    lubB24-ISO8859-14.bdf
+Writing 192 characters into file 'lubB19-ISO8859-14.bdf'.
+  GEN    lubBI08-ISO8859-14.bdf
+Writing 192 characters into file 'lubB24-ISO8859-14.bdf'.
+Writing 192 characters into file 'lubBI08-ISO8859-14.bdf'.
+  GEN    lubBI10-ISO8859-14.bdf
+  GEN    lubBI12-ISO8859-14.bdf
+Writing 192 characters into file 'lubBI10-ISO8859-14.bdf'.
+  GEN    lubBI14-ISO8859-14.bdf
+Writing 192 characters into file 'lubBI12-ISO8859-14.bdf'.
+  GEN    lubBI18-ISO8859-14.bdf
+Writing 192 characters into file 'lubBI14-ISO8859-14.bdf'.
+  GEN    lubBI19-ISO8859-14.bdf
+Writing 192 characters into file 'lubBI18-ISO8859-14.bdf'.
+  GEN    lubBI24-ISO8859-14.bdf
+Writing 192 characters into file 'lubBI19-ISO8859-14.bdf'.
+  GEN    lubI08-ISO8859-14.bdf
+Writing 192 characters into file 'lubI08-ISO8859-14.bdf'.
+Writing 192 characters into file 'lubBI24-ISO8859-14.bdf'.
+  GEN    lubI10-ISO8859-14.bdf
+  GEN    lubI12-ISO8859-14.bdf
+Writing 192 characters into file 'lubI10-ISO8859-14.bdf'.
+Writing 192 characters into file 'lubI12-ISO8859-14.bdf'.
+  GEN    lubI14-ISO8859-14.bdf
+  GEN    lubI18-ISO8859-14.bdf
+Writing 192 characters into file 'lubI14-ISO8859-14.bdf'.
+  GEN    lubI19-ISO8859-14.bdf
+Writing 192 characters into file 'lubI18-ISO8859-14.bdf'.
+  GEN    lubI24-ISO8859-14.bdf
+Writing 192 characters into file 'lubI19-ISO8859-14.bdf'.
+  GEN    luBIS08-ISO8859-14.bdf
+Writing 192 characters into file 'lubI24-ISO8859-14.bdf'.
+Writing 192 characters into file 'luBIS08-ISO8859-14.bdf'.
+  GEN    luBIS10-ISO8859-14.bdf
+  GEN    luBIS12-ISO8859-14.bdf
+Writing 192 characters into file 'luBIS10-ISO8859-14.bdf'.
+Writing 192 characters into file 'luBIS12-ISO8859-14.bdf'.
+  GEN    luBIS14-ISO8859-14.bdf
+  GEN    luBIS18-ISO8859-14.bdf
+Writing 192 characters into file 'luBIS14-ISO8859-14.bdf'.
+  GEN    luBIS19-ISO8859-14.bdf
+Writing 192 characters into file 'luBIS18-ISO8859-14.bdf'.
+  GEN    luBIS24-ISO8859-14.bdf
+Writing 192 characters into file 'luBIS19-ISO8859-14.bdf'.
+  GEN    lubR08-ISO8859-14.bdf
+Writing 192 characters into file 'luBIS24-ISO8859-14.bdf'.
+Writing 192 characters into file 'lubR08-ISO8859-14.bdf'.
+  GEN    lubR10-ISO8859-14.bdf
+  GEN    lubR12-ISO8859-14.bdf
+Writing 192 characters into file 'lubR10-ISO8859-14.bdf'.
+Writing 192 characters into file 'lubR12-ISO8859-14.bdf'.
+  GEN    lubR14-ISO8859-14.bdf
+  GEN    lubR18-ISO8859-14.bdf
+Writing 192 characters into file 'lubR14-ISO8859-14.bdf'.
+  GEN    lubR19-ISO8859-14.bdf
+Writing 192 characters into file 'lubR18-ISO8859-14.bdf'.
+  GEN    lubR24-ISO8859-14.bdf
+Writing 192 characters into file 'lubR19-ISO8859-14.bdf'.
+  GEN    luBS08-ISO8859-14.bdf
+Writing 192 characters into file 'lubR24-ISO8859-14.bdf'.
+Writing 192 characters into file 'luBS08-ISO8859-14.bdf'.
+  GEN    luBS10-ISO8859-14.bdf
+  GEN    luBS12-ISO8859-14.bdf
+Writing 192 characters into file 'luBS10-ISO8859-14.bdf'.
+Writing 192 characters into file 'luBS12-ISO8859-14.bdf'.
+  GEN    luBS14-ISO8859-14.bdf
+  GEN    luBS18-ISO8859-14.bdf
+Writing 192 characters into file 'luBS14-ISO8859-14.bdf'.
+  GEN    luBS19-ISO8859-14.bdf
+Writing 192 characters into file 'luBS18-ISO8859-14.bdf'.
+  GEN    luBS24-ISO8859-14.bdf
+Writing 192 characters into file 'luBS19-ISO8859-14.bdf'.
+  GEN    luIS08-ISO8859-14.bdf
+Writing 192 characters into file 'luBS24-ISO8859-14.bdf'.
+Writing 192 characters into file 'luIS08-ISO8859-14.bdf'.
+  GEN    luIS10-ISO8859-14.bdf
+  GEN    luIS12-ISO8859-14.bdf
+Writing 192 characters into file 'luIS10-ISO8859-14.bdf'.
+Writing 192 characters into file 'luIS12-ISO8859-14.bdf'.
+  GEN    luIS14-ISO8859-14.bdf
+  GEN    luIS18-ISO8859-14.bdf
+Writing 192 characters into file 'luIS14-ISO8859-14.bdf'.
+  GEN    luIS19-ISO8859-14.bdf
+Writing 192 characters into file 'luIS18-ISO8859-14.bdf'.
+  GEN    luIS24-ISO8859-14.bdf
+Writing 192 characters into file 'luIS19-ISO8859-14.bdf'.
+  GEN    luRS08-ISO8859-14.bdf
+Writing 192 characters into file 'luIS24-ISO8859-14.bdf'.
+Writing 192 characters into file 'luRS08-ISO8859-14.bdf'.
+  GEN    luRS10-ISO8859-14.bdf
+  GEN    luRS12-ISO8859-14.bdf
+Writing 192 characters into file 'luRS10-ISO8859-14.bdf'.
+Writing 192 characters into file 'luRS12-ISO8859-14.bdf'.
+  GEN    luRS14-ISO8859-14.bdf
+  GEN    luRS18-ISO8859-14.bdf
+Writing 192 characters into file 'luRS14-ISO8859-14.bdf'.
+  GEN    luRS19-ISO8859-14.bdf
+Writing 192 characters into file 'luRS18-ISO8859-14.bdf'.
+  GEN    luRS24-ISO8859-14.bdf
+Writing 192 characters into file 'luRS19-ISO8859-14.bdf'.
+  GEN    lubB08-ISO8859-15.bdf
+Writing 192 characters into file 'luRS24-ISO8859-14.bdf'.
+Writing 192 characters into file 'lubB08-ISO8859-15.bdf'.
+  GEN    lubB10-ISO8859-15.bdf
+  GEN    lubB12-ISO8859-15.bdf
+Writing 192 characters into file 'lubB10-ISO8859-15.bdf'.
+Writing 192 characters into file 'lubB12-ISO8859-15.bdf'.
+  GEN    lubB14-ISO8859-15.bdf
+  GEN    lubB18-ISO8859-15.bdf
+Writing 192 characters into file 'lubB14-ISO8859-15.bdf'.
+  GEN    lubB19-ISO8859-15.bdf
+Writing 192 characters into file 'lubB18-ISO8859-15.bdf'.
+  GEN    lubB24-ISO8859-15.bdf
+Writing 192 characters into file 'lubB19-ISO8859-15.bdf'.
+  GEN    lubBI08-ISO8859-15.bdf
+Writing 192 characters into file 'lubBI08-ISO8859-15.bdf'.
+Writing 192 characters into file 'lubB24-ISO8859-15.bdf'.
+  GEN    lubBI10-ISO8859-15.bdf
+  GEN    lubBI12-ISO8859-15.bdf
+Writing 192 characters into file 'lubBI10-ISO8859-15.bdf'.
+Writing 192 characters into file 'lubBI12-ISO8859-15.bdf'.
+  GEN    lubBI14-ISO8859-15.bdf
+  GEN    lubBI18-ISO8859-15.bdf
+Writing 192 characters into file 'lubBI14-ISO8859-15.bdf'.
+  GEN    lubBI19-ISO8859-15.bdf
+Writing 192 characters into file 'lubBI18-ISO8859-15.bdf'.
+  GEN    lubBI24-ISO8859-15.bdf
+Writing 192 characters into file 'lubBI19-ISO8859-15.bdf'.
+  GEN    lubI08-ISO8859-15.bdf
+Writing 192 characters into file 'lubBI24-ISO8859-15.bdf'.
+Writing 192 characters into file 'lubI08-ISO8859-15.bdf'.
+  GEN    lubI10-ISO8859-15.bdf
+  GEN    lubI12-ISO8859-15.bdf
+Writing 192 characters into file 'lubI10-ISO8859-15.bdf'.
+Writing 192 characters into file 'lubI12-ISO8859-15.bdf'.
+  GEN    lubI14-ISO8859-15.bdf
+  GEN    lubI18-ISO8859-15.bdf
+Writing 192 characters into file 'lubI14-ISO8859-15.bdf'.
+  GEN    lubI19-ISO8859-15.bdf
+Writing 192 characters into file 'lubI18-ISO8859-15.bdf'.
+  GEN    lubI24-ISO8859-15.bdf
+Writing 192 characters into file 'lubI19-ISO8859-15.bdf'.
+  GEN    luBIS08-ISO8859-15.bdf
+Writing 192 characters into file 'lubI24-ISO8859-15.bdf'.
+Writing 192 characters into file 'luBIS08-ISO8859-15.bdf'.
+  GEN    luBIS10-ISO8859-15.bdf
+  GEN    luBIS12-ISO8859-15.bdf
+Writing 192 characters into file 'luBIS10-ISO8859-15.bdf'.
+  GEN    luBIS14-ISO8859-15.bdf
+Writing 192 characters into file 'luBIS12-ISO8859-15.bdf'.
+  GEN    luBIS18-ISO8859-15.bdf
+Writing 192 characters into file 'luBIS14-ISO8859-15.bdf'.
+  GEN    luBIS19-ISO8859-15.bdf
+Writing 192 characters into file 'luBIS18-ISO8859-15.bdf'.
+  GEN    luBIS24-ISO8859-15.bdf
+Writing 192 characters into file 'luBIS19-ISO8859-15.bdf'.
+  GEN    lubR08-ISO8859-15.bdf
+Writing 192 characters into file 'lubR08-ISO8859-15.bdf'.
+Writing 192 characters into file 'luBIS24-ISO8859-15.bdf'.
+  GEN    lubR10-ISO8859-15.bdf
+  GEN    lubR12-ISO8859-15.bdf
+Writing 192 characters into file 'lubR10-ISO8859-15.bdf'.
+Writing 192 characters into file 'lubR12-ISO8859-15.bdf'.
+  GEN    lubR14-ISO8859-15.bdf
+  GEN    lubR18-ISO8859-15.bdf
+Writing 192 characters into file 'lubR14-ISO8859-15.bdf'.
+  GEN    lubR19-ISO8859-15.bdf
+Writing 192 characters into file 'lubR18-ISO8859-15.bdf'.
+  GEN    lubR24-ISO8859-15.bdf
+Writing 192 characters into file 'lubR19-ISO8859-15.bdf'.
+  GEN    luBS08-ISO8859-15.bdf
+Writing 192 characters into file 'lubR24-ISO8859-15.bdf'.
+Writing 192 characters into file 'luBS08-ISO8859-15.bdf'.
+  GEN    luBS10-ISO8859-15.bdf
+  GEN    luBS12-ISO8859-15.bdf
+Writing 192 characters into file 'luBS10-ISO8859-15.bdf'.
+Writing 192 characters into file 'luBS12-ISO8859-15.bdf'.
+  GEN    luBS14-ISO8859-15.bdf
+  GEN    luBS18-ISO8859-15.bdf
+Writing 192 characters into file 'luBS14-ISO8859-15.bdf'.
+  GEN    luBS19-ISO8859-15.bdf
+Writing 192 characters into file 'luBS18-ISO8859-15.bdf'.
+  GEN    luBS24-ISO8859-15.bdf
+Writing 192 characters into file 'luBS19-ISO8859-15.bdf'.
+  GEN    luIS08-ISO8859-15.bdf
+Writing 192 characters into file 'luBS24-ISO8859-15.bdf'.
+Writing 192 characters into file 'luIS08-ISO8859-15.bdf'.
+  GEN    luIS10-ISO8859-15.bdf
+  GEN    luIS12-ISO8859-15.bdf
+Writing 192 characters into file 'luIS10-ISO8859-15.bdf'.
+Writing 192 characters into file 'luIS12-ISO8859-15.bdf'.
+  GEN    luIS14-ISO8859-15.bdf
+  GEN    luIS18-ISO8859-15.bdf
+Writing 192 characters into file 'luIS14-ISO8859-15.bdf'.
+  GEN    luIS19-ISO8859-15.bdf
+Writing 192 characters into file 'luIS18-ISO8859-15.bdf'.
+  GEN    luIS24-ISO8859-15.bdf
+Writing 192 characters into file 'luIS19-ISO8859-15.bdf'.
+  GEN    luRS08-ISO8859-15.bdf
+Writing 192 characters into file 'luIS24-ISO8859-15.bdf'.
+Writing 192 characters into file 'luRS08-ISO8859-15.bdf'.
+  GEN    luRS10-ISO8859-15.bdf
+  GEN    luRS12-ISO8859-15.bdf
+Writing 192 characters into file 'luRS10-ISO8859-15.bdf'.
+Writing 192 characters into file 'luRS12-ISO8859-15.bdf'.
+  GEN    luRS14-ISO8859-15.bdf
+  GEN    luRS18-ISO8859-15.bdf
+Writing 192 characters into file 'luRS14-ISO8859-15.bdf'.
+  GEN    luRS19-ISO8859-15.bdf
+Writing 192 characters into file 'luRS18-ISO8859-15.bdf'.
+  GEN    luRS24-ISO8859-15.bdf
+Writing 192 characters into file 'luRS19-ISO8859-15.bdf'.
+  GEN    lubB08-ISO8859-1.pcf.gz
+Writing 192 characters into file 'luRS24-ISO8859-15.bdf'.
+  GEN    lubB10-ISO8859-1.pcf.gz
+  GEN    lubB12-ISO8859-1.pcf.gz
+  GEN    lubB14-ISO8859-1.pcf.gz
+  GEN    lubB18-ISO8859-1.pcf.gz
+  GEN    lubB19-ISO8859-1.pcf.gz
+  GEN    lubB24-ISO8859-1.pcf.gz
+  GEN    lubBI08-ISO8859-1.pcf.gz
+  GEN    lubBI10-ISO8859-1.pcf.gz
+  GEN    lubBI12-ISO8859-1.pcf.gz
+  GEN    lubBI14-ISO8859-1.pcf.gz
+  GEN    lubBI18-ISO8859-1.pcf.gz
+  GEN    lubBI19-ISO8859-1.pcf.gz
+  GEN    lubBI24-ISO8859-1.pcf.gz
+  GEN    lubI08-ISO8859-1.pcf.gz
+  GEN    lubI10-ISO8859-1.pcf.gz
+  GEN    lubI12-ISO8859-1.pcf.gz
+  GEN    lubI14-ISO8859-1.pcf.gz
+  GEN    lubI18-ISO8859-1.pcf.gz
+  GEN    lubI19-ISO8859-1.pcf.gz
+  GEN    lubI24-ISO8859-1.pcf.gz
+  GEN    luBIS08-ISO8859-1.pcf.gz
+  GEN    luBIS10-ISO8859-1.pcf.gz
+  GEN    luBIS12-ISO8859-1.pcf.gz
+  GEN    luBIS14-ISO8859-1.pcf.gz
+  GEN    luBIS18-ISO8859-1.pcf.gz
+  GEN    luBIS19-ISO8859-1.pcf.gz
+  GEN    luBIS24-ISO8859-1.pcf.gz
+  GEN    lubR08-ISO8859-1.pcf.gz
+  GEN    lubR10-ISO8859-1.pcf.gz
+  GEN    lubR12-ISO8859-1.pcf.gz
+  GEN    lubR14-ISO8859-1.pcf.gz
+  GEN    lubR18-ISO8859-1.pcf.gz
+  GEN    lubR19-ISO8859-1.pcf.gz
+  GEN    lubR24-ISO8859-1.pcf.gz
+  GEN    luBS08-ISO8859-1.pcf.gz
+  GEN    luBS10-ISO8859-1.pcf.gz
+  GEN    luBS12-ISO8859-1.pcf.gz
+  GEN    luBS14-ISO8859-1.pcf.gz
+  GEN    luBS18-ISO8859-1.pcf.gz
+  GEN    luBS19-ISO8859-1.pcf.gz
+  GEN    luBS24-ISO8859-1.pcf.gz
+  GEN    luIS08-ISO8859-1.pcf.gz
+  GEN    luIS10-ISO8859-1.pcf.gz
+  GEN    luIS12-ISO8859-1.pcf.gz
+  GEN    luIS14-ISO8859-1.pcf.gz
+  GEN    luIS18-ISO8859-1.pcf.gz
+  GEN    luIS19-ISO8859-1.pcf.gz
+  GEN    luIS24-ISO8859-1.pcf.gz
+  GEN    luRS08-ISO8859-1.pcf.gz
+  GEN    luRS10-ISO8859-1.pcf.gz
+  GEN    luRS12-ISO8859-1.pcf.gz
+  GEN    luRS14-ISO8859-1.pcf.gz
+  GEN    luRS18-ISO8859-1.pcf.gz
+  GEN    luRS19-ISO8859-1.pcf.gz
+  GEN    luRS24-ISO8859-1.pcf.gz
+  GEN    lubB08-ISO8859-2.pcf.gz
+  GEN    lubB12-ISO8859-2.pcf.gz
+  GEN    lubB18-ISO8859-2.pcf.gz
+  GEN    lubB19-ISO8859-2.pcf.gz
+  GEN    lubBI08-ISO8859-2.pcf.gz
+  GEN    lubBI10-ISO8859-2.pcf.gz
+  GEN    lubBI12-ISO8859-2.pcf.gz
+  GEN    lubBI18-ISO8859-2.pcf.gz
+  GEN    lubI08-ISO8859-2.pcf.gz
+  GEN    lubI10-ISO8859-2.pcf.gz
+  GEN    lubI12-ISO8859-2.pcf.gz
+  GEN    lubI14-ISO8859-2.pcf.gz
+  GEN    lubI18-ISO8859-2.pcf.gz
+  GEN    lubI19-ISO8859-2.pcf.gz
+  GEN    lubI24-ISO8859-2.pcf.gz
+  GEN    luBIS08-ISO8859-2.pcf.gz
+  GEN    luBIS10-ISO8859-2.pcf.gz
+  GEN    luBIS12-ISO8859-2.pcf.gz
+  GEN    luBIS14-ISO8859-2.pcf.gz
+  GEN    luBIS18-ISO8859-2.pcf.gz
+  GEN    luBIS19-ISO8859-2.pcf.gz
+  GEN    luBIS24-ISO8859-2.pcf.gz
+  GEN    lubR08-ISO8859-2.pcf.gz
+  GEN    lubR10-ISO8859-2.pcf.gz
+  GEN    lubR12-ISO8859-2.pcf.gz
+  GEN    lubR14-ISO8859-2.pcf.gz
+  GEN    lubR18-ISO8859-2.pcf.gz
+  GEN    lubR19-ISO8859-2.pcf.gz
+  GEN    lubR24-ISO8859-2.pcf.gz
+  GEN    luBS08-ISO8859-2.pcf.gz
+  GEN    luBS10-ISO8859-2.pcf.gz
+  GEN    luBS12-ISO8859-2.pcf.gz
+  GEN    luBS14-ISO8859-2.pcf.gz
+  GEN    luBS18-ISO8859-2.pcf.gz
+  GEN    luBS19-ISO8859-2.pcf.gz
+  GEN    luBS24-ISO8859-2.pcf.gz
+  GEN    luIS08-ISO8859-2.pcf.gz
+  GEN    luIS10-ISO8859-2.pcf.gz
+  GEN    luIS12-ISO8859-2.pcf.gz
+  GEN    luIS14-ISO8859-2.pcf.gz
+  GEN    luIS18-ISO8859-2.pcf.gz
+  GEN    luIS19-ISO8859-2.pcf.gz
+  GEN    luIS24-ISO8859-2.pcf.gz
+  GEN    luRS08-ISO8859-2.pcf.gz
+  GEN    luRS10-ISO8859-2.pcf.gz
+  GEN    luRS12-ISO8859-2.pcf.gz
+  GEN    luRS14-ISO8859-2.pcf.gz
+  GEN    luRS18-ISO8859-2.pcf.gz
+  GEN    luRS19-ISO8859-2.pcf.gz
+  GEN    luRS24-ISO8859-2.pcf.gz
+  GEN    lubB08-ISO8859-3.pcf.gz
+  GEN    lubB10-ISO8859-3.pcf.gz
+  GEN    lubB12-ISO8859-3.pcf.gz
+  GEN    lubB14-ISO8859-3.pcf.gz
+  GEN    lubB18-ISO8859-3.pcf.gz
+  GEN    lubB19-ISO8859-3.pcf.gz
+  GEN    lubB24-ISO8859-3.pcf.gz
+  GEN    lubBI08-ISO8859-3.pcf.gz
+  GEN    lubBI10-ISO8859-3.pcf.gz
+  GEN    lubBI12-ISO8859-3.pcf.gz
+  GEN    lubBI14-ISO8859-3.pcf.gz
+  GEN    lubBI18-ISO8859-3.pcf.gz
+  GEN    lubBI19-ISO8859-3.pcf.gz
+  GEN    lubBI24-ISO8859-3.pcf.gz
+  GEN    lubI08-ISO8859-3.pcf.gz
+  GEN    lubI10-ISO8859-3.pcf.gz
+  GEN    lubI12-ISO8859-3.pcf.gz
+  GEN    lubI14-ISO8859-3.pcf.gz
+  GEN    lubI18-ISO8859-3.pcf.gz
+  GEN    lubI19-ISO8859-3.pcf.gz
+  GEN    lubI24-ISO8859-3.pcf.gz
+  GEN    luBIS08-ISO8859-3.pcf.gz
+  GEN    luBIS10-ISO8859-3.pcf.gz
+  GEN    luBIS12-ISO8859-3.pcf.gz
+  GEN    luBIS14-ISO8859-3.pcf.gz
+  GEN    luBIS18-ISO8859-3.pcf.gz
+  GEN    luBIS19-ISO8859-3.pcf.gz
+  GEN    luBIS24-ISO8859-3.pcf.gz
+  GEN    lubR08-ISO8859-3.pcf.gz
+  GEN    lubR10-ISO8859-3.pcf.gz
+  GEN    lubR12-ISO8859-3.pcf.gz
+  GEN    lubR14-ISO8859-3.pcf.gz
+  GEN    lubR18-ISO8859-3.pcf.gz
+  GEN    lubR19-ISO8859-3.pcf.gz
+  GEN    lubR24-ISO8859-3.pcf.gz
+  GEN    luBS08-ISO8859-3.pcf.gz
+  GEN    luBS10-ISO8859-3.pcf.gz
+  GEN    luBS12-ISO8859-3.pcf.gz
+  GEN    luBS14-ISO8859-3.pcf.gz
+  GEN    luBS18-ISO8859-3.pcf.gz
+  GEN    luBS19-ISO8859-3.pcf.gz
+  GEN    luBS24-ISO8859-3.pcf.gz
+  GEN    luIS08-ISO8859-3.pcf.gz
+  GEN    luIS10-ISO8859-3.pcf.gz
+  GEN    luIS12-ISO8859-3.pcf.gz
+  GEN    luIS14-ISO8859-3.pcf.gz
+  GEN    luIS18-ISO8859-3.pcf.gz
+  GEN    luIS19-ISO8859-3.pcf.gz
+  GEN    luIS24-ISO8859-3.pcf.gz
+  GEN    luRS08-ISO8859-3.pcf.gz
+  GEN    luRS10-ISO8859-3.pcf.gz
+  GEN    luRS12-ISO8859-3.pcf.gz
+  GEN    luRS14-ISO8859-3.pcf.gz
+  GEN    luRS18-ISO8859-3.pcf.gz
+  GEN    luRS19-ISO8859-3.pcf.gz
+  GEN    luRS24-ISO8859-3.pcf.gz
+  GEN    lubB08-ISO8859-4.pcf.gz
+  GEN    lubB10-ISO8859-4.pcf.gz
+  GEN    lubB12-ISO8859-4.pcf.gz
+  GEN    lubB14-ISO8859-4.pcf.gz
+  GEN    lubB18-ISO8859-4.pcf.gz
+  GEN    lubB19-ISO8859-4.pcf.gz
+  GEN    lubB24-ISO8859-4.pcf.gz
+  GEN    lubBI08-ISO8859-4.pcf.gz
+  GEN    lubBI10-ISO8859-4.pcf.gz
+  GEN    lubBI12-ISO8859-4.pcf.gz
+  GEN    lubBI14-ISO8859-4.pcf.gz
+  GEN    lubBI18-ISO8859-4.pcf.gz
+  GEN    lubBI19-ISO8859-4.pcf.gz
+  GEN    lubBI24-ISO8859-4.pcf.gz
+  GEN    lubI08-ISO8859-4.pcf.gz
+  GEN    lubI12-ISO8859-4.pcf.gz
+  GEN    lubI18-ISO8859-4.pcf.gz
+  GEN    lubI19-ISO8859-4.pcf.gz
+  GEN    lubI24-ISO8859-4.pcf.gz
+  GEN    luBIS08-ISO8859-4.pcf.gz
+  GEN    luBIS10-ISO8859-4.pcf.gz
+  GEN    luBIS12-ISO8859-4.pcf.gz
+  GEN    luBIS14-ISO8859-4.pcf.gz
+  GEN    luBIS18-ISO8859-4.pcf.gz
+  GEN    luBIS19-ISO8859-4.pcf.gz
+  GEN    luBIS24-ISO8859-4.pcf.gz
+  GEN    lubR08-ISO8859-4.pcf.gz
+  GEN    lubR10-ISO8859-4.pcf.gz
+  GEN    lubR12-ISO8859-4.pcf.gz
+  GEN    lubR14-ISO8859-4.pcf.gz
+  GEN    lubR18-ISO8859-4.pcf.gz
+  GEN    lubR19-ISO8859-4.pcf.gz
+  GEN    lubR24-ISO8859-4.pcf.gz
+  GEN    luBS08-ISO8859-4.pcf.gz
+  GEN    luBS10-ISO8859-4.pcf.gz
+  GEN    luBS12-ISO8859-4.pcf.gz
+  GEN    luBS14-ISO8859-4.pcf.gz
+  GEN    luBS18-ISO8859-4.pcf.gz
+  GEN    luBS19-ISO8859-4.pcf.gz
+  GEN    luBS24-ISO8859-4.pcf.gz
+  GEN    luIS08-ISO8859-4.pcf.gz
+  GEN    luIS10-ISO8859-4.pcf.gz
+  GEN    luIS12-ISO8859-4.pcf.gz
+  GEN    luIS14-ISO8859-4.pcf.gz
+  GEN    luIS18-ISO8859-4.pcf.gz
+  GEN    luIS19-ISO8859-4.pcf.gz
+  GEN    luIS24-ISO8859-4.pcf.gz
+  GEN    luRS08-ISO8859-4.pcf.gz
+  GEN    luRS10-ISO8859-4.pcf.gz
+  GEN    luRS12-ISO8859-4.pcf.gz
+  GEN    luRS14-ISO8859-4.pcf.gz
+  GEN    luRS18-ISO8859-4.pcf.gz
+  GEN    luRS19-ISO8859-4.pcf.gz
+  GEN    luRS24-ISO8859-4.pcf.gz
+  GEN    lubB08-ISO8859-9.pcf.gz
+  GEN    lubB10-ISO8859-9.pcf.gz
+  GEN    lubB12-ISO8859-9.pcf.gz
+  GEN    lubB14-ISO8859-9.pcf.gz
+  GEN    lubB18-ISO8859-9.pcf.gz
+  GEN    lubB19-ISO8859-9.pcf.gz
+  GEN    lubB24-ISO8859-9.pcf.gz
+  GEN    lubBI08-ISO8859-9.pcf.gz
+  GEN    lubBI10-ISO8859-9.pcf.gz
+  GEN    lubBI12-ISO8859-9.pcf.gz
+  GEN    lubBI14-ISO8859-9.pcf.gz
+  GEN    lubBI18-ISO8859-9.pcf.gz
+  GEN    lubBI19-ISO8859-9.pcf.gz
+  GEN    lubBI24-ISO8859-9.pcf.gz
+  GEN    lubI08-ISO8859-9.pcf.gz
+  GEN    lubI10-ISO8859-9.pcf.gz
+  GEN    lubI18-ISO8859-9.pcf.gz
+  GEN    lubI24-ISO8859-9.pcf.gz
+  GEN    luBIS08-ISO8859-9.pcf.gz
+  GEN    luBIS10-ISO8859-9.pcf.gz
+  GEN    luBIS12-ISO8859-9.pcf.gz
+  GEN    luBIS14-ISO8859-9.pcf.gz
+  GEN    luBIS18-ISO8859-9.pcf.gz
+  GEN    luBIS19-ISO8859-9.pcf.gz
+  GEN    luBIS24-ISO8859-9.pcf.gz
+  GEN    lubR08-ISO8859-9.pcf.gz
+  GEN    lubR10-ISO8859-9.pcf.gz
+  GEN    lubR12-ISO8859-9.pcf.gz
+  GEN    lubR14-ISO8859-9.pcf.gz
+  GEN    lubR18-ISO8859-9.pcf.gz
+  GEN    lubR19-ISO8859-9.pcf.gz
+  GEN    lubR24-ISO8859-9.pcf.gz
+  GEN    luBS08-ISO8859-9.pcf.gz
+  GEN    luBS10-ISO8859-9.pcf.gz
+  GEN    luBS12-ISO8859-9.pcf.gz
+  GEN    luBS14-ISO8859-9.pcf.gz
+  GEN    luBS18-ISO8859-9.pcf.gz
+  GEN    luBS19-ISO8859-9.pcf.gz
+  GEN    luBS24-ISO8859-9.pcf.gz
+  GEN    luIS08-ISO8859-9.pcf.gz
+  GEN    luIS10-ISO8859-9.pcf.gz
+  GEN    luIS12-ISO8859-9.pcf.gz
+  GEN    luIS14-ISO8859-9.pcf.gz
+  GEN    luIS18-ISO8859-9.pcf.gz
+  GEN    luIS19-ISO8859-9.pcf.gz
+  GEN    luIS24-ISO8859-9.pcf.gz
+  GEN    luRS08-ISO8859-9.pcf.gz
+  GEN    luRS10-ISO8859-9.pcf.gz
+  GEN    luRS12-ISO8859-9.pcf.gz
+  GEN    luRS14-ISO8859-9.pcf.gz
+  GEN    luRS18-ISO8859-9.pcf.gz
+  GEN    luRS19-ISO8859-9.pcf.gz
+  GEN    luRS24-ISO8859-9.pcf.gz
+  GEN    lubB08-ISO8859-10.pcf.gz
+  GEN    lubB10-ISO8859-10.pcf.gz
+  GEN    lubB12-ISO8859-10.pcf.gz
+  GEN    lubB14-ISO8859-10.pcf.gz
+  GEN    lubB18-ISO8859-10.pcf.gz
+  GEN    lubB19-ISO8859-10.pcf.gz
+  GEN    lubB24-ISO8859-10.pcf.gz
+  GEN    lubBI08-ISO8859-10.pcf.gz
+  GEN    lubBI10-ISO8859-10.pcf.gz
+  GEN    lubBI12-ISO8859-10.pcf.gz
+  GEN    lubBI14-ISO8859-10.pcf.gz
+  GEN    lubBI18-ISO8859-10.pcf.gz
+  GEN    lubBI19-ISO8859-10.pcf.gz
+  GEN    lubBI24-ISO8859-10.pcf.gz
+  GEN    lubI08-ISO8859-10.pcf.gz
+  GEN    lubI10-ISO8859-10.pcf.gz
+  GEN    lubI12-ISO8859-10.pcf.gz
+  GEN    lubI14-ISO8859-10.pcf.gz
+  GEN    lubI18-ISO8859-10.pcf.gz
+  GEN    lubI19-ISO8859-10.pcf.gz
+  GEN    lubI24-ISO8859-10.pcf.gz
+  GEN    luBIS08-ISO8859-10.pcf.gz
+  GEN    luBIS10-ISO8859-10.pcf.gz
+  GEN    luBIS12-ISO8859-10.pcf.gz
+  GEN    luBIS14-ISO8859-10.pcf.gz
+  GEN    luBIS18-ISO8859-10.pcf.gz
+  GEN    luBIS19-ISO8859-10.pcf.gz
+  GEN    luBIS24-ISO8859-10.pcf.gz
+  GEN    lubR08-ISO8859-10.pcf.gz
+  GEN    lubR10-ISO8859-10.pcf.gz
+  GEN    lubR12-ISO8859-10.pcf.gz
+  GEN    lubR14-ISO8859-10.pcf.gz
+  GEN    lubR18-ISO8859-10.pcf.gz
+  GEN    lubR19-ISO8859-10.pcf.gz
+  GEN    lubR24-ISO8859-10.pcf.gz
+  GEN    luBS08-ISO8859-10.pcf.gz
+  GEN    luBS10-ISO8859-10.pcf.gz
+  GEN    luBS12-ISO8859-10.pcf.gz
+  GEN    luBS14-ISO8859-10.pcf.gz
+  GEN    luBS18-ISO8859-10.pcf.gz
+  GEN    luBS19-ISO8859-10.pcf.gz
+  GEN    luBS24-ISO8859-10.pcf.gz
+  GEN    luIS08-ISO8859-10.pcf.gz
+  GEN    luIS10-ISO8859-10.pcf.gz
+  GEN    luIS12-ISO8859-10.pcf.gz
+  GEN    luIS14-ISO8859-10.pcf.gz
+  GEN    luIS18-ISO8859-10.pcf.gz
+  GEN    luIS19-ISO8859-10.pcf.gz
+  GEN    luIS24-ISO8859-10.pcf.gz
+  GEN    luRS08-ISO8859-10.pcf.gz
+  GEN    luRS10-ISO8859-10.pcf.gz
+  GEN    luRS12-ISO8859-10.pcf.gz
+  GEN    luRS14-ISO8859-10.pcf.gz
+  GEN    luRS18-ISO8859-10.pcf.gz
+  GEN    luRS19-ISO8859-10.pcf.gz
+  GEN    luRS24-ISO8859-10.pcf.gz
+  GEN    lubB08-ISO8859-13.pcf.gz
+  GEN    lubB10-ISO8859-13.pcf.gz
+  GEN    lubB12-ISO8859-13.pcf.gz
+  GEN    lubB14-ISO8859-13.pcf.gz
+  GEN    lubB18-ISO8859-13.pcf.gz
+  GEN    lubB19-ISO8859-13.pcf.gz
+  GEN    lubB24-ISO8859-13.pcf.gz
+  GEN    lubBI08-ISO8859-13.pcf.gz
+  GEN    lubBI10-ISO8859-13.pcf.gz
+  GEN    lubBI12-ISO8859-13.pcf.gz
+  GEN    lubBI14-ISO8859-13.pcf.gz
+  GEN    lubBI18-ISO8859-13.pcf.gz
+  GEN    lubBI19-ISO8859-13.pcf.gz
+  GEN    lubBI24-ISO8859-13.pcf.gz
+  GEN    lubI08-ISO8859-13.pcf.gz
+  GEN    lubI10-ISO8859-13.pcf.gz
+  GEN    lubI12-ISO8859-13.pcf.gz
+  GEN    lubI14-ISO8859-13.pcf.gz
+  GEN    lubI18-ISO8859-13.pcf.gz
+  GEN    lubI19-ISO8859-13.pcf.gz
+  GEN    lubI24-ISO8859-13.pcf.gz
+  GEN    luBIS08-ISO8859-13.pcf.gz
+  GEN    luBIS10-ISO8859-13.pcf.gz
+  GEN    luBIS12-ISO8859-13.pcf.gz
+  GEN    luBIS14-ISO8859-13.pcf.gz
+  GEN    luBIS18-ISO8859-13.pcf.gz
+  GEN    luBIS19-ISO8859-13.pcf.gz
+  GEN    luBIS24-ISO8859-13.pcf.gz
+  GEN    lubR08-ISO8859-13.pcf.gz
+  GEN    lubR10-ISO8859-13.pcf.gz
+  GEN    lubR12-ISO8859-13.pcf.gz
+  GEN    lubR14-ISO8859-13.pcf.gz
+  GEN    lubR18-ISO8859-13.pcf.gz
+  GEN    lubR19-ISO8859-13.pcf.gz
+  GEN    lubR24-ISO8859-13.pcf.gz
+  GEN    luBS08-ISO8859-13.pcf.gz
+  GEN    luBS10-ISO8859-13.pcf.gz
+  GEN    luBS12-ISO8859-13.pcf.gz
+  GEN    luBS14-ISO8859-13.pcf.gz
+  GEN    luBS18-ISO8859-13.pcf.gz
+  GEN    luBS19-ISO8859-13.pcf.gz
+  GEN    luBS24-ISO8859-13.pcf.gz
+  GEN    luIS08-ISO8859-13.pcf.gz
+  GEN    luIS10-ISO8859-13.pcf.gz
+  GEN    luIS12-ISO8859-13.pcf.gz
+  GEN    luIS14-ISO8859-13.pcf.gz
+  GEN    luIS18-ISO8859-13.pcf.gz
+  GEN    luIS19-ISO8859-13.pcf.gz
+  GEN    luIS24-ISO8859-13.pcf.gz
+  GEN    luRS08-ISO8859-13.pcf.gz
+  GEN    luRS10-ISO8859-13.pcf.gz
+  GEN    luRS12-ISO8859-13.pcf.gz
+  GEN    luRS14-ISO8859-13.pcf.gz
+  GEN    luRS18-ISO8859-13.pcf.gz
+  GEN    luRS19-ISO8859-13.pcf.gz
+  GEN    luRS24-ISO8859-13.pcf.gz
+  GEN    lubB08-ISO8859-14.pcf.gz
+  GEN    lubB10-ISO8859-14.pcf.gz
+  GEN    lubB12-ISO8859-14.pcf.gz
+  GEN    lubB14-ISO8859-14.pcf.gz
+  GEN    lubB18-ISO8859-14.pcf.gz
+  GEN    lubB19-ISO8859-14.pcf.gz
+  GEN    lubB24-ISO8859-14.pcf.gz
+  GEN    lubBI08-ISO8859-14.pcf.gz
+  GEN    lubBI10-ISO8859-14.pcf.gz
+  GEN    lubBI12-ISO8859-14.pcf.gz
+  GEN    lubBI14-ISO8859-14.pcf.gz
+  GEN    lubBI18-ISO8859-14.pcf.gz
+  GEN    lubBI19-ISO8859-14.pcf.gz
+  GEN    lubBI24-ISO8859-14.pcf.gz
+  GEN    lubI08-ISO8859-14.pcf.gz
+  GEN    lubI10-ISO8859-14.pcf.gz
+  GEN    lubI12-ISO8859-14.pcf.gz
+  GEN    lubI14-ISO8859-14.pcf.gz
+  GEN    lubI18-ISO8859-14.pcf.gz
+  GEN    lubI19-ISO8859-14.pcf.gz
+  GEN    lubI24-ISO8859-14.pcf.gz
+  GEN    luBIS08-ISO8859-14.pcf.gz
+  GEN    luBIS10-ISO8859-14.pcf.gz
+  GEN    luBIS12-ISO8859-14.pcf.gz
+  GEN    luBIS14-ISO8859-14.pcf.gz
+  GEN    luBIS18-ISO8859-14.pcf.gz
+  GEN    luBIS19-ISO8859-14.pcf.gz
+  GEN    luBIS24-ISO8859-14.pcf.gz
+  GEN    lubR08-ISO8859-14.pcf.gz
+  GEN    lubR10-ISO8859-14.pcf.gz
+  GEN    lubR12-ISO8859-14.pcf.gz
+  GEN    lubR14-ISO8859-14.pcf.gz
+  GEN    lubR18-ISO8859-14.pcf.gz
+  GEN    lubR19-ISO8859-14.pcf.gz
+  GEN    lubR24-ISO8859-14.pcf.gz
+  GEN    luBS08-ISO8859-14.pcf.gz
+  GEN    luBS10-ISO8859-14.pcf.gz
+  GEN    luBS12-ISO8859-14.pcf.gz
+  GEN    luBS14-ISO8859-14.pcf.gz
+  GEN    luBS18-ISO8859-14.pcf.gz
+  GEN    luBS19-ISO8859-14.pcf.gz
+  GEN    luBS24-ISO8859-14.pcf.gz
+  GEN    luIS08-ISO8859-14.pcf.gz
+  GEN    luIS10-ISO8859-14.pcf.gz
+  GEN    luIS12-ISO8859-14.pcf.gz
+  GEN    luIS14-ISO8859-14.pcf.gz
+  GEN    luIS18-ISO8859-14.pcf.gz
+  GEN    luIS19-ISO8859-14.pcf.gz
+  GEN    luIS24-ISO8859-14.pcf.gz
+  GEN    luRS08-ISO8859-14.pcf.gz
+  GEN    luRS10-ISO8859-14.pcf.gz
+  GEN    luRS12-ISO8859-14.pcf.gz
+  GEN    luRS14-ISO8859-14.pcf.gz
+  GEN    luRS18-ISO8859-14.pcf.gz
+  GEN    luRS19-ISO8859-14.pcf.gz
+  GEN    luRS24-ISO8859-14.pcf.gz
+  GEN    lubB08-ISO8859-15.pcf.gz
+  GEN    lubB10-ISO8859-15.pcf.gz
+  GEN    lubB12-ISO8859-15.pcf.gz
+  GEN    lubB14-ISO8859-15.pcf.gz
+  GEN    lubB18-ISO8859-15.pcf.gz
+  GEN    lubB19-ISO8859-15.pcf.gz
+  GEN    lubB24-ISO8859-15.pcf.gz
+  GEN    lubBI08-ISO8859-15.pcf.gz
+  GEN    lubBI10-ISO8859-15.pcf.gz
+  GEN    lubBI12-ISO8859-15.pcf.gz
+  GEN    lubBI14-ISO8859-15.pcf.gz
+  GEN    lubBI18-ISO8859-15.pcf.gz
+  GEN    lubBI19-ISO8859-15.pcf.gz
+  GEN    lubBI24-ISO8859-15.pcf.gz
+  GEN    lubI08-ISO8859-15.pcf.gz
+  GEN    lubI10-ISO8859-15.pcf.gz
+  GEN    lubI12-ISO8859-15.pcf.gz
+  GEN    lubI14-ISO8859-15.pcf.gz
+  GEN    lubI18-ISO8859-15.pcf.gz
+  GEN    lubI19-ISO8859-15.pcf.gz
+  GEN    lubI24-ISO8859-15.pcf.gz
+  GEN    luBIS08-ISO8859-15.pcf.gz
+  GEN    luBIS10-ISO8859-15.pcf.gz
+  GEN    luBIS12-ISO8859-15.pcf.gz
+  GEN    luBIS14-ISO8859-15.pcf.gz
+  GEN    luBIS18-ISO8859-15.pcf.gz
+  GEN    luBIS19-ISO8859-15.pcf.gz
+  GEN    luBIS24-ISO8859-15.pcf.gz
+  GEN    lubR08-ISO8859-15.pcf.gz
+  GEN    lubR10-ISO8859-15.pcf.gz
+  GEN    lubR12-ISO8859-15.pcf.gz
+  GEN    lubR14-ISO8859-15.pcf.gz
+  GEN    lubR18-ISO8859-15.pcf.gz
+  GEN    lubR19-ISO8859-15.pcf.gz
+  GEN    luBS08-ISO8859-15.pcf.gz
+  GEN    luBS12-ISO8859-15.pcf.gz
+  GEN    luBS18-ISO8859-15.pcf.gz
+  GEN    luBS19-ISO8859-15.pcf.gz
+  GEN    luBS24-ISO8859-15.pcf.gz
+  GEN    luIS10-ISO8859-15.pcf.gz
+  GEN    luIS12-ISO8859-15.pcf.gz
+  GEN    luIS14-ISO8859-15.pcf.gz
+  GEN    luIS18-ISO8859-15.pcf.gz
+  GEN    luIS19-ISO8859-15.pcf.gz
+  GEN    luIS24-ISO8859-15.pcf.gz
+  GEN    luRS08-ISO8859-15.pcf.gz
+  GEN    luRS10-ISO8859-15.pcf.gz
+  GEN    luRS12-ISO8859-15.pcf.gz
+  GEN    luRS14-ISO8859-15.pcf.gz
+  GEN    luRS18-ISO8859-15.pcf.gz
+  GEN    luRS19-ISO8859-15.pcf.gz
+  GEN    luRS24-ISO8859-15.pcf.gz
+make[1]: Entering directory `/sources/builddir/font-bh-100dpi-1.0.3'
+make[1]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/fonts/X11/100dpi" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi"
+ /usr/bin/install -c -m 644 lubB08.pcf.gz lubB10.pcf.gz lubB12.pcf.gz lubB14.pcf.gz lubB18.pcf.gz lubB19.pcf.gz lubB24.pcf.gz lubBI08.pcf.gz lubBI10.pcf.gz lubBI12.pcf.gz lubBI14.pcf.gz lubBI18.pcf.gz lubBI19.pcf.gz lubBI24.pcf.gz lubI08.pcf.gz lubI10.pcf.gz lubI12.pcf.gz lubI14.pcf.gz lubI18.pcf.gz lubI19.pcf.gz lubI24.pcf.gz luBIS08.pcf.gz luBIS10.pcf.gz luBIS12.pcf.gz luBIS14.pcf.gz luBIS18.pcf.gz luBIS19.pcf.gz luBIS24.pcf.gz lubR08.pcf.gz lubR10.pcf.gz lubR12.pcf.gz lubR14.pcf.gz lubR18.pcf.gz lubR19.pcf.gz lubR24.pcf.gz luBS08.pcf.gz luBS10.pcf.gz luBS12.pcf.gz luBS14.pcf.gz luBS18.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 luBS19.pcf.gz luBS24.pcf.gz luIS08.pcf.gz luIS10.pcf.gz luIS12.pcf.gz luIS14.pcf.gz luIS18.pcf.gz luIS19.pcf.gz luIS24.pcf.gz luRS08.pcf.gz luRS10.pcf.gz luRS12.pcf.gz luRS14.pcf.gz luRS18.pcf.gz luRS19.pcf.gz luRS24.pcf.gz lubB08-ISO8859-1.pcf.gz lubB10-ISO8859-1.pcf.gz lubB12-ISO8859-1.pcf.gz lubB14-ISO8859-1.pcf.gz lubB18-ISO8859-1.pcf.gz lubB19-ISO8859-1.pcf.gz lubB24-ISO8859-1.pcf.gz lubBI08-ISO8859-1.pcf.gz lubBI10-ISO8859-1.pcf.gz lubBI12-ISO8859-1.pcf.gz lubBI14-ISO8859-1.pcf.gz lubBI18-ISO8859-1.pcf.gz lubBI19-ISO8859-1.pcf.gz lubBI24-ISO8859-1.pcf.gz lubI08-ISO8859-1.pcf.gz lubI10-ISO8859-1.pcf.gz lubI12-ISO8859-1.pcf.gz lubI14-ISO8859-1.pcf.gz lubI18-ISO8859-1.pcf.gz lubI19-ISO8859-1.pcf.gz lubI24-ISO8859-1.pcf.gz luBIS08-ISO8859-1.pcf.gz luBIS10-ISO8859-1.pcf.gz luBIS12-ISO8859-1.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 luBIS14-ISO8859-1.pcf.gz luBIS18-ISO8859-1.pcf.gz luBIS19-ISO8859-1.pcf.gz luBIS24-ISO8859-1.pcf.gz lubR08-ISO8859-1.pcf.gz lubR10-ISO8859-1.pcf.gz lubR12-ISO8859-1.pcf.gz lubR14-ISO8859-1.pcf.gz lubR18-ISO8859-1.pcf.gz lubR19-ISO8859-1.pcf.gz lubR24-ISO8859-1.pcf.gz luBS08-ISO8859-1.pcf.gz luBS10-ISO8859-1.pcf.gz luBS12-ISO8859-1.pcf.gz luBS14-ISO8859-1.pcf.gz luBS18-ISO8859-1.pcf.gz luBS19-ISO8859-1.pcf.gz luBS24-ISO8859-1.pcf.gz luIS08-ISO8859-1.pcf.gz luIS10-ISO8859-1.pcf.gz luIS12-ISO8859-1.pcf.gz luIS14-ISO8859-1.pcf.gz luIS18-ISO8859-1.pcf.gz luIS19-ISO8859-1.pcf.gz luIS24-ISO8859-1.pcf.gz luRS08-ISO8859-1.pcf.gz luRS10-ISO8859-1.pcf.gz luRS12-ISO8859-1.pcf.gz luRS14-ISO8859-1.pcf.gz luRS18-ISO8859-1.pcf.gz luRS19-ISO8859-1.pcf.gz luRS24-ISO8859-1.pcf.gz lubB08-ISO8859-2.pcf.gz lubB10-ISO8859-2.pcf.gz lubB12-ISO8859-2.pcf.gz lubB14-ISO8859-2.pcf.gz lubB18-ISO8859-2.pcf.gz lubB19-ISO8859-2.pcf.gz lubB24-ISO8859-2.pcf.gz lubBI08-ISO8859-2.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 lubBI10-ISO8859-2.pcf.gz lubBI12-ISO8859-2.pcf.gz lubBI14-ISO8859-2.pcf.gz lubBI18-ISO8859-2.pcf.gz lubBI19-ISO8859-2.pcf.gz lubBI24-ISO8859-2.pcf.gz lubI08-ISO8859-2.pcf.gz lubI10-ISO8859-2.pcf.gz lubI12-ISO8859-2.pcf.gz lubI14-ISO8859-2.pcf.gz lubI18-ISO8859-2.pcf.gz lubI19-ISO8859-2.pcf.gz lubI24-ISO8859-2.pcf.gz luBIS08-ISO8859-2.pcf.gz luBIS10-ISO8859-2.pcf.gz luBIS12-ISO8859-2.pcf.gz luBIS14-ISO8859-2.pcf.gz luBIS18-ISO8859-2.pcf.gz luBIS19-ISO8859-2.pcf.gz luBIS24-ISO8859-2.pcf.gz lubR08-ISO8859-2.pcf.gz lubR10-ISO8859-2.pcf.gz lubR12-ISO8859-2.pcf.gz lubR14-ISO8859-2.pcf.gz lubR18-ISO8859-2.pcf.gz lubR19-ISO8859-2.pcf.gz lubR24-ISO8859-2.pcf.gz luBS08-ISO8859-2.pcf.gz luBS10-ISO8859-2.pcf.gz luBS12-ISO8859-2.pcf.gz luBS14-ISO8859-2.pcf.gz luBS18-ISO8859-2.pcf.gz luBS19-ISO8859-2.pcf.gz luBS24-ISO8859-2.pcf.gz luIS08-ISO8859-2.pcf.gz luIS10-ISO8859-2.pcf.gz luIS12-ISO8859-2.pcf.gz luIS14-ISO8859-2.pcf.gz luIS18-ISO8859-2.pcf.gz luIS19-ISO8859-2.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 luIS24-ISO8859-2.pcf.gz luRS08-ISO8859-2.pcf.gz luRS10-ISO8859-2.pcf.gz luRS12-ISO8859-2.pcf.gz luRS14-ISO8859-2.pcf.gz luRS18-ISO8859-2.pcf.gz luRS19-ISO8859-2.pcf.gz luRS24-ISO8859-2.pcf.gz lubB08-ISO8859-3.pcf.gz lubB10-ISO8859-3.pcf.gz lubB12-ISO8859-3.pcf.gz lubB14-ISO8859-3.pcf.gz lubB18-ISO8859-3.pcf.gz lubB19-ISO8859-3.pcf.gz lubB24-ISO8859-3.pcf.gz lubBI08-ISO8859-3.pcf.gz lubBI10-ISO8859-3.pcf.gz lubBI12-ISO8859-3.pcf.gz lubBI14-ISO8859-3.pcf.gz lubBI18-ISO8859-3.pcf.gz lubBI19-ISO8859-3.pcf.gz lubBI24-ISO8859-3.pcf.gz lubI08-ISO8859-3.pcf.gz lubI10-ISO8859-3.pcf.gz lubI12-ISO8859-3.pcf.gz lubI14-ISO8859-3.pcf.gz lubI18-ISO8859-3.pcf.gz lubI19-ISO8859-3.pcf.gz lubI24-ISO8859-3.pcf.gz luBIS08-ISO8859-3.pcf.gz luBIS10-ISO8859-3.pcf.gz luBIS12-ISO8859-3.pcf.gz luBIS14-ISO8859-3.pcf.gz luBIS18-ISO8859-3.pcf.gz luBIS19-ISO8859-3.pcf.gz luBIS24-ISO8859-3.pcf.gz lubR08-ISO8859-3.pcf.gz lubR10-ISO8859-3.pcf.gz lubR12-ISO8859-3.pcf.gz lubR14-ISO8859-3.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 lubR18-ISO8859-3.pcf.gz lubR19-ISO8859-3.pcf.gz lubR24-ISO8859-3.pcf.gz luBS08-ISO8859-3.pcf.gz luBS10-ISO8859-3.pcf.gz luBS12-ISO8859-3.pcf.gz luBS14-ISO8859-3.pcf.gz luBS18-ISO8859-3.pcf.gz luBS19-ISO8859-3.pcf.gz luBS24-ISO8859-3.pcf.gz luIS08-ISO8859-3.pcf.gz luIS10-ISO8859-3.pcf.gz luIS12-ISO8859-3.pcf.gz luIS14-ISO8859-3.pcf.gz luIS18-ISO8859-3.pcf.gz luIS19-ISO8859-3.pcf.gz luIS24-ISO8859-3.pcf.gz luRS08-ISO8859-3.pcf.gz luRS10-ISO8859-3.pcf.gz luRS12-ISO8859-3.pcf.gz luRS14-ISO8859-3.pcf.gz luRS18-ISO8859-3.pcf.gz luRS19-ISO8859-3.pcf.gz luRS24-ISO8859-3.pcf.gz lubB08-ISO8859-4.pcf.gz lubB10-ISO8859-4.pcf.gz lubB12-ISO8859-4.pcf.gz lubB14-ISO8859-4.pcf.gz lubB18-ISO8859-4.pcf.gz lubB19-ISO8859-4.pcf.gz lubB24-ISO8859-4.pcf.gz lubBI08-ISO8859-4.pcf.gz lubBI10-ISO8859-4.pcf.gz lubBI12-ISO8859-4.pcf.gz lubBI14-ISO8859-4.pcf.gz lubBI18-ISO8859-4.pcf.gz lubBI19-ISO8859-4.pcf.gz lubBI24-ISO8859-4.pcf.gz lubI08-ISO8859-4.pcf.gz lubI10-ISO8859-4.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 lubI12-ISO8859-4.pcf.gz lubI14-ISO8859-4.pcf.gz lubI18-ISO8859-4.pcf.gz lubI19-ISO8859-4.pcf.gz lubI24-ISO8859-4.pcf.gz luBIS08-ISO8859-4.pcf.gz luBIS10-ISO8859-4.pcf.gz luBIS12-ISO8859-4.pcf.gz luBIS14-ISO8859-4.pcf.gz luBIS18-ISO8859-4.pcf.gz luBIS19-ISO8859-4.pcf.gz luBIS24-ISO8859-4.pcf.gz lubR08-ISO8859-4.pcf.gz lubR10-ISO8859-4.pcf.gz lubR12-ISO8859-4.pcf.gz lubR14-ISO8859-4.pcf.gz lubR18-ISO8859-4.pcf.gz lubR19-ISO8859-4.pcf.gz lubR24-ISO8859-4.pcf.gz luBS08-ISO8859-4.pcf.gz luBS10-ISO8859-4.pcf.gz luBS12-ISO8859-4.pcf.gz luBS14-ISO8859-4.pcf.gz luBS18-ISO8859-4.pcf.gz luBS19-ISO8859-4.pcf.gz luBS24-ISO8859-4.pcf.gz luIS08-ISO8859-4.pcf.gz luIS10-ISO8859-4.pcf.gz luIS12-ISO8859-4.pcf.gz luIS14-ISO8859-4.pcf.gz luIS18-ISO8859-4.pcf.gz luIS19-ISO8859-4.pcf.gz luIS24-ISO8859-4.pcf.gz luRS08-ISO8859-4.pcf.gz luRS10-ISO8859-4.pcf.gz luRS12-ISO8859-4.pcf.gz luRS14-ISO8859-4.pcf.gz luRS18-ISO8859-4.pcf.gz luRS19-ISO8859-4.pcf.gz luRS24-ISO8859-4.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 lubB08-ISO8859-9.pcf.gz lubB10-ISO8859-9.pcf.gz lubB12-ISO8859-9.pcf.gz lubB14-ISO8859-9.pcf.gz lubB18-ISO8859-9.pcf.gz lubB19-ISO8859-9.pcf.gz lubB24-ISO8859-9.pcf.gz lubBI08-ISO8859-9.pcf.gz lubBI10-ISO8859-9.pcf.gz lubBI12-ISO8859-9.pcf.gz lubBI14-ISO8859-9.pcf.gz lubBI18-ISO8859-9.pcf.gz lubBI19-ISO8859-9.pcf.gz lubBI24-ISO8859-9.pcf.gz lubI08-ISO8859-9.pcf.gz lubI10-ISO8859-9.pcf.gz lubI12-ISO8859-9.pcf.gz lubI14-ISO8859-9.pcf.gz lubI18-ISO8859-9.pcf.gz lubI19-ISO8859-9.pcf.gz lubI24-ISO8859-9.pcf.gz luBIS08-ISO8859-9.pcf.gz luBIS10-ISO8859-9.pcf.gz luBIS12-ISO8859-9.pcf.gz luBIS14-ISO8859-9.pcf.gz luBIS18-ISO8859-9.pcf.gz luBIS19-ISO8859-9.pcf.gz luBIS24-ISO8859-9.pcf.gz lubR08-ISO8859-9.pcf.gz lubR10-ISO8859-9.pcf.gz lubR12-ISO8859-9.pcf.gz lubR14-ISO8859-9.pcf.gz lubR18-ISO8859-9.pcf.gz lubR19-ISO8859-9.pcf.gz lubR24-ISO8859-9.pcf.gz luBS08-ISO8859-9.pcf.gz luBS10-ISO8859-9.pcf.gz luBS12-ISO8859-9.pcf.gz luBS14-ISO8859-9.pcf.gz luBS18-ISO8859-9.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 luBS19-ISO8859-9.pcf.gz luBS24-ISO8859-9.pcf.gz luIS08-ISO8859-9.pcf.gz luIS10-ISO8859-9.pcf.gz luIS12-ISO8859-9.pcf.gz luIS14-ISO8859-9.pcf.gz luIS18-ISO8859-9.pcf.gz luIS19-ISO8859-9.pcf.gz luIS24-ISO8859-9.pcf.gz luRS08-ISO8859-9.pcf.gz luRS10-ISO8859-9.pcf.gz luRS12-ISO8859-9.pcf.gz luRS14-ISO8859-9.pcf.gz luRS18-ISO8859-9.pcf.gz luRS19-ISO8859-9.pcf.gz luRS24-ISO8859-9.pcf.gz lubB08-ISO8859-10.pcf.gz lubB10-ISO8859-10.pcf.gz lubB12-ISO8859-10.pcf.gz lubB14-ISO8859-10.pcf.gz lubB18-ISO8859-10.pcf.gz lubB19-ISO8859-10.pcf.gz lubB24-ISO8859-10.pcf.gz lubBI08-ISO8859-10.pcf.gz lubBI10-ISO8859-10.pcf.gz lubBI12-ISO8859-10.pcf.gz lubBI14-ISO8859-10.pcf.gz lubBI18-ISO8859-10.pcf.gz lubBI19-ISO8859-10.pcf.gz lubBI24-ISO8859-10.pcf.gz lubI08-ISO8859-10.pcf.gz lubI10-ISO8859-10.pcf.gz lubI12-ISO8859-10.pcf.gz lubI14-ISO8859-10.pcf.gz lubI18-ISO8859-10.pcf.gz lubI19-ISO8859-10.pcf.gz lubI24-ISO8859-10.pcf.gz luBIS08-ISO8859-10.pcf.gz luBIS10-ISO8859-10.pcf.gz luBIS12-ISO8859-10.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 luBIS14-ISO8859-10.pcf.gz luBIS18-ISO8859-10.pcf.gz luBIS19-ISO8859-10.pcf.gz luBIS24-ISO8859-10.pcf.gz lubR08-ISO8859-10.pcf.gz lubR10-ISO8859-10.pcf.gz lubR12-ISO8859-10.pcf.gz lubR14-ISO8859-10.pcf.gz lubR18-ISO8859-10.pcf.gz lubR19-ISO8859-10.pcf.gz lubR24-ISO8859-10.pcf.gz luBS08-ISO8859-10.pcf.gz luBS10-ISO8859-10.pcf.gz luBS12-ISO8859-10.pcf.gz luBS14-ISO8859-10.pcf.gz luBS18-ISO8859-10.pcf.gz luBS19-ISO8859-10.pcf.gz luBS24-ISO8859-10.pcf.gz luIS08-ISO8859-10.pcf.gz luIS10-ISO8859-10.pcf.gz luIS12-ISO8859-10.pcf.gz luIS14-ISO8859-10.pcf.gz luIS18-ISO8859-10.pcf.gz luIS19-ISO8859-10.pcf.gz luIS24-ISO8859-10.pcf.gz luRS08-ISO8859-10.pcf.gz luRS10-ISO8859-10.pcf.gz luRS12-ISO8859-10.pcf.gz luRS14-ISO8859-10.pcf.gz luRS18-ISO8859-10.pcf.gz luRS19-ISO8859-10.pcf.gz luRS24-ISO8859-10.pcf.gz lubB08-ISO8859-13.pcf.gz lubB10-ISO8859-13.pcf.gz lubB12-ISO8859-13.pcf.gz lubB14-ISO8859-13.pcf.gz lubB18-ISO8859-13.pcf.gz lubB19-ISO8859-13.pcf.gz lubB24-ISO8859-13.pcf.gz lubBI08-ISO8859-13.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 lubBI10-ISO8859-13.pcf.gz lubBI12-ISO8859-13.pcf.gz lubBI14-ISO8859-13.pcf.gz lubBI18-ISO8859-13.pcf.gz lubBI19-ISO8859-13.pcf.gz lubBI24-ISO8859-13.pcf.gz lubI08-ISO8859-13.pcf.gz lubI10-ISO8859-13.pcf.gz lubI12-ISO8859-13.pcf.gz lubI14-ISO8859-13.pcf.gz lubI18-ISO8859-13.pcf.gz lubI19-ISO8859-13.pcf.gz lubI24-ISO8859-13.pcf.gz luBIS08-ISO8859-13.pcf.gz luBIS10-ISO8859-13.pcf.gz luBIS12-ISO8859-13.pcf.gz luBIS14-ISO8859-13.pcf.gz luBIS18-ISO8859-13.pcf.gz luBIS19-ISO8859-13.pcf.gz luBIS24-ISO8859-13.pcf.gz lubR08-ISO8859-13.pcf.gz lubR10-ISO8859-13.pcf.gz lubR12-ISO8859-13.pcf.gz lubR14-ISO8859-13.pcf.gz lubR18-ISO8859-13.pcf.gz lubR19-ISO8859-13.pcf.gz lubR24-ISO8859-13.pcf.gz luBS08-ISO8859-13.pcf.gz luBS10-ISO8859-13.pcf.gz luBS12-ISO8859-13.pcf.gz luBS14-ISO8859-13.pcf.gz luBS18-ISO8859-13.pcf.gz luBS19-ISO8859-13.pcf.gz luBS24-ISO8859-13.pcf.gz luIS08-ISO8859-13.pcf.gz luIS10-ISO8859-13.pcf.gz luIS12-ISO8859-13.pcf.gz luIS14-ISO8859-13.pcf.gz luIS18-ISO8859-13.pcf.gz luIS19-ISO8859-13.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 luIS24-ISO8859-13.pcf.gz luRS08-ISO8859-13.pcf.gz luRS10-ISO8859-13.pcf.gz luRS12-ISO8859-13.pcf.gz luRS14-ISO8859-13.pcf.gz luRS18-ISO8859-13.pcf.gz luRS19-ISO8859-13.pcf.gz luRS24-ISO8859-13.pcf.gz lubB08-ISO8859-14.pcf.gz lubB10-ISO8859-14.pcf.gz lubB12-ISO8859-14.pcf.gz lubB14-ISO8859-14.pcf.gz lubB18-ISO8859-14.pcf.gz lubB19-ISO8859-14.pcf.gz lubB24-ISO8859-14.pcf.gz lubBI08-ISO8859-14.pcf.gz lubBI10-ISO8859-14.pcf.gz lubBI12-ISO8859-14.pcf.gz lubBI14-ISO8859-14.pcf.gz lubBI18-ISO8859-14.pcf.gz lubBI19-ISO8859-14.pcf.gz lubBI24-ISO8859-14.pcf.gz lubI08-ISO8859-14.pcf.gz lubI10-ISO8859-14.pcf.gz lubI12-ISO8859-14.pcf.gz lubI14-ISO8859-14.pcf.gz lubI18-ISO8859-14.pcf.gz lubI19-ISO8859-14.pcf.gz lubI24-ISO8859-14.pcf.gz luBIS08-ISO8859-14.pcf.gz luBIS10-ISO8859-14.pcf.gz luBIS12-ISO8859-14.pcf.gz luBIS14-ISO8859-14.pcf.gz luBIS18-ISO8859-14.pcf.gz luBIS19-ISO8859-14.pcf.gz luBIS24-ISO8859-14.pcf.gz lubR08-ISO8859-14.pcf.gz lubR10-ISO8859-14.pcf.gz lubR12-ISO8859-14.pcf.gz lubR14-ISO8859-14.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 lubR18-ISO8859-14.pcf.gz lubR19-ISO8859-14.pcf.gz lubR24-ISO8859-14.pcf.gz luBS08-ISO8859-14.pcf.gz luBS10-ISO8859-14.pcf.gz luBS12-ISO8859-14.pcf.gz luBS14-ISO8859-14.pcf.gz luBS18-ISO8859-14.pcf.gz luBS19-ISO8859-14.pcf.gz luBS24-ISO8859-14.pcf.gz luIS08-ISO8859-14.pcf.gz luIS10-ISO8859-14.pcf.gz luIS12-ISO8859-14.pcf.gz luIS14-ISO8859-14.pcf.gz luIS18-ISO8859-14.pcf.gz luIS19-ISO8859-14.pcf.gz luIS24-ISO8859-14.pcf.gz luRS08-ISO8859-14.pcf.gz luRS10-ISO8859-14.pcf.gz luRS12-ISO8859-14.pcf.gz luRS14-ISO8859-14.pcf.gz luRS18-ISO8859-14.pcf.gz luRS19-ISO8859-14.pcf.gz luRS24-ISO8859-14.pcf.gz lubB08-ISO8859-15.pcf.gz lubB10-ISO8859-15.pcf.gz lubB12-ISO8859-15.pcf.gz lubB14-ISO8859-15.pcf.gz lubB18-ISO8859-15.pcf.gz lubB19-ISO8859-15.pcf.gz lubB24-ISO8859-15.pcf.gz lubBI08-ISO8859-15.pcf.gz lubBI10-ISO8859-15.pcf.gz lubBI12-ISO8859-15.pcf.gz lubBI14-ISO8859-15.pcf.gz lubBI18-ISO8859-15.pcf.gz lubBI19-ISO8859-15.pcf.gz lubBI24-ISO8859-15.pcf.gz lubI08-ISO8859-15.pcf.gz lubI10-ISO8859-15.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 lubI12-ISO8859-15.pcf.gz lubI14-ISO8859-15.pcf.gz lubI18-ISO8859-15.pcf.gz lubI19-ISO8859-15.pcf.gz lubI24-ISO8859-15.pcf.gz luBIS08-ISO8859-15.pcf.gz luBIS10-ISO8859-15.pcf.gz luBIS12-ISO8859-15.pcf.gz luBIS14-ISO8859-15.pcf.gz luBIS18-ISO8859-15.pcf.gz luBIS19-ISO8859-15.pcf.gz luBIS24-ISO8859-15.pcf.gz lubR08-ISO8859-15.pcf.gz lubR10-ISO8859-15.pcf.gz lubR12-ISO8859-15.pcf.gz lubR14-ISO8859-15.pcf.gz lubR18-ISO8859-15.pcf.gz lubR19-ISO8859-15.pcf.gz lubR24-ISO8859-15.pcf.gz luBS08-ISO8859-15.pcf.gz luBS10-ISO8859-15.pcf.gz luBS12-ISO8859-15.pcf.gz luBS14-ISO8859-15.pcf.gz luBS18-ISO8859-15.pcf.gz luBS19-ISO8859-15.pcf.gz luBS24-ISO8859-15.pcf.gz luIS08-ISO8859-15.pcf.gz luIS10-ISO8859-15.pcf.gz luIS12-ISO8859-15.pcf.gz luIS14-ISO8859-15.pcf.gz luIS18-ISO8859-15.pcf.gz luIS19-ISO8859-15.pcf.gz luIS24-ISO8859-15.pcf.gz luRS08-ISO8859-15.pcf.gz luRS10-ISO8859-15.pcf.gz luRS12-ISO8859-15.pcf.gz luRS14-ISO8859-15.pcf.gz luRS18-ISO8859-15.pcf.gz luRS19-ISO8859-15.pcf.gz luRS24-ISO8859-15.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+make  install-data-hook
+make[2]: Entering directory `/sources/builddir/font-bh-100dpi-1.0.3'
+/usr/bin/mkfontdir /sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi
+** Warning: fonts.cache not built
+** Generate this file manually on host system using fc-cache
+make[2]: Leaving directory `/sources/builddir/font-bh-100dpi-1.0.3'
+make[1]: Leaving directory `/sources/builddir/font-bh-100dpi-1.0.3'
+`/sources/buildmgr/pkgroot/usr/share/fonts/X11-OTF' -> `/usr/share/fonts/X11/OTF'
+`/sources/buildmgr/pkgroot/usr/share/fonts/X11-TTF' -> `/usr/share/fonts/X11/TTF'

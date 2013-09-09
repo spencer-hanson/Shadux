@@ -1,0 +1,296 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for gcc option to accept ISO C99... -std=gnu99
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc -std=gnu99... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc -std=gnu99 object... ok
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -std=gnu99 supports -fno-rtti -fno-exceptions... no
+checking for gcc -std=gnu99 option to produce PIC... -fPIC -DPIC
+checking if gcc -std=gnu99 PIC flag -fPIC -DPIC works... yes
+checking if gcc -std=gnu99 static flag -static works... yes
+checking if gcc -std=gnu99 supports -c -o file.o... yes
+checking if gcc -std=gnu99 supports -c -o file.o... (cached) yes
+checking whether the gcc -std=gnu99 linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking for cpp... /usr/bin/cpp
+checking if /usr/bin/cpp requires -undef... yes
+checking if /usr/bin/cpp requires -traditional... yes
+checking if XINERAMA is defined... yes
+checking if RANDR is defined... yes
+checking if RENDER is defined... yes
+checking if XV is defined... yes
+checking if DPMSExtension is defined... yes
+checking for XORG... yes
+checking for XEXT... yes
+checking for ANSI C header files... (cached) yes
+checking for /usr/include/xorg/dri.h... yes
+checking for /usr/include/xorg/sarea.h... yes
+checking for /usr/include/xorg/dristruct.h... yes
+checking whether to include DRI support... yes
+checking for DRI... yes
+checking whether XSERVER_LIBPCIACCESS is declared... yes
+checking for PCIACCESS... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/xf86-video-sis-0.10.3'
+Making all in src
+make[2]: Entering directory `/sources/builddir/xf86-video-sis-0.10.3/src'
+  CC     init301.lo
+  CC     initextx.lo
+initextx.c: In function ‘SiSBuildBuiltInModeList’:
+initextx.c:241:7: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+initextx.c:243:7: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+initextx.c:244:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+initextx.c:388:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+initextx.c:391:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+initextx.c:392:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+initextx.c:473:6: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+initextx.c:476:6: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+initextx.c:477:9: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+  CC     sis300_accel.lo
+  CC     sis310_accel.lo
+  CC     sis6326_video.lo
+sis6326_video.c: In function ‘SIS6326InitVideo’:
+sis6326_video.c:173:3: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis6326_video.c:188:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis6326_video.c: In function ‘SIS6326SetupImageVideo’:
+sis6326_video.c:534:5: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+  CC     sis_accel.lo
+  CC     sis_cursor.lo
+  CC     sis_dac.lo
+  CC     sis_dga.lo
+sis_dga.c: In function ‘SISSetupDGAMode’:
+sis_dga.c:153:6: warning: ‘Xrealloc’ is deprecated (declared at /usr/include/xorg/os.h:230) [-Wdeprecated-declarations]
+sis_dga.c:158:6: warning: ‘Xrealloc’ is deprecated (declared at /usr/include/xorg/os.h:230) [-Wdeprecated-declarations]
+sis_dga.c:164:6: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+  CC     sis_driver.lo
+  CC     sis_memcpy.lo
+sis_memcpy.c: In function ‘SiS_AllocBuffers’:
+sis_memcpy.c:641:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_memcpy.c:646:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_memcpy.c:647:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_memcpy.c: In function ‘SiSVidCopyInitGen’:
+sis_memcpy.c:1101:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_memcpy.c:1102:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+In file included from sis_driver.c:78:0:
+/usr/include/X11/extensions/xf86dgastr.h:1:2: warning: #warning "xf86dgastr.h is obsolete and may be removed in the future." [-Wcpp]
+/usr/include/X11/extensions/xf86dgastr.h:2:2: warning: #warning "include <X11/extensions/xf86dgaproto.h> for the protocol defines." [-Wcpp]
+sis_driver.c: In function ‘SISFreeRec’:
+sis_driver.c:302:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:304:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:315:4: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:317:4: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:319:4: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:330:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:332:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:334:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:340:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:342:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:344:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:356:4: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:357:4: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:359:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:369:6: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:370:10: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:383:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:395:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c: In function ‘SISProbe’:
+sis_driver.c:504:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:580:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:581:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c: In function ‘SiSCopyModeNLink’:
+sis_driver.c:1138:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c:1140:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c:1141:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:1226:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:1227:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c: In function ‘SiSProcXineramaGetState’:
+sis_driver.c:2152:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+sis_driver.c: In function ‘SiSProcXineramaGetScreenCount’:
+sis_driver.c:2177:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+sis_driver.c: In function ‘SiSProcXineramaGetScreenSize’:
+sis_driver.c:2202:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+sis_driver.c: In function ‘SiSXineramaResetProc’:
+sis_driver.c:2392:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c: In function ‘SiSXineramaExtensionInit’:
+sis_driver.c:2457:10: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+sis_driver.c: In function ‘SiSFreeCRT2Structs’:
+sis_driver.c:2496:4: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:2497:4: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:2499:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c: In function ‘SiS_CheckKernelFB’:
+sis_driver.c:2905:4: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c:2909:10: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:2914:4: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c:2920:9: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:3059:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c: In function ‘SISPreInit’:
+sis_driver.c:4081:4: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+sis_driver.c:4176:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:5562:8: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c:5595:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:5642:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:6019:8: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c:6028:7: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c:6030:7: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c:6031:10: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:6073:4: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c: In function ‘SISVESASaveRestore’:
+sis_driver.c:7457:3: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c: In function ‘SISScreenInit’:
+sis_driver.c:8678:8: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c:8852:4: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c:8854:7: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_driver.c:8859:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c: In function ‘SISCloseScreen’:
+sis_driver.c:9944:11: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:9957:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:9962:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:9967:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:9973:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:9978:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_driver.c:9983:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+  CC     sis_opt.lo
+sis_opt.c: In function ‘SiSOptions’:
+sis_opt.c:451:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_opt.c:891:7: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_opt.c:949:7: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_opt.c:952:7: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_opt.c:956:7: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_opt.c:960:7: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+  CC     sis_setup.lo
+  CC     sis_shadow.lo
+  CC     sis_utility.lo
+sis_utility.c: In function ‘SiSCtrlResetProc’:
+sis_utility.c:2010:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_utility.c: In function ‘SiSCtrlExtInit’:
+sis_utility.c:2031:7: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+sis_utility.c:2041:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+  CC     sis_vb.lo
+  CC     sis_vga.lo
+sis_vga.c: In function ‘SiSVGASaveFonts’:
+sis_vga.c:1432:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+  CC     sis_video.lo
+sis_video.c: In function ‘SISInitVideo’:
+sis_video.c:329:8: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_video.c:359:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_video.c: In function ‘SISSetupImageVideo’:
+sis_video.c:880:5: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+sis_video.c: In function ‘SISSetupBlitVideo’:
+sis_video.c:4070:4: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+  CC     sis_dri.lo
+sis_dri.c: In function ‘SISInitVisualConfigs’:
+sis_dri.c:152:5: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+sis_dri.c:156:5: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+sis_dri.c:158:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_dri.c:161:5: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+sis_dri.c:163:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_dri.c:164:8: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_dri.c: In function ‘SISDRIScreenInit’:
+sis_dri.c:322:6: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+sis_dri.c:386:3: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+sis_dri.c:404:6: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_dri.c: In function ‘SISDRICloseScreen’:
+sis_dri.c:797:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_dri.c:805:6: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+sis_dri.c:810:6: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+  CCLD   sis_drv.la
+make[2]: Leaving directory `/sources/builddir/xf86-video-sis-0.10.3/src'
+Making all in man
+make[2]: Entering directory `/sources/builddir/xf86-video-sis-0.10.3/man'
+/usr/bin/cpp -undef -traditional -D__vendorversion__="\"xf86-video-sis 0.10.3\" \"X Version 11\"" -D__appmansuffix__=1 -D__filemansuffix__=5 -D__libmansuffix__=3 -D__miscmansuffix__=7 -D__drivermansuffix__=4 -D__adminmansuffix__=8 -D__xconfigfile__=xorg.conf -D__xservername__=Xorg  < sis.man | sed -e '/^#  *[0-9][0-9]*  *.*$/d' -e '/^#line  *[0-9][0-9]*  *.*$/d' -e '/^[         ]*XCOMM$/s/XCOMM/#/' -e '/^[         ]*XCOMM[^a-zA-Z0-9_]/s/XCOMM/#/' -e '/^[         ]*XHASH/s/XHASH/#/' -e '/\@\@$/s/\@\@$/\\/' > sis.4
+make[2]: Leaving directory `/sources/builddir/xf86-video-sis-0.10.3/man'
+make[2]: Entering directory `/sources/builddir/xf86-video-sis-0.10.3'
+make[2]: Leaving directory `/sources/builddir/xf86-video-sis-0.10.3'
+make[1]: Leaving directory `/sources/builddir/xf86-video-sis-0.10.3'
+Making install in src
+make[1]: Entering directory `/sources/builddir/xf86-video-sis-0.10.3/src'
+make[2]: Entering directory `/sources/builddir/xf86-video-sis-0.10.3/src'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/drivers" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   sis_drv.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers'
+libtool: install: /usr/bin/install -c .libs/sis_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/sis_drv.so
+libtool: install: /usr/bin/install -c .libs/sis_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/sis_drv.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/drivers'
+make[2]: Leaving directory `/sources/builddir/xf86-video-sis-0.10.3/src'
+make[1]: Leaving directory `/sources/builddir/xf86-video-sis-0.10.3/src'
+Making install in man
+make[1]: Entering directory `/sources/builddir/xf86-video-sis-0.10.3/man'
+make[2]: Entering directory `/sources/builddir/xf86-video-sis-0.10.3/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 sis.4 '/sources/buildmgr/pkgroot/usr/share/man/man4'
+make[2]: Leaving directory `/sources/builddir/xf86-video-sis-0.10.3/man'
+make[1]: Leaving directory `/sources/builddir/xf86-video-sis-0.10.3/man'
+make[1]: Entering directory `/sources/builddir/xf86-video-sis-0.10.3'
+make[2]: Entering directory `/sources/builddir/xf86-video-sis-0.10.3'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xf86-video-sis-0.10.3'
+make[1]: Leaving directory `/sources/builddir/xf86-video-sis-0.10.3'

@@ -1,0 +1,77 @@
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc option to accept ISO C99... -std=gnu99
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for mkstemp... yes
+checking for asprintf... yes
+checking whether MAXHOSTNAMELEN is declared... no
+checking for header that defines MAXHOSTNAMELEN... sys/param.h
+checking for cpp... /usr/bin/cpp
+checking for XRDB... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating man/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/xrdb-1.0.9'
+Making all in man
+make[2]: Entering directory `/sources/builddir/xrdb-1.0.9/man'
+  GEN    xrdb.1
+make[2]: Leaving directory `/sources/builddir/xrdb-1.0.9/man'
+make[2]: Entering directory `/sources/builddir/xrdb-1.0.9'
+  CC     xrdb.o
+  CCLD   xrdb
+make[2]: Leaving directory `/sources/builddir/xrdb-1.0.9'
+make[1]: Leaving directory `/sources/builddir/xrdb-1.0.9'
+Making install in man
+make[1]: Entering directory `/sources/builddir/xrdb-1.0.9/man'
+make[2]: Entering directory `/sources/builddir/xrdb-1.0.9/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+ /usr/bin/install -c -m 644 xrdb.1 '/sources/buildmgr/pkgroot/usr/share/man/man1'
+make[2]: Leaving directory `/sources/builddir/xrdb-1.0.9/man'
+make[1]: Leaving directory `/sources/builddir/xrdb-1.0.9/man'
+make[1]: Entering directory `/sources/builddir/xrdb-1.0.9'
+make[2]: Entering directory `/sources/builddir/xrdb-1.0.9'
+make[2]: Nothing to be done for `install-data-am'.
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+  /usr/bin/install -c xrdb '/sources/buildmgr/pkgroot/usr/bin'
+make[2]: Leaving directory `/sources/builddir/xrdb-1.0.9'
+make[1]: Leaving directory `/sources/builddir/xrdb-1.0.9'

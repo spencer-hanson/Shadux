@@ -12,3 +12,11 @@ dhcpcd.sh download tarfile link
 Bootscripts builds certian packages to run on boot
 
 scripts/install.conf has building info
+iptables doesn't work
+no internet interfaces
+other users bash prompt look bad
+set hostname somewhere to Shadux
+charset data/locale thingy
+add apt-get/dpkg support
+add lspci and lsusb
+

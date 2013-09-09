@@ -1,5 +1,5 @@
 #!/bin/bash
-bootscripts="www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-20130710.tar.bz2"
+bootscripts="www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-20130908.tar.bz2"
 dhcpcd="http://roy.marples.name/downloads/dhcpcd/dhcpcd-6.0.5.tar.bz2"
 gpm="www.nico.schottelius.org/software/gpm/archives/gpm-1.20.7.tar.bz2"
 links="links.twibright.com/download/links-2.7.tar.bz2"

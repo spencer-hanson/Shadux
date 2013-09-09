@@ -1,0 +1,305 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for gcc option to accept ISO C99... -std=gnu99
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking whether to build functional specifications... yes
+checking for xmlto... no
+configure: WARNING: xmlto not found - documentation targets will be skipped
+checking for fop... no
+configure: WARNING: fop not found - documentation targets will be skipped
+checking for X.Org SGML entities >= 1.5... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc -std=gnu99... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc -std=gnu99 object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -std=gnu99 supports -fno-rtti -fno-exceptions... no
+checking for gcc -std=gnu99 option to produce PIC... -fPIC -DPIC
+checking if gcc -std=gnu99 PIC flag -fPIC -DPIC works... yes
+checking if gcc -std=gnu99 static flag -static works... yes
+checking if gcc -std=gnu99 supports -c -o file.o... yes
+checking if gcc -std=gnu99 supports -c -o file.o... (cached) yes
+checking whether the gcc -std=gnu99 linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gawk... (cached) gawk
+checking whether gcc -std=gnu99 and cc understand -c and -o together... yes
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for XAW6... yes
+checking for XAW7... yes
+checking for ANSI C header files... (cached) yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking widec.h usability... no
+checking widec.h presence... no
+checking for widec.h... no
+checking for iswalnum... yes
+checking for getpagesize... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating man/Makefile
+config.status: creating specs/Makefile
+config.status: creating src/Makefile
+config.status: creating xaw6.pc
+config.status: creating xaw7.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing libtool_hack commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/libXaw-1.0.9'
+Making all in include
+make[2]: Entering directory `/sources/builddir/libXaw-1.0.9/include'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/sources/builddir/libXaw-1.0.9/include'
+Making all in src
+make[2]: Entering directory `/sources/builddir/libXaw-1.0.9/src'
+  CC     libXaw6_la-Actions.lo
+  CC     libXaw6_la-AllWidgets.lo
+  CC     libXaw6_la-AsciiSink.lo
+  CC     libXaw6_la-AsciiSrc.lo
+  CC     libXaw6_la-AsciiText.lo
+  CC     libXaw6_la-Box.lo
+  CC     libXaw6_la-Command.lo
+  CC     libXaw6_la-Converters.lo
+  CC     libXaw6_la-Dialog.lo
+  CC     libXaw6_la-DisplayList.lo
+  CC     libXaw6_la-Form.lo
+  CC     libXaw6_la-Grip.lo
+  CC     libXaw6_la-Label.lo
+  CC     libXaw6_la-List.lo
+  CC     libXaw6_la-MenuButton.lo
+  CC     libXaw6_la-MultiSrc.lo
+  CC     libXaw6_la-MultiSink.lo
+  CC     libXaw6_la-OS.lo
+  CC     libXaw6_la-Paned.lo
+  CC     libXaw6_la-Panner.lo
+  CC     libXaw6_la-Pixmap.lo
+  CC     libXaw6_la-Porthole.lo
+  CC     libXaw6_la-Repeater.lo
+  CC     libXaw6_la-Scrollbar.lo
+  CC     libXaw6_la-Simple.lo
+  CC     libXaw6_la-SimpleMenu.lo
+  CC     libXaw6_la-Sme.lo
+  CC     libXaw6_la-SmeBSB.lo
+  CC     libXaw6_la-SmeLine.lo
+  CC     libXaw6_la-StripChart.lo
+  CC     libXaw6_la-Text.lo
+  CC     libXaw6_la-TextSink.lo
+  CC     libXaw6_la-TextSrc.lo
+  CC     libXaw6_la-TextAction.lo
+  CC     libXaw6_la-TextPop.lo
+TextPop.c: In function 'CreateDialog':
+TextPop.c:1432:5: warning: cast from function call of type 'Widget' to non-matching type 'long int' [-Wbad-function-cast]
+  CC     libXaw6_la-TextTr.lo
+  CC     libXaw6_la-Toggle.lo
+  CC     libXaw6_la-Tree.lo
+  CC     libXaw6_la-Vendor.lo
+  CC     libXaw6_la-Viewport.lo
+  CC     libXaw6_la-XawIm.lo
+  CC     libXaw6_la-XawInit.lo
+  CC     libXaw6_la-XawI18n.lo
+  CC     libXaw7_la-Actions.lo
+Actions.c: In function 'XawParseBoolean':
+Actions.c:164:11: warning: cast from function call of type 'double' to non-matching type 'int' [-Wbad-function-cast]
+  CC     libXaw7_la-AllWidgets.lo
+  CC     libXaw7_la-AsciiSink.lo
+  CC     libXaw7_la-AsciiSrc.lo
+  CC     libXaw7_la-AsciiText.lo
+  CC     libXaw7_la-Box.lo
+  CC     libXaw7_la-Command.lo
+  CC     libXaw7_la-Converters.lo
+  CC     libXaw7_la-Dialog.lo
+  CC     libXaw7_la-DisplayList.lo
+DisplayList.c: In function 'XawCreateDisplayList':
+DisplayList.c:294:4: warning: format not a string literal and no format arguments [-Wformat-security]
+DisplayList.c: In function '_Xaw_Xlib_ArgsInitProc':
+DisplayList.c:1755:11: warning: cast from function call of type 'long int' to non-matching type 'void *' [-Wbad-function-cast]
+DisplayList.c:1900:11: warning: cast from function call of type 'long int' to non-matching type 'void *' [-Wbad-function-cast]
+DisplayList.c:1918:11: warning: cast from function call of type 'Font' to non-matching type 'void *' [-Wbad-function-cast]
+DisplayList.c:1946:15: warning: cast from function call of type 'long int' to non-matching type 'void *' [-Wbad-function-cast]
+  CC     libXaw7_la-Form.lo
+  CC     libXaw7_la-Grip.lo
+  CC     libXaw7_la-Label.lo
+  CC     libXaw7_la-List.lo
+  CC     libXaw7_la-MenuButton.lo
+  CC     libXaw7_la-MultiSrc.lo
+  CC     libXaw7_la-MultiSink.lo
+  CC     libXaw7_la-OS.lo
+  CC     libXaw7_la-Paned.lo
+  CC     libXaw7_la-Panner.lo
+  CC     libXaw7_la-Pixmap.lo
+  CC     libXaw7_la-Porthole.lo
+  CC     libXaw7_la-Repeater.lo
+  CC     libXaw7_la-Scrollbar.lo
+  CC     libXaw7_la-Simple.lo
+  CC     libXaw7_la-SimpleMenu.lo
+  CC     libXaw7_la-Sme.lo
+  CC     libXaw7_la-SmeBSB.lo
+  CC     libXaw7_la-SmeLine.lo
+  CC     libXaw7_la-StripChart.lo
+  CC     libXaw7_la-Text.lo
+  CC     libXaw7_la-TextSink.lo
+  CC     libXaw7_la-TextSrc.lo
+  CC     libXaw7_la-TextAction.lo
+  CC     libXaw7_la-TextPop.lo
+TextPop.c: In function 'CreateDialog':
+TextPop.c:1432:5: warning: cast from function call of type 'Widget' to non-matching type 'long int' [-Wbad-function-cast]
+  CC     libXaw7_la-TextTr.lo
+  CC     libXaw7_la-Toggle.lo
+  CC     libXaw7_la-Tree.lo
+  CC     libXaw7_la-Vendor.lo
+  CC     libXaw7_la-Viewport.lo
+  CC     libXaw7_la-XawIm.lo
+  CC     libXaw7_la-XawInit.lo
+  CC     libXaw7_la-XawI18n.lo
+  CC     libXaw7_la-Tip.lo
+  CCLD   libXaw6.la
+  CCLD   libXaw7.la
+make[2]: Leaving directory `/sources/builddir/libXaw-1.0.9/src'
+Making all in man
+make[2]: Entering directory `/sources/builddir/libXaw-1.0.9/man'
+  GEN    Xaw.3
+make[2]: Leaving directory `/sources/builddir/libXaw-1.0.9/man'
+Making all in specs
+make[2]: Entering directory `/sources/builddir/libXaw-1.0.9/specs'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/sources/builddir/libXaw-1.0.9/specs'
+make[2]: Entering directory `/sources/builddir/libXaw-1.0.9'
+make[2]: Leaving directory `/sources/builddir/libXaw-1.0.9'
+make[1]: Leaving directory `/sources/builddir/libXaw-1.0.9'
+Making install in include
+make[1]: Entering directory `/sources/builddir/libXaw-1.0.9/include'
+make[2]: Entering directory `/sources/builddir/libXaw-1.0.9/include'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/X11/Xaw" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/X11/Xaw"
+ /usr/bin/install -c -m 644 X11/Xaw/AllWidgets.h X11/Xaw/AsciiSink.h X11/Xaw/AsciiSinkP.h X11/Xaw/AsciiSrc.h X11/Xaw/AsciiSrcP.h X11/Xaw/AsciiText.h X11/Xaw/AsciiTextP.h X11/Xaw/Box.h X11/Xaw/BoxP.h X11/Xaw/Cardinals.h X11/Xaw/Command.h X11/Xaw/CommandP.h X11/Xaw/Dialog.h X11/Xaw/DialogP.h X11/Xaw/Form.h X11/Xaw/FormP.h X11/Xaw/Grip.h X11/Xaw/GripP.h X11/Xaw/Label.h X11/Xaw/LabelP.h X11/Xaw/List.h X11/Xaw/ListP.h X11/Xaw/MenuButton.h X11/Xaw/MenuButtoP.h X11/Xaw/MultiSrc.h X11/Xaw/MultiSrcP.h X11/Xaw/MultiSink.h X11/Xaw/MultiSinkP.h X11/Xaw/Paned.h X11/Xaw/PanedP.h X11/Xaw/Panner.h X11/Xaw/PannerP.h X11/Xaw/Porthole.h X11/Xaw/PortholeP.h X11/Xaw/Repeater.h X11/Xaw/RepeaterP.h X11/Xaw/Reports.h X11/Xaw/Scrollbar.h X11/Xaw/ScrollbarP.h X11/Xaw/Simple.h '/sources/buildmgr/pkgroot/usr/include/X11/Xaw'
+ /usr/bin/install -c -m 644 X11/Xaw/SimpleP.h X11/Xaw/SimpleMenu.h X11/Xaw/SimpleMenP.h X11/Xaw/Sme.h X11/Xaw/SmeP.h X11/Xaw/SmeBSB.h X11/Xaw/SmeBSBP.h X11/Xaw/SmeLine.h X11/Xaw/SmeLineP.h X11/Xaw/StripChart.h X11/Xaw/StripCharP.h X11/Xaw/Template.c X11/Xaw/Template.h X11/Xaw/TemplateP.h X11/Xaw/Text.h X11/Xaw/TextP.h X11/Xaw/TextSink.h X11/Xaw/TextSinkP.h X11/Xaw/TextSrc.h X11/Xaw/TextSrcP.h X11/Xaw/Tip.h X11/Xaw/TipP.h X11/Xaw/Toggle.h X11/Xaw/ToggleP.h X11/Xaw/Tree.h X11/Xaw/TreeP.h X11/Xaw/VendorEP.h X11/Xaw/Viewport.h X11/Xaw/ViewportP.h X11/Xaw/XawImP.h X11/Xaw/XawInit.h '/sources/buildmgr/pkgroot/usr/include/X11/Xaw'
+make[2]: Leaving directory `/sources/builddir/libXaw-1.0.9/include'
+make[1]: Leaving directory `/sources/builddir/libXaw-1.0.9/include'
+Making install in src
+make[1]: Entering directory `/sources/builddir/libXaw-1.0.9/src'
+make[2]: Entering directory `/sources/builddir/libXaw-1.0.9/src'
+test -z "/usr/lib" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib"
+make[2]: Nothing to be done for `install-data-am'.
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libXaw6.la libXaw7.la '/sources/buildmgr/pkgroot/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libXaw6.so.6.0.1 /sources/buildmgr/pkgroot/usr/lib/libXaw6.so.6.0.1
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libXaw6.so.6.0.1 libXaw6.so.6 || { rm -f libXaw6.so.6 && ln -s libXaw6.so.6.0.1 libXaw6.so.6; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libXaw6.so.6.0.1 libXaw6.so || { rm -f libXaw6.so && ln -s libXaw6.so.6.0.1 libXaw6.so; }; })
+libtool: install: /usr/bin/install -c .libs/libXaw6.lai /sources/buildmgr/pkgroot/usr/lib/libXaw6.la
+libtool: install: /usr/bin/install -c .libs/libXaw7.so.7.0.0 /sources/buildmgr/pkgroot/usr/lib/libXaw7.so.7.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libXaw7.so.7.0.0 libXaw7.so.7 || { rm -f libXaw7.so.7 && ln -s libXaw7.so.7.0.0 libXaw7.so.7; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libXaw7.so.7.0.0 libXaw7.so || { rm -f libXaw7.so && ln -s libXaw7.so.7.0.0 libXaw7.so; }; })
+libtool: install: /usr/bin/install -c .libs/libXaw7.lai /sources/buildmgr/pkgroot/usr/lib/libXaw7.la
+libtool: install: /usr/bin/install -c .libs/libXaw6.a /sources/buildmgr/pkgroot/usr/lib/libXaw6.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libXaw6.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libXaw6.a
+libtool: install: /usr/bin/install -c .libs/libXaw7.a /sources/buildmgr/pkgroot/usr/lib/libXaw7.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libXaw7.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libXaw7.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+make  install-exec-hook
+make[3]: Entering directory `/sources/builddir/libXaw-1.0.9/src'
+rm -f /sources/buildmgr/pkgroot/usr/lib/libXaw.so.6
+(cd /sources/buildmgr/pkgroot/usr/lib && ln -s libXaw6.so.6 libXaw.so.6)
+rm -f /sources/buildmgr/pkgroot/usr/lib/libXaw.so.7
+(cd /sources/buildmgr/pkgroot/usr/lib && ln -s libXaw7.so.7 libXaw.so.7)
+make[3]: Leaving directory `/sources/builddir/libXaw-1.0.9/src'
+make[2]: Leaving directory `/sources/builddir/libXaw-1.0.9/src'
+make[1]: Leaving directory `/sources/builddir/libXaw-1.0.9/src'
+Making install in man
+make[1]: Entering directory `/sources/builddir/libXaw-1.0.9/man'
+make[2]: Entering directory `/sources/builddir/libXaw-1.0.9/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man3" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man3"
+ /usr/bin/install -c -m 644 Xaw.3 '/sources/buildmgr/pkgroot/usr/share/man/man3'
+make[2]: Leaving directory `/sources/builddir/libXaw-1.0.9/man'
+make[1]: Leaving directory `/sources/builddir/libXaw-1.0.9/man'
+Making install in specs
+make[1]: Entering directory `/sources/builddir/libXaw-1.0.9/specs'
+make[2]: Entering directory `/sources/builddir/libXaw-1.0.9/specs'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/doc/libXaw" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/doc/libXaw"
+test -z "/usr/share/doc/libXaw" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/doc/libXaw"
+ /usr/bin/install -c -m 644 libXaw.xml AsciiSink.xml AsciiSource.xml AsciiText.xml Box.xml CH1.xml CH2.xml CH3.xml CH4.xml CH5.xml CH6.xml CH7.xml Command.xml Dialog.xml Form.xml Grip.xml Label.xml List.xml MenuButton.xml Paned.xml Panner.xml Porthole.xml Repeater.xml Scrollbar.xml SimpleMenu.xml Simple.xml SmeBSB.xml SmeLine.xml Sme.xml StripChart.xml Template_private_header_file.xml Template_public_header_file.xml Template_widget_source_file.xml Template.xml TextActions_default_translation_bindings.xml TextActions_text_widget_actions.xml TextActions.xml TextCustom.xml TextFuncs.xml TextSink.xml '/sources/buildmgr/pkgroot/usr/share/doc/libXaw'
+ /usr/bin/install -c -m 644 TextSource.xml Text.xml Toggle.xml TPage_Credits.xml Tree.xml Viewport.xml '/sources/buildmgr/pkgroot/usr/share/doc/libXaw'
+make[2]: Leaving directory `/sources/builddir/libXaw-1.0.9/specs'
+make[1]: Leaving directory `/sources/builddir/libXaw-1.0.9/specs'
+make[1]: Entering directory `/sources/builddir/libXaw-1.0.9'
+make[2]: Entering directory `/sources/builddir/libXaw-1.0.9'
+make  install-exec-hook
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/pkgconfig"
+make[3]: Entering directory `/sources/builddir/libXaw-1.0.9'
+cd /sources/buildmgr/pkgroot/usr/lib && rm -f libXaw.so && ln -s libXaw7.so libXaw.so
+make[3]: Leaving directory `/sources/builddir/libXaw-1.0.9'
+ /usr/bin/install -c -m 644 xaw6.pc xaw7.pc '/sources/buildmgr/pkgroot/usr/lib/pkgconfig'
+make[2]: Leaving directory `/sources/builddir/libXaw-1.0.9'
+make[1]: Leaving directory `/sources/builddir/libXaw-1.0.9'
+ldconfig: /usr/lib/libstdc++.so.6.0.16-gdb.py is not an ELF file - it has the wrong magic bytes at the start.
+

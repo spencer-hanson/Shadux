@@ -1,0 +1,224 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc option to accept ISO C99... -std=gnu99
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking if gcc -std=gnu99 supports -Werror=attributes... no
+checking whether to build functional specifications... yes
+checking for xmlto... no
+configure: WARNING: xmlto not found - documentation targets will be skipped
+checking for fop... no
+configure: WARNING: fop not found - documentation targets will be skipped
+checking for xsltproc... /usr/bin/xsltproc
+checking for X.Org SGML entities >= 1.7... no
+checking whether malloc(0) returns NULL... yes
+checking for XEXT... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating man/Makefile
+config.status: creating src/Makefile
+config.status: creating specs/Makefile
+config.status: creating xext.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/libXext-1.3.0'
+Making all in man
+make[2]: Entering directory `/sources/builddir/libXext-1.3.0/man'
+  GEN    XShapeQueryVersion.3
+  GEN    XShapeCombineRegion.3
+  GEN    XShapeCombineRectangles.3
+  GEN    XShapeCombineMask.3
+  GEN    XShapeQueryExtents.3
+  GEN    XShapeInputSelected.3
+  GEN    XShmQueryExtension.3
+  GEN    XShmQueryVersion.3
+  GEN    XShmDetach.3
+  GEN    XShmCreateImage.3
+  GEN    XShmGetImage.3
+  GEN    XShmCreatePixmap.3
+  GEN    XmbufQueryExtension.3
+  GEN    XmbufCreateBuffers.3
+  GEN    XmbufDisplayBuffers.3
+  GEN    XmbufGetWindowAttributes.3
+  GEN    XmbufChangeWindowAttributes.3
+  GEN    XmbufGetBufferAttributes.3
+  GEN    XmbufChangeBufferAttributes.3
+  GEN    XmbufCreateStereoWindow.3
+  GEN    XeviGetVisualInfo.3
+  GEN    DBE.3
+  GEN    DPMSCapable.3
+  GEN    DPMSDisable.3
+  GEN    DPMSEnable.3
+  GEN    DPMSForceLevel.3
+  GEN    DPMSGetTimeouts.3
+  GEN    DPMSGetVersion.3
+  GEN    DPMSInfo.3
+  GEN    DPMSQueryExtension.3
+  GEN    DPMSSetTimeouts.3
+  GEN    XShape.3
+  GEN    XShm.3
+  GEN    XcupGetReservedColormapEntries.3
+  GEN    XcupQueryVersion.3
+  GEN    XcupStoreColors.3
+  GEN    XdbeAllocateBackBufferName.3
+  GEN    XdbeBeginIdiom.3
+  GEN    XdbeDeallocateBackBufferName.3
+  GEN    XdbeEndIdiom.3
+  GEN    XdbeFreeVisualInfo.3
+  GEN    XdbeGetBackBufferAttributes.3
+  GEN    XdbeGetVisualInfo.3
+  GEN    XdbeQueryExtension.3
+  GEN    XdbeSwapBuffers.3
+  GEN    Xevi.3
+  GEN    Xmbuf.3
+make[2]: Leaving directory `/sources/builddir/libXext-1.3.0/man'
+Making all in src
+make[2]: Entering directory `/sources/builddir/libXext-1.3.0/src'
+  CC     DPMS.lo
+  CC     MITMisc.lo
+  CC     XAppgroup.lo
+  CC     XEVI.lo
+  CC     XLbx.lo
+  CC     XMultibuf.lo
+  CC     XSecurity.lo
+  CC     XShape.lo
+  CC     XShm.lo
+  CC     XSync.lo
+  CC     XTestExt1.lo
+  CC     Xcup.lo
+  CC     Xdbe.lo
+  CC     Xge.lo
+Xge.c:295:11: warning: no previous prototype for 'xgeExtRegister' [-Wmissing-prototypes]
+  CC     extutil.lo
+  CC     globals.lo
+  CCLD   libXext.la
+make[2]: Leaving directory `/sources/builddir/libXext-1.3.0/src'
+Making all in specs
+make[2]: Entering directory `/sources/builddir/libXext-1.3.0/specs'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/sources/builddir/libXext-1.3.0/specs'
+make[2]: Entering directory `/sources/builddir/libXext-1.3.0'
+make[2]: Leaving directory `/sources/builddir/libXext-1.3.0'
+make[1]: Leaving directory `/sources/builddir/libXext-1.3.0'
+Making install in man
+make[1]: Entering directory `/sources/builddir/libXext-1.3.0/man'
+make[2]: Entering directory `/sources/builddir/libXext-1.3.0/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man3" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man3"
+ /usr/bin/install -c -m 644 XShapeQueryExtension.3 XShapeQueryVersion.3 XShapeCombineRegion.3 XShapeCombineRectangles.3 XShapeCombineMask.3 XShapeCombineShape.3 XShapeOffsetShape.3 XShapeQueryExtents.3 XShapeSelectInput.3 XShapeInputSelected.3 XShapeGetRectangles.3 XShmQueryExtension.3 XShmQueryVersion.3 XShmPixmapFormat.3 XShmAttach.3 XShmDetach.3 XShmCreateImage.3 XShmPutImage.3 XShmGetImage.3 XShmCreatePixmap.3 XShmGetEventBase.3 XmbufQueryExtension.3 XmbufGetVersion.3 XmbufCreateBuffers.3 XmbufDestroyBuffers.3 XmbufDisplayBuffers.3 XmbufGetWindowAttributes.3 XmbufChangeWindowAttributes.3 XmbufGetBufferAttributes.3 XmbufChangeBufferAttributes.3 XmbufGetScreenInfo.3 XmbufCreateStereoWindow.3 XeviQueryVersion.3 XeviGetVisualInfo.3 XeviQueryExtension.3 DBE.3 DPMSCapable.3 DPMSDisable.3 DPMSEnable.3 DPMSForceLevel.3 '/sources/buildmgr/pkgroot/usr/share/man/man3'
+ /usr/bin/install -c -m 644 DPMSGetTimeouts.3 DPMSGetVersion.3 DPMSInfo.3 DPMSQueryExtension.3 DPMSSetTimeouts.3 XShape.3 XShm.3 XcupGetReservedColormapEntries.3 XcupQueryVersion.3 XcupStoreColors.3 XdbeAllocateBackBufferName.3 XdbeBeginIdiom.3 XdbeDeallocateBackBufferName.3 XdbeEndIdiom.3 XdbeFreeVisualInfo.3 XdbeGetBackBufferAttributes.3 XdbeGetVisualInfo.3 XdbeQueryExtension.3 XdbeSwapBuffers.3 Xevi.3 Xmbuf.3 '/sources/buildmgr/pkgroot/usr/share/man/man3'
+make[2]: Leaving directory `/sources/builddir/libXext-1.3.0/man'
+make[1]: Leaving directory `/sources/builddir/libXext-1.3.0/man'
+Making install in src
+make[1]: Entering directory `/sources/builddir/libXext-1.3.0/src'
+make[2]: Entering directory `/sources/builddir/libXext-1.3.0/src'
+test -z "/usr/lib" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib"
+test -z "/usr/include/X11/extensions" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/X11/extensions"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libXext.la '/sources/buildmgr/pkgroot/usr/lib'
+ /usr/bin/install -c -m 644 ../include/X11/extensions/dpms.h ../include/X11/extensions/extutil.h ../include/X11/extensions/MITMisc.h ../include/X11/extensions/multibuf.h ../include/X11/extensions/security.h ../include/X11/extensions/shape.h ../include/X11/extensions/sync.h ../include/X11/extensions/Xag.h ../include/X11/extensions/Xcup.h ../include/X11/extensions/Xdbe.h ../include/X11/extensions/XEVI.h ../include/X11/extensions/Xext.h ../include/X11/extensions/Xge.h ../include/X11/extensions/XLbx.h ../include/X11/extensions/XShm.h ../include/X11/extensions/xtestext1.h '/sources/buildmgr/pkgroot/usr/include/X11/extensions'
+test -z "" || /bin/mkdir -p "/sources/buildmgr/pkgroot"
+libtool: install: /usr/bin/install -c .libs/libXext.so.6.4.0 /sources/buildmgr/pkgroot/usr/lib/libXext.so.6.4.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libXext.so.6.4.0 libXext.so.6 || { rm -f libXext.so.6 && ln -s libXext.so.6.4.0 libXext.so.6; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libXext.so.6.4.0 libXext.so || { rm -f libXext.so && ln -s libXext.so.6.4.0 libXext.so; }; })
+libtool: install: /usr/bin/install -c .libs/libXext.lai /sources/buildmgr/pkgroot/usr/lib/libXext.la
+libtool: install: /usr/bin/install -c .libs/libXext.a /sources/buildmgr/pkgroot/usr/lib/libXext.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libXext.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libXext.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+make[2]: Leaving directory `/sources/builddir/libXext-1.3.0/src'
+make[1]: Leaving directory `/sources/builddir/libXext-1.3.0/src'
+Making install in specs
+make[1]: Entering directory `/sources/builddir/libXext-1.3.0/specs'
+make[2]: Entering directory `/sources/builddir/libXext-1.3.0/specs'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "" || /bin/mkdir -p "/sources/buildmgr/pkgroot"
+test -z "" || /bin/mkdir -p "/sources/buildmgr/pkgroot"
+test -z "" || /bin/mkdir -p "/sources/buildmgr/pkgroot"
+make[2]: Leaving directory `/sources/builddir/libXext-1.3.0/specs'
+make[1]: Leaving directory `/sources/builddir/libXext-1.3.0/specs'
+make[1]: Entering directory `/sources/builddir/libXext-1.3.0'
+make[2]: Entering directory `/sources/builddir/libXext-1.3.0'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/pkgconfig"
+ /usr/bin/install -c -m 644 xext.pc '/sources/buildmgr/pkgroot/usr/lib/pkgconfig'
+make[2]: Leaving directory `/sources/builddir/libXext-1.3.0'
+make[1]: Leaving directory `/sources/builddir/libXext-1.3.0'
+ldconfig: /usr/lib/libstdc++.so.6.0.16-gdb.py is not an ELF file - it has the wrong magic bytes at the start.
+

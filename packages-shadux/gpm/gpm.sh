@@ -25,7 +25,8 @@ if [ "$1" = "--install" ] ; then
         echo Installing gpm...
         cp data/gpm-*.tar* gpm
         cd gpm
-        cd gpm-*
+        tar xf gpm-*.tar*
+	cd gpm-*
 	./autogen.sh
 	./configure --prefix=/usr --sysconfdir=/etc
 	make
@@ -39,13 +40,13 @@ if [ "$1" = "--install" ] ; then
 	install -v -m644    doc/{FAQ,HACK_GPM,README*}        \
                     /usr/share/doc/gpm-1.20.7
 
-	cat > /etc/sysconfig/mouse << "EOF"
-	# Begin /etc/sysconfig/mouse
-	MDEVICE="/dev/input/mice"
-	PROTOCOL="imps2"
-	GPMOPTS=""
-	# End /etc/sysconfig/mouse
-	EOF
+cat > /etc/sysconfig/mouse << "EOF"
+# Begin /etc/sysconfig/mouse
+MDEVICE="/dev/input/mice"
+PROTOCOL="imps2"
+GPMOPTS=""
+# End /etc/sysconfig/mouse
+EOF
 	cd ..
         echo Finished, Cleaning up...
         rm gpm-*.tar*

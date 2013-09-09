@@ -59,137 +59,136 @@ if [ "$1" = "--install" ] ; then
 	    sed -i "s/^${FUNCTION}/# &/" /etc/login.defs
 	done
 	echo Setting up /etc/pam.d/system-account...
-	cat > /etc/pam.d/system-account << "EOF"
-	# Begin /etc/pam.d/system-account
+cat > /etc/pam.d/system-account << "EOF"
+# Begin /etc/pam.d/system-account
 
-	account   required    pam_unix.so
+account   required    pam_unix.so
 
-	# End /etc/pam.d/system-account
-	EOF
+# End /etc/pam.d/system-account
+EOF
 
 	echo Setting up /etc/pam.d/system-auth...
-	cat > /etc/pam.d/system-auth << "EOF"
-	# Begin /etc/pam.d/system-auth
+cat > /etc/pam.d/system-auth << "EOF"
+# Begin /etc/pam.d/system-auth
 
-	auth      required    pam_unix.so
+auth      required    pam_unix.so
 
-	# End /etc/pam.d/system-auth
-	EOF
+# End /etc/pam.d/system-auth
+EOF
 
 	echo Setting up /etc/pam.d/system-session...
-	cat > /etc/pam.d/system-session << "EOF"
-	# Begin /etc/pam.d/system-session
+cat > /etc/pam.d/system-session << "EOF"
+# Begin /etc/pam.d/system-session
 
-	session   required    pam_unix.so
+session   required    pam_unix.so
 
-	# End /etc/pam.d/system-session
-	EOF
+# End /etc/pam.d/system-session
+EOF
 
 	echo Setting up /etc/pam.d/system-password...
-	cat > /etc/pam.d/system-password << "EOF"
-	# Begin /etc/pam.d/system-password
+cat > /etc/pam.d/system-password << "EOF"
+# Begin /etc/pam.d/system-password
 
-	# use sha512 hash for encryption, use shadow, and try to use any previously
-	# defined authentication token (chosen password) set by any prior module
-	password  required    pam_unix.so       sha512 shadow try_first_pass
+# use sha512 hash for encryption, use shadow, and try to use any previously
+# defined authentication token (chosen password) set by any prior module
+password  required    pam_unix.so       sha512 shadow try_first_pass
 
-	# End /etc/pam.d/system-password
-	EOF
+# End /etc/pam.d/system-password
+EOF
 
 	echo Setting up /etc/pam.d/login...
-	cat > /etc/pam.d/login << "EOF"
-	# Begin /etc/pam.d/login
+cat > /etc/pam.d/login << "EOF"
+# Begin /etc/pam.d/login
 
-	# Set failure delay before next prompt to 3 seconds
-	auth      optional    pam_faildelay.so  delay=3000000
+# Set failure delay before next prompt to 3 seconds
+auth      optional    pam_faildelay.so  delay=3000000
 
-	# Check to make sure that the user is allowed to login
-	auth      requisite   pam_nologin.so
+# Check to make sure that the user is allowed to login
+auth      requisite   pam_nologin.so
 
-	# Check to make sure that root is allowed to login
-	# Disabled by default. You will need to create /etc/securetty
-	# file for this module to function. See man 5 securetty.
-	#auth      required    pam_securetty.so
+# Check to make sure that root is allowed to login
+# Disabled by default. You will need to create /etc/securetty
+# file for this module to function. See man 5 securetty.
+#auth      required    pam_securetty.so
 
-	# Additional group memberships - disabled by default
-	#auth      optional    pam_group.so
+# Additional group memberships - disabled by default
+#auth      optional    pam_group.so
 
-	# include the default auth settings
-	auth      include     system-auth
+# include the default auth settings
+auth      include     system-auth
 
-	# check access for the user
-	account   required    pam_access.so
+# check access for the user
+account   required    pam_access.so
 
-	# include the default account settings
-	account   include     system-account
+# include the default account settings
+account   include     system-account
 
-	# Set default environment variables for the user
-	session   required    pam_env.so
+# Set default environment variables for the user
+session   required    pam_env.so
 
-	# Set resource limits for the user
-	session   required    pam_limits.so
+# Set resource limits for the user
+session   required    pam_limits.so
 
-	# Display date of last login - Disabled by default
-	#session   optional    pam_lastlog.so
+# Display date of last login - Disabled by default
+#session   optional    pam_lastlog.so
 
-	# Display the message of the day - Disabled by default
-	#session   optional    pam_motd.so
+# Display the message of the day - Disabled by default
+#session   optional    pam_motd.so
 
-	# Check user's mail - Disabled by default
-	#session   optional    pam_mail.so      standard quiet
+# Check user's mail - Disabled by default
+#session   optional    pam_mail.so      standard quiet
 
-	# include the default session and password settings
-	session   include     system-session
-	password  include     system-password
+# include the default session and password settings
+session   include     system-session
+password  include     system-password
 
-	# End /etc/pam.d/login
-	EOF
+# End /etc/pam.d/login
+EOF
 	echo Setting up /etc/pam.d/passwd...
-	cat > /etc/pam.d/passwd << "EOF"
-	# Begin /etc/pam.d/passwd
+cat > /etc/pam.d/passwd << "EOF"
+# Begin /etc/pam.d/passwd
 
-	password  include     system-password
+password  include     system-password
 
-	# End /etc/pam.d/passwd
-	EOF
+# End /etc/pam.d/passwd
+EOF
 
 	echo Setting up /etc/pam.d/su...
-	cat > /etc/pam.d/su << "EOF"
-	# Begin /etc/pam.d/su
+cat > /etc/pam.d/su << "EOF"
+# Begin /etc/pam.d/su
 
-	# always allow root
-	auth      sufficient  pam_rootok.so
-	auth      include     system-auth
+# always allow root
+auth      sufficient  pam_rootok.so
+auth      include     system-auth
 
-	# include the default account settings
+# include the default account settings
 	account   include     system-account
 
-	# Set default environment variables for the service user
-	session   required    pam_env.so
+# Set default environment variables for the service user
+session   required    pam_env.so
 
-	# include system session defaults
-	session   include     system-session
-
-	# End /etc/pam.d/su
-	EOF
+# include system session defaults
+session   include     system-session
+# End /etc/pam.d/su
+EOF
 
 	echo Setting up /etc/pam.d/chage...
-	cat > /etc/pam.d/chage << "EOF"
-	#Begin /etc/pam.d/chage
+cat > /etc/pam.d/chage << "EOF"
+#Begin /etc/pam.d/chage
 
-	# always allow root
-	auth      sufficient  pam_rootok.so
+# always allow root
+auth      sufficient  pam_rootok.so
 
-	# include system defaults for auth account and session
-	auth      include     system-auth
-	account   include     system-account
-	session   include     system-session
+# include system defaults for auth account and session
+auth      include     system-auth
+account   include     system-account
+session   include     system-session
 
-	# Always permit for authentication updates
-	password  required    pam_permit.so
+# Always permit for authentication updates
+password  required    pam_permit.so
 
-	# End /etc/pam.d/chage
-	EOF
+# End /etc/pam.d/chage
+EOF
 	echo Setting up misc. files...
 
 	for PROGRAM in chfn chgpasswd chpasswd chsh groupadd groupdel \
@@ -200,20 +199,20 @@ if [ "$1" = "--install" ] ; then
 	done
 
 	echo Setting up /etc/pam.d/other...
-	cat > /etc/pam.d/other << "EOF"
-	# Begin /etc/pam.d/other
+cat > /etc/pam.d/other << "EOF"
+# Begin /etc/pam.d/other
 
-	auth        required        pam_warn.so
-	auth        required        pam_deny.so
-	account     required        pam_warn.so
-	account     required        pam_deny.so
-	password    required        pam_warn.so
-	password    required        pam_deny.so
-	session     required        pam_warn.so
-	session     required        pam_deny.so
+auth        required        pam_warn.so
+auth        required        pam_deny.so
+account     required        pam_warn.so
+account     required        pam_deny.so
+password    required        pam_warn.so
+password    required        pam_deny.so
+session     required        pam_warn.so
+session     required        pam_deny.so
 
-	# End /etc/pam.d/other
-	EOF
+# End /etc/pam.d/other
+EOF
 
 	[ -f /etc/login.access ] && mv -v /etc/login.access{,.NOUSE}
 	[ -f /etc/limits ] && mv -v /etc/limits{,.NOUSE}

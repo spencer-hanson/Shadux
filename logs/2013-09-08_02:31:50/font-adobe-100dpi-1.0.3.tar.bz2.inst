@@ -1,0 +1,2769 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... none
+checking for gcc option to accept ISO C99... -std=gnu99
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for root directory for font files... /usr/share/fonts/X11
+checking for directory for 100dpi files... ${FONTROOTDIR}/100dpi
+checking for fc-cache... /usr/bin/fc-cache
+checking for mkfontdir... /usr/bin/mkfontdir
+checking for bdftopcf... /usr/bin/bdftopcf
+checking font compression method... gzip
+checking for gzip... /bin/gzip
+checking for ucs2any... /usr/bin/ucs2any
+checking for MAPS... yes
+checking for ucs2any encoding data files... /usr/share/fonts/X11/util
+checking whether to build ISO8859-1 fonts... yes
+checking whether to build ISO8859-2 fonts... yes
+checking whether to build ISO8859-3 fonts... yes
+checking whether to build ISO8859-4 fonts... yes
+checking whether to build ISO8859-9 fonts... yes
+checking whether to build ISO8859-10 fonts... yes
+checking whether to build ISO8859-13 fonts... yes
+checking whether to build ISO8859-14 fonts... yes
+checking whether to build ISO8859-15 fonts... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: executing depfiles commands
+  GEN    courB08.pcf.gz
+  GEN    courB12.pcf.gz
+  GEN    courB14.pcf.gz
+  GEN    courB18.pcf.gz
+  GEN    courB24.pcf.gz
+  GEN    courBO08.pcf.gz
+  GEN    courBO10.pcf.gz
+  GEN    courBO12.pcf.gz
+  GEN    courBO14.pcf.gz
+  GEN    courBO18.pcf.gz
+  GEN    courBO24.pcf.gz
+  GEN    courO08.pcf.gz
+  GEN    courO10.pcf.gz
+  GEN    courO12.pcf.gz
+  GEN    courO14.pcf.gz
+  GEN    courO18.pcf.gz
+  GEN    courO24.pcf.gz
+  GEN    courR08.pcf.gz
+  GEN    courR10.pcf.gz
+  GEN    courR12.pcf.gz
+  GEN    courR14.pcf.gz
+  GEN    courR18.pcf.gz
+  GEN    courR24.pcf.gz
+  GEN    helvB08.pcf.gz
+  GEN    helvB10.pcf.gz
+  GEN    helvB12.pcf.gz
+  GEN    helvB14.pcf.gz
+  GEN    helvB18.pcf.gz
+  GEN    helvB24.pcf.gz
+  GEN    helvBO08.pcf.gz
+  GEN    helvBO10.pcf.gz
+  GEN    helvBO12.pcf.gz
+  GEN    helvBO14.pcf.gz
+  GEN    helvBO18.pcf.gz
+  GEN    helvBO24.pcf.gz
+  GEN    helvO08.pcf.gz
+  GEN    helvO10.pcf.gz
+  GEN    helvO12.pcf.gz
+  GEN    helvO14.pcf.gz
+  GEN    helvO18.pcf.gz
+  GEN    helvO24.pcf.gz
+  GEN    helvR08.pcf.gz
+  GEN    helvR10.pcf.gz
+  GEN    helvR12.pcf.gz
+  GEN    helvR14.pcf.gz
+  GEN    helvR18.pcf.gz
+  GEN    helvR24.pcf.gz
+  GEN    ncenB08.pcf.gz
+  GEN    ncenB10.pcf.gz
+  GEN    ncenB12.pcf.gz
+  GEN    ncenB14.pcf.gz
+  GEN    ncenB18.pcf.gz
+  GEN    ncenB24.pcf.gz
+  GEN    ncenBI08.pcf.gz
+  GEN    ncenBI10.pcf.gz
+  GEN    ncenBI12.pcf.gz
+  GEN    ncenBI14.pcf.gz
+  GEN    ncenBI18.pcf.gz
+  GEN    ncenBI24.pcf.gz
+  GEN    ncenI08.pcf.gz
+  GEN    ncenI10.pcf.gz
+  GEN    ncenI12.pcf.gz
+  GEN    ncenI14.pcf.gz
+  GEN    ncenI18.pcf.gz
+  GEN    ncenI24.pcf.gz
+  GEN    ncenR08.pcf.gz
+  GEN    ncenR10.pcf.gz
+  GEN    ncenR12.pcf.gz
+  GEN    ncenR14.pcf.gz
+  GEN    ncenR18.pcf.gz
+  GEN    ncenR24.pcf.gz
+  GEN    timB08.pcf.gz
+  GEN    timB12.pcf.gz
+  GEN    timB14.pcf.gz
+  GEN    timB18.pcf.gz
+  GEN    timB24.pcf.gz
+  GEN    timBI08.pcf.gz
+  GEN    timBI10.pcf.gz
+  GEN    timBI12.pcf.gz
+  GEN    timBI14.pcf.gz
+  GEN    timBI18.pcf.gz
+  GEN    timBI24.pcf.gz
+  GEN    timI08.pcf.gz
+  GEN    timI10.pcf.gz
+  GEN    timI12.pcf.gz
+  GEN    timI14.pcf.gz
+  GEN    timI18.pcf.gz
+  GEN    timI24.pcf.gz
+  GEN    timR08.pcf.gz
+  GEN    timR10.pcf.gz
+  GEN    timR12.pcf.gz
+  GEN    timR14.pcf.gz
+  GEN    timR18.pcf.gz
+  GEN    timR24.pcf.gz
+  GEN    symb08.pcf.gz
+  GEN    symb10.pcf.gz
+  GEN    symb12.pcf.gz
+  GEN    symb14.pcf.gz
+  GEN    symb18.pcf.gz
+  GEN    symb24.pcf.gz
+  GEN    courB08-ISO8859-1.bdf
+  GEN    courB10-ISO8859-1.bdf
+Writing 192 characters into file 'courB08-ISO8859-1.bdf'.
+Writing 192 characters into file 'courB10-ISO8859-1.bdf'.
+  GEN    courB12-ISO8859-1.bdf
+  GEN    courB14-ISO8859-1.bdf
+Writing 192 characters into file 'courB12-ISO8859-1.bdf'.
+  GEN    courB18-ISO8859-1.bdf
+Writing 192 characters into file 'courB14-ISO8859-1.bdf'.
+  GEN    courB24-ISO8859-1.bdf
+Writing 192 characters into file 'courB18-ISO8859-1.bdf'.
+  GEN    courBO08-ISO8859-1.bdf
+Writing 192 characters into file 'courB24-ISO8859-1.bdf'.
+Writing 192 characters into file 'courBO08-ISO8859-1.bdf'.
+  GEN    courBO10-ISO8859-1.bdf
+  GEN    courBO12-ISO8859-1.bdf
+Writing 192 characters into file 'courBO10-ISO8859-1.bdf'.
+Writing 192 characters into file 'courBO12-ISO8859-1.bdf'.
+  GEN    courBO14-ISO8859-1.bdf
+  GEN    courBO18-ISO8859-1.bdf
+Writing 192 characters into file 'courBO14-ISO8859-1.bdf'.
+  GEN    courBO24-ISO8859-1.bdf
+Writing 192 characters into file 'courBO18-ISO8859-1.bdf'.
+  GEN    courO08-ISO8859-1.bdf
+Writing 192 characters into file 'courO08-ISO8859-1.bdf'.
+  GEN    courO10-ISO8859-1.bdf
+Writing 192 characters into file 'courBO24-ISO8859-1.bdf'.
+  GEN    courO12-ISO8859-1.bdf
+Writing 192 characters into file 'courO10-ISO8859-1.bdf'.
+  GEN    courO14-ISO8859-1.bdf
+Writing 192 characters into file 'courO12-ISO8859-1.bdf'.
+  GEN    courO18-ISO8859-1.bdf
+Writing 192 characters into file 'courO14-ISO8859-1.bdf'.
+  GEN    courO24-ISO8859-1.bdf
+Writing 192 characters into file 'courO18-ISO8859-1.bdf'.
+  GEN    courR08-ISO8859-1.bdf
+Writing 192 characters into file 'courO24-ISO8859-1.bdf'.
+Writing 192 characters into file 'courR08-ISO8859-1.bdf'.
+  GEN    courR10-ISO8859-1.bdf
+  GEN    courR12-ISO8859-1.bdf
+Writing 192 characters into file 'courR10-ISO8859-1.bdf'.
+Writing 192 characters into file 'courR12-ISO8859-1.bdf'.
+  GEN    courR14-ISO8859-1.bdf
+  GEN    courR18-ISO8859-1.bdf
+Writing 192 characters into file 'courR14-ISO8859-1.bdf'.
+Writing 192 characters into file 'courR18-ISO8859-1.bdf'.
+  GEN    courR24-ISO8859-1.bdf
+  GEN    helvB08-ISO8859-1.bdf
+Writing 192 characters into file 'helvB08-ISO8859-1.bdf'.
+  GEN    helvB10-ISO8859-1.bdf
+Writing 192 characters into file 'courR24-ISO8859-1.bdf'.
+  GEN    helvB12-ISO8859-1.bdf
+Writing 192 characters into file 'helvB10-ISO8859-1.bdf'.
+  GEN    helvB14-ISO8859-1.bdf
+Writing 192 characters into file 'helvB12-ISO8859-1.bdf'.
+  GEN    helvB18-ISO8859-1.bdf
+Writing 192 characters into file 'helvB14-ISO8859-1.bdf'.
+  GEN    helvB24-ISO8859-1.bdf
+Writing 192 characters into file 'helvB18-ISO8859-1.bdf'.
+  GEN    helvBO08-ISO8859-1.bdf
+Writing 192 characters into file 'helvBO08-ISO8859-1.bdf'.
+Writing 192 characters into file 'helvB24-ISO8859-1.bdf'.
+  GEN    helvBO10-ISO8859-1.bdf
+  GEN    helvBO12-ISO8859-1.bdf
+Writing 192 characters into file 'helvBO10-ISO8859-1.bdf'.
+Writing 192 characters into file 'helvBO12-ISO8859-1.bdf'.
+  GEN    helvBO14-ISO8859-1.bdf
+  GEN    helvBO18-ISO8859-1.bdf
+Writing 192 characters into file 'helvBO14-ISO8859-1.bdf'.
+  GEN    helvBO24-ISO8859-1.bdf
+Writing 192 characters into file 'helvBO18-ISO8859-1.bdf'.
+  GEN    helvO08-ISO8859-1.bdf
+Writing 192 characters into file 'helvO08-ISO8859-1.bdf'.
+  GEN    helvO10-ISO8859-1.bdf
+Writing 192 characters into file 'helvBO24-ISO8859-1.bdf'.
+  GEN    helvO12-ISO8859-1.bdf
+Writing 192 characters into file 'helvO10-ISO8859-1.bdf'.
+  GEN    helvO14-ISO8859-1.bdf
+Writing 192 characters into file 'helvO12-ISO8859-1.bdf'.
+  GEN    helvO18-ISO8859-1.bdf
+Writing 192 characters into file 'helvO14-ISO8859-1.bdf'.
+  GEN    helvO24-ISO8859-1.bdf
+Writing 192 characters into file 'helvO18-ISO8859-1.bdf'.
+  GEN    helvR08-ISO8859-1.bdf
+Writing 192 characters into file 'helvR08-ISO8859-1.bdf'.
+Writing 192 characters into file 'helvO24-ISO8859-1.bdf'.
+  GEN    helvR10-ISO8859-1.bdf
+  GEN    helvR12-ISO8859-1.bdf
+Writing 192 characters into file 'helvR10-ISO8859-1.bdf'.
+Writing 192 characters into file 'helvR12-ISO8859-1.bdf'.
+  GEN    helvR14-ISO8859-1.bdf
+  GEN    helvR18-ISO8859-1.bdf
+Writing 192 characters into file 'helvR14-ISO8859-1.bdf'.
+  GEN    helvR24-ISO8859-1.bdf
+Writing 192 characters into file 'helvR18-ISO8859-1.bdf'.
+  GEN    ncenB08-ISO8859-1.bdf
+Writing 192 characters into file 'ncenB08-ISO8859-1.bdf'.
+  GEN    ncenB10-ISO8859-1.bdf
+Writing 192 characters into file 'helvR24-ISO8859-1.bdf'.
+  GEN    ncenB12-ISO8859-1.bdf
+Writing 192 characters into file 'ncenB10-ISO8859-1.bdf'.
+  GEN    ncenB14-ISO8859-1.bdf
+Writing 192 characters into file 'ncenB12-ISO8859-1.bdf'.
+  GEN    ncenB18-ISO8859-1.bdf
+Writing 192 characters into file 'ncenB14-ISO8859-1.bdf'.
+  GEN    ncenB24-ISO8859-1.bdf
+Writing 192 characters into file 'ncenB18-ISO8859-1.bdf'.
+  GEN    ncenBI08-ISO8859-1.bdf
+Writing 192 characters into file 'ncenBI08-ISO8859-1.bdf'.
+  GEN    ncenBI10-ISO8859-1.bdf
+Writing 192 characters into file 'ncenB24-ISO8859-1.bdf'.
+  GEN    ncenBI12-ISO8859-1.bdf
+Writing 192 characters into file 'ncenBI10-ISO8859-1.bdf'.
+  GEN    ncenBI14-ISO8859-1.bdf
+Writing 192 characters into file 'ncenBI12-ISO8859-1.bdf'.
+  GEN    ncenBI18-ISO8859-1.bdf
+Writing 192 characters into file 'ncenBI14-ISO8859-1.bdf'.
+  GEN    ncenBI24-ISO8859-1.bdf
+Writing 192 characters into file 'ncenBI18-ISO8859-1.bdf'.
+  GEN    ncenI08-ISO8859-1.bdf
+Writing 192 characters into file 'ncenI08-ISO8859-1.bdf'.
+  GEN    ncenI10-ISO8859-1.bdf
+Writing 192 characters into file 'ncenBI24-ISO8859-1.bdf'.
+  GEN    ncenI12-ISO8859-1.bdf
+Writing 192 characters into file 'ncenI10-ISO8859-1.bdf'.
+  GEN    ncenI14-ISO8859-1.bdf
+Writing 192 characters into file 'ncenI12-ISO8859-1.bdf'.
+  GEN    ncenI18-ISO8859-1.bdf
+Writing 192 characters into file 'ncenI14-ISO8859-1.bdf'.
+  GEN    ncenI24-ISO8859-1.bdf
+Writing 192 characters into file 'ncenI18-ISO8859-1.bdf'.
+  GEN    ncenR08-ISO8859-1.bdf
+Writing 192 characters into file 'ncenR08-ISO8859-1.bdf'.
+  GEN    ncenR10-ISO8859-1.bdf
+Writing 192 characters into file 'ncenI24-ISO8859-1.bdf'.
+  GEN    ncenR12-ISO8859-1.bdf
+Writing 192 characters into file 'ncenR10-ISO8859-1.bdf'.
+  GEN    ncenR14-ISO8859-1.bdf
+Writing 192 characters into file 'ncenR12-ISO8859-1.bdf'.
+  GEN    ncenR18-ISO8859-1.bdf
+Writing 192 characters into file 'ncenR14-ISO8859-1.bdf'.
+  GEN    ncenR24-ISO8859-1.bdf
+Writing 192 characters into file 'ncenR18-ISO8859-1.bdf'.
+  GEN    timB08-ISO8859-1.bdf
+Writing 192 characters into file 'timB08-ISO8859-1.bdf'.
+  GEN    timB10-ISO8859-1.bdf
+Writing 192 characters into file 'ncenR24-ISO8859-1.bdf'.
+  GEN    timB12-ISO8859-1.bdf
+Writing 192 characters into file 'timB10-ISO8859-1.bdf'.
+  GEN    timB14-ISO8859-1.bdf
+Writing 192 characters into file 'timB12-ISO8859-1.bdf'.
+  GEN    timB18-ISO8859-1.bdf
+Writing 192 characters into file 'timB14-ISO8859-1.bdf'.
+  GEN    timB24-ISO8859-1.bdf
+Writing 192 characters into file 'timB18-ISO8859-1.bdf'.
+  GEN    timBI08-ISO8859-1.bdf
+Writing 192 characters into file 'timBI08-ISO8859-1.bdf'.
+  GEN    timBI10-ISO8859-1.bdf
+Writing 192 characters into file 'timB24-ISO8859-1.bdf'.
+  GEN    timBI12-ISO8859-1.bdf
+Writing 192 characters into file 'timBI10-ISO8859-1.bdf'.
+  GEN    timBI14-ISO8859-1.bdf
+Writing 192 characters into file 'timBI12-ISO8859-1.bdf'.
+  GEN    timBI18-ISO8859-1.bdf
+Writing 192 characters into file 'timBI14-ISO8859-1.bdf'.
+  GEN    timBI24-ISO8859-1.bdf
+Writing 192 characters into file 'timBI18-ISO8859-1.bdf'.
+  GEN    timI08-ISO8859-1.bdf
+Writing 192 characters into file 'timI08-ISO8859-1.bdf'.
+Writing 192 characters into file 'timBI24-ISO8859-1.bdf'.
+  GEN    timI10-ISO8859-1.bdf
+  GEN    timI12-ISO8859-1.bdf
+Writing 192 characters into file 'timI10-ISO8859-1.bdf'.
+Writing 192 characters into file 'timI12-ISO8859-1.bdf'.
+  GEN    timI14-ISO8859-1.bdf
+  GEN    timI18-ISO8859-1.bdf
+Writing 192 characters into file 'timI14-ISO8859-1.bdf'.
+  GEN    timI24-ISO8859-1.bdf
+Writing 192 characters into file 'timI18-ISO8859-1.bdf'.
+  GEN    timR08-ISO8859-1.bdf
+Writing 192 characters into file 'timR08-ISO8859-1.bdf'.
+Writing 192 characters into file 'timI24-ISO8859-1.bdf'.
+  GEN    timR10-ISO8859-1.bdf
+  GEN    timR12-ISO8859-1.bdf
+Writing 192 characters into file 'timR10-ISO8859-1.bdf'.
+  GEN    timR14-ISO8859-1.bdf
+Writing 192 characters into file 'timR12-ISO8859-1.bdf'.
+  GEN    timR18-ISO8859-1.bdf
+Writing 192 characters into file 'timR14-ISO8859-1.bdf'.
+  GEN    timR24-ISO8859-1.bdf
+Writing 192 characters into file 'timR18-ISO8859-1.bdf'.
+  GEN    courB08-ISO8859-2.bdf
+Writing 192 characters into file 'courB08-ISO8859-2.bdf'.
+  GEN    courB10-ISO8859-2.bdf
+Writing 192 characters into file 'timR24-ISO8859-1.bdf'.
+  GEN    courB12-ISO8859-2.bdf
+Writing 192 characters into file 'courB10-ISO8859-2.bdf'.
+  GEN    courB14-ISO8859-2.bdf
+Writing 192 characters into file 'courB12-ISO8859-2.bdf'.
+  GEN    courB18-ISO8859-2.bdf
+Writing 192 characters into file 'courB14-ISO8859-2.bdf'.
+  GEN    courB24-ISO8859-2.bdf
+Writing 192 characters into file 'courB18-ISO8859-2.bdf'.
+  GEN    courBO08-ISO8859-2.bdf
+Writing 192 characters into file 'courBO08-ISO8859-2.bdf'.
+Writing 192 characters into file 'courB24-ISO8859-2.bdf'.
+  GEN    courBO10-ISO8859-2.bdf
+  GEN    courBO12-ISO8859-2.bdf
+Writing 192 characters into file 'courBO10-ISO8859-2.bdf'.
+Writing 192 characters into file 'courBO12-ISO8859-2.bdf'.
+  GEN    courBO14-ISO8859-2.bdf
+  GEN    courBO18-ISO8859-2.bdf
+Writing 192 characters into file 'courBO14-ISO8859-2.bdf'.
+  GEN    courBO24-ISO8859-2.bdf
+Writing 192 characters into file 'courBO18-ISO8859-2.bdf'.
+  GEN    courO08-ISO8859-2.bdf
+Writing 192 characters into file 'courO08-ISO8859-2.bdf'.
+  GEN    courO10-ISO8859-2.bdf
+Writing 192 characters into file 'courBO24-ISO8859-2.bdf'.
+  GEN    courO12-ISO8859-2.bdf
+Writing 192 characters into file 'courO10-ISO8859-2.bdf'.
+  GEN    courO14-ISO8859-2.bdf
+Writing 192 characters into file 'courO12-ISO8859-2.bdf'.
+  GEN    courO18-ISO8859-2.bdf
+Writing 192 characters into file 'courO14-ISO8859-2.bdf'.
+  GEN    courO24-ISO8859-2.bdf
+Writing 192 characters into file 'courO18-ISO8859-2.bdf'.
+  GEN    courR08-ISO8859-2.bdf
+Writing 192 characters into file 'courO24-ISO8859-2.bdf'.
+Writing 192 characters into file 'courR08-ISO8859-2.bdf'.
+  GEN    courR10-ISO8859-2.bdf
+  GEN    courR12-ISO8859-2.bdf
+Writing 192 characters into file 'courR10-ISO8859-2.bdf'.
+Writing 192 characters into file 'courR12-ISO8859-2.bdf'.
+  GEN    courR14-ISO8859-2.bdf
+  GEN    courR18-ISO8859-2.bdf
+Writing 192 characters into file 'courR14-ISO8859-2.bdf'.
+  GEN    courR24-ISO8859-2.bdf
+Writing 192 characters into file 'courR18-ISO8859-2.bdf'.
+  GEN    helvB08-ISO8859-2.bdf
+Writing 192 characters into file 'helvB08-ISO8859-2.bdf'.
+  GEN    helvB10-ISO8859-2.bdf
+Writing 192 characters into file 'courR24-ISO8859-2.bdf'.
+  GEN    helvB12-ISO8859-2.bdf
+Writing 192 characters into file 'helvB10-ISO8859-2.bdf'.
+  GEN    helvB14-ISO8859-2.bdf
+Writing 192 characters into file 'helvB12-ISO8859-2.bdf'.
+  GEN    helvB18-ISO8859-2.bdf
+Writing 192 characters into file 'helvB14-ISO8859-2.bdf'.
+  GEN    helvB24-ISO8859-2.bdf
+Writing 192 characters into file 'helvB18-ISO8859-2.bdf'.
+  GEN    helvBO08-ISO8859-2.bdf
+Writing 192 characters into file 'helvBO08-ISO8859-2.bdf'.
+Writing 192 characters into file 'helvB24-ISO8859-2.bdf'.
+  GEN    helvBO10-ISO8859-2.bdf
+  GEN    helvBO12-ISO8859-2.bdf
+Writing 192 characters into file 'helvBO10-ISO8859-2.bdf'.
+  GEN    helvBO14-ISO8859-2.bdf
+Writing 192 characters into file 'helvBO12-ISO8859-2.bdf'.
+  GEN    helvBO18-ISO8859-2.bdf
+Writing 192 characters into file 'helvBO14-ISO8859-2.bdf'.
+  GEN    helvBO24-ISO8859-2.bdf
+Writing 192 characters into file 'helvBO18-ISO8859-2.bdf'.
+  GEN    helvO08-ISO8859-2.bdf
+Writing 192 characters into file 'helvO08-ISO8859-2.bdf'.
+  GEN    helvO10-ISO8859-2.bdf
+Writing 192 characters into file 'helvBO24-ISO8859-2.bdf'.
+  GEN    helvO12-ISO8859-2.bdf
+Writing 192 characters into file 'helvO10-ISO8859-2.bdf'.
+  GEN    helvO14-ISO8859-2.bdf
+Writing 192 characters into file 'helvO12-ISO8859-2.bdf'.
+  GEN    helvO18-ISO8859-2.bdf
+Writing 192 characters into file 'helvO14-ISO8859-2.bdf'.
+  GEN    helvO24-ISO8859-2.bdf
+Writing 192 characters into file 'helvO18-ISO8859-2.bdf'.
+  GEN    helvR08-ISO8859-2.bdf
+Writing 192 characters into file 'helvR08-ISO8859-2.bdf'.
+Writing 192 characters into file 'helvO24-ISO8859-2.bdf'.
+  GEN    helvR10-ISO8859-2.bdf
+  GEN    helvR12-ISO8859-2.bdf
+Writing 192 characters into file 'helvR10-ISO8859-2.bdf'.
+  GEN    helvR14-ISO8859-2.bdf
+Writing 192 characters into file 'helvR12-ISO8859-2.bdf'.
+  GEN    helvR18-ISO8859-2.bdf
+Writing 192 characters into file 'helvR14-ISO8859-2.bdf'.
+  GEN    helvR24-ISO8859-2.bdf
+Writing 192 characters into file 'helvR18-ISO8859-2.bdf'.
+  GEN    ncenB08-ISO8859-2.bdf
+Writing 192 characters into file 'ncenB08-ISO8859-2.bdf'.
+  GEN    ncenB10-ISO8859-2.bdf
+Writing 192 characters into file 'helvR24-ISO8859-2.bdf'.
+  GEN    ncenB12-ISO8859-2.bdf
+Writing 192 characters into file 'ncenB10-ISO8859-2.bdf'.
+  GEN    ncenB14-ISO8859-2.bdf
+Writing 192 characters into file 'ncenB12-ISO8859-2.bdf'.
+  GEN    ncenB18-ISO8859-2.bdf
+Writing 192 characters into file 'ncenB14-ISO8859-2.bdf'.
+  GEN    ncenB24-ISO8859-2.bdf
+Writing 192 characters into file 'ncenB18-ISO8859-2.bdf'.
+  GEN    ncenBI08-ISO8859-2.bdf
+Writing 192 characters into file 'ncenBI08-ISO8859-2.bdf'.
+  GEN    ncenBI10-ISO8859-2.bdf
+Writing 192 characters into file 'ncenB24-ISO8859-2.bdf'.
+  GEN    ncenBI12-ISO8859-2.bdf
+Writing 192 characters into file 'ncenBI10-ISO8859-2.bdf'.
+  GEN    ncenBI14-ISO8859-2.bdf
+Writing 192 characters into file 'ncenBI12-ISO8859-2.bdf'.
+  GEN    ncenBI18-ISO8859-2.bdf
+Writing 192 characters into file 'ncenBI14-ISO8859-2.bdf'.
+  GEN    ncenBI24-ISO8859-2.bdf
+Writing 192 characters into file 'ncenBI18-ISO8859-2.bdf'.
+  GEN    ncenI08-ISO8859-2.bdf
+Writing 192 characters into file 'ncenI08-ISO8859-2.bdf'.
+Writing 192 characters into file 'ncenBI24-ISO8859-2.bdf'.
+  GEN    ncenI10-ISO8859-2.bdf
+  GEN    ncenI12-ISO8859-2.bdf
+Writing 192 characters into file 'ncenI10-ISO8859-2.bdf'.
+  GEN    ncenI14-ISO8859-2.bdf
+Writing 192 characters into file 'ncenI12-ISO8859-2.bdf'.
+  GEN    ncenI18-ISO8859-2.bdf
+Writing 192 characters into file 'ncenI14-ISO8859-2.bdf'.
+  GEN    ncenI24-ISO8859-2.bdf
+Writing 192 characters into file 'ncenI18-ISO8859-2.bdf'.
+  GEN    ncenR08-ISO8859-2.bdf
+Writing 192 characters into file 'ncenR08-ISO8859-2.bdf'.
+  GEN    ncenR10-ISO8859-2.bdf
+Writing 192 characters into file 'ncenI24-ISO8859-2.bdf'.
+  GEN    ncenR12-ISO8859-2.bdf
+Writing 192 characters into file 'ncenR10-ISO8859-2.bdf'.
+  GEN    ncenR14-ISO8859-2.bdf
+Writing 192 characters into file 'ncenR12-ISO8859-2.bdf'.
+  GEN    ncenR18-ISO8859-2.bdf
+Writing 192 characters into file 'ncenR14-ISO8859-2.bdf'.
+  GEN    ncenR24-ISO8859-2.bdf
+Writing 192 characters into file 'ncenR18-ISO8859-2.bdf'.
+  GEN    timB08-ISO8859-2.bdf
+Writing 192 characters into file 'timB08-ISO8859-2.bdf'.
+  GEN    timB10-ISO8859-2.bdf
+Writing 192 characters into file 'ncenR24-ISO8859-2.bdf'.
+  GEN    timB12-ISO8859-2.bdf
+Writing 192 characters into file 'timB10-ISO8859-2.bdf'.
+  GEN    timB14-ISO8859-2.bdf
+Writing 192 characters into file 'timB12-ISO8859-2.bdf'.
+  GEN    timB18-ISO8859-2.bdf
+Writing 192 characters into file 'timB14-ISO8859-2.bdf'.
+  GEN    timB24-ISO8859-2.bdf
+Writing 192 characters into file 'timB18-ISO8859-2.bdf'.
+  GEN    timBI08-ISO8859-2.bdf
+Writing 192 characters into file 'timBI08-ISO8859-2.bdf'.
+Writing 192 characters into file 'timB24-ISO8859-2.bdf'.
+  GEN    timBI10-ISO8859-2.bdf
+  GEN    timBI12-ISO8859-2.bdf
+Writing 192 characters into file 'timBI10-ISO8859-2.bdf'.
+Writing 192 characters into file 'timBI12-ISO8859-2.bdf'.
+  GEN    timBI14-ISO8859-2.bdf
+  GEN    timBI18-ISO8859-2.bdf
+Writing 192 characters into file 'timBI14-ISO8859-2.bdf'.
+  GEN    timBI24-ISO8859-2.bdf
+Writing 192 characters into file 'timBI18-ISO8859-2.bdf'.
+  GEN    timI08-ISO8859-2.bdf
+Writing 192 characters into file 'timI08-ISO8859-2.bdf'.
+  GEN    timI10-ISO8859-2.bdf
+Writing 192 characters into file 'timBI24-ISO8859-2.bdf'.
+  GEN    timI12-ISO8859-2.bdf
+Writing 192 characters into file 'timI10-ISO8859-2.bdf'.
+  GEN    timI14-ISO8859-2.bdf
+Writing 192 characters into file 'timI12-ISO8859-2.bdf'.
+  GEN    timI18-ISO8859-2.bdf
+Writing 192 characters into file 'timI14-ISO8859-2.bdf'.
+  GEN    timI24-ISO8859-2.bdf
+Writing 192 characters into file 'timI18-ISO8859-2.bdf'.
+  GEN    timR08-ISO8859-2.bdf
+Writing 192 characters into file 'timI24-ISO8859-2.bdf'.
+Writing 192 characters into file 'timR08-ISO8859-2.bdf'.
+  GEN    timR10-ISO8859-2.bdf
+  GEN    timR12-ISO8859-2.bdf
+Writing 192 characters into file 'timR10-ISO8859-2.bdf'.
+Writing 192 characters into file 'timR12-ISO8859-2.bdf'.
+  GEN    timR14-ISO8859-2.bdf
+  GEN    timR18-ISO8859-2.bdf
+Writing 192 characters into file 'timR14-ISO8859-2.bdf'.
+  GEN    timR24-ISO8859-2.bdf
+Writing 192 characters into file 'timR18-ISO8859-2.bdf'.
+  GEN    courB08-ISO8859-3.bdf
+Writing 185 characters into file 'courB08-ISO8859-3.bdf'.
+  GEN    courB10-ISO8859-3.bdf
+Writing 192 characters into file 'timR24-ISO8859-2.bdf'.
+  GEN    courB12-ISO8859-3.bdf
+Writing 185 characters into file 'courB10-ISO8859-3.bdf'.
+  GEN    courB14-ISO8859-3.bdf
+Writing 185 characters into file 'courB12-ISO8859-3.bdf'.
+  GEN    courB18-ISO8859-3.bdf
+Writing 185 characters into file 'courB14-ISO8859-3.bdf'.
+  GEN    courB24-ISO8859-3.bdf
+Writing 185 characters into file 'courB18-ISO8859-3.bdf'.
+  GEN    courBO08-ISO8859-3.bdf
+Writing 185 characters into file 'courBO08-ISO8859-3.bdf'.
+Writing 185 characters into file 'courB24-ISO8859-3.bdf'.
+  GEN    courBO10-ISO8859-3.bdf
+  GEN    courBO12-ISO8859-3.bdf
+Writing 185 characters into file 'courBO10-ISO8859-3.bdf'.
+Writing 185 characters into file 'courBO12-ISO8859-3.bdf'.
+  GEN    courBO14-ISO8859-3.bdf
+  GEN    courBO18-ISO8859-3.bdf
+Writing 185 characters into file 'courBO14-ISO8859-3.bdf'.
+  GEN    courBO24-ISO8859-3.bdf
+Writing 185 characters into file 'courBO18-ISO8859-3.bdf'.
+  GEN    courO08-ISO8859-3.bdf
+Writing 185 characters into file 'courO08-ISO8859-3.bdf'.
+  GEN    courO10-ISO8859-3.bdf
+Writing 185 characters into file 'courBO24-ISO8859-3.bdf'.
+  GEN    courO12-ISO8859-3.bdf
+Writing 185 characters into file 'courO10-ISO8859-3.bdf'.
+  GEN    courO14-ISO8859-3.bdf
+Writing 185 characters into file 'courO12-ISO8859-3.bdf'.
+  GEN    courO18-ISO8859-3.bdf
+Writing 185 characters into file 'courO14-ISO8859-3.bdf'.
+  GEN    courO24-ISO8859-3.bdf
+Writing 185 characters into file 'courO18-ISO8859-3.bdf'.
+  GEN    courR08-ISO8859-3.bdf
+Writing 185 characters into file 'courO24-ISO8859-3.bdf'.
+Writing 185 characters into file 'courR08-ISO8859-3.bdf'.
+  GEN    courR10-ISO8859-3.bdf
+  GEN    courR12-ISO8859-3.bdf
+Writing 185 characters into file 'courR10-ISO8859-3.bdf'.
+Writing 185 characters into file 'courR12-ISO8859-3.bdf'.
+  GEN    courR14-ISO8859-3.bdf
+  GEN    courR18-ISO8859-3.bdf
+Writing 185 characters into file 'courR14-ISO8859-3.bdf'.
+Writing 185 characters into file 'courR18-ISO8859-3.bdf'.
+  GEN    courR24-ISO8859-3.bdf
+  GEN    helvB08-ISO8859-3.bdf
+Writing 185 characters into file 'helvB08-ISO8859-3.bdf'.
+  GEN    helvB10-ISO8859-3.bdf
+Writing 185 characters into file 'courR24-ISO8859-3.bdf'.
+  GEN    helvB12-ISO8859-3.bdf
+Writing 185 characters into file 'helvB10-ISO8859-3.bdf'.
+  GEN    helvB14-ISO8859-3.bdf
+Writing 185 characters into file 'helvB12-ISO8859-3.bdf'.
+  GEN    helvB18-ISO8859-3.bdf
+Writing 185 characters into file 'helvB14-ISO8859-3.bdf'.
+  GEN    helvB24-ISO8859-3.bdf
+Writing 185 characters into file 'helvB18-ISO8859-3.bdf'.
+  GEN    helvBO08-ISO8859-3.bdf
+Writing 185 characters into file 'helvBO08-ISO8859-3.bdf'.
+Writing 185 characters into file 'helvB24-ISO8859-3.bdf'.
+  GEN    helvBO12-ISO8859-3.bdf
+Writing 185 characters into file 'helvBO10-ISO8859-3.bdf'.
+Writing 185 characters into file 'helvBO12-ISO8859-3.bdf'.
+  GEN    helvBO14-ISO8859-3.bdf
+  GEN    helvBO18-ISO8859-3.bdf
+Writing 185 characters into file 'helvBO14-ISO8859-3.bdf'.
+  GEN    helvBO24-ISO8859-3.bdf
+Writing 185 characters into file 'helvBO18-ISO8859-3.bdf'.
+  GEN    helvO08-ISO8859-3.bdf
+Writing 185 characters into file 'helvO08-ISO8859-3.bdf'.
+  GEN    helvO10-ISO8859-3.bdf
+Writing 185 characters into file 'helvBO24-ISO8859-3.bdf'.
+  GEN    helvO12-ISO8859-3.bdf
+Writing 185 characters into file 'helvO10-ISO8859-3.bdf'.
+  GEN    helvO14-ISO8859-3.bdf
+Writing 185 characters into file 'helvO12-ISO8859-3.bdf'.
+  GEN    helvO18-ISO8859-3.bdf
+Writing 185 characters into file 'helvO14-ISO8859-3.bdf'.
+  GEN    helvO24-ISO8859-3.bdf
+Writing 185 characters into file 'helvO18-ISO8859-3.bdf'.
+  GEN    helvR08-ISO8859-3.bdf
+Writing 185 characters into file 'helvO24-ISO8859-3.bdf'.
+Writing 185 characters into file 'helvR08-ISO8859-3.bdf'.
+  GEN    helvR10-ISO8859-3.bdf
+  GEN    helvR12-ISO8859-3.bdf
+Writing 185 characters into file 'helvR10-ISO8859-3.bdf'.
+Writing 185 characters into file 'helvR12-ISO8859-3.bdf'.
+  GEN    helvR14-ISO8859-3.bdf
+  GEN    helvR18-ISO8859-3.bdf
+Writing 185 characters into file 'helvR14-ISO8859-3.bdf'.
+  GEN    helvR24-ISO8859-3.bdf
+Writing 185 characters into file 'helvR18-ISO8859-3.bdf'.
+  GEN    ncenB08-ISO8859-3.bdf
+Writing 185 characters into file 'ncenB08-ISO8859-3.bdf'.
+  GEN    ncenB10-ISO8859-3.bdf
+Writing 185 characters into file 'helvR24-ISO8859-3.bdf'.
+  GEN    ncenB12-ISO8859-3.bdf
+Writing 185 characters into file 'ncenB10-ISO8859-3.bdf'.
+  GEN    ncenB14-ISO8859-3.bdf
+Writing 185 characters into file 'ncenB12-ISO8859-3.bdf'.
+  GEN    ncenB18-ISO8859-3.bdf
+Writing 185 characters into file 'ncenB14-ISO8859-3.bdf'.
+  GEN    ncenB24-ISO8859-3.bdf
+Writing 185 characters into file 'ncenB18-ISO8859-3.bdf'.
+  GEN    ncenBI08-ISO8859-3.bdf
+Writing 185 characters into file 'ncenBI08-ISO8859-3.bdf'.
+Writing 185 characters into file 'ncenB24-ISO8859-3.bdf'.
+  GEN    ncenBI10-ISO8859-3.bdf
+  GEN    ncenBI12-ISO8859-3.bdf
+Writing 185 characters into file 'ncenBI10-ISO8859-3.bdf'.
+  GEN    ncenBI14-ISO8859-3.bdf
+Writing 185 characters into file 'ncenBI12-ISO8859-3.bdf'.
+  GEN    ncenBI18-ISO8859-3.bdf
+Writing 185 characters into file 'ncenBI14-ISO8859-3.bdf'.
+  GEN    ncenBI24-ISO8859-3.bdf
+Writing 185 characters into file 'ncenBI18-ISO8859-3.bdf'.
+  GEN    ncenI08-ISO8859-3.bdf
+Writing 185 characters into file 'ncenI08-ISO8859-3.bdf'.
+  GEN    ncenI10-ISO8859-3.bdf
+Writing 185 characters into file 'ncenBI24-ISO8859-3.bdf'.
+  GEN    ncenI12-ISO8859-3.bdf
+Writing 185 characters into file 'ncenI10-ISO8859-3.bdf'.
+  GEN    ncenI14-ISO8859-3.bdf
+Writing 185 characters into file 'ncenI12-ISO8859-3.bdf'.
+  GEN    ncenI18-ISO8859-3.bdf
+Writing 185 characters into file 'ncenI14-ISO8859-3.bdf'.
+  GEN    ncenI24-ISO8859-3.bdf
+Writing 185 characters into file 'ncenI18-ISO8859-3.bdf'.
+  GEN    ncenR08-ISO8859-3.bdf
+Writing 185 characters into file 'ncenR08-ISO8859-3.bdf'.
+Writing 185 characters into file 'ncenI24-ISO8859-3.bdf'.
+  GEN    ncenR10-ISO8859-3.bdf
+  GEN    ncenR12-ISO8859-3.bdf
+Writing 185 characters into file 'ncenR10-ISO8859-3.bdf'.
+  GEN    ncenR14-ISO8859-3.bdf
+Writing 185 characters into file 'ncenR12-ISO8859-3.bdf'.
+  GEN    ncenR18-ISO8859-3.bdf
+Writing 185 characters into file 'ncenR14-ISO8859-3.bdf'.
+  GEN    ncenR24-ISO8859-3.bdf
+Writing 185 characters into file 'ncenR18-ISO8859-3.bdf'.
+  GEN    timB08-ISO8859-3.bdf
+Writing 185 characters into file 'timB08-ISO8859-3.bdf'.
+  GEN    timB10-ISO8859-3.bdf
+Writing 185 characters into file 'ncenR24-ISO8859-3.bdf'.
+  GEN    timB12-ISO8859-3.bdf
+Writing 185 characters into file 'timB10-ISO8859-3.bdf'.
+  GEN    timB14-ISO8859-3.bdf
+Writing 185 characters into file 'timB12-ISO8859-3.bdf'.
+  GEN    timB18-ISO8859-3.bdf
+Writing 185 characters into file 'timB14-ISO8859-3.bdf'.
+  GEN    timB24-ISO8859-3.bdf
+Writing 185 characters into file 'timB18-ISO8859-3.bdf'.
+  GEN    timBI08-ISO8859-3.bdf
+Writing 185 characters into file 'timBI08-ISO8859-3.bdf'.
+Writing 185 characters into file 'timB24-ISO8859-3.bdf'.
+  GEN    timBI10-ISO8859-3.bdf
+  GEN    timBI12-ISO8859-3.bdf
+Writing 185 characters into file 'timBI10-ISO8859-3.bdf'.
+  GEN    timBI14-ISO8859-3.bdf
+Writing 185 characters into file 'timBI12-ISO8859-3.bdf'.
+  GEN    timBI18-ISO8859-3.bdf
+Writing 185 characters into file 'timBI14-ISO8859-3.bdf'.
+  GEN    timBI24-ISO8859-3.bdf
+Writing 185 characters into file 'timBI18-ISO8859-3.bdf'.
+  GEN    timI08-ISO8859-3.bdf
+Writing 185 characters into file 'timI08-ISO8859-3.bdf'.
+Writing 185 characters into file 'timBI24-ISO8859-3.bdf'.
+  GEN    timI10-ISO8859-3.bdf
+  GEN    timI12-ISO8859-3.bdf
+Writing 185 characters into file 'timI10-ISO8859-3.bdf'.
+  GEN    timI14-ISO8859-3.bdf
+Writing 185 characters into file 'timI12-ISO8859-3.bdf'.
+  GEN    timI18-ISO8859-3.bdf
+Writing 185 characters into file 'timI14-ISO8859-3.bdf'.
+  GEN    timI24-ISO8859-3.bdf
+Writing 185 characters into file 'timI18-ISO8859-3.bdf'.
+  GEN    timR08-ISO8859-3.bdf
+Writing 185 characters into file 'timR08-ISO8859-3.bdf'.
+Writing 185 characters into file 'timI24-ISO8859-3.bdf'.
+  GEN    timR10-ISO8859-3.bdf
+  GEN    timR12-ISO8859-3.bdf
+Writing 185 characters into file 'timR10-ISO8859-3.bdf'.
+Writing 185 characters into file 'timR12-ISO8859-3.bdf'.
+  GEN    timR14-ISO8859-3.bdf
+  GEN    timR18-ISO8859-3.bdf
+Writing 185 characters into file 'timR14-ISO8859-3.bdf'.
+  GEN    timR24-ISO8859-3.bdf
+Writing 185 characters into file 'timR18-ISO8859-3.bdf'.
+  GEN    courB08-ISO8859-4.bdf
+Writing 192 characters into file 'courB08-ISO8859-4.bdf'.
+  GEN    courB10-ISO8859-4.bdf
+Writing 185 characters into file 'timR24-ISO8859-3.bdf'.
+  GEN    courB12-ISO8859-4.bdf
+Writing 192 characters into file 'courB10-ISO8859-4.bdf'.
+  GEN    courB14-ISO8859-4.bdf
+Writing 192 characters into file 'courB12-ISO8859-4.bdf'.
+  GEN    courB18-ISO8859-4.bdf
+Writing 192 characters into file 'courB14-ISO8859-4.bdf'.
+  GEN    courB24-ISO8859-4.bdf
+Writing 192 characters into file 'courB18-ISO8859-4.bdf'.
+  GEN    courBO08-ISO8859-4.bdf
+Writing 192 characters into file 'courBO08-ISO8859-4.bdf'.
+  GEN    courBO10-ISO8859-4.bdf
+Writing 192 characters into file 'courB24-ISO8859-4.bdf'.
+  GEN    courBO12-ISO8859-4.bdf
+Writing 192 characters into file 'courBO10-ISO8859-4.bdf'.
+  GEN    courBO14-ISO8859-4.bdf
+Writing 192 characters into file 'courBO12-ISO8859-4.bdf'.
+  GEN    courBO18-ISO8859-4.bdf
+Writing 192 characters into file 'courBO14-ISO8859-4.bdf'.
+  GEN    courBO24-ISO8859-4.bdf
+Writing 192 characters into file 'courBO18-ISO8859-4.bdf'.
+  GEN    courO08-ISO8859-4.bdf
+Writing 192 characters into file 'courO08-ISO8859-4.bdf'.
+Writing 192 characters into file 'courBO24-ISO8859-4.bdf'.
+  GEN    courO10-ISO8859-4.bdf
+  GEN    courO12-ISO8859-4.bdf
+Writing 192 characters into file 'courO10-ISO8859-4.bdf'.
+Writing 192 characters into file 'courO12-ISO8859-4.bdf'.
+  GEN    courO14-ISO8859-4.bdf
+  GEN    courO18-ISO8859-4.bdf
+Writing 192 characters into file 'courO14-ISO8859-4.bdf'.
+  GEN    courO24-ISO8859-4.bdf
+Writing 192 characters into file 'courO18-ISO8859-4.bdf'.
+  GEN    courR08-ISO8859-4.bdf
+Writing 192 characters into file 'courR08-ISO8859-4.bdf'.
+Writing 192 characters into file 'courO24-ISO8859-4.bdf'.
+  GEN    courR10-ISO8859-4.bdf
+  GEN    courR12-ISO8859-4.bdf
+Writing 192 characters into file 'courR10-ISO8859-4.bdf'.
+Writing 192 characters into file 'courR12-ISO8859-4.bdf'.
+  GEN    courR14-ISO8859-4.bdf
+  GEN    courR18-ISO8859-4.bdf
+Writing 192 characters into file 'courR14-ISO8859-4.bdf'.
+  GEN    courR24-ISO8859-4.bdf
+Writing 192 characters into file 'courR18-ISO8859-4.bdf'.
+  GEN    helvB08-ISO8859-4.bdf
+Writing 192 characters into file 'helvB08-ISO8859-4.bdf'.
+  GEN    helvB10-ISO8859-4.bdf
+Writing 192 characters into file 'courR24-ISO8859-4.bdf'.
+  GEN    helvB12-ISO8859-4.bdf
+Writing 192 characters into file 'helvB10-ISO8859-4.bdf'.
+  GEN    helvB14-ISO8859-4.bdf
+Writing 192 characters into file 'helvB12-ISO8859-4.bdf'.
+  GEN    helvB18-ISO8859-4.bdf
+Writing 192 characters into file 'helvB14-ISO8859-4.bdf'.
+  GEN    helvB24-ISO8859-4.bdf
+Writing 192 characters into file 'helvB18-ISO8859-4.bdf'.
+  GEN    helvBO08-ISO8859-4.bdf
+Writing 192 characters into file 'helvBO08-ISO8859-4.bdf'.
+  GEN    helvBO10-ISO8859-4.bdf
+Writing 192 characters into file 'helvB24-ISO8859-4.bdf'.
+  GEN    helvBO12-ISO8859-4.bdf
+Writing 192 characters into file 'helvBO10-ISO8859-4.bdf'.
+  GEN    helvBO14-ISO8859-4.bdf
+Writing 192 characters into file 'helvBO12-ISO8859-4.bdf'.
+  GEN    helvBO18-ISO8859-4.bdf
+Writing 192 characters into file 'helvBO14-ISO8859-4.bdf'.
+  GEN    helvBO24-ISO8859-4.bdf
+Writing 192 characters into file 'helvBO18-ISO8859-4.bdf'.
+  GEN    helvO08-ISO8859-4.bdf
+Writing 192 characters into file 'helvO08-ISO8859-4.bdf'.
+Writing 192 characters into file 'helvBO24-ISO8859-4.bdf'.
+  GEN    helvO10-ISO8859-4.bdf
+  GEN    helvO12-ISO8859-4.bdf
+Writing 192 characters into file 'helvO10-ISO8859-4.bdf'.
+  GEN    helvO14-ISO8859-4.bdf
+Writing 192 characters into file 'helvO12-ISO8859-4.bdf'.
+  GEN    helvO18-ISO8859-4.bdf
+Writing 192 characters into file 'helvO14-ISO8859-4.bdf'.
+  GEN    helvO24-ISO8859-4.bdf
+Writing 192 characters into file 'helvO18-ISO8859-4.bdf'.
+  GEN    helvR08-ISO8859-4.bdf
+Writing 192 characters into file 'helvR08-ISO8859-4.bdf'.
+  GEN    helvR10-ISO8859-4.bdf
+Writing 192 characters into file 'helvO24-ISO8859-4.bdf'.
+  GEN    helvR12-ISO8859-4.bdf
+Writing 192 characters into file 'helvR10-ISO8859-4.bdf'.
+  GEN    helvR14-ISO8859-4.bdf
+Writing 192 characters into file 'helvR12-ISO8859-4.bdf'.
+  GEN    helvR18-ISO8859-4.bdf
+Writing 192 characters into file 'helvR14-ISO8859-4.bdf'.
+  GEN    helvR24-ISO8859-4.bdf
+Writing 192 characters into file 'helvR18-ISO8859-4.bdf'.
+  GEN    ncenB08-ISO8859-4.bdf
+Writing 192 characters into file 'ncenB08-ISO8859-4.bdf'.
+Writing 192 characters into file 'helvR24-ISO8859-4.bdf'.
+  GEN    ncenB10-ISO8859-4.bdf
+  GEN    ncenB12-ISO8859-4.bdf
+Writing 192 characters into file 'ncenB10-ISO8859-4.bdf'.
+Writing 192 characters into file 'ncenB12-ISO8859-4.bdf'.
+  GEN    ncenB14-ISO8859-4.bdf
+  GEN    ncenB18-ISO8859-4.bdf
+Writing 192 characters into file 'ncenB14-ISO8859-4.bdf'.
+  GEN    ncenB24-ISO8859-4.bdf
+Writing 192 characters into file 'ncenB18-ISO8859-4.bdf'.
+  GEN    ncenBI08-ISO8859-4.bdf
+Writing 192 characters into file 'ncenBI08-ISO8859-4.bdf'.
+  GEN    ncenBI10-ISO8859-4.bdf
+Writing 192 characters into file 'ncenB24-ISO8859-4.bdf'.
+  GEN    ncenBI12-ISO8859-4.bdf
+Writing 192 characters into file 'ncenBI10-ISO8859-4.bdf'.
+  GEN    ncenBI14-ISO8859-4.bdf
+Writing 192 characters into file 'ncenBI12-ISO8859-4.bdf'.
+  GEN    ncenBI18-ISO8859-4.bdf
+Writing 192 characters into file 'ncenBI14-ISO8859-4.bdf'.
+  GEN    ncenBI24-ISO8859-4.bdf
+Writing 192 characters into file 'ncenBI18-ISO8859-4.bdf'.
+  GEN    ncenI08-ISO8859-4.bdf
+Writing 192 characters into file 'ncenI08-ISO8859-4.bdf'.
+Writing 192 characters into file 'ncenBI24-ISO8859-4.bdf'.
+  GEN    ncenI10-ISO8859-4.bdf
+  GEN    ncenI12-ISO8859-4.bdf
+Writing 192 characters into file 'ncenI10-ISO8859-4.bdf'.
+Writing 192 characters into file 'ncenI12-ISO8859-4.bdf'.
+  GEN    ncenI14-ISO8859-4.bdf
+  GEN    ncenI18-ISO8859-4.bdf
+Writing 192 characters into file 'ncenI14-ISO8859-4.bdf'.
+  GEN    ncenI24-ISO8859-4.bdf
+Writing 192 characters into file 'ncenI18-ISO8859-4.bdf'.
+  GEN    ncenR08-ISO8859-4.bdf
+Writing 192 characters into file 'ncenR08-ISO8859-4.bdf'.
+  GEN    ncenR10-ISO8859-4.bdf
+Writing 192 characters into file 'ncenI24-ISO8859-4.bdf'.
+  GEN    ncenR12-ISO8859-4.bdf
+Writing 192 characters into file 'ncenR10-ISO8859-4.bdf'.
+  GEN    ncenR14-ISO8859-4.bdf
+Writing 192 characters into file 'ncenR12-ISO8859-4.bdf'.
+  GEN    ncenR18-ISO8859-4.bdf
+Writing 192 characters into file 'ncenR14-ISO8859-4.bdf'.
+  GEN    ncenR24-ISO8859-4.bdf
+Writing 192 characters into file 'ncenR18-ISO8859-4.bdf'.
+  GEN    timB08-ISO8859-4.bdf
+Writing 192 characters into file 'timB08-ISO8859-4.bdf'.
+Writing 192 characters into file 'ncenR24-ISO8859-4.bdf'.
+  GEN    timB10-ISO8859-4.bdf
+  GEN    timB12-ISO8859-4.bdf
+Writing 192 characters into file 'timB10-ISO8859-4.bdf'.
+Writing 192 characters into file 'timB12-ISO8859-4.bdf'.
+  GEN    timB14-ISO8859-4.bdf
+  GEN    timB18-ISO8859-4.bdf
+Writing 192 characters into file 'timB14-ISO8859-4.bdf'.
+  GEN    timB24-ISO8859-4.bdf
+Writing 192 characters into file 'timB18-ISO8859-4.bdf'.
+  GEN    timBI08-ISO8859-4.bdf
+Writing 192 characters into file 'timBI08-ISO8859-4.bdf'.
+  GEN    timBI10-ISO8859-4.bdf
+Writing 192 characters into file 'timB24-ISO8859-4.bdf'.
+  GEN    timBI12-ISO8859-4.bdf
+Writing 192 characters into file 'timBI10-ISO8859-4.bdf'.
+  GEN    timBI14-ISO8859-4.bdf
+Writing 192 characters into file 'timBI12-ISO8859-4.bdf'.
+  GEN    timBI18-ISO8859-4.bdf
+Writing 192 characters into file 'timBI14-ISO8859-4.bdf'.
+  GEN    timBI24-ISO8859-4.bdf
+Writing 192 characters into file 'timBI18-ISO8859-4.bdf'.
+  GEN    timI08-ISO8859-4.bdf
+Writing 192 characters into file 'timBI24-ISO8859-4.bdf'.
+Writing 192 characters into file 'timI08-ISO8859-4.bdf'.
+  GEN    timI10-ISO8859-4.bdf
+  GEN    timI12-ISO8859-4.bdf
+Writing 192 characters into file 'timI10-ISO8859-4.bdf'.
+Writing 192 characters into file 'timI12-ISO8859-4.bdf'.
+  GEN    timI14-ISO8859-4.bdf
+  GEN    timI18-ISO8859-4.bdf
+Writing 192 characters into file 'timI14-ISO8859-4.bdf'.
+  GEN    timI24-ISO8859-4.bdf
+Writing 192 characters into file 'timI18-ISO8859-4.bdf'.
+  GEN    timR08-ISO8859-4.bdf
+Writing 192 characters into file 'timR08-ISO8859-4.bdf'.
+  GEN    timR10-ISO8859-4.bdf
+Writing 192 characters into file 'timI24-ISO8859-4.bdf'.
+  GEN    timR12-ISO8859-4.bdf
+Writing 192 characters into file 'timR10-ISO8859-4.bdf'.
+  GEN    timR14-ISO8859-4.bdf
+Writing 192 characters into file 'timR12-ISO8859-4.bdf'.
+  GEN    timR18-ISO8859-4.bdf
+Writing 192 characters into file 'timR14-ISO8859-4.bdf'.
+  GEN    timR24-ISO8859-4.bdf
+Writing 192 characters into file 'timR18-ISO8859-4.bdf'.
+  GEN    courB08-ISO8859-9.bdf
+Writing 192 characters into file 'courB08-ISO8859-9.bdf'.
+  GEN    courB10-ISO8859-9.bdf
+Writing 192 characters into file 'timR24-ISO8859-4.bdf'.
+  GEN    courB12-ISO8859-9.bdf
+Writing 192 characters into file 'courB10-ISO8859-9.bdf'.
+  GEN    courB14-ISO8859-9.bdf
+Writing 192 characters into file 'courB12-ISO8859-9.bdf'.
+  GEN    courB18-ISO8859-9.bdf
+Writing 192 characters into file 'courB14-ISO8859-9.bdf'.
+  GEN    courB24-ISO8859-9.bdf
+Writing 192 characters into file 'courB18-ISO8859-9.bdf'.
+  GEN    courBO08-ISO8859-9.bdf
+Writing 192 characters into file 'courBO08-ISO8859-9.bdf'.
+Writing 192 characters into file 'courB24-ISO8859-9.bdf'.
+  GEN    courBO10-ISO8859-9.bdf
+  GEN    courBO12-ISO8859-9.bdf
+Writing 192 characters into file 'courBO10-ISO8859-9.bdf'.
+  GEN    courBO14-ISO8859-9.bdf
+Writing 192 characters into file 'courBO12-ISO8859-9.bdf'.
+  GEN    courBO18-ISO8859-9.bdf
+Writing 192 characters into file 'courBO14-ISO8859-9.bdf'.
+  GEN    courBO24-ISO8859-9.bdf
+Writing 192 characters into file 'courBO18-ISO8859-9.bdf'.
+  GEN    courO08-ISO8859-9.bdf
+Writing 192 characters into file 'courO08-ISO8859-9.bdf'.
+  GEN    courO10-ISO8859-9.bdf
+Writing 192 characters into file 'courBO24-ISO8859-9.bdf'.
+  GEN    courO12-ISO8859-9.bdf
+Writing 192 characters into file 'courO10-ISO8859-9.bdf'.
+  GEN    courO14-ISO8859-9.bdf
+Writing 192 characters into file 'courO12-ISO8859-9.bdf'.
+  GEN    courO18-ISO8859-9.bdf
+Writing 192 characters into file 'courO14-ISO8859-9.bdf'.
+  GEN    courO24-ISO8859-9.bdf
+Writing 192 characters into file 'courO18-ISO8859-9.bdf'.
+  GEN    courR08-ISO8859-9.bdf
+Writing 192 characters into file 'courR08-ISO8859-9.bdf'.
+Writing 192 characters into file 'courO24-ISO8859-9.bdf'.
+  GEN    courR10-ISO8859-9.bdf
+  GEN    courR12-ISO8859-9.bdf
+Writing 192 characters into file 'courR10-ISO8859-9.bdf'.
+Writing 192 characters into file 'courR12-ISO8859-9.bdf'.
+  GEN    courR14-ISO8859-9.bdf
+  GEN    courR18-ISO8859-9.bdf
+Writing 192 characters into file 'courR14-ISO8859-9.bdf'.
+Writing 192 characters into file 'courR18-ISO8859-9.bdf'.
+  GEN    courR24-ISO8859-9.bdf
+  GEN    helvB08-ISO8859-9.bdf
+Writing 192 characters into file 'helvB08-ISO8859-9.bdf'.
+  GEN    helvB10-ISO8859-9.bdf
+Writing 192 characters into file 'courR24-ISO8859-9.bdf'.
+  GEN    helvB12-ISO8859-9.bdf
+Writing 192 characters into file 'helvB10-ISO8859-9.bdf'.
+  GEN    helvB14-ISO8859-9.bdf
+Writing 192 characters into file 'helvB12-ISO8859-9.bdf'.
+  GEN    helvB18-ISO8859-9.bdf
+Writing 192 characters into file 'helvB14-ISO8859-9.bdf'.
+  GEN    helvB24-ISO8859-9.bdf
+Writing 192 characters into file 'helvB18-ISO8859-9.bdf'.
+  GEN    helvBO08-ISO8859-9.bdf
+Writing 192 characters into file 'helvBO08-ISO8859-9.bdf'.
+Writing 192 characters into file 'helvB24-ISO8859-9.bdf'.
+  GEN    helvBO10-ISO8859-9.bdf
+  GEN    helvBO12-ISO8859-9.bdf
+Writing 192 characters into file 'helvBO10-ISO8859-9.bdf'.
+Writing 192 characters into file 'helvBO12-ISO8859-9.bdf'.
+  GEN    helvBO14-ISO8859-9.bdf
+  GEN    helvBO18-ISO8859-9.bdf
+Writing 192 characters into file 'helvBO14-ISO8859-9.bdf'.
+  GEN    helvBO24-ISO8859-9.bdf
+Writing 192 characters into file 'helvBO18-ISO8859-9.bdf'.
+  GEN    helvO08-ISO8859-9.bdf
+Writing 192 characters into file 'helvO08-ISO8859-9.bdf'.
+  GEN    helvO10-ISO8859-9.bdf
+Writing 192 characters into file 'helvBO24-ISO8859-9.bdf'.
+  GEN    helvO12-ISO8859-9.bdf
+Writing 192 characters into file 'helvO10-ISO8859-9.bdf'.
+  GEN    helvO14-ISO8859-9.bdf
+Writing 192 characters into file 'helvO12-ISO8859-9.bdf'.
+  GEN    helvO18-ISO8859-9.bdf
+Writing 192 characters into file 'helvO14-ISO8859-9.bdf'.
+  GEN    helvO24-ISO8859-9.bdf
+Writing 192 characters into file 'helvO18-ISO8859-9.bdf'.
+  GEN    helvR08-ISO8859-9.bdf
+Writing 192 characters into file 'helvO24-ISO8859-9.bdf'.
+Writing 192 characters into file 'helvR08-ISO8859-9.bdf'.
+  GEN    helvR10-ISO8859-9.bdf
+Writing 192 characters into file 'helvR10-ISO8859-9.bdf'.
+Writing 192 characters into file 'helvR12-ISO8859-9.bdf'.
+  GEN    helvR14-ISO8859-9.bdf
+  GEN    helvR18-ISO8859-9.bdf
+Writing 192 characters into file 'helvR14-ISO8859-9.bdf'.
+Writing 192 characters into file 'helvR18-ISO8859-9.bdf'.
+  GEN    helvR24-ISO8859-9.bdf
+  GEN    ncenB08-ISO8859-9.bdf
+Writing 192 characters into file 'ncenB08-ISO8859-9.bdf'.
+  GEN    ncenB10-ISO8859-9.bdf
+Writing 192 characters into file 'helvR24-ISO8859-9.bdf'.
+  GEN    ncenB12-ISO8859-9.bdf
+Writing 192 characters into file 'ncenB10-ISO8859-9.bdf'.
+  GEN    ncenB14-ISO8859-9.bdf
+Writing 192 characters into file 'ncenB12-ISO8859-9.bdf'.
+  GEN    ncenB18-ISO8859-9.bdf
+Writing 192 characters into file 'ncenB14-ISO8859-9.bdf'.
+  GEN    ncenB24-ISO8859-9.bdf
+Writing 192 characters into file 'ncenB18-ISO8859-9.bdf'.
+  GEN    ncenBI08-ISO8859-9.bdf
+Writing 192 characters into file 'ncenBI08-ISO8859-9.bdf'.
+Writing 192 characters into file 'ncenB24-ISO8859-9.bdf'.
+  GEN    ncenBI10-ISO8859-9.bdf
+  GEN    ncenBI12-ISO8859-9.bdf
+Writing 192 characters into file 'ncenBI10-ISO8859-9.bdf'.
+Writing 192 characters into file 'ncenBI12-ISO8859-9.bdf'.
+  GEN    ncenBI14-ISO8859-9.bdf
+  GEN    ncenBI18-ISO8859-9.bdf
+Writing 192 characters into file 'ncenBI14-ISO8859-9.bdf'.
+Writing 192 characters into file 'ncenBI18-ISO8859-9.bdf'.
+  GEN    ncenBI24-ISO8859-9.bdf
+  GEN    ncenI08-ISO8859-9.bdf
+Writing 192 characters into file 'ncenI08-ISO8859-9.bdf'.
+  GEN    ncenI10-ISO8859-9.bdf
+Writing 192 characters into file 'ncenBI24-ISO8859-9.bdf'.
+  GEN    ncenI12-ISO8859-9.bdf
+Writing 192 characters into file 'ncenI10-ISO8859-9.bdf'.
+  GEN    ncenI14-ISO8859-9.bdf
+Writing 192 characters into file 'ncenI12-ISO8859-9.bdf'.
+  GEN    ncenI18-ISO8859-9.bdf
+Writing 192 characters into file 'ncenI14-ISO8859-9.bdf'.
+  GEN    ncenI24-ISO8859-9.bdf
+Writing 192 characters into file 'ncenI18-ISO8859-9.bdf'.
+  GEN    ncenR08-ISO8859-9.bdf
+Writing 192 characters into file 'ncenI24-ISO8859-9.bdf'.
+Writing 192 characters into file 'ncenR08-ISO8859-9.bdf'.
+  GEN    ncenR10-ISO8859-9.bdf
+  GEN    ncenR12-ISO8859-9.bdf
+Writing 192 characters into file 'ncenR10-ISO8859-9.bdf'.
+Writing 192 characters into file 'ncenR12-ISO8859-9.bdf'.
+  GEN    ncenR14-ISO8859-9.bdf
+  GEN    ncenR18-ISO8859-9.bdf
+Writing 192 characters into file 'ncenR14-ISO8859-9.bdf'.
+Writing 192 characters into file 'ncenR18-ISO8859-9.bdf'.
+  GEN    ncenR24-ISO8859-9.bdf
+  GEN    timB08-ISO8859-9.bdf
+Writing 192 characters into file 'timB08-ISO8859-9.bdf'.
+  GEN    timB10-ISO8859-9.bdf
+Writing 192 characters into file 'ncenR24-ISO8859-9.bdf'.
+Writing 192 characters into file 'timB10-ISO8859-9.bdf'.
+  GEN    timB12-ISO8859-9.bdf
+  GEN    timB14-ISO8859-9.bdf
+Writing 192 characters into file 'timB12-ISO8859-9.bdf'.
+  GEN    timB18-ISO8859-9.bdf
+Writing 192 characters into file 'timB14-ISO8859-9.bdf'.
+  GEN    timB24-ISO8859-9.bdf
+Writing 192 characters into file 'timB18-ISO8859-9.bdf'.
+  GEN    timBI08-ISO8859-9.bdf
+Writing 192 characters into file 'timB24-ISO8859-9.bdf'.
+Writing 192 characters into file 'timBI08-ISO8859-9.bdf'.
+  GEN    timBI10-ISO8859-9.bdf
+  GEN    timBI12-ISO8859-9.bdf
+Writing 192 characters into file 'timBI10-ISO8859-9.bdf'.
+Writing 192 characters into file 'timBI12-ISO8859-9.bdf'.
+  GEN    timBI14-ISO8859-9.bdf
+  GEN    timBI18-ISO8859-9.bdf
+Writing 192 characters into file 'timBI14-ISO8859-9.bdf'.
+  GEN    timBI24-ISO8859-9.bdf
+Writing 192 characters into file 'timBI18-ISO8859-9.bdf'.
+  GEN    timI08-ISO8859-9.bdf
+Writing 192 characters into file 'timI08-ISO8859-9.bdf'.
+  GEN    timI10-ISO8859-9.bdf
+Writing 192 characters into file 'timBI24-ISO8859-9.bdf'.
+  GEN    timI12-ISO8859-9.bdf
+Writing 192 characters into file 'timI10-ISO8859-9.bdf'.
+  GEN    timI14-ISO8859-9.bdf
+Writing 192 characters into file 'timI12-ISO8859-9.bdf'.
+  GEN    timI18-ISO8859-9.bdf
+Writing 192 characters into file 'timI14-ISO8859-9.bdf'.
+  GEN    timI24-ISO8859-9.bdf
+Writing 192 characters into file 'timI18-ISO8859-9.bdf'.
+  GEN    timR08-ISO8859-9.bdf
+Writing 192 characters into file 'timR08-ISO8859-9.bdf'.
+Writing 192 characters into file 'timI24-ISO8859-9.bdf'.
+  GEN    timR10-ISO8859-9.bdf
+  GEN    timR12-ISO8859-9.bdf
+Writing 192 characters into file 'timR10-ISO8859-9.bdf'.
+Writing 192 characters into file 'timR12-ISO8859-9.bdf'.
+  GEN    timR14-ISO8859-9.bdf
+  GEN    timR18-ISO8859-9.bdf
+Writing 192 characters into file 'timR14-ISO8859-9.bdf'.
+  GEN    timR24-ISO8859-9.bdf
+Writing 192 characters into file 'timR18-ISO8859-9.bdf'.
+  GEN    courB08-ISO8859-10.bdf
+Writing 192 characters into file 'courB08-ISO8859-10.bdf'.
+  GEN    courB10-ISO8859-10.bdf
+Writing 192 characters into file 'timR24-ISO8859-9.bdf'.
+  GEN    courB12-ISO8859-10.bdf
+Writing 192 characters into file 'courB10-ISO8859-10.bdf'.
+  GEN    courB14-ISO8859-10.bdf
+Writing 192 characters into file 'courB12-ISO8859-10.bdf'.
+  GEN    courB18-ISO8859-10.bdf
+Writing 192 characters into file 'courB14-ISO8859-10.bdf'.
+  GEN    courB24-ISO8859-10.bdf
+Writing 192 characters into file 'courB18-ISO8859-10.bdf'.
+  GEN    courBO08-ISO8859-10.bdf
+Writing 192 characters into file 'courBO08-ISO8859-10.bdf'.
+Writing 192 characters into file 'courB24-ISO8859-10.bdf'.
+  GEN    courBO10-ISO8859-10.bdf
+  GEN    courBO12-ISO8859-10.bdf
+Writing 192 characters into file 'courBO10-ISO8859-10.bdf'.
+Writing 192 characters into file 'courBO12-ISO8859-10.bdf'.
+  GEN    courBO14-ISO8859-10.bdf
+  GEN    courBO18-ISO8859-10.bdf
+Writing 192 characters into file 'courBO14-ISO8859-10.bdf'.
+Writing 192 characters into file 'courBO18-ISO8859-10.bdf'.
+  GEN    courBO24-ISO8859-10.bdf
+  GEN    courO08-ISO8859-10.bdf
+Writing 192 characters into file 'courO08-ISO8859-10.bdf'.
+  GEN    courO10-ISO8859-10.bdf
+Writing 192 characters into file 'courBO24-ISO8859-10.bdf'.
+  GEN    courO12-ISO8859-10.bdf
+Writing 192 characters into file 'courO10-ISO8859-10.bdf'.
+  GEN    courO14-ISO8859-10.bdf
+Writing 192 characters into file 'courO12-ISO8859-10.bdf'.
+  GEN    courO18-ISO8859-10.bdf
+Writing 192 characters into file 'courO14-ISO8859-10.bdf'.
+  GEN    courO24-ISO8859-10.bdf
+Writing 192 characters into file 'courO18-ISO8859-10.bdf'.
+  GEN    courR08-ISO8859-10.bdf
+Writing 192 characters into file 'courO24-ISO8859-10.bdf'.
+Writing 192 characters into file 'courR08-ISO8859-10.bdf'.
+  GEN    courR10-ISO8859-10.bdf
+  GEN    courR12-ISO8859-10.bdf
+Writing 192 characters into file 'courR10-ISO8859-10.bdf'.
+  GEN    courR14-ISO8859-10.bdf
+Writing 192 characters into file 'courR12-ISO8859-10.bdf'.
+  GEN    courR18-ISO8859-10.bdf
+Writing 192 characters into file 'courR14-ISO8859-10.bdf'.
+  GEN    courR24-ISO8859-10.bdf
+Writing 192 characters into file 'courR18-ISO8859-10.bdf'.
+  GEN    helvB08-ISO8859-10.bdf
+Writing 192 characters into file 'helvB08-ISO8859-10.bdf'.
+  GEN    helvB10-ISO8859-10.bdf
+Writing 192 characters into file 'courR24-ISO8859-10.bdf'.
+  GEN    helvB12-ISO8859-10.bdf
+Writing 192 characters into file 'helvB10-ISO8859-10.bdf'.
+  GEN    helvB14-ISO8859-10.bdf
+Writing 192 characters into file 'helvB12-ISO8859-10.bdf'.
+  GEN    helvB18-ISO8859-10.bdf
+Writing 192 characters into file 'helvB14-ISO8859-10.bdf'.
+  GEN    helvB24-ISO8859-10.bdf
+Writing 192 characters into file 'helvB18-ISO8859-10.bdf'.
+  GEN    helvBO08-ISO8859-10.bdf
+Writing 192 characters into file 'helvBO08-ISO8859-10.bdf'.
+  GEN    helvBO10-ISO8859-10.bdf
+Writing 192 characters into file 'helvB24-ISO8859-10.bdf'.
+  GEN    helvBO12-ISO8859-10.bdf
+Writing 192 characters into file 'helvBO10-ISO8859-10.bdf'.
+  GEN    helvBO14-ISO8859-10.bdf
+Writing 192 characters into file 'helvBO12-ISO8859-10.bdf'.
+  GEN    helvBO18-ISO8859-10.bdf
+Writing 192 characters into file 'helvBO14-ISO8859-10.bdf'.
+  GEN    helvBO24-ISO8859-10.bdf
+Writing 192 characters into file 'helvBO18-ISO8859-10.bdf'.
+  GEN    helvO08-ISO8859-10.bdf
+Writing 192 characters into file 'helvO08-ISO8859-10.bdf'.
+Writing 192 characters into file 'helvBO24-ISO8859-10.bdf'.
+  GEN    helvO10-ISO8859-10.bdf
+  GEN    helvO12-ISO8859-10.bdf
+Writing 192 characters into file 'helvO10-ISO8859-10.bdf'.
+  GEN    helvO14-ISO8859-10.bdf
+Writing 192 characters into file 'helvO12-ISO8859-10.bdf'.
+  GEN    helvO18-ISO8859-10.bdf
+Writing 192 characters into file 'helvO14-ISO8859-10.bdf'.
+  GEN    helvO24-ISO8859-10.bdf
+Writing 192 characters into file 'helvO18-ISO8859-10.bdf'.
+  GEN    helvR08-ISO8859-10.bdf
+Writing 192 characters into file 'helvR08-ISO8859-10.bdf'.
+  GEN    helvR10-ISO8859-10.bdf
+Writing 192 characters into file 'helvO24-ISO8859-10.bdf'.
+  GEN    helvR12-ISO8859-10.bdf
+Writing 192 characters into file 'helvR10-ISO8859-10.bdf'.
+  GEN    helvR14-ISO8859-10.bdf
+Writing 192 characters into file 'helvR12-ISO8859-10.bdf'.
+  GEN    helvR18-ISO8859-10.bdf
+Writing 192 characters into file 'helvR14-ISO8859-10.bdf'.
+  GEN    helvR24-ISO8859-10.bdf
+Writing 192 characters into file 'helvR18-ISO8859-10.bdf'.
+  GEN    ncenB08-ISO8859-10.bdf
+Writing 192 characters into file 'ncenB08-ISO8859-10.bdf'.
+Writing 192 characters into file 'helvR24-ISO8859-10.bdf'.
+  GEN    ncenB10-ISO8859-10.bdf
+  GEN    ncenB12-ISO8859-10.bdf
+Writing 192 characters into file 'ncenB10-ISO8859-10.bdf'.
+  GEN    ncenB14-ISO8859-10.bdf
+Writing 192 characters into file 'ncenB12-ISO8859-10.bdf'.
+  GEN    ncenB18-ISO8859-10.bdf
+Writing 192 characters into file 'ncenB14-ISO8859-10.bdf'.
+  GEN    ncenB24-ISO8859-10.bdf
+Writing 192 characters into file 'ncenB18-ISO8859-10.bdf'.
+  GEN    ncenBI08-ISO8859-10.bdf
+Writing 192 characters into file 'ncenBI08-ISO8859-10.bdf'.
+  GEN    ncenBI10-ISO8859-10.bdf
+Writing 192 characters into file 'ncenB24-ISO8859-10.bdf'.
+  GEN    ncenBI12-ISO8859-10.bdf
+Writing 192 characters into file 'ncenBI10-ISO8859-10.bdf'.
+  GEN    ncenBI14-ISO8859-10.bdf
+Writing 192 characters into file 'ncenBI12-ISO8859-10.bdf'.
+  GEN    ncenBI18-ISO8859-10.bdf
+Writing 192 characters into file 'ncenBI14-ISO8859-10.bdf'.
+  GEN    ncenBI24-ISO8859-10.bdf
+Writing 192 characters into file 'ncenBI18-ISO8859-10.bdf'.
+  GEN    ncenI08-ISO8859-10.bdf
+Writing 192 characters into file 'ncenI08-ISO8859-10.bdf'.
+  GEN    ncenI10-ISO8859-10.bdf
+Writing 192 characters into file 'ncenBI24-ISO8859-10.bdf'.
+  GEN    ncenI12-ISO8859-10.bdf
+Writing 192 characters into file 'ncenI10-ISO8859-10.bdf'.
+  GEN    ncenI14-ISO8859-10.bdf
+Writing 192 characters into file 'ncenI12-ISO8859-10.bdf'.
+  GEN    ncenI18-ISO8859-10.bdf
+Writing 192 characters into file 'ncenI14-ISO8859-10.bdf'.
+  GEN    ncenI24-ISO8859-10.bdf
+Writing 192 characters into file 'ncenI18-ISO8859-10.bdf'.
+  GEN    ncenR08-ISO8859-10.bdf
+Writing 192 characters into file 'ncenR08-ISO8859-10.bdf'.
+Writing 192 characters into file 'ncenI24-ISO8859-10.bdf'.
+  GEN    ncenR10-ISO8859-10.bdf
+  GEN    ncenR12-ISO8859-10.bdf
+Writing 192 characters into file 'ncenR10-ISO8859-10.bdf'.
+Writing 192 characters into file 'ncenR12-ISO8859-10.bdf'.
+  GEN    ncenR14-ISO8859-10.bdf
+  GEN    ncenR18-ISO8859-10.bdf
+Writing 192 characters into file 'ncenR14-ISO8859-10.bdf'.
+  GEN    ncenR24-ISO8859-10.bdf
+Writing 192 characters into file 'ncenR18-ISO8859-10.bdf'.
+  GEN    timB08-ISO8859-10.bdf
+Writing 192 characters into file 'timB08-ISO8859-10.bdf'.
+  GEN    timB10-ISO8859-10.bdf
+Writing 192 characters into file 'ncenR24-ISO8859-10.bdf'.
+  GEN    timB12-ISO8859-10.bdf
+Writing 192 characters into file 'timB10-ISO8859-10.bdf'.
+  GEN    timB14-ISO8859-10.bdf
+Writing 192 characters into file 'timB12-ISO8859-10.bdf'.
+  GEN    timB18-ISO8859-10.bdf
+Writing 192 characters into file 'timB14-ISO8859-10.bdf'.
+  GEN    timB24-ISO8859-10.bdf
+Writing 192 characters into file 'timB18-ISO8859-10.bdf'.
+  GEN    timBI08-ISO8859-10.bdf
+Writing 192 characters into file 'timBI08-ISO8859-10.bdf'.
+Writing 192 characters into file 'timB24-ISO8859-10.bdf'.
+  GEN    timBI10-ISO8859-10.bdf
+  GEN    timBI12-ISO8859-10.bdf
+Writing 192 characters into file 'timBI10-ISO8859-10.bdf'.
+Writing 192 characters into file 'timBI12-ISO8859-10.bdf'.
+  GEN    timBI14-ISO8859-10.bdf
+  GEN    timBI18-ISO8859-10.bdf
+Writing 192 characters into file 'timBI14-ISO8859-10.bdf'.
+  GEN    timBI24-ISO8859-10.bdf
+Writing 192 characters into file 'timBI18-ISO8859-10.bdf'.
+  GEN    timI08-ISO8859-10.bdf
+Writing 192 characters into file 'timI08-ISO8859-10.bdf'.
+  GEN    timI10-ISO8859-10.bdf
+Writing 192 characters into file 'timBI24-ISO8859-10.bdf'.
+  GEN    timI12-ISO8859-10.bdf
+Writing 192 characters into file 'timI10-ISO8859-10.bdf'.
+  GEN    timI14-ISO8859-10.bdf
+Writing 192 characters into file 'timI12-ISO8859-10.bdf'.
+  GEN    timI18-ISO8859-10.bdf
+Writing 192 characters into file 'timI14-ISO8859-10.bdf'.
+  GEN    timI24-ISO8859-10.bdf
+Writing 192 characters into file 'timI18-ISO8859-10.bdf'.
+  GEN    timR08-ISO8859-10.bdf
+Writing 192 characters into file 'timR08-ISO8859-10.bdf'.
+Writing 192 characters into file 'timI24-ISO8859-10.bdf'.
+  GEN    timR10-ISO8859-10.bdf
+  GEN    timR12-ISO8859-10.bdf
+Writing 192 characters into file 'timR10-ISO8859-10.bdf'.
+Writing 192 characters into file 'timR12-ISO8859-10.bdf'.
+  GEN    timR14-ISO8859-10.bdf
+  GEN    timR18-ISO8859-10.bdf
+Writing 192 characters into file 'timR14-ISO8859-10.bdf'.
+  GEN    timR24-ISO8859-10.bdf
+Writing 192 characters into file 'timR18-ISO8859-10.bdf'.
+  GEN    courB08-ISO8859-13.bdf
+Writing 192 characters into file 'courB08-ISO8859-13.bdf'.
+  GEN    courB10-ISO8859-13.bdf
+Writing 192 characters into file 'timR24-ISO8859-10.bdf'.
+  GEN    courB12-ISO8859-13.bdf
+Writing 192 characters into file 'courB10-ISO8859-13.bdf'.
+  GEN    courB14-ISO8859-13.bdf
+Writing 192 characters into file 'courB12-ISO8859-13.bdf'.
+  GEN    courB18-ISO8859-13.bdf
+Writing 192 characters into file 'courB14-ISO8859-13.bdf'.
+  GEN    courB24-ISO8859-13.bdf
+Writing 192 characters into file 'courB18-ISO8859-13.bdf'.
+  GEN    courBO08-ISO8859-13.bdf
+Writing 192 characters into file 'courBO08-ISO8859-13.bdf'.
+Writing 192 characters into file 'courB24-ISO8859-13.bdf'.
+  GEN    courBO10-ISO8859-13.bdf
+  GEN    courBO12-ISO8859-13.bdf
+Writing 192 characters into file 'courBO10-ISO8859-13.bdf'.
+Writing 192 characters into file 'courBO12-ISO8859-13.bdf'.
+  GEN    courBO14-ISO8859-13.bdf
+  GEN    courBO18-ISO8859-13.bdf
+Writing 192 characters into file 'courBO14-ISO8859-13.bdf'.
+  GEN    courBO24-ISO8859-13.bdf
+Writing 192 characters into file 'courBO18-ISO8859-13.bdf'.
+  GEN    courO08-ISO8859-13.bdf
+Writing 192 characters into file 'courO08-ISO8859-13.bdf'.
+  GEN    courO10-ISO8859-13.bdf
+Writing 192 characters into file 'courBO24-ISO8859-13.bdf'.
+  GEN    courO12-ISO8859-13.bdf
+Writing 192 characters into file 'courO10-ISO8859-13.bdf'.
+  GEN    courO14-ISO8859-13.bdf
+Writing 192 characters into file 'courO12-ISO8859-13.bdf'.
+  GEN    courO18-ISO8859-13.bdf
+Writing 192 characters into file 'courO14-ISO8859-13.bdf'.
+  GEN    courO24-ISO8859-13.bdf
+Writing 192 characters into file 'courO18-ISO8859-13.bdf'.
+  GEN    courR08-ISO8859-13.bdf
+Writing 192 characters into file 'courO24-ISO8859-13.bdf'.
+Writing 192 characters into file 'courR08-ISO8859-13.bdf'.
+  GEN    courR12-ISO8859-13.bdf
+Writing 192 characters into file 'courR10-ISO8859-13.bdf'.
+Writing 192 characters into file 'courR12-ISO8859-13.bdf'.
+  GEN    courR14-ISO8859-13.bdf
+  GEN    courR18-ISO8859-13.bdf
+Writing 192 characters into file 'courR14-ISO8859-13.bdf'.
+Writing 192 characters into file 'courR18-ISO8859-13.bdf'.
+  GEN    courR24-ISO8859-13.bdf
+  GEN    helvB08-ISO8859-13.bdf
+Writing 192 characters into file 'helvB08-ISO8859-13.bdf'.
+  GEN    helvB10-ISO8859-13.bdf
+Writing 192 characters into file 'courR24-ISO8859-13.bdf'.
+  GEN    helvB12-ISO8859-13.bdf
+Writing 192 characters into file 'helvB10-ISO8859-13.bdf'.
+  GEN    helvB14-ISO8859-13.bdf
+Writing 192 characters into file 'helvB12-ISO8859-13.bdf'.
+  GEN    helvB18-ISO8859-13.bdf
+Writing 192 characters into file 'helvB14-ISO8859-13.bdf'.
+  GEN    helvB24-ISO8859-13.bdf
+Writing 192 characters into file 'helvB18-ISO8859-13.bdf'.
+  GEN    helvBO08-ISO8859-13.bdf
+Writing 192 characters into file 'helvBO08-ISO8859-13.bdf'.
+Writing 192 characters into file 'helvB24-ISO8859-13.bdf'.
+  GEN    helvBO10-ISO8859-13.bdf
+  GEN    helvBO12-ISO8859-13.bdf
+Writing 192 characters into file 'helvBO10-ISO8859-13.bdf'.
+Writing 192 characters into file 'helvBO12-ISO8859-13.bdf'.
+  GEN    helvBO14-ISO8859-13.bdf
+  GEN    helvBO18-ISO8859-13.bdf
+Writing 192 characters into file 'helvBO14-ISO8859-13.bdf'.
+  GEN    helvBO24-ISO8859-13.bdf
+Writing 192 characters into file 'helvBO18-ISO8859-13.bdf'.
+  GEN    helvO08-ISO8859-13.bdf
+Writing 192 characters into file 'helvO08-ISO8859-13.bdf'.
+  GEN    helvO10-ISO8859-13.bdf
+Writing 192 characters into file 'helvBO24-ISO8859-13.bdf'.
+  GEN    helvO12-ISO8859-13.bdf
+Writing 192 characters into file 'helvO10-ISO8859-13.bdf'.
+  GEN    helvO14-ISO8859-13.bdf
+Writing 192 characters into file 'helvO12-ISO8859-13.bdf'.
+  GEN    helvO18-ISO8859-13.bdf
+Writing 192 characters into file 'helvO14-ISO8859-13.bdf'.
+  GEN    helvO24-ISO8859-13.bdf
+Writing 192 characters into file 'helvO18-ISO8859-13.bdf'.
+  GEN    helvR08-ISO8859-13.bdf
+Writing 192 characters into file 'helvR08-ISO8859-13.bdf'.
+Writing 192 characters into file 'helvO24-ISO8859-13.bdf'.
+  GEN    helvR10-ISO8859-13.bdf
+  GEN    helvR12-ISO8859-13.bdf
+Writing 192 characters into file 'helvR10-ISO8859-13.bdf'.
+Writing 192 characters into file 'helvR12-ISO8859-13.bdf'.
+  GEN    helvR14-ISO8859-13.bdf
+  GEN    helvR18-ISO8859-13.bdf
+Writing 192 characters into file 'helvR14-ISO8859-13.bdf'.
+  GEN    helvR24-ISO8859-13.bdf
+Writing 192 characters into file 'helvR18-ISO8859-13.bdf'.
+  GEN    ncenB08-ISO8859-13.bdf
+Writing 192 characters into file 'ncenB08-ISO8859-13.bdf'.
+  GEN    ncenB10-ISO8859-13.bdf
+Writing 192 characters into file 'helvR24-ISO8859-13.bdf'.
+  GEN    ncenB12-ISO8859-13.bdf
+Writing 192 characters into file 'ncenB10-ISO8859-13.bdf'.
+  GEN    ncenB14-ISO8859-13.bdf
+Writing 192 characters into file 'ncenB12-ISO8859-13.bdf'.
+  GEN    ncenB18-ISO8859-13.bdf
+Writing 192 characters into file 'ncenB14-ISO8859-13.bdf'.
+  GEN    ncenB24-ISO8859-13.bdf
+Writing 192 characters into file 'ncenB18-ISO8859-13.bdf'.
+  GEN    ncenBI08-ISO8859-13.bdf
+Writing 192 characters into file 'ncenBI08-ISO8859-13.bdf'.
+Writing 192 characters into file 'ncenB24-ISO8859-13.bdf'.
+  GEN    ncenBI10-ISO8859-13.bdf
+  GEN    ncenBI12-ISO8859-13.bdf
+Writing 192 characters into file 'ncenBI10-ISO8859-13.bdf'.
+Writing 192 characters into file 'ncenBI12-ISO8859-13.bdf'.
+  GEN    ncenBI14-ISO8859-13.bdf
+  GEN    ncenBI18-ISO8859-13.bdf
+Writing 192 characters into file 'ncenBI14-ISO8859-13.bdf'.
+  GEN    ncenBI24-ISO8859-13.bdf
+Writing 192 characters into file 'ncenBI18-ISO8859-13.bdf'.
+  GEN    ncenI08-ISO8859-13.bdf
+Writing 192 characters into file 'ncenI08-ISO8859-13.bdf'.
+  GEN    ncenI10-ISO8859-13.bdf
+Writing 192 characters into file 'ncenBI24-ISO8859-13.bdf'.
+  GEN    ncenI12-ISO8859-13.bdf
+Writing 192 characters into file 'ncenI10-ISO8859-13.bdf'.
+  GEN    ncenI14-ISO8859-13.bdf
+Writing 192 characters into file 'ncenI12-ISO8859-13.bdf'.
+  GEN    ncenI18-ISO8859-13.bdf
+Writing 192 characters into file 'ncenI14-ISO8859-13.bdf'.
+  GEN    ncenI24-ISO8859-13.bdf
+Writing 192 characters into file 'ncenI18-ISO8859-13.bdf'.
+  GEN    ncenR08-ISO8859-13.bdf
+Writing 192 characters into file 'ncenR08-ISO8859-13.bdf'.
+Writing 192 characters into file 'ncenI24-ISO8859-13.bdf'.
+  GEN    ncenR10-ISO8859-13.bdf
+  GEN    ncenR12-ISO8859-13.bdf
+Writing 192 characters into file 'ncenR10-ISO8859-13.bdf'.
+Writing 192 characters into file 'ncenR12-ISO8859-13.bdf'.
+  GEN    ncenR14-ISO8859-13.bdf
+  GEN    ncenR18-ISO8859-13.bdf
+Writing 192 characters into file 'ncenR14-ISO8859-13.bdf'.
+  GEN    ncenR24-ISO8859-13.bdf
+Writing 192 characters into file 'ncenR18-ISO8859-13.bdf'.
+  GEN    timB08-ISO8859-13.bdf
+Writing 192 characters into file 'timB08-ISO8859-13.bdf'.
+  GEN    timB10-ISO8859-13.bdf
+Writing 192 characters into file 'ncenR24-ISO8859-13.bdf'.
+  GEN    timB12-ISO8859-13.bdf
+Writing 192 characters into file 'timB10-ISO8859-13.bdf'.
+  GEN    timB14-ISO8859-13.bdf
+Writing 192 characters into file 'timB12-ISO8859-13.bdf'.
+  GEN    timB18-ISO8859-13.bdf
+Writing 192 characters into file 'timB14-ISO8859-13.bdf'.
+  GEN    timB24-ISO8859-13.bdf
+Writing 192 characters into file 'timB18-ISO8859-13.bdf'.
+  GEN    timBI08-ISO8859-13.bdf
+Writing 192 characters into file 'timBI08-ISO8859-13.bdf'.
+Writing 192 characters into file 'timB24-ISO8859-13.bdf'.
+  GEN    timBI10-ISO8859-13.bdf
+  GEN    timBI12-ISO8859-13.bdf
+Writing 192 characters into file 'timBI10-ISO8859-13.bdf'.
+Writing 192 characters into file 'timBI12-ISO8859-13.bdf'.
+  GEN    timBI14-ISO8859-13.bdf
+  GEN    timBI18-ISO8859-13.bdf
+Writing 192 characters into file 'timBI14-ISO8859-13.bdf'.
+  GEN    timBI24-ISO8859-13.bdf
+Writing 192 characters into file 'timBI18-ISO8859-13.bdf'.
+  GEN    timI08-ISO8859-13.bdf
+Writing 192 characters into file 'timI08-ISO8859-13.bdf'.
+  GEN    timI10-ISO8859-13.bdf
+Writing 192 characters into file 'timBI24-ISO8859-13.bdf'.
+  GEN    timI12-ISO8859-13.bdf
+Writing 192 characters into file 'timI10-ISO8859-13.bdf'.
+  GEN    timI14-ISO8859-13.bdf
+Writing 192 characters into file 'timI12-ISO8859-13.bdf'.
+  GEN    timI18-ISO8859-13.bdf
+Writing 192 characters into file 'timI14-ISO8859-13.bdf'.
+  GEN    timI24-ISO8859-13.bdf
+Writing 192 characters into file 'timI18-ISO8859-13.bdf'.
+  GEN    timR08-ISO8859-13.bdf
+Writing 192 characters into file 'timI24-ISO8859-13.bdf'.
+Writing 192 characters into file 'timR08-ISO8859-13.bdf'.
+  GEN    timR10-ISO8859-13.bdf
+  GEN    timR12-ISO8859-13.bdf
+Writing 192 characters into file 'timR10-ISO8859-13.bdf'.
+Writing 192 characters into file 'timR12-ISO8859-13.bdf'.
+  GEN    timR14-ISO8859-13.bdf
+  GEN    timR18-ISO8859-13.bdf
+Writing 192 characters into file 'timR14-ISO8859-13.bdf'.
+  GEN    timR24-ISO8859-13.bdf
+Writing 192 characters into file 'timR18-ISO8859-13.bdf'.
+  GEN    courB08-ISO8859-14.bdf
+Writing 192 characters into file 'courB08-ISO8859-14.bdf'.
+  GEN    courB10-ISO8859-14.bdf
+Writing 192 characters into file 'timR24-ISO8859-13.bdf'.
+  GEN    courB12-ISO8859-14.bdf
+Writing 192 characters into file 'courB10-ISO8859-14.bdf'.
+  GEN    courB14-ISO8859-14.bdf
+Writing 192 characters into file 'courB12-ISO8859-14.bdf'.
+  GEN    courB18-ISO8859-14.bdf
+Writing 192 characters into file 'courB14-ISO8859-14.bdf'.
+  GEN    courB24-ISO8859-14.bdf
+Writing 192 characters into file 'courB18-ISO8859-14.bdf'.
+  GEN    courBO08-ISO8859-14.bdf
+Writing 192 characters into file 'courBO08-ISO8859-14.bdf'.
+Writing 192 characters into file 'courB24-ISO8859-14.bdf'.
+  GEN    courBO10-ISO8859-14.bdf
+Writing 192 characters into file 'courBO10-ISO8859-14.bdf'.
+Writing 192 characters into file 'courBO12-ISO8859-14.bdf'.
+  GEN    courBO14-ISO8859-14.bdf
+  GEN    courBO18-ISO8859-14.bdf
+Writing 192 characters into file 'courBO14-ISO8859-14.bdf'.
+Writing 192 characters into file 'courBO18-ISO8859-14.bdf'.
+  GEN    courBO24-ISO8859-14.bdf
+  GEN    courO08-ISO8859-14.bdf
+Writing 192 characters into file 'courO08-ISO8859-14.bdf'.
+  GEN    courO10-ISO8859-14.bdf
+Writing 192 characters into file 'courBO24-ISO8859-14.bdf'.
+  GEN    courO12-ISO8859-14.bdf
+Writing 192 characters into file 'courO10-ISO8859-14.bdf'.
+  GEN    courO14-ISO8859-14.bdf
+Writing 192 characters into file 'courO12-ISO8859-14.bdf'.
+  GEN    courO18-ISO8859-14.bdf
+Writing 192 characters into file 'courO14-ISO8859-14.bdf'.
+  GEN    courO24-ISO8859-14.bdf
+Writing 192 characters into file 'courO18-ISO8859-14.bdf'.
+  GEN    courR08-ISO8859-14.bdf
+Writing 192 characters into file 'courO24-ISO8859-14.bdf'.
+Writing 192 characters into file 'courR08-ISO8859-14.bdf'.
+  GEN    courR10-ISO8859-14.bdf
+  GEN    courR12-ISO8859-14.bdf
+Writing 192 characters into file 'courR10-ISO8859-14.bdf'.
+Writing 192 characters into file 'courR12-ISO8859-14.bdf'.
+  GEN    courR14-ISO8859-14.bdf
+  GEN    courR18-ISO8859-14.bdf
+Writing 192 characters into file 'courR14-ISO8859-14.bdf'.
+  GEN    courR24-ISO8859-14.bdf
+Writing 192 characters into file 'courR18-ISO8859-14.bdf'.
+  GEN    helvB08-ISO8859-14.bdf
+Writing 192 characters into file 'helvB08-ISO8859-14.bdf'.
+  GEN    helvB10-ISO8859-14.bdf
+Writing 192 characters into file 'courR24-ISO8859-14.bdf'.
+  GEN    helvB12-ISO8859-14.bdf
+Writing 192 characters into file 'helvB10-ISO8859-14.bdf'.
+  GEN    helvB14-ISO8859-14.bdf
+Writing 192 characters into file 'helvB12-ISO8859-14.bdf'.
+  GEN    helvB18-ISO8859-14.bdf
+Writing 192 characters into file 'helvB14-ISO8859-14.bdf'.
+  GEN    helvB24-ISO8859-14.bdf
+Writing 192 characters into file 'helvB18-ISO8859-14.bdf'.
+  GEN    helvBO08-ISO8859-14.bdf
+Writing 192 characters into file 'helvBO08-ISO8859-14.bdf'.
+Writing 192 characters into file 'helvB24-ISO8859-14.bdf'.
+  GEN    helvBO10-ISO8859-14.bdf
+  GEN    helvBO12-ISO8859-14.bdf
+Writing 192 characters into file 'helvBO10-ISO8859-14.bdf'.
+Writing 192 characters into file 'helvBO12-ISO8859-14.bdf'.
+  GEN    helvBO14-ISO8859-14.bdf
+  GEN    helvBO18-ISO8859-14.bdf
+Writing 192 characters into file 'helvBO14-ISO8859-14.bdf'.
+  GEN    helvBO24-ISO8859-14.bdf
+Writing 192 characters into file 'helvBO18-ISO8859-14.bdf'.
+  GEN    helvO08-ISO8859-14.bdf
+Writing 192 characters into file 'helvO08-ISO8859-14.bdf'.
+  GEN    helvO10-ISO8859-14.bdf
+Writing 192 characters into file 'helvBO24-ISO8859-14.bdf'.
+  GEN    helvO12-ISO8859-14.bdf
+Writing 192 characters into file 'helvO10-ISO8859-14.bdf'.
+  GEN    helvO14-ISO8859-14.bdf
+Writing 192 characters into file 'helvO12-ISO8859-14.bdf'.
+  GEN    helvO18-ISO8859-14.bdf
+Writing 192 characters into file 'helvO14-ISO8859-14.bdf'.
+  GEN    helvO24-ISO8859-14.bdf
+Writing 192 characters into file 'helvO18-ISO8859-14.bdf'.
+  GEN    helvR08-ISO8859-14.bdf
+Writing 192 characters into file 'helvO24-ISO8859-14.bdf'.
+Writing 192 characters into file 'helvR08-ISO8859-14.bdf'.
+  GEN    helvR10-ISO8859-14.bdf
+  GEN    helvR12-ISO8859-14.bdf
+Writing 192 characters into file 'helvR10-ISO8859-14.bdf'.
+Writing 192 characters into file 'helvR12-ISO8859-14.bdf'.
+  GEN    helvR14-ISO8859-14.bdf
+  GEN    helvR18-ISO8859-14.bdf
+Writing 192 characters into file 'helvR14-ISO8859-14.bdf'.
+  GEN    helvR24-ISO8859-14.bdf
+Writing 192 characters into file 'helvR18-ISO8859-14.bdf'.
+  GEN    ncenB08-ISO8859-14.bdf
+Writing 192 characters into file 'ncenB08-ISO8859-14.bdf'.
+  GEN    ncenB10-ISO8859-14.bdf
+Writing 192 characters into file 'helvR24-ISO8859-14.bdf'.
+  GEN    ncenB12-ISO8859-14.bdf
+Writing 192 characters into file 'ncenB10-ISO8859-14.bdf'.
+  GEN    ncenB14-ISO8859-14.bdf
+Writing 192 characters into file 'ncenB12-ISO8859-14.bdf'.
+  GEN    ncenB18-ISO8859-14.bdf
+Writing 192 characters into file 'ncenB14-ISO8859-14.bdf'.
+  GEN    ncenB24-ISO8859-14.bdf
+Writing 192 characters into file 'ncenB18-ISO8859-14.bdf'.
+  GEN    ncenBI08-ISO8859-14.bdf
+Writing 192 characters into file 'ncenBI08-ISO8859-14.bdf'.
+Writing 192 characters into file 'ncenB24-ISO8859-14.bdf'.
+  GEN    ncenBI10-ISO8859-14.bdf
+  GEN    ncenBI12-ISO8859-14.bdf
+Writing 192 characters into file 'ncenBI10-ISO8859-14.bdf'.
+Writing 192 characters into file 'ncenBI12-ISO8859-14.bdf'.
+  GEN    ncenBI14-ISO8859-14.bdf
+  GEN    ncenBI18-ISO8859-14.bdf
+Writing 192 characters into file 'ncenBI14-ISO8859-14.bdf'.
+  GEN    ncenBI24-ISO8859-14.bdf
+Writing 192 characters into file 'ncenBI18-ISO8859-14.bdf'.
+  GEN    ncenI08-ISO8859-14.bdf
+Writing 192 characters into file 'ncenI08-ISO8859-14.bdf'.
+  GEN    ncenI10-ISO8859-14.bdf
+Writing 192 characters into file 'ncenBI24-ISO8859-14.bdf'.
+  GEN    ncenI12-ISO8859-14.bdf
+Writing 192 characters into file 'ncenI10-ISO8859-14.bdf'.
+  GEN    ncenI14-ISO8859-14.bdf
+Writing 192 characters into file 'ncenI12-ISO8859-14.bdf'.
+  GEN    ncenI18-ISO8859-14.bdf
+Writing 192 characters into file 'ncenI14-ISO8859-14.bdf'.
+  GEN    ncenI24-ISO8859-14.bdf
+Writing 192 characters into file 'ncenI18-ISO8859-14.bdf'.
+  GEN    ncenR08-ISO8859-14.bdf
+Writing 192 characters into file 'ncenR08-ISO8859-14.bdf'.
+Writing 192 characters into file 'ncenI24-ISO8859-14.bdf'.
+  GEN    ncenR10-ISO8859-14.bdf
+  GEN    ncenR12-ISO8859-14.bdf
+Writing 192 characters into file 'ncenR10-ISO8859-14.bdf'.
+Writing 192 characters into file 'ncenR12-ISO8859-14.bdf'.
+  GEN    ncenR14-ISO8859-14.bdf
+  GEN    ncenR18-ISO8859-14.bdf
+Writing 192 characters into file 'ncenR14-ISO8859-14.bdf'.
+  GEN    ncenR24-ISO8859-14.bdf
+Writing 192 characters into file 'ncenR18-ISO8859-14.bdf'.
+  GEN    timB08-ISO8859-14.bdf
+Writing 192 characters into file 'timB08-ISO8859-14.bdf'.
+  GEN    timB10-ISO8859-14.bdf
+Writing 192 characters into file 'ncenR24-ISO8859-14.bdf'.
+  GEN    timB12-ISO8859-14.bdf
+Writing 192 characters into file 'timB10-ISO8859-14.bdf'.
+  GEN    timB14-ISO8859-14.bdf
+Writing 192 characters into file 'timB12-ISO8859-14.bdf'.
+  GEN    timB18-ISO8859-14.bdf
+Writing 192 characters into file 'timB14-ISO8859-14.bdf'.
+  GEN    timB24-ISO8859-14.bdf
+Writing 192 characters into file 'timB18-ISO8859-14.bdf'.
+  GEN    timBI08-ISO8859-14.bdf
+Writing 192 characters into file 'timBI08-ISO8859-14.bdf'.
+Writing 192 characters into file 'timB24-ISO8859-14.bdf'.
+  GEN    timBI10-ISO8859-14.bdf
+  GEN    timBI12-ISO8859-14.bdf
+Writing 192 characters into file 'timBI10-ISO8859-14.bdf'.
+Writing 192 characters into file 'timBI12-ISO8859-14.bdf'.
+  GEN    timBI14-ISO8859-14.bdf
+  GEN    timBI18-ISO8859-14.bdf
+Writing 192 characters into file 'timBI14-ISO8859-14.bdf'.
+  GEN    timBI24-ISO8859-14.bdf
+Writing 192 characters into file 'timBI18-ISO8859-14.bdf'.
+  GEN    timI08-ISO8859-14.bdf
+Writing 192 characters into file 'timI08-ISO8859-14.bdf'.
+  GEN    timI10-ISO8859-14.bdf
+Writing 192 characters into file 'timBI24-ISO8859-14.bdf'.
+  GEN    timI12-ISO8859-14.bdf
+Writing 192 characters into file 'timI10-ISO8859-14.bdf'.
+  GEN    timI14-ISO8859-14.bdf
+Writing 192 characters into file 'timI12-ISO8859-14.bdf'.
+  GEN    timI18-ISO8859-14.bdf
+Writing 192 characters into file 'timI14-ISO8859-14.bdf'.
+  GEN    timI24-ISO8859-14.bdf
+Writing 192 characters into file 'timI18-ISO8859-14.bdf'.
+  GEN    timR08-ISO8859-14.bdf
+Writing 192 characters into file 'timR08-ISO8859-14.bdf'.
+Writing 192 characters into file 'timI24-ISO8859-14.bdf'.
+  GEN    timR10-ISO8859-14.bdf
+  GEN    timR12-ISO8859-14.bdf
+Writing 192 characters into file 'timR10-ISO8859-14.bdf'.
+Writing 192 characters into file 'timR12-ISO8859-14.bdf'.
+  GEN    timR14-ISO8859-14.bdf
+  GEN    timR18-ISO8859-14.bdf
+Writing 192 characters into file 'timR14-ISO8859-14.bdf'.
+  GEN    timR24-ISO8859-14.bdf
+Writing 192 characters into file 'timR18-ISO8859-14.bdf'.
+  GEN    courB08-ISO8859-15.bdf
+Writing 192 characters into file 'courB08-ISO8859-15.bdf'.
+  GEN    courB10-ISO8859-15.bdf
+Writing 192 characters into file 'timR24-ISO8859-14.bdf'.
+  GEN    courB12-ISO8859-15.bdf
+Writing 192 characters into file 'courB10-ISO8859-15.bdf'.
+  GEN    courB14-ISO8859-15.bdf
+Writing 192 characters into file 'courB12-ISO8859-15.bdf'.
+  GEN    courB18-ISO8859-15.bdf
+Writing 192 characters into file 'courB14-ISO8859-15.bdf'.
+  GEN    courB24-ISO8859-15.bdf
+Writing 192 characters into file 'courB18-ISO8859-15.bdf'.
+  GEN    courBO08-ISO8859-15.bdf
+Writing 192 characters into file 'courBO08-ISO8859-15.bdf'.
+Writing 192 characters into file 'courB24-ISO8859-15.bdf'.
+  GEN    courBO10-ISO8859-15.bdf
+  GEN    courBO12-ISO8859-15.bdf
+Writing 192 characters into file 'courBO10-ISO8859-15.bdf'.
+  GEN    courBO14-ISO8859-15.bdf
+Writing 192 characters into file 'courBO12-ISO8859-15.bdf'.
+  GEN    courBO18-ISO8859-15.bdf
+Writing 192 characters into file 'courBO14-ISO8859-15.bdf'.
+  GEN    courBO24-ISO8859-15.bdf
+Writing 192 characters into file 'courBO18-ISO8859-15.bdf'.
+  GEN    courO08-ISO8859-15.bdf
+Writing 192 characters into file 'courO08-ISO8859-15.bdf'.
+Writing 192 characters into file 'courBO24-ISO8859-15.bdf'.
+  GEN    courO10-ISO8859-15.bdf
+  GEN    courO12-ISO8859-15.bdf
+Writing 192 characters into file 'courO10-ISO8859-15.bdf'.
+  GEN    courO14-ISO8859-15.bdf
+Writing 192 characters into file 'courO12-ISO8859-15.bdf'.
+  GEN    courO18-ISO8859-15.bdf
+Writing 192 characters into file 'courO14-ISO8859-15.bdf'.
+  GEN    courO24-ISO8859-15.bdf
+Writing 192 characters into file 'courO18-ISO8859-15.bdf'.
+  GEN    courR08-ISO8859-15.bdf
+Writing 192 characters into file 'courR08-ISO8859-15.bdf'.
+Writing 192 characters into file 'courO24-ISO8859-15.bdf'.
+  GEN    courR10-ISO8859-15.bdf
+  GEN    courR12-ISO8859-15.bdf
+Writing 192 characters into file 'courR10-ISO8859-15.bdf'.
+Writing 192 characters into file 'courR12-ISO8859-15.bdf'.
+  GEN    courR14-ISO8859-15.bdf
+  GEN    courR18-ISO8859-15.bdf
+Writing 192 characters into file 'courR14-ISO8859-15.bdf'.
+  GEN    courR24-ISO8859-15.bdf
+Writing 192 characters into file 'courR18-ISO8859-15.bdf'.
+  GEN    helvB08-ISO8859-15.bdf
+Writing 192 characters into file 'helvB08-ISO8859-15.bdf'.
+  GEN    helvB10-ISO8859-15.bdf
+Writing 192 characters into file 'courR24-ISO8859-15.bdf'.
+  GEN    helvB12-ISO8859-15.bdf
+Writing 192 characters into file 'helvB10-ISO8859-15.bdf'.
+  GEN    helvB14-ISO8859-15.bdf
+Writing 192 characters into file 'helvB12-ISO8859-15.bdf'.
+  GEN    helvB18-ISO8859-15.bdf
+Writing 192 characters into file 'helvB14-ISO8859-15.bdf'.
+  GEN    helvB24-ISO8859-15.bdf
+Writing 192 characters into file 'helvB18-ISO8859-15.bdf'.
+  GEN    helvBO08-ISO8859-15.bdf
+Writing 192 characters into file 'helvBO08-ISO8859-15.bdf'.
+Writing 192 characters into file 'helvB24-ISO8859-15.bdf'.
+  GEN    helvBO10-ISO8859-15.bdf
+  GEN    helvBO12-ISO8859-15.bdf
+Writing 192 characters into file 'helvBO10-ISO8859-15.bdf'.
+  GEN    helvBO14-ISO8859-15.bdf
+Writing 192 characters into file 'helvBO12-ISO8859-15.bdf'.
+  GEN    helvBO18-ISO8859-15.bdf
+Writing 192 characters into file 'helvBO14-ISO8859-15.bdf'.
+  GEN    helvBO24-ISO8859-15.bdf
+Writing 192 characters into file 'helvBO18-ISO8859-15.bdf'.
+  GEN    helvO08-ISO8859-15.bdf
+Writing 192 characters into file 'helvO08-ISO8859-15.bdf'.
+  GEN    helvO10-ISO8859-15.bdf
+Writing 192 characters into file 'helvBO24-ISO8859-15.bdf'.
+  GEN    helvO12-ISO8859-15.bdf
+Writing 192 characters into file 'helvO10-ISO8859-15.bdf'.
+  GEN    helvO14-ISO8859-15.bdf
+Writing 192 characters into file 'helvO12-ISO8859-15.bdf'.
+  GEN    helvO18-ISO8859-15.bdf
+Writing 192 characters into file 'helvO14-ISO8859-15.bdf'.
+  GEN    helvO24-ISO8859-15.bdf
+Writing 192 characters into file 'helvO18-ISO8859-15.bdf'.
+  GEN    helvR08-ISO8859-15.bdf
+Writing 192 characters into file 'helvR08-ISO8859-15.bdf'.
+Writing 192 characters into file 'helvO24-ISO8859-15.bdf'.
+  GEN    helvR10-ISO8859-15.bdf
+  GEN    helvR12-ISO8859-15.bdf
+Writing 192 characters into file 'helvR10-ISO8859-15.bdf'.
+  GEN    helvR14-ISO8859-15.bdf
+Writing 192 characters into file 'helvR12-ISO8859-15.bdf'.
+  GEN    helvR18-ISO8859-15.bdf
+Writing 192 characters into file 'helvR14-ISO8859-15.bdf'.
+  GEN    helvR24-ISO8859-15.bdf
+Writing 192 characters into file 'helvR18-ISO8859-15.bdf'.
+  GEN    ncenB08-ISO8859-15.bdf
+Writing 192 characters into file 'ncenB08-ISO8859-15.bdf'.
+Writing 192 characters into file 'helvR24-ISO8859-15.bdf'.
+  GEN    ncenB10-ISO8859-15.bdf
+  GEN    ncenB12-ISO8859-15.bdf
+Writing 192 characters into file 'ncenB10-ISO8859-15.bdf'.
+  GEN    ncenB14-ISO8859-15.bdf
+Writing 192 characters into file 'ncenB12-ISO8859-15.bdf'.
+  GEN    ncenB18-ISO8859-15.bdf
+Writing 192 characters into file 'ncenB14-ISO8859-15.bdf'.
+  GEN    ncenB24-ISO8859-15.bdf
+Writing 192 characters into file 'ncenB18-ISO8859-15.bdf'.
+  GEN    ncenBI08-ISO8859-15.bdf
+Writing 192 characters into file 'ncenBI08-ISO8859-15.bdf'.
+  GEN    ncenBI10-ISO8859-15.bdf
+Writing 192 characters into file 'ncenB24-ISO8859-15.bdf'.
+  GEN    ncenBI12-ISO8859-15.bdf
+Writing 192 characters into file 'ncenBI10-ISO8859-15.bdf'.
+  GEN    ncenBI14-ISO8859-15.bdf
+Writing 192 characters into file 'ncenBI12-ISO8859-15.bdf'.
+  GEN    ncenBI18-ISO8859-15.bdf
+Writing 192 characters into file 'ncenBI14-ISO8859-15.bdf'.
+  GEN    ncenBI24-ISO8859-15.bdf
+Writing 192 characters into file 'ncenBI18-ISO8859-15.bdf'.
+  GEN    ncenI08-ISO8859-15.bdf
+Writing 192 characters into file 'ncenI08-ISO8859-15.bdf'.
+Writing 192 characters into file 'ncenBI24-ISO8859-15.bdf'.
+  GEN    ncenI10-ISO8859-15.bdf
+  GEN    ncenI12-ISO8859-15.bdf
+Writing 192 characters into file 'ncenI10-ISO8859-15.bdf'.
+Writing 192 characters into file 'ncenI12-ISO8859-15.bdf'.
+  GEN    ncenI14-ISO8859-15.bdf
+  GEN    ncenI18-ISO8859-15.bdf
+Writing 192 characters into file 'ncenI14-ISO8859-15.bdf'.
+  GEN    ncenI24-ISO8859-15.bdf
+Writing 192 characters into file 'ncenI18-ISO8859-15.bdf'.
+  GEN    ncenR08-ISO8859-15.bdf
+Writing 192 characters into file 'ncenR08-ISO8859-15.bdf'.
+  GEN    ncenR10-ISO8859-15.bdf
+Writing 192 characters into file 'ncenI24-ISO8859-15.bdf'.
+  GEN    ncenR12-ISO8859-15.bdf
+Writing 192 characters into file 'ncenR10-ISO8859-15.bdf'.
+  GEN    ncenR14-ISO8859-15.bdf
+Writing 192 characters into file 'ncenR12-ISO8859-15.bdf'.
+  GEN    ncenR18-ISO8859-15.bdf
+Writing 192 characters into file 'ncenR14-ISO8859-15.bdf'.
+  GEN    ncenR24-ISO8859-15.bdf
+Writing 192 characters into file 'ncenR18-ISO8859-15.bdf'.
+  GEN    timB08-ISO8859-15.bdf
+Writing 192 characters into file 'timB08-ISO8859-15.bdf'.
+Writing 192 characters into file 'ncenR24-ISO8859-15.bdf'.
+  GEN    timB10-ISO8859-15.bdf
+  GEN    timB12-ISO8859-15.bdf
+Writing 192 characters into file 'timB10-ISO8859-15.bdf'.
+Writing 192 characters into file 'timB12-ISO8859-15.bdf'.
+  GEN    timB14-ISO8859-15.bdf
+  GEN    timB18-ISO8859-15.bdf
+Writing 192 characters into file 'timB14-ISO8859-15.bdf'.
+  GEN    timB24-ISO8859-15.bdf
+Writing 192 characters into file 'timB18-ISO8859-15.bdf'.
+  GEN    timBI08-ISO8859-15.bdf
+Writing 192 characters into file 'timBI08-ISO8859-15.bdf'.
+  GEN    timBI10-ISO8859-15.bdf
+Writing 192 characters into file 'timB24-ISO8859-15.bdf'.
+  GEN    timBI12-ISO8859-15.bdf
+Writing 192 characters into file 'timBI10-ISO8859-15.bdf'.
+  GEN    timBI14-ISO8859-15.bdf
+Writing 192 characters into file 'timBI12-ISO8859-15.bdf'.
+  GEN    timBI18-ISO8859-15.bdf
+Writing 192 characters into file 'timBI14-ISO8859-15.bdf'.
+  GEN    timBI24-ISO8859-15.bdf
+Writing 192 characters into file 'timBI18-ISO8859-15.bdf'.
+  GEN    timI08-ISO8859-15.bdf
+Writing 192 characters into file 'timBI24-ISO8859-15.bdf'.
+Writing 192 characters into file 'timI08-ISO8859-15.bdf'.
+  GEN    timI10-ISO8859-15.bdf
+Writing 192 characters into file 'timI10-ISO8859-15.bdf'.
+Writing 192 characters into file 'timI12-ISO8859-15.bdf'.
+  GEN    timI14-ISO8859-15.bdf
+  GEN    timI18-ISO8859-15.bdf
+Writing 192 characters into file 'timI14-ISO8859-15.bdf'.
+Writing 192 characters into file 'timI18-ISO8859-15.bdf'.
+  GEN    timI24-ISO8859-15.bdf
+  GEN    timR08-ISO8859-15.bdf
+Writing 192 characters into file 'timR08-ISO8859-15.bdf'.
+  GEN    timR10-ISO8859-15.bdf
+Writing 192 characters into file 'timI24-ISO8859-15.bdf'.
+  GEN    timR12-ISO8859-15.bdf
+Writing 192 characters into file 'timR10-ISO8859-15.bdf'.
+  GEN    timR14-ISO8859-15.bdf
+Writing 192 characters into file 'timR12-ISO8859-15.bdf'.
+  GEN    timR18-ISO8859-15.bdf
+Writing 192 characters into file 'timR14-ISO8859-15.bdf'.
+  GEN    timR24-ISO8859-15.bdf
+Writing 192 characters into file 'timR18-ISO8859-15.bdf'.
+  GEN    courB08-ISO8859-1.pcf.gz
+  GEN    courB10-ISO8859-1.pcf.gz
+  GEN    courB12-ISO8859-1.pcf.gz
+Writing 192 characters into file 'timR24-ISO8859-15.bdf'.
+  GEN    courB18-ISO8859-1.pcf.gz
+  GEN    courB24-ISO8859-1.pcf.gz
+  GEN    courBO08-ISO8859-1.pcf.gz
+  GEN    courBO10-ISO8859-1.pcf.gz
+  GEN    courBO12-ISO8859-1.pcf.gz
+  GEN    courBO14-ISO8859-1.pcf.gz
+  GEN    courBO18-ISO8859-1.pcf.gz
+  GEN    courBO24-ISO8859-1.pcf.gz
+  GEN    courO08-ISO8859-1.pcf.gz
+  GEN    courO10-ISO8859-1.pcf.gz
+  GEN    courO12-ISO8859-1.pcf.gz
+  GEN    courO14-ISO8859-1.pcf.gz
+  GEN    courO18-ISO8859-1.pcf.gz
+  GEN    courO24-ISO8859-1.pcf.gz
+  GEN    courR08-ISO8859-1.pcf.gz
+  GEN    courR10-ISO8859-1.pcf.gz
+  GEN    courR12-ISO8859-1.pcf.gz
+  GEN    courR14-ISO8859-1.pcf.gz
+  GEN    courR18-ISO8859-1.pcf.gz
+  GEN    courR24-ISO8859-1.pcf.gz
+  GEN    helvB08-ISO8859-1.pcf.gz
+  GEN    helvB10-ISO8859-1.pcf.gz
+  GEN    helvB12-ISO8859-1.pcf.gz
+  GEN    helvB14-ISO8859-1.pcf.gz
+  GEN    helvB18-ISO8859-1.pcf.gz
+  GEN    helvB24-ISO8859-1.pcf.gz
+  GEN    helvBO08-ISO8859-1.pcf.gz
+  GEN    helvBO10-ISO8859-1.pcf.gz
+  GEN    helvBO12-ISO8859-1.pcf.gz
+  GEN    helvBO14-ISO8859-1.pcf.gz
+  GEN    helvBO18-ISO8859-1.pcf.gz
+  GEN    helvBO24-ISO8859-1.pcf.gz
+  GEN    helvO08-ISO8859-1.pcf.gz
+  GEN    helvO10-ISO8859-1.pcf.gz
+  GEN    helvO12-ISO8859-1.pcf.gz
+  GEN    helvO14-ISO8859-1.pcf.gz
+  GEN    helvO18-ISO8859-1.pcf.gz
+  GEN    helvO24-ISO8859-1.pcf.gz
+  GEN    helvR08-ISO8859-1.pcf.gz
+  GEN    helvR10-ISO8859-1.pcf.gz
+  GEN    helvR12-ISO8859-1.pcf.gz
+  GEN    helvR14-ISO8859-1.pcf.gz
+  GEN    helvR18-ISO8859-1.pcf.gz
+  GEN    helvR24-ISO8859-1.pcf.gz
+  GEN    ncenB08-ISO8859-1.pcf.gz
+  GEN    ncenB10-ISO8859-1.pcf.gz
+  GEN    ncenB12-ISO8859-1.pcf.gz
+  GEN    ncenB14-ISO8859-1.pcf.gz
+  GEN    ncenB18-ISO8859-1.pcf.gz
+  GEN    ncenB24-ISO8859-1.pcf.gz
+  GEN    ncenBI08-ISO8859-1.pcf.gz
+  GEN    ncenBI10-ISO8859-1.pcf.gz
+  GEN    ncenBI12-ISO8859-1.pcf.gz
+  GEN    ncenBI14-ISO8859-1.pcf.gz
+  GEN    ncenBI18-ISO8859-1.pcf.gz
+  GEN    ncenBI24-ISO8859-1.pcf.gz
+  GEN    ncenI08-ISO8859-1.pcf.gz
+  GEN    ncenI10-ISO8859-1.pcf.gz
+  GEN    ncenI12-ISO8859-1.pcf.gz
+  GEN    ncenI14-ISO8859-1.pcf.gz
+  GEN    ncenI18-ISO8859-1.pcf.gz
+  GEN    ncenI24-ISO8859-1.pcf.gz
+  GEN    ncenR08-ISO8859-1.pcf.gz
+  GEN    ncenR10-ISO8859-1.pcf.gz
+  GEN    ncenR12-ISO8859-1.pcf.gz
+  GEN    ncenR14-ISO8859-1.pcf.gz
+  GEN    ncenR18-ISO8859-1.pcf.gz
+  GEN    ncenR24-ISO8859-1.pcf.gz
+  GEN    timB08-ISO8859-1.pcf.gz
+  GEN    timB10-ISO8859-1.pcf.gz
+  GEN    timB12-ISO8859-1.pcf.gz
+  GEN    timB14-ISO8859-1.pcf.gz
+  GEN    timB18-ISO8859-1.pcf.gz
+  GEN    timB24-ISO8859-1.pcf.gz
+  GEN    timBI08-ISO8859-1.pcf.gz
+  GEN    timBI10-ISO8859-1.pcf.gz
+  GEN    timBI12-ISO8859-1.pcf.gz
+  GEN    timBI14-ISO8859-1.pcf.gz
+  GEN    timBI18-ISO8859-1.pcf.gz
+  GEN    timBI24-ISO8859-1.pcf.gz
+  GEN    timI08-ISO8859-1.pcf.gz
+  GEN    timI10-ISO8859-1.pcf.gz
+  GEN    timI12-ISO8859-1.pcf.gz
+  GEN    timI14-ISO8859-1.pcf.gz
+  GEN    timI18-ISO8859-1.pcf.gz
+  GEN    timI24-ISO8859-1.pcf.gz
+  GEN    timR08-ISO8859-1.pcf.gz
+  GEN    timR10-ISO8859-1.pcf.gz
+  GEN    timR12-ISO8859-1.pcf.gz
+  GEN    timR14-ISO8859-1.pcf.gz
+  GEN    timR18-ISO8859-1.pcf.gz
+  GEN    timR24-ISO8859-1.pcf.gz
+  GEN    courB08-ISO8859-2.pcf.gz
+  GEN    courB10-ISO8859-2.pcf.gz
+  GEN    courB12-ISO8859-2.pcf.gz
+  GEN    courB14-ISO8859-2.pcf.gz
+  GEN    courB18-ISO8859-2.pcf.gz
+  GEN    courB24-ISO8859-2.pcf.gz
+  GEN    courBO08-ISO8859-2.pcf.gz
+  GEN    courBO10-ISO8859-2.pcf.gz
+  GEN    courBO12-ISO8859-2.pcf.gz
+  GEN    courBO14-ISO8859-2.pcf.gz
+  GEN    courBO18-ISO8859-2.pcf.gz
+  GEN    courBO24-ISO8859-2.pcf.gz
+  GEN    courO08-ISO8859-2.pcf.gz
+  GEN    courO10-ISO8859-2.pcf.gz
+  GEN    courO12-ISO8859-2.pcf.gz
+  GEN    courO14-ISO8859-2.pcf.gz
+  GEN    courO18-ISO8859-2.pcf.gz
+  GEN    courO24-ISO8859-2.pcf.gz
+  GEN    courR08-ISO8859-2.pcf.gz
+  GEN    courR10-ISO8859-2.pcf.gz
+  GEN    courR12-ISO8859-2.pcf.gz
+  GEN    courR14-ISO8859-2.pcf.gz
+  GEN    courR18-ISO8859-2.pcf.gz
+  GEN    courR24-ISO8859-2.pcf.gz
+  GEN    helvB08-ISO8859-2.pcf.gz
+  GEN    helvB10-ISO8859-2.pcf.gz
+  GEN    helvB12-ISO8859-2.pcf.gz
+  GEN    helvB14-ISO8859-2.pcf.gz
+  GEN    helvB18-ISO8859-2.pcf.gz
+  GEN    helvB24-ISO8859-2.pcf.gz
+  GEN    helvBO08-ISO8859-2.pcf.gz
+  GEN    helvBO10-ISO8859-2.pcf.gz
+  GEN    helvBO12-ISO8859-2.pcf.gz
+  GEN    helvBO14-ISO8859-2.pcf.gz
+  GEN    helvBO18-ISO8859-2.pcf.gz
+  GEN    helvBO24-ISO8859-2.pcf.gz
+  GEN    helvO08-ISO8859-2.pcf.gz
+  GEN    helvO10-ISO8859-2.pcf.gz
+  GEN    helvO12-ISO8859-2.pcf.gz
+  GEN    helvO14-ISO8859-2.pcf.gz
+  GEN    helvO18-ISO8859-2.pcf.gz
+  GEN    helvO24-ISO8859-2.pcf.gz
+  GEN    helvR08-ISO8859-2.pcf.gz
+  GEN    helvR10-ISO8859-2.pcf.gz
+  GEN    helvR12-ISO8859-2.pcf.gz
+  GEN    helvR14-ISO8859-2.pcf.gz
+  GEN    helvR18-ISO8859-2.pcf.gz
+  GEN    helvR24-ISO8859-2.pcf.gz
+  GEN    ncenB08-ISO8859-2.pcf.gz
+  GEN    ncenB10-ISO8859-2.pcf.gz
+  GEN    ncenB12-ISO8859-2.pcf.gz
+  GEN    ncenB14-ISO8859-2.pcf.gz
+  GEN    ncenB18-ISO8859-2.pcf.gz
+  GEN    ncenB24-ISO8859-2.pcf.gz
+  GEN    ncenBI08-ISO8859-2.pcf.gz
+  GEN    ncenBI10-ISO8859-2.pcf.gz
+  GEN    ncenBI12-ISO8859-2.pcf.gz
+  GEN    ncenBI14-ISO8859-2.pcf.gz
+  GEN    ncenBI18-ISO8859-2.pcf.gz
+  GEN    ncenBI24-ISO8859-2.pcf.gz
+  GEN    ncenI08-ISO8859-2.pcf.gz
+  GEN    ncenI10-ISO8859-2.pcf.gz
+  GEN    ncenI12-ISO8859-2.pcf.gz
+  GEN    ncenI14-ISO8859-2.pcf.gz
+  GEN    ncenI18-ISO8859-2.pcf.gz
+  GEN    ncenI24-ISO8859-2.pcf.gz
+  GEN    ncenR08-ISO8859-2.pcf.gz
+  GEN    ncenR10-ISO8859-2.pcf.gz
+  GEN    ncenR12-ISO8859-2.pcf.gz
+  GEN    ncenR14-ISO8859-2.pcf.gz
+  GEN    ncenR18-ISO8859-2.pcf.gz
+  GEN    ncenR24-ISO8859-2.pcf.gz
+  GEN    timB08-ISO8859-2.pcf.gz
+  GEN    timB10-ISO8859-2.pcf.gz
+  GEN    timB12-ISO8859-2.pcf.gz
+  GEN    timB14-ISO8859-2.pcf.gz
+  GEN    timB18-ISO8859-2.pcf.gz
+  GEN    timB24-ISO8859-2.pcf.gz
+  GEN    timBI08-ISO8859-2.pcf.gz
+  GEN    timBI10-ISO8859-2.pcf.gz
+  GEN    timBI12-ISO8859-2.pcf.gz
+  GEN    timBI14-ISO8859-2.pcf.gz
+  GEN    timBI18-ISO8859-2.pcf.gz
+  GEN    timBI24-ISO8859-2.pcf.gz
+  GEN    timI08-ISO8859-2.pcf.gz
+  GEN    timI10-ISO8859-2.pcf.gz
+  GEN    timI12-ISO8859-2.pcf.gz
+  GEN    timI14-ISO8859-2.pcf.gz
+  GEN    timI18-ISO8859-2.pcf.gz
+  GEN    timI24-ISO8859-2.pcf.gz
+  GEN    timR08-ISO8859-2.pcf.gz
+  GEN    timR10-ISO8859-2.pcf.gz
+  GEN    timR12-ISO8859-2.pcf.gz
+  GEN    timR14-ISO8859-2.pcf.gz
+  GEN    timR18-ISO8859-2.pcf.gz
+  GEN    timR24-ISO8859-2.pcf.gz
+  GEN    courB08-ISO8859-3.pcf.gz
+  GEN    courB10-ISO8859-3.pcf.gz
+  GEN    courB12-ISO8859-3.pcf.gz
+  GEN    courB14-ISO8859-3.pcf.gz
+  GEN    courB18-ISO8859-3.pcf.gz
+  GEN    courB24-ISO8859-3.pcf.gz
+  GEN    courBO08-ISO8859-3.pcf.gz
+  GEN    courBO10-ISO8859-3.pcf.gz
+  GEN    courBO12-ISO8859-3.pcf.gz
+  GEN    courBO14-ISO8859-3.pcf.gz
+  GEN    courBO18-ISO8859-3.pcf.gz
+  GEN    courBO24-ISO8859-3.pcf.gz
+  GEN    courO08-ISO8859-3.pcf.gz
+  GEN    courO10-ISO8859-3.pcf.gz
+  GEN    courO12-ISO8859-3.pcf.gz
+  GEN    courO14-ISO8859-3.pcf.gz
+  GEN    courO18-ISO8859-3.pcf.gz
+  GEN    courO24-ISO8859-3.pcf.gz
+  GEN    courR08-ISO8859-3.pcf.gz
+  GEN    courR10-ISO8859-3.pcf.gz
+  GEN    courR12-ISO8859-3.pcf.gz
+  GEN    courR14-ISO8859-3.pcf.gz
+  GEN    courR18-ISO8859-3.pcf.gz
+  GEN    courR24-ISO8859-3.pcf.gz
+  GEN    helvB08-ISO8859-3.pcf.gz
+  GEN    helvB10-ISO8859-3.pcf.gz
+  GEN    helvB12-ISO8859-3.pcf.gz
+  GEN    helvB14-ISO8859-3.pcf.gz
+  GEN    helvB18-ISO8859-3.pcf.gz
+  GEN    helvB24-ISO8859-3.pcf.gz
+  GEN    helvBO08-ISO8859-3.pcf.gz
+  GEN    helvBO10-ISO8859-3.pcf.gz
+  GEN    helvBO12-ISO8859-3.pcf.gz
+  GEN    helvBO14-ISO8859-3.pcf.gz
+  GEN    helvBO18-ISO8859-3.pcf.gz
+  GEN    helvBO24-ISO8859-3.pcf.gz
+  GEN    helvO08-ISO8859-3.pcf.gz
+  GEN    helvO10-ISO8859-3.pcf.gz
+  GEN    helvO12-ISO8859-3.pcf.gz
+  GEN    helvO14-ISO8859-3.pcf.gz
+  GEN    helvO18-ISO8859-3.pcf.gz
+  GEN    helvO24-ISO8859-3.pcf.gz
+  GEN    helvR08-ISO8859-3.pcf.gz
+  GEN    helvR10-ISO8859-3.pcf.gz
+  GEN    helvR12-ISO8859-3.pcf.gz
+  GEN    helvR14-ISO8859-3.pcf.gz
+  GEN    helvR18-ISO8859-3.pcf.gz
+  GEN    helvR24-ISO8859-3.pcf.gz
+  GEN    ncenB08-ISO8859-3.pcf.gz
+  GEN    ncenB10-ISO8859-3.pcf.gz
+  GEN    ncenB12-ISO8859-3.pcf.gz
+  GEN    ncenB14-ISO8859-3.pcf.gz
+  GEN    ncenB18-ISO8859-3.pcf.gz
+  GEN    ncenB24-ISO8859-3.pcf.gz
+  GEN    ncenBI08-ISO8859-3.pcf.gz
+  GEN    ncenBI10-ISO8859-3.pcf.gz
+  GEN    ncenBI12-ISO8859-3.pcf.gz
+  GEN    ncenBI14-ISO8859-3.pcf.gz
+  GEN    ncenBI18-ISO8859-3.pcf.gz
+  GEN    ncenBI24-ISO8859-3.pcf.gz
+  GEN    ncenI08-ISO8859-3.pcf.gz
+  GEN    ncenI10-ISO8859-3.pcf.gz
+  GEN    ncenI12-ISO8859-3.pcf.gz
+  GEN    ncenI14-ISO8859-3.pcf.gz
+  GEN    ncenI18-ISO8859-3.pcf.gz
+  GEN    ncenI24-ISO8859-3.pcf.gz
+  GEN    ncenR08-ISO8859-3.pcf.gz
+  GEN    ncenR10-ISO8859-3.pcf.gz
+  GEN    ncenR12-ISO8859-3.pcf.gz
+  GEN    ncenR14-ISO8859-3.pcf.gz
+  GEN    ncenR18-ISO8859-3.pcf.gz
+  GEN    ncenR24-ISO8859-3.pcf.gz
+  GEN    timB08-ISO8859-3.pcf.gz
+  GEN    timB10-ISO8859-3.pcf.gz
+  GEN    timB18-ISO8859-3.pcf.gz
+  GEN    timB24-ISO8859-3.pcf.gz
+  GEN    timBI08-ISO8859-3.pcf.gz
+  GEN    timBI10-ISO8859-3.pcf.gz
+  GEN    timBI12-ISO8859-3.pcf.gz
+  GEN    timBI14-ISO8859-3.pcf.gz
+  GEN    timBI18-ISO8859-3.pcf.gz
+  GEN    timBI24-ISO8859-3.pcf.gz
+  GEN    timI08-ISO8859-3.pcf.gz
+  GEN    timI10-ISO8859-3.pcf.gz
+  GEN    timI12-ISO8859-3.pcf.gz
+  GEN    timI14-ISO8859-3.pcf.gz
+  GEN    timI18-ISO8859-3.pcf.gz
+  GEN    timI24-ISO8859-3.pcf.gz
+  GEN    timR08-ISO8859-3.pcf.gz
+  GEN    timR10-ISO8859-3.pcf.gz
+  GEN    timR12-ISO8859-3.pcf.gz
+  GEN    timR14-ISO8859-3.pcf.gz
+  GEN    timR18-ISO8859-3.pcf.gz
+  GEN    timR24-ISO8859-3.pcf.gz
+  GEN    courB08-ISO8859-4.pcf.gz
+  GEN    courB10-ISO8859-4.pcf.gz
+  GEN    courB12-ISO8859-4.pcf.gz
+  GEN    courB14-ISO8859-4.pcf.gz
+  GEN    courB18-ISO8859-4.pcf.gz
+  GEN    courB24-ISO8859-4.pcf.gz
+  GEN    courBO08-ISO8859-4.pcf.gz
+  GEN    courBO10-ISO8859-4.pcf.gz
+  GEN    courBO12-ISO8859-4.pcf.gz
+  GEN    courBO14-ISO8859-4.pcf.gz
+  GEN    courBO18-ISO8859-4.pcf.gz
+  GEN    courBO24-ISO8859-4.pcf.gz
+  GEN    courO08-ISO8859-4.pcf.gz
+  GEN    courO10-ISO8859-4.pcf.gz
+  GEN    courO12-ISO8859-4.pcf.gz
+  GEN    courO14-ISO8859-4.pcf.gz
+  GEN    courO18-ISO8859-4.pcf.gz
+  GEN    courO24-ISO8859-4.pcf.gz
+  GEN    courR08-ISO8859-4.pcf.gz
+  GEN    courR10-ISO8859-4.pcf.gz
+  GEN    courR12-ISO8859-4.pcf.gz
+  GEN    courR14-ISO8859-4.pcf.gz
+  GEN    courR18-ISO8859-4.pcf.gz
+  GEN    courR24-ISO8859-4.pcf.gz
+  GEN    helvB08-ISO8859-4.pcf.gz
+  GEN    helvB10-ISO8859-4.pcf.gz
+  GEN    helvB12-ISO8859-4.pcf.gz
+  GEN    helvB14-ISO8859-4.pcf.gz
+  GEN    helvB18-ISO8859-4.pcf.gz
+  GEN    helvB24-ISO8859-4.pcf.gz
+  GEN    helvBO10-ISO8859-4.pcf.gz
+  GEN    helvBO12-ISO8859-4.pcf.gz
+  GEN    helvBO14-ISO8859-4.pcf.gz
+  GEN    helvBO18-ISO8859-4.pcf.gz
+  GEN    helvBO24-ISO8859-4.pcf.gz
+  GEN    helvO08-ISO8859-4.pcf.gz
+  GEN    helvO10-ISO8859-4.pcf.gz
+  GEN    helvO12-ISO8859-4.pcf.gz
+  GEN    helvO14-ISO8859-4.pcf.gz
+  GEN    helvO18-ISO8859-4.pcf.gz
+  GEN    helvO24-ISO8859-4.pcf.gz
+  GEN    helvR08-ISO8859-4.pcf.gz
+  GEN    helvR10-ISO8859-4.pcf.gz
+  GEN    helvR12-ISO8859-4.pcf.gz
+  GEN    helvR14-ISO8859-4.pcf.gz
+  GEN    helvR18-ISO8859-4.pcf.gz
+  GEN    helvR24-ISO8859-4.pcf.gz
+  GEN    ncenB08-ISO8859-4.pcf.gz
+  GEN    ncenB10-ISO8859-4.pcf.gz
+  GEN    ncenB12-ISO8859-4.pcf.gz
+  GEN    ncenB14-ISO8859-4.pcf.gz
+  GEN    ncenB18-ISO8859-4.pcf.gz
+  GEN    ncenB24-ISO8859-4.pcf.gz
+  GEN    ncenBI08-ISO8859-4.pcf.gz
+  GEN    ncenBI10-ISO8859-4.pcf.gz
+  GEN    ncenBI12-ISO8859-4.pcf.gz
+  GEN    ncenBI14-ISO8859-4.pcf.gz
+  GEN    ncenBI18-ISO8859-4.pcf.gz
+  GEN    ncenBI24-ISO8859-4.pcf.gz
+  GEN    ncenI08-ISO8859-4.pcf.gz
+  GEN    ncenI10-ISO8859-4.pcf.gz
+  GEN    ncenI12-ISO8859-4.pcf.gz
+  GEN    ncenI14-ISO8859-4.pcf.gz
+  GEN    ncenI18-ISO8859-4.pcf.gz
+  GEN    ncenI24-ISO8859-4.pcf.gz
+  GEN    ncenR08-ISO8859-4.pcf.gz
+  GEN    ncenR10-ISO8859-4.pcf.gz
+  GEN    ncenR12-ISO8859-4.pcf.gz
+  GEN    ncenR14-ISO8859-4.pcf.gz
+  GEN    ncenR18-ISO8859-4.pcf.gz
+  GEN    ncenR24-ISO8859-4.pcf.gz
+  GEN    timB08-ISO8859-4.pcf.gz
+  GEN    timB10-ISO8859-4.pcf.gz
+  GEN    timB12-ISO8859-4.pcf.gz
+  GEN    timB14-ISO8859-4.pcf.gz
+  GEN    timB18-ISO8859-4.pcf.gz
+  GEN    timB24-ISO8859-4.pcf.gz
+  GEN    timBI08-ISO8859-4.pcf.gz
+  GEN    timBI10-ISO8859-4.pcf.gz
+  GEN    timBI12-ISO8859-4.pcf.gz
+  GEN    timBI14-ISO8859-4.pcf.gz
+  GEN    timBI18-ISO8859-4.pcf.gz
+  GEN    timBI24-ISO8859-4.pcf.gz
+  GEN    timI08-ISO8859-4.pcf.gz
+  GEN    timI10-ISO8859-4.pcf.gz
+  GEN    timI12-ISO8859-4.pcf.gz
+  GEN    timI14-ISO8859-4.pcf.gz
+  GEN    timI18-ISO8859-4.pcf.gz
+  GEN    timI24-ISO8859-4.pcf.gz
+  GEN    timR08-ISO8859-4.pcf.gz
+  GEN    timR10-ISO8859-4.pcf.gz
+  GEN    timR12-ISO8859-4.pcf.gz
+  GEN    timR14-ISO8859-4.pcf.gz
+  GEN    timR18-ISO8859-4.pcf.gz
+  GEN    timR24-ISO8859-4.pcf.gz
+  GEN    courB08-ISO8859-9.pcf.gz
+  GEN    courB10-ISO8859-9.pcf.gz
+  GEN    courB12-ISO8859-9.pcf.gz
+  GEN    courB14-ISO8859-9.pcf.gz
+  GEN    courB18-ISO8859-9.pcf.gz
+  GEN    courB24-ISO8859-9.pcf.gz
+  GEN    courBO08-ISO8859-9.pcf.gz
+  GEN    courBO10-ISO8859-9.pcf.gz
+  GEN    courBO12-ISO8859-9.pcf.gz
+  GEN    courBO14-ISO8859-9.pcf.gz
+  GEN    courBO18-ISO8859-9.pcf.gz
+  GEN    courBO24-ISO8859-9.pcf.gz
+  GEN    courO08-ISO8859-9.pcf.gz
+  GEN    courO10-ISO8859-9.pcf.gz
+  GEN    courO12-ISO8859-9.pcf.gz
+  GEN    courO14-ISO8859-9.pcf.gz
+  GEN    courO18-ISO8859-9.pcf.gz
+  GEN    courO24-ISO8859-9.pcf.gz
+  GEN    courR08-ISO8859-9.pcf.gz
+  GEN    courR10-ISO8859-9.pcf.gz
+  GEN    courR12-ISO8859-9.pcf.gz
+  GEN    courR14-ISO8859-9.pcf.gz
+  GEN    courR18-ISO8859-9.pcf.gz
+  GEN    courR24-ISO8859-9.pcf.gz
+  GEN    helvB08-ISO8859-9.pcf.gz
+  GEN    helvB10-ISO8859-9.pcf.gz
+  GEN    helvB12-ISO8859-9.pcf.gz
+  GEN    helvB14-ISO8859-9.pcf.gz
+  GEN    helvB18-ISO8859-9.pcf.gz
+  GEN    helvB24-ISO8859-9.pcf.gz
+  GEN    helvBO08-ISO8859-9.pcf.gz
+  GEN    helvBO10-ISO8859-9.pcf.gz
+  GEN    helvBO12-ISO8859-9.pcf.gz
+  GEN    helvBO14-ISO8859-9.pcf.gz
+  GEN    helvBO18-ISO8859-9.pcf.gz
+  GEN    helvBO24-ISO8859-9.pcf.gz
+  GEN    helvO08-ISO8859-9.pcf.gz
+  GEN    helvO10-ISO8859-9.pcf.gz
+  GEN    helvO12-ISO8859-9.pcf.gz
+  GEN    helvO14-ISO8859-9.pcf.gz
+  GEN    helvO18-ISO8859-9.pcf.gz
+  GEN    helvO24-ISO8859-9.pcf.gz
+  GEN    helvR08-ISO8859-9.pcf.gz
+  GEN    helvR10-ISO8859-9.pcf.gz
+  GEN    helvR12-ISO8859-9.pcf.gz
+  GEN    helvR14-ISO8859-9.pcf.gz
+  GEN    helvR18-ISO8859-9.pcf.gz
+  GEN    helvR24-ISO8859-9.pcf.gz
+  GEN    ncenB08-ISO8859-9.pcf.gz
+  GEN    ncenB10-ISO8859-9.pcf.gz
+  GEN    ncenB12-ISO8859-9.pcf.gz
+  GEN    ncenB14-ISO8859-9.pcf.gz
+  GEN    ncenB18-ISO8859-9.pcf.gz
+  GEN    ncenB24-ISO8859-9.pcf.gz
+  GEN    ncenBI10-ISO8859-9.pcf.gz
+  GEN    ncenBI12-ISO8859-9.pcf.gz
+  GEN    ncenBI14-ISO8859-9.pcf.gz
+  GEN    ncenBI18-ISO8859-9.pcf.gz
+  GEN    ncenBI24-ISO8859-9.pcf.gz
+  GEN    ncenI08-ISO8859-9.pcf.gz
+  GEN    ncenI10-ISO8859-9.pcf.gz
+  GEN    ncenI12-ISO8859-9.pcf.gz
+  GEN    ncenI14-ISO8859-9.pcf.gz
+  GEN    ncenI18-ISO8859-9.pcf.gz
+  GEN    ncenI24-ISO8859-9.pcf.gz
+  GEN    ncenR08-ISO8859-9.pcf.gz
+  GEN    ncenR10-ISO8859-9.pcf.gz
+  GEN    ncenR12-ISO8859-9.pcf.gz
+  GEN    ncenR14-ISO8859-9.pcf.gz
+  GEN    ncenR18-ISO8859-9.pcf.gz
+  GEN    ncenR24-ISO8859-9.pcf.gz
+  GEN    timB08-ISO8859-9.pcf.gz
+  GEN    timB10-ISO8859-9.pcf.gz
+  GEN    timB12-ISO8859-9.pcf.gz
+  GEN    timB14-ISO8859-9.pcf.gz
+  GEN    timB18-ISO8859-9.pcf.gz
+  GEN    timB24-ISO8859-9.pcf.gz
+  GEN    timBI08-ISO8859-9.pcf.gz
+  GEN    timBI10-ISO8859-9.pcf.gz
+  GEN    timBI12-ISO8859-9.pcf.gz
+  GEN    timBI14-ISO8859-9.pcf.gz
+  GEN    timBI18-ISO8859-9.pcf.gz
+  GEN    timBI24-ISO8859-9.pcf.gz
+  GEN    timI08-ISO8859-9.pcf.gz
+  GEN    timI10-ISO8859-9.pcf.gz
+  GEN    timI12-ISO8859-9.pcf.gz
+  GEN    timI18-ISO8859-9.pcf.gz
+  GEN    timR08-ISO8859-9.pcf.gz
+  GEN    timR10-ISO8859-9.pcf.gz
+  GEN    timR12-ISO8859-9.pcf.gz
+  GEN    timR14-ISO8859-9.pcf.gz
+  GEN    timR18-ISO8859-9.pcf.gz
+  GEN    timR24-ISO8859-9.pcf.gz
+  GEN    courB08-ISO8859-10.pcf.gz
+  GEN    courB10-ISO8859-10.pcf.gz
+  GEN    courB12-ISO8859-10.pcf.gz
+  GEN    courB14-ISO8859-10.pcf.gz
+  GEN    courB18-ISO8859-10.pcf.gz
+  GEN    courB24-ISO8859-10.pcf.gz
+  GEN    courBO08-ISO8859-10.pcf.gz
+  GEN    courBO10-ISO8859-10.pcf.gz
+  GEN    courBO12-ISO8859-10.pcf.gz
+  GEN    courBO14-ISO8859-10.pcf.gz
+  GEN    courBO18-ISO8859-10.pcf.gz
+  GEN    courBO24-ISO8859-10.pcf.gz
+  GEN    courO08-ISO8859-10.pcf.gz
+  GEN    courO10-ISO8859-10.pcf.gz
+  GEN    courO12-ISO8859-10.pcf.gz
+  GEN    courO14-ISO8859-10.pcf.gz
+  GEN    courO18-ISO8859-10.pcf.gz
+  GEN    courO24-ISO8859-10.pcf.gz
+  GEN    courR08-ISO8859-10.pcf.gz
+  GEN    courR10-ISO8859-10.pcf.gz
+  GEN    courR12-ISO8859-10.pcf.gz
+  GEN    courR14-ISO8859-10.pcf.gz
+  GEN    courR18-ISO8859-10.pcf.gz
+  GEN    courR24-ISO8859-10.pcf.gz
+  GEN    helvB08-ISO8859-10.pcf.gz
+  GEN    helvB10-ISO8859-10.pcf.gz
+  GEN    helvB12-ISO8859-10.pcf.gz
+  GEN    helvB14-ISO8859-10.pcf.gz
+  GEN    helvB18-ISO8859-10.pcf.gz
+  GEN    helvB24-ISO8859-10.pcf.gz
+  GEN    helvBO08-ISO8859-10.pcf.gz
+  GEN    helvBO10-ISO8859-10.pcf.gz
+  GEN    helvBO14-ISO8859-10.pcf.gz
+  GEN    helvBO18-ISO8859-10.pcf.gz
+  GEN    helvBO24-ISO8859-10.pcf.gz
+  GEN    helvO08-ISO8859-10.pcf.gz
+  GEN    helvO10-ISO8859-10.pcf.gz
+  GEN    helvO12-ISO8859-10.pcf.gz
+  GEN    helvO14-ISO8859-10.pcf.gz
+  GEN    helvO18-ISO8859-10.pcf.gz
+  GEN    helvO24-ISO8859-10.pcf.gz
+  GEN    helvR08-ISO8859-10.pcf.gz
+  GEN    helvR10-ISO8859-10.pcf.gz
+  GEN    helvR12-ISO8859-10.pcf.gz
+  GEN    helvR14-ISO8859-10.pcf.gz
+  GEN    helvR18-ISO8859-10.pcf.gz
+  GEN    helvR24-ISO8859-10.pcf.gz
+  GEN    ncenB08-ISO8859-10.pcf.gz
+  GEN    ncenB10-ISO8859-10.pcf.gz
+  GEN    ncenB12-ISO8859-10.pcf.gz
+  GEN    ncenB14-ISO8859-10.pcf.gz
+  GEN    ncenB18-ISO8859-10.pcf.gz
+  GEN    ncenB24-ISO8859-10.pcf.gz
+  GEN    ncenBI08-ISO8859-10.pcf.gz
+  GEN    ncenBI10-ISO8859-10.pcf.gz
+  GEN    ncenBI12-ISO8859-10.pcf.gz
+  GEN    ncenBI14-ISO8859-10.pcf.gz
+  GEN    ncenBI18-ISO8859-10.pcf.gz
+  GEN    ncenBI24-ISO8859-10.pcf.gz
+  GEN    ncenI08-ISO8859-10.pcf.gz
+  GEN    ncenI10-ISO8859-10.pcf.gz
+  GEN    ncenI12-ISO8859-10.pcf.gz
+  GEN    ncenI14-ISO8859-10.pcf.gz
+  GEN    ncenI18-ISO8859-10.pcf.gz
+  GEN    ncenI24-ISO8859-10.pcf.gz
+  GEN    ncenR08-ISO8859-10.pcf.gz
+  GEN    ncenR10-ISO8859-10.pcf.gz
+  GEN    ncenR12-ISO8859-10.pcf.gz
+  GEN    ncenR14-ISO8859-10.pcf.gz
+  GEN    ncenR18-ISO8859-10.pcf.gz
+  GEN    ncenR24-ISO8859-10.pcf.gz
+  GEN    timB08-ISO8859-10.pcf.gz
+  GEN    timB10-ISO8859-10.pcf.gz
+  GEN    timB12-ISO8859-10.pcf.gz
+  GEN    timB14-ISO8859-10.pcf.gz
+  GEN    timB18-ISO8859-10.pcf.gz
+  GEN    timB24-ISO8859-10.pcf.gz
+  GEN    timBI08-ISO8859-10.pcf.gz
+  GEN    timBI10-ISO8859-10.pcf.gz
+  GEN    timBI12-ISO8859-10.pcf.gz
+  GEN    timBI14-ISO8859-10.pcf.gz
+  GEN    timBI18-ISO8859-10.pcf.gz
+  GEN    timBI24-ISO8859-10.pcf.gz
+  GEN    timI08-ISO8859-10.pcf.gz
+  GEN    timI10-ISO8859-10.pcf.gz
+  GEN    timI12-ISO8859-10.pcf.gz
+  GEN    timI14-ISO8859-10.pcf.gz
+  GEN    timI18-ISO8859-10.pcf.gz
+  GEN    timR08-ISO8859-10.pcf.gz
+  GEN    timR10-ISO8859-10.pcf.gz
+  GEN    timR12-ISO8859-10.pcf.gz
+  GEN    timR14-ISO8859-10.pcf.gz
+  GEN    timR18-ISO8859-10.pcf.gz
+  GEN    timR24-ISO8859-10.pcf.gz
+  GEN    courB08-ISO8859-13.pcf.gz
+  GEN    courB10-ISO8859-13.pcf.gz
+  GEN    courB12-ISO8859-13.pcf.gz
+  GEN    courB14-ISO8859-13.pcf.gz
+  GEN    courB18-ISO8859-13.pcf.gz
+  GEN    courB24-ISO8859-13.pcf.gz
+  GEN    courBO08-ISO8859-13.pcf.gz
+  GEN    courBO10-ISO8859-13.pcf.gz
+  GEN    courBO12-ISO8859-13.pcf.gz
+  GEN    courBO14-ISO8859-13.pcf.gz
+  GEN    courBO18-ISO8859-13.pcf.gz
+  GEN    courBO24-ISO8859-13.pcf.gz
+  GEN    courO08-ISO8859-13.pcf.gz
+  GEN    courO10-ISO8859-13.pcf.gz
+  GEN    courO12-ISO8859-13.pcf.gz
+  GEN    courO14-ISO8859-13.pcf.gz
+  GEN    courO18-ISO8859-13.pcf.gz
+  GEN    courO24-ISO8859-13.pcf.gz
+  GEN    courR08-ISO8859-13.pcf.gz
+  GEN    courR10-ISO8859-13.pcf.gz
+  GEN    courR12-ISO8859-13.pcf.gz
+  GEN    courR14-ISO8859-13.pcf.gz
+  GEN    courR18-ISO8859-13.pcf.gz
+  GEN    courR24-ISO8859-13.pcf.gz
+  GEN    helvB08-ISO8859-13.pcf.gz
+  GEN    helvB10-ISO8859-13.pcf.gz
+  GEN    helvB12-ISO8859-13.pcf.gz
+  GEN    helvB14-ISO8859-13.pcf.gz
+  GEN    helvB18-ISO8859-13.pcf.gz
+  GEN    helvB24-ISO8859-13.pcf.gz
+  GEN    helvBO08-ISO8859-13.pcf.gz
+  GEN    helvBO10-ISO8859-13.pcf.gz
+  GEN    helvBO12-ISO8859-13.pcf.gz
+  GEN    helvBO14-ISO8859-13.pcf.gz
+  GEN    helvBO18-ISO8859-13.pcf.gz
+  GEN    helvBO24-ISO8859-13.pcf.gz
+  GEN    helvO08-ISO8859-13.pcf.gz
+  GEN    helvO10-ISO8859-13.pcf.gz
+  GEN    helvO12-ISO8859-13.pcf.gz
+  GEN    helvO14-ISO8859-13.pcf.gz
+  GEN    helvO18-ISO8859-13.pcf.gz
+  GEN    helvO24-ISO8859-13.pcf.gz
+  GEN    helvR08-ISO8859-13.pcf.gz
+  GEN    helvR10-ISO8859-13.pcf.gz
+  GEN    helvR12-ISO8859-13.pcf.gz
+  GEN    helvR14-ISO8859-13.pcf.gz
+  GEN    helvR18-ISO8859-13.pcf.gz
+  GEN    helvR24-ISO8859-13.pcf.gz
+  GEN    ncenB08-ISO8859-13.pcf.gz
+  GEN    ncenB10-ISO8859-13.pcf.gz
+  GEN    ncenB12-ISO8859-13.pcf.gz
+  GEN    ncenB14-ISO8859-13.pcf.gz
+  GEN    ncenB18-ISO8859-13.pcf.gz
+  GEN    ncenB24-ISO8859-13.pcf.gz
+  GEN    ncenBI08-ISO8859-13.pcf.gz
+  GEN    ncenBI10-ISO8859-13.pcf.gz
+  GEN    ncenBI12-ISO8859-13.pcf.gz
+  GEN    ncenBI14-ISO8859-13.pcf.gz
+  GEN    ncenBI18-ISO8859-13.pcf.gz
+  GEN    ncenBI24-ISO8859-13.pcf.gz
+  GEN    ncenI08-ISO8859-13.pcf.gz
+  GEN    ncenI10-ISO8859-13.pcf.gz
+  GEN    ncenI12-ISO8859-13.pcf.gz
+  GEN    ncenI14-ISO8859-13.pcf.gz
+  GEN    ncenI18-ISO8859-13.pcf.gz
+  GEN    ncenI24-ISO8859-13.pcf.gz
+  GEN    ncenR08-ISO8859-13.pcf.gz
+  GEN    ncenR12-ISO8859-13.pcf.gz
+  GEN    ncenR18-ISO8859-13.pcf.gz
+  GEN    ncenR24-ISO8859-13.pcf.gz
+  GEN    timB08-ISO8859-13.pcf.gz
+  GEN    timB10-ISO8859-13.pcf.gz
+  GEN    timB12-ISO8859-13.pcf.gz
+  GEN    timB14-ISO8859-13.pcf.gz
+  GEN    timB18-ISO8859-13.pcf.gz
+  GEN    timB24-ISO8859-13.pcf.gz
+  GEN    timBI08-ISO8859-13.pcf.gz
+  GEN    timBI10-ISO8859-13.pcf.gz
+  GEN    timBI12-ISO8859-13.pcf.gz
+  GEN    timBI14-ISO8859-13.pcf.gz
+  GEN    timBI18-ISO8859-13.pcf.gz
+  GEN    timBI24-ISO8859-13.pcf.gz
+  GEN    timI08-ISO8859-13.pcf.gz
+  GEN    timI10-ISO8859-13.pcf.gz
+  GEN    timI12-ISO8859-13.pcf.gz
+  GEN    timI14-ISO8859-13.pcf.gz
+  GEN    timI18-ISO8859-13.pcf.gz
+  GEN    timI24-ISO8859-13.pcf.gz
+  GEN    timR08-ISO8859-13.pcf.gz
+  GEN    timR10-ISO8859-13.pcf.gz
+  GEN    timR12-ISO8859-13.pcf.gz
+  GEN    timR14-ISO8859-13.pcf.gz
+  GEN    timR18-ISO8859-13.pcf.gz
+  GEN    timR24-ISO8859-13.pcf.gz
+  GEN    courB08-ISO8859-14.pcf.gz
+  GEN    courB10-ISO8859-14.pcf.gz
+  GEN    courB12-ISO8859-14.pcf.gz
+  GEN    courB14-ISO8859-14.pcf.gz
+  GEN    courB18-ISO8859-14.pcf.gz
+  GEN    courB24-ISO8859-14.pcf.gz
+  GEN    courBO08-ISO8859-14.pcf.gz
+  GEN    courBO10-ISO8859-14.pcf.gz
+  GEN    courBO12-ISO8859-14.pcf.gz
+  GEN    courBO14-ISO8859-14.pcf.gz
+  GEN    courBO18-ISO8859-14.pcf.gz
+  GEN    courBO24-ISO8859-14.pcf.gz
+  GEN    courO08-ISO8859-14.pcf.gz
+  GEN    courO10-ISO8859-14.pcf.gz
+  GEN    courO12-ISO8859-14.pcf.gz
+  GEN    courO14-ISO8859-14.pcf.gz
+  GEN    courO18-ISO8859-14.pcf.gz
+  GEN    courO24-ISO8859-14.pcf.gz
+  GEN    courR08-ISO8859-14.pcf.gz
+  GEN    courR10-ISO8859-14.pcf.gz
+  GEN    courR12-ISO8859-14.pcf.gz
+  GEN    courR14-ISO8859-14.pcf.gz
+  GEN    courR18-ISO8859-14.pcf.gz
+  GEN    courR24-ISO8859-14.pcf.gz
+  GEN    helvB08-ISO8859-14.pcf.gz
+  GEN    helvB10-ISO8859-14.pcf.gz
+  GEN    helvB12-ISO8859-14.pcf.gz
+  GEN    helvB14-ISO8859-14.pcf.gz
+  GEN    helvB18-ISO8859-14.pcf.gz
+  GEN    helvB24-ISO8859-14.pcf.gz
+  GEN    helvBO08-ISO8859-14.pcf.gz
+  GEN    helvBO10-ISO8859-14.pcf.gz
+  GEN    helvBO12-ISO8859-14.pcf.gz
+  GEN    helvBO14-ISO8859-14.pcf.gz
+  GEN    helvBO18-ISO8859-14.pcf.gz
+  GEN    helvBO24-ISO8859-14.pcf.gz
+  GEN    helvO08-ISO8859-14.pcf.gz
+  GEN    helvO10-ISO8859-14.pcf.gz
+  GEN    helvO12-ISO8859-14.pcf.gz
+  GEN    helvO14-ISO8859-14.pcf.gz
+  GEN    helvO18-ISO8859-14.pcf.gz
+  GEN    helvO24-ISO8859-14.pcf.gz
+  GEN    helvR08-ISO8859-14.pcf.gz
+  GEN    helvR10-ISO8859-14.pcf.gz
+  GEN    helvR12-ISO8859-14.pcf.gz
+  GEN    helvR14-ISO8859-14.pcf.gz
+  GEN    helvR18-ISO8859-14.pcf.gz
+  GEN    helvR24-ISO8859-14.pcf.gz
+  GEN    ncenB08-ISO8859-14.pcf.gz
+  GEN    ncenB10-ISO8859-14.pcf.gz
+  GEN    ncenB12-ISO8859-14.pcf.gz
+  GEN    ncenB14-ISO8859-14.pcf.gz
+  GEN    ncenB18-ISO8859-14.pcf.gz
+  GEN    ncenB24-ISO8859-14.pcf.gz
+  GEN    ncenBI08-ISO8859-14.pcf.gz
+  GEN    ncenBI10-ISO8859-14.pcf.gz
+  GEN    ncenBI12-ISO8859-14.pcf.gz
+  GEN    ncenBI14-ISO8859-14.pcf.gz
+  GEN    ncenBI18-ISO8859-14.pcf.gz
+  GEN    ncenBI24-ISO8859-14.pcf.gz
+  GEN    ncenI08-ISO8859-14.pcf.gz
+  GEN    ncenI10-ISO8859-14.pcf.gz
+  GEN    ncenI12-ISO8859-14.pcf.gz
+  GEN    ncenI14-ISO8859-14.pcf.gz
+  GEN    ncenI18-ISO8859-14.pcf.gz
+  GEN    ncenI24-ISO8859-14.pcf.gz
+  GEN    ncenR08-ISO8859-14.pcf.gz
+  GEN    ncenR10-ISO8859-14.pcf.gz
+  GEN    ncenR12-ISO8859-14.pcf.gz
+  GEN    ncenR14-ISO8859-14.pcf.gz
+  GEN    ncenR18-ISO8859-14.pcf.gz
+  GEN    ncenR24-ISO8859-14.pcf.gz
+  GEN    timB08-ISO8859-14.pcf.gz
+  GEN    timB10-ISO8859-14.pcf.gz
+  GEN    timB12-ISO8859-14.pcf.gz
+  GEN    timB14-ISO8859-14.pcf.gz
+  GEN    timB18-ISO8859-14.pcf.gz
+  GEN    timB24-ISO8859-14.pcf.gz
+  GEN    timBI08-ISO8859-14.pcf.gz
+  GEN    timBI10-ISO8859-14.pcf.gz
+  GEN    timBI12-ISO8859-14.pcf.gz
+  GEN    timBI14-ISO8859-14.pcf.gz
+  GEN    timBI18-ISO8859-14.pcf.gz
+  GEN    timBI24-ISO8859-14.pcf.gz
+  GEN    timI08-ISO8859-14.pcf.gz
+  GEN    timI10-ISO8859-14.pcf.gz
+  GEN    timI12-ISO8859-14.pcf.gz
+  GEN    timI14-ISO8859-14.pcf.gz
+  GEN    timI18-ISO8859-14.pcf.gz
+  GEN    timI24-ISO8859-14.pcf.gz
+  GEN    timR08-ISO8859-14.pcf.gz
+  GEN    timR10-ISO8859-14.pcf.gz
+  GEN    timR12-ISO8859-14.pcf.gz
+  GEN    timR14-ISO8859-14.pcf.gz
+  GEN    timR18-ISO8859-14.pcf.gz
+  GEN    timR24-ISO8859-14.pcf.gz
+  GEN    courB08-ISO8859-15.pcf.gz
+  GEN    courB10-ISO8859-15.pcf.gz
+  GEN    courB12-ISO8859-15.pcf.gz
+  GEN    courB14-ISO8859-15.pcf.gz
+  GEN    courB18-ISO8859-15.pcf.gz
+  GEN    courB24-ISO8859-15.pcf.gz
+  GEN    courBO08-ISO8859-15.pcf.gz
+  GEN    courBO10-ISO8859-15.pcf.gz
+  GEN    courBO12-ISO8859-15.pcf.gz
+  GEN    courBO14-ISO8859-15.pcf.gz
+  GEN    courBO18-ISO8859-15.pcf.gz
+  GEN    courBO24-ISO8859-15.pcf.gz
+  GEN    courO08-ISO8859-15.pcf.gz
+  GEN    courO10-ISO8859-15.pcf.gz
+  GEN    courO12-ISO8859-15.pcf.gz
+  GEN    courO14-ISO8859-15.pcf.gz
+  GEN    courO18-ISO8859-15.pcf.gz
+  GEN    courO24-ISO8859-15.pcf.gz
+  GEN    courR08-ISO8859-15.pcf.gz
+  GEN    courR10-ISO8859-15.pcf.gz
+  GEN    courR12-ISO8859-15.pcf.gz
+  GEN    courR14-ISO8859-15.pcf.gz
+  GEN    courR18-ISO8859-15.pcf.gz
+  GEN    courR24-ISO8859-15.pcf.gz
+  GEN    helvB08-ISO8859-15.pcf.gz
+  GEN    helvB10-ISO8859-15.pcf.gz
+  GEN    helvB12-ISO8859-15.pcf.gz
+  GEN    helvB14-ISO8859-15.pcf.gz
+  GEN    helvB18-ISO8859-15.pcf.gz
+  GEN    helvB24-ISO8859-15.pcf.gz
+  GEN    helvBO08-ISO8859-15.pcf.gz
+  GEN    helvBO10-ISO8859-15.pcf.gz
+  GEN    helvBO12-ISO8859-15.pcf.gz
+  GEN    helvBO14-ISO8859-15.pcf.gz
+  GEN    helvBO18-ISO8859-15.pcf.gz
+  GEN    helvBO24-ISO8859-15.pcf.gz
+  GEN    helvO08-ISO8859-15.pcf.gz
+  GEN    helvO10-ISO8859-15.pcf.gz
+  GEN    helvO12-ISO8859-15.pcf.gz
+  GEN    helvO14-ISO8859-15.pcf.gz
+  GEN    helvO18-ISO8859-15.pcf.gz
+  GEN    helvO24-ISO8859-15.pcf.gz
+  GEN    helvR08-ISO8859-15.pcf.gz
+  GEN    helvR10-ISO8859-15.pcf.gz
+  GEN    helvR12-ISO8859-15.pcf.gz
+  GEN    helvR14-ISO8859-15.pcf.gz
+  GEN    helvR18-ISO8859-15.pcf.gz
+  GEN    helvR24-ISO8859-15.pcf.gz
+  GEN    ncenB08-ISO8859-15.pcf.gz
+  GEN    ncenB10-ISO8859-15.pcf.gz
+  GEN    ncenB12-ISO8859-15.pcf.gz
+  GEN    ncenB14-ISO8859-15.pcf.gz
+  GEN    ncenB18-ISO8859-15.pcf.gz
+  GEN    ncenB24-ISO8859-15.pcf.gz
+  GEN    ncenBI08-ISO8859-15.pcf.gz
+  GEN    ncenBI10-ISO8859-15.pcf.gz
+  GEN    ncenBI12-ISO8859-15.pcf.gz
+  GEN    ncenBI14-ISO8859-15.pcf.gz
+  GEN    ncenBI18-ISO8859-15.pcf.gz
+  GEN    ncenBI24-ISO8859-15.pcf.gz
+  GEN    ncenI08-ISO8859-15.pcf.gz
+  GEN    ncenI10-ISO8859-15.pcf.gz
+  GEN    ncenI12-ISO8859-15.pcf.gz
+  GEN    ncenI14-ISO8859-15.pcf.gz
+  GEN    ncenI18-ISO8859-15.pcf.gz
+  GEN    ncenI24-ISO8859-15.pcf.gz
+  GEN    ncenR08-ISO8859-15.pcf.gz
+  GEN    ncenR10-ISO8859-15.pcf.gz
+  GEN    ncenR12-ISO8859-15.pcf.gz
+  GEN    ncenR14-ISO8859-15.pcf.gz
+  GEN    timB08-ISO8859-15.pcf.gz
+  GEN    timB10-ISO8859-15.pcf.gz
+  GEN    timB12-ISO8859-15.pcf.gz
+  GEN    timB14-ISO8859-15.pcf.gz
+  GEN    timB18-ISO8859-15.pcf.gz
+  GEN    timB24-ISO8859-15.pcf.gz
+  GEN    timBI08-ISO8859-15.pcf.gz
+  GEN    timBI10-ISO8859-15.pcf.gz
+  GEN    timBI12-ISO8859-15.pcf.gz
+  GEN    timBI14-ISO8859-15.pcf.gz
+  GEN    timBI18-ISO8859-15.pcf.gz
+  GEN    timBI24-ISO8859-15.pcf.gz
+  GEN    timI08-ISO8859-15.pcf.gz
+  GEN    timI10-ISO8859-15.pcf.gz
+  GEN    timI12-ISO8859-15.pcf.gz
+  GEN    timI14-ISO8859-15.pcf.gz
+  GEN    timI18-ISO8859-15.pcf.gz
+  GEN    timI24-ISO8859-15.pcf.gz
+  GEN    timR08-ISO8859-15.pcf.gz
+  GEN    timR10-ISO8859-15.pcf.gz
+  GEN    timR12-ISO8859-15.pcf.gz
+  GEN    timR14-ISO8859-15.pcf.gz
+  GEN    timR18-ISO8859-15.pcf.gz
+  GEN    timR24-ISO8859-15.pcf.gz
+make[1]: Entering directory `/sources/builddir/font-adobe-100dpi-1.0.3'
+make[1]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/fonts/X11/100dpi" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi"
+ /usr/bin/install -c -m 644 courB08.pcf.gz courB10.pcf.gz courB12.pcf.gz courB14.pcf.gz courB18.pcf.gz courB24.pcf.gz courBO08.pcf.gz courBO10.pcf.gz courBO12.pcf.gz courBO14.pcf.gz courBO18.pcf.gz courBO24.pcf.gz courO08.pcf.gz courO10.pcf.gz courO12.pcf.gz courO14.pcf.gz courO18.pcf.gz courO24.pcf.gz courR08.pcf.gz courR10.pcf.gz courR12.pcf.gz courR14.pcf.gz courR18.pcf.gz courR24.pcf.gz helvB08.pcf.gz helvB10.pcf.gz helvB12.pcf.gz helvB14.pcf.gz helvB18.pcf.gz helvB24.pcf.gz helvBO08.pcf.gz helvBO10.pcf.gz helvBO12.pcf.gz helvBO14.pcf.gz helvBO18.pcf.gz helvBO24.pcf.gz helvO08.pcf.gz helvO10.pcf.gz helvO12.pcf.gz helvO14.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 helvO18.pcf.gz helvO24.pcf.gz helvR08.pcf.gz helvR10.pcf.gz helvR12.pcf.gz helvR14.pcf.gz helvR18.pcf.gz helvR24.pcf.gz ncenB08.pcf.gz ncenB10.pcf.gz ncenB12.pcf.gz ncenB14.pcf.gz ncenB18.pcf.gz ncenB24.pcf.gz ncenBI08.pcf.gz ncenBI10.pcf.gz ncenBI12.pcf.gz ncenBI14.pcf.gz ncenBI18.pcf.gz ncenBI24.pcf.gz ncenI08.pcf.gz ncenI10.pcf.gz ncenI12.pcf.gz ncenI14.pcf.gz ncenI18.pcf.gz ncenI24.pcf.gz ncenR08.pcf.gz ncenR10.pcf.gz ncenR12.pcf.gz ncenR14.pcf.gz ncenR18.pcf.gz ncenR24.pcf.gz timB08.pcf.gz timB10.pcf.gz timB12.pcf.gz timB14.pcf.gz timB18.pcf.gz timB24.pcf.gz timBI08.pcf.gz timBI10.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 timBI12.pcf.gz timBI14.pcf.gz timBI18.pcf.gz timBI24.pcf.gz timI08.pcf.gz timI10.pcf.gz timI12.pcf.gz timI14.pcf.gz timI18.pcf.gz timI24.pcf.gz timR08.pcf.gz timR10.pcf.gz timR12.pcf.gz timR14.pcf.gz timR18.pcf.gz timR24.pcf.gz symb08.pcf.gz symb10.pcf.gz symb12.pcf.gz symb14.pcf.gz symb18.pcf.gz symb24.pcf.gz courB08-ISO8859-1.pcf.gz courB10-ISO8859-1.pcf.gz courB12-ISO8859-1.pcf.gz courB14-ISO8859-1.pcf.gz courB18-ISO8859-1.pcf.gz courB24-ISO8859-1.pcf.gz courBO08-ISO8859-1.pcf.gz courBO10-ISO8859-1.pcf.gz courBO12-ISO8859-1.pcf.gz courBO14-ISO8859-1.pcf.gz courBO18-ISO8859-1.pcf.gz courBO24-ISO8859-1.pcf.gz courO08-ISO8859-1.pcf.gz courO10-ISO8859-1.pcf.gz courO12-ISO8859-1.pcf.gz courO14-ISO8859-1.pcf.gz courO18-ISO8859-1.pcf.gz courO24-ISO8859-1.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 courR08-ISO8859-1.pcf.gz courR10-ISO8859-1.pcf.gz courR12-ISO8859-1.pcf.gz courR14-ISO8859-1.pcf.gz courR18-ISO8859-1.pcf.gz courR24-ISO8859-1.pcf.gz helvB08-ISO8859-1.pcf.gz helvB10-ISO8859-1.pcf.gz helvB12-ISO8859-1.pcf.gz helvB14-ISO8859-1.pcf.gz helvB18-ISO8859-1.pcf.gz helvB24-ISO8859-1.pcf.gz helvBO08-ISO8859-1.pcf.gz helvBO10-ISO8859-1.pcf.gz helvBO12-ISO8859-1.pcf.gz helvBO14-ISO8859-1.pcf.gz helvBO18-ISO8859-1.pcf.gz helvBO24-ISO8859-1.pcf.gz helvO08-ISO8859-1.pcf.gz helvO10-ISO8859-1.pcf.gz helvO12-ISO8859-1.pcf.gz helvO14-ISO8859-1.pcf.gz helvO18-ISO8859-1.pcf.gz helvO24-ISO8859-1.pcf.gz helvR08-ISO8859-1.pcf.gz helvR10-ISO8859-1.pcf.gz helvR12-ISO8859-1.pcf.gz helvR14-ISO8859-1.pcf.gz helvR18-ISO8859-1.pcf.gz helvR24-ISO8859-1.pcf.gz ncenB08-ISO8859-1.pcf.gz ncenB10-ISO8859-1.pcf.gz ncenB12-ISO8859-1.pcf.gz ncenB14-ISO8859-1.pcf.gz ncenB18-ISO8859-1.pcf.gz ncenB24-ISO8859-1.pcf.gz ncenBI08-ISO8859-1.pcf.gz ncenBI10-ISO8859-1.pcf.gz ncenBI12-ISO8859-1.pcf.gz ncenBI14-ISO8859-1.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 ncenBI18-ISO8859-1.pcf.gz ncenBI24-ISO8859-1.pcf.gz ncenI08-ISO8859-1.pcf.gz ncenI10-ISO8859-1.pcf.gz ncenI12-ISO8859-1.pcf.gz ncenI14-ISO8859-1.pcf.gz ncenI18-ISO8859-1.pcf.gz ncenI24-ISO8859-1.pcf.gz ncenR08-ISO8859-1.pcf.gz ncenR10-ISO8859-1.pcf.gz ncenR12-ISO8859-1.pcf.gz ncenR14-ISO8859-1.pcf.gz ncenR18-ISO8859-1.pcf.gz ncenR24-ISO8859-1.pcf.gz timB08-ISO8859-1.pcf.gz timB10-ISO8859-1.pcf.gz timB12-ISO8859-1.pcf.gz timB14-ISO8859-1.pcf.gz timB18-ISO8859-1.pcf.gz timB24-ISO8859-1.pcf.gz timBI08-ISO8859-1.pcf.gz timBI10-ISO8859-1.pcf.gz timBI12-ISO8859-1.pcf.gz timBI14-ISO8859-1.pcf.gz timBI18-ISO8859-1.pcf.gz timBI24-ISO8859-1.pcf.gz timI08-ISO8859-1.pcf.gz timI10-ISO8859-1.pcf.gz timI12-ISO8859-1.pcf.gz timI14-ISO8859-1.pcf.gz timI18-ISO8859-1.pcf.gz timI24-ISO8859-1.pcf.gz timR08-ISO8859-1.pcf.gz timR10-ISO8859-1.pcf.gz timR12-ISO8859-1.pcf.gz timR14-ISO8859-1.pcf.gz timR18-ISO8859-1.pcf.gz timR24-ISO8859-1.pcf.gz courB08-ISO8859-2.pcf.gz courB10-ISO8859-2.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 courB12-ISO8859-2.pcf.gz courB14-ISO8859-2.pcf.gz courB18-ISO8859-2.pcf.gz courB24-ISO8859-2.pcf.gz courBO08-ISO8859-2.pcf.gz courBO10-ISO8859-2.pcf.gz courBO12-ISO8859-2.pcf.gz courBO14-ISO8859-2.pcf.gz courBO18-ISO8859-2.pcf.gz courBO24-ISO8859-2.pcf.gz courO08-ISO8859-2.pcf.gz courO10-ISO8859-2.pcf.gz courO12-ISO8859-2.pcf.gz courO14-ISO8859-2.pcf.gz courO18-ISO8859-2.pcf.gz courO24-ISO8859-2.pcf.gz courR08-ISO8859-2.pcf.gz courR10-ISO8859-2.pcf.gz courR12-ISO8859-2.pcf.gz courR14-ISO8859-2.pcf.gz courR18-ISO8859-2.pcf.gz courR24-ISO8859-2.pcf.gz helvB08-ISO8859-2.pcf.gz helvB10-ISO8859-2.pcf.gz helvB12-ISO8859-2.pcf.gz helvB14-ISO8859-2.pcf.gz helvB18-ISO8859-2.pcf.gz helvB24-ISO8859-2.pcf.gz helvBO08-ISO8859-2.pcf.gz helvBO10-ISO8859-2.pcf.gz helvBO12-ISO8859-2.pcf.gz helvBO14-ISO8859-2.pcf.gz helvBO18-ISO8859-2.pcf.gz helvBO24-ISO8859-2.pcf.gz helvO08-ISO8859-2.pcf.gz helvO10-ISO8859-2.pcf.gz helvO12-ISO8859-2.pcf.gz helvO14-ISO8859-2.pcf.gz helvO18-ISO8859-2.pcf.gz helvO24-ISO8859-2.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 helvR08-ISO8859-2.pcf.gz helvR10-ISO8859-2.pcf.gz helvR12-ISO8859-2.pcf.gz helvR14-ISO8859-2.pcf.gz helvR18-ISO8859-2.pcf.gz helvR24-ISO8859-2.pcf.gz ncenB08-ISO8859-2.pcf.gz ncenB10-ISO8859-2.pcf.gz ncenB12-ISO8859-2.pcf.gz ncenB14-ISO8859-2.pcf.gz ncenB18-ISO8859-2.pcf.gz ncenB24-ISO8859-2.pcf.gz ncenBI08-ISO8859-2.pcf.gz ncenBI10-ISO8859-2.pcf.gz ncenBI12-ISO8859-2.pcf.gz ncenBI14-ISO8859-2.pcf.gz ncenBI18-ISO8859-2.pcf.gz ncenBI24-ISO8859-2.pcf.gz ncenI08-ISO8859-2.pcf.gz ncenI10-ISO8859-2.pcf.gz ncenI12-ISO8859-2.pcf.gz ncenI14-ISO8859-2.pcf.gz ncenI18-ISO8859-2.pcf.gz ncenI24-ISO8859-2.pcf.gz ncenR08-ISO8859-2.pcf.gz ncenR10-ISO8859-2.pcf.gz ncenR12-ISO8859-2.pcf.gz ncenR14-ISO8859-2.pcf.gz ncenR18-ISO8859-2.pcf.gz ncenR24-ISO8859-2.pcf.gz timB08-ISO8859-2.pcf.gz timB10-ISO8859-2.pcf.gz timB12-ISO8859-2.pcf.gz timB14-ISO8859-2.pcf.gz timB18-ISO8859-2.pcf.gz timB24-ISO8859-2.pcf.gz timBI08-ISO8859-2.pcf.gz timBI10-ISO8859-2.pcf.gz timBI12-ISO8859-2.pcf.gz timBI14-ISO8859-2.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 timBI18-ISO8859-2.pcf.gz timBI24-ISO8859-2.pcf.gz timI08-ISO8859-2.pcf.gz timI10-ISO8859-2.pcf.gz timI12-ISO8859-2.pcf.gz timI14-ISO8859-2.pcf.gz timI18-ISO8859-2.pcf.gz timI24-ISO8859-2.pcf.gz timR08-ISO8859-2.pcf.gz timR10-ISO8859-2.pcf.gz timR12-ISO8859-2.pcf.gz timR14-ISO8859-2.pcf.gz timR18-ISO8859-2.pcf.gz timR24-ISO8859-2.pcf.gz courB08-ISO8859-3.pcf.gz courB10-ISO8859-3.pcf.gz courB12-ISO8859-3.pcf.gz courB14-ISO8859-3.pcf.gz courB18-ISO8859-3.pcf.gz courB24-ISO8859-3.pcf.gz courBO08-ISO8859-3.pcf.gz courBO10-ISO8859-3.pcf.gz courBO12-ISO8859-3.pcf.gz courBO14-ISO8859-3.pcf.gz courBO18-ISO8859-3.pcf.gz courBO24-ISO8859-3.pcf.gz courO08-ISO8859-3.pcf.gz courO10-ISO8859-3.pcf.gz courO12-ISO8859-3.pcf.gz courO14-ISO8859-3.pcf.gz courO18-ISO8859-3.pcf.gz courO24-ISO8859-3.pcf.gz courR08-ISO8859-3.pcf.gz courR10-ISO8859-3.pcf.gz courR12-ISO8859-3.pcf.gz courR14-ISO8859-3.pcf.gz courR18-ISO8859-3.pcf.gz courR24-ISO8859-3.pcf.gz helvB08-ISO8859-3.pcf.gz helvB10-ISO8859-3.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 helvB12-ISO8859-3.pcf.gz helvB14-ISO8859-3.pcf.gz helvB18-ISO8859-3.pcf.gz helvB24-ISO8859-3.pcf.gz helvBO08-ISO8859-3.pcf.gz helvBO10-ISO8859-3.pcf.gz helvBO12-ISO8859-3.pcf.gz helvBO14-ISO8859-3.pcf.gz helvBO18-ISO8859-3.pcf.gz helvBO24-ISO8859-3.pcf.gz helvO08-ISO8859-3.pcf.gz helvO10-ISO8859-3.pcf.gz helvO12-ISO8859-3.pcf.gz helvO14-ISO8859-3.pcf.gz helvO18-ISO8859-3.pcf.gz helvO24-ISO8859-3.pcf.gz helvR08-ISO8859-3.pcf.gz helvR10-ISO8859-3.pcf.gz helvR12-ISO8859-3.pcf.gz helvR14-ISO8859-3.pcf.gz helvR18-ISO8859-3.pcf.gz helvR24-ISO8859-3.pcf.gz ncenB08-ISO8859-3.pcf.gz ncenB10-ISO8859-3.pcf.gz ncenB12-ISO8859-3.pcf.gz ncenB14-ISO8859-3.pcf.gz ncenB18-ISO8859-3.pcf.gz ncenB24-ISO8859-3.pcf.gz ncenBI08-ISO8859-3.pcf.gz ncenBI10-ISO8859-3.pcf.gz ncenBI12-ISO8859-3.pcf.gz ncenBI14-ISO8859-3.pcf.gz ncenBI18-ISO8859-3.pcf.gz ncenBI24-ISO8859-3.pcf.gz ncenI08-ISO8859-3.pcf.gz ncenI10-ISO8859-3.pcf.gz ncenI12-ISO8859-3.pcf.gz ncenI14-ISO8859-3.pcf.gz ncenI18-ISO8859-3.pcf.gz ncenI24-ISO8859-3.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 ncenR08-ISO8859-3.pcf.gz ncenR10-ISO8859-3.pcf.gz ncenR12-ISO8859-3.pcf.gz ncenR14-ISO8859-3.pcf.gz ncenR18-ISO8859-3.pcf.gz ncenR24-ISO8859-3.pcf.gz timB08-ISO8859-3.pcf.gz timB10-ISO8859-3.pcf.gz timB12-ISO8859-3.pcf.gz timB14-ISO8859-3.pcf.gz timB18-ISO8859-3.pcf.gz timB24-ISO8859-3.pcf.gz timBI08-ISO8859-3.pcf.gz timBI10-ISO8859-3.pcf.gz timBI12-ISO8859-3.pcf.gz timBI14-ISO8859-3.pcf.gz timBI18-ISO8859-3.pcf.gz timBI24-ISO8859-3.pcf.gz timI08-ISO8859-3.pcf.gz timI10-ISO8859-3.pcf.gz timI12-ISO8859-3.pcf.gz timI14-ISO8859-3.pcf.gz timI18-ISO8859-3.pcf.gz timI24-ISO8859-3.pcf.gz timR08-ISO8859-3.pcf.gz timR10-ISO8859-3.pcf.gz timR12-ISO8859-3.pcf.gz timR14-ISO8859-3.pcf.gz timR18-ISO8859-3.pcf.gz timR24-ISO8859-3.pcf.gz courB08-ISO8859-4.pcf.gz courB10-ISO8859-4.pcf.gz courB12-ISO8859-4.pcf.gz courB14-ISO8859-4.pcf.gz courB18-ISO8859-4.pcf.gz courB24-ISO8859-4.pcf.gz courBO08-ISO8859-4.pcf.gz courBO10-ISO8859-4.pcf.gz courBO12-ISO8859-4.pcf.gz courBO14-ISO8859-4.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 courBO18-ISO8859-4.pcf.gz courBO24-ISO8859-4.pcf.gz courO08-ISO8859-4.pcf.gz courO10-ISO8859-4.pcf.gz courO12-ISO8859-4.pcf.gz courO14-ISO8859-4.pcf.gz courO18-ISO8859-4.pcf.gz courO24-ISO8859-4.pcf.gz courR08-ISO8859-4.pcf.gz courR10-ISO8859-4.pcf.gz courR12-ISO8859-4.pcf.gz courR14-ISO8859-4.pcf.gz courR18-ISO8859-4.pcf.gz courR24-ISO8859-4.pcf.gz helvB08-ISO8859-4.pcf.gz helvB10-ISO8859-4.pcf.gz helvB12-ISO8859-4.pcf.gz helvB14-ISO8859-4.pcf.gz helvB18-ISO8859-4.pcf.gz helvB24-ISO8859-4.pcf.gz helvBO08-ISO8859-4.pcf.gz helvBO10-ISO8859-4.pcf.gz helvBO12-ISO8859-4.pcf.gz helvBO14-ISO8859-4.pcf.gz helvBO18-ISO8859-4.pcf.gz helvBO24-ISO8859-4.pcf.gz helvO08-ISO8859-4.pcf.gz helvO10-ISO8859-4.pcf.gz helvO12-ISO8859-4.pcf.gz helvO14-ISO8859-4.pcf.gz helvO18-ISO8859-4.pcf.gz helvO24-ISO8859-4.pcf.gz helvR08-ISO8859-4.pcf.gz helvR10-ISO8859-4.pcf.gz helvR12-ISO8859-4.pcf.gz helvR14-ISO8859-4.pcf.gz helvR18-ISO8859-4.pcf.gz helvR24-ISO8859-4.pcf.gz ncenB08-ISO8859-4.pcf.gz ncenB10-ISO8859-4.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 ncenB12-ISO8859-4.pcf.gz ncenB14-ISO8859-4.pcf.gz ncenB18-ISO8859-4.pcf.gz ncenB24-ISO8859-4.pcf.gz ncenBI08-ISO8859-4.pcf.gz ncenBI10-ISO8859-4.pcf.gz ncenBI12-ISO8859-4.pcf.gz ncenBI14-ISO8859-4.pcf.gz ncenBI18-ISO8859-4.pcf.gz ncenBI24-ISO8859-4.pcf.gz ncenI08-ISO8859-4.pcf.gz ncenI10-ISO8859-4.pcf.gz ncenI12-ISO8859-4.pcf.gz ncenI14-ISO8859-4.pcf.gz ncenI18-ISO8859-4.pcf.gz ncenI24-ISO8859-4.pcf.gz ncenR08-ISO8859-4.pcf.gz ncenR10-ISO8859-4.pcf.gz ncenR12-ISO8859-4.pcf.gz ncenR14-ISO8859-4.pcf.gz ncenR18-ISO8859-4.pcf.gz ncenR24-ISO8859-4.pcf.gz timB08-ISO8859-4.pcf.gz timB10-ISO8859-4.pcf.gz timB12-ISO8859-4.pcf.gz timB14-ISO8859-4.pcf.gz timB18-ISO8859-4.pcf.gz timB24-ISO8859-4.pcf.gz timBI08-ISO8859-4.pcf.gz timBI10-ISO8859-4.pcf.gz timBI12-ISO8859-4.pcf.gz timBI14-ISO8859-4.pcf.gz timBI18-ISO8859-4.pcf.gz timBI24-ISO8859-4.pcf.gz timI08-ISO8859-4.pcf.gz timI10-ISO8859-4.pcf.gz timI12-ISO8859-4.pcf.gz timI14-ISO8859-4.pcf.gz timI18-ISO8859-4.pcf.gz timI24-ISO8859-4.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 timR08-ISO8859-4.pcf.gz timR10-ISO8859-4.pcf.gz timR12-ISO8859-4.pcf.gz timR14-ISO8859-4.pcf.gz timR18-ISO8859-4.pcf.gz timR24-ISO8859-4.pcf.gz courB08-ISO8859-9.pcf.gz courB10-ISO8859-9.pcf.gz courB12-ISO8859-9.pcf.gz courB14-ISO8859-9.pcf.gz courB18-ISO8859-9.pcf.gz courB24-ISO8859-9.pcf.gz courBO08-ISO8859-9.pcf.gz courBO10-ISO8859-9.pcf.gz courBO12-ISO8859-9.pcf.gz courBO14-ISO8859-9.pcf.gz courBO18-ISO8859-9.pcf.gz courBO24-ISO8859-9.pcf.gz courO08-ISO8859-9.pcf.gz courO10-ISO8859-9.pcf.gz courO12-ISO8859-9.pcf.gz courO14-ISO8859-9.pcf.gz courO18-ISO8859-9.pcf.gz courO24-ISO8859-9.pcf.gz courR08-ISO8859-9.pcf.gz courR10-ISO8859-9.pcf.gz courR12-ISO8859-9.pcf.gz courR14-ISO8859-9.pcf.gz courR18-ISO8859-9.pcf.gz courR24-ISO8859-9.pcf.gz helvB08-ISO8859-9.pcf.gz helvB10-ISO8859-9.pcf.gz helvB12-ISO8859-9.pcf.gz helvB14-ISO8859-9.pcf.gz helvB18-ISO8859-9.pcf.gz helvB24-ISO8859-9.pcf.gz helvBO08-ISO8859-9.pcf.gz helvBO10-ISO8859-9.pcf.gz helvBO12-ISO8859-9.pcf.gz helvBO14-ISO8859-9.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 helvBO18-ISO8859-9.pcf.gz helvBO24-ISO8859-9.pcf.gz helvO08-ISO8859-9.pcf.gz helvO10-ISO8859-9.pcf.gz helvO12-ISO8859-9.pcf.gz helvO14-ISO8859-9.pcf.gz helvO18-ISO8859-9.pcf.gz helvO24-ISO8859-9.pcf.gz helvR08-ISO8859-9.pcf.gz helvR10-ISO8859-9.pcf.gz helvR12-ISO8859-9.pcf.gz helvR14-ISO8859-9.pcf.gz helvR18-ISO8859-9.pcf.gz helvR24-ISO8859-9.pcf.gz ncenB08-ISO8859-9.pcf.gz ncenB10-ISO8859-9.pcf.gz ncenB12-ISO8859-9.pcf.gz ncenB14-ISO8859-9.pcf.gz ncenB18-ISO8859-9.pcf.gz ncenB24-ISO8859-9.pcf.gz ncenBI08-ISO8859-9.pcf.gz ncenBI10-ISO8859-9.pcf.gz ncenBI12-ISO8859-9.pcf.gz ncenBI14-ISO8859-9.pcf.gz ncenBI18-ISO8859-9.pcf.gz ncenBI24-ISO8859-9.pcf.gz ncenI08-ISO8859-9.pcf.gz ncenI10-ISO8859-9.pcf.gz ncenI12-ISO8859-9.pcf.gz ncenI14-ISO8859-9.pcf.gz ncenI18-ISO8859-9.pcf.gz ncenI24-ISO8859-9.pcf.gz ncenR08-ISO8859-9.pcf.gz ncenR10-ISO8859-9.pcf.gz ncenR12-ISO8859-9.pcf.gz ncenR14-ISO8859-9.pcf.gz ncenR18-ISO8859-9.pcf.gz ncenR24-ISO8859-9.pcf.gz timB08-ISO8859-9.pcf.gz timB10-ISO8859-9.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 timB12-ISO8859-9.pcf.gz timB14-ISO8859-9.pcf.gz timB18-ISO8859-9.pcf.gz timB24-ISO8859-9.pcf.gz timBI08-ISO8859-9.pcf.gz timBI10-ISO8859-9.pcf.gz timBI12-ISO8859-9.pcf.gz timBI14-ISO8859-9.pcf.gz timBI18-ISO8859-9.pcf.gz timBI24-ISO8859-9.pcf.gz timI08-ISO8859-9.pcf.gz timI10-ISO8859-9.pcf.gz timI12-ISO8859-9.pcf.gz timI14-ISO8859-9.pcf.gz timI18-ISO8859-9.pcf.gz timI24-ISO8859-9.pcf.gz timR08-ISO8859-9.pcf.gz timR10-ISO8859-9.pcf.gz timR12-ISO8859-9.pcf.gz timR14-ISO8859-9.pcf.gz timR18-ISO8859-9.pcf.gz timR24-ISO8859-9.pcf.gz courB08-ISO8859-10.pcf.gz courB10-ISO8859-10.pcf.gz courB12-ISO8859-10.pcf.gz courB14-ISO8859-10.pcf.gz courB18-ISO8859-10.pcf.gz courB24-ISO8859-10.pcf.gz courBO08-ISO8859-10.pcf.gz courBO10-ISO8859-10.pcf.gz courBO12-ISO8859-10.pcf.gz courBO14-ISO8859-10.pcf.gz courBO18-ISO8859-10.pcf.gz courBO24-ISO8859-10.pcf.gz courO08-ISO8859-10.pcf.gz courO10-ISO8859-10.pcf.gz courO12-ISO8859-10.pcf.gz courO14-ISO8859-10.pcf.gz courO18-ISO8859-10.pcf.gz courO24-ISO8859-10.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 courR08-ISO8859-10.pcf.gz courR10-ISO8859-10.pcf.gz courR12-ISO8859-10.pcf.gz courR14-ISO8859-10.pcf.gz courR18-ISO8859-10.pcf.gz courR24-ISO8859-10.pcf.gz helvB08-ISO8859-10.pcf.gz helvB10-ISO8859-10.pcf.gz helvB12-ISO8859-10.pcf.gz helvB14-ISO8859-10.pcf.gz helvB18-ISO8859-10.pcf.gz helvB24-ISO8859-10.pcf.gz helvBO08-ISO8859-10.pcf.gz helvBO10-ISO8859-10.pcf.gz helvBO12-ISO8859-10.pcf.gz helvBO14-ISO8859-10.pcf.gz helvBO18-ISO8859-10.pcf.gz helvBO24-ISO8859-10.pcf.gz helvO08-ISO8859-10.pcf.gz helvO10-ISO8859-10.pcf.gz helvO12-ISO8859-10.pcf.gz helvO14-ISO8859-10.pcf.gz helvO18-ISO8859-10.pcf.gz helvO24-ISO8859-10.pcf.gz helvR08-ISO8859-10.pcf.gz helvR10-ISO8859-10.pcf.gz helvR12-ISO8859-10.pcf.gz helvR14-ISO8859-10.pcf.gz helvR18-ISO8859-10.pcf.gz helvR24-ISO8859-10.pcf.gz ncenB08-ISO8859-10.pcf.gz ncenB10-ISO8859-10.pcf.gz ncenB12-ISO8859-10.pcf.gz ncenB14-ISO8859-10.pcf.gz ncenB18-ISO8859-10.pcf.gz ncenB24-ISO8859-10.pcf.gz ncenBI08-ISO8859-10.pcf.gz ncenBI10-ISO8859-10.pcf.gz ncenBI12-ISO8859-10.pcf.gz ncenBI14-ISO8859-10.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 ncenBI18-ISO8859-10.pcf.gz ncenBI24-ISO8859-10.pcf.gz ncenI08-ISO8859-10.pcf.gz ncenI10-ISO8859-10.pcf.gz ncenI12-ISO8859-10.pcf.gz ncenI14-ISO8859-10.pcf.gz ncenI18-ISO8859-10.pcf.gz ncenI24-ISO8859-10.pcf.gz ncenR08-ISO8859-10.pcf.gz ncenR10-ISO8859-10.pcf.gz ncenR12-ISO8859-10.pcf.gz ncenR14-ISO8859-10.pcf.gz ncenR18-ISO8859-10.pcf.gz ncenR24-ISO8859-10.pcf.gz timB08-ISO8859-10.pcf.gz timB10-ISO8859-10.pcf.gz timB12-ISO8859-10.pcf.gz timB14-ISO8859-10.pcf.gz timB18-ISO8859-10.pcf.gz timB24-ISO8859-10.pcf.gz timBI08-ISO8859-10.pcf.gz timBI10-ISO8859-10.pcf.gz timBI12-ISO8859-10.pcf.gz timBI14-ISO8859-10.pcf.gz timBI18-ISO8859-10.pcf.gz timBI24-ISO8859-10.pcf.gz timI08-ISO8859-10.pcf.gz timI10-ISO8859-10.pcf.gz timI12-ISO8859-10.pcf.gz timI14-ISO8859-10.pcf.gz timI18-ISO8859-10.pcf.gz timI24-ISO8859-10.pcf.gz timR08-ISO8859-10.pcf.gz timR10-ISO8859-10.pcf.gz timR12-ISO8859-10.pcf.gz timR14-ISO8859-10.pcf.gz timR18-ISO8859-10.pcf.gz timR24-ISO8859-10.pcf.gz courB08-ISO8859-13.pcf.gz courB10-ISO8859-13.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 courB12-ISO8859-13.pcf.gz courB14-ISO8859-13.pcf.gz courB18-ISO8859-13.pcf.gz courB24-ISO8859-13.pcf.gz courBO08-ISO8859-13.pcf.gz courBO10-ISO8859-13.pcf.gz courBO12-ISO8859-13.pcf.gz courBO14-ISO8859-13.pcf.gz courBO18-ISO8859-13.pcf.gz courBO24-ISO8859-13.pcf.gz courO08-ISO8859-13.pcf.gz courO10-ISO8859-13.pcf.gz courO12-ISO8859-13.pcf.gz courO14-ISO8859-13.pcf.gz courO18-ISO8859-13.pcf.gz courO24-ISO8859-13.pcf.gz courR08-ISO8859-13.pcf.gz courR10-ISO8859-13.pcf.gz courR12-ISO8859-13.pcf.gz courR14-ISO8859-13.pcf.gz courR18-ISO8859-13.pcf.gz courR24-ISO8859-13.pcf.gz helvB08-ISO8859-13.pcf.gz helvB10-ISO8859-13.pcf.gz helvB12-ISO8859-13.pcf.gz helvB14-ISO8859-13.pcf.gz helvB18-ISO8859-13.pcf.gz helvB24-ISO8859-13.pcf.gz helvBO08-ISO8859-13.pcf.gz helvBO10-ISO8859-13.pcf.gz helvBO12-ISO8859-13.pcf.gz helvBO14-ISO8859-13.pcf.gz helvBO18-ISO8859-13.pcf.gz helvBO24-ISO8859-13.pcf.gz helvO08-ISO8859-13.pcf.gz helvO10-ISO8859-13.pcf.gz helvO12-ISO8859-13.pcf.gz helvO14-ISO8859-13.pcf.gz helvO18-ISO8859-13.pcf.gz helvO24-ISO8859-13.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 helvR08-ISO8859-13.pcf.gz helvR10-ISO8859-13.pcf.gz helvR12-ISO8859-13.pcf.gz helvR14-ISO8859-13.pcf.gz helvR18-ISO8859-13.pcf.gz helvR24-ISO8859-13.pcf.gz ncenB08-ISO8859-13.pcf.gz ncenB10-ISO8859-13.pcf.gz ncenB12-ISO8859-13.pcf.gz ncenB14-ISO8859-13.pcf.gz ncenB18-ISO8859-13.pcf.gz ncenB24-ISO8859-13.pcf.gz ncenBI08-ISO8859-13.pcf.gz ncenBI10-ISO8859-13.pcf.gz ncenBI12-ISO8859-13.pcf.gz ncenBI14-ISO8859-13.pcf.gz ncenBI18-ISO8859-13.pcf.gz ncenBI24-ISO8859-13.pcf.gz ncenI08-ISO8859-13.pcf.gz ncenI10-ISO8859-13.pcf.gz ncenI12-ISO8859-13.pcf.gz ncenI14-ISO8859-13.pcf.gz ncenI18-ISO8859-13.pcf.gz ncenI24-ISO8859-13.pcf.gz ncenR08-ISO8859-13.pcf.gz ncenR10-ISO8859-13.pcf.gz ncenR12-ISO8859-13.pcf.gz ncenR14-ISO8859-13.pcf.gz ncenR18-ISO8859-13.pcf.gz ncenR24-ISO8859-13.pcf.gz timB08-ISO8859-13.pcf.gz timB10-ISO8859-13.pcf.gz timB12-ISO8859-13.pcf.gz timB14-ISO8859-13.pcf.gz timB18-ISO8859-13.pcf.gz timB24-ISO8859-13.pcf.gz timBI08-ISO8859-13.pcf.gz timBI10-ISO8859-13.pcf.gz timBI12-ISO8859-13.pcf.gz timBI14-ISO8859-13.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 timBI18-ISO8859-13.pcf.gz timBI24-ISO8859-13.pcf.gz timI08-ISO8859-13.pcf.gz timI10-ISO8859-13.pcf.gz timI12-ISO8859-13.pcf.gz timI14-ISO8859-13.pcf.gz timI18-ISO8859-13.pcf.gz timI24-ISO8859-13.pcf.gz timR08-ISO8859-13.pcf.gz timR10-ISO8859-13.pcf.gz timR12-ISO8859-13.pcf.gz timR14-ISO8859-13.pcf.gz timR18-ISO8859-13.pcf.gz timR24-ISO8859-13.pcf.gz courB08-ISO8859-14.pcf.gz courB10-ISO8859-14.pcf.gz courB12-ISO8859-14.pcf.gz courB14-ISO8859-14.pcf.gz courB18-ISO8859-14.pcf.gz courB24-ISO8859-14.pcf.gz courBO08-ISO8859-14.pcf.gz courBO10-ISO8859-14.pcf.gz courBO12-ISO8859-14.pcf.gz courBO14-ISO8859-14.pcf.gz courBO18-ISO8859-14.pcf.gz courBO24-ISO8859-14.pcf.gz courO08-ISO8859-14.pcf.gz courO10-ISO8859-14.pcf.gz courO12-ISO8859-14.pcf.gz courO14-ISO8859-14.pcf.gz courO18-ISO8859-14.pcf.gz courO24-ISO8859-14.pcf.gz courR08-ISO8859-14.pcf.gz courR10-ISO8859-14.pcf.gz courR12-ISO8859-14.pcf.gz courR14-ISO8859-14.pcf.gz courR18-ISO8859-14.pcf.gz courR24-ISO8859-14.pcf.gz helvB08-ISO8859-14.pcf.gz helvB10-ISO8859-14.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 helvB12-ISO8859-14.pcf.gz helvB14-ISO8859-14.pcf.gz helvB18-ISO8859-14.pcf.gz helvB24-ISO8859-14.pcf.gz helvBO08-ISO8859-14.pcf.gz helvBO10-ISO8859-14.pcf.gz helvBO12-ISO8859-14.pcf.gz helvBO14-ISO8859-14.pcf.gz helvBO18-ISO8859-14.pcf.gz helvBO24-ISO8859-14.pcf.gz helvO08-ISO8859-14.pcf.gz helvO10-ISO8859-14.pcf.gz helvO12-ISO8859-14.pcf.gz helvO14-ISO8859-14.pcf.gz helvO18-ISO8859-14.pcf.gz helvO24-ISO8859-14.pcf.gz helvR08-ISO8859-14.pcf.gz helvR10-ISO8859-14.pcf.gz helvR12-ISO8859-14.pcf.gz helvR14-ISO8859-14.pcf.gz helvR18-ISO8859-14.pcf.gz helvR24-ISO8859-14.pcf.gz ncenB08-ISO8859-14.pcf.gz ncenB10-ISO8859-14.pcf.gz ncenB12-ISO8859-14.pcf.gz ncenB14-ISO8859-14.pcf.gz ncenB18-ISO8859-14.pcf.gz ncenB24-ISO8859-14.pcf.gz ncenBI08-ISO8859-14.pcf.gz ncenBI10-ISO8859-14.pcf.gz ncenBI12-ISO8859-14.pcf.gz ncenBI14-ISO8859-14.pcf.gz ncenBI18-ISO8859-14.pcf.gz ncenBI24-ISO8859-14.pcf.gz ncenI08-ISO8859-14.pcf.gz ncenI10-ISO8859-14.pcf.gz ncenI12-ISO8859-14.pcf.gz ncenI14-ISO8859-14.pcf.gz ncenI18-ISO8859-14.pcf.gz ncenI24-ISO8859-14.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 ncenR08-ISO8859-14.pcf.gz ncenR10-ISO8859-14.pcf.gz ncenR12-ISO8859-14.pcf.gz ncenR14-ISO8859-14.pcf.gz ncenR18-ISO8859-14.pcf.gz ncenR24-ISO8859-14.pcf.gz timB08-ISO8859-14.pcf.gz timB10-ISO8859-14.pcf.gz timB12-ISO8859-14.pcf.gz timB14-ISO8859-14.pcf.gz timB18-ISO8859-14.pcf.gz timB24-ISO8859-14.pcf.gz timBI08-ISO8859-14.pcf.gz timBI10-ISO8859-14.pcf.gz timBI12-ISO8859-14.pcf.gz timBI14-ISO8859-14.pcf.gz timBI18-ISO8859-14.pcf.gz timBI24-ISO8859-14.pcf.gz timI08-ISO8859-14.pcf.gz timI10-ISO8859-14.pcf.gz timI12-ISO8859-14.pcf.gz timI14-ISO8859-14.pcf.gz timI18-ISO8859-14.pcf.gz timI24-ISO8859-14.pcf.gz timR08-ISO8859-14.pcf.gz timR10-ISO8859-14.pcf.gz timR12-ISO8859-14.pcf.gz timR14-ISO8859-14.pcf.gz timR18-ISO8859-14.pcf.gz timR24-ISO8859-14.pcf.gz courB08-ISO8859-15.pcf.gz courB10-ISO8859-15.pcf.gz courB12-ISO8859-15.pcf.gz courB14-ISO8859-15.pcf.gz courB18-ISO8859-15.pcf.gz courB24-ISO8859-15.pcf.gz courBO08-ISO8859-15.pcf.gz courBO10-ISO8859-15.pcf.gz courBO12-ISO8859-15.pcf.gz courBO14-ISO8859-15.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 courBO18-ISO8859-15.pcf.gz courBO24-ISO8859-15.pcf.gz courO08-ISO8859-15.pcf.gz courO10-ISO8859-15.pcf.gz courO12-ISO8859-15.pcf.gz courO14-ISO8859-15.pcf.gz courO18-ISO8859-15.pcf.gz courO24-ISO8859-15.pcf.gz courR08-ISO8859-15.pcf.gz courR10-ISO8859-15.pcf.gz courR12-ISO8859-15.pcf.gz courR14-ISO8859-15.pcf.gz courR18-ISO8859-15.pcf.gz courR24-ISO8859-15.pcf.gz helvB08-ISO8859-15.pcf.gz helvB10-ISO8859-15.pcf.gz helvB12-ISO8859-15.pcf.gz helvB14-ISO8859-15.pcf.gz helvB18-ISO8859-15.pcf.gz helvB24-ISO8859-15.pcf.gz helvBO08-ISO8859-15.pcf.gz helvBO10-ISO8859-15.pcf.gz helvBO12-ISO8859-15.pcf.gz helvBO14-ISO8859-15.pcf.gz helvBO18-ISO8859-15.pcf.gz helvBO24-ISO8859-15.pcf.gz helvO08-ISO8859-15.pcf.gz helvO10-ISO8859-15.pcf.gz helvO12-ISO8859-15.pcf.gz helvO14-ISO8859-15.pcf.gz helvO18-ISO8859-15.pcf.gz helvO24-ISO8859-15.pcf.gz helvR08-ISO8859-15.pcf.gz helvR10-ISO8859-15.pcf.gz helvR12-ISO8859-15.pcf.gz helvR14-ISO8859-15.pcf.gz helvR18-ISO8859-15.pcf.gz helvR24-ISO8859-15.pcf.gz ncenB08-ISO8859-15.pcf.gz ncenB10-ISO8859-15.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 ncenB12-ISO8859-15.pcf.gz ncenB14-ISO8859-15.pcf.gz ncenB18-ISO8859-15.pcf.gz ncenB24-ISO8859-15.pcf.gz ncenBI08-ISO8859-15.pcf.gz ncenBI10-ISO8859-15.pcf.gz ncenBI12-ISO8859-15.pcf.gz ncenBI14-ISO8859-15.pcf.gz ncenBI18-ISO8859-15.pcf.gz ncenBI24-ISO8859-15.pcf.gz ncenI08-ISO8859-15.pcf.gz ncenI10-ISO8859-15.pcf.gz ncenI12-ISO8859-15.pcf.gz ncenI14-ISO8859-15.pcf.gz ncenI18-ISO8859-15.pcf.gz ncenI24-ISO8859-15.pcf.gz ncenR08-ISO8859-15.pcf.gz ncenR10-ISO8859-15.pcf.gz ncenR12-ISO8859-15.pcf.gz ncenR14-ISO8859-15.pcf.gz ncenR18-ISO8859-15.pcf.gz ncenR24-ISO8859-15.pcf.gz timB08-ISO8859-15.pcf.gz timB10-ISO8859-15.pcf.gz timB12-ISO8859-15.pcf.gz timB14-ISO8859-15.pcf.gz timB18-ISO8859-15.pcf.gz timB24-ISO8859-15.pcf.gz timBI08-ISO8859-15.pcf.gz timBI10-ISO8859-15.pcf.gz timBI12-ISO8859-15.pcf.gz timBI14-ISO8859-15.pcf.gz timBI18-ISO8859-15.pcf.gz timBI24-ISO8859-15.pcf.gz timI08-ISO8859-15.pcf.gz timI10-ISO8859-15.pcf.gz timI12-ISO8859-15.pcf.gz timI14-ISO8859-15.pcf.gz timI18-ISO8859-15.pcf.gz timI24-ISO8859-15.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+ /usr/bin/install -c -m 644 timR08-ISO8859-15.pcf.gz timR10-ISO8859-15.pcf.gz timR12-ISO8859-15.pcf.gz timR14-ISO8859-15.pcf.gz timR18-ISO8859-15.pcf.gz timR24-ISO8859-15.pcf.gz '/sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi'
+make  install-data-hook
+make[2]: Entering directory `/sources/builddir/font-adobe-100dpi-1.0.3'
+/usr/bin/mkfontdir /sources/buildmgr/pkgroot/usr/share/fonts/X11/100dpi
+** Warning: fonts.cache not built
+** Generate this file manually on host system using fc-cache
+make[2]: Leaving directory `/sources/builddir/font-adobe-100dpi-1.0.3'
+make[1]: Leaving directory `/sources/builddir/font-adobe-100dpi-1.0.3'
+`/sources/buildmgr/pkgroot/usr/share/fonts/X11-OTF' -> `/usr/share/fonts/X11/OTF'
+`/sources/buildmgr/pkgroot/usr/share/fonts/X11-TTF' -> `/usr/share/fonts/X11/TTF'

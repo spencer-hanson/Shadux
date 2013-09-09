@@ -1,0 +1,876 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for bash... /bin/bash
+checking if dolt supports this host... yes, replacing libtool
+checking whether make sets $(MAKE)... (cached) yes
+checking for a C compiler for build tools... gcc
+checking for suffix of executable build tools... 
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for pid_t... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for geteuid... yes
+checking for getuid... yes
+checking for link... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkstemp... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strtol... yes
+checking for getopt... yes
+checking for getopt_long... yes
+checking for sysconf... yes
+checking for ftruncate... yes
+checking for chsize... no
+checking for rand... yes
+checking for random... yes
+checking for lrand48... yes
+checking for a usable iconv... libc
+checking for freetype-config... /usr/bin/freetype-config
+checking for FT_Get_Next_Char... yes
+checking for FT_Get_BDF_Property... yes
+checking for FT_Get_PS_Font_Info... yes
+checking for FT_Has_PS_Glyph_Names... yes
+checking for FT_Get_X11_Font_Format... yes
+checking for FT_Select_Size... yes
+checking for FT_Bitmap_Size.y_ppem... yes
+checking expat.h usability... yes
+checking expat.h presence... yes
+checking for expat.h... yes
+checking for XML_SetDoctypeDeclHandler... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for docbook2html... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating fontconfig/Makefile
+config.status: creating fc-lang/Makefile
+config.status: creating fc-glyphname/Makefile
+config.status: creating fc-case/Makefile
+config.status: creating fc-arch/Makefile
+config.status: creating src/Makefile
+config.status: creating conf.d/Makefile
+config.status: creating fc-cache/Makefile
+config.status: creating fc-cat/Makefile
+config.status: creating fc-list/Makefile
+config.status: creating fc-match/Makefile
+config.status: creating fc-query/Makefile
+config.status: creating fc-scan/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/version.sgml
+config.status: creating test/Makefile
+config.status: creating fontconfig.spec
+config.status: creating fontconfig.pc
+config.status: creating fontconfig-zip
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0'
+Making all in fontconfig
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fontconfig'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fontconfig'
+Making all in fc-case
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-case'
+touch fcalias.h fcaliastail.h
+touch fcalias.h fcaliastail.h
+make  all-am
+make[3]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-case'
+  CC     fc-case.o
+  CCLD   fc-case
+  GEN    fccase.h
+make[3]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-case'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-case'
+Making all in fc-lang
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-lang'
+touch fcalias.h fcaliastail.h
+touch fcalias.h fcaliastail.h
+  CC     fc-lang.o
+fc-lang.c: In function ‘scan’:
+fc-lang.c:152:8: warning: assignment discards ‘const’ qualifier from pointer target type [enabled by default]
+fc-lang.c:180:7: warning: assignment discards ‘const’ qualifier from pointer target type [enabled by default]
+fc-lang.c: In function ‘compare’:
+fc-lang.c:235:5: warning: pointer targets in passing argument 1 of ‘FcStrCmpIgnoreCase’ differ in signedness [-Wpointer-sign]
+../src/fcstr.c:212:1: note: expected ‘const FcChar8 *’ but argument is of type ‘char * const’
+fc-lang.c:235:5: warning: pointer targets in passing argument 2 of ‘FcStrCmpIgnoreCase’ differ in signedness [-Wpointer-sign]
+../src/fcstr.c:212:1: note: expected ‘const FcChar8 *’ but argument is of type ‘char * const’
+  CCLD   fc-lang
+  GEN    fclang.h
+make  all-am
+make[3]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-lang'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-lang'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-lang'
+Making all in fc-glyphname
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-glyphname'
+touch fcalias.h fcaliastail.h
+touch fcalias.h fcaliastail.h
+  CC     fc-glyphname.o
+  CCLD   fc-glyphname
+  GEN    fcglyphname.h
+make  all-am
+make[3]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-glyphname'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-glyphname'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-glyphname'
+Making all in fc-arch
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-arch'
+touch fcalias.h fcaliastail.h
+touch fcalias.h fcaliastail.h
+  CC     fc-arch.o
+  CCLD   fc-arch
+  GEN    fcarch.h
+make  all-am
+make[3]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-arch'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-arch'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-arch'
+Making all in src
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/src'
+sh ../src/makealias "../src" fcalias.h fcaliastail.h ../fontconfig/fontconfig.h ../src/fcdeprecate.h ../fontconfig/fcprivate.h
+sh ../src/makealias "../src" fcftalias.h fcftaliastail.h ../fontconfig/fcfreetype.h
+make  all-am
+make[3]: Entering directory `/sources/builddir/fontconfig-2.8.0/src'
+  CC     fcatomic.lo
+  CC     fcblanks.lo
+  CC     fccache.lo
+  CC     fccfg.lo
+fccache.c: In function ‘FcDirCacheBuild’:
+fccache.c:721:14: warning: variable ‘dirs_offset’ set but not used [-Wunused-but-set-variable]
+fccache.c:720:14: warning: variable ‘cache_offset’ set but not used [-Wunused-but-set-variable]
+fccache.c: In function ‘FcDirCacheWrite’:
+fccache.c:943:2: warning: pointer targets in passing argument 1 of ‘stat’ differ in signedness [-Wpointer-sign]
+/usr/include/sys/stat.h:455:1: note: expected ‘const char *’ but argument is of type ‘FcChar8 *’
+  CC     fccharset.lo
+  CC     fcdbg.lo
+  CC     fcdefault.lo
+  CC     fcdir.lo
+  CC     fcformat.lo
+fcdir.c: In function ‘FcDirCacheScan’:
+fcdir.c:238:13: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+fcformat.c: In function ‘skip_percent’:
+fcformat.c:352:9: warning: variable ‘width’ set but not used [-Wunused-but-set-variable]
+  CC     fcfreetype.lo
+fcformat.c: In function ‘interpret_expr’:
+fcformat.c:611:26: warning: ‘idx’ may be used uninitialized in this function [-Wuninitialized]
+fcformat.c:579:20: note: ‘idx’ was declared here
+fcfreetype.c: In function ‘GetScriptTags’:
+fcfreetype.c:2871:16: warning: variable ‘memory’ set but not used [-Wunused-but-set-variable]
+  CC     fcfs.lo
+  CC     fcinit.lo
+  CC     fclang.lo
+  CC     fclist.lo
+  CC     fcmatch.lo
+  CC     fcmatrix.lo
+  CC     fcname.lo
+fcname.c: In function ‘FcObjectValidType’:
+fcname.c:299:2: warning: case value ‘4294967295’ not in enumerated type ‘FcType’ [-Wswitch]
+  CC     fcpat.lo
+  CC     fcserialize.lo
+  CC     fcstr.lo
+  CC     fcxml.lo
+fcxml.c: In function ‘FcExprCreateString’:
+fcxml.c:107:12: warning: assignment discards ‘const’ qualifier from pointer target type [enabled by default]
+fcxml.c: In function ‘FcExprCreateConst’:
+fcxml.c:155:16: warning: assignment discards ‘const’ qualifier from pointer target type [enabled by default]
+  CC     ftglue.lo
+  CCLD   libfontconfig.la
+make[3]: Leaving directory `/sources/builddir/fontconfig-2.8.0/src'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/src'
+Making all in fc-cache
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-cache'
+  CC     fc-cache.o
+  CCLD   fc-cache
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-cache'
+Making all in fc-cat
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-cat'
+  CC     fc-cat.o
+  CCLD   fc-cat
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-cat'
+Making all in fc-list
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-list'
+  CC     fc-list.o
+  CCLD   fc-list
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-list'
+Making all in fc-match
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-match'
+  CC     fc-match.o
+  CCLD   fc-match
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-match'
+Making all in fc-query
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-query'
+  CC     fc-query.o
+  CCLD   fc-query
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-query'
+Making all in fc-scan
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-scan'
+  CC     fc-scan.o
+  CCLD   fc-scan
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-scan'
+Making all in conf.d
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/conf.d'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/conf.d'
+Making all in test
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/test'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/test'
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0'
+Making install in fontconfig
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/fontconfig'
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fontconfig'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/fontconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/fontconfig"
+ /usr/bin/install -c -m 644 fontconfig.h fcfreetype.h fcprivate.h '/sources/buildmgr/pkgroot/usr/include/fontconfig'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fontconfig'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fontconfig'
+Making install in fc-case
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-case'
+make  install-am
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-case'
+make[3]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-case'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-case'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-case'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-case'
+Making install in fc-lang
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-lang'
+make  install-am
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-lang'
+make[3]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-lang'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-lang'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-lang'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-lang'
+Making install in fc-glyphname
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-glyphname'
+make  install-am
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-glyphname'
+make[3]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-glyphname'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-glyphname'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-glyphname'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-glyphname'
+Making install in fc-arch
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-arch'
+make  install-am
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-arch'
+make[3]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-arch'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-arch'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-arch'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-arch'
+Making install in src
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/src'
+make  install-am
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/src'
+make[3]: Entering directory `/sources/builddir/fontconfig-2.8.0/src'
+test -z "/usr/lib" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib"
+make[3]: Nothing to be done for `install-data-am'.
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libfontconfig.la '/sources/buildmgr/pkgroot/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libfontconfig.so.1.4.4 /sources/buildmgr/pkgroot/usr/lib/libfontconfig.so.1.4.4
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libfontconfig.so.1.4.4 libfontconfig.so.1 || { rm -f libfontconfig.so.1 && ln -s libfontconfig.so.1.4.4 libfontconfig.so.1; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libfontconfig.so.1.4.4 libfontconfig.so || { rm -f libfontconfig.so && ln -s libfontconfig.so.1.4.4 libfontconfig.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfontconfig.lai /sources/buildmgr/pkgroot/usr/lib/libfontconfig.la
+libtool: install: /usr/bin/install -c .libs/libfontconfig.a /sources/buildmgr/pkgroot/usr/lib/libfontconfig.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libfontconfig.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libfontconfig.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+make[3]: Leaving directory `/sources/builddir/fontconfig-2.8.0/src'
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/src'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/src'
+Making install in fc-cache
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-cache'
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-cache'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+/bin/sh /sources/builddir/fontconfig-2.8.0/install-sh -d "/sources/buildmgr/pkgroot/var/cache/fontconfig"
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-cache '/sources/buildmgr/pkgroot/usr/bin'
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+libtool: install: warning: `../src/libfontconfig.la' has not been installed in `/usr/lib'
+libtool: install: /usr/bin/install -c .libs/fc-cache /sources/buildmgr/pkgroot/usr/bin/fc-cache
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-cache'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-cache'
+Making install in fc-cat
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-cat'
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-cat'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-cat '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: warning: `../src/libfontconfig.la' has not been installed in `/usr/lib'
+libtool: install: /usr/bin/install -c .libs/fc-cat /sources/buildmgr/pkgroot/usr/bin/fc-cat
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-cat'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-cat'
+Making install in fc-list
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-list'
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-list'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-list '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: warning: `../src/libfontconfig.la' has not been installed in `/usr/lib'
+libtool: install: /usr/bin/install -c .libs/fc-list /sources/buildmgr/pkgroot/usr/bin/fc-list
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-list'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-list'
+Making install in fc-match
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-match'
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-match'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-match '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: warning: `../src/libfontconfig.la' has not been installed in `/usr/lib'
+libtool: install: /usr/bin/install -c .libs/fc-match /sources/buildmgr/pkgroot/usr/bin/fc-match
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-match'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-match'
+Making install in fc-query
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-query'
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-query'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-query '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: warning: `../src/libfontconfig.la' has not been installed in `/usr/lib'
+libtool: install: /usr/bin/install -c .libs/fc-query /sources/buildmgr/pkgroot/usr/bin/fc-query
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-query'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-query'
+Making install in fc-scan
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-scan'
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/fc-scan'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c fc-scan '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: warning: `../src/libfontconfig.la' has not been installed in `/usr/lib'
+libtool: install: /usr/bin/install -c .libs/fc-scan /sources/buildmgr/pkgroot/usr/bin/fc-scan
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-scan'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/fc-scan'
+Making install in conf.d
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/conf.d'
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/conf.d'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/etc/fonts/conf.avail" || /bin/mkdir -p "/sources/buildmgr/pkgroot/etc/fonts/conf.avail"
+test -z "/etc/fonts/conf.d" || /bin/mkdir -p "/sources/buildmgr/pkgroot/etc/fonts/conf.d"
+ /usr/bin/install -c -m 644 README '/sources/buildmgr/pkgroot/etc/fonts/conf.d'
+ /usr/bin/install -c -m 644 10-autohint.conf 10-no-sub-pixel.conf 10-sub-pixel-bgr.conf 10-sub-pixel-rgb.conf 10-sub-pixel-vbgr.conf 10-sub-pixel-vrgb.conf 10-unhinted.conf 20-fix-globaladvance.conf 20-unhint-small-vera.conf 25-unhint-nonlatin.conf 30-urw-aliases.conf 30-metric-aliases.conf 40-nonlatin.conf 45-latin.conf 49-sansserif.conf 50-user.conf 51-local.conf 60-latin.conf 65-fonts-persian.conf 65-khmer.conf 65-nonlatin.conf 69-unifont.conf 70-no-bitmaps.conf 70-yes-bitmaps.conf 80-delicious.conf 90-synthetic.conf '/sources/buildmgr/pkgroot/etc/fonts/conf.avail'
+mkdir -p /sources/buildmgr/pkgroot/etc/fonts/conf.d
+cd /sources/buildmgr/pkgroot/etc/fonts/conf.d
+rm -f 20-fix-globaladvance.conf; ln -s ../conf.avail/20-fix-globaladvance.conf .
+rm -f 20-unhint-small-vera.conf; ln -s ../conf.avail/20-unhint-small-vera.conf .
+rm -f 30-urw-aliases.conf; ln -s ../conf.avail/30-urw-aliases.conf .
+rm -f 30-metric-aliases.conf; ln -s ../conf.avail/30-metric-aliases.conf .
+rm -f 40-nonlatin.conf; ln -s ../conf.avail/40-nonlatin.conf .
+rm -f 45-latin.conf; ln -s ../conf.avail/45-latin.conf .
+rm -f 49-sansserif.conf; ln -s ../conf.avail/49-sansserif.conf .
+rm -f 50-user.conf; ln -s ../conf.avail/50-user.conf .
+rm -f 51-local.conf; ln -s ../conf.avail/51-local.conf .
+rm -f 60-latin.conf; ln -s ../conf.avail/60-latin.conf .
+rm -f 65-fonts-persian.conf; ln -s ../conf.avail/65-fonts-persian.conf .
+rm -f 65-nonlatin.conf; ln -s ../conf.avail/65-nonlatin.conf .
+rm -f 69-unifont.conf; ln -s ../conf.avail/69-unifont.conf .
+rm -f 80-delicious.conf; ln -s ../conf.avail/80-delicious.conf .
+rm -f 90-synthetic.conf; ln -s ../conf.avail/90-synthetic.conf .
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/conf.d'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/conf.d'
+Making install in test
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0/test'
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0/test'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0/test'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0/test'
+make[1]: Entering directory `/sources/builddir/fontconfig-2.8.0'
+make[2]: Entering directory `/sources/builddir/fontconfig-2.8.0'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/etc/fonts" || /bin/mkdir -p "/sources/buildmgr/pkgroot/etc/fonts"
+sed \
+	-e 's,@FC_CACHEDIR\@,/var/cache/fontconfig,g' \
+	-e 's,@FC_DEFAULT_FONTS\@,/usr/share/fonts,g' \
+	-e 's,@FC_FONTPATH\@,,g' \
+	-e 's,@PACKAGE\@,fontconfig,g' \
+	-e 's,@VERSION\@,2.8.0,g' \
+	fonts.conf.in > fonts.conf.tmp && \
+mv fonts.conf.tmp fonts.conf
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/pkgconfig"
+ /usr/bin/install -c -m 644 fonts.dtd '/sources/buildmgr/pkgroot/etc/fonts'
+/bin/sh /sources/builddir/fontconfig-2.8.0/install-sh -d /sources/buildmgr/pkgroot/etc/fonts /sources/buildmgr/pkgroot/var/cache/fontconfig
+if [ -f /sources/buildmgr/pkgroot/etc/fonts/fonts.conf ]; then \
+  echo "backing up existing /sources/buildmgr/pkgroot/etc/fonts/fonts.conf"; \
+  mv /sources/buildmgr/pkgroot/etc/fonts/fonts.conf /sources/buildmgr/pkgroot/etc/fonts/fonts.conf.bak; \
+fi
+if [ -f ./fonts.conf ]; then \
+  echo " /usr/bin/install -c -m 644 ./fonts.conf /sources/buildmgr/pkgroot/etc/fonts/fonts.conf"; \
+  /usr/bin/install -c -m 644 ./fonts.conf /sources/buildmgr/pkgroot/etc/fonts/fonts.conf; \
+else if [ -f fonts.conf ]; then \
+  echo " /usr/bin/install -c -m 644 fonts.conf /sources/buildmgr/pkgroot/etc/fonts/fonts.conf"; \
+  /usr/bin/install -c -m 644 fonts.conf /sources/buildmgr/pkgroot/etc/fonts/fonts.conf; \
+fi; fi
+ /usr/bin/install -c -m 644 fontconfig.pc '/sources/buildmgr/pkgroot/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 ./fonts.conf /sources/buildmgr/pkgroot/etc/fonts/fonts.conf
+***
+*** Warning: fonts.cache not built
+***
+*** Generate this file manually on host system using fc-cache
+***
+make[2]: Leaving directory `/sources/builddir/fontconfig-2.8.0'
+make[1]: Leaving directory `/sources/builddir/fontconfig-2.8.0'
+install: creating directory `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0'
+install: creating directory `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel'
+`fc-cache/fc-cache.1' -> `/sources/buildmgr/pkgroot/usr/share/man/man1/fc-cache.1'
+`fc-cat/fc-cat.1' -> `/sources/buildmgr/pkgroot/usr/share/man/man1/fc-cat.1'
+`fc-list/fc-list.1' -> `/sources/buildmgr/pkgroot/usr/share/man/man1/fc-list.1'
+`fc-match/fc-match.1' -> `/sources/buildmgr/pkgroot/usr/share/man/man1/fc-match.1'
+`fc-query/fc-query.1' -> `/sources/buildmgr/pkgroot/usr/share/man/man1/fc-query.1'
+`fc-scan/fc-scan.1' -> `/sources/buildmgr/pkgroot/usr/share/man/man1/fc-scan.1'
+`doc/FcAtomicCreate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcAtomicCreate.3'
+`doc/FcAtomicDeleteNew.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcAtomicDeleteNew.3'
+`doc/FcAtomicDestroy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcAtomicDestroy.3'
+`doc/FcAtomicLock.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcAtomicLock.3'
+`doc/FcAtomicNewFile.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcAtomicNewFile.3'
+`doc/FcAtomicOrigFile.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcAtomicOrigFile.3'
+`doc/FcAtomicReplaceOrig.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcAtomicReplaceOrig.3'
+`doc/FcAtomicUnlock.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcAtomicUnlock.3'
+`doc/FcBlanksAdd.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcBlanksAdd.3'
+`doc/FcBlanksCreate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcBlanksCreate.3'
+`doc/FcBlanksDestroy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcBlanksDestroy.3'
+`doc/FcBlanksIsMember.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcBlanksIsMember.3'
+`doc/FcCacheCopySet.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCacheCopySet.3'
+`doc/FcCacheDir.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCacheDir.3'
+`doc/FcCacheNumFont.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCacheNumFont.3'
+`doc/FcCacheNumSubdir.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCacheNumSubdir.3'
+`doc/FcCacheSubdir.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCacheSubdir.3'
+`doc/FcCharSetAddChar.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetAddChar.3'
+`doc/FcCharSetCopy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetCopy.3'
+`doc/FcCharSetCount.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetCount.3'
+`doc/FcCharSetCoverage.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetCoverage.3'
+`doc/FcCharSetCreate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetCreate.3'
+`doc/FcCharSetDestroy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetDestroy.3'
+`doc/FcCharSetEqual.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetEqual.3'
+`doc/FcCharSetFirstPage.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetFirstPage.3'
+`doc/FcCharSetHasChar.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetHasChar.3'
+`doc/FcCharSetIntersect.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetIntersect.3'
+`doc/FcCharSetIntersectCount.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetIntersectCount.3'
+`doc/FcCharSetIsSubset.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetIsSubset.3'
+`doc/FcCharSetMerge.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetMerge.3'
+`doc/FcCharSetNew.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetNew.3'
+`doc/FcCharSetNextPage.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetNextPage.3'
+`doc/FcCharSetSubtract.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetSubtract.3'
+`doc/FcCharSetSubtractCount.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetSubtractCount.3'
+`doc/FcCharSetUnion.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcCharSetUnion.3'
+`doc/FcConfigAppFontAddDir.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigAppFontAddDir.3'
+`doc/FcConfigAppFontAddFile.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigAppFontAddFile.3'
+`doc/FcConfigAppFontClear.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigAppFontClear.3'
+`doc/FcConfigBuildFonts.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigBuildFonts.3'
+`doc/FcConfigCreate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigCreate.3'
+`doc/FcConfigDestroy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigDestroy.3'
+`doc/FcConfigEnableHome.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigEnableHome.3'
+`doc/FcConfigFilename.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigFilename.3'
+`doc/FcConfigGetBlanks.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigGetBlanks.3'
+`doc/FcConfigGetCache.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigGetCache.3'
+`doc/FcConfigGetCacheDirs.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigGetCacheDirs.3'
+`doc/FcConfigGetConfigDirs.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigGetConfigDirs.3'
+`doc/FcConfigGetConfigFiles.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigGetConfigFiles.3'
+`doc/FcConfigGetCurrent.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigGetCurrent.3'
+`doc/FcConfigGetFontDirs.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigGetFontDirs.3'
+`doc/FcConfigGetFonts.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigGetFonts.3'
+`doc/FcConfigGetRescanInterval.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigGetRescanInterval.3'
+`doc/FcConfigHome.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigHome.3'
+`doc/FcConfigParseAndLoad.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigParseAndLoad.3'
+`doc/FcConfigReference.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigReference.3'
+`doc/FcConfigSetCurrent.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigSetCurrent.3'
+`doc/FcConfigSetRescanInterval.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigSetRescanInterval.3'
+`doc/FcConfigSubstitute.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigSubstitute.3'
+`doc/FcConfigSubstituteWithPat.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigSubstituteWithPat.3'
+`doc/FcConfigUptoDate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcConfigUptoDate.3'
+`doc/FcDefaultSubstitute.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcDefaultSubstitute.3'
+`doc/FcDirCacheLoad.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcDirCacheLoad.3'
+`doc/FcDirCacheLoadFile.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcDirCacheLoadFile.3'
+`doc/FcDirCacheRead.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcDirCacheRead.3'
+`doc/FcDirCacheUnlink.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcDirCacheUnlink.3'
+`doc/FcDirCacheUnload.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcDirCacheUnload.3'
+`doc/FcDirCacheValid.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcDirCacheValid.3'
+`doc/FcDirSave.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcDirSave.3'
+`doc/FcDirScan.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcDirScan.3'
+`doc/FcFileIsDir.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFileIsDir.3'
+`doc/FcFileScan.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFileScan.3'
+`doc/FcFini.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFini.3'
+`doc/FcFontList.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontList.3'
+`doc/FcFontMatch.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontMatch.3'
+`doc/FcFontRenderPrepare.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontRenderPrepare.3'
+`doc/FcFontSetAdd.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontSetAdd.3'
+`doc/FcFontSetCreate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontSetCreate.3'
+`doc/FcFontSetDestroy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontSetDestroy.3'
+`doc/FcFontSetList.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontSetList.3'
+`doc/FcFontSetMatch.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontSetMatch.3'
+`doc/FcFontSetPrint.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontSetPrint.3'
+`doc/FcFontSetSort.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontSetSort.3'
+`doc/FcFontSetSortDestroy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontSetSortDestroy.3'
+`doc/FcFontSort.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFontSort.3'
+`doc/FcFreeTypeCharIndex.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFreeTypeCharIndex.3'
+`doc/FcFreeTypeCharSet.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFreeTypeCharSet.3'
+`doc/FcFreeTypeCharSetAndSpacing.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFreeTypeCharSetAndSpacing.3'
+`doc/FcFreeTypeQuery.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFreeTypeQuery.3'
+`doc/FcFreeTypeQueryFace.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcFreeTypeQueryFace.3'
+`doc/FcGetLangs.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcGetLangs.3'
+`doc/FcGetVersion.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcGetVersion.3'
+`doc/FcInit.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcInit.3'
+`doc/FcInitBringUptoDate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcInitBringUptoDate.3'
+`doc/FcInitLoadConfig.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcInitLoadConfig.3'
+`doc/FcInitLoadConfigAndFonts.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcInitLoadConfigAndFonts.3'
+`doc/FcInitReinitialize.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcInitReinitialize.3'
+`doc/FcIsLower.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcIsLower.3'
+`doc/FcIsUpper.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcIsUpper.3'
+`doc/FcLangGetCharSet.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcLangGetCharSet.3'
+`doc/FcLangSetAdd.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcLangSetAdd.3'
+`doc/FcLangSetCompare.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcLangSetCompare.3'
+`doc/FcLangSetContains.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcLangSetContains.3'
+`doc/FcLangSetCopy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcLangSetCopy.3'
+`doc/FcLangSetCreate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcLangSetCreate.3'
+`doc/FcLangSetDestroy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcLangSetDestroy.3'
+`doc/FcLangSetEqual.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcLangSetEqual.3'
+`doc/FcLangSetGetLangs.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcLangSetGetLangs.3'
+`doc/FcLangSetHash.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcLangSetHash.3'
+`doc/FcLangSetHasLang.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcLangSetHasLang.3'
+`doc/FcMatrixCopy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcMatrixCopy.3'
+`doc/FcMatrixEqual.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcMatrixEqual.3'
+`doc/FcMatrixInit.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcMatrixInit.3'
+`doc/FcMatrixMultiply.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcMatrixMultiply.3'
+`doc/FcMatrixRotate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcMatrixRotate.3'
+`doc/FcMatrixScale.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcMatrixScale.3'
+`doc/FcMatrixShear.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcMatrixShear.3'
+`doc/FcNameConstant.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcNameConstant.3'
+`doc/FcNameGetConstant.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcNameGetConstant.3'
+`doc/FcNameGetObjectType.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcNameGetObjectType.3'
+`doc/FcNameParse.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcNameParse.3'
+`doc/FcNameRegisterConstants.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcNameRegisterConstants.3'
+`doc/FcNameRegisterObjectTypes.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcNameRegisterObjectTypes.3'
+`doc/FcNameUnparse.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcNameUnparse.3'
+`doc/FcNameUnregisterConstants.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcNameUnregisterConstants.3'
+`doc/FcNameUnregisterObjectTypes.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcNameUnregisterObjectTypes.3'
+`doc/FcObjectSetAdd.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcObjectSetAdd.3'
+`doc/FcObjectSetBuild.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcObjectSetBuild.3'
+`doc/FcObjectSetCreate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcObjectSetCreate.3'
+`doc/FcObjectSetDestroy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcObjectSetDestroy.3'
+`doc/FcPatternAdd.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternAdd.3'
+`doc/FcPatternAdd-Type.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternAdd-Type.3'
+`doc/FcPatternAddWeak.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternAddWeak.3'
+`doc/FcPatternBuild.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternBuild.3'
+`doc/FcPatternCreate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternCreate.3'
+`doc/FcPatternDel.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternDel.3'
+`doc/FcPatternDestroy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternDestroy.3'
+`doc/FcPatternDuplicate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternDuplicate.3'
+`doc/FcPatternEqual.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternEqual.3'
+`doc/FcPatternEqualSubset.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternEqualSubset.3'
+`doc/FcPatternFilter.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternFilter.3'
+`doc/FcPatternFormat.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternFormat.3'
+`doc/FcPatternGet.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternGet.3'
+`doc/FcPatternGet-Type.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternGet-Type.3'
+`doc/FcPatternHash.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternHash.3'
+`doc/FcPatternPrint.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternPrint.3'
+`doc/FcPatternReference.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternReference.3'
+`doc/FcPatternRemove.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcPatternRemove.3'
+`doc/FcStrBasename.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrBasename.3'
+`doc/FcStrCmp.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrCmp.3'
+`doc/FcStrCmpIgnoreCase.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrCmpIgnoreCase.3'
+`doc/FcStrCopy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrCopy.3'
+`doc/FcStrCopyFilename.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrCopyFilename.3'
+`doc/FcStrDirname.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrDirname.3'
+`doc/FcStrDowncase.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrDowncase.3'
+`doc/FcStrFree.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrFree.3'
+`doc/FcStrListCreate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrListCreate.3'
+`doc/FcStrListDone.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrListDone.3'
+`doc/FcStrListNext.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrListNext.3'
+`doc/FcStrPlus.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrPlus.3'
+`doc/FcStrSetAdd.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrSetAdd.3'
+`doc/FcStrSetAddFilename.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrSetAddFilename.3'
+`doc/FcStrSetCreate.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrSetCreate.3'
+`doc/FcStrSetDel.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrSetDel.3'
+`doc/FcStrSetDestroy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrSetDestroy.3'
+`doc/FcStrSetEqual.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrSetEqual.3'
+`doc/FcStrSetMember.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrSetMember.3'
+`doc/FcStrStr.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrStr.3'
+`doc/FcStrStrIgnoreCase.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcStrStrIgnoreCase.3'
+`doc/FcToLower.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcToLower.3'
+`doc/FcUcs4ToUtf8.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcUcs4ToUtf8.3'
+`doc/FcUtf16Len.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcUtf16Len.3'
+`doc/FcUtf16ToUcs4.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcUtf16ToUcs4.3'
+`doc/FcUtf8Len.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcUtf8Len.3'
+`doc/FcUtf8ToUcs4.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcUtf8ToUcs4.3'
+`doc/FcValueDestroy.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcValueDestroy.3'
+`doc/FcValueEqual.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcValueEqual.3'
+`doc/FcValuePrint.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcValuePrint.3'
+`doc/FcValueSave.3' -> `/sources/buildmgr/pkgroot/usr/share/man/man3/FcValueSave.3'
+`doc/fonts-conf.5' -> `/sources/buildmgr/pkgroot/usr/share/man/man5/fonts-conf.5'
+`doc/fontconfig-devel/fcatomiccreate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcatomiccreate.html'
+`doc/fontconfig-devel/fcatomicdeletenew.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcatomicdeletenew.html'
+`doc/fontconfig-devel/fcatomicdestroy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcatomicdestroy.html'
+`doc/fontconfig-devel/fcatomiclock.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcatomiclock.html'
+`doc/fontconfig-devel/fcatomicnewfile.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcatomicnewfile.html'
+`doc/fontconfig-devel/fcatomicorigfile.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcatomicorigfile.html'
+`doc/fontconfig-devel/fcatomicreplaceorig.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcatomicreplaceorig.html'
+`doc/fontconfig-devel/fcatomicunlock.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcatomicunlock.html'
+`doc/fontconfig-devel/fcblanksadd.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcblanksadd.html'
+`doc/fontconfig-devel/fcblankscreate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcblankscreate.html'
+`doc/fontconfig-devel/fcblanksdestroy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcblanksdestroy.html'
+`doc/fontconfig-devel/fcblanksismember.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcblanksismember.html'
+`doc/fontconfig-devel/fccachecopyset.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccachecopyset.html'
+`doc/fontconfig-devel/fccachedir.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccachedir.html'
+`doc/fontconfig-devel/fccachenumfont.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccachenumfont.html'
+`doc/fontconfig-devel/fccachenumsubdir.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccachenumsubdir.html'
+`doc/fontconfig-devel/fccachesubdir.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccachesubdir.html'
+`doc/fontconfig-devel/fccharsetaddchar.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetaddchar.html'
+`doc/fontconfig-devel/fccharsetcopy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetcopy.html'
+`doc/fontconfig-devel/fccharsetcount.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetcount.html'
+`doc/fontconfig-devel/fccharsetcoverage.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetcoverage.html'
+`doc/fontconfig-devel/fccharsetcreate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetcreate.html'
+`doc/fontconfig-devel/fccharsetdestroy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetdestroy.html'
+`doc/fontconfig-devel/fccharsetequal.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetequal.html'
+`doc/fontconfig-devel/fccharsetfirstpage.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetfirstpage.html'
+`doc/fontconfig-devel/fccharsethaschar.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsethaschar.html'
+`doc/fontconfig-devel/fccharsetintersectcount.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetintersectcount.html'
+`doc/fontconfig-devel/fccharsetintersect.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetintersect.html'
+`doc/fontconfig-devel/fccharsetissubset.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetissubset.html'
+`doc/fontconfig-devel/fccharsetmerge.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetmerge.html'
+`doc/fontconfig-devel/fccharsetnew.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetnew.html'
+`doc/fontconfig-devel/fccharsetnextpage.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetnextpage.html'
+`doc/fontconfig-devel/fccharsetsubtractcount.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetsubtractcount.html'
+`doc/fontconfig-devel/fccharsetsubtract.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetsubtract.html'
+`doc/fontconfig-devel/fccharsetunion.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fccharsetunion.html'
+`doc/fontconfig-devel/fcconfigappfontadddir.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigappfontadddir.html'
+`doc/fontconfig-devel/fcconfigappfontaddfile.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigappfontaddfile.html'
+`doc/fontconfig-devel/fcconfigappfontclear.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigappfontclear.html'
+`doc/fontconfig-devel/fcconfigbuildfonts.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigbuildfonts.html'
+`doc/fontconfig-devel/fcconfigcreate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigcreate.html'
+`doc/fontconfig-devel/fcconfigdestroy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigdestroy.html'
+`doc/fontconfig-devel/fcconfigenablehome.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigenablehome.html'
+`doc/fontconfig-devel/fcconfigfilename.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigfilename.html'
+`doc/fontconfig-devel/fcconfiggetblanks.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfiggetblanks.html'
+`doc/fontconfig-devel/fcconfiggetcachedirs.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfiggetcachedirs.html'
+`doc/fontconfig-devel/fcconfiggetcache.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfiggetcache.html'
+`doc/fontconfig-devel/fcconfiggetconfigdirs.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfiggetconfigdirs.html'
+`doc/fontconfig-devel/fcconfiggetconfigfiles.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfiggetconfigfiles.html'
+`doc/fontconfig-devel/fcconfiggetcurrent.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfiggetcurrent.html'
+`doc/fontconfig-devel/fcconfiggetfontdirs.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfiggetfontdirs.html'
+`doc/fontconfig-devel/fcconfiggetfonts.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfiggetfonts.html'
+`doc/fontconfig-devel/fcconfiggetrescaninterval.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfiggetrescaninterval.html'
+`doc/fontconfig-devel/fcconfighome.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfighome.html'
+`doc/fontconfig-devel/fcconfigparseandload.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigparseandload.html'
+`doc/fontconfig-devel/fcconfigreference.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigreference.html'
+`doc/fontconfig-devel/fcconfigsetcurrent.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigsetcurrent.html'
+`doc/fontconfig-devel/fcconfigsetrescaninterval.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigsetrescaninterval.html'
+`doc/fontconfig-devel/fcconfigsubstitute.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigsubstitute.html'
+`doc/fontconfig-devel/fcconfigsubstitutewithpat.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfigsubstitutewithpat.html'
+`doc/fontconfig-devel/fcconfiguptodate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcconfiguptodate.html'
+`doc/fontconfig-devel/fcdefaultsubstitute.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcdefaultsubstitute.html'
+`doc/fontconfig-devel/fcdircacheloadfile.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcdircacheloadfile.html'
+`doc/fontconfig-devel/fcdircacheload.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcdircacheload.html'
+`doc/fontconfig-devel/fcdircacheread.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcdircacheread.html'
+`doc/fontconfig-devel/fcdircacheunlink.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcdircacheunlink.html'
+`doc/fontconfig-devel/fcdircacheunload.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcdircacheunload.html'
+`doc/fontconfig-devel/fcdircachevalid.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcdircachevalid.html'
+`doc/fontconfig-devel/fcdirsave.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcdirsave.html'
+`doc/fontconfig-devel/fcdirscan.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcdirscan.html'
+`doc/fontconfig-devel/fcfileisdir.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfileisdir.html'
+`doc/fontconfig-devel/fcfilescan.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfilescan.html'
+`doc/fontconfig-devel/fcfini.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfini.html'
+`doc/fontconfig-devel/fcfontlist.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontlist.html'
+`doc/fontconfig-devel/fcfontmatch.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontmatch.html'
+`doc/fontconfig-devel/fcfontrenderprepare.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontrenderprepare.html'
+`doc/fontconfig-devel/fcfontsetadd.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontsetadd.html'
+`doc/fontconfig-devel/fcfontsetcreate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontsetcreate.html'
+`doc/fontconfig-devel/fcfontsetdestroy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontsetdestroy.html'
+`doc/fontconfig-devel/fcfontsetlist.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontsetlist.html'
+`doc/fontconfig-devel/fcfontsetmatch.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontsetmatch.html'
+`doc/fontconfig-devel/fcfontsetprint.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontsetprint.html'
+`doc/fontconfig-devel/fcfontsetsortdestroy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontsetsortdestroy.html'
+`doc/fontconfig-devel/fcfontsetsort.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontsetsort.html'
+`doc/fontconfig-devel/fcfontsort.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfontsort.html'
+`doc/fontconfig-devel/fcfreetypecharindex.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfreetypecharindex.html'
+`doc/fontconfig-devel/fcfreetypecharsetandspacing.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfreetypecharsetandspacing.html'
+`doc/fontconfig-devel/fcfreetypecharset.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfreetypecharset.html'
+`doc/fontconfig-devel/fcfreetypequeryface.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfreetypequeryface.html'
+`doc/fontconfig-devel/fcfreetypequery.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcfreetypequery.html'
+`doc/fontconfig-devel/fcgetlangs.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcgetlangs.html'
+`doc/fontconfig-devel/fcgetversion.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcgetversion.html'
+`doc/fontconfig-devel/fcinitbringuptodate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcinitbringuptodate.html'
+`doc/fontconfig-devel/fcinit.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcinit.html'
+`doc/fontconfig-devel/fcinitloadconfigandfonts.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcinitloadconfigandfonts.html'
+`doc/fontconfig-devel/fcinitloadconfig.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcinitloadconfig.html'
+`doc/fontconfig-devel/fcinitreinitialize.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcinitreinitialize.html'
+`doc/fontconfig-devel/fcislower.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcislower.html'
+`doc/fontconfig-devel/fcisupper.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcisupper.html'
+`doc/fontconfig-devel/fclanggetcharset.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fclanggetcharset.html'
+`doc/fontconfig-devel/fclangsetadd.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fclangsetadd.html'
+`doc/fontconfig-devel/fclangsetcompare.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fclangsetcompare.html'
+`doc/fontconfig-devel/fclangsetcontains.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fclangsetcontains.html'
+`doc/fontconfig-devel/fclangsetcopy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fclangsetcopy.html'
+`doc/fontconfig-devel/fclangsetcreate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fclangsetcreate.html'
+`doc/fontconfig-devel/fclangsetdestroy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fclangsetdestroy.html'
+`doc/fontconfig-devel/fclangsetequal.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fclangsetequal.html'
+`doc/fontconfig-devel/fclangsetgetlangs.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fclangsetgetlangs.html'
+`doc/fontconfig-devel/fclangsethash.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fclangsethash.html'
+`doc/fontconfig-devel/fclangsethaslang.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fclangsethaslang.html'
+`doc/fontconfig-devel/fcmatrixcopy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcmatrixcopy.html'
+`doc/fontconfig-devel/fcmatrixequal.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcmatrixequal.html'
+`doc/fontconfig-devel/fcmatrixinit.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcmatrixinit.html'
+`doc/fontconfig-devel/fcmatrixmultiply.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcmatrixmultiply.html'
+`doc/fontconfig-devel/fcmatrixrotate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcmatrixrotate.html'
+`doc/fontconfig-devel/fcmatrixscale.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcmatrixscale.html'
+`doc/fontconfig-devel/fcmatrixshear.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcmatrixshear.html'
+`doc/fontconfig-devel/fcnameconstant.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcnameconstant.html'
+`doc/fontconfig-devel/fcnamegetconstant.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcnamegetconstant.html'
+`doc/fontconfig-devel/fcnamegetobjecttype.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcnamegetobjecttype.html'
+`doc/fontconfig-devel/fcnameparse.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcnameparse.html'
+`doc/fontconfig-devel/fcnameregisterconstants.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcnameregisterconstants.html'
+`doc/fontconfig-devel/fcnameregisterobjecttypes.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcnameregisterobjecttypes.html'
+`doc/fontconfig-devel/fcnameunparse.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcnameunparse.html'
+`doc/fontconfig-devel/fcnameunregisterconstants.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcnameunregisterconstants.html'
+`doc/fontconfig-devel/fcnameunregisterobjecttypes.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcnameunregisterobjecttypes.html'
+`doc/fontconfig-devel/fcobjectsetadd.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcobjectsetadd.html'
+`doc/fontconfig-devel/fcobjectsetbuild.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcobjectsetbuild.html'
+`doc/fontconfig-devel/fcobjectsetcreate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcobjectsetcreate.html'
+`doc/fontconfig-devel/fcobjectsetdestroy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcobjectsetdestroy.html'
+`doc/fontconfig-devel/fcpatternadd.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternadd.html'
+`doc/fontconfig-devel/fcpatternadd-type.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternadd-type.html'
+`doc/fontconfig-devel/fcpatternaddweak.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternaddweak.html'
+`doc/fontconfig-devel/fcpatternbuild.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternbuild.html'
+`doc/fontconfig-devel/fcpatterncreate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatterncreate.html'
+`doc/fontconfig-devel/fcpatterndel.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatterndel.html'
+`doc/fontconfig-devel/fcpatterndestroy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatterndestroy.html'
+`doc/fontconfig-devel/fcpatternduplicate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternduplicate.html'
+`doc/fontconfig-devel/fcpatternequal.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternequal.html'
+`doc/fontconfig-devel/fcpatternequalsubset.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternequalsubset.html'
+`doc/fontconfig-devel/fcpatternfilter.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternfilter.html'
+`doc/fontconfig-devel/fcpatternformat.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternformat.html'
+`doc/fontconfig-devel/fcpatternget.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternget.html'
+`doc/fontconfig-devel/fcpatternget-type.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternget-type.html'
+`doc/fontconfig-devel/fcpatternhash.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternhash.html'
+`doc/fontconfig-devel/fcpatternprint.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternprint.html'
+`doc/fontconfig-devel/fcpatternreference.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternreference.html'
+`doc/fontconfig-devel/fcpatternremove.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcpatternremove.html'
+`doc/fontconfig-devel/fcstrbasename.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrbasename.html'
+`doc/fontconfig-devel/fcstrcmp.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrcmp.html'
+`doc/fontconfig-devel/fcstrcmpignorecase.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrcmpignorecase.html'
+`doc/fontconfig-devel/fcstrcopyfilename.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrcopyfilename.html'
+`doc/fontconfig-devel/fcstrcopy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrcopy.html'
+`doc/fontconfig-devel/fcstrdirname.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrdirname.html'
+`doc/fontconfig-devel/fcstrdowncase.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrdowncase.html'
+`doc/fontconfig-devel/fcstrfree.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrfree.html'
+`doc/fontconfig-devel/fcstrlistcreate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrlistcreate.html'
+`doc/fontconfig-devel/fcstrlistdone.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrlistdone.html'
+`doc/fontconfig-devel/fcstrlistnext.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrlistnext.html'
+`doc/fontconfig-devel/fcstrplus.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrplus.html'
+`doc/fontconfig-devel/fcstrsetaddfilename.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrsetaddfilename.html'
+`doc/fontconfig-devel/fcstrsetadd.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrsetadd.html'
+`doc/fontconfig-devel/fcstrsetcreate.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrsetcreate.html'
+`doc/fontconfig-devel/fcstrsetdel.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrsetdel.html'
+`doc/fontconfig-devel/fcstrsetdestroy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrsetdestroy.html'
+`doc/fontconfig-devel/fcstrsetequal.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrsetequal.html'
+`doc/fontconfig-devel/fcstrsetmember.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrsetmember.html'
+`doc/fontconfig-devel/fcstrstr.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrstr.html'
+`doc/fontconfig-devel/fcstrstrignorecase.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcstrstrignorecase.html'
+`doc/fontconfig-devel/fctolower.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fctolower.html'
+`doc/fontconfig-devel/fcucs4toutf8.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcucs4toutf8.html'
+`doc/fontconfig-devel/fcutf16len.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcutf16len.html'
+`doc/fontconfig-devel/fcutf16toucs4.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcutf16toucs4.html'
+`doc/fontconfig-devel/fcutf8len.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcutf8len.html'
+`doc/fontconfig-devel/fcutf8toucs4.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcutf8toucs4.html'
+`doc/fontconfig-devel/fcvaluedestroy.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcvaluedestroy.html'
+`doc/fontconfig-devel/fcvalueequal.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcvalueequal.html'
+`doc/fontconfig-devel/fcvalueprint.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcvalueprint.html'
+`doc/fontconfig-devel/fcvaluesave.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/fcvaluesave.html'
+`doc/fontconfig-devel/ln12.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/ln12.html'
+`doc/fontconfig-devel/t1.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/t1.html'
+`doc/fontconfig-devel/x102.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/x102.html'
+`doc/fontconfig-devel/x19.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/x19.html'
+`doc/fontconfig-devel/x31.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel/x31.html'
+`doc/fontconfig-devel.pdf' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel.pdf'
+`doc/fontconfig-user.pdf' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-user.pdf'
+`doc/fontconfig-devel.sgml' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel.sgml'
+`doc/fontconfig-user.sgml' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-user.sgml'
+`doc/func.sgml' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/func.sgml'
+`doc/version.sgml' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/version.sgml'
+`doc/fontconfig-devel.txt' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-devel.txt'
+`doc/fontconfig-user.txt' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-user.txt'
+`doc/fontconfig-user.html' -> `/sources/buildmgr/pkgroot/usr/share/doc/fontconfig-2.8.0/fontconfig-user.html'

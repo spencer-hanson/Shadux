@@ -15,16 +15,16 @@ if [ "$1" = "--update" ] ; then
 	echo Updating ntfs...
 	cd ntfs
 	wget $(../links.sh ntfs)
-	mv ntfs-*.t* ../data
+	mv ntfs-*.tgz ../data
 	echo Done!
 	exit
 fi
 
-fi [ "$1" = "--install" ] ; then
+if [ "$1" = "--install" ] ; then
 	echo Installing ntfs...
 	cp data/ntfs-*.t* ntfs
 	cd ntfs
-	tar xf tars/ntfs-*.t*
+	tar xf ntfs-*.tgz
 	cd ntfs-*
 	./configure --prefix=/usr --disable-static
 	make
@@ -32,8 +32,9 @@ fi [ "$1" = "--install" ] ; then
 	ln -sv /bin/ntfs-3g /sbin/mount.ntfs
 	ln -sv /usr/share/man/man8/{ntfs-3g,mount.ntfs}.8
 	chmod -v 4755 /sbin/mount.ntfs
+	cd ..
         echo Finished, Cleaning up...
-        rm ntfs-*.t*
+        rm ntfs-*.tgz
         rm -r ntfs-*
         echo Done!
         exit

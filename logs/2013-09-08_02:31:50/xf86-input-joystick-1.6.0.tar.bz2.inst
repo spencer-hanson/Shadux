@@ -1,0 +1,191 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for gcc option to accept ISO C99... -std=gnu99
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking if XINPUT is defined... yes
+checking if XKB is defined... no
+checking for XORG... yes
+checking linux/joystick.h usability... yes
+checking linux/joystick.h presence... yes
+checking for linux/joystick.h... yes
+checking dev/usb/usb.h usability... no
+checking dev/usb/usb.h presence... no
+checking for dev/usb/usb.h... no
+checking for usbhid.h... no
+checking for dev/usb/usbhid.h... no
+checking for hid_get_item in -lusbhid... no
+checking linux/input.h usability... yes
+checking linux/input.h presence... yes
+checking for linux/input.h... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating config/Makefile
+config.status: creating include/Makefile
+config.status: creating xorg-joystick.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+Building Linux joystick backend: yes
+Building Linux evdev backend: yes
+Building BSD usbhid backend: no
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0'
+Making all in src
+make[2]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/src'
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/   -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1   -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement  -g -O2 -MT jstk.lo -MD -MP -MF .deps/jstk.Tpo -c -o jstk.lo jstk.c
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/   -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1   -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement  -g -O2 -MT jstk_axis.lo -MD -MP -MF .deps/jstk_axis.Tpo -c -o jstk_axis.lo jstk_axis.c
+libtool: compile:  gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/ -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT jstk.lo -MD -MP -MF .deps/jstk.Tpo -c jstk.c  -fPIC -DPIC -o .libs/jstk.o
+libtool: compile:  gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/ -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT jstk_axis.lo -MD -MP -MF .deps/jstk_axis.Tpo -c jstk_axis.c  -fPIC -DPIC -o .libs/jstk_axis.o
+mv -f .deps/jstk.Tpo .deps/jstk.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/   -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1   -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement  -g -O2 -MT jstk_key.lo -MD -MP -MF .deps/jstk_key.Tpo -c -o jstk_key.lo jstk_key.c
+mv -f .deps/jstk_axis.Tpo .deps/jstk_axis.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/   -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1   -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement  -g -O2 -MT jstk_options.lo -MD -MP -MF .deps/jstk_options.Tpo -c -o jstk_options.lo jstk_options.c
+libtool: compile:  gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/ -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT jstk_key.lo -MD -MP -MF .deps/jstk_key.Tpo -c jstk_key.c  -fPIC -DPIC -o .libs/jstk_key.o
+libtool: compile:  gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/ -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT jstk_options.lo -MD -MP -MF .deps/jstk_options.Tpo -c jstk_options.c  -fPIC -DPIC -o .libs/jstk_options.o
+mv -f .deps/jstk_key.Tpo .deps/jstk_key.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/   -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1   -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement  -g -O2 -MT jstk_properties.lo -MD -MP -MF .deps/jstk_properties.Tpo -c -o jstk_properties.lo jstk_properties.c
+mv -f .deps/jstk_options.Tpo .deps/jstk_options.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/   -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1   -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement  -g -O2 -MT backend_joystick.lo -MD -MP -MF .deps/backend_joystick.Tpo -c -o backend_joystick.lo backend_joystick.c
+libtool: compile:  gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/ -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT jstk_properties.lo -MD -MP -MF .deps/jstk_properties.Tpo -c jstk_properties.c  -fPIC -DPIC -o .libs/jstk_properties.o
+libtool: compile:  gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/ -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT backend_joystick.lo -MD -MP -MF .deps/backend_joystick.Tpo -c backend_joystick.c  -fPIC -DPIC -o .libs/backend_joystick.o
+mv -f .deps/backend_joystick.Tpo .deps/backend_joystick.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/   -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1   -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement  -g -O2 -MT backend_evdev.lo -MD -MP -MF .deps/backend_evdev.Tpo -c -o backend_evdev.lo backend_evdev.c
+libtool: compile:  gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include/ -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT backend_evdev.lo -MD -MP -MF .deps/backend_evdev.Tpo -c backend_evdev.c  -fPIC -DPIC -o .libs/backend_evdev.o
+mv -f .deps/jstk_properties.Tpo .deps/jstk_properties.Plo
+mv -f .deps/backend_evdev.Tpo .deps/backend_evdev.Plo
+/bin/sh ../libtool --tag=CC   --mode=link gcc -std=gnu99 -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1   -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement  -g -O2 -module -avoid-version   -o joystick_drv.la -rpath /usr/lib/X11/modules/input jstk.lo jstk_axis.lo jstk_key.lo jstk_options.lo jstk_properties.lo  backend_joystick.lo backend_evdev.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/jstk.o .libs/jstk_axis.o .libs/jstk_key.o .libs/jstk_options.o .libs/jstk_properties.o .libs/backend_joystick.o .libs/backend_evdev.o    -O2   -Wl,-soname -Wl,joystick_drv.so -o .libs/joystick_drv.so
+libtool: link: ( cd ".libs" && rm -f "joystick_drv.la" && ln -s "../joystick_drv.la" "joystick_drv.la" )
+make[2]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/src'
+Making all in man
+make[2]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/man'
+/bin/sed -e 's|__vendorversion__|"xf86-input-joystick 1.6.0" "X Version 11"|' 	-e 's|__xorgversion__|"xf86-input-joystick 1.6.0" "X Version 11"|' 	-e 's|__xservername__|Xorg|g' 	-e 's|__xconfigfile__|xorg.conf|g' 	-e 's|__projectroot__|/usr|g' 	-e 's|__apploaddir__||g' 	-e 's|__appmansuffix__|1|g' 	-e 's|__drivermansuffix__|4|g' 	-e 's|__adminmansuffix__|8|g' 	-e 's|__libmansuffix__|3|g' 	-e 's|__miscmansuffix__|7|g' 	-e 's|__filemansuffix__|5|g' < joystick.man > joystick.4
+make[2]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/man'
+Making all in config
+make[2]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/config'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/config'
+Making all in include
+make[2]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/include'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/include'
+make[2]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0'
+make[2]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0'
+make[1]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0'
+Making install in src
+make[1]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/src'
+make[2]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/src'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/input" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/input"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c  'joystick_drv.la' '/sources/buildmgr/pkgroot/usr/lib/X11/modules/input/joystick_drv.la'
+libtool: install: /usr/bin/install -c .libs/joystick_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/input/joystick_drv.so
+libtool: install: /usr/bin/install -c .libs/joystick_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/input/joystick_drv.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/input'
+make[2]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/src'
+make[1]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/src'
+Making install in man
+make[1]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/man'
+make[2]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 'joystick.4' '/sources/buildmgr/pkgroot/usr/share/man/man4/joystick.4'
+make[2]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/man'
+make[1]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/man'
+Making install in config
+make[1]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/config'
+make[2]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/config'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/config'
+make[1]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/config'
+Making install in include
+make[1]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/include'
+make[2]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0/include'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 'joystick-properties.h' '/sources/buildmgr/pkgroot/usr/include/xorg/joystick-properties.h'
+make[2]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/include'
+make[1]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0/include'
+make[1]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0'
+make[2]: Entering directory `/sources/builddir/xf86-input-joystick-1.6.0'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/pkgconfig"
+ /usr/bin/install -c -m 644 'xorg-joystick.pc' '/sources/buildmgr/pkgroot/usr/lib/pkgconfig/xorg-joystick.pc'
+make[2]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0'
+make[1]: Leaving directory `/sources/builddir/xf86-input-joystick-1.6.0'

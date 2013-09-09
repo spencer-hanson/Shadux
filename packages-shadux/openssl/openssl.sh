@@ -41,8 +41,6 @@ if [ "$1" = "--install" ] ; then
 	cd ..
 	echo Finished, Cleaning up...
 	rm -r openssl-*
-	rm openssl-*.patch
-	rm openssl-*.tar*
 	echo Done!
 	exit
 fi

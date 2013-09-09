@@ -1,0 +1,134 @@
+Use of qw(...) as parentheses is deprecated at inc/Devel/CheckLib.pm line 191.
+Warning: prerequisite LWP 0 not found.
+Checking if your kit is complete...
+Looks good
+Writing Makefile for XML::Parser::Expat
+Writing MYMETA.yml
+Writing Makefile for XML::Parser
+Writing MYMETA.yml
+make[1]: Entering directory `/sources/builddir/XML-Parser-2.40/Expat'
+cp Parser/Encodings/x-sjis-cp932.enc blib/lib/XML/Parser/Encodings/x-sjis-cp932.enc
+cp Parser/Encodings/koi8-r.enc blib/lib/XML/Parser/Encodings/koi8-r.enc
+cp Parser/Encodings/iso-8859-7.enc blib/lib/XML/Parser/Encodings/iso-8859-7.enc
+cp Parser/Encodings/ibm866.enc blib/lib/XML/Parser/Encodings/ibm866.enc
+cp Parser/Style/Tree.pm blib/lib/XML/Parser/Style/Tree.pm
+cp Parser/Encodings/iso-8859-9.enc blib/lib/XML/Parser/Encodings/iso-8859-9.enc
+cp Parser/Encodings/x-euc-jp-unicode.enc blib/lib/XML/Parser/Encodings/x-euc-jp-unicode.enc
+cp Parser/Encodings/README blib/lib/XML/Parser/Encodings/README
+cp Parser/Encodings/euc-kr.enc blib/lib/XML/Parser/Encodings/euc-kr.enc
+cp Parser/Encodings/windows-1250.enc blib/lib/XML/Parser/Encodings/windows-1250.enc
+cp Parser/Encodings/windows-1252.enc blib/lib/XML/Parser/Encodings/windows-1252.enc
+cp Parser/Encodings/big5.enc blib/lib/XML/Parser/Encodings/big5.enc
+cp Parser/Encodings/Japanese_Encodings.msg blib/lib/XML/Parser/Encodings/Japanese_Encodings.msg
+cp Parser/Encodings/windows-1255.enc blib/lib/XML/Parser/Encodings/windows-1255.enc
+cp Parser/Encodings/iso-8859-3.enc blib/lib/XML/Parser/Encodings/iso-8859-3.enc
+cp Parser/Encodings/x-euc-jp-jisx0221.enc blib/lib/XML/Parser/Encodings/x-euc-jp-jisx0221.enc
+cp Parser/Encodings/iso-8859-8.enc blib/lib/XML/Parser/Encodings/iso-8859-8.enc
+cp Parser/Encodings/iso-8859-4.enc blib/lib/XML/Parser/Encodings/iso-8859-4.enc
+cp Parser/Style/Subs.pm blib/lib/XML/Parser/Style/Subs.pm
+cp Parser/Encodings/iso-8859-2.enc blib/lib/XML/Parser/Encodings/iso-8859-2.enc
+cp Parser/Encodings/x-sjis-jdk117.enc blib/lib/XML/Parser/Encodings/x-sjis-jdk117.enc
+cp Parser/Encodings/x-sjis-unicode.enc blib/lib/XML/Parser/Encodings/x-sjis-unicode.enc
+cp Parser/LWPExternEnt.pl blib/lib/XML/Parser/LWPExternEnt.pl
+cp Parser/Style/Objects.pm blib/lib/XML/Parser/Style/Objects.pm
+cp Parser.pm blib/lib/XML/Parser.pm
+cp Parser/Encodings/windows-1251.enc blib/lib/XML/Parser/Encodings/windows-1251.enc
+cp Parser/Style/Debug.pm blib/lib/XML/Parser/Style/Debug.pm
+cp Parser/Encodings/x-sjis-jisx0221.enc blib/lib/XML/Parser/Encodings/x-sjis-jisx0221.enc
+cp Parser/Style/Stream.pm blib/lib/XML/Parser/Style/Stream.pm
+cp Parser/Encodings/iso-8859-5.enc blib/lib/XML/Parser/Encodings/iso-8859-5.enc
+/usr/bin/perl /usr/lib/perl5/5.14.2/ExtUtils/xsubpp -noprototypes -typemap /usr/lib/perl5/5.14.2/ExtUtils/typemap -typemap typemap  Expat.xs > Expat.xsc && mv Expat.xsc Expat.c
+cp Expat.pm ../blib/lib/XML/Parser/Expat.pm
+Running Mkbootstrap for XML::Parser::Expat ()
+chmod 644 Expat.bs
+cp Expat.bs ../blib/arch/auto/XML/Parser/Expat/Expat.bs
+chmod 644 ../blib/arch/auto/XML/Parser/Expat/Expat.bs
+cc -c   -fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2   -DVERSION=\"2.40\" -DXS_VERSION=\"2.40\" -fPIC "-I/usr/lib/perl5/5.14.2/i686-linux/CORE"   Expat.c
+rm -f ../blib/arch/auto/XML/Parser/Expat/Expat.so
+LD_RUN_PATH="/usr/lib" cc  -shared -O2 -L/usr/local/lib -fstack-protector Expat.o  -o ../blib/arch/auto/XML/Parser/Expat/Expat.so 	\
+   -lexpat  	\
+  
+chmod 755 ../blib/arch/auto/XML/Parser/Expat/Expat.so
+Manifying ../blib/man3/XML::Parser::Expat.3
+make[1]: Leaving directory `/sources/builddir/XML-Parser-2.40/Expat'
+Manifying blib/man3/XML::Parser::Style::Objects.3
+Manifying blib/man3/XML::Parser::Style::Debug.3
+Manifying blib/man3/XML::Parser.3
+Manifying blib/man3/XML::Parser::Style::Subs.3
+Manifying blib/man3/XML::Parser::Style::Tree.3
+Manifying blib/man3/XML::Parser::Style::Stream.3
+make[1]: Entering directory `/sources/builddir/XML-Parser-2.40/Expat'
+make[1]: Leaving directory `/sources/builddir/XML-Parser-2.40/Expat'
+PERL_DL_NONLAZY=1 /usr/bin/perl "-MExtUtils::Command::MM" "-e" "test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/astress.t ....... ok
+t/cdata.t ......... ok
+t/decl.t .......... ok
+t/defaulted.t ..... ok
+t/encoding.t ...... ok
+Couldn't load LWP based external entity handler
+Switching to file-based external entity handler
+ (To avoid this message, use NoLWP option to XML::Parser)
+t/external_ent.t .. ok
+Use of tied on a handle without * is deprecated at /sources/builddir/XML-Parser-2.40/blib/lib/XML/Parser/Expat.pm line 447.
+t/file.t .......... ok
+Use of tied on a handle without * is deprecated at /sources/builddir/XML-Parser-2.40/blib/lib/XML/Parser/Expat.pm line 447.
+t/finish.t ........ ok
+t/namespaces.t .... ok
+Couldn't load LWP based external entity handler
+Switching to file-based external entity handler
+ (To avoid this message, use NoLWP option to XML::Parser)
+t/parament.t ...... ok
+t/partial.t ....... ok
+Use of tied on a handle without * is deprecated at /sources/builddir/XML-Parser-2.40/blib/lib/XML/Parser/Expat.pm line 447.
+t/skip.t .......... ok
+Use of tied on a handle without * is deprecated at /sources/builddir/XML-Parser-2.40/blib/lib/XML/Parser/Expat.pm line 447.
+Use of tied on a handle without * is deprecated at /sources/builddir/XML-Parser-2.40/blib/lib/XML/Parser/Expat.pm line 447.
+t/stream.t ........ ok
+t/styles.t ........ ok
+All tests successful.
+Files=14, Tests=130,  1 wallclock secs ( 0.08 usr  0.02 sys +  0.50 cusr  0.06 csys =  0.66 CPU)
+Result: PASS
+make[1]: Entering directory `/sources/builddir/XML-Parser-2.40/Expat'
+make[1]: Leaving directory `/sources/builddir/XML-Parser-2.40/Expat'
+Appending installation info to /sources/buildmgr/pkgroot/usr/lib/perl5/5.14.2/i686-linux/perllocal.pod
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/auto/XML/Parser/Expat/Expat.so
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/auto/XML/Parser/Expat/Expat.bs
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser.pm
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Expat.pm
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/LWPExternEnt.pl
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/iso-8859-7.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/x-sjis-jisx0221.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/windows-1251.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/iso-8859-9.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/x-sjis-unicode.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/koi8-r.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/ibm866.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/euc-kr.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/x-euc-jp-unicode.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/windows-1252.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/windows-1255.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/iso-8859-5.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/x-euc-jp-jisx0221.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/iso-8859-3.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/windows-1250.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/iso-8859-2.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/x-sjis-jdk117.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/iso-8859-8.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/iso-8859-4.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/big5.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/README
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/Japanese_Encodings.msg
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Encodings/x-sjis-cp932.enc
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Style/Tree.pm
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Style/Debug.pm
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Style/Subs.pm
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Style/Stream.pm
+Installing /sources/buildmgr/pkgroot/usr/lib/perl5/site_perl/5.14.2/i686-linux/XML/Parser/Style/Objects.pm
+Installing /sources/buildmgr/pkgroot/usr/share/man/man3/XML::Parser::Expat.3
+Installing /sources/buildmgr/pkgroot/usr/share/man/man3/XML::Parser::Style::Subs.3
+Installing /sources/buildmgr/pkgroot/usr/share/man/man3/XML::Parser::Style::Tree.3
+Installing /sources/buildmgr/pkgroot/usr/share/man/man3/XML::Parser.3
+Installing /sources/buildmgr/pkgroot/usr/share/man/man3/XML::Parser::Style::Objects.3
+Installing /sources/buildmgr/pkgroot/usr/share/man/man3/XML::Parser::Style::Debug.3
+Installing /sources/buildmgr/pkgroot/usr/share/man/man3/XML::Parser::Style::Stream.3

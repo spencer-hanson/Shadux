@@ -1,0 +1,15 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating xf86bigfontproto.pc
+make[1]: Entering directory `/sources/builddir/xf86bigfontproto-1.2.0'
+make[1]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/pkgconfig"
+test -z "/usr/include/X11/extensions" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/X11/extensions"
+ /usr/bin/install -c -m 644 xf86bigfontproto.pc '/sources/buildmgr/pkgroot/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 xf86bigfont.h xf86bigfproto.h xf86bigfstr.h '/sources/buildmgr/pkgroot/usr/include/X11/extensions'
+make[1]: Leaving directory `/sources/builddir/xf86bigfontproto-1.2.0'

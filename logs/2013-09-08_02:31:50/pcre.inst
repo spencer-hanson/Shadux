@@ -1,0 +1,313 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for int64_t... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether ln -s works... yes
+checking for ANSI C header files... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking windows.h usability... no
+checking windows.h presence... no
+checking for windows.h... no
+checking for alias support in the linker... no
+checking for alias support in the linker... no
+checking string usability... yes
+checking string presence... yes
+checking for string... yes
+checking bits/type_traits.h usability... no
+checking bits/type_traits.h presence... no
+checking for bits/type_traits.h... no
+checking type_traits.h usability... no
+checking type_traits.h presence... no
+checking for type_traits.h... no
+checking for strtoq... yes
+checking for long long... yes
+checking for unsigned long long... yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for bcopy... yes
+checking for memmove... yes
+checking for strerror... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking for gzopen in -lz... yes
+checking bzlib.h usability... yes
+checking bzlib.h presence... yes
+checking for bzlib.h... yes
+checking for libbz2... yes
+checking readline/readline.h usability... yes
+checking readline/readline.h presence... yes
+checking for readline/readline.h... yes
+checking readline/history.h usability... yes
+checking readline/history.h presence... yes
+checking for readline/history.h... yes
+checking for readline in -lreadline... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libpcre.pc
+config.status: creating libpcre16.pc
+config.status: creating libpcreposix.pc
+config.status: creating libpcrecpp.pc
+config.status: creating pcre-config
+config.status: creating pcre.h
+config.status: creating pcre_stringpiece.h
+config.status: creating pcrecpparg.h
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing script-chmod commands
+config.status: executing delete-old-chartables commands
+
+pcre-8.30 configuration summary:
+
+    Install prefix .................. : /usr
+    C preprocessor .................. : gcc -E
+    C compiler ...................... : gcc
+    C++ preprocessor ................ : g++ -E
+    C++ compiler .................... : g++
+    Linker .......................... : /usr/bin/ld
+    C preprocessor flags ............ : 
+    C compiler flags ................ : -O2
+    C++ compiler flags .............. : -O2
+    Linker flags .................... : 
+    Extra libraries ................. : 
+
+    Build 8 bit pcre library ........ : yes
+    Build 16 bit pcre library ....... : no
+    Build C++ library ............... : yes
+    Enable JIT compiling support .... : no
+    Enable UTF-8/16 support ......... : yes
+    Unicode properties .............. : yes
+    Newline char/sequence ........... : lf
+    \R matches only ANYCRLF ......... : no
+    EBCDIC coding ................... : no
+    Rebuild char tables ............. : no
+    Use stack recursion ............. : yes
+    POSIX mem threshold ............. : 10
+    Internal link size .............. : 2
+    Match limit ..................... : 10000000
+    Match limit recursion ........... : MATCH_LIMIT
+    Build shared libs ............... : yes
+    Build static libs ............... : no
+    Use JIT in pcregrep ............. : no
+    Buffer size for pcregrep ........ : 20480
+    Link pcregrep with libz ......... : yes
+    Link pcregrep with libbz2 ....... : yes
+    Link pcretest with libreadline .. : no
+
+rm -f pcre_chartables.c
+ln -s ./pcre_chartables.c.dist pcre_chartables.c
+make  all-am
+make[1]: Entering directory `/sources/builddir/pcre-8.30'
+  CC     pcre_byte_order.lo
+  CC     pcre_config.lo
+  CC     pcre_dfa_exec.lo
+  CC     pcre_exec.lo
+  CC     pcre_fullinfo.lo
+  CC     pcre_get.lo
+  CC     pcre_globals.lo
+  CC     pcre_jit_compile.lo
+  CC     pcre_maketables.lo
+  CC     pcre_newline.lo
+  CC     pcre_ord2utf8.lo
+  CC     pcre_refcount.lo
+  CC     pcre_string_utils.lo
+  CC     pcre_study.lo
+  CC     pcre_tables.lo
+  CC     pcre_ucd.lo
+  CC     pcre_valid_utf8.lo
+  CC     pcre_version.lo
+  CC     pcre_xclass.lo
+  CC     pcre_chartables.lo
+  CC     pcreposix.lo
+  CXX    pcrecpp.lo
+  CXX    pcre_scanner.lo
+  CXX    pcre_stringpiece.lo
+  CC     pcretest.o
+  CC     pcre_printint.o
+  CC     pcregrep.o
+  CXX    pcrecpp_unittest.o
+  CXX    pcre_scanner_unittest.o
+  CXX    pcre_stringpiece_unittest.o
+  CCLD   libpcre.la
+  CCLD   libpcreposix.la
+  CXXLD  libpcrecpp.la
+  CCLD   pcretest
+  CCLD   pcregrep
+  CXXLD  pcrecpp_unittest
+  CXXLD  pcre_scanner_unittest
+  CXXLD  pcre_stringpiece_unittest
+make[1]: Leaving directory `/sources/builddir/pcre-8.30'
+make  install-am
+make[1]: Entering directory `/sources/builddir/pcre-8.30'
+make[2]: Entering directory `/sources/builddir/pcre-8.30'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+test -z "/usr/share/doc/pcre-8.30" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/doc/pcre-8.30"
+ /usr/bin/install -c pcre-config '/sources/buildmgr/pkgroot/usr/bin'
+ /usr/bin/install -c -m 644 doc/pcre.txt doc/pcre-config.txt doc/pcregrep.txt doc/pcretest.txt AUTHORS COPYING ChangeLog LICENCE NEWS README '/sources/buildmgr/pkgroot/usr/share/doc/pcre-8.30'
+test -z "/usr/share/doc/pcre-8.30/html" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/doc/pcre-8.30/html"
+test -z "/usr/share/doc/pcre-8.30/html" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/doc/pcre-8.30/html"
+ /usr/bin/install -c -m 644 doc/html/pcrecpp.html '/sources/buildmgr/pkgroot/usr/share/doc/pcre-8.30/html'
+ /usr/bin/install -c -m 644 doc/html/index.html doc/html/pcre.html doc/html/pcre16.html doc/html/pcre-config.html doc/html/pcre_assign_jit_stack.html doc/html/pcre_compile.html doc/html/pcre_compile2.html doc/html/pcre_config.html doc/html/pcre_copy_named_substring.html doc/html/pcre_copy_substring.html doc/html/pcre_dfa_exec.html doc/html/pcre_exec.html doc/html/pcre_free_study.html doc/html/pcre_free_substring.html doc/html/pcre_free_substring_list.html doc/html/pcre_fullinfo.html doc/html/pcre_get_named_substring.html doc/html/pcre_get_stringnumber.html doc/html/pcre_get_stringtable_entries.html doc/html/pcre_get_substring.html doc/html/pcre_get_substring_list.html doc/html/pcre_jit_stack_alloc.html doc/html/pcre_jit_stack_free.html doc/html/pcre_maketables.html doc/html/pcre_pattern_to_host_byte_order.html doc/html/pcre_refcount.html doc/html/pcre_study.html doc/html/pcre_utf16_to_host_byte_order.html doc/html/pcre_version.html doc/html/pcreapi.html doc/html/pcrebuild.html doc/html/pcrecallout.html doc/html/pcrecompat.html doc/html/pcredemo.html doc/html/pcregrep.html doc/html/pcrejit.html doc/html/pcrelimits.html doc/html/pcrematching.html doc/html/pcrepartial.html doc/html/pcrepattern.html '/sources/buildmgr/pkgroot/usr/share/doc/pcre-8.30/html'
+test -z "/usr/include" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include"
+ /usr/bin/install -c -m 644 doc/html/pcreperform.html doc/html/pcreposix.html doc/html/pcreprecompile.html doc/html/pcresample.html doc/html/pcrestack.html doc/html/pcresyntax.html doc/html/pcretest.html doc/html/pcreunicode.html '/sources/buildmgr/pkgroot/usr/share/doc/pcre-8.30/html'
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+ /usr/bin/install -c -m 644 pcreposix.h pcrecpp.h pcre_scanner.h '/sources/buildmgr/pkgroot/usr/include'
+test -z "/usr/share/man/man3" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man3"
+ /usr/bin/install -c -m 644 doc/pcre-config.1 doc/pcregrep.1 doc/pcretest.1 '/sources/buildmgr/pkgroot/usr/share/man/man1'
+test -z "/usr/include" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include"
+ /usr/bin/install -c -m 644 pcre.h pcrecpparg.h pcre_stringpiece.h '/sources/buildmgr/pkgroot/usr/include'
+test -z "/lib/pkgconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/lib/pkgconfig"
+ /usr/bin/install -c -m 644 doc/pcre.3 doc/pcre16.3 doc/pcre_assign_jit_stack.3 doc/pcre_compile.3 doc/pcre_compile2.3 doc/pcre_config.3 doc/pcre_copy_named_substring.3 doc/pcre_copy_substring.3 doc/pcre_dfa_exec.3 doc/pcre_exec.3 doc/pcre_free_study.3 doc/pcre_free_substring.3 doc/pcre_free_substring_list.3 doc/pcre_fullinfo.3 doc/pcre_get_named_substring.3 doc/pcre_get_stringnumber.3 doc/pcre_get_stringtable_entries.3 doc/pcre_get_substring.3 doc/pcre_get_substring_list.3 doc/pcre_jit_stack_alloc.3 doc/pcre_jit_stack_free.3 doc/pcre_maketables.3 doc/pcre_pattern_to_host_byte_order.3 doc/pcre_refcount.3 doc/pcre_study.3 doc/pcre_utf16_to_host_byte_order.3 doc/pcre_version.3 doc/pcreapi.3 doc/pcrebuild.3 doc/pcrecallout.3 doc/pcrecompat.3 doc/pcrejit.3 doc/pcrelimits.3 doc/pcrematching.3 doc/pcrepartial.3 doc/pcrepattern.3 doc/pcreperform.3 doc/pcreposix.3 doc/pcreprecompile.3 doc/pcresample.3 '/sources/buildmgr/pkgroot/usr/share/man/man3'
+ /usr/bin/install -c -m 644 doc/pcrestack.3 doc/pcresyntax.3 doc/pcreunicode.3 doc/pcrecpp.3 '/sources/buildmgr/pkgroot/usr/share/man/man3'
+test -z "/lib" || /bin/mkdir -p "/sources/buildmgr/pkgroot/lib"
+ /usr/bin/install -c -m 644 libpcre.pc libpcreposix.pc libpcrecpp.pc '/sources/buildmgr/pkgroot/lib/pkgconfig'
+make  install-data-hook
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libpcre.la libpcreposix.la libpcrecpp.la '/sources/buildmgr/pkgroot/lib'
+make[3]: Entering directory `/sources/builddir/pcre-8.30'
+ln -s pcre_assign_jit_stack.3		/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_assign_jit_stack.3
+ln -s pcre_compile.3			/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_compile.3
+ln -s pcre_compile2.3			/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_compile2.3
+ln -s pcre_config.3			/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_config.3
+ln -s pcre_copy_named_substring.3	/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_copy_named_substring.3
+ln -s pcre_copy_substring.3		/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_copy_substring.3
+ln -s pcre_dfa_exec.3			/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_dfa_exec.3
+ln -s pcre_exec.3			/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_exec.3
+ln -s pcre_free_study.3			/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_free_study.3
+ln -s pcre_free_substring.3		/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_free_substring.3
+ln -s pcre_free_substring_list.3	/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_free_substring_list.3
+ln -s pcre_fullinfo.3			/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_fullinfo.3
+ln -s pcre_get_named_substring.3	/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_get_named_substring.3
+ln -s pcre_get_stringnumber.3		/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_get_stringnumber.3
+ln -s pcre_get_stringtable_entries.3	/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_get_stringtable_entries.3
+ln -s pcre_get_substring.3		/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_get_substring.3
+ln -s pcre_get_substring_list.3		/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_get_substring_list.3
+ln -s pcre_jit_stack_alloc.3		/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_jit_stack_alloc.3
+ln -s pcre_jit_stack_free.3		/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_jit_stack_free.3
+ln -s pcre_maketables.3			/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_maketables.3
+libtool: install: /usr/bin/install -c .libs/libpcre.so.1.0.0 /sources/buildmgr/pkgroot/lib/libpcre.so.1.0.0
+ln -s pcre_pattern_to_host_byte_order.3 /sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_pattern_to_host_byte_order.3
+ln -s pcre_refcount.3			/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_refcount.3
+ln -s pcre_study.3			/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_study.3
+ln -s pcre_utf16_to_host_byte_order.3	/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_utf16_to_host_byte_order.3
+libtool: install: (cd /sources/buildmgr/pkgroot/lib && { ln -s -f libpcre.so.1.0.0 libpcre.so.1 || { rm -f libpcre.so.1 && ln -s libpcre.so.1.0.0 libpcre.so.1; }; })
+ln -s pcre_version.3			/sources/buildmgr/pkgroot/usr/share/man/man3/pcre16_version.3
+make[3]: Leaving directory `/sources/builddir/pcre-8.30'
+libtool: install: (cd /sources/buildmgr/pkgroot/lib && { ln -s -f libpcre.so.1.0.0 libpcre.so || { rm -f libpcre.so && ln -s libpcre.so.1.0.0 libpcre.so; }; })
+libtool: install: /usr/bin/install -c .libs/libpcre.lai /sources/buildmgr/pkgroot/lib/libpcre.la
+libtool: install: warning: relinking `libpcreposix.la'
+libtool: install: (cd /sources/builddir/pcre-8.30; /bin/sh /sources/builddir/pcre-8.30/libtool  --silent --tag CC --mode=relink gcc -O2 -version-info 0:0:0 -o libpcreposix.la -rpath /lib pcreposix.lo libpcre.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: install: /usr/bin/install -c .libs/libpcreposix.so.0.0.0T /sources/buildmgr/pkgroot/lib/libpcreposix.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/lib && { ln -s -f libpcreposix.so.0.0.0 libpcreposix.so.0 || { rm -f libpcreposix.so.0 && ln -s libpcreposix.so.0.0.0 libpcreposix.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/lib && { ln -s -f libpcreposix.so.0.0.0 libpcreposix.so || { rm -f libpcreposix.so && ln -s libpcreposix.so.0.0.0 libpcreposix.so; }; })
+libtool: install: /usr/bin/install -c .libs/libpcreposix.lai /sources/buildmgr/pkgroot/lib/libpcreposix.la
+libtool: install: warning: relinking `libpcrecpp.la'
+libtool: install: (cd /sources/builddir/pcre-8.30; /bin/sh /sources/builddir/pcre-8.30/libtool  --silent --tag CXX --mode=relink g++ -O2 -version-info 0:0:0 -o libpcrecpp.la -rpath /lib pcrecpp.lo pcre_scanner.lo pcre_stringpiece.lo libpcre.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: install: /usr/bin/install -c .libs/libpcrecpp.so.0.0.0T /sources/buildmgr/pkgroot/lib/libpcrecpp.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/lib && { ln -s -f libpcrecpp.so.0.0.0 libpcrecpp.so.0 || { rm -f libpcrecpp.so.0 && ln -s libpcrecpp.so.0.0.0 libpcrecpp.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/lib && { ln -s -f libpcrecpp.so.0.0.0 libpcrecpp.so || { rm -f libpcrecpp.so && ln -s libpcrecpp.so.0.0.0 libpcrecpp.so; }; })
+libtool: install: /usr/bin/install -c .libs/libpcrecpp.lai /sources/buildmgr/pkgroot/lib/libpcrecpp.la
+libtool: install: warning: remember to run `libtool --finish /lib'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c pcretest pcregrep '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: warning: `libpcreposix.la' has not been installed in `/lib'
+libtool: install: warning: `/sources/builddir/pcre-8.30/libpcre.la' has not been installed in `/lib'
+libtool: install: /usr/bin/install -c .libs/pcretest /sources/buildmgr/pkgroot/usr/bin/pcretest
+libtool: install: warning: `libpcreposix.la' has not been installed in `/lib'
+libtool: install: warning: `/sources/builddir/pcre-8.30/libpcre.la' has not been installed in `/lib'
+libtool: install: /usr/bin/install -c .libs/pcregrep /sources/buildmgr/pkgroot/usr/bin/pcregrep
+make[2]: Leaving directory `/sources/builddir/pcre-8.30'
+make[1]: Leaving directory `/sources/builddir/pcre-8.30'

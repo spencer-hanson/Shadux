@@ -1,0 +1,159 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for gcc option to accept ISO C99... -std=gnu99
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc -std=gnu99... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc -std=gnu99 object... ok
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -std=gnu99 supports -fno-rtti -fno-exceptions... no
+checking for gcc -std=gnu99 option to produce PIC... -fPIC -DPIC
+checking if gcc -std=gnu99 PIC flag -fPIC -DPIC works... yes
+checking if gcc -std=gnu99 static flag -static works... yes
+checking if gcc -std=gnu99 supports -c -o file.o... yes
+checking if gcc -std=gnu99 supports -c -o file.o... (cached) yes
+checking whether the gcc -std=gnu99 linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for FS... yes
+checking for XTRANS... yes
+checking return type of signal handlers... void
+checking if Xtrans should support UNIX socket connections... yes
+checking if Xtrans should support TCP socket connections... yes
+checking for library containing socket... none required
+checking for library containing gethostbyname... none required
+checking for getaddrinfo... yes
+checking if IPv6 support should be built... yes
+checking for struct sockaddr_in.sin_len... no
+checking for socklen_t... yes
+checking if Xtrans should support os-specific local connections... no
+checking whether malloc(0) returns NULL... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating libfs.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/libFS-1.0.3'
+Making all in src
+make[2]: Entering directory `/sources/builddir/libFS-1.0.3/src'
+  CC     FSCloseFt.lo
+  CC     FSClServ.lo
+  CC     FSConnServ.lo
+  CC     FSErrDis.lo
+  CC     FSErrHndlr.lo
+  CC     FSFlush.lo
+  CC     FSFontInfo.lo
+  CC     FSFtNames.lo
+  CC     FSGetCats.lo
+  CC     FSlibInt.lo
+  CC     FSListCats.lo
+FSlibInt.c: In function '_FSPrintDefaultError':
+FSlibInt.c:1025:5: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+FSlibInt.c:1042:5: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+FSlibInt.c:1052:5: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+FSlibInt.c:1056:5: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+FSlibInt.c:1060:5: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+  CC     FSListExt.lo
+  CC     FSMisc.lo
+  CC     FSNextEv.lo
+  CC     FSOpenFont.lo
+  CC     FSOpenServ.lo
+  CC     FSQGlyphs.lo
+  CC     FSQuExt.lo
+  CC     FSQXExt.lo
+  CC     FSQXInfo.lo
+  CC     FSServName.lo
+  CC     FSSetCats.lo
+  CC     FSSync.lo
+  CC     FSSynchro.lo
+  CC     fs_transport.lo
+  CCLD   libFS.la
+make[2]: Leaving directory `/sources/builddir/libFS-1.0.3/src'
+make[2]: Entering directory `/sources/builddir/libFS-1.0.3'
+make[2]: Leaving directory `/sources/builddir/libFS-1.0.3'
+make[1]: Leaving directory `/sources/builddir/libFS-1.0.3'
+Making install in src
+make[1]: Entering directory `/sources/builddir/libFS-1.0.3/src'
+make[2]: Entering directory `/sources/builddir/libFS-1.0.3/src'
+test -z "/usr/lib" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib"
+test -z "/usr/include/X11/fonts" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/X11/fonts"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libFS.la '/sources/buildmgr/pkgroot/usr/lib'
+ /usr/bin/install -c -m 644 ../include/X11/fonts/FSlib.h '/sources/buildmgr/pkgroot/usr/include/X11/fonts'
+test -z "" || /bin/mkdir -p "/sources/buildmgr/pkgroot"
+libtool: install: /usr/bin/install -c .libs/libFS.so.6.0.0 /sources/buildmgr/pkgroot/usr/lib/libFS.so.6.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libFS.so.6.0.0 libFS.so.6 || { rm -f libFS.so.6 && ln -s libFS.so.6.0.0 libFS.so.6; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libFS.so.6.0.0 libFS.so || { rm -f libFS.so && ln -s libFS.so.6.0.0 libFS.so; }; })
+libtool: install: /usr/bin/install -c .libs/libFS.lai /sources/buildmgr/pkgroot/usr/lib/libFS.la
+libtool: install: /usr/bin/install -c .libs/libFS.a /sources/buildmgr/pkgroot/usr/lib/libFS.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libFS.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libFS.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+make[2]: Leaving directory `/sources/builddir/libFS-1.0.3/src'
+make[1]: Leaving directory `/sources/builddir/libFS-1.0.3/src'
+make[1]: Entering directory `/sources/builddir/libFS-1.0.3'
+make[2]: Entering directory `/sources/builddir/libFS-1.0.3'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/doc/libFS" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/doc/libFS"
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/pkgconfig"
+ /usr/bin/install -c -m 644 libfs.pc '/sources/buildmgr/pkgroot/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 doc/FSlib.txt '/sources/buildmgr/pkgroot/usr/share/doc/libFS'
+make[2]: Leaving directory `/sources/builddir/libFS-1.0.3'
+make[1]: Leaving directory `/sources/builddir/libFS-1.0.3'
+ldconfig: /usr/lib/libstdc++.so.6.0.16-gdb.py is not an ELF file - it has the wrong magic bytes at the start.
+

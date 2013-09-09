@@ -22,6 +22,7 @@ if [ ! -f lfscript ]; then
 fi
 
 if [ "$1" = "--build" ] ; then
-	./lfscript -Bux "wget x-window-system" $1 $2 $3 $4 $5 $6 $7 $8 -k kernel.config
+	./lfscript -Bux "wget x-window-system" $2 $3 $4 $5 $6 $7 $8 -k kernel.config
+	exit
 fi
 ./lfscript -Bux "wget x-window-system" -i $1 $2 $3 $4 $5 $6 $7 $8 -k kernel.config

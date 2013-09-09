@@ -20,11 +20,11 @@ if [ "$1" = "--update" ] ; then
 	exit
 fi
 
-if[ "$1" = "--install" ] ; then
+if [ "$1" = "--install" ] ; then
 	echo Installing iptables...
-	cp data/
+	cp data/iptables-*.tar* iptables
 	cd iptables
-	tar xf ../data/iptables-*.tar*
+	tar xf iptables-*.tar*
 	cd iptables-*
 	./configure --prefix=/usr                          \
             --exec-prefix=                         \

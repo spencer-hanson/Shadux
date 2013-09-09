@@ -1,0 +1,147 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for gcc option to accept ISO C99... -std=gnu99
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for DMX... yes
+checking whether malloc(0) returns NULL... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating dmx.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/libdmx-1.1.1'
+Making all in src
+make[2]: Entering directory `/sources/builddir/libdmx-1.1.1/src'
+  CC     dmx.lo
+  CCLD   libdmx.la
+make[2]: Leaving directory `/sources/builddir/libdmx-1.1.1/src'
+Making all in man
+make[2]: Entering directory `/sources/builddir/libdmx-1.1.1/man'
+  GEN    DMX.3
+  GEN    DMXAddInput.3
+  GEN    DMXAddScreen.3
+  GEN    DMXChangeDesktopAttributes.3
+  GEN    DMXForceWindowCreation.3
+  GEN    DMXGetInputAttributes.3
+  GEN    DMXGetInputCount.3
+  GEN    DMXGetScreenAttributes.3
+  GEN    DMXGetScreenCount.3
+  GEN    DMXGetWindowAttributes.3
+  GEN    DMXQueryExtension.3
+  GEN    DMXQueryVersion.3
+  GEN    DMXRemoveInput.3
+  GEN    DMXRemoveScreen.3
+  GEN    DMXSync.3
+make[2]: Leaving directory `/sources/builddir/libdmx-1.1.1/man'
+make[2]: Entering directory `/sources/builddir/libdmx-1.1.1'
+make[2]: Leaving directory `/sources/builddir/libdmx-1.1.1'
+make[1]: Leaving directory `/sources/builddir/libdmx-1.1.1'
+Making install in src
+make[1]: Entering directory `/sources/builddir/libdmx-1.1.1/src'
+make[2]: Entering directory `/sources/builddir/libdmx-1.1.1/src'
+test -z "/usr/lib" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib"
+test -z "/usr/include/X11/extensions" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/X11/extensions"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libdmx.la '/sources/buildmgr/pkgroot/usr/lib'
+ /usr/bin/install -c -m 644 ../include/X11/extensions/dmxext.h '/sources/buildmgr/pkgroot/usr/include/X11/extensions'
+libtool: install: /usr/bin/install -c .libs/libdmx.so.1.0.0 /sources/buildmgr/pkgroot/usr/lib/libdmx.so.1.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libdmx.so.1.0.0 libdmx.so.1 || { rm -f libdmx.so.1 && ln -s libdmx.so.1.0.0 libdmx.so.1; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libdmx.so.1.0.0 libdmx.so || { rm -f libdmx.so && ln -s libdmx.so.1.0.0 libdmx.so; }; })
+libtool: install: /usr/bin/install -c .libs/libdmx.lai /sources/buildmgr/pkgroot/usr/lib/libdmx.la
+libtool: install: /usr/bin/install -c .libs/libdmx.a /sources/buildmgr/pkgroot/usr/lib/libdmx.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libdmx.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libdmx.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+make[2]: Leaving directory `/sources/builddir/libdmx-1.1.1/src'
+make[1]: Leaving directory `/sources/builddir/libdmx-1.1.1/src'
+Making install in man
+make[1]: Entering directory `/sources/builddir/libdmx-1.1.1/man'
+make[2]: Entering directory `/sources/builddir/libdmx-1.1.1/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man3" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man3"
+ /usr/bin/install -c -m 644 DMX.3 DMXAddInput.3 DMXAddScreen.3 DMXChangeDesktopAttributes.3 DMXChangeScreensAttributes.3 DMXForceWindowCreation.3 DMXGetDesktopAttributes.3 DMXGetInputAttributes.3 DMXGetInputCount.3 DMXGetScreenAttributes.3 DMXGetScreenCount.3 DMXGetWindowAttributes.3 DMXQueryExtension.3 DMXQueryVersion.3 DMXRemoveInput.3 DMXRemoveScreen.3 DMXSync.3 '/sources/buildmgr/pkgroot/usr/share/man/man3'
+make[2]: Leaving directory `/sources/builddir/libdmx-1.1.1/man'
+make[1]: Leaving directory `/sources/builddir/libdmx-1.1.1/man'
+make[1]: Entering directory `/sources/builddir/libdmx-1.1.1'
+make[2]: Entering directory `/sources/builddir/libdmx-1.1.1'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/pkgconfig"
+ /usr/bin/install -c -m 644 dmx.pc '/sources/buildmgr/pkgroot/usr/lib/pkgconfig'
+make[2]: Leaving directory `/sources/builddir/libdmx-1.1.1'
+make[1]: Leaving directory `/sources/builddir/libdmx-1.1.1'
+ldconfig: /usr/lib/libstdc++.so.6.0.16-gdb.py is not an ELF file - it has the wrong magic bytes at the start.
+

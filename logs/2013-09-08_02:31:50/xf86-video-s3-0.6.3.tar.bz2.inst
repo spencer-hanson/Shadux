@@ -1,0 +1,241 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognize dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 1572864
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+(cached) (cached) checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking if RANDR is defined... yes
+checking if RENDER is defined... yes
+checking if XV is defined... yes
+checking if DPMSExtension is defined... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for XORG... yes
+checking whether XSERVER_LIBPCIACCESS is declared... yes
+checking for ANSI C header files... (cached) yes
+checking for PCIACCESS... yes
+checking for /usr/share/sgml/X11/defs.ent... no
+checking for linuxdoc... no
+checking for ps2pdf... no
+checking Whether to build documentation... no
+checking Whether to build pdf documentation... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/xf86-video-s3-0.6.3'
+Making all in src
+make[2]: Entering directory `/sources/builddir/xf86-video-s3-0.6.3/src'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -DS3_NEWMMIO=1 -g -O2 -MT libs3_accel_newmmio_la-s3_accel.lo -MD -MP -MF .deps/libs3_accel_newmmio_la-s3_accel.Tpo -c -o libs3_accel_newmmio_la-s3_accel.lo `test -f 's3_accel.c' || echo './'`s3_accel.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -DS3_NEWMMIO=1 -g -O2 -MT libs3_accel_newmmio_la-s3_video.lo -MD -MP -MF .deps/libs3_accel_newmmio_la-s3_video.Tpo -c -o libs3_accel_newmmio_la-s3_video.lo `test -f 's3_video.c' || echo './'`s3_video.c
+mkdir .libs
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -DS3_NEWMMIO=1 -g -O2 -MT libs3_accel_newmmio_la-s3_accel.lo -MD -MP -MF .deps/libs3_accel_newmmio_la-s3_accel.Tpo -c s3_accel.c  -fPIC -DPIC -o .libs/libs3_accel_newmmio_la-s3_accel.o
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -DS3_NEWMMIO=1 -g -O2 -MT libs3_accel_newmmio_la-s3_video.lo -MD -MP -MF .deps/libs3_accel_newmmio_la-s3_video.Tpo -c s3_video.c  -fPIC -DPIC -o .libs/libs3_accel_newmmio_la-s3_video.o
+s3_video.c: In function ‘S3InitVideo’:
+s3_video.c:82:19: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+s3_video.c:97:10: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+s3_video.c: In function ‘S3AllocAdaptor’:
+s3_video.c:214:6: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+s3_video.c:217:10: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mv -f .deps/libs3_accel_newmmio_la-s3_accel.Tpo .deps/libs3_accel_newmmio_la-s3_accel.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -g -O2 -MT libs3_accel_pio_la-s3_accel.lo -MD -MP -MF .deps/libs3_accel_pio_la-s3_accel.Tpo -c -o libs3_accel_pio_la-s3_accel.lo `test -f 's3_accel.c' || echo './'`s3_accel.c
+mv -f .deps/libs3_accel_newmmio_la-s3_video.Tpo .deps/libs3_accel_newmmio_la-s3_video.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -g -O2 -MT s3_bios.lo -MD -MP -MF .deps/s3_bios.Tpo -c -o s3_bios.lo s3_bios.c
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -g -O2 -MT libs3_accel_pio_la-s3_accel.lo -MD -MP -MF .deps/libs3_accel_pio_la-s3_accel.Tpo -c s3_accel.c  -fPIC -DPIC -o .libs/libs3_accel_pio_la-s3_accel.o
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -g -O2 -MT s3_bios.lo -MD -MP -MF .deps/s3_bios.Tpo -c s3_bios.c  -fPIC -DPIC -o .libs/s3_bios.o
+s3_bios.c: In function ‘find_bios_string’:
+s3_bios.c:48:2: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+s3_bios.c:89:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mv -f .deps/s3_bios.Tpo .deps/s3_bios.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -g -O2 -MT s3_cursor.lo -MD -MP -MF .deps/s3_cursor.Tpo -c -o s3_cursor.lo s3_cursor.c
+mv -f .deps/libs3_accel_pio_la-s3_accel.Tpo .deps/libs3_accel_pio_la-s3_accel.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -g -O2 -MT s3_dga.lo -MD -MP -MF .deps/s3_dga.Tpo -c -o s3_dga.lo s3_dga.c
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -g -O2 -MT s3_cursor.lo -MD -MP -MF .deps/s3_cursor.Tpo -c s3_cursor.c  -fPIC -DPIC -o .libs/s3_cursor.o
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -g -O2 -MT s3_dga.lo -MD -MP -MF .deps/s3_dga.Tpo -c s3_dga.c  -fPIC -DPIC -o .libs/s3_dga.o
+s3_dga.c: In function ‘S3SetupDGAMode’:
+s3_dga.c:85:4: warning: ‘Xrealloc’ is deprecated (declared at /usr/include/xorg/os.h:230) [-Wdeprecated-declarations]
+s3_dga.c:88:4: warning: ‘Xrealloc’ is deprecated (declared at /usr/include/xorg/os.h:230) [-Wdeprecated-declarations]
+s3_dga.c:93:4: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mv -f .deps/s3_cursor.Tpo .deps/s3_cursor.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -g -O2 -MT s3_driver.lo -MD -MP -MF .deps/s3_driver.Tpo -c -o s3_driver.lo s3_driver.c
+mv -f .deps/s3_dga.Tpo .deps/s3_dga.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -g -O2 -MT s3_IBMRGB.lo -MD -MP -MF .deps/s3_IBMRGB.Tpo -c -o s3_IBMRGB.lo s3_IBMRGB.c
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -g -O2 -MT s3_driver.lo -MD -MP -MF .deps/s3_driver.Tpo -c s3_driver.c  -fPIC -DPIC -o .libs/s3_driver.o
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -g -O2 -MT s3_IBMRGB.lo -MD -MP -MF .deps/s3_IBMRGB.Tpo -c s3_IBMRGB.c  -fPIC -DPIC -o .libs/s3_IBMRGB.o
+s3_driver.c: In function ‘S3FreeRec’:
+s3_driver.c:243:9: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+s3_driver.c: In function ‘S3Probe’:
+s3_driver.c:274:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+s3_driver.c:301:9: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+s3_driver.c: In function ‘S3PreInit’:
+s3_driver.c:478:9: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+s3_driver.c: In function ‘S3ScreenInit’:
+s3_driver.c:791:10: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+s3_driver.c: In function ‘S3CloseScreen’:
+s3_driver.c:1102:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mv -f .deps/s3_IBMRGB.Tpo .deps/s3_IBMRGB.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -g -O2 -MT s3_Ti.lo -MD -MP -MF .deps/s3_Ti.Tpo -c -o s3_Ti.lo s3_Ti.c
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -g -O2 -MT s3_Ti.lo -MD -MP -MF .deps/s3_Ti.Tpo -c s3_Ti.c  -fPIC -DPIC -o .libs/s3_Ti.o
+mv -f .deps/s3_driver.Tpo .deps/s3_driver.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -g -O2 -MT s3_Trio64DAC.lo -MD -MP -MF .deps/s3_Trio64DAC.Tpo -c -o s3_Trio64DAC.lo s3_Trio64DAC.c
+mv -f .deps/s3_Ti.Tpo .deps/s3_Ti.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -g -O2 -MT s3_shadow.lo -MD -MP -MF .deps/s3_shadow.Tpo -c -o s3_shadow.lo s3_shadow.c
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -g -O2 -MT s3_Trio64DAC.lo -MD -MP -MF .deps/s3_Trio64DAC.Tpo -c s3_Trio64DAC.c  -fPIC -DPIC -o .libs/s3_Trio64DAC.o
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -g -O2 -MT s3_shadow.lo -MD -MP -MF .deps/s3_shadow.Tpo -c s3_shadow.c  -fPIC -DPIC -o .libs/s3_shadow.o
+mv -f .deps/s3_Trio64DAC.Tpo .deps/s3_Trio64DAC.Plo
+/bin/sh ../libtool --tag=CC   --mode=link gcc -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -DS3_NEWMMIO=1 -g -O2   -o libs3_accel_newmmio.la  libs3_accel_newmmio_la-s3_accel.lo libs3_accel_newmmio_la-s3_video.lo  
+ar cru .libs/libs3_accel_newmmio.a .libs/libs3_accel_newmmio_la-s3_accel.o .libs/libs3_accel_newmmio_la-s3_video.o
+ranlib .libs/libs3_accel_newmmio.a
+creating libs3_accel_newmmio.la
+(cd .libs && rm -f libs3_accel_newmmio.la && ln -s ../libs3_accel_newmmio.la libs3_accel_newmmio.la)
+/bin/sh ../libtool --tag=CC   --mode=link gcc -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -g -O2   -o libs3_accel_pio.la  libs3_accel_pio_la-s3_accel.lo  
+mv -f .deps/s3_shadow.Tpo .deps/s3_shadow.Plo
+ar cru .libs/libs3_accel_pio.a .libs/libs3_accel_pio_la-s3_accel.o
+ranlib .libs/libs3_accel_pio.a
+creating libs3_accel_pio.la
+(cd .libs && rm -f libs3_accel_pio.la && ln -s ../libs3_accel_pio.la libs3_accel_pio.la)
+/bin/sh ../libtool --tag=CC   --mode=link gcc -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -g -O2 -module -avoid-version  -o s3_drv.la -rpath /usr/lib/X11/modules/drivers s3_bios.lo s3_cursor.lo s3_dga.lo s3_driver.lo s3_IBMRGB.lo s3_Ti.lo s3_Trio64DAC.lo s3_shadow.lo libs3_accel_newmmio.la libs3_accel_pio.la 
+gcc -shared  .libs/s3_bios.o .libs/s3_cursor.o .libs/s3_dga.o .libs/s3_driver.o .libs/s3_IBMRGB.o .libs/s3_Ti.o .libs/s3_Trio64DAC.o .libs/s3_shadow.o -Wl,--whole-archive ./.libs/libs3_accel_newmmio.a ./.libs/libs3_accel_pio.a -Wl,--no-whole-archive   -Wl,-soname -Wl,s3_drv.so -o .libs/s3_drv.so
+creating s3_drv.la
+(cd .libs && rm -f s3_drv.la && ln -s ../s3_drv.la s3_drv.la)
+make[2]: Leaving directory `/sources/builddir/xf86-video-s3-0.6.3/src'
+Making all in man
+make[2]: Entering directory `/sources/builddir/xf86-video-s3-0.6.3/man'
+sed -e 's|__vendorversion__|"xf86-video-s3 0.6.3" "X Version 11"|' -e 's|__xorgversion__|"xf86-video-s3 0.6.3" "X Version 11"|' -e 's|__xservername__|Xorg|g' -e 's|__xconfigfile__|xorg.conf|g' -e 's|__projectroot__|/usr|g' -e 's|__appmansuffix__|1|g' -e 's|__drivermansuffix__|4|g' -e 's|__adminmansuffix__|8|g' -e 's|__miscmansuffix__|7|g' -e 's|__filemansuffix__|5|g' < s3.man > s3.4
+make[2]: Leaving directory `/sources/builddir/xf86-video-s3-0.6.3/man'
+make[2]: Entering directory `/sources/builddir/xf86-video-s3-0.6.3'
+make[2]: Leaving directory `/sources/builddir/xf86-video-s3-0.6.3'
+make[1]: Leaving directory `/sources/builddir/xf86-video-s3-0.6.3'
+Making install in src
+make[1]: Entering directory `/sources/builddir/xf86-video-s3-0.6.3/src'
+make[2]: Entering directory `/sources/builddir/xf86-video-s3-0.6.3/src'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/drivers" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   s3_drv.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers'
+/usr/bin/install -c .libs/s3_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/s3_drv.so
+/usr/bin/install -c .libs/s3_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/s3_drv.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/drivers'
+make[2]: Leaving directory `/sources/builddir/xf86-video-s3-0.6.3/src'
+make[1]: Leaving directory `/sources/builddir/xf86-video-s3-0.6.3/src'
+Making install in man
+make[1]: Entering directory `/sources/builddir/xf86-video-s3-0.6.3/man'
+make[2]: Entering directory `/sources/builddir/xf86-video-s3-0.6.3/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 s3.4 '/sources/buildmgr/pkgroot/usr/share/man/man4'
+make[2]: Leaving directory `/sources/builddir/xf86-video-s3-0.6.3/man'
+make[1]: Leaving directory `/sources/builddir/xf86-video-s3-0.6.3/man'
+make[1]: Entering directory `/sources/builddir/xf86-video-s3-0.6.3'
+make[2]: Entering directory `/sources/builddir/xf86-video-s3-0.6.3'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xf86-video-s3-0.6.3'
+make[1]: Leaving directory `/sources/builddir/xf86-video-s3-0.6.3'

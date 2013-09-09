@@ -32,6 +32,7 @@ if [ "$1" = "--install" ] ; then
 	make install-random
 	make install-iptables
 	make install-gpm
+	cd ..
 	echo Finished, Cleaning up...
 	rm blfs-bootscripts*.tar*
 	rm -r blfs-bootscripts*

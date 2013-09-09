@@ -1,0 +1,103 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... none
+checking for gcc option to accept ISO C99... -std=gnu99
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for mkfontscale... /usr/bin/mkfontscale
+checking if small encodings should be compressed... yes
+checking if large encodings should be compressed... yes
+checking for gzip... /bin/gzip
+checking for root directory for font files... /usr/share/fonts/X11
+checking for directory for encodings files... ${FONTROOTDIR}/encodings
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating large/Makefile
+config.status: executing depfiles commands
+Making all in large
+make[1]: Entering directory `/sources/builddir/encodings-1.0.4/large'
+  GEN    big5hkscs-0.enc.gz
+  GEN    cns11643-1.enc.gz
+  GEN    cns11643-2.enc.gz
+  GEN    cns11643-3.enc.gz
+  GEN    gb18030-0.enc.gz
+  GEN    gb18030.2000-0.enc.gz
+  GEN    gb18030.2000-1.enc.gz
+  GEN    gb2312.1980-0.enc.gz
+  GEN    gbk-0.enc.gz
+  GEN    jisx0201.1976-0.enc.gz
+  GEN    jisx0208.1990-0.enc.gz
+  GEN    jisx0212.1990-0.enc.gz
+  GEN    ksc5601.1987-0.enc.gz
+  GEN    ksc5601.1992-3.enc.gz
+  GEN    sun.unicode.india-0.enc.gz
+  GEN    encodings.dir
+make[1]: Leaving directory `/sources/builddir/encodings-1.0.4/large'
+make[1]: Entering directory `/sources/builddir/encodings-1.0.4'
+  GEN    adobe-dingbats.enc.gz
+  GEN    armscii-8.enc.gz
+  GEN    ascii-0.enc.gz
+  GEN    dec-special.enc.gz
+  GEN    ibm-cp437.enc.gz
+  GEN    ibm-cp866.enc.gz
+  GEN    iso8859-11.enc.gz
+  GEN    iso8859-16.enc.gz
+  GEN    iso8859-6.8x.enc.gz
+  GEN    microsoft-cp1251.enc.gz
+  GEN    microsoft-cp1254.enc.gz
+  GEN    microsoft-cp1256.enc.gz
+  GEN    microsoft-cp1258.enc.gz
+  GEN    microsoft-win3.1.enc.gz
+  GEN    mulearabic-2.enc.gz
+  GEN    mulelao-1.enc.gz
+  GEN    tis620-2.enc.gz
+  GEN    viscii1.1-1.enc.gz
+  GEN    encodings.dir
+make[1]: Leaving directory `/sources/builddir/encodings-1.0.4'
+Making install in large
+make[1]: Entering directory `/sources/builddir/encodings-1.0.4/large'
+make[2]: Entering directory `/sources/builddir/encodings-1.0.4/large'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/fonts/X11/encodings/large" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/fonts/X11/encodings/large"
+ /usr/bin/install -c -m 644 big5.eten-0.enc.gz big5hkscs-0.enc.gz cns11643-1.enc.gz cns11643-2.enc.gz cns11643-3.enc.gz gb18030-0.enc.gz gb18030.2000-0.enc.gz gb18030.2000-1.enc.gz gb2312.1980-0.enc.gz gbk-0.enc.gz jisx0201.1976-0.enc.gz jisx0208.1990-0.enc.gz jisx0212.1990-0.enc.gz ksc5601.1987-0.enc.gz ksc5601.1992-3.enc.gz sun.unicode.india-0.enc.gz encodings.dir '/sources/buildmgr/pkgroot/usr/share/fonts/X11/encodings/large'
+make[2]: Leaving directory `/sources/builddir/encodings-1.0.4/large'
+make[1]: Leaving directory `/sources/builddir/encodings-1.0.4/large'
+make[1]: Entering directory `/sources/builddir/encodings-1.0.4'
+make[2]: Entering directory `/sources/builddir/encodings-1.0.4'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/fonts/X11/encodings" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/fonts/X11/encodings"
+ /usr/bin/install -c -m 644 adobe-dingbats.enc.gz adobe-standard.enc.gz adobe-symbol.enc.gz armscii-8.enc.gz ascii-0.enc.gz dec-special.enc.gz ibm-cp437.enc.gz ibm-cp850.enc.gz ibm-cp852.enc.gz ibm-cp866.enc.gz iso8859-11.enc.gz iso8859-13.enc.gz iso8859-16.enc.gz iso8859-6.16.enc.gz iso8859-6.8x.enc.gz microsoft-cp1250.enc.gz microsoft-cp1251.enc.gz microsoft-cp1252.enc.gz microsoft-cp1253.enc.gz microsoft-cp1254.enc.gz microsoft-cp1255.enc.gz microsoft-cp1256.enc.gz microsoft-cp1257.enc.gz microsoft-cp1258.enc.gz microsoft-win3.1.enc.gz mulearabic-0.enc.gz mulearabic-1.enc.gz mulearabic-2.enc.gz mulelao-1.enc.gz suneu-greek.enc.gz tcvn-0.enc.gz tis620-2.enc.gz viscii1.1-1.enc.gz encodings.dir '/sources/buildmgr/pkgroot/usr/share/fonts/X11/encodings'
+make[2]: Leaving directory `/sources/builddir/encodings-1.0.4'
+make[1]: Leaving directory `/sources/builddir/encodings-1.0.4'
+`/sources/buildmgr/pkgroot/usr/share/fonts/X11-OTF' -> `/usr/share/fonts/X11/OTF'
+`/sources/buildmgr/pkgroot/usr/share/fonts/X11-TTF' -> `/usr/share/fonts/X11/TTF'

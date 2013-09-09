@@ -23,10 +23,9 @@ fi
 
 if [ "$1" = "--install" ] ; then
         echo Installing lsb...
-        cp data/lsb-*.tar* lsb
-        cd lsb-*
-        #install code
-	tar xf lsb-*.tar*
+        cp data/lsb-release*.tar* lsb
+        cd lsb
+	tar xf lsb-release*.tar*
 	cd lsb-release-*
 	./help2man -N --include ./lsb_release.examples --alt_version_key=program_version ./lsb_release > lsb_release.1
 	install -v -m 755 lsb_release /usr/bin/lsb_release

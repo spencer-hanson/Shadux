@@ -1,0 +1,769 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for a Python interpreter with version >= 2.5... python
+checking for python... /usr/bin/python
+checking for python version... 2.7
+checking for python platform... linux3
+checking for python script directory... ${prefix}/lib/python2.7/site-packages
+checking for python extension module directory... ${exec_prefix}/lib/python2.7/site-packages
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for CHECK... no
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking for xsltproc... /usr/bin/xsltproc
+checking for XCBPROTO... yes
+checking for NEEDED... yes
+checking for XDMCP... yes
+checking for XdmcpWrap in -lXdmcp... yes
+checking XCBPROTO_XCBINCLUDEDIR... /usr/share/xcb
+checking XCBPROTO_XCBPYTHONDIR... /usr/lib/python2.7/site-packages
+checking for ANSI C header files... (cached) yes
+checking for library containing getaddrinfo... none required
+checking for library containing connect... none required
+checking for struct sockaddr_un.sun_len... no
+checking whether gcc supports symbol visibility... yes
+checking for doxygen... no
+WARNING:
+The doxygen program was not found in your execute
+You may have doxygen installed somewhere not covered by your path.
+
+If this is the case make sure you have the packages installed, AND
+that the doxygen program is in your execute path (see your
+shell manual page on setting the $PATH environment variable), OR
+alternatively, specify the program to use with --with-doxygen.
+configure: WARNING: Warning: no doxygen detected. Documentation will not be built
+checking for dot... no
+configure: WARNING: Warning: no dot detected. Documentation will not be built
+checking whether documentation is built... no
+checking for poll... yes
+checking for launchd... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating xcb.pc
+config.status: creating xcb-composite.pc
+config.status: creating xcb-damage.pc
+config.status: creating xcb-dpms.pc
+config.status: creating xcb-dri2.pc
+config.status: creating xcb-glx.pc
+config.status: creating xcb-randr.pc
+config.status: creating xcb-record.pc
+config.status: creating xcb-render.pc
+config.status: creating xcb-res.pc
+config.status: creating xcb-screensaver.pc
+config.status: creating xcb-shape.pc
+config.status: creating xcb-shm.pc
+config.status: creating xcb-sync.pc
+config.status: creating xcb-xevie.pc
+config.status: creating xcb-xf86dri.pc
+config.status: creating xcb-xfixes.pc
+config.status: creating xcb-xinerama.pc
+config.status: creating xcb-xinput.pc
+config.status: creating xcb-xprint.pc
+config.status: creating xcb-xselinux.pc
+config.status: creating xcb-xtest.pc
+config.status: creating xcb-xv.pc
+config.status: creating xcb-xvmc.pc
+config.status: creating doc/xcb.doxygen
+config.status: creating src/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+  Package: libxcb 1.7
+
+  Configuration
+    XDM support.........: yes
+    Build unit tests....: no
+    XCB buffer size.....: 16384
+
+  X11 extensions
+    Composite...........: yes
+    Damage..............: yes
+    Dpms................: yes
+    Dri2................: yes
+    Glx.................: yes
+    Randr...............: yes
+    Record..............: yes
+    Render..............: yes
+    Resource............: yes
+    Screensaver.........: yes
+    selinux.............: no
+    Shape...............: yes
+    Shm.................: yes
+    Sync................: yes
+    Xevie...............: yes
+    Xfixes..............: yes
+    Xfree86-dri.........: yes
+    xinerama............: yes
+    xinput..............: no
+    xprint..............: yes
+    xtest...............: yes
+    xv..................: yes
+    xvmc................: yes
+
+  Used CFLAGS:
+    CPPFLAGS............: 
+    CFLAGS..............: -g -O2
+    Warning CFLAGS......: -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs
+
+  Installation:
+    Prefix..............: /usr
+
+Making all in src
+make[1]: Entering directory `/sources/builddir/libxcb-1.7/src'
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xproto.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/bigreq.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xc_misc.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/composite.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/damage.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/dpms.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/dri2.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/glx.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/randr.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/record.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/render.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/res.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/screensaver.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/shape.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/shm.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/sync.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xevie.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xf86dri.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xfixes.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xinerama.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xinput.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xprint.xml
+xcb_x_print_printer_t: warning: variable field name followed by fixed field descLen
+xcb_x_print_print_input_selected_reply_t: warning: variable field event_list followed by fixed field all_events_mask
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xselinux.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xtest.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xv.xml
+/usr/bin/python ./c_client.py -p /usr/lib/python2.7/site-packages /usr/share/xcb/xvmc.xml
+make  all-am
+make[2]: Entering directory `/sources/builddir/libxcb-1.7/src'
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xcb_conn.lo -MD -MP -MF .deps/xcb_conn.Tpo -c -o xcb_conn.lo xcb_conn.c
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xcb_out.lo -MD -MP -MF .deps/xcb_out.Tpo -c -o xcb_out.lo xcb_out.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_conn.lo -MD -MP -MF .deps/xcb_conn.Tpo -c xcb_conn.c  -fPIC -DPIC -o .libs/xcb_conn.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_conn.lo -MD -MP -MF .deps/xcb_conn.Tpo -c xcb_conn.c -o xcb_conn.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_out.lo -MD -MP -MF .deps/xcb_out.Tpo -c xcb_out.c -o xcb_out.o >/dev/null 2>&1
+mv -f .deps/xcb_conn.Tpo .deps/xcb_conn.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xcb_in.lo -MD -MP -MF .deps/xcb_in.Tpo -c -o xcb_in.lo xcb_in.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_in.lo -MD -MP -MF .deps/xcb_in.Tpo -c xcb_in.c  -fPIC -DPIC -o .libs/xcb_in.o
+xcb_in.c: In function ‘read_packet’:
+xcb_in.c:92:1: warning: use of C99 long long integer constant [-Wlong-long]
+xcb_in.c: In function ‘xcb_wait_for_reply’:
+xcb_in.c:354:1: warning: use of C99 long long integer constant [-Wlong-long]
+xcb_in.c:356:1: warning: use of C99 long long integer constant [-Wlong-long]
+xcb_in.c: In function ‘discard_reply’:
+xcb_in.c:489:1: warning: use of C99 long long integer constant [-Wlong-long]
+xcb_in.c:491:1: warning: use of C99 long long integer constant [-Wlong-long]
+mv -f .deps/xcb_out.Tpo .deps/xcb_out.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xcb_ext.lo -MD -MP -MF .deps/xcb_ext.Tpo -c -o xcb_ext.lo xcb_ext.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_ext.lo -MD -MP -MF .deps/xcb_ext.Tpo -c xcb_ext.c  -fPIC -DPIC -o .libs/xcb_ext.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_ext.lo -MD -MP -MF .deps/xcb_ext.Tpo -c xcb_ext.c -o xcb_ext.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_in.lo -MD -MP -MF .deps/xcb_in.Tpo -c xcb_in.c -o xcb_in.o >/dev/null 2>&1
+mv -f .deps/xcb_ext.Tpo .deps/xcb_ext.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xcb_xid.lo -MD -MP -MF .deps/xcb_xid.Tpo -c -o xcb_xid.lo xcb_xid.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_xid.lo -MD -MP -MF .deps/xcb_xid.Tpo -c xcb_xid.c  -fPIC -DPIC -o .libs/xcb_xid.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_xid.lo -MD -MP -MF .deps/xcb_xid.Tpo -c xcb_xid.c -o xcb_xid.o >/dev/null 2>&1
+mv -f .deps/xcb_xid.Tpo .deps/xcb_xid.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xcb_list.lo -MD -MP -MF .deps/xcb_list.Tpo -c -o xcb_list.lo xcb_list.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_list.lo -MD -MP -MF .deps/xcb_list.Tpo -c xcb_list.c  -fPIC -DPIC -o .libs/xcb_list.o
+mv -f .deps/xcb_in.Tpo .deps/xcb_in.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xcb_util.lo -MD -MP -MF .deps/xcb_util.Tpo -c -o xcb_util.lo xcb_util.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_list.lo -MD -MP -MF .deps/xcb_list.Tpo -c xcb_list.c -o xcb_list.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_util.lo -MD -MP -MF .deps/xcb_util.Tpo -c xcb_util.c  -fPIC -DPIC -o .libs/xcb_util.o
+mv -f .deps/xcb_list.Tpo .deps/xcb_list.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xcb_auth.lo -MD -MP -MF .deps/xcb_auth.Tpo -c -o xcb_auth.lo xcb_auth.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_auth.lo -MD -MP -MF .deps/xcb_auth.Tpo -c xcb_auth.c  -fPIC -DPIC -o .libs/xcb_auth.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_util.lo -MD -MP -MF .deps/xcb_util.Tpo -c xcb_util.c -o xcb_util.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xcb_auth.lo -MD -MP -MF .deps/xcb_auth.Tpo -c xcb_auth.c -o xcb_auth.o >/dev/null 2>&1
+mv -f .deps/xcb_util.Tpo .deps/xcb_util.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xproto.lo -MD -MP -MF .deps/xproto.Tpo -c -o xproto.lo xproto.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xproto.lo -MD -MP -MF .deps/xproto.Tpo -c xproto.c  -fPIC -DPIC -o .libs/xproto.o
+mv -f .deps/xcb_auth.Tpo .deps/xcb_auth.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT bigreq.lo -MD -MP -MF .deps/bigreq.Tpo -c -o bigreq.lo bigreq.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT bigreq.lo -MD -MP -MF .deps/bigreq.Tpo -c bigreq.c  -fPIC -DPIC -o .libs/bigreq.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT bigreq.lo -MD -MP -MF .deps/bigreq.Tpo -c bigreq.c -o bigreq.o >/dev/null 2>&1
+mv -f .deps/bigreq.Tpo .deps/bigreq.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xc_misc.lo -MD -MP -MF .deps/xc_misc.Tpo -c -o xc_misc.lo xc_misc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xc_misc.lo -MD -MP -MF .deps/xc_misc.Tpo -c xc_misc.c  -fPIC -DPIC -o .libs/xc_misc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xc_misc.lo -MD -MP -MF .deps/xc_misc.Tpo -c xc_misc.c -o xc_misc.o >/dev/null 2>&1
+mv -f .deps/xc_misc.Tpo .deps/xc_misc.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT composite.lo -MD -MP -MF .deps/composite.Tpo -c -o composite.lo composite.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT composite.lo -MD -MP -MF .deps/composite.Tpo -c composite.c  -fPIC -DPIC -o .libs/composite.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT composite.lo -MD -MP -MF .deps/composite.Tpo -c composite.c -o composite.o >/dev/null 2>&1
+mv -f .deps/composite.Tpo .deps/composite.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT damage.lo -MD -MP -MF .deps/damage.Tpo -c -o damage.lo damage.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT damage.lo -MD -MP -MF .deps/damage.Tpo -c damage.c  -fPIC -DPIC -o .libs/damage.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT damage.lo -MD -MP -MF .deps/damage.Tpo -c damage.c -o damage.o >/dev/null 2>&1
+mv -f .deps/damage.Tpo .deps/damage.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT dpms.lo -MD -MP -MF .deps/dpms.Tpo -c -o dpms.lo dpms.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT dpms.lo -MD -MP -MF .deps/dpms.Tpo -c dpms.c  -fPIC -DPIC -o .libs/dpms.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT dpms.lo -MD -MP -MF .deps/dpms.Tpo -c dpms.c -o dpms.o >/dev/null 2>&1
+mv -f .deps/dpms.Tpo .deps/dpms.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT dri2.lo -MD -MP -MF .deps/dri2.Tpo -c -o dri2.lo dri2.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT dri2.lo -MD -MP -MF .deps/dri2.Tpo -c dri2.c  -fPIC -DPIC -o .libs/dri2.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT dri2.lo -MD -MP -MF .deps/dri2.Tpo -c dri2.c -o dri2.o >/dev/null 2>&1
+mv -f .deps/dri2.Tpo .deps/dri2.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT glx.lo -MD -MP -MF .deps/glx.Tpo -c -o glx.lo glx.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT glx.lo -MD -MP -MF .deps/glx.Tpo -c glx.c  -fPIC -DPIC -o .libs/glx.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xproto.lo -MD -MP -MF .deps/xproto.Tpo -c xproto.c -o xproto.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT glx.lo -MD -MP -MF .deps/glx.Tpo -c glx.c -o glx.o >/dev/null 2>&1
+mv -f .deps/xproto.Tpo .deps/xproto.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT randr.lo -MD -MP -MF .deps/randr.Tpo -c -o randr.lo randr.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT randr.lo -MD -MP -MF .deps/randr.Tpo -c randr.c  -fPIC -DPIC -o .libs/randr.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT randr.lo -MD -MP -MF .deps/randr.Tpo -c randr.c -o randr.o >/dev/null 2>&1
+mv -f .deps/glx.Tpo .deps/glx.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT record.lo -MD -MP -MF .deps/record.Tpo -c -o record.lo record.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT record.lo -MD -MP -MF .deps/record.Tpo -c record.c  -fPIC -DPIC -o .libs/record.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT record.lo -MD -MP -MF .deps/record.Tpo -c record.c -o record.o >/dev/null 2>&1
+mv -f .deps/randr.Tpo .deps/randr.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT render.lo -MD -MP -MF .deps/render.Tpo -c -o render.lo render.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT render.lo -MD -MP -MF .deps/render.Tpo -c render.c  -fPIC -DPIC -o .libs/render.o
+mv -f .deps/record.Tpo .deps/record.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT res.lo -MD -MP -MF .deps/res.Tpo -c -o res.lo res.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT res.lo -MD -MP -MF .deps/res.Tpo -c res.c  -fPIC -DPIC -o .libs/res.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT res.lo -MD -MP -MF .deps/res.Tpo -c res.c -o res.o >/dev/null 2>&1
+mv -f .deps/res.Tpo .deps/res.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT screensaver.lo -MD -MP -MF .deps/screensaver.Tpo -c -o screensaver.lo screensaver.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT screensaver.lo -MD -MP -MF .deps/screensaver.Tpo -c screensaver.c  -fPIC -DPIC -o .libs/screensaver.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT screensaver.lo -MD -MP -MF .deps/screensaver.Tpo -c screensaver.c -o screensaver.o >/dev/null 2>&1
+mv -f .deps/screensaver.Tpo .deps/screensaver.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT shape.lo -MD -MP -MF .deps/shape.Tpo -c -o shape.lo shape.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT shape.lo -MD -MP -MF .deps/shape.Tpo -c shape.c  -fPIC -DPIC -o .libs/shape.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT render.lo -MD -MP -MF .deps/render.Tpo -c render.c -o render.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT shape.lo -MD -MP -MF .deps/shape.Tpo -c shape.c -o shape.o >/dev/null 2>&1
+mv -f .deps/shape.Tpo .deps/shape.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT shm.lo -MD -MP -MF .deps/shm.Tpo -c -o shm.lo shm.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT shm.lo -MD -MP -MF .deps/shm.Tpo -c shm.c  -fPIC -DPIC -o .libs/shm.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT shm.lo -MD -MP -MF .deps/shm.Tpo -c shm.c -o shm.o >/dev/null 2>&1
+mv -f .deps/render.Tpo .deps/render.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT sync.lo -MD -MP -MF .deps/sync.Tpo -c -o sync.lo sync.c
+mv -f .deps/shm.Tpo .deps/shm.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xevie.lo -MD -MP -MF .deps/xevie.Tpo -c -o xevie.lo xevie.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT sync.lo -MD -MP -MF .deps/sync.Tpo -c sync.c  -fPIC -DPIC -o .libs/sync.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xevie.lo -MD -MP -MF .deps/xevie.Tpo -c xevie.c  -fPIC -DPIC -o .libs/xevie.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xevie.lo -MD -MP -MF .deps/xevie.Tpo -c xevie.c -o xevie.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT sync.lo -MD -MP -MF .deps/sync.Tpo -c sync.c -o sync.o >/dev/null 2>&1
+mv -f .deps/xevie.Tpo .deps/xevie.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xf86dri.lo -MD -MP -MF .deps/xf86dri.Tpo -c -o xf86dri.lo xf86dri.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xf86dri.lo -MD -MP -MF .deps/xf86dri.Tpo -c xf86dri.c  -fPIC -DPIC -o .libs/xf86dri.o
+mv -f .deps/sync.Tpo .deps/sync.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xfixes.lo -MD -MP -MF .deps/xfixes.Tpo -c -o xfixes.lo xfixes.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xf86dri.lo -MD -MP -MF .deps/xf86dri.Tpo -c xf86dri.c -o xf86dri.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xfixes.lo -MD -MP -MF .deps/xfixes.Tpo -c xfixes.c  -fPIC -DPIC -o .libs/xfixes.o
+mv -f .deps/xf86dri.Tpo .deps/xf86dri.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xinerama.lo -MD -MP -MF .deps/xinerama.Tpo -c -o xinerama.lo xinerama.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xinerama.lo -MD -MP -MF .deps/xinerama.Tpo -c xinerama.c  -fPIC -DPIC -o .libs/xinerama.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xinerama.lo -MD -MP -MF .deps/xinerama.Tpo -c xinerama.c -o xinerama.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xfixes.lo -MD -MP -MF .deps/xfixes.Tpo -c xfixes.c -o xfixes.o >/dev/null 2>&1
+mv -f .deps/xinerama.Tpo .deps/xinerama.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xprint.lo -MD -MP -MF .deps/xprint.Tpo -c -o xprint.lo xprint.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xprint.lo -MD -MP -MF .deps/xprint.Tpo -c xprint.c  -fPIC -DPIC -o .libs/xprint.o
+mv -f .deps/xfixes.Tpo .deps/xfixes.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xtest.lo -MD -MP -MF .deps/xtest.Tpo -c -o xtest.lo xtest.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xtest.lo -MD -MP -MF .deps/xtest.Tpo -c xtest.c  -fPIC -DPIC -o .libs/xtest.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xprint.lo -MD -MP -MF .deps/xprint.Tpo -c xprint.c -o xprint.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xtest.lo -MD -MP -MF .deps/xtest.Tpo -c xtest.c -o xtest.o >/dev/null 2>&1
+mv -f .deps/xtest.Tpo .deps/xtest.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xv.lo -MD -MP -MF .deps/xv.Tpo -c -o xv.lo xv.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xv.lo -MD -MP -MF .deps/xv.Tpo -c xv.c  -fPIC -DPIC -o .libs/xv.o
+mv -f .deps/xprint.Tpo .deps/xprint.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.    -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -MT xvmc.lo -MD -MP -MF .deps/xvmc.Tpo -c -o xvmc.lo xvmc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xvmc.lo -MD -MP -MF .deps/xvmc.Tpo -c xvmc.c  -fPIC -DPIC -o .libs/xvmc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xv.lo -MD -MP -MF .deps/xv.Tpo -c xv.c -o xv.o >/dev/null 2>&1
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -MT xvmc.lo -MD -MP -MF .deps/xvmc.Tpo -c xvmc.c -o xvmc.o >/dev/null 2>&1
+mv -f .deps/xvmc.Tpo .deps/xvmc.Plo
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 2:0:1 -no-undefined  -o libxcb.la -rpath /usr/lib xcb_conn.lo xcb_out.lo xcb_in.lo xcb_ext.lo xcb_xid.lo xcb_list.lo xcb_util.lo xcb_auth.lo xproto.lo bigreq.lo xc_misc.lo -lXau   -lXdmcp   
+libtool: link: gcc -shared  .libs/xcb_conn.o .libs/xcb_out.o .libs/xcb_in.o .libs/xcb_ext.o .libs/xcb_xid.o .libs/xcb_list.o .libs/xcb_util.o .libs/xcb_auth.o .libs/xproto.o .libs/bigreq.o .libs/xc_misc.o   /usr/lib/libXau.so /usr/lib/libXdmcp.so    -Wl,-soname -Wl,libxcb.so.1 -o .libs/libxcb.so.1.1.0
+libtool: link: (cd ".libs" && rm -f "libxcb.so.1" && ln -s "libxcb.so.1.1.0" "libxcb.so.1")
+libtool: link: (cd ".libs" && rm -f "libxcb.so" && ln -s "libxcb.so.1.1.0" "libxcb.so")
+libtool: link: ar cru .libs/libxcb.a  xcb_conn.o xcb_out.o xcb_in.o xcb_ext.o xcb_xid.o xcb_list.o xcb_util.o xcb_auth.o xproto.o bigreq.o xc_misc.o
+libtool: link: ranlib .libs/libxcb.a
+libtool: link: ( cd ".libs" && rm -f "libxcb.la" && ln -s "../libxcb.la" "libxcb.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-composite.la -rpath /usr/lib composite.lo libxcb.la 
+mv -f .deps/xv.Tpo .deps/xv.Plo
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-damage.la -rpath /usr/lib damage.lo libxcb.la 
+libtool: link: gcc -shared  .libs/composite.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-composite.so.0 -o .libs/libxcb-composite.so.0.0.0
+libtool: link: gcc -shared  .libs/damage.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-damage.so.0 -o .libs/libxcb-damage.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-composite.so.0" && ln -s "libxcb-composite.so.0.0.0" "libxcb-composite.so.0")
+libtool: link: (cd ".libs" && rm -f "libxcb-composite.so" && ln -s "libxcb-composite.so.0.0.0" "libxcb-composite.so")
+libtool: link: ar cru .libs/libxcb-composite.a  composite.o
+libtool: link: ranlib .libs/libxcb-composite.a
+libtool: link: (cd ".libs" && rm -f "libxcb-damage.so.0" && ln -s "libxcb-damage.so.0.0.0" "libxcb-damage.so.0")
+libtool: link: ( cd ".libs" && rm -f "libxcb-composite.la" && ln -s "../libxcb-composite.la" "libxcb-composite.la" )
+libtool: link: (cd ".libs" && rm -f "libxcb-damage.so" && ln -s "libxcb-damage.so.0.0.0" "libxcb-damage.so")
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-dpms.la -rpath /usr/lib dpms.lo libxcb.la 
+libtool: link: ar cru .libs/libxcb-damage.a  damage.o
+libtool: link: ranlib .libs/libxcb-damage.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-damage.la" && ln -s "../libxcb-damage.la" "libxcb-damage.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-dri2.la -rpath /usr/lib dri2.lo libxcb.la 
+libtool: link: gcc -shared  .libs/dpms.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-dpms.so.0 -o .libs/libxcb-dpms.so.0.0.0
+libtool: link: gcc -shared  .libs/dri2.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-dri2.so.0 -o .libs/libxcb-dri2.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-dpms.so.0" && ln -s "libxcb-dpms.so.0.0.0" "libxcb-dpms.so.0")
+libtool: link: (cd ".libs" && rm -f "libxcb-dpms.so" && ln -s "libxcb-dpms.so.0.0.0" "libxcb-dpms.so")
+libtool: link: ar cru .libs/libxcb-dpms.a  dpms.o
+libtool: link: ranlib .libs/libxcb-dpms.a
+libtool: link: (cd ".libs" && rm -f "libxcb-dri2.so.0" && ln -s "libxcb-dri2.so.0.0.0" "libxcb-dri2.so.0")
+libtool: link: ( cd ".libs" && rm -f "libxcb-dpms.la" && ln -s "../libxcb-dpms.la" "libxcb-dpms.la" )
+libtool: link: (cd ".libs" && rm -f "libxcb-dri2.so" && ln -s "libxcb-dri2.so.0.0.0" "libxcb-dri2.so")
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-glx.la -rpath /usr/lib glx.lo libxcb.la 
+libtool: link: ar cru .libs/libxcb-dri2.a  dri2.o
+libtool: link: ranlib .libs/libxcb-dri2.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-dri2.la" && ln -s "../libxcb-dri2.la" "libxcb-dri2.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 1:0:1 -no-undefined  -o libxcb-randr.la -rpath /usr/lib randr.lo libxcb.la 
+libtool: link: gcc -shared  .libs/glx.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-glx.so.0 -o .libs/libxcb-glx.so.0.0.0
+libtool: link: gcc -shared  .libs/randr.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-randr.so.0 -o .libs/libxcb-randr.so.0.1.0
+libtool: link: (cd ".libs" && rm -f "libxcb-glx.so.0" && ln -s "libxcb-glx.so.0.0.0" "libxcb-glx.so.0")
+libtool: link: (cd ".libs" && rm -f "libxcb-glx.so" && ln -s "libxcb-glx.so.0.0.0" "libxcb-glx.so")
+libtool: link: ar cru .libs/libxcb-glx.a  glx.o
+libtool: link: ranlib .libs/libxcb-glx.a
+libtool: link: (cd ".libs" && rm -f "libxcb-randr.so.0" && ln -s "libxcb-randr.so.0.1.0" "libxcb-randr.so.0")
+libtool: link: ( cd ".libs" && rm -f "libxcb-glx.la" && ln -s "../libxcb-glx.la" "libxcb-glx.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-record.la -rpath /usr/lib record.lo libxcb.la 
+libtool: link: ar cru .libs/libxcb-randr.a  randr.o
+libtool: link: ranlib .libs/libxcb-randr.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-randr.la" && ln -s "../libxcb-randr.la" "libxcb-randr.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-render.la -rpath /usr/lib render.lo libxcb.la 
+libtool: link: gcc -shared  .libs/record.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-record.so.0 -o .libs/libxcb-record.so.0.0.0
+libtool: link: gcc -shared  .libs/render.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-render.so.0 -o .libs/libxcb-render.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-record.so.0" && ln -s "libxcb-record.so.0.0.0" "libxcb-record.so.0")
+libtool: link: (cd ".libs" && rm -f "libxcb-record.so" && ln -s "libxcb-record.so.0.0.0" "libxcb-record.so")
+libtool: link: ar cru .libs/libxcb-record.a  record.o
+libtool: link: ranlib .libs/libxcb-record.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-record.la" && ln -s "../libxcb-record.la" "libxcb-record.la" )
+libtool: link: (cd ".libs" && rm -f "libxcb-render.so.0" && ln -s "libxcb-render.so.0.0.0" "libxcb-render.so.0")
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-res.la -rpath /usr/lib res.lo libxcb.la 
+libtool: link: (cd ".libs" && rm -f "libxcb-render.so" && ln -s "libxcb-render.so.0.0.0" "libxcb-render.so")
+libtool: link: ar cru .libs/libxcb-render.a  render.o
+libtool: link: ranlib .libs/libxcb-render.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-render.la" && ln -s "../libxcb-render.la" "libxcb-render.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-screensaver.la -rpath /usr/lib screensaver.lo libxcb.la 
+libtool: link: gcc -shared  .libs/res.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-res.so.0 -o .libs/libxcb-res.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-res.so.0" && ln -s "libxcb-res.so.0.0.0" "libxcb-res.so.0")
+libtool: link: gcc -shared  .libs/screensaver.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-screensaver.so.0 -o .libs/libxcb-screensaver.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-res.so" && ln -s "libxcb-res.so.0.0.0" "libxcb-res.so")
+libtool: link: ar cru .libs/libxcb-res.a  res.o
+libtool: link: ranlib .libs/libxcb-res.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-res.la" && ln -s "../libxcb-res.la" "libxcb-res.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-shape.la -rpath /usr/lib shape.lo libxcb.la 
+libtool: link: (cd ".libs" && rm -f "libxcb-screensaver.so" && ln -s "libxcb-screensaver.so.0.0.0" "libxcb-screensaver.so")
+libtool: link: ar cru .libs/libxcb-screensaver.a  screensaver.o
+libtool: link: ranlib .libs/libxcb-screensaver.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-screensaver.la" && ln -s "../libxcb-screensaver.la" "libxcb-screensaver.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-shm.la -rpath /usr/lib shm.lo libxcb.la 
+libtool: link: gcc -shared  .libs/shape.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-shape.so.0 -o .libs/libxcb-shape.so.0.0.0
+libtool: link: gcc -shared  .libs/shm.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-shm.so.0 -o .libs/libxcb-shm.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-shape.so.0" && ln -s "libxcb-shape.so.0.0.0" "libxcb-shape.so.0")
+libtool: link: (cd ".libs" && rm -f "libxcb-shape.so" && ln -s "libxcb-shape.so.0.0.0" "libxcb-shape.so")
+libtool: link: ar cru .libs/libxcb-shape.a  shape.o
+libtool: link: ranlib .libs/libxcb-shape.a
+libtool: link: (cd ".libs" && rm -f "libxcb-shm.so.0" && ln -s "libxcb-shm.so.0.0.0" "libxcb-shm.so.0")
+libtool: link: ( cd ".libs" && rm -f "libxcb-shape.la" && ln -s "../libxcb-shape.la" "libxcb-shape.la" )
+libtool: link: (cd ".libs" && rm -f "libxcb-shm.so" && ln -s "libxcb-shm.so.0.0.0" "libxcb-shm.so")
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-sync.la -rpath /usr/lib sync.lo libxcb.la 
+libtool: link: ar cru .libs/libxcb-shm.a  shm.o
+libtool: link: ranlib .libs/libxcb-shm.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-shm.la" && ln -s "../libxcb-shm.la" "libxcb-shm.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-xevie.la -rpath /usr/lib xevie.lo libxcb.la 
+libtool: link: gcc -shared  .libs/sync.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-sync.so.0 -o .libs/libxcb-sync.so.0.0.0
+libtool: link: gcc -shared  .libs/xevie.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-xevie.so.0 -o .libs/libxcb-xevie.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-sync.so.0" && ln -s "libxcb-sync.so.0.0.0" "libxcb-sync.so.0")
+libtool: link: (cd ".libs" && rm -f "libxcb-sync.so" && ln -s "libxcb-sync.so.0.0.0" "libxcb-sync.so")
+libtool: link: ar cru .libs/libxcb-sync.a  sync.o
+libtool: link: ranlib .libs/libxcb-sync.a
+libtool: link: (cd ".libs" && rm -f "libxcb-xevie.so.0" && ln -s "libxcb-xevie.so.0.0.0" "libxcb-xevie.so.0")
+libtool: link: ( cd ".libs" && rm -f "libxcb-sync.la" && ln -s "../libxcb-sync.la" "libxcb-sync.la" )
+libtool: link: (cd ".libs" && rm -f "libxcb-xevie.so" && ln -s "libxcb-xevie.so.0.0.0" "libxcb-xevie.so")
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-xf86dri.la -rpath /usr/lib xf86dri.lo libxcb.la 
+libtool: link: ar cru .libs/libxcb-xevie.a  xevie.o
+libtool: link: ranlib .libs/libxcb-xevie.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-xevie.la" && ln -s "../libxcb-xevie.la" "libxcb-xevie.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-xfixes.la -rpath /usr/lib xfixes.lo libxcb.la 
+libtool: link: gcc -shared  .libs/xf86dri.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-xf86dri.so.0 -o .libs/libxcb-xf86dri.so.0.0.0
+libtool: link: gcc -shared  .libs/xfixes.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-xfixes.so.0 -o .libs/libxcb-xfixes.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-xf86dri.so.0" && ln -s "libxcb-xf86dri.so.0.0.0" "libxcb-xf86dri.so.0")
+libtool: link: (cd ".libs" && rm -f "libxcb-xf86dri.so" && ln -s "libxcb-xf86dri.so.0.0.0" "libxcb-xf86dri.so")
+libtool: link: ar cru .libs/libxcb-xf86dri.a  xf86dri.o
+libtool: link: ranlib .libs/libxcb-xf86dri.a
+libtool: link: (cd ".libs" && rm -f "libxcb-xfixes.so.0" && ln -s "libxcb-xfixes.so.0.0.0" "libxcb-xfixes.so.0")
+libtool: link: (cd ".libs" && rm -f "libxcb-xfixes.so" && ln -s "libxcb-xfixes.so.0.0.0" "libxcb-xfixes.so")
+libtool: link: ( cd ".libs" && rm -f "libxcb-xf86dri.la" && ln -s "../libxcb-xf86dri.la" "libxcb-xf86dri.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-xinerama.la -rpath /usr/lib xinerama.lo libxcb.la 
+libtool: link: ar cru .libs/libxcb-xfixes.a  xfixes.o
+libtool: link: ranlib .libs/libxcb-xfixes.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-xfixes.la" && ln -s "../libxcb-xfixes.la" "libxcb-xfixes.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-xprint.la -rpath /usr/lib xprint.lo libxcb.la 
+libtool: link: gcc -shared  .libs/xinerama.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-xinerama.so.0 -o .libs/libxcb-xinerama.so.0.0.0
+libtool: link: gcc -shared  .libs/xprint.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-xprint.so.0 -o .libs/libxcb-xprint.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-xinerama.so.0" && ln -s "libxcb-xinerama.so.0.0.0" "libxcb-xinerama.so.0")
+libtool: link: (cd ".libs" && rm -f "libxcb-xinerama.so" && ln -s "libxcb-xinerama.so.0.0.0" "libxcb-xinerama.so")
+libtool: link: ar cru .libs/libxcb-xinerama.a  xinerama.o
+libtool: link: ranlib .libs/libxcb-xinerama.a
+libtool: link: (cd ".libs" && rm -f "libxcb-xprint.so.0" && ln -s "libxcb-xprint.so.0.0.0" "libxcb-xprint.so.0")
+libtool: link: ( cd ".libs" && rm -f "libxcb-xinerama.la" && ln -s "../libxcb-xinerama.la" "libxcb-xinerama.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-xtest.la -rpath /usr/lib xtest.lo libxcb.la 
+libtool: link: (cd ".libs" && rm -f "libxcb-xprint.so" && ln -s "libxcb-xprint.so.0.0.0" "libxcb-xprint.so")
+libtool: link: ar cru .libs/libxcb-xprint.a  xprint.o
+libtool: link: ranlib .libs/libxcb-xprint.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-xprint.la" && ln -s "../libxcb-xprint.la" "libxcb-xprint.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-xv.la -rpath /usr/lib xv.lo libxcb.la 
+libtool: link: gcc -shared  .libs/xtest.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-xtest.so.0 -o .libs/libxcb-xtest.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-xtest.so.0" && ln -s "libxcb-xtest.so.0.0.0" "libxcb-xtest.so.0")
+libtool: link: gcc -shared  .libs/xv.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-xv.so.0 -o .libs/libxcb-xv.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-xtest.so" && ln -s "libxcb-xtest.so.0.0.0" "libxcb-xtest.so")
+libtool: link: ar cru .libs/libxcb-xtest.a  xtest.o
+libtool: link: ranlib .libs/libxcb-xtest.a
+libtool: link: (cd ".libs" && rm -f "libxcb-xv.so.0" && ln -s "libxcb-xv.so.0.0.0" "libxcb-xv.so.0")
+libtool: link: ( cd ".libs" && rm -f "libxcb-xtest.la" && ln -s "../libxcb-xtest.la" "libxcb-xtest.la" )
+/bin/sh ../libtool --tag=CC   --mode=link gcc -Wall -pedantic -Wpointer-arith 		-Wstrict-prototypes -Wmissing-declarations -Wnested-externs   -g -O2 -version-info 0:0:0 -no-undefined  -o libxcb-xvmc.la -rpath /usr/lib xvmc.lo libxcb.la 
+libtool: link: (cd ".libs" && rm -f "libxcb-xv.so" && ln -s "libxcb-xv.so.0.0.0" "libxcb-xv.so")
+libtool: link: ar cru .libs/libxcb-xv.a  xv.o
+libtool: link: ranlib .libs/libxcb-xv.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-xv.la" && ln -s "../libxcb-xv.la" "libxcb-xv.la" )
+libtool: link: gcc -shared  .libs/xvmc.o   -Wl,-rpath -Wl,/sources/builddir/libxcb-1.7/src/.libs ./.libs/libxcb.so    -Wl,-soname -Wl,libxcb-xvmc.so.0 -o .libs/libxcb-xvmc.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-xvmc.so.0" && ln -s "libxcb-xvmc.so.0.0.0" "libxcb-xvmc.so.0")
+libtool: link: (cd ".libs" && rm -f "libxcb-xvmc.so" && ln -s "libxcb-xvmc.so.0.0.0" "libxcb-xvmc.so")
+libtool: link: ar cru .libs/libxcb-xvmc.a  xvmc.o
+libtool: link: ranlib .libs/libxcb-xvmc.a
+libtool: link: ( cd ".libs" && rm -f "libxcb-xvmc.la" && ln -s "../libxcb-xvmc.la" "libxcb-xvmc.la" )
+make[2]: Leaving directory `/sources/builddir/libxcb-1.7/src'
+make[1]: Leaving directory `/sources/builddir/libxcb-1.7/src'
+Making all in tests
+make[1]: Entering directory `/sources/builddir/libxcb-1.7/tests'
+make[2]: Entering directory `/sources/builddir/libxcb-1.7/tests'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/sources/builddir/libxcb-1.7/tests'
+make[1]: Leaving directory `/sources/builddir/libxcb-1.7/tests'
+Making all in doc
+make[1]: Entering directory `/sources/builddir/libxcb-1.7/doc'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/sources/builddir/libxcb-1.7/doc'
+make[1]: Entering directory `/sources/builddir/libxcb-1.7'
+make[1]: Nothing to be done for `all-am'.
+make[1]: Leaving directory `/sources/builddir/libxcb-1.7'
+Making install in src
+make[1]: Entering directory `/sources/builddir/libxcb-1.7/src'
+make  install-am
+make[2]: Entering directory `/sources/builddir/libxcb-1.7/src'
+make[3]: Entering directory `/sources/builddir/libxcb-1.7/src'
+test -z "/usr/include/xcb" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xcb"
+test -z "/usr/include/xcb" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xcb"
+ /usr/bin/install -c -m 644 xcb.h xcbext.h '/sources/buildmgr/pkgroot/usr/include/xcb'
+ /usr/bin/install -c -m 644 xproto.h bigreq.h xc_misc.h composite.h damage.h dpms.h dri2.h glx.h randr.h record.h render.h res.h screensaver.h shape.h shm.h sync.h xevie.h xf86dri.h xfixes.h xinerama.h xinput.h xprint.h xselinux.h xtest.h xv.h xvmc.h '/sources/buildmgr/pkgroot/usr/include/xcb'
+test -z "/usr/lib" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libxcb.la libxcb-composite.la libxcb-damage.la libxcb-dpms.la libxcb-dri2.la libxcb-glx.la libxcb-randr.la libxcb-record.la libxcb-render.la libxcb-res.la libxcb-screensaver.la libxcb-shape.la libxcb-shm.la libxcb-sync.la libxcb-xevie.la libxcb-xf86dri.la libxcb-xfixes.la libxcb-xinerama.la libxcb-xprint.la libxcb-xtest.la libxcb-xv.la libxcb-xvmc.la '/sources/buildmgr/pkgroot/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libxcb.so.1.1.0 /sources/buildmgr/pkgroot/usr/lib/libxcb.so.1.1.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb.so.1.1.0 libxcb.so.1 || { rm -f libxcb.so.1 && ln -s libxcb.so.1.1.0 libxcb.so.1; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb.so.1.1.0 libxcb.so || { rm -f libxcb.so && ln -s libxcb.so.1.1.0 libxcb.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb.lai /sources/buildmgr/pkgroot/usr/lib/libxcb.la
+libtool: install: warning: relinking `libxcb-composite.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-composite.la -rpath /usr/lib composite.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/composite.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-composite.so.0 -o .libs/libxcb-composite.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-composite.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-composite.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-composite.so.0.0.0 libxcb-composite.so.0 || { rm -f libxcb-composite.so.0 && ln -s libxcb-composite.so.0.0.0 libxcb-composite.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-composite.so.0.0.0 libxcb-composite.so || { rm -f libxcb-composite.so && ln -s libxcb-composite.so.0.0.0 libxcb-composite.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-composite.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-composite.la
+libtool: install: warning: relinking `libxcb-damage.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-damage.la -rpath /usr/lib damage.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/damage.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-damage.so.0 -o .libs/libxcb-damage.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-damage.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-damage.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-damage.so.0.0.0 libxcb-damage.so.0 || { rm -f libxcb-damage.so.0 && ln -s libxcb-damage.so.0.0.0 libxcb-damage.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-damage.so.0.0.0 libxcb-damage.so || { rm -f libxcb-damage.so && ln -s libxcb-damage.so.0.0.0 libxcb-damage.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-damage.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-damage.la
+libtool: install: warning: relinking `libxcb-dpms.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-dpms.la -rpath /usr/lib dpms.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/dpms.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-dpms.so.0 -o .libs/libxcb-dpms.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-dpms.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-dpms.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-dpms.so.0.0.0 libxcb-dpms.so.0 || { rm -f libxcb-dpms.so.0 && ln -s libxcb-dpms.so.0.0.0 libxcb-dpms.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-dpms.so.0.0.0 libxcb-dpms.so || { rm -f libxcb-dpms.so && ln -s libxcb-dpms.so.0.0.0 libxcb-dpms.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-dpms.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-dpms.la
+libtool: install: warning: relinking `libxcb-dri2.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-dri2.la -rpath /usr/lib dri2.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/dri2.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-dri2.so.0 -o .libs/libxcb-dri2.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-dri2.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-dri2.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-dri2.so.0.0.0 libxcb-dri2.so.0 || { rm -f libxcb-dri2.so.0 && ln -s libxcb-dri2.so.0.0.0 libxcb-dri2.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-dri2.so.0.0.0 libxcb-dri2.so || { rm -f libxcb-dri2.so && ln -s libxcb-dri2.so.0.0.0 libxcb-dri2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-dri2.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-dri2.la
+libtool: install: warning: relinking `libxcb-glx.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-glx.la -rpath /usr/lib glx.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/glx.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-glx.so.0 -o .libs/libxcb-glx.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-glx.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-glx.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-glx.so.0.0.0 libxcb-glx.so.0 || { rm -f libxcb-glx.so.0 && ln -s libxcb-glx.so.0.0.0 libxcb-glx.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-glx.so.0.0.0 libxcb-glx.so || { rm -f libxcb-glx.so && ln -s libxcb-glx.so.0.0.0 libxcb-glx.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-glx.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-glx.la
+libtool: install: warning: relinking `libxcb-randr.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 1:0:1 -no-undefined -o libxcb-randr.la -rpath /usr/lib randr.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/randr.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-randr.so.0 -o .libs/libxcb-randr.so.0.1.0
+libtool: install: /usr/bin/install -c .libs/libxcb-randr.so.0.1.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-randr.so.0.1.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-randr.so.0.1.0 libxcb-randr.so.0 || { rm -f libxcb-randr.so.0 && ln -s libxcb-randr.so.0.1.0 libxcb-randr.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-randr.so.0.1.0 libxcb-randr.so || { rm -f libxcb-randr.so && ln -s libxcb-randr.so.0.1.0 libxcb-randr.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-randr.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-randr.la
+libtool: install: warning: relinking `libxcb-record.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-record.la -rpath /usr/lib record.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/record.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-record.so.0 -o .libs/libxcb-record.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-record.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-record.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-record.so.0.0.0 libxcb-record.so.0 || { rm -f libxcb-record.so.0 && ln -s libxcb-record.so.0.0.0 libxcb-record.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-record.so.0.0.0 libxcb-record.so || { rm -f libxcb-record.so && ln -s libxcb-record.so.0.0.0 libxcb-record.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-record.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-record.la
+libtool: install: warning: relinking `libxcb-render.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-render.la -rpath /usr/lib render.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/render.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-render.so.0 -o .libs/libxcb-render.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-render.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-render.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-render.so.0.0.0 libxcb-render.so.0 || { rm -f libxcb-render.so.0 && ln -s libxcb-render.so.0.0.0 libxcb-render.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-render.so.0.0.0 libxcb-render.so || { rm -f libxcb-render.so && ln -s libxcb-render.so.0.0.0 libxcb-render.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-render.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-render.la
+libtool: install: warning: relinking `libxcb-res.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-res.la -rpath /usr/lib res.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/res.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-res.so.0 -o .libs/libxcb-res.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-res.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-res.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-res.so.0.0.0 libxcb-res.so.0 || { rm -f libxcb-res.so.0 && ln -s libxcb-res.so.0.0.0 libxcb-res.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-res.so.0.0.0 libxcb-res.so || { rm -f libxcb-res.so && ln -s libxcb-res.so.0.0.0 libxcb-res.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-res.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-res.la
+libtool: install: warning: relinking `libxcb-screensaver.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-screensaver.la -rpath /usr/lib screensaver.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/screensaver.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-screensaver.so.0 -o .libs/libxcb-screensaver.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-screensaver.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-screensaver.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-screensaver.so.0.0.0 libxcb-screensaver.so.0 || { rm -f libxcb-screensaver.so.0 && ln -s libxcb-screensaver.so.0.0.0 libxcb-screensaver.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-screensaver.so.0.0.0 libxcb-screensaver.so || { rm -f libxcb-screensaver.so && ln -s libxcb-screensaver.so.0.0.0 libxcb-screensaver.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-screensaver.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-screensaver.la
+libtool: install: warning: relinking `libxcb-shape.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-shape.la -rpath /usr/lib shape.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/shape.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-shape.so.0 -o .libs/libxcb-shape.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-shape.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-shape.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-shape.so.0.0.0 libxcb-shape.so.0 || { rm -f libxcb-shape.so.0 && ln -s libxcb-shape.so.0.0.0 libxcb-shape.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-shape.so.0.0.0 libxcb-shape.so || { rm -f libxcb-shape.so && ln -s libxcb-shape.so.0.0.0 libxcb-shape.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-shape.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-shape.la
+libtool: install: warning: relinking `libxcb-shm.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-shm.la -rpath /usr/lib shm.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/shm.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-shm.so.0 -o .libs/libxcb-shm.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-shm.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-shm.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-shm.so.0.0.0 libxcb-shm.so.0 || { rm -f libxcb-shm.so.0 && ln -s libxcb-shm.so.0.0.0 libxcb-shm.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-shm.so.0.0.0 libxcb-shm.so || { rm -f libxcb-shm.so && ln -s libxcb-shm.so.0.0.0 libxcb-shm.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-shm.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-shm.la
+libtool: install: warning: relinking `libxcb-sync.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-sync.la -rpath /usr/lib sync.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/sync.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-sync.so.0 -o .libs/libxcb-sync.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-sync.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-sync.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-sync.so.0.0.0 libxcb-sync.so.0 || { rm -f libxcb-sync.so.0 && ln -s libxcb-sync.so.0.0.0 libxcb-sync.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-sync.so.0.0.0 libxcb-sync.so || { rm -f libxcb-sync.so && ln -s libxcb-sync.so.0.0.0 libxcb-sync.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-sync.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-sync.la
+libtool: install: warning: relinking `libxcb-xevie.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-xevie.la -rpath /usr/lib xevie.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/xevie.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-xevie.so.0 -o .libs/libxcb-xevie.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-xevie.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-xevie.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xevie.so.0.0.0 libxcb-xevie.so.0 || { rm -f libxcb-xevie.so.0 && ln -s libxcb-xevie.so.0.0.0 libxcb-xevie.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xevie.so.0.0.0 libxcb-xevie.so || { rm -f libxcb-xevie.so && ln -s libxcb-xevie.so.0.0.0 libxcb-xevie.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-xevie.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-xevie.la
+libtool: install: warning: relinking `libxcb-xf86dri.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-xf86dri.la -rpath /usr/lib xf86dri.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/xf86dri.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-xf86dri.so.0 -o .libs/libxcb-xf86dri.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-xf86dri.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-xf86dri.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xf86dri.so.0.0.0 libxcb-xf86dri.so.0 || { rm -f libxcb-xf86dri.so.0 && ln -s libxcb-xf86dri.so.0.0.0 libxcb-xf86dri.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xf86dri.so.0.0.0 libxcb-xf86dri.so || { rm -f libxcb-xf86dri.so && ln -s libxcb-xf86dri.so.0.0.0 libxcb-xf86dri.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-xf86dri.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-xf86dri.la
+libtool: install: warning: relinking `libxcb-xfixes.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-xfixes.la -rpath /usr/lib xfixes.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/xfixes.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-xfixes.so.0 -o .libs/libxcb-xfixes.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-xfixes.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-xfixes.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xfixes.so.0.0.0 libxcb-xfixes.so.0 || { rm -f libxcb-xfixes.so.0 && ln -s libxcb-xfixes.so.0.0.0 libxcb-xfixes.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xfixes.so.0.0.0 libxcb-xfixes.so || { rm -f libxcb-xfixes.so && ln -s libxcb-xfixes.so.0.0.0 libxcb-xfixes.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-xfixes.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-xfixes.la
+libtool: install: warning: relinking `libxcb-xinerama.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-xinerama.la -rpath /usr/lib xinerama.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/xinerama.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-xinerama.so.0 -o .libs/libxcb-xinerama.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-xinerama.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-xinerama.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xinerama.so.0.0.0 libxcb-xinerama.so.0 || { rm -f libxcb-xinerama.so.0 && ln -s libxcb-xinerama.so.0.0.0 libxcb-xinerama.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xinerama.so.0.0.0 libxcb-xinerama.so || { rm -f libxcb-xinerama.so && ln -s libxcb-xinerama.so.0.0.0 libxcb-xinerama.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-xinerama.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-xinerama.la
+libtool: install: warning: relinking `libxcb-xprint.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-xprint.la -rpath /usr/lib xprint.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/xprint.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-xprint.so.0 -o .libs/libxcb-xprint.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-xprint.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-xprint.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xprint.so.0.0.0 libxcb-xprint.so.0 || { rm -f libxcb-xprint.so.0 && ln -s libxcb-xprint.so.0.0.0 libxcb-xprint.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xprint.so.0.0.0 libxcb-xprint.so || { rm -f libxcb-xprint.so && ln -s libxcb-xprint.so.0.0.0 libxcb-xprint.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-xprint.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-xprint.la
+libtool: install: warning: relinking `libxcb-xtest.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-xtest.la -rpath /usr/lib xtest.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/xtest.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-xtest.so.0 -o .libs/libxcb-xtest.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-xtest.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-xtest.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xtest.so.0.0.0 libxcb-xtest.so.0 || { rm -f libxcb-xtest.so.0 && ln -s libxcb-xtest.so.0.0.0 libxcb-xtest.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xtest.so.0.0.0 libxcb-xtest.so || { rm -f libxcb-xtest.so && ln -s libxcb-xtest.so.0.0.0 libxcb-xtest.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-xtest.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-xtest.la
+libtool: install: warning: relinking `libxcb-xv.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-xv.la -rpath /usr/lib xv.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/xv.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-xv.so.0 -o .libs/libxcb-xv.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-xv.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-xv.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xv.so.0.0.0 libxcb-xv.so.0 || { rm -f libxcb-xv.so.0 && ln -s libxcb-xv.so.0.0.0 libxcb-xv.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xv.so.0.0.0 libxcb-xv.so || { rm -f libxcb-xv.so && ln -s libxcb-xv.so.0.0.0 libxcb-xv.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-xv.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-xv.la
+libtool: install: warning: relinking `libxcb-xvmc.la'
+libtool: install: (cd /sources/builddir/libxcb-1.7/src; /bin/sh /sources/builddir/libxcb-1.7/libtool  --tag CC --mode=relink gcc -Wall -pedantic -Wpointer-arith -Wstrict-prototypes -Wmissing-declarations -Wnested-externs -g -O2 -version-info 0:0:0 -no-undefined -o libxcb-xvmc.la -rpath /usr/lib xvmc.lo libxcb.la -inst-prefix-dir /sources/buildmgr/pkgroot)
+libtool: relink: gcc -shared  .libs/xvmc.o   -L/sources/buildmgr/pkgroot/usr/lib -L/usr/lib -lxcb    -Wl,-soname -Wl,libxcb-xvmc.so.0 -o .libs/libxcb-xvmc.so.0.0.0
+libtool: install: /usr/bin/install -c .libs/libxcb-xvmc.so.0.0.0T /sources/buildmgr/pkgroot/usr/lib/libxcb-xvmc.so.0.0.0
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xvmc.so.0.0.0 libxcb-xvmc.so.0 || { rm -f libxcb-xvmc.so.0 && ln -s libxcb-xvmc.so.0.0.0 libxcb-xvmc.so.0; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libxcb-xvmc.so.0.0.0 libxcb-xvmc.so || { rm -f libxcb-xvmc.so && ln -s libxcb-xvmc.so.0.0.0 libxcb-xvmc.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-xvmc.lai /sources/buildmgr/pkgroot/usr/lib/libxcb-xvmc.la
+libtool: install: /usr/bin/install -c .libs/libxcb.a /sources/buildmgr/pkgroot/usr/lib/libxcb.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb.a
+libtool: install: /usr/bin/install -c .libs/libxcb-composite.a /sources/buildmgr/pkgroot/usr/lib/libxcb-composite.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-composite.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-composite.a
+libtool: install: /usr/bin/install -c .libs/libxcb-damage.a /sources/buildmgr/pkgroot/usr/lib/libxcb-damage.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-damage.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-damage.a
+libtool: install: /usr/bin/install -c .libs/libxcb-dpms.a /sources/buildmgr/pkgroot/usr/lib/libxcb-dpms.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-dpms.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-dpms.a
+libtool: install: /usr/bin/install -c .libs/libxcb-dri2.a /sources/buildmgr/pkgroot/usr/lib/libxcb-dri2.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-dri2.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-dri2.a
+libtool: install: /usr/bin/install -c .libs/libxcb-glx.a /sources/buildmgr/pkgroot/usr/lib/libxcb-glx.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-glx.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-glx.a
+libtool: install: /usr/bin/install -c .libs/libxcb-randr.a /sources/buildmgr/pkgroot/usr/lib/libxcb-randr.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-randr.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-randr.a
+libtool: install: /usr/bin/install -c .libs/libxcb-record.a /sources/buildmgr/pkgroot/usr/lib/libxcb-record.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-record.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-record.a
+libtool: install: /usr/bin/install -c .libs/libxcb-render.a /sources/buildmgr/pkgroot/usr/lib/libxcb-render.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-render.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-render.a
+libtool: install: /usr/bin/install -c .libs/libxcb-res.a /sources/buildmgr/pkgroot/usr/lib/libxcb-res.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-res.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-res.a
+libtool: install: /usr/bin/install -c .libs/libxcb-screensaver.a /sources/buildmgr/pkgroot/usr/lib/libxcb-screensaver.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-screensaver.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-screensaver.a
+libtool: install: /usr/bin/install -c .libs/libxcb-shape.a /sources/buildmgr/pkgroot/usr/lib/libxcb-shape.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-shape.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-shape.a
+libtool: install: /usr/bin/install -c .libs/libxcb-shm.a /sources/buildmgr/pkgroot/usr/lib/libxcb-shm.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-shm.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-shm.a
+libtool: install: /usr/bin/install -c .libs/libxcb-sync.a /sources/buildmgr/pkgroot/usr/lib/libxcb-sync.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-sync.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-sync.a
+libtool: install: /usr/bin/install -c .libs/libxcb-xevie.a /sources/buildmgr/pkgroot/usr/lib/libxcb-xevie.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-xevie.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-xevie.a
+libtool: install: /usr/bin/install -c .libs/libxcb-xf86dri.a /sources/buildmgr/pkgroot/usr/lib/libxcb-xf86dri.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-xf86dri.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-xf86dri.a
+libtool: install: /usr/bin/install -c .libs/libxcb-xfixes.a /sources/buildmgr/pkgroot/usr/lib/libxcb-xfixes.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-xfixes.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-xfixes.a
+libtool: install: /usr/bin/install -c .libs/libxcb-xinerama.a /sources/buildmgr/pkgroot/usr/lib/libxcb-xinerama.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-xinerama.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-xinerama.a
+libtool: install: /usr/bin/install -c .libs/libxcb-xprint.a /sources/buildmgr/pkgroot/usr/lib/libxcb-xprint.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-xprint.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-xprint.a
+libtool: install: /usr/bin/install -c .libs/libxcb-xtest.a /sources/buildmgr/pkgroot/usr/lib/libxcb-xtest.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-xtest.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-xtest.a
+libtool: install: /usr/bin/install -c .libs/libxcb-xv.a /sources/buildmgr/pkgroot/usr/lib/libxcb-xv.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-xv.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-xv.a
+libtool: install: /usr/bin/install -c .libs/libxcb-xvmc.a /sources/buildmgr/pkgroot/usr/lib/libxcb-xvmc.a
+libtool: install: chmod 644 /sources/buildmgr/pkgroot/usr/lib/libxcb-xvmc.a
+libtool: install: ranlib /sources/buildmgr/pkgroot/usr/lib/libxcb-xvmc.a
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+make[3]: Leaving directory `/sources/builddir/libxcb-1.7/src'
+make[2]: Leaving directory `/sources/builddir/libxcb-1.7/src'
+make[1]: Leaving directory `/sources/builddir/libxcb-1.7/src'
+Making install in tests
+make[1]: Entering directory `/sources/builddir/libxcb-1.7/tests'
+make[2]: Entering directory `/sources/builddir/libxcb-1.7/tests'
+make[3]: Entering directory `/sources/builddir/libxcb-1.7/tests'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/sources/builddir/libxcb-1.7/tests'
+make[2]: Leaving directory `/sources/builddir/libxcb-1.7/tests'
+make[1]: Leaving directory `/sources/builddir/libxcb-1.7/tests'
+Making install in doc
+make[1]: Entering directory `/sources/builddir/libxcb-1.7/doc'
+make[2]: Entering directory `/sources/builddir/libxcb-1.7/doc'
+make[2]: Nothing to be done for `install-exec-am'.
+/bin/sh /sources/builddir/libxcb-1.7/install-sh -d '/sources/buildmgr/pkgroot/usr/share/doc/libxcb-1.7'
+cp -pR ./tutorial '/sources/buildmgr/pkgroot/usr/share/doc/libxcb-1.7/'
+make[2]: Leaving directory `/sources/builddir/libxcb-1.7/doc'
+make[1]: Leaving directory `/sources/builddir/libxcb-1.7/doc'
+make[1]: Entering directory `/sources/builddir/libxcb-1.7'
+make[2]: Entering directory `/sources/builddir/libxcb-1.7'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/pkgconfig"
+ /usr/bin/install -c -m 644 xcb.pc xcb-composite.pc xcb-damage.pc xcb-dpms.pc xcb-dri2.pc xcb-glx.pc xcb-randr.pc xcb-record.pc xcb-render.pc xcb-res.pc xcb-screensaver.pc xcb-shape.pc xcb-shm.pc xcb-sync.pc xcb-xevie.pc xcb-xf86dri.pc xcb-xfixes.pc xcb-xinerama.pc xcb-xprint.pc xcb-xtest.pc xcb-xv.pc xcb-xvmc.pc '/sources/buildmgr/pkgroot/usr/lib/pkgconfig'
+make[2]: Leaving directory `/sources/builddir/libxcb-1.7'
+make[1]: Leaving directory `/sources/builddir/libxcb-1.7'

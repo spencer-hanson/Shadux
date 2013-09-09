@@ -35,17 +35,17 @@ if [ "$1" = "--install" ] ; then
 	echo Copying umask.sh to /etc/profile.d/umask.sh...
 	cp umask.sh /etc/profile.d
 	echo Setting up /etc/profile.d/i18n.sh...
-	cat > /etc/profile.d/i18n.sh << "EOF"
-	export LANG=en_us.US-ASCII
-	EOF
+cat > /etc/profile.d/i18n.sh << "EOF"
+export LANG=en_us.US-ASCII
+EOF
 	echo Copying bashrc to /etc/bashrc...
 	cp bashrc /etc
 	echo Setting up /etc/shells
-	cat > /etc/shells << "EOF"
-	#Begin of /etc/shells
-	/bin/sh
-	/bin/bash
-	EOF
+cat > /etc/shells << "EOF"
+#Begin of /etc/shells
+/bin/sh
+/bin/bash
+EOF
 	echo Copying issue to /etc/issue...
 	rm /etc/issue
 	cp issue /etc/issue

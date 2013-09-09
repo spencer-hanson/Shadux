@@ -1,0 +1,288 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for gcc option to accept ISO C99... -std=gnu99
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc -std=gnu99... gcc3
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc -std=gnu99... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc -std=gnu99 object... ok
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -std=gnu99 supports -fno-rtti -fno-exceptions... no
+checking for gcc -std=gnu99 option to produce PIC... -fPIC -DPIC
+checking if gcc -std=gnu99 PIC flag -fPIC -DPIC works... yes
+checking if gcc -std=gnu99 static flag -static works... yes
+checking if gcc -std=gnu99 supports -c -o file.o... yes
+checking if gcc -std=gnu99 supports -c -o file.o... (cached) yes
+checking whether the gcc -std=gnu99 linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking if RANDR is defined... yes
+checking if RENDER is defined... yes
+checking if XV is defined... yes
+checking if DPMSExtension is defined... yes
+checking for XORG... yes
+checking for /usr/include/xorg/dri.h... yes
+checking for /usr/include/xorg/sarea.h... yes
+checking for /usr/include/xorg/dristruct.h... yes
+checking whether to include DRI support... yes
+checking for DRI... yes
+checking whether XSERVER_LIBPCIACCESS is declared... yes
+checking whether xf86ModeBandwidth is declared... yes
+checking for PCIACCESS... yes
+checking whether to enable EXA support... yes
+checking exa.h usability... yes
+checking exa.h presence... yes
+checking for exa.h... yes
+checking whether EXA version is at least 2.0.0... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating util/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13'
+Making all in src
+make[2]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13/src'
+  CC     clientlx.lo
+  CC     mga_arc.lo
+  CC     mga_bios.lo
+  CC     mga_dac3026.lo
+  CC     mga_dacG.lo
+mga_dac3026.c: In function ‘MGA3026Save’:
+mga_dac3026.c:859:5: warning: passing argument 2 of ‘pci_device_cfg_read_u32’ from incompatible pointer type [enabled by default]
+/usr/include/pciaccess.h:153:5: note: expected ‘uint32_t *’ but argument is of type ‘CARD32 *’
+mga_dacG.c: In function ‘MGAGSave’:
+mga_dacG.c:1539:2: warning: passing argument 2 of ‘pci_device_cfg_read_u32’ from incompatible pointer type [enabled by default]
+/usr/include/pciaccess.h:153:5: note: expected ‘uint32_t *’ but argument is of type ‘CARD32 *’
+mga_dacG.c:1539:2: warning: passing argument 2 of ‘pci_device_cfg_read_u32’ from incompatible pointer type [enabled by default]
+/usr/include/pciaccess.h:153:5: note: expected ‘uint32_t *’ but argument is of type ‘CARD32 *’
+mga_dacG.c:1539:2: warning: passing argument 2 of ‘pci_device_cfg_read_u32’ from incompatible pointer type [enabled by default]
+/usr/include/pciaccess.h:153:5: note: expected ‘uint32_t *’ but argument is of type ‘CARD32 *’
+mga_dacG.c: In function ‘mgag_create_i2c_bus’:
+mga_dacG.c:1827:18: warning: assignment discards ‘const’ qualifier from pointer target type [enabled by default]
+mga_dacG.c:1832:28: warning: assignment discards ‘const’ qualifier from pointer target type [enabled by default]
+  CC     mga_dga.lo
+mga_dga.c: In function ‘MGASetupDGAMode’:
+mga_dga.c:114:6: warning: ‘Xrealloc’ is deprecated (declared at /usr/include/xorg/os.h:230) [-Wdeprecated-declarations]
+  CC     mga_dh.lo
+  CC     mga_driver.lo
+mga_driver.c: In function ‘MGAFreeRec’:
+mga_driver.c:630:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_driver.c: In function ‘MGACountRam’:
+mga_driver.c:1108:37: warning: passing argument 2 of ‘pci_device_cfg_read_u32’ from incompatible pointer type [enabled by default]
+/usr/include/pciaccess.h:153:5: note: expected ‘uint32_t *’ but argument is of type ‘CARD32 *’
+mga_driver.c: In function ‘MGAPreInit’:
+mga_driver.c:1714:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_driver.c:2416:3: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_driver.c:2425:3: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_driver.c:2462:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_driver.c: In function ‘MGAMapMem’:
+mga_driver.c:2825:30: warning: assignment from incompatible pointer type [enabled by default]
+mga_driver.c:2826:39: warning: assignment from incompatible pointer type [enabled by default]
+mga_driver.c: In function ‘MGAScreenInit’:
+mga_driver.c:3658:2: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_driver.c: In function ‘MGACloseScreen’:
+mga_driver.c:4242:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_driver.c:4248:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_driver.c:4250:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_driver.c:4252:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_driver.c:4254:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_driver.c:4256:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_driver.c: In function ‘MGAValidMode’:
+mga_driver.c:4330:6: warning: implicit declaration of function ‘xf86ModeBandwidth’ [-Wimplicit-function-declaration]
+mga_driver.c: In function ‘MGACountRam’:
+mga_driver.c:1089:15: warning: ignoring return value of ‘MGAMapMem’, declared with attribute warn_unused_result [-Wunused-result]
+mga_driver.c:1129:26: warning: ignoring return value of ‘MGAMapMem’, declared with attribute warn_unused_result [-Wunused-result]
+mga_driver.c: In function ‘MGASoftReset’:
+mga_driver.c:968:11: warning: ignoring return value of ‘MGAMapMem’, declared with attribute warn_unused_result [-Wunused-result]
+  CC     mga_esc.lo
+  CC     mga_g450pll.lo
+  CC     mga_halmod.lo
+  CC     mga_hwcurs.lo
+  CC     mga_merge.lo
+  CC     mga_shadow.lo
+mga_merge.c: In function ‘CopyModeNLink’:
+mga_merge.c:73:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_merge.c:75:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_merge.c: In function ‘MGAPreInitMergedFB’:
+mga_merge.c:245:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_merge.c:279:9: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_merge.c:496:3: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_merge.c:505:3: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_merge.c:540:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_merge.c: In function ‘MGACloseScreenMerged’:
+mga_merge.c:919:9: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_merge.c:922:9: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_merge.c:931:17: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_merge.c:932:13: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+  CC     mga_vga.lo
+  CC     mga_video.lo
+mga_vga.c: In function ‘MGAG200SERestoreFonts’:
+mga_vga.c:65:5: warning: implicit declaration of function ‘usleep’ [-Wimplicit-function-declaration]
+mga_vga.c: In function ‘MGAG200SESaveFonts’:
+mga_vga.c:200:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_vga.c:205:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_vga.c:210:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_video.c: In function ‘MGAInitVideo’:
+mga_video.c:135:3: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_video.c:150:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_video.c: In function ‘MGAAllocAdaptor’:
+mga_video.c:234:5: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+mga_video.c:237:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_video.c: In function ‘MGAAllocateSurface’:
+mga_video.c:1085:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_video.c:1089:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_video.c:1090:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_video.c:1094:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_video.c:1095:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_video.c:1096:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_video.c: In function ‘MGAFreeSurface’:
+mga_video.c:1140:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_video.c:1141:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_video.c:1142:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_video.c: In function ‘MGAInitOffscreenImages’:
+mga_video.c:1234:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+  CC     mga_dri.lo
+mga_dri.c: In function ‘MGAInitVisualConfigs’:
+mga_dri.c:95:7: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+mga_dri.c:101:7: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+mga_dri.c:104:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:108:7: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+mga_dri.c:111:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:112:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:186:7: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+mga_dri.c:192:7: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+mga_dri.c:195:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:199:7: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+mga_dri.c:202:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:203:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c: In function ‘MGADRIMoveBuffersXAA’:
+mga_dri.c:977:6: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_dri.c:979:6: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_dri.c:981:10: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1012:6: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_dri.c:1013:6: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_dri.c:1015:10: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1016:10: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1018:7: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1019:7: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1070:9: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1071:9: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1074:9: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1075:9: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c: In function ‘MGADRIScreenInit’:
+mga_dri.c:1154:7: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mga_dri.c:1202:4: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+mga_dri.c:1212:7: warning: ‘Xcalloc’ is deprecated (declared at /usr/include/xorg/os.h:226) [-Wdeprecated-declarations]
+mga_dri.c:1214:7: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1253:7: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1255:7: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c: In function ‘MGADRICloseScreen’:
+mga_dri.c:1499:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1506:7: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1510:7: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mga_dri.c:1513:7: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+  CC     mga_exa.lo
+  CC     mga_storm.lo
+mga_storm.c: In function ‘mgaAccelInit’:
+mga_storm.c:586:5: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+  CCLD   mga_drv.la
+make[2]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13/src'
+Making all in man
+make[2]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13/man'
+  GEN    mga.4
+make[2]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13/man'
+Making all in util
+make[2]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13/util'
+  CC     stormdwg.o
+  CCLD   stormdwg
+make[2]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13/util'
+make[2]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13'
+make[2]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13'
+make[1]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13'
+Making install in src
+make[1]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13/src'
+make[2]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13/src'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/drivers" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   mga_drv.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers'
+libtool: install: /usr/bin/install -c .libs/mga_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/mga_drv.so
+libtool: install: /usr/bin/install -c .libs/mga_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/mga_drv.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/drivers'
+make[2]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13/src'
+make[1]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13/src'
+Making install in man
+make[1]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13/man'
+make[2]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 mga.4 '/sources/buildmgr/pkgroot/usr/share/man/man4'
+make[2]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13/man'
+make[1]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13/man'
+Making install in util
+make[1]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13/util'
+make[2]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13/util'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13/util'
+make[1]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13/util'
+make[1]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13'
+make[2]: Entering directory `/sources/builddir/xf86-video-mga-1.4.13'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13'
+make[1]: Leaving directory `/sources/builddir/xf86-video-mga-1.4.13'

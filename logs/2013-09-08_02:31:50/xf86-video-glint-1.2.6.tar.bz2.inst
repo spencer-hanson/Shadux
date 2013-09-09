@@ -1,0 +1,153 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for gcc option to accept ISO C99... -std=gnu99
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking if gcc -std=gnu99 supports -Werror=attributes... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc -std=gnu99... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc -std=gnu99 object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -std=gnu99 supports -fno-rtti -fno-exceptions... no
+checking for gcc -std=gnu99 option to produce PIC... -fPIC -DPIC
+checking if gcc -std=gnu99 PIC flag -fPIC -DPIC works... yes
+checking if gcc -std=gnu99 static flag -static works... yes
+checking if gcc -std=gnu99 supports -c -o file.o... yes
+checking if gcc -std=gnu99 supports -c -o file.o... (cached) yes
+checking whether the gcc -std=gnu99 linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking if XV is defined... yes
+checking if DPMSExtension is defined... yes
+checking if XFreeXDGA is defined... yes
+checking for XORG... yes
+checking for XEXT... yes
+checking whether XSERVER_LIBPCIACCESS is declared... yes
+checking for PCIACCESS... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/xf86-video-glint-1.2.6'
+Making all in src
+make[2]: Entering directory `/sources/builddir/xf86-video-glint-1.2.6/src'
+  CC     glint_dga.lo
+  CC     glint_driver.lo
+  CC     glint_shadow.lo
+  CC     IBMramdac.lo
+  CC     pm2_accel.lo
+  CC     pm2_dac.lo
+  CC     pm2ramdac.lo
+  CC     pm2v_dac.lo
+  CC     pm2_video.lo
+  CC     pm2vramdac.lo
+  CC     pm3_accel.lo
+  CC     pm3_dac.lo
+  CC     pm3_video.lo
+  CC     pm_accel.lo
+  CC     pm_dac.lo
+  CC     sx_accel.lo
+  CC     TIramdac.lo
+  CC     tx_accel.lo
+  CC     tx_dac.lo
+  CCLD   glint_drv.la
+make[2]: Leaving directory `/sources/builddir/xf86-video-glint-1.2.6/src'
+Making all in man
+make[2]: Entering directory `/sources/builddir/xf86-video-glint-1.2.6/man'
+  GEN    glint.4
+make[2]: Leaving directory `/sources/builddir/xf86-video-glint-1.2.6/man'
+make[2]: Entering directory `/sources/builddir/xf86-video-glint-1.2.6'
+make[2]: Leaving directory `/sources/builddir/xf86-video-glint-1.2.6'
+make[1]: Leaving directory `/sources/builddir/xf86-video-glint-1.2.6'
+Making install in src
+make[1]: Entering directory `/sources/builddir/xf86-video-glint-1.2.6/src'
+make[2]: Entering directory `/sources/builddir/xf86-video-glint-1.2.6/src'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/drivers" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   glint_drv.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers'
+libtool: install: /usr/bin/install -c .libs/glint_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/glint_drv.so
+libtool: install: /usr/bin/install -c .libs/glint_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/glint_drv.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/drivers'
+make[2]: Leaving directory `/sources/builddir/xf86-video-glint-1.2.6/src'
+make[1]: Leaving directory `/sources/builddir/xf86-video-glint-1.2.6/src'
+Making install in man
+make[1]: Entering directory `/sources/builddir/xf86-video-glint-1.2.6/man'
+make[2]: Entering directory `/sources/builddir/xf86-video-glint-1.2.6/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 glint.4 '/sources/buildmgr/pkgroot/usr/share/man/man4'
+make[2]: Leaving directory `/sources/builddir/xf86-video-glint-1.2.6/man'
+make[1]: Leaving directory `/sources/builddir/xf86-video-glint-1.2.6/man'
+make[1]: Entering directory `/sources/builddir/xf86-video-glint-1.2.6'
+make[2]: Entering directory `/sources/builddir/xf86-video-glint-1.2.6'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xf86-video-glint-1.2.6'
+make[1]: Leaving directory `/sources/builddir/xf86-video-glint-1.2.6'

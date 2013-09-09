@@ -32,15 +32,16 @@ if [ "$1" = "--install" ] ; then
 	sed -i "s;/var/lib;run/;g" dhcpcd-hooks/50-dhcpcd-compat
 	install -v -m 644 dhcpcd-hooks/50-dhcpcd-compat /lib/dhcpcd/dhcpcd-hooks/
 	echo Configuring...
-	cat > /etc/sysconfig/ifconfig.eth0 << "EOF"
-	ONBOOT="yes"
-	IFACE="eth0"
-	SERVICE="dhcpcd"
-	DHCP_START="-b -q"
-	DHCP_STOP="-k"
-	EOF
+cat > /etc/sysconfig/ifconfig.eth0 << "EOF"
+ONBOOT="yes"
+IFACE="eth0"
+SERVICE="dhcpcd"
+DHCP_START="-b -q"
+DHCP_STOP="-k"
+EOF
+	cd ..
 	echo Finished, Cleaning up...
-	rm dhcpcd-*.tar.bz2
+	rm dhcpcd-*.tar*
 	rm -r dhcpcd-*
 	echo Done!
 	exit

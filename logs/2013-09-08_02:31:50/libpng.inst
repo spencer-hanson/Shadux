@@ -1,0 +1,265 @@
+patching file png.h
+patching file pngget.c
+patching file pnginfo.h
+patching file pngpread.c
+patching file pngpriv.h
+patching file pngread.c
+patching file pngrutil.c
+patching file pngset.c
+patching file pngstruct.h
+patching file pngtest.c
+patching file pngwrite.c
+patching file pngwutil.c
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking dependency style of gcc... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking how to print strings... printf
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking how to run the C preprocessor... gcc -E
+checking for sed... /bin/sed
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for a C preprocessor that does not parse its input... gcc -E
+checking for ANSI C header files... (cached) yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for C/C++ restrict keyword... __restrict
+checking for working strtod... yes
+checking for memset... yes
+checking for pow... no
+checking for pow in -lm... yes
+checking for zlibVersion in -lz... yes
+checking for feenableexcept in -lm... yes
+checking for feenableexcept... yes
+checking if libraries can be versioned... checking if using Solaris linker... no
+yes
+checking for symbol prefix... 
+configure: pkgconfig directory is ${libdir}/pkgconfig
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libpng.pc
+config.status: creating libpng-config
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make  all-am
+make[1]: Entering directory `/sources/builddir/libpng-1.5.8'
+rm -f pnglibconf.dfn dfn?.out
+cp libpng-config libpng15-config
+cp libpng.pc libpng15.pc
+gawk -f ./scripts/options.awk out=dfn1.out version=search\
+    ./pngconf.h ./scripts/pnglibconf.dfa\
+     1>&2
+gawk -f ./scripts/options.awk out=dfn2.out dfn1.out 1>&2
+rm dfn1.out
+mv dfn2.out pnglibconf.dfn
+rm -f pnglibconf.out dfn.c dfn?.out
+test -d scripts || mkdir scripts
+echo '#include "pnglibconf.dfn"' >dfn.c
+gcc -E -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG\
+     -DPNGLIB_LIBNAME='PNG15_0' -DPNGLIB_VERSION='1.5.8' -DSYMBOL_PREFIX='' -DPNG_NO_USE_READ_MACROS -DPNG_BUILDING_SYMBOL_TABLE dfn.c > dfn1.out
+/bin/sed -n -e 's|^.*PNG_DEFN_MAGIC *-\(.*\)- *PNG_DEFN_END.*$|\1|p'\
+    dfn1.out >dfn2.out
+/bin/sed -e 's| *PNG_JOIN *||g' -e 's| *$||' dfn2.out >dfn3.out
+rm -f dfn.c dfn[12].out
+mv dfn3.out pnglibconf.out
+rm -f pnglibconf.h
+cp pnglibconf.out pnglibconf.h
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-png.lo -MD -MP -MF .deps/libpng15_la-png.Tpo -c -o libpng15_la-png.lo `test -f 'png.c' || echo './'`png.c
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngerror.lo -MD -MP -MF .deps/libpng15_la-pngerror.Tpo -c -o libpng15_la-pngerror.lo `test -f 'pngerror.c' || echo './'`pngerror.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-png.lo -MD -MP -MF .deps/libpng15_la-png.Tpo -c png.c  -fPIC -DPIC -o .libs/libpng15_la-png.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngerror.lo -MD -MP -MF .deps/libpng15_la-pngerror.Tpo -c pngerror.c  -fPIC -DPIC -o .libs/libpng15_la-pngerror.o
+mv -f .deps/libpng15_la-pngerror.Tpo .deps/libpng15_la-pngerror.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngget.lo -MD -MP -MF .deps/libpng15_la-pngget.Tpo -c -o libpng15_la-pngget.lo `test -f 'pngget.c' || echo './'`pngget.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngget.lo -MD -MP -MF .deps/libpng15_la-pngget.Tpo -c pngget.c  -fPIC -DPIC -o .libs/libpng15_la-pngget.o
+mv -f .deps/libpng15_la-pngget.Tpo .deps/libpng15_la-pngget.Plo
+mv -f .deps/libpng15_la-png.Tpo .deps/libpng15_la-png.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngmem.lo -MD -MP -MF .deps/libpng15_la-pngmem.Tpo -c -o libpng15_la-pngmem.lo `test -f 'pngmem.c' || echo './'`pngmem.c
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngpread.lo -MD -MP -MF .deps/libpng15_la-pngpread.Tpo -c -o libpng15_la-pngpread.lo `test -f 'pngpread.c' || echo './'`pngpread.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngmem.lo -MD -MP -MF .deps/libpng15_la-pngmem.Tpo -c pngmem.c  -fPIC -DPIC -o .libs/libpng15_la-pngmem.o
+mv -f .deps/libpng15_la-pngmem.Tpo .deps/libpng15_la-pngmem.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngread.lo -MD -MP -MF .deps/libpng15_la-pngread.Tpo -c -o libpng15_la-pngread.lo `test -f 'pngread.c' || echo './'`pngread.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngread.lo -MD -MP -MF .deps/libpng15_la-pngread.Tpo -c pngread.c  -fPIC -DPIC -o .libs/libpng15_la-pngread.o
+mv -f .deps/libpng15_la-pngread.Tpo .deps/libpng15_la-pngread.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngrio.lo -MD -MP -MF .deps/libpng15_la-pngrio.Tpo -c -o libpng15_la-pngrio.lo `test -f 'pngrio.c' || echo './'`pngrio.c
+mv -f .deps/libpng15_la-pngpread.Tpo .deps/libpng15_la-pngpread.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngrtran.lo -MD -MP -MF .deps/libpng15_la-pngrtran.Tpo -c -o libpng15_la-pngrtran.lo `test -f 'pngrtran.c' || echo './'`pngrtran.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngrio.lo -MD -MP -MF .deps/libpng15_la-pngrio.Tpo -c pngrio.c  -fPIC -DPIC -o .libs/libpng15_la-pngrio.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngrtran.lo -MD -MP -MF .deps/libpng15_la-pngrtran.Tpo -c pngrtran.c  -fPIC -DPIC -o .libs/libpng15_la-pngrtran.o
+mv -f .deps/libpng15_la-pngrio.Tpo .deps/libpng15_la-pngrio.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngrutil.lo -MD -MP -MF .deps/libpng15_la-pngrutil.Tpo -c -o libpng15_la-pngrutil.lo `test -f 'pngrutil.c' || echo './'`pngrutil.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngrutil.lo -MD -MP -MF .deps/libpng15_la-pngrutil.Tpo -c pngrutil.c  -fPIC -DPIC -o .libs/libpng15_la-pngrutil.o
+mv -f .deps/libpng15_la-pngrutil.Tpo .deps/libpng15_la-pngrutil.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngset.lo -MD -MP -MF .deps/libpng15_la-pngset.Tpo -c -o libpng15_la-pngset.lo `test -f 'pngset.c' || echo './'`pngset.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngset.lo -MD -MP -MF .deps/libpng15_la-pngset.Tpo -c pngset.c  -fPIC -DPIC -o .libs/libpng15_la-pngset.o
+mv -f .deps/libpng15_la-pngrtran.Tpo .deps/libpng15_la-pngrtran.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngtrans.lo -MD -MP -MF .deps/libpng15_la-pngtrans.Tpo -c -o libpng15_la-pngtrans.lo `test -f 'pngtrans.c' || echo './'`pngtrans.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngtrans.lo -MD -MP -MF .deps/libpng15_la-pngtrans.Tpo -c pngtrans.c  -fPIC -DPIC -o .libs/libpng15_la-pngtrans.o
+mv -f .deps/libpng15_la-pngset.Tpo .deps/libpng15_la-pngset.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngwio.lo -MD -MP -MF .deps/libpng15_la-pngwio.Tpo -c -o libpng15_la-pngwio.lo `test -f 'pngwio.c' || echo './'`pngwio.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngwio.lo -MD -MP -MF .deps/libpng15_la-pngwio.Tpo -c pngwio.c  -fPIC -DPIC -o .libs/libpng15_la-pngwio.o
+mv -f .deps/libpng15_la-pngtrans.Tpo .deps/libpng15_la-pngtrans.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngwrite.lo -MD -MP -MF .deps/libpng15_la-pngwrite.Tpo -c -o libpng15_la-pngwrite.lo `test -f 'pngwrite.c' || echo './'`pngwrite.c
+mv -f .deps/libpng15_la-pngwio.Tpo .deps/libpng15_la-pngwio.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngwtran.lo -MD -MP -MF .deps/libpng15_la-pngwtran.Tpo -c -o libpng15_la-pngwtran.lo `test -f 'pngwtran.c' || echo './'`pngwtran.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngwrite.lo -MD -MP -MF .deps/libpng15_la-pngwrite.Tpo -c pngwrite.c  -fPIC -DPIC -o .libs/libpng15_la-pngwrite.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngwtran.lo -MD -MP -MF .deps/libpng15_la-pngwtran.Tpo -c pngwtran.c  -fPIC -DPIC -o .libs/libpng15_la-pngwtran.o
+mv -f .deps/libpng15_la-pngwtran.Tpo .deps/libpng15_la-pngwtran.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG   -g -O2 -MT libpng15_la-pngwutil.lo -MD -MP -MF .deps/libpng15_la-pngwutil.Tpo -c -o libpng15_la-pngwutil.lo `test -f 'pngwutil.c' || echo './'`pngwutil.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -DPNG_CONFIGURE_LIBPNG -g -O2 -MT libpng15_la-pngwutil.lo -MD -MP -MF .deps/libpng15_la-pngwutil.Tpo -c pngwutil.c  -fPIC -DPIC -o .libs/libpng15_la-pngwutil.o
+mv -f .deps/libpng15_la-pngwrite.Tpo .deps/libpng15_la-pngwrite.Plo
+rm -f scripts/vers.out dfn.c dfn?.out
+test -d scripts || mkdir scripts
+echo '#include "scripts/vers.dfn"' >dfn.c
+gcc -E -DHAVE_CONFIG_H -I.  -DPNG_CONFIGURE_LIBPNG\
+     -DPNGLIB_LIBNAME='PNG15_0' -DPNGLIB_VERSION='1.5.8' -DSYMBOL_PREFIX='' -DPNG_NO_USE_READ_MACROS -DPNG_BUILDING_SYMBOL_TABLE dfn.c > dfn1.out
+/bin/sed -n -e 's|^.*PNG_DEFN_MAGIC *-\(.*\)- *PNG_DEFN_END.*$|\1|p'\
+    dfn1.out >dfn2.out
+/bin/sed -e 's| *PNG_JOIN *||g' -e 's| *$||' dfn2.out >dfn3.out
+rm -f dfn.c dfn[12].out
+mv dfn3.out scripts/vers.out
+rm -f libpng.vers
+cp scripts/vers.out libpng.vers
+mv -f .deps/libpng15_la-pngwutil.Tpo .deps/libpng15_la-pngwutil.Plo
+/bin/sh ./libtool --tag=CC   --mode=link gcc  -g -O2 -no-undefined -export-dynamic -version-number 15:8:0  -Wl,--version-script=libpng.vers   -o libpng15.la -rpath /usr/lib libpng15_la-png.lo libpng15_la-pngerror.lo libpng15_la-pngget.lo libpng15_la-pngmem.lo libpng15_la-pngpread.lo libpng15_la-pngread.lo libpng15_la-pngrio.lo libpng15_la-pngrtran.lo libpng15_la-pngrutil.lo libpng15_la-pngset.lo libpng15_la-pngtrans.lo libpng15_la-pngwio.lo libpng15_la-pngwrite.lo libpng15_la-pngwtran.lo libpng15_la-pngwutil.lo    -lm -lz -lm 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libpng15_la-png.o .libs/libpng15_la-pngerror.o .libs/libpng15_la-pngget.o .libs/libpng15_la-pngmem.o .libs/libpng15_la-pngpread.o .libs/libpng15_la-pngread.o .libs/libpng15_la-pngrio.o .libs/libpng15_la-pngrtran.o .libs/libpng15_la-pngrutil.o .libs/libpng15_la-pngset.o .libs/libpng15_la-pngtrans.o .libs/libpng15_la-pngwio.o .libs/libpng15_la-pngwrite.o .libs/libpng15_la-pngwtran.o .libs/libpng15_la-pngwutil.o   -lz -lm  -O2 -Wl,--version-script=libpng.vers   -Wl,-soname -Wl,libpng15.so.15 -o .libs/libpng15.so.15.8.0
+libtool: link: (cd ".libs" && rm -f "libpng15.so.15" && ln -s "libpng15.so.15.8.0" "libpng15.so.15")
+libtool: link: (cd ".libs" && rm -f "libpng15.so" && ln -s "libpng15.so.15.8.0" "libpng15.so")
+libtool: link: ( cd ".libs" && rm -f "libpng15.la" && ln -s "../libpng15.la" "libpng15.la" )
+make[1]: Leaving directory `/sources/builddir/libpng-1.5.8'
+make[1]: Entering directory `/sources/builddir/libpng-1.5.8'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+test -z "/usr/share/man/man3" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man3"
+ /usr/bin/install -c libpng15-config '/sources/buildmgr/pkgroot/usr/bin'
+test -z "/usr/share/man/man5" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man5"
+ /usr/bin/install -c -m 644 libpng.3 libpngpf.3 '/sources/buildmgr/pkgroot/usr/share/man/man3'
+test -z "/usr/include/libpng15" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/libpng15"
+ /usr/bin/install -c -m 644 png.5 '/sources/buildmgr/pkgroot/usr/share/man/man5'
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/pkgconfig"
+ /usr/bin/install -c -m 644 pnglibconf.h '/sources/buildmgr/pkgroot/usr/include/libpng15'
+test -z "/usr/include/libpng15" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/libpng15"
+ /usr/bin/install -c -m 644 libpng15.pc '/sources/buildmgr/pkgroot/usr/lib/pkgconfig'
+test -z "/usr/lib" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib"
+ /usr/bin/install -c -m 644 png.h pngconf.h '/sources/buildmgr/pkgroot/usr/include/libpng15'
+make  install-data-hook
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libpng15.la '/sources/buildmgr/pkgroot/usr/lib'
+make[2]: Entering directory `/sources/builddir/libpng-1.5.8'
+cd /sources/buildmgr/pkgroot/usr/include; rm -f png.h pngconf.h pnglibconf.h
+cd /sources/buildmgr/pkgroot/usr/include; ln -s libpng15/png.h png.h
+cd /sources/buildmgr/pkgroot/usr/include; ln -s libpng15/pngconf.h \
+	pngconf.h
+cd /sources/buildmgr/pkgroot/usr/include; ln -s libpng15/pnglibconf.h \
+	pnglibconf.h
+libtool: install: /usr/bin/install -c .libs/libpng15.so.15.8.0 /sources/buildmgr/pkgroot/usr/lib/libpng15.so.15.8.0
+cd /sources/buildmgr/pkgroot/usr/lib/pkgconfig; rm -f libpng.pc
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libpng15.so.15.8.0 libpng15.so.15 || { rm -f libpng15.so.15 && ln -s libpng15.so.15.8.0 libpng15.so.15; }; })
+libtool: install: (cd /sources/buildmgr/pkgroot/usr/lib && { ln -s -f libpng15.so.15.8.0 libpng15.so || { rm -f libpng15.so && ln -s libpng15.so.15.8.0 libpng15.so; }; })
+libtool: install: /usr/bin/install -c .libs/libpng15.lai /sources/buildmgr/pkgroot/usr/lib/libpng15.la
+cd /sources/buildmgr/pkgroot/usr/lib/pkgconfig; ln -s libpng15.pc libpng.pc
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+make  install-exec-hook
+make[2]: Leaving directory `/sources/builddir/libpng-1.5.8'
+make[2]: Entering directory `/sources/builddir/libpng-1.5.8'
+cd /sources/buildmgr/pkgroot/usr/bin; rm -f libpng-config
+cd /sources/buildmgr/pkgroot/usr/bin; ln -s libpng15-config libpng-config
++ cd /sources/buildmgr/pkgroot/usr/lib
++ for ext in a la so so.15.8 sl dylib dll.a
++ rm -f libpng.a
++ test -f libpng15.a
++ for ext in a la so so.15.8 sl dylib dll.a
++ rm -f libpng.la
++ test -f libpng15.la
++ ln -s libpng15.la libpng.la
++ for ext in a la so so.15.8 sl dylib dll.a
++ rm -f libpng.so
++ test -f libpng15.so
++ ln -s libpng15.so libpng.so
++ for ext in a la so so.15.8 sl dylib dll.a
++ rm -f libpng.so.15.8
++ test -f libpng15.so.15.8
++ for ext in a la so so.15.8 sl dylib dll.a
++ rm -f libpng.sl
++ test -f libpng15.sl
++ for ext in a la so so.15.8 sl dylib dll.a
++ rm -f libpng.dylib
++ test -f libpng15.dylib
++ for ext in a la so so.15.8 sl dylib dll.a
++ rm -f libpng.dll.a
++ test -f libpng15.dll.a
+make[2]: Leaving directory `/sources/builddir/libpng-1.5.8'
+make[1]: Leaving directory `/sources/builddir/libpng-1.5.8'

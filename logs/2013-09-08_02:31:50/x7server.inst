@@ -1,0 +1,2557 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for gcc option to accept ISO C99... -std=gnu99
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking if gcc -std=gnu99 supports -Werror=attributes... no
+checking for doxygen... no
+configure: WARNING: doxygen not found - documentation targets will be skipped
+checking for X.Org SGML entities >= 1.8... no
+checking whether to build documentation... yes
+checking whether to build developer documentation... yes
+checking for xmlto... no
+configure: WARNING: xmlto not found - documentation targets will be skipped
+checking for fop... no
+configure: WARNING: fop not found - documentation targets will be skipped
+checking for xsltproc... /usr/bin/xsltproc
+checking whether to build unit test cases... auto
+checking whether the linker accepts -Wl,-wrap,exit... yes
+checking dependency style of gcc -std=gnu99... gcc3
+checking whether ln -s works... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc -std=gnu99... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert i686-pc-linux-gnu file names to i686-pc-linux-gnu format... func_convert_file_noop
+checking how to convert i686-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc -std=gnu99 object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -std=gnu99 supports -fno-rtti -fno-exceptions... no
+checking for gcc -std=gnu99 option to produce PIC... -fPIC -DPIC
+checking if gcc -std=gnu99 PIC flag -fPIC -DPIC works... yes
+checking if gcc -std=gnu99 static flag -static works... yes
+checking if gcc -std=gnu99 supports -c -o file.o... yes
+checking if gcc -std=gnu99 supports -c -o file.o... (cached) yes
+checking whether the gcc -std=gnu99 linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether make sets $(MAKE)... (cached) yes
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for flex... flex
+checking lex output file root... lex.yy
+checking lex library... -lfl
+checking whether yytext is a pointer... yes
+checking for bison... bison -y
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... 64
+checking for cpp... /usr/bin/cpp
+checking if /usr/bin/cpp requires -undef... yes
+checking if /usr/bin/cpp requires -traditional... yes
+checking for dtrace... not_found
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... (cached) yes
+checking stropts.h usability... yes
+checking stropts.h presence... yes
+checking for stropts.h... yes
+checking fnmatch.h usability... yes
+checking fnmatch.h presence... yes
+checking for fnmatch.h... yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking for an ANSI C-conforming const... yes
+checking whether byte ordering is bigendian... no
+checking size of unsigned long... 4
+checking for pid_t... yes
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking sys/endian.h usability... no
+checking sys/endian.h presence... no
+checking for sys/endian.h... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for geteuid... yes
+checking for getuid... yes
+checking for link... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkstemp... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strtol... yes
+checking for getopt... yes
+checking for getopt_long... yes
+checking for vsnprintf... yes
+checking for walkcontext... no
+checking for backtrace... yes
+checking for getisax... no
+checking for getzoneid... no
+checking for shmctl64... no
+checking for strcasestr... yes
+checking for ffs... yes
+checking for vasprintf... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for getdtablesize... yes
+checking for getifaddrs... yes
+checking for getpeereid... no
+checking for getpeerucred... no
+checking for strlcat... no
+checking for strlcpy... no
+checking for mmap... yes
+checking for sqrt in -lm... yes
+checking for cbrt in -lm... yes
+checking ndbm.h usability... yes
+checking ndbm.h presence... yes
+checking for ndbm.h... yes
+checking dbm.h usability... yes
+checking dbm.h presence... yes
+checking for dbm.h... yes
+checking rpcsvc/dbm.h usability... no
+checking rpcsvc/dbm.h presence... no
+checking for rpcsvc/dbm.h... no
+checking linux/agpgart.h usability... yes
+checking linux/agpgart.h presence... yes
+checking for linux/agpgart.h... yes
+checking sys/agpio.h usability... no
+checking sys/agpio.h presence... no
+checking for sys/agpio.h... no
+checking sys/agpgart.h usability... no
+checking sys/agpgart.h presence... no
+checking for sys/agpgart.h... no
+checking linux/apm_bios.h usability... yes
+checking linux/apm_bios.h presence... yes
+checking for linux/apm_bios.h... yes
+checking linux/fb.h usability... yes
+checking linux/fb.h presence... yes
+checking for linux/fb.h... yes
+checking asm/mtrr.h usability... yes
+checking asm/mtrr.h presence... yes
+checking for asm/mtrr.h... yes
+checking sys/memrange.h usability... no
+checking sys/memrange.h presence... no
+checking for sys/memrange.h... no
+checking machine/mtrr.h usability... no
+checking machine/mtrr.h presence... no
+checking for machine/mtrr.h... no
+checking for sys/linker.h... no
+checking for SYSV IPC... yes
+checking machine/apmvar.h usability... no
+checking machine/apmvar.h presence... no
+checking for machine/apmvar.h... no
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking for backtrace in -lc... yes
+checking for root directory for font files... /usr/share/fonts/X11
+checking for directory for misc files... ${FONTROOTDIR}/misc
+checking for directory for OTF files... ${FONTROOTDIR}/OTF
+checking for directory for TTF files... ${FONTROOTDIR}/TTF
+checking for directory for Type1 files... ${FONTROOTDIR}/Type1
+checking for directory for 75dpi files... ${FONTROOTDIR}/75dpi
+checking for directory for 100dpi files... ${FONTROOTDIR}/100dpi
+checking for /etc/X11/fontpath.d... no
+checking for default font path... ${FONTROOTDIR}/misc/,${FONTROOTDIR}/TTF/,${FONTROOTDIR}/OTF/,${FONTROOTDIR}/Type1/,${FONTROOTDIR}/100dpi/,${FONTROOTDIR}/75dpi/
+checking for thread local storage (TLS) support... __thread
+checking for tls_model attribute support... yes
+checking to see if we can install the Xorg server as root... yes
+checking return type of signal handlers... void
+checking if Xtrans should support UNIX socket connections... yes
+checking if Xtrans should support TCP socket connections... yes
+checking for library containing socket... none required
+checking for library containing gethostbyname... none required
+checking for getaddrinfo... yes
+checking if IPv6 support should be built... yes
+checking for struct sockaddr_in.sin_len... no
+checking for socklen_t... yes
+checking if Xtrans should support os-specific local connections... no
+checking for authdes_seccreate... no
+checking for authdes_create... no
+checking if Secure RPC authentication ("SUN-DES-1") should be supported... no
+checking for PIXMAN... yes
+checking for UDEV... yes
+checking for DBUS... no
+checking for HAL... no
+checking for glibc...... yes
+checking for clock_gettime... no
+checking for clock_gettime in -lrt... yes
+checking for a useful monotonic clock ...... yes
+checking whether to track client ids... yes
+checking for XLIB... yes
+checking for GL... yes
+checking for DRIPROTO... yes
+checking for DRI... yes
+checking for DRI2PROTO... yes
+checking for LIBDRM... yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking for strcasestr... (cached) yes
+checking for XDMCP... yes
+checking for XdmcpWrap in -lXdmcp... yes
+checking for SHA1Init... no
+checking for CC_SHA1_Init... no
+checking for SHA1Init in -lmd... no
+checking for LIBSHA1... no
+checking for gcry_md_open in -lgcrypt... no
+checking for SHA1_Init in -lcrypto... yes
+checking for OPENSSL... yes
+checking for SHA1 implementation... libcrypto
+checking for XSERVERCFLAGS... yes
+checking for XSERVERLIBS... yes
+checking if SVR4 needs to be defined... no
+checking whether to build Xvfb DDX... yes
+checking for XNESTMODULES... yes
+checking whether to build Xnest DDX... yes
+checking whether to build Xorg DDX... yes
+checking for symbol visibility support... yes
+checking for PCIACCESS... yes
+checking for pci_system_init_dev_mem... yes
+checking for pci_device_enable... yes
+checking for pci_device_is_boot_vga... yes
+checking for pci_device_vgaarb_init... yes
+checking for DGA... yes
+checking for DGA... yes
+checking for XF86VIDMODE... yes
+checking for XF86VIDMODE... yes
+checking for XORG_MODULES... yes
+checking whether to build XWin DDX... no
+checking dependency style of $(CC)... none
+checking for DMXMODULES... yes
+checking for XDMXCONFIG_DEP... yes
+checking whether to build Xdmx DDX... yes
+checking linux/input.h usability... yes
+checking linux/input.h presence... yes
+checking for linux/input.h... yes
+checking linux/keyboard.h usability... yes
+checking linux/keyboard.h presence... yes
+checking for linux/keyboard.h... yes
+checking for DMXEXAMPLES_DEP... yes
+checking for DMXXMUEXAMPLES_DEP... yes
+checking for DMXXIEXAMPLES_DEP... yes
+checking for XTSTEXAMPLES_DEP... yes
+checking for XRESEXAMPLES_DEP... yes
+checking for X11EXAMPLES_DEP... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating glx/Makefile
+config.status: creating include/Makefile
+config.status: creating composite/Makefile
+config.status: creating damageext/Makefile
+config.status: creating dbe/Makefile
+config.status: creating dix/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/dtrace/Makefile
+config.status: creating man/Makefile
+config.status: creating fb/Makefile
+config.status: creating record/Makefile
+config.status: creating config/Makefile
+config.status: creating mi/Makefile
+config.status: creating miext/Makefile
+config.status: creating miext/sync/Makefile
+config.status: creating miext/damage/Makefile
+config.status: creating miext/shadow/Makefile
+config.status: creating miext/cw/Makefile
+config.status: creating miext/rootless/Makefile
+config.status: creating os/Makefile
+config.status: creating randr/Makefile
+config.status: creating render/Makefile
+config.status: creating xkb/Makefile
+config.status: creating Xext/Makefile
+config.status: creating Xi/Makefile
+config.status: creating xfixes/Makefile
+config.status: creating exa/Makefile
+config.status: creating hw/Makefile
+config.status: creating hw/xfree86/Makefile
+config.status: creating hw/xfree86/common/Makefile
+config.status: creating hw/xfree86/common/xf86Build.h
+config.status: creating hw/xfree86/ddc/Makefile
+config.status: creating hw/xfree86/dixmods/Makefile
+config.status: creating hw/xfree86/dixmods/extmod/Makefile
+config.status: creating hw/xfree86/doc/Makefile
+config.status: creating hw/xfree86/dri/Makefile
+config.status: creating hw/xfree86/dri2/Makefile
+config.status: creating hw/xfree86/exa/Makefile
+config.status: creating hw/xfree86/exa/man/Makefile
+config.status: creating hw/xfree86/fbdevhw/Makefile
+config.status: creating hw/xfree86/fbdevhw/man/Makefile
+config.status: creating hw/xfree86/i2c/Makefile
+config.status: creating hw/xfree86/int10/Makefile
+config.status: creating hw/xfree86/loader/Makefile
+config.status: creating hw/xfree86/man/Makefile
+config.status: creating hw/xfree86/modes/Makefile
+config.status: creating hw/xfree86/os-support/Makefile
+config.status: creating hw/xfree86/os-support/bsd/Makefile
+config.status: creating hw/xfree86/os-support/bus/Makefile
+config.status: creating hw/xfree86/os-support/hurd/Makefile
+config.status: creating hw/xfree86/os-support/misc/Makefile
+config.status: creating hw/xfree86/os-support/linux/Makefile
+config.status: creating hw/xfree86/os-support/solaris/Makefile
+config.status: creating hw/xfree86/parser/Makefile
+config.status: creating hw/xfree86/ramdac/Makefile
+config.status: creating hw/xfree86/shadowfb/Makefile
+config.status: creating hw/xfree86/vbe/Makefile
+config.status: creating hw/xfree86/vgahw/Makefile
+config.status: creating hw/xfree86/x86emu/Makefile
+config.status: creating hw/xfree86/xaa/Makefile
+config.status: creating hw/xfree86/utils/Makefile
+config.status: creating hw/xfree86/utils/man/Makefile
+config.status: creating hw/xfree86/utils/cvt/Makefile
+config.status: creating hw/xfree86/utils/gtf/Makefile
+config.status: creating hw/dmx/config/Makefile
+config.status: creating hw/dmx/config/man/Makefile
+config.status: creating hw/dmx/doc/Makefile
+config.status: creating hw/dmx/doxygen/doxygen.conf
+config.status: creating hw/dmx/doxygen/Makefile
+config.status: creating hw/dmx/examples/Makefile
+config.status: creating hw/dmx/input/Makefile
+config.status: creating hw/dmx/glxProxy/Makefile
+config.status: creating hw/dmx/Makefile
+config.status: creating hw/dmx/man/Makefile
+config.status: creating hw/vfb/Makefile
+config.status: creating hw/vfb/man/Makefile
+config.status: creating hw/xnest/Makefile
+config.status: creating hw/xnest/man/Makefile
+config.status: creating hw/xwin/Makefile
+config.status: creating hw/xwin/glx/Makefile
+config.status: creating hw/xwin/man/Makefile
+config.status: creating hw/xquartz/Makefile
+config.status: creating hw/xquartz/GL/Makefile
+config.status: creating hw/xquartz/bundle/Makefile
+config.status: creating hw/xquartz/man/Makefile
+config.status: creating hw/xquartz/mach-startup/Makefile
+config.status: creating hw/xquartz/pbproxy/Makefile
+config.status: creating hw/xquartz/xpr/Makefile
+config.status: creating hw/kdrive/Makefile
+config.status: creating hw/kdrive/ephyr/Makefile
+config.status: creating hw/kdrive/ephyr/man/Makefile
+config.status: creating hw/kdrive/fake/Makefile
+config.status: creating hw/kdrive/fbdev/Makefile
+config.status: creating hw/kdrive/linux/Makefile
+config.status: creating hw/kdrive/src/Makefile
+config.status: creating test/Makefile
+config.status: creating test/xi2/Makefile
+config.status: creating xserver.ent
+config.status: creating xorg-server.pc
+config.status: creating include/do-not-use-config.h
+config.status: creating include/xorg-server.h
+config.status: creating include/dix-config.h
+config.status: creating include/xorg-config.h
+config.status: creating include/xkb-config.h
+config.status: creating include/xwin-config.h
+config.status: creating include/kdrive-config.h
+config.status: creating include/version-config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing sdksyms commands
+Making all in doc
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/doc'
+Making all in dtrace
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/doc/dtrace'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/doc/dtrace'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/doc'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/doc'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/doc'
+Making all in man
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/man'
+  GEN    Xserver.1
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/man'
+Making all in include
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/include'
+make  all-am
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/include'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/include'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/include'
+Making all in dix
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/dix'
+make  all-am
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/dix'
+  CC     atom.lo
+  CC     colormap.lo
+  CC     cursor.lo
+  CC     devices.lo
+devices.c: In function 'AttachDevice':
+devices.c:2409:18: warning: variable 'oldmaster' set but not used [-Wunused-but-set-variable]
+  CC     dispatch.lo
+  CC     dixfonts.lo
+  CC     dixutils.lo
+  CC     enterleave.lo
+  CC     events.lo
+events.c: In function 'ConfineToShape':
+events.c:683:15: warning: variable 'pSprite' set but not used [-Wunused-but-set-variable]
+events.c: In function 'ProcGrabPointer':
+events.c:4768:15: warning: variable 'time' set but not used [-Wunused-but-set-variable]
+  CC     eventconvert.lo
+  CC     extension.lo
+  CC     ffs.lo
+  CC     gc.lo
+  CC     getevents.lo
+getevents.c: In function 'GetMotionHistory':
+getevents.c:417:9: warning: variable 'dflt' set but not used [-Wunused-but-set-variable]
+  CC     globals.lo
+  CC     glyphcurs.lo
+  CC     grabs.lo
+  CC     initatoms.lo
+  CC     inpututils.lo
+  CC     pixmap.lo
+  CC     privates.lo
+  CC     property.lo
+  CC     ptrveloc.lo
+ptrveloc.c: In function 'QueryTrackers':
+ptrveloc.c:598:34: warning: variable 'used_offset' set but not used [-Wunused-but-set-variable]
+  CC     region.lo
+  CC     registry.lo
+  CC     resource.lo
+  CC     selection.lo
+  CC     swaprep.lo
+  CC     swapreq.lo
+  CC     tables.lo
+  CC     window.lo
+  CC     main.lo
+window.c: In function 'log_window_info':
+window.c:235:12: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'XID' [-Wformat]
+window.c:244:16: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'XID' [-Wformat]
+window.c: In function 'PrintWindowTree':
+window.c:291:16: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'XID' [-Wformat]
+  CCLD   libmain.la
+  CCLD   libdix.la
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/dix'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/dix'
+Making all in fb
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/fb'
+  CC     libfb_la-fb24_32.lo
+  CC     libfb_la-fballpriv.lo
+  CC     libfb_la-fbarc.lo
+  CC     libfb_la-fbbits.lo
+  CC     libfb_la-fbblt.lo
+  CC     libfb_la-fbbltone.lo
+  CC     libfb_la-fbcopy.lo
+  CC     libfb_la-fbfill.lo
+  CC     libfb_la-fbfillrect.lo
+  CC     libfb_la-fbfillsp.lo
+  CC     libfb_la-fbgc.lo
+  CC     libfb_la-fbgetsp.lo
+  CC     libfb_la-fbglyph.lo
+  CC     libfb_la-fbimage.lo
+  CC     libfb_la-fbline.lo
+  CC     libfb_la-fboverlay.lo
+  CC     libfb_la-fbpict.lo
+  CC     libfb_la-fbpixmap.lo
+  CC     libfb_la-fbpoint.lo
+  CC     libfb_la-fbpush.lo
+  CC     libfb_la-fbscreen.lo
+  CC     libfb_la-fbseg.lo
+  CC     libfb_la-fbsetsp.lo
+  CC     libfb_la-fbsolid.lo
+  CC     libfb_la-fbstipple.lo
+  CC     libfb_la-fbtile.lo
+  CC     libfb_la-fbtrap.lo
+  CC     libfb_la-fbutil.lo
+  CC     libfb_la-fbwindow.lo
+  CC     libwfb_la-fb24_32.lo
+  CC     libwfb_la-fballpriv.lo
+  CC     libwfb_la-fbarc.lo
+  CC     libwfb_la-fbbits.lo
+  CC     libwfb_la-fbblt.lo
+  CC     libwfb_la-fbbltone.lo
+  CC     libwfb_la-fbcopy.lo
+  CC     libwfb_la-fbfill.lo
+  CC     libwfb_la-fbfillrect.lo
+  CC     libwfb_la-fbfillsp.lo
+  CC     libwfb_la-fbgc.lo
+  CC     libwfb_la-fbgetsp.lo
+  CC     libwfb_la-fbglyph.lo
+  CC     libwfb_la-fbimage.lo
+  CC     libwfb_la-fbline.lo
+  CC     libwfb_la-fboverlay.lo
+  CC     libwfb_la-fbpict.lo
+  CC     libwfb_la-fbpixmap.lo
+  CC     libwfb_la-fbpoint.lo
+  CC     libwfb_la-fbpush.lo
+  CC     libwfb_la-fbscreen.lo
+  CC     libwfb_la-fbseg.lo
+  CC     libwfb_la-fbsetsp.lo
+  CC     libwfb_la-fbsolid.lo
+  CC     libwfb_la-fbstipple.lo
+  CC     libwfb_la-fbtile.lo
+  CC     libwfb_la-fbtrap.lo
+  CC     libwfb_la-fbutil.lo
+  CC     libwfb_la-fbwindow.lo
+  CCLD   libfb.la
+  CCLD   libwfb.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/fb'
+Making all in mi
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/mi'
+  CC     mibitblt.lo
+  CC     micmap.lo
+  CC     micopy.lo
+  CC     micursor.lo
+  CC     midash.lo
+  CC     midispcur.lo
+  CC     mieq.lo
+  CC     miexpose.lo
+  CC     mifillarc.lo
+  CC     mifillrct.lo
+  CC     mifpolycon.lo
+  CC     migc.lo
+  CC     miglblt.lo
+  CC     mioverlay.lo
+  CC     mipointer.lo
+  CC     mipoly.lo
+  CC     mipolycon.lo
+  CC     mipolygen.lo
+  CC     mipolypnt.lo
+  CC     mipolyrect.lo
+  CC     mipolyseg.lo
+  CC     mipolytext.lo
+  CC     mipolyutil.lo
+  CC     mipushpxl.lo
+  CC     miscrinit.lo
+  CC     mispans.lo
+  CC     misprite.lo
+misprite.c: In function 'miSpriteSaveUnderCursor':
+misprite.c:940:14: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+misprite.c:940:11: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+  CC     mivaltree.lo
+mivaltree.c: In function 'miComputeClips':
+mivaltree.c:226:11: warning: variable 'resized' set but not used [-Wunused-but-set-variable]
+  CC     miwideline.lo
+  CC     miwindow.lo
+  CC     mizerarc.lo
+  CC     mizerclip.lo
+  CC     mizerline.lo
+  CCLD   libmi.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/mi'
+Making all in Xext
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/Xext'
+  CC     bigreq.lo
+  CC     geext.lo
+  CC     shape.lo
+  CC     sleepuntil.lo
+  CC     sync.lo
+  CC     xcmisc.lo
+  CC     xtest.lo
+  CC     shm.lo
+  CC     panoramiX.lo
+  CC     panoramiXprocs.lo
+  CC     panoramiXSwap.lo
+  CC     xace.lo
+  CC     xvmain.lo
+  CC     xvdisp.lo
+  CC     xvmc.lo
+  CC     xres.lo
+  CC     saver.lo
+  CC     dpms.lo
+  CCLD   libXextbuiltin.la
+  CCLD   libXext.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/Xext'
+Making all in miext
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext'
+Making all in sync
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/sync'
+  CC     misync.lo
+  CCLD   libsync.la
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/sync'
+Making all in damage
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/damage'
+  CC     damage.lo
+  CCLD   libdamage.la
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/damage'
+Making all in shadow
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/shadow'
+  CC     shadow.lo
+  CC     shalloc.lo
+  CC     shpacked.lo
+  CC     shplanar8.lo
+  CC     shplanar.lo
+  CC     shrot16pack_180.lo
+  CC     shrot16pack_270.lo
+  CC     shrot16pack_270YX.lo
+  CC     shrot16pack_90.lo
+  CC     shrot16pack_90YX.lo
+  CC     shrot16pack.lo
+  CC     shrot32pack_180.lo
+  CC     shrot32pack_270.lo
+  CC     shrot32pack_90.lo
+  CC     shrot32pack.lo
+  CC     shrot8pack_180.lo
+  CC     shrot8pack_270.lo
+  CC     shrot8pack_90.lo
+  CC     shrot8pack.lo
+  CC     shrotate.lo
+  CCLD   libshadow.la
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/shadow'
+Making all in cw
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/cw'
+  CC     cw.lo
+  CC     cw_ops.lo
+  CC     cw_render.lo
+  CCLD   libcw.la
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/cw'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext'
+Making all in os
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/os'
+  CC     WaitFor.lo
+  CC     access.lo
+  CC     auth.lo
+  CC     backtrace.lo
+  CC     client.lo
+  CC     connection.lo
+  CC     io.lo
+/usr/include/X11/Xtrans/Xtransint.h:349:12: warning: 'is_numeric' declared 'static' but never defined [-Wunused-function]
+/usr/include/X11/Xtrans/Xtransint.h:354:12: warning: 'trans_mkdir' declared 'static' but never defined [-Wunused-function]
+  CC     mitauth.lo
+  CC     oscolor.lo
+  CC     osinit.lo
+  CC     utils.lo
+  CC     strcasecmp.lo
+  CC     strcasestr.lo
+  CC     xdmauth.lo
+  CC     xsha1.lo
+  CC     xstrans.lo
+  CC     xprintf.lo
+  CC     log.lo
+log.c: In function 'LogInit':
+log.c:184:2: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+log.c:194:3: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+  CC     xdmcp.lo
+  CC     strlcat.lo
+  CC     strlcpy.lo
+  CCLD   libos.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/os'
+Making all in randr
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/randr'
+  CC     randr.lo
+  CC     rrcrtc.lo
+rrcrtc.c: In function 'ProcRRSetCrtcConfig':
+rrcrtc.c:870:20: warning: variable 'configTime' set but not used [-Wunused-but-set-variable]
+  CC     rrdispatch.lo
+  CC     rrinfo.lo
+  CC     rrmode.lo
+rrmode.c: In function 'ProcRRCreateMode':
+rrmode.c:294:18: warning: variable 'pScrPriv' set but not used [-Wunused-but-set-variable]
+  CC     rroutput.lo
+  CC     rrpointer.lo
+  CC     rrproperty.lo
+  CC     rrscreen.lo
+  CC     rrsdispatch.lo
+  CC     rrtransform.lo
+  CC     rrxinerama.lo
+  CCLD   librandr.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/randr'
+Making all in render
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/render'
+  CC     filter.lo
+  CC     glyph.lo
+  CC     matrix.lo
+  CC     miindex.lo
+  CC     mipict.lo
+  CC     mirect.lo
+  CC     mitrap.lo
+  CC     mitri.lo
+  CC     picture.lo
+  CC     render.lo
+  CCLD   librender.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/render'
+Making all in Xi
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/Xi'
+  CC     allowev.lo
+  CC     chgdctl.lo
+  CC     chgfctl.lo
+  CC     chgkbd.lo
+  CC     chgkmap.lo
+  CC     chgprop.lo
+  CC     chgptr.lo
+  CC     closedev.lo
+  CC     devbell.lo
+  CC     exevents.lo
+  CC     extinit.lo
+exevents.c: In function 'UpdateDeviceState':
+exevents.c:719:9: warning: variable 'bit' set but not used [-Wunused-but-set-variable]
+exevents.c: In function 'ProcessOtherEvent':
+exevents.c:892:22: warning: variable 'v' set but not used [-Wunused-but-set-variable]
+exevents.c:891:17: warning: variable 'k' set but not used [-Wunused-but-set-variable]
+  CC     getbmap.lo
+  CC     getdctl.lo
+  CC     getfctl.lo
+  CC     getfocus.lo
+  CC     getkmap.lo
+  CC     getmmap.lo
+  CC     getprop.lo
+  CC     getselev.lo
+  CC     getvers.lo
+  CC     grabdev.lo
+  CC     grabdevb.lo
+  CC     grabdevk.lo
+  CC     gtmotion.lo
+  CC     listdev.lo
+  CC     opendev.lo
+  CC     queryst.lo
+  CC     selectev.lo
+  CC     sendexev.lo
+  CC     setbmap.lo
+  CC     setdval.lo
+  CC     setfocus.lo
+  CC     setmmap.lo
+  CC     setmode.lo
+  CC     ungrdev.lo
+  CC     ungrdevb.lo
+  CC     ungrdevk.lo
+  CC     xiallowev.lo
+  CC     xichangecursor.lo
+  CC     xichangehierarchy.lo
+  CC     xigetclientpointer.lo
+  CC     xigrabdev.lo
+  CC     xipassivegrab.lo
+  CC     xiproperty.lo
+  CC     xiquerydevice.lo
+  CC     xiquerypointer.lo
+  CC     xiqueryversion.lo
+  CC     xiselectev.lo
+  CC     xisetclientpointer.lo
+  CC     xisetdevfocus.lo
+  CC     xiwarppointer.lo
+  CCLD   libXi.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/Xi'
+Making all in xkb
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/xkb'
+  CC     ddxBeep.lo
+  CC     ddxCtrls.lo
+  CC     ddxLEDs.lo
+  CC     ddxLoad.lo
+  CC     ddxList.lo
+  CC     xkb.lo
+  CC     xkbUtils.lo
+xkb.c: In function '_XkbSetNamesCheck':
+xkb.c:3908:19: warning: variable 'names' set but not used [-Wunused-but-set-variable]
+  CC     xkbEvents.lo
+  CC     xkbAccessX.lo
+  CC     xkbSwap.lo
+  CC     xkbLEDs.lo
+  CC     xkbInit.lo
+  CC     xkbActions.lo
+  CC     xkbPrKeyEv.lo
+  CC     maprules.lo
+  CC     xkmread.lo
+  CC     xkbtext.lo
+  CC     xkbfmisc.lo
+  CC     xkbout.lo
+  CC     XKBMisc.lo
+  CC     XKBAlloc.lo
+  CC     XKBGAlloc.lo
+  CC     XKBMAlloc.lo
+  CC     ddxVT.lo
+  CC     ddxPrivate.lo
+  CC     ddxKillSrv.lo
+  CCLD   libxkb.la
+  CCLD   libxkbstubs.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/xkb'
+Making all in dbe
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/dbe'
+  CC     dbe.lo
+  CC     midbe.lo
+  CCLD   libdbe.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/dbe'
+Making all in record
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/record'
+  CC     set.lo
+  CCLD   librecord.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/record'
+Making all in xfixes
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/xfixes'
+  CC     cursor.lo
+  CC     region.lo
+cursor.c: In function 'CursorCloseScreen':
+cursor.c:201:34: warning: variable 'constrain_proc' set but not used [-Wunused-but-set-variable]
+  CC     saveset.lo
+  CC     select.lo
+  CC     xfixes.lo
+  CCLD   libxfixes.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/xfixes'
+Making all in damageext
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/damageext'
+  CC     damageext.lo
+  CCLD   libdamageext.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/damageext'
+Making all in composite
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/composite'
+  CC     compalloc.lo
+  CC     compext.lo
+compext.c: In function 'ProcCompositeReleaseOverlayWindow':
+compext.c:333:15: warning: variable 'pScreen' set but not used [-Wunused-but-set-variable]
+compext.c: In function 'PanoramiXCompositeReleaseOverlayWindow':
+compext.c:857:15: warning: variable 'pScreen' set but not used [-Wunused-but-set-variable]
+  CC     compinit.lo
+  CC     compoverlay.lo
+  CC     compwindow.lo
+  CCLD   libcomposite.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/composite'
+Making all in glx
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/glx'
+  CC     indirect_dispatch.lo
+  CC     indirect_dispatch_swap.lo
+  CC     indirect_reqsize.lo
+  CC     indirect_size_get.lo
+  CC     indirect_table.lo
+  CC     glapi.lo
+  CC     glapi_gentable.lo
+  CC     glthread.lo
+  CC     extension_string.lo
+  CC     indirect_util.lo
+  CC     indirect_program.lo
+  CC     indirect_texture_compression.lo
+  CC     glxcmds.lo
+  CC     glxcmdsswap.lo
+  CC     glxext.lo
+  CC     glxdriswrast.lo
+  CC     glxdricommon.lo
+  CC     glxscreens.lo
+  CC     render2.lo
+  CC     render2swap.lo
+  CC     renderpix.lo
+  CC     renderpixswap.lo
+  CC     rensize.lo
+  CC     single2.lo
+  CC     single2swap.lo
+  CC     singlepix.lo
+  CC     singlepixswap.lo
+  CC     singlesize.lo
+  CC     swap_interval.lo
+  CC     xfont.lo
+  CC     glxdri.lo
+glxdri.c: In function '__glXDRIcontextDestroy':
+glxdri.c:291:10: warning: variable 'retval' set but not used [-Wunused-but-set-variable]
+  CC     glxdri2.lo
+  CCLD   libglxdri.la
+  CCLD   libglx.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/glx'
+Making all in exa
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/exa'
+  CC     exa.lo
+  CC     exa_classic.lo
+  CC     exa_migration_classic.lo
+  CC     exa_driver.lo
+  CC     exa_mixed.lo
+  CC     exa_migration_mixed.lo
+  CC     exa_accel.lo
+  CC     exa_glyphs.lo
+  CC     exa_offscreen.lo
+  CC     exa_render.lo
+  CC     exa_unaccel.lo
+  CCLD   libexa.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/exa'
+Making all in config
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/config'
+  CC     config.lo
+  CCLD   libconfig.la
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/config'
+Making all in hw
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw'
+Making all in xfree86
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+  GEN    xorg.conf.example
+make  all-recursive
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+Making all in common
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/common'
+  GEN    xf86DefModeSet.c
+  GEN    xf86DefModeSet.c
+make  all-am
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/common'
+  CC     xf86Configure.lo
+  CC     xf86ShowOpts.lo
+  CC     xf86Bus.lo
+  CC     xf86Config.lo
+  CC     xf86Cursor.lo
+  CC     xf86DGA.lo
+  CC     xf86DPMS.lo
+  CC     xf86Events.lo
+  CC     xf86Globals.lo
+  CC     xf86AutoConfig.lo
+  CC     xf86Option.lo
+  CC     xf86Init.lo
+  CC     xf86VGAarbiter.lo
+  CC     xf86VidMode.lo
+  CC     xf86fbman.lo
+  CC     xf86cmap.lo
+  CC     xf86Helper.lo
+xf86Helper.c: In function 'xf86EnableDisableFBAccess':
+xf86Helper.c:1009:15: warning: variable 'pspix' set but not used [-Wunused-but-set-variable]
+  CC     xf86PM.lo
+  CC     xf86Xinput.lo
+  CC     xisb.lo
+  CC     xf86Mode.lo
+  CC     xorgHelper.lo
+  CC     xf86xv.lo
+  CC     xf86xvmc.lo
+  CC     xf86pciBus.lo
+  CC     xf86fbBus.lo
+  CC     xf86noBus.lo
+  CC     xf86RandR.lo
+  CC     xf86DefModeSet.lo
+  CCLD   libcommon.la
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/common'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/common'
+Making all in ddc
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ddc'
+  CC     interpret_edid.lo
+  CC     print_edid.lo
+  CC     ddcProperty.lo
+  CCLD   libddc.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ddc'
+Making all in i2c
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/i2c'
+  CC     bt829.lo
+  CC     bt829_module.lo
+  CC     fi1236.lo
+  CC     fi1236_module.lo
+  CC     msp3430.lo
+  CC     msp3430_module.lo
+  CC     tda8425.lo
+  CC     tda8425_module.lo
+  CC     tda9850.lo
+  CC     tda9850_module.lo
+  CC     tda9885.lo
+  CC     tda9885_module.lo
+  CC     uda1380.lo
+  CC     uda1380_module.lo
+  CC     xf86i2c.lo
+  CCLD   bt829_drv.la
+  CCLD   fi1236_drv.la
+  CCLD   msp3430_drv.la
+  CCLD   tda8425_drv.la
+  CCLD   tda9850_drv.la
+  CCLD   tda9885_drv.la
+  CCLD   uda1380_drv.la
+  CCLD   libi2c.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/i2c'
+Making all in x86emu
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/x86emu'
+  CC     debug.lo
+  CC     decode.lo
+  CC     fpu.lo
+  CC     ops2.lo
+  CC     ops.lo
+  CC     prim_ops.lo
+ops.c: In function 'x86emuOp_call_near_IMM':
+ops.c:9701:14: warning: 'ip32' may be used uninitialized in this function [-Wuninitialized]
+ops.c:9704:14: warning: 'ip16' may be used uninitialized in this function [-Wuninitialized]
+  CC     sys.lo
+  CCLD   libx86emu.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/x86emu'
+Making all in int10
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/int10'
+  CC     helper_exec.lo
+  CC     helper_mem.lo
+  CC     xf86int10.lo
+  CC     xf86int10module.lo
+  CC     xf86x86emu.lo
+  CC     generic.lo
+xf86x86emu.c: In function 'xf86Int10ExecSetup':
+xf86x86emu.c:54:2: warning: initialization from incompatible pointer type [enabled by default]
+xf86x86emu.c:54:2: warning: (near initialization for 'pioFuncs.inl') [enabled by default]
+xf86x86emu.c:58:5: warning: initialization from incompatible pointer type [enabled by default]
+xf86x86emu.c:58:5: warning: (near initialization for 'pioFuncs.outl') [enabled by default]
+xf86x86emu.c:61:2: warning: initialization from incompatible pointer type [enabled by default]
+xf86x86emu.c:61:2: warning: (near initialization for 'memFuncs.rdb') [enabled by default]
+xf86x86emu.c:62:2: warning: initialization from incompatible pointer type [enabled by default]
+xf86x86emu.c:62:2: warning: (near initialization for 'memFuncs.rdw') [enabled by default]
+xf86x86emu.c:63:2: warning: initialization from incompatible pointer type [enabled by default]
+xf86x86emu.c:63:2: warning: (near initialization for 'memFuncs.rdl') [enabled by default]
+xf86x86emu.c:64:2: warning: initialization from incompatible pointer type [enabled by default]
+xf86x86emu.c:64:2: warning: (near initialization for 'memFuncs.wrb') [enabled by default]
+xf86x86emu.c:65:2: warning: initialization from incompatible pointer type [enabled by default]
+xf86x86emu.c:65:2: warning: (near initialization for 'memFuncs.wrw') [enabled by default]
+xf86x86emu.c:67:5: warning: initialization from incompatible pointer type [enabled by default]
+xf86x86emu.c:67:5: warning: (near initialization for 'memFuncs.wrl') [enabled by default]
+  CC     x86emu.lo
+In file included from x86emu.c:9:0:
+./../x86emu/ops.c: In function 'x86emuOp_call_near_IMM':
+./../x86emu/ops.c:9701:14: warning: 'ip32' may be used uninitialized in this function [-Wuninitialized]
+./../x86emu/ops.c:9704:14: warning: 'ip16' may be used uninitialized in this function [-Wuninitialized]
+  CCLD   libint10.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/int10'
+Making all in fbdevhw
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw'
+Making all in man
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw/man'
+  GEN    fbdevhw.4
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw/man'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw'
+  CC     fbdevhw.lo
+fbdevhw.c: In function 'fbdevHWGetRec':
+fbdevhw.c:85:13: warning: variable 'fPtr' set but not used [-Wunused-but-set-variable]
+  CCLD   libfbdevhw.la
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw'
+Making all in os-support
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support'
+Making all in bus
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/bus'
+  CC     Pci.lo
+  CC     linuxPci.lo
+  CCLD   libbus.la
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/bus'
+Making all in linux
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/linux'
+  CC     lnx_init.lo
+  CC     lnx_video.lo
+lnx_init.c: In function 'xf86OpenConsole':
+lnx_init.c:151:13: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+  CC     lnx_agp.lo
+  CC     lnx_kmod.lo
+lnx_kmod.c: In function 'xf86LoadKernelModule':
+lnx_kmod.c:43:25: warning: variable 'n' set but not used [-Wunused-but-set-variable]
+  CC     lnx_bell.lo
+  CC     bios_mmap.lo
+  CC     VTsw_usl.lo
+  CC     posix_tty.lo
+  CC     vidmem.lo
+  CC     sigio.lo
+  CC     lnx_acpi.lo
+lnx_acpi.c: In function 'lnxACPIGetEventFromOs':
+lnx_acpi.c:81:30: warning: variable 'data_l' set but not used [-Wunused-but-set-variable]
+lnx_acpi.c:78:8: warning: variable 'GFX' set but not used [-Wunused-but-set-variable]
+lnx_acpi.c:77:8: warning: variable 'video' set but not used [-Wunused-but-set-variable]
+  CC     lnx_apm.lo
+  CCLD   liblinux.la
+copying selected object files to avoid basename conflicts...
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/linux'
+Making all in misc
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/misc'
+  CC     SlowBcopy.lo
+  CCLD   libmisc.la
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/misc'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support'
+  CCLD   libxorgos.la
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support'
+Making all in parser
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/parser'
+  CC     Device.lo
+  CC     Files.lo
+  CC     Flags.lo
+  CC     Input.lo
+  CC     InputClass.lo
+  CC     Layout.lo
+  CC     Module.lo
+  CC     Video.lo
+  CC     Monitor.lo
+  CC     Pointer.lo
+  CC     Screen.lo
+  CC     Vendor.lo
+  CC     read.lo
+  CC     scan.lo
+  CC     write.lo
+scan.c: In function 'xf86openConfigDirFiles':
+scan.c:956:2: warning: 'dirpath' may be used uninitialized in this function [-Wuninitialized]
+  CC     DRI.lo
+  CC     Extensions.lo
+  CCLD   libxf86config_internal.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/parser'
+Making all in ramdac
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ramdac'
+  CC     xf86RamDac.lo
+  CC     xf86RamDacCmap.lo
+  CC     xf86Cursor.lo
+  CC     xf86HWCurs.lo
+  CC     IBM.lo
+  CC     BT.lo
+  CC     TI.lo
+  CC     xf86BitOrder.lo
+  CCLD   libramdac.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ramdac'
+Making all in shadowfb
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/shadowfb'
+  CC     sfbmodule.lo
+  CC     shadow.lo
+  CCLD   libshadowfb.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/shadowfb'
+Making all in vbe
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vbe'
+  CC     vbe.lo
+  CC     vbeModes.lo
+  CC     vbe_module.lo
+  CCLD   libvbe.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vbe'
+Making all in vgahw
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vgahw'
+  CC     vgaHW.lo
+  CC     vgaHWmodule.lo
+  CCLD   libvgahw.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vgahw'
+Making all in xaa
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/xaa'
+  CC     xaaInit.lo
+  CC     xaaGC.lo
+  CC     xaaInitAccel.lo
+  CC     xaaFallback.lo
+  CC     xaaBitBlt.lo
+  CC     xaaCpyArea.lo
+  CC     xaaGCmisc.lo
+  CC     xaaCpyWin.lo
+  CC     xaaCpyPlane.lo
+  CC     xaaFillRect.lo
+  CC     xaaTEText.lo
+  CC     xaaNonTEText.lo
+  CC     xaaPCache.lo
+  CC     xaaSpans.lo
+  CC     xaaROP.lo
+  CC     xaaImage.lo
+  CC     xaaRect.lo
+  CC     xaaLineMisc.lo
+  CC     xaaBitOrder.lo
+  CC     xaaFillPoly.lo
+  CC     xaaWideLine.lo
+  CC     xaaTables.lo
+  CC     xaaFillArc.lo
+  CC     xaaLine.lo
+  CC     xaaDashLine.lo
+  CC     xaaOverlay.lo
+  CC     xaaOffscreen.lo
+  CC     xaaOverlayDF.lo
+  CC     xaaStateChange.lo
+  CC     xaaPict.lo
+  CC     s-xaaLine.lo
+  CC     s-xaaDashLine.lo
+  CC     l-xaaBitmap.lo
+  CC     l-xaaStipple.lo
+  CC     l-xaaTEGlyph.lo
+  CC     m-xaaBitmap.lo
+  CC     m-xaaStipple.lo
+  CC     m-xaaTEGlyph.lo
+  CC     lf-xaaBitmap.lo
+  CC     lf-xaaStipple.lo
+  CC     lf-xaaTEGlyph.lo
+  CC     mf-xaaBitmap.lo
+  CC     mf-xaaStipple.lo
+  CC     mf-xaaTEGlyph.lo
+  CC     l3-xaaBitmap.lo
+  CC     l3-xaaStipple.lo
+  CC     m3-xaaBitmap.lo
+  CC     m3-xaaStipple.lo
+  CC     lf3-xaaBitmap.lo
+  CC     lf3-xaaStipple.lo
+  CC     mf3-xaaBitmap.lo
+  CC     mf3-xaaStipple.lo
+  CCLD   libxaa.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/xaa'
+Making all in loader
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/loader'
+  CC     loader.lo
+  CC     loadext.lo
+  CC     loadmod.lo
+  CC     os.lo
+loadmod.c: In function 'LoaderListDirs':
+loadmod.c:275:8: warning: 'patterns' may be used uninitialized in this function [-Wuninitialized]
+loadmod.c:476:16: note: 'patterns' was declared here
+  CCLD   libloader.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/loader'
+Making all in dixmods
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods'
+Making all in extmod
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods/extmod'
+  CC     modinit.lo
+  CC     xf86dga2.lo
+  CC     xf86vmode.lo
+  CC     xvmod.lo
+  CCLD   libextmod.la
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods/extmod'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods'
+  CC     recordmod.lo
+  CC     dbemodule.lo
+  CC     glxmodule.lo
+  CC     libfb_la-fbcmap_mi.lo
+  CC     libfb_la-fbmodule.lo
+  CC     libwfb_la-fbcmap_mi.lo
+  CC     libwfb_la-fbmodule.lo
+  CC     shmodule.lo
+  CC     libdixmods_la-miinitext.lo
+  CC     xkbVT.lo
+  CC     xkbPrivate.lo
+  CC     xkbKillSrv.lo
+  CCLD   librecord.la
+  CCLD   libdbe.la
+  CCLD   libglx.la
+  CCLD   libfb.la
+  CCLD   libwfb.la
+  CCLD   libshadow.la
+  CCLD   libdixmods.la
+  CCLD   libxorgxkb.la
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods'
+Making all in exa
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa'
+Making all in man
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa/man'
+  GEN    exa.4
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa/man'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa'
+  CC     examodule.lo
+  CCLD   libexa.la
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa'
+Making all in modes
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/modes'
+  CC     xf86Crtc.lo
+  CC     xf86Cursors.lo
+xf86Crtc.c: In function 'xf86PickCrtcs':
+xf86Crtc.c:942:21: warning: variable 'best_crtc' set but not used [-Wunused-but-set-variable]
+  CC     xf86cvt.lo
+xf86cvt.c: In function 'xf86CVTMode':
+xf86cvt.c:163:33: warning: variable 'VBackPorch' set but not used [-Wunused-but-set-variable]
+  CC     xf86gtf.lo
+xf86gtf.c: In function 'xf86GTFMode':
+xf86gtf.c:123:11: warning: variable 'v_frame_rate' set but not used [-Wunused-but-set-variable]
+xf86gtf.c:118:11: warning: variable 'v_back_porch' set but not used [-Wunused-but-set-variable]
+  CC     xf86DisplayIDModes.lo
+  CC     xf86EdidModes.lo
+  CC     xf86Modes.lo
+  CC     xf86RandR12.lo
+xf86RandR12.c: In function 'xf86RandR12GetInfo':
+xf86RandR12.c:443:15: warning: variable 'refresh0' set but not used [-Wunused-but-set-variable]
+xf86RandR12.c: In function 'xf86RandR12SetTransformSupport':
+xf86RandR12.c:963:22: warning: variable 'randrp' set but not used [-Wunused-but-set-variable]
+xf86RandR12.c: In function 'xf86RandR12SetInfo12':
+xf86RandR12.c:1454:16: warning: variable 'randr_crtc' set but not used [-Wunused-but-set-variable]
+  CC     xf86Rotate.lo
+xf86Rotate.c: In function 'xf86RotateBlockHandler':
+xf86Rotate.c:266:11: warning: variable 'rotation_active' set but not used [-Wunused-but-set-variable]
+  CC     xf86DiDGA.lo
+  CCLD   libxf86modes.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/modes'
+Making all in dri
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri'
+  CC     libdri_la-dri.lo
+  CC     libdri_la-drimodule.lo
+  CC     libdri_la-xf86dri.lo
+  CCLD   libdri.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri'
+Making all in dri2
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri2'
+  CC     libdri2_la-dri2.lo
+  CC     libdri2_la-dri2ext.lo
+  CCLD   libdri2.la
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri2'
+Making all in utils
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils'
+Making all in gtf
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/gtf'
+  CC     gtf-gtf.o
+  CCLD   gtf
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/gtf'
+Making all in cvt
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/cvt'
+  CC     cvt-cvt.o
+  CC     cvt-xf86cvt.o
+../../../../hw/xfree86/modes/xf86cvt.c: In function ‘xf86CVTMode’:
+../../../../hw/xfree86/modes/xf86cvt.c:163:33: warning: variable ‘VBackPorch’ set but not used [-Wunused-but-set-variable]
+  CC     cvt-xprintf.o
+  CCLD   cvt
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/cvt'
+Making all in man
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/man'
+  GEN    cvt.1
+  GEN    gtf.1
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/man'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils'
+make[5]: Nothing to be done for `all-am'.
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils'
+Making all in doc
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/doc'
+make[4]: Nothing to be done for `all'.
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/doc'
+Making all in man
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/man'
+  GEN    Xorg.1
+  GEN    xorg.conf.5
+  GEN    xorg.conf.d.5
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/man'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+CPP='gcc -std=gnu99 -E' AWK='gawk' ./sdksyms.sh ../.. -g -O2 -DHAVE_DIX_CONFIG_H -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wformat=2 -Wold-style-definition -Wdeclaration-after-statement -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -I/usr/include/pixman-1 -I/usr/include/freetype2   -I../../include -I../../include -I../../Xext -I../../composite -I../../damageext -I../../xfixes -I../../Xi -I../../mi -I../../miext/sync -I../../miext/shadow  -I../../miext/damage -I../../render -I../../randr -I../../fb -fvisibility=hidden  -DHAVE_XORG_CONFIG_H -fvisibility=hidden   -DXF86PM   -I../../hw/xfree86 -I../../hw/xfree86/include -I../../hw/xfree86/common -I../../hw/xfree86/os-support -I../../hw/xfree86/os-support/bus -I../../os -I./parser -I../../miext/cw -I./ddc -I./i2c -I./modes -I./ramdac
+  CC     sdksyms.o
+  CCLD   Xorg
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+Making all in vfb
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/vfb'
+Making all in man
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/vfb/man'
+  GEN    Xvfb.1
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/vfb/man'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/vfb'
+  CC     libfbcmap_a-fbcmap_mi.o
+  CC     InitInput.o
+  CC     InitOutput.o
+  CC     dpmsstubs.o
+InitOutput.c: In function ‘vfbInstallColormap’:
+InitOutput.c:417:12: warning: variable ‘pXWDCmap’ set but not used [-Wunused-but-set-variable]
+  CC     stubs.o
+  CC     miinitext.o
+  AR     libfbcmap.a
+  CCLD   Xvfb
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/vfb'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/vfb'
+Making all in xnest
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xnest'
+Making all in man
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xnest/man'
+  GEN    Xnest.1
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xnest/man'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xnest'
+  CC     libfbcmap_a-fbcmap_mi.o
+  CC     Args.o
+  CC     Color.o
+  CC     Cursor.o
+  CC     Display.o
+  CC     Events.o
+  CC     Font.o
+  CC     GC.o
+  CC     GCOps.o
+  CC     Handlers.o
+  CC     Init.o
+  CC     Keyboard.o
+  CC     Pixmap.o
+  CC     Pointer.o
+  CC     Screen.o
+  CC     Visual.o
+  CC     Window.o
+  CC     dpmsstubs.o
+  CC     stubs.o
+  CC     miinitext.o
+  AR     libfbcmap.a
+  CCLD   Xnest
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xnest'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xnest'
+Making all in dmx
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx'
+Making all in input
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/input'
+  CC     ChkNotMaskEv.o
+  CC     lnx-keyboard.o
+lnx-keyboard.c: In function ‘kbdLinuxOpenVT’:
+lnx-keyboard.c:436:9: warning: format not a string literal, argument types not checked [-Wformat-nonliteral]
+  CC     lnx-ms.o
+  CC     lnx-ps2.o
+  CC     usb-keyboard.o
+  CC     usb-mouse.o
+  CC     usb-other.o
+  CC     usb-common.o
+  CC     dmxdummy.o
+  CC     dmxbackend.o
+  CC     dmxconsole.o
+  CC     dmxcommon.o
+  CC     dmxinputinit.o
+dmxinputinit.c: In function ‘dmxInputInit’:
+dmxinputinit.c:925:43: warning: variable ‘pKeyboard’ set but not used [-Wunused-but-set-variable]
+dmxinputinit.c:925:26: warning: variable ‘pPointer’ set but not used [-Wunused-but-set-variable]
+dmxinputinit.c: In function ‘dmxInputFreeLocal’:
+dmxinputinit.c:1050:5: warning: passing argument 1 of ‘free’ discards ‘const’ qualifier from pointer target type [enabled by default]
+/usr/include/stdlib.h:488:13: note: expected ‘void *’ but argument is of type ‘const char *’
+dmxinputinit.c: In function ‘dmxInputFree’:
+dmxinputinit.c:1075:5: warning: passing argument 1 of ‘free’ discards ‘const’ qualifier from pointer target type [enabled by default]
+/usr/include/stdlib.h:488:13: note: expected ‘void *’ but argument is of type ‘const char *’
+  CC     dmxarg.o
+  CC     dmxsigio.o
+  CC     dmxevents.o
+  CC     dmxxinput.o
+dmxevents.c: In function ‘dmxEnqueue’:
+dmxevents.c:644:12: warning: variable ‘xE’ set but not used [-Wunused-but-set-variable]
+  CC     dmxmotion.o
+  CC     dmxmap.o
+  AR     libdmxinput.a
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/input'
+Making all in config
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+make  all-recursive
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+Making all in man
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config/man'
+  GEN    xdmxconfig.1
+  GEN    vdltodmx.1
+  GEN    dmxtodmx.1
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config/man'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+  CC     parser.o
+  CC     scanner.o
+scanner.c:1253:17: warning: ‘yyunput’ defined but not used [-Wunused-function]
+scanner.c:1294:16: warning: ‘input’ defined but not used [-Wunused-function]
+  CC     dmxparse.o
+  CC     dmxprint.o
+  CC     dmxcompat.o
+dmxcompat.c: In function ‘dmxVDLRead’:
+dmxcompat.c:122:25: warning: variable ‘vcount’ set but not used [-Wunused-but-set-variable]
+  CC     dmxconfig.o
+  CC     xdmxconfig-xdmxconfig.o
+  CC     xdmxconfig-dmxlog.o
+  CC     xdmxconfig-Canvas.o
+  CC     vdltodmx.o
+  CC     dmxtodmx.o
+  AR     libdmxconfig.a
+  CCLD   xdmxconfig
+  CCLD   vdltodmx
+  CCLD   dmxtodmx
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+Making all in examples
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/examples'
+  CC     dmxinfo-dmxinfo.o
+  CC     dmxwininfo-dmxwininfo.o
+  CC     dmxreconfig-dmxreconfig.o
+  CC     dmxresize-dmxresize.o
+  CC     dmxaddscreen-dmxaddscreen.o
+  CC     dmxrmscreen-dmxrmscreen.o
+  CC     dmxaddinput-dmxaddinput.o
+  CC     dmxrminput-dmxrminput.o
+  CC     xinput-xinput.o
+  CC     xtest-xtest.o
+  CC     evi-evi.o
+  CC     res-res.o
+  CC     xled-xled.o
+  CC     xbell-xbell.o
+  CC     ev-ev.o
+  CCLD   dmxinfo
+  CCLD   dmxwininfo
+  CCLD   dmxreconfig
+  CCLD   dmxresize
+  CCLD   dmxaddscreen
+  CCLD   dmxrmscreen
+  CCLD   dmxaddinput
+  CCLD   dmxrminput
+  CCLD   xinput
+  CCLD   xtest
+  CCLD   evi
+  CCLD   res
+  CCLD   xled
+  CCLD   xbell
+  CCLD   ev
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/examples'
+Making all in doc
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doc'
+Making all in doxygen
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doxygen'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doxygen'
+Making all in man
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/man'
+  GEN    Xdmx.1
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/man'
+Making all in glxProxy
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/glxProxy'
+  CC     compsize.o
+  CC     g_disptab.o
+compsize.c:33:7: warning: no previous prototype for ‘__glFogiv_size’ [-Wmissing-prototypes]
+compsize.c:47:7: warning: no previous prototype for ‘__glFogfv_size’ [-Wmissing-prototypes]
+compsize.c:52:7: warning: no previous prototype for ‘__glCallLists_size’ [-Wmissing-prototypes]
+compsize.c:74:7: warning: no previous prototype for ‘__glDrawPixels_size’ [-Wmissing-prototypes]
+compsize.c:151:7: warning: no previous prototype for ‘__glBitmap_size’ [-Wmissing-prototypes]
+compsize.c:156:7: warning: no previous prototype for ‘__glTexGendv_size’ [-Wmissing-prototypes]
+compsize.c:169:7: warning: no previous prototype for ‘__glTexGenfv_size’ [-Wmissing-prototypes]
+compsize.c:174:7: warning: no previous prototype for ‘__glTexGeniv_size’ [-Wmissing-prototypes]
+compsize.c:179:7: warning: no previous prototype for ‘__glTexParameterfv_size’ [-Wmissing-prototypes]
+compsize.c:202:7: warning: no previous prototype for ‘__glTexParameteriv_size’ [-Wmissing-prototypes]
+compsize.c:207:7: warning: no previous prototype for ‘__glTexEnvfv_size’ [-Wmissing-prototypes]
+compsize.c:219:7: warning: no previous prototype for ‘__glTexEnviv_size’ [-Wmissing-prototypes]
+compsize.c:224:7: warning: no previous prototype for ‘__glTexImage1D_size’ [-Wmissing-prototypes]
+compsize.c:300:7: warning: no previous prototype for ‘__glTexImage2D_size’ [-Wmissing-prototypes]
+compsize.c:377:7: warning: no previous prototype for ‘__glTexImage3D_size’ [-Wmissing-prototypes]
+compsize.c:456:7: warning: no previous prototype for ‘__glLightfv_size’ [-Wmissing-prototypes]
+compsize.c:474:7: warning: no previous prototype for ‘__glLightiv_size’ [-Wmissing-prototypes]
+compsize.c:479:7: warning: no previous prototype for ‘__glLightModelfv_size’ [-Wmissing-prototypes]
+compsize.c:491:7: warning: no previous prototype for ‘__glLightModeliv_size’ [-Wmissing-prototypes]
+compsize.c:496:7: warning: no previous prototype for ‘__glMaterialfv_size’ [-Wmissing-prototypes]
+compsize.c:511:7: warning: no previous prototype for ‘__glMaterialiv_size’ [-Wmissing-prototypes]
+compsize.c:516:7: warning: no previous prototype for ‘__glColorTableParameterfv_size’ [-Wmissing-prototypes]
+compsize.c:536:7: warning: no previous prototype for ‘__glColorTableParameteriv_size’ [-Wmissing-prototypes]
+compsize.c:541:7: warning: no previous prototype for ‘__glConvolutionParameterfv_size’ [-Wmissing-prototypes]
+compsize.c:555:7: warning: no previous prototype for ‘__glConvolutionParameteriv_size’ [-Wmissing-prototypes]
+  CC     global.o
+  CC     glxcmds.o
+  CC     glxcmdsswap.o
+glxcmds.c:73:10: warning: no previous prototype for ‘GetBackEndDisplay’ [-Wmissing-prototypes]
+glxcmds.c:382:5: warning: no previous prototype for ‘__glXCreateContextWithConfigSGIX’ [-Wmissing-prototypes]
+glxcmds.c:391:5: warning: no previous prototype for ‘__glXQueryMaxSwapBarriersSGIX’ [-Wmissing-prototypes]
+glxcmds.c:413:5: warning: no previous prototype for ‘__glXBindSwapBarrierSGIX’ [-Wmissing-prototypes]
+glxcmds.c:443:5: warning: no previous prototype for ‘__glXJoinSwapGroupSGIX’ [-Wmissing-prototypes]
+glxcmds.c:624:5: warning: no previous prototype for ‘GetCurrentBackEndTag’ [-Wmissing-prototypes]
+glxcmds.c:1304:5: warning: no previous prototype for ‘__glXMakeCurrentReadSGI’ [-Wmissing-prototypes]
+glxcmds.c:1940:5: warning: no previous prototype for ‘__glXDoSwapBuffers’ [-Wmissing-prototypes]
+glxcmdsswap.c:80:5: warning: no previous prototype for ‘__glXSwapCreateContextWithConfigSGIX’ [-Wmissing-prototypes]
+glxcmdsswap.c: In function ‘__glXSwapCreateContextWithConfigSGIX’:
+glxcmdsswap.c:91:5: warning: implicit declaration of function ‘__glXCreateContextWithConfigSGIX’ [-Wimplicit-function-declaration]
+glxcmdsswap.c:91:5: warning: nested extern declaration of ‘__glXCreateContextWithConfigSGIX’ [-Wnested-externs]
+glxcmdsswap.c: At top level:
+glxcmdsswap.c:94:5: warning: no previous prototype for ‘__glXSwapQueryMaxSwapBarriersSGIX’ [-Wmissing-prototypes]
+glxcmdsswap.c: In function ‘__glXSwapQueryMaxSwapBarriersSGIX’:
+glxcmdsswap.c:103:5: warning: implicit declaration of function ‘__glXQueryMaxSwapBarriersSGIX’ [-Wimplicit-function-declaration]
+glxcmdsswap.c:103:5: warning: nested extern declaration of ‘__glXQueryMaxSwapBarriersSGIX’ [-Wnested-externs]
+glxcmdsswap.c: At top level:
+glxcmdsswap.c:106:5: warning: no previous prototype for ‘__glXSwapBindSwapBarrierSGIX’ [-Wmissing-prototypes]
+glxcmdsswap.c: In function ‘__glXSwapBindSwapBarrierSGIX’:
+glxcmdsswap.c:115:5: warning: implicit declaration of function ‘__glXBindSwapBarrierSGIX’ [-Wimplicit-function-declaration]
+glxcmdsswap.c:115:5: warning: nested extern declaration of ‘__glXBindSwapBarrierSGIX’ [-Wnested-externs]
+glxcmdsswap.c: At top level:
+glxcmdsswap.c:118:5: warning: no previous prototype for ‘__glXSwapJoinSwapGroupSGIX’ [-Wmissing-prototypes]
+glxcmdsswap.c: In function ‘__glXSwapJoinSwapGroupSGIX’:
+glxcmdsswap.c:127:5: warning: implicit declaration of function ‘__glXJoinSwapGroupSGIX’ [-Wimplicit-function-declaration]
+glxcmdsswap.c:127:5: warning: nested extern declaration of ‘__glXJoinSwapGroupSGIX’ [-Wnested-externs]
+glxcmdsswap.c: At top level:
+glxcmdsswap.c:168:5: warning: no previous prototype for ‘__glXSwapMakeCurrentReadSGI’ [-Wmissing-prototypes]
+glxcmdsswap.c: In function ‘__glXSwapMakeCurrentReadSGI’:
+glxcmdsswap.c:179:5: warning: implicit declaration of function ‘__glXMakeCurrentReadSGI’ [-Wimplicit-function-declaration]
+glxcmdsswap.c:179:5: warning: nested extern declaration of ‘__glXMakeCurrentReadSGI’ [-Wnested-externs]
+glxcmdsswap.c: In function ‘__glXSwapVendorPrivateWithReply’:
+glxcmdsswap.c:924:4: warning: implicit declaration of function ‘__glXSwapGetFBConfigsSGIX’ [-Wimplicit-function-declaration]
+glxcmdsswap.c:924:4: warning: nested extern declaration of ‘__glXSwapGetFBConfigsSGIX’ [-Wnested-externs]
+glxcmdsswap.c: At top level:
+glxcmdsswap.c:956:5: warning: no previous prototype for ‘__glXSwapGetFBConfigsSGIX’ [-Wmissing-prototypes]
+  CC     glxext.o
+glxext.c:53:6: warning: no previous prototype for ‘GlxPushProvider’ [-Wmissing-prototypes]
+  CC     glxfbconfig.o
+  CC     glxscreens.o
+  CC     glxsingle.o
+glxscreens.c:330:16: warning: no previous prototype for ‘glxLookupFBConfig’ [-Wmissing-prototypes]
+glxscreens.c:342:16: warning: no previous prototype for ‘glxLookupFBConfigByVID’ [-Wmissing-prototypes]
+glxscreens.c:354:16: warning: no previous prototype for ‘glxLookupBackEndFBConfig’ [-Wmissing-prototypes]
+glxscreens.c:368:5: warning: no previous prototype for ‘glxIsExtensionSupported’ [-Wmissing-prototypes]
+glxsingle.c:156:5: warning: no previous prototype for ‘__glXForwardSingleReq’ [-Wmissing-prototypes]
+glxsingle.c:209:5: warning: no previous prototype for ‘__glXForwardPipe0WithReply’ [-Wmissing-prototypes]
+glxsingle.c:291:5: warning: no previous prototype for ‘__glXForwardAllWithReply’ [-Wmissing-prototypes]
+glxsingle.c:391:5: warning: no previous prototype for ‘__glXForwardSingleReqSwap’ [-Wmissing-prototypes]
+glxsingle.c:415:5: warning: no previous prototype for ‘__glXForwardPipe0WithReplySwap’ [-Wmissing-prototypes]
+glxsingle.c:439:5: warning: no previous prototype for ‘__glXForwardPipe0WithReplySwapsv’ [-Wmissing-prototypes]
+glxsingle.c:464:5: warning: no previous prototype for ‘__glXForwardPipe0WithReplySwapiv’ [-Wmissing-prototypes]
+glxsingle.c:489:5: warning: no previous prototype for ‘__glXForwardPipe0WithReplySwapdv’ [-Wmissing-prototypes]
+glxsingle.c:514:5: warning: no previous prototype for ‘__glXForwardAllWithReplySwap’ [-Wmissing-prototypes]
+glxsingle.c:539:5: warning: no previous prototype for ‘__glXForwardAllWithReplySwapsv’ [-Wmissing-prototypes]
+glxsingle.c:564:5: warning: no previous prototype for ‘__glXForwardAllWithReplySwapiv’ [-Wmissing-prototypes]
+glxsingle.c:589:5: warning: no previous prototype for ‘__glXForwardAllWithReplySwapdv’ [-Wmissing-prototypes]
+  CC     glxswap.o
+  CC     glxutil.o
+  CC     glxvendor.o
+  CC     glxvisuals.o
+glxvendor.c:147:5: warning: no previous prototype for ‘__glXVForwardSingleReq’ [-Wmissing-prototypes]
+glxvendor.c:196:5: warning: no previous prototype for ‘__glXVForwardPipe0WithReply’ [-Wmissing-prototypes]
+glxvendor.c:275:5: warning: no previous prototype for ‘__glXVForwardAllWithReply’ [-Wmissing-prototypes]
+glxvendor.c:372:5: warning: no previous prototype for ‘__glXVForwardSingleReqSwap’ [-Wmissing-prototypes]
+glxvendor.c:386:5: warning: no previous prototype for ‘__glXVForwardPipe0WithReplySwap’ [-Wmissing-prototypes]
+glxvendor.c:411:5: warning: no previous prototype for ‘__glXVForwardPipe0WithReplySwapsv’ [-Wmissing-prototypes]
+glxvendor.c:436:5: warning: no previous prototype for ‘__glXVForwardPipe0WithReplySwapiv’ [-Wmissing-prototypes]
+glxvendor.c:461:5: warning: no previous prototype for ‘__glXVForwardPipe0WithReplySwapdv’ [-Wmissing-prototypes]
+glxvendor.c:486:5: warning: no previous prototype for ‘__glXVForwardAllWithReplySwap’ [-Wmissing-prototypes]
+glxvendor.c:511:5: warning: no previous prototype for ‘__glXVForwardAllWithReplySwapsv’ [-Wmissing-prototypes]
+glxvendor.c:536:5: warning: no previous prototype for ‘__glXVForwardAllWithReplySwapiv’ [-Wmissing-prototypes]
+glxvendor.c:561:5: warning: no previous prototype for ‘__glXVForwardAllWithReplySwapdv’ [-Wmissing-prototypes]
+  CC     g_renderswap.o
+  CC     render2swap.o
+g_renderswap.c: In function ‘__glXDispSwap_Fogfv’:
+g_renderswap.c:822:2: warning: implicit declaration of function ‘__glFogfv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:822:2: warning: nested extern declaration of ‘__glFogfv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_Fogiv’:
+g_renderswap.c:846:2: warning: implicit declaration of function ‘__glFogiv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:846:2: warning: nested extern declaration of ‘__glFogiv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_Lightfv’:
+g_renderswap.c:888:2: warning: implicit declaration of function ‘__glLightfv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:888:2: warning: nested extern declaration of ‘__glLightfv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_Lightiv’:
+g_renderswap.c:914:2: warning: implicit declaration of function ‘__glLightiv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:914:2: warning: nested extern declaration of ‘__glLightiv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_LightModelfv’:
+g_renderswap.c:939:2: warning: implicit declaration of function ‘__glLightModelfv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:939:2: warning: nested extern declaration of ‘__glLightModelfv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_LightModeliv’:
+g_renderswap.c:963:2: warning: implicit declaration of function ‘__glLightModeliv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:963:2: warning: nested extern declaration of ‘__glLightModeliv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_Materialfv’:
+g_renderswap.c:1005:2: warning: implicit declaration of function ‘__glMaterialfv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:1005:2: warning: nested extern declaration of ‘__glMaterialfv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_Materialiv’:
+g_renderswap.c:1031:2: warning: implicit declaration of function ‘__glMaterialiv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:1031:2: warning: nested extern declaration of ‘__glMaterialiv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_TexParameterfv’:
+g_renderswap.c:1093:2: warning: implicit declaration of function ‘__glTexParameterfv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:1093:2: warning: nested extern declaration of ‘__glTexParameterfv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_TexParameteriv’:
+g_renderswap.c:1119:2: warning: implicit declaration of function ‘__glTexParameteriv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:1119:2: warning: nested extern declaration of ‘__glTexParameteriv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_TexEnvfv’:
+g_renderswap.c:1145:2: warning: implicit declaration of function ‘__glTexEnvfv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:1145:2: warning: nested extern declaration of ‘__glTexEnvfv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_TexEnviv’:
+g_renderswap.c:1171:2: warning: implicit declaration of function ‘__glTexEnviv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:1171:2: warning: nested extern declaration of ‘__glTexEnviv_size’ [-Wnested-externs]
+g_renderswap.c: In function ‘__glXDispSwap_TexGendv’:
+g_renderswap.c:1205:2: warning: implicit declaration of function ‘__glTexGendv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:1205:2: warning: nested extern declaration of ‘__glTexGendv_size’ [-Wnested-externs]
+g_renderswap.c:1198:8: warning: variable ‘cmdlen’ set but not used [-Wunused-but-set-variable]
+g_renderswap.c: In function ‘__glXDispSwap_TexGenfv’:
+g_renderswap.c:1239:2: warning: implicit declaration of function ‘__glTexGenfv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:1239:2: warning: nested extern declaration of ‘__glTexGenfv_size’ [-Wnested-externs]
+render2swap.c:35:7: warning: no previous prototype for ‘__glEvalComputeK’ [-Wmissing-prototypes]
+g_renderswap.c: In function ‘__glXDispSwap_TexGeniv’:
+g_renderswap.c:1265:2: warning: implicit declaration of function ‘__glTexGeniv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:1265:2: warning: nested extern declaration of ‘__glTexGeniv_size’ [-Wnested-externs]
+render2swap.c: In function ‘__glXDispSwap_Map1f’:
+render2swap.c:68:17: warning: variable ‘u2’ set but not used [-Wunused-but-set-variable]
+render2swap.c:68:13: warning: variable ‘u1’ set but not used [-Wunused-but-set-variable]
+render2swap.c: In function ‘__glXDispSwap_Map2f’:
+render2swap.c:99:25: warning: variable ‘v2’ set but not used [-Wunused-but-set-variable]
+render2swap.c:99:21: warning: variable ‘v1’ set but not used [-Wunused-but-set-variable]
+render2swap.c:99:17: warning: variable ‘u2’ set but not used [-Wunused-but-set-variable]
+render2swap.c:99:13: warning: variable ‘u1’ set but not used [-Wunused-but-set-variable]
+render2swap.c:98:36: warning: variable ‘vstride’ set but not used [-Wunused-but-set-variable]
+render2swap.c:98:27: warning: variable ‘ustride’ set but not used [-Wunused-but-set-variable]
+render2swap.c: In function ‘__glXDispSwap_Map1d’:
+render2swap.c:140:23: warning: variable ‘points’ set but not used [-Wunused-but-set-variable]
+render2swap.c:140:18: warning: variable ‘u2’ set but not used [-Wunused-but-set-variable]
+render2swap.c:140:14: warning: variable ‘u1’ set but not used [-Wunused-but-set-variable]
+render2swap.c: In function ‘__glXDispSwap_Map2d’:
+render2swap.c:182:36: warning: variable ‘vstride’ set but not used [-Wunused-but-set-variable]
+render2swap.c:182:27: warning: variable ‘ustride’ set but not used [-Wunused-but-set-variable]
+render2swap.c:181:31: warning: variable ‘points’ set but not used [-Wunused-but-set-variable]
+render2swap.c:181:26: warning: variable ‘v2’ set but not used [-Wunused-but-set-variable]
+render2swap.c:181:22: warning: variable ‘v1’ set but not used [-Wunused-but-set-variable]
+render2swap.c:181:18: warning: variable ‘u2’ set but not used [-Wunused-but-set-variable]
+render2swap.c:181:14: warning: variable ‘u1’ set but not used [-Wunused-but-set-variable]
+g_renderswap.c: At top level:
+g_renderswap.c:2009:6: warning: no previous prototype for ‘__glXDispSwap_BindTexture’ [-Wmissing-prototypes]
+g_renderswap.c:2035:6: warning: no previous prototype for ‘__glXDispSwap_BlendColor’ [-Wmissing-prototypes]
+g_renderswap.c:2046:6: warning: no previous prototype for ‘__glXDispSwap_BlendEquation’ [-Wmissing-prototypes]
+g_renderswap.c:2054:6: warning: no previous prototype for ‘__glXDispSwap_ColorTableParameterfv’ [-Wmissing-prototypes]
+g_renderswap.c: In function ‘__glXDispSwap_ColorTableParameterfv’:
+g_renderswap.c:2063:2: warning: implicit declaration of function ‘__glColorTableParameterfv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:2063:2: warning: nested extern declaration of ‘__glColorTableParameterfv_size’ [-Wnested-externs]
+g_renderswap.c: At top level:
+g_renderswap.c:2070:6: warning: no previous prototype for ‘__glXDispSwap_ColorTableParameteriv’ [-Wmissing-prototypes]
+g_renderswap.c: In function ‘__glXDispSwap_ColorTableParameteriv’:
+g_renderswap.c:2079:2: warning: implicit declaration of function ‘__glColorTableParameteriv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:2079:2: warning: nested extern declaration of ‘__glColorTableParameteriv_size’ [-Wnested-externs]
+g_renderswap.c: At top level:
+g_renderswap.c:2086:6: warning: no previous prototype for ‘__glXDispSwap_CopyColorTable’ [-Wmissing-prototypes]
+g_renderswap.c:2110:6: warning: no previous prototype for ‘__glXDispSwap_ConvolutionParameterf’ [-Wmissing-prototypes]
+g_renderswap.c: In function ‘__glXDispSwap_ConvolutionParameterfv’:
+g_renderswap.c:2129:2: warning: implicit declaration of function ‘__glConvolutionParameterfv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:2129:2: warning: nested extern declaration of ‘__glConvolutionParameterfv_size’ [-Wnested-externs]
+g_renderswap.c: At top level:
+g_renderswap.c:2136:6: warning: no previous prototype for ‘__glXDispSwap_ConvolutionParameteri’ [-Wmissing-prototypes]
+g_renderswap.c: In function ‘__glXDispSwap_ConvolutionParameteriv’:
+g_renderswap.c:2155:2: warning: implicit declaration of function ‘__glConvolutionParameteriv_size’ [-Wimplicit-function-declaration]
+g_renderswap.c:2155:2: warning: nested extern declaration of ‘__glConvolutionParameteriv_size’ [-Wnested-externs]
+g_renderswap.c: At top level:
+g_renderswap.c:2187:6: warning: no previous prototype for ‘__glXDispSwap_Histogram’ [-Wmissing-prototypes]
+g_renderswap.c:2197:6: warning: no previous prototype for ‘__glXDispSwap_Minmax’ [-Wmissing-prototypes]
+g_renderswap.c:2206:6: warning: no previous prototype for ‘__glXDispSwap_ResetHistogram’ [-Wmissing-prototypes]
+g_renderswap.c:2214:6: warning: no previous prototype for ‘__glXDispSwap_ResetMinmax’ [-Wmissing-prototypes]
+  CC     renderpixswap.o
+renderpixswap.c:260:6: warning: no previous prototype for ‘__glXDispSwap_ColorTable’ [-Wmissing-prototypes]
+renderpixswap.c: In function ‘__glXDispSwap_SeparableFilter2D’:
+renderpixswap.c:361:11: warning: variable ‘hdrlen’ set but not used [-Wunused-but-set-variable]
+  AR     libglxproxy.a
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/glxProxy'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx'
+  CC     dmx.o
+  CC     dmxcb.o
+  CC     dmxcmap.o
+  CC     dmxcursor.o
+  CC     dmxdpms.o
+  CC     dmxextension.o
+  CC     dmxfont.o
+  CC     dmxgc.o
+  CC     dmxgcops.o
+  CC     dmxinit.o
+  CC     dmxinput.o
+  CC     dmxlog.o
+  CC     dmxpict.o
+  CC     dmxpixmap.o
+  CC     dmxprop.o
+  CC     dmxscrinit.o
+  CC     dmxshadow.o
+  CC     dmxstat.o
+  CC     dmxsync.o
+  CC     dmxvisual.o
+  CC     dmxwindow.o
+dmxwindow.c: In function ‘dmxResizeWindow’:
+dmxwindow.c:835:21: warning: variable ‘pSibPriv’ set but not used [-Wunused-but-set-variable]
+  CC     miinitext.o
+  CC     fbcmap_mi.o
+  CC     panoramiX.o
+  CC     dmx_glxvisuals.o
+  CCLD   Xdmx
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw'
+make[2]: Nothing to be done for `all-am'.
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw'
+Making all in test
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/test'
+Making all in .
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/test'
+  CC     xkb.o
+  CC     sdksyms.lo
+  CC     input.o
+  CC     xtest.o
+  CC     list.o
+  CC     misc.o
+  CC     fixes.o
+  CCLD   libxservertest.la
+copying selected object files to avoid basename conflicts...
+  CCLD   xkb
+  CCLD   input
+  CCLD   xtest
+  CCLD   list
+  CCLD   misc
+  CCLD   fixes
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/test'
+Making all in xi2
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/test/xi2'
+  CC     protocol-common.o
+  CC     protocol-xiqueryversion.o
+  CC     protocol-xiquerydevice.o
+  CC     protocol-xiselectevents.o
+  CC     protocol-xigetselectedevents.o
+  CC     protocol-xisetclientpointer.o
+  CC     protocol-xigetclientpointer.o
+  CC     protocol-xipassivegrabdevice.o
+  CC     protocol-xiquerypointer.o
+  CC     protocol-xiwarppointer.o
+  CC     protocol-eventconvert.o
+  CCLD   protocol-xiqueryversion
+  CCLD   protocol-xiquerydevice
+  CCLD   protocol-xiselectevents
+  CCLD   protocol-xigetselectedevents
+  CCLD   protocol-xisetclientpointer
+  CCLD   protocol-xigetclientpointer
+  CCLD   protocol-xipassivegrabdevice
+  CCLD   protocol-xiquerypointer
+  CCLD   protocol-xiwarppointer
+  CCLD   protocol-eventconvert
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/test/xi2'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/test'
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2'
+make[1]: Nothing to be done for `all-am'.
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2'
+Making install in doc
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/doc'
+Making install in dtrace
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/doc/dtrace'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/doc/dtrace'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "" || /bin/mkdir -p "/sources/buildmgr/pkgroot"
+test -z "" || /bin/mkdir -p "/sources/buildmgr/pkgroot"
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/doc/dtrace'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/doc/dtrace'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/doc'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/doc'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/doc'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/doc'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/doc'
+Making install in man
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/man'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 Xserver.1 '/sources/buildmgr/pkgroot/usr/share/man/man1'
+test -z "/usr/share/man/man5" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man5"
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/man'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/man'
+Making install in include
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/include'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/include'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 XIstubs.h Xprintf.h callback.h client.h closestr.h closure.h colormap.h colormapst.h hotplug.h cursor.h cursorstr.h dix.h dixaccess.h dixevents.h dixfont.h dixfontstr.h dixgrabs.h dixstruct.h events.h exevents.h extension.h extinit.h extnsionst.h gc.h gcstruct.h globals.h input.h inputstr.h list.h misc.h miscstruct.h opaque.h os.h pixmap.h pixmapstr.h privates.h property.h propertyst.h ptrveloc.h region.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+ /usr/bin/install -c -m 644 regionstr.h registry.h resource.h rgb.h screenint.h scrnintstr.h selection.h servermd.h site.h swaprep.h swapreq.h validate.h window.h windowstr.h xkbfile.h xkbsrv.h xkbstr.h xkbrules.h xserver-properties.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+ /usr/bin/install -c -m 644 xorg-server.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/include'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/include'
+Making install in dix
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/dix'
+make  install-am
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/dix'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/dix'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/xorg"
+ /usr/bin/install -c -m 644 protocol.txt '/sources/buildmgr/pkgroot/usr/lib/xorg'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/dix'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/dix'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/dix'
+Making install in fb
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/fb'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/fb'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 fb.h fbrop.h fboverlay.h wfbrename.h fbpict.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/fb'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/fb'
+Making install in mi
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/mi'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/mi'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 micmap.h miline.h mipointer.h mi.h mibstore.h migc.h mipointrst.h mizerarc.h micoord.h mifillarc.h mispans.h miwideline.h mistruct.h mifpoly.h mioverlay.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/mi'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/mi'
+Making install in Xext
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/Xext'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/Xext'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 xvdix.h xvmcext.h geext.h geint.h shmint.h syncsdk.h panoramiXsrv.h panoramiX.h xace.h xacestr.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/Xext'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/Xext'
+Making install in miext
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext'
+Making install in sync
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/sync'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/sync'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 misync.h misyncstr.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/sync'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/sync'
+Making install in damage
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/damage'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/damage'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 damage.h damagestr.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/damage'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/damage'
+Making install in shadow
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/shadow'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/shadow'
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 shadow.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/shadow'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/shadow'
+Making install in cw
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/cw'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext/cw'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/cw'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext/cw'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/miext'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/miext'
+Making install in os
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/os'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/os'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/os'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/os'
+Making install in randr
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/randr'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/randr'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 randrstr.h rrtransform.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/randr'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/randr'
+Making install in render
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/render'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/render'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 picture.h mipict.h glyphstr.h picturestr.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/render'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/render'
+Making install in Xi
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/Xi'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/Xi'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/Xi'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/Xi'
+Making install in xkb
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/xkb'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/xkb'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/var/lib/xkb" || /bin/mkdir -p "/sources/buildmgr/pkgroot/var/lib/xkb"
+ /usr/bin/install -c -m 644 README.compiled '/sources/buildmgr/pkgroot/var/lib/xkb'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/xkb'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/xkb'
+Making install in dbe
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/dbe'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/dbe'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 dbestruct.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/dbe'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/dbe'
+Making install in record
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/record'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/record'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/record'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/record'
+Making install in xfixes
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/xfixes'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/xfixes'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 xfixes.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/xfixes'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/xfixes'
+Making install in damageext
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/damageext'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/damageext'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/damageext'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/damageext'
+Making install in composite
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/composite'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/composite'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 compositeext.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/composite'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/composite'
+Making install in glx
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/glx'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/glx'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/glx'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/glx'
+Making install in exa
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/exa'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/exa'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 exa.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/exa'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/exa'
+Making install in config
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/config'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/config'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "" || /bin/mkdir -p "/sources/buildmgr/pkgroot"
+test -z "/usr/share/X11/xorg.conf.d" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/X11/xorg.conf.d"
+ /usr/bin/install -c -m 644 10-evdev.conf '/sources/buildmgr/pkgroot/usr/share/X11/xorg.conf.d'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/config'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/config'
+Making install in hw
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw'
+Making install in xfree86
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+make  install-recursive
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+Making install in common
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/common'
+make  install-am
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/common'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/common'
+make[6]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 compiler.h fourcc.h xf86.h xf86Module.h xf86Opt.h xf86PciInfo.h xf86Priv.h xf86Privstr.h xf86cmap.h xf86fbman.h xf86str.h xf86Xinput.h xisb.h xf86xv.h xf86xvmc.h xf86xvpriv.h vidmodeproc.h xorgVersion.h xf86sbusBus.h xf86VGAarbiter.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/common'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/common'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/common'
+Making install in ddc
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ddc'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ddc'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 edid.h xf86DDC.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ddc'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ddc'
+Making install in i2c
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/i2c'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/i2c'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/multimedia" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   bt829_drv.la fi1236_drv.la msp3430_drv.la tda8425_drv.la tda9850_drv.la tda9885_drv.la uda1380_drv.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia'
+ /usr/bin/install -c -m 644 xf86i2c.h bt829.h fi1236.h msp3430.h tda8425.h tda9850.h tda9885.h uda1380.h i2c_def.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+libtool: install: /usr/bin/install -c .libs/bt829_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/bt829_drv.so
+libtool: install: /usr/bin/install -c .libs/bt829_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/bt829_drv.la
+libtool: install: /usr/bin/install -c .libs/fi1236_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/fi1236_drv.so
+libtool: install: /usr/bin/install -c .libs/fi1236_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/fi1236_drv.la
+libtool: install: /usr/bin/install -c .libs/msp3430_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/msp3430_drv.so
+libtool: install: /usr/bin/install -c .libs/msp3430_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/msp3430_drv.la
+libtool: install: /usr/bin/install -c .libs/tda8425_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/tda8425_drv.so
+libtool: install: /usr/bin/install -c .libs/tda8425_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/tda8425_drv.la
+libtool: install: /usr/bin/install -c .libs/tda9850_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/tda9850_drv.so
+libtool: install: /usr/bin/install -c .libs/tda9850_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/tda9850_drv.la
+libtool: install: /usr/bin/install -c .libs/tda9885_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/tda9885_drv.so
+libtool: install: /usr/bin/install -c .libs/tda9885_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/tda9885_drv.la
+libtool: install: /usr/bin/install -c .libs/uda1380_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/uda1380_drv.so
+libtool: install: /usr/bin/install -c .libs/uda1380_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/multimedia/uda1380_drv.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/multimedia'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/i2c'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/i2c'
+Making install in x86emu
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/x86emu'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/x86emu'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/x86emu'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/x86emu'
+Making install in int10
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/int10'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/int10'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libint10.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules'
+ /usr/bin/install -c -m 644 xf86int10.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+libtool: install: /usr/bin/install -c .libs/libint10.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/libint10.so
+libtool: install: /usr/bin/install -c .libs/libint10.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/libint10.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/int10'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/int10'
+Making install in fbdevhw
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw'
+Making install in man
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw/man'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw/man'
+make[6]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 fbdevhw.4 '/sources/buildmgr/pkgroot/usr/share/man/man4'
+test -z "/usr/share/man/man5" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man5"
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw/man'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw/man'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw'
+make[6]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libfbdevhw.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules'
+ /usr/bin/install -c -m 644 fbdevhw.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+libtool: install: /usr/bin/install -c .libs/libfbdevhw.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/libfbdevhw.so
+libtool: install: /usr/bin/install -c .libs/libfbdevhw.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/libfbdevhw.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules'
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/fbdevhw'
+Making install in os-support
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support'
+Making install in bus
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/bus'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/bus'
+make[6]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 xf86Pci.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/bus'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/bus'
+Making install in linux
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/linux'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/linux'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/linux'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/linux'
+Making install in misc
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/misc'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/misc'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/misc'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support/misc'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support'
+make[6]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 xf86_OSproc.h xf86_OSlib.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/os-support'
+Making install in parser
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/parser'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/parser'
+test -z "/usr/lib" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 xf86Parser.h xf86Optrec.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/parser'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/parser'
+Making install in ramdac
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ramdac'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ramdac'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 BT.h IBM.h TI.h xf86Cursor.h xf86RamDac.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ramdac'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/ramdac'
+Making install in shadowfb
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/shadowfb'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/shadowfb'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libshadowfb.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules'
+ /usr/bin/install -c -m 644 shadowfb.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+libtool: install: /usr/bin/install -c .libs/libshadowfb.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/libshadowfb.so
+libtool: install: /usr/bin/install -c .libs/libshadowfb.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/libshadowfb.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/shadowfb'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/shadowfb'
+Making install in vbe
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vbe'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vbe'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libvbe.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules'
+ /usr/bin/install -c -m 644 vbe.h vbeModes.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+libtool: install: /usr/bin/install -c .libs/libvbe.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/libvbe.so
+libtool: install: /usr/bin/install -c .libs/libvbe.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/libvbe.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vbe'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vbe'
+Making install in vgahw
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vgahw'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vgahw'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libvgahw.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules'
+ /usr/bin/install -c -m 644 vgaHW.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+libtool: install: /usr/bin/install -c .libs/libvgahw.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/libvgahw.so
+libtool: install: /usr/bin/install -c .libs/libvgahw.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/libvgahw.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vgahw'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/vgahw'
+Making install in xaa
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/xaa'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/xaa'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libxaa.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules'
+ /usr/bin/install -c -m 644 xaa.h xaalocal.h xaarop.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+libtool: install: /usr/bin/install -c .libs/libxaa.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/libxaa.so
+libtool: install: /usr/bin/install -c .libs/libxaa.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/libxaa.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/xaa'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/xaa'
+Making install in loader
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/loader'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/loader'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/loader'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/loader'
+Making install in dixmods
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods'
+Making install in extmod
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods/extmod'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods/extmod'
+make[6]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/extensions" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /bin/sh ../../../../libtool   --mode=install /usr/bin/install -c   libextmod.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions'
+ /usr/bin/install -c -m 644 dgaproc.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+libtool: install: /usr/bin/install -c .libs/libextmod.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/libextmod.so
+libtool: install: /usr/bin/install -c .libs/libextmod.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/libextmod.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/extensions'
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods/extmod'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods/extmod'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods'
+make[6]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/extensions" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions"
+test -z "/usr/lib/X11/modules" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules"
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   librecord.la libdbe.la libglx.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions'
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libfb.la libwfb.la libshadow.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules'
+libtool: install: /usr/bin/install -c .libs/librecord.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/librecord.so
+libtool: install: /usr/bin/install -c .libs/libfb.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/libfb.so
+libtool: install: /usr/bin/install -c .libs/librecord.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/librecord.la
+libtool: install: /usr/bin/install -c .libs/libdbe.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/libdbe.so
+libtool: install: /usr/bin/install -c .libs/libdbe.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/libdbe.la
+libtool: install: /usr/bin/install -c .libs/libglx.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/libglx.so
+libtool: install: /usr/bin/install -c .libs/libfb.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/libfb.la
+libtool: install: /usr/bin/install -c .libs/libwfb.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/libwfb.so
+libtool: install: /usr/bin/install -c .libs/libglx.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/libglx.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/extensions'
+libtool: install: /usr/bin/install -c .libs/libwfb.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/libwfb.la
+libtool: install: /usr/bin/install -c .libs/libshadow.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/libshadow.so
+libtool: install: /usr/bin/install -c .libs/libshadow.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/libshadow.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules'
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dixmods'
+Making install in exa
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa'
+Making install in man
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa/man'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa/man'
+make[6]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 exa.4 '/sources/buildmgr/pkgroot/usr/share/man/man4'
+test -z "/usr/share/man/man5" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man5"
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa/man'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa/man'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa'
+make[6]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules"
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libexa.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules'
+libtool: install: /usr/bin/install -c .libs/libexa.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/libexa.so
+libtool: install: /usr/bin/install -c .libs/libexa.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/libexa.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules'
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/exa'
+Making install in modes
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/modes'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/modes'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /usr/bin/install -c -m 644 xf86Crtc.h xf86Modes.h xf86RandR12.h xf86Rename.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/modes'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/modes'
+Making install in dri
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/extensions" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libdri.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions'
+ /usr/bin/install -c -m 644 dri.h sarea.h dristruct.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+libtool: install: /usr/bin/install -c .libs/libdri.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/libdri.so
+libtool: install: /usr/bin/install -c .libs/libdri.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/libdri.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/extensions'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri'
+Making install in dri2
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri2'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri2'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/extensions" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions"
+test -z "/usr/include/xorg" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/include/xorg"
+ /bin/sh ../../../libtool   --mode=install /usr/bin/install -c   libdri2.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions'
+ /usr/bin/install -c -m 644 dri2.h '/sources/buildmgr/pkgroot/usr/include/xorg'
+libtool: install: /usr/bin/install -c .libs/libdri2.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/libdri2.so
+libtool: install: /usr/bin/install -c .libs/libdri2.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/extensions/libdri2.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/extensions'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri2'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/dri2'
+Making install in utils
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils'
+Making install in gtf
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/gtf'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/gtf'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+make[6]: Nothing to be done for `install-data-am'.
+  /bin/sh ../../../../libtool   --mode=install /usr/bin/install -c gtf '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: /usr/bin/install -c gtf /sources/buildmgr/pkgroot/usr/bin/gtf
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/gtf'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/gtf'
+Making install in cvt
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/cvt'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/cvt'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+make[6]: Nothing to be done for `install-data-am'.
+  /bin/sh ../../../../libtool   --mode=install /usr/bin/install -c cvt '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: /usr/bin/install -c cvt /sources/buildmgr/pkgroot/usr/bin/cvt
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/cvt'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/cvt'
+Making install in man
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/man'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/man'
+make[6]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 cvt.1 gtf.1 '/sources/buildmgr/pkgroot/usr/share/man/man1'
+test -z "/usr/share/man/man5" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man5"
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/man'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils/man'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils'
+make[6]: Nothing to be done for `install-exec-am'.
+make[6]: Nothing to be done for `install-data-am'.
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/utils'
+Making install in doc
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/doc'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/doc'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/doc'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/doc'
+Making install in man
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/man'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/man'
+make[5]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 Xorg.1 '/sources/buildmgr/pkgroot/usr/share/man/man1'
+test -z "/usr/share/man/man5" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man5"
+ /usr/bin/install -c -m 644 xorg.conf.5 xorg.conf.d.5 '/sources/buildmgr/pkgroot/usr/share/man/man5'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/man'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86/man'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+mkdir -p /sources/buildmgr/pkgroot/var/log
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c Xorg '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: /usr/bin/install -c Xorg /sources/buildmgr/pkgroot/usr/bin/Xorg
+(cd /sources/buildmgr/pkgroot/usr/bin && rm -f X && ln -s Xorg X)
+chown root /sources/buildmgr/pkgroot/usr/bin/Xorg
+chmod u+s /sources/buildmgr/pkgroot/usr/bin/Xorg
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xfree86'
+Making install in vfb
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/vfb'
+Making install in man
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/vfb/man'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/vfb/man'
+make[4]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+test -z "/usr/share/man/man5" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man5"
+ /usr/bin/install -c -m 644 Xvfb.1 '/sources/buildmgr/pkgroot/usr/share/man/man1'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/vfb/man'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/vfb/man'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/vfb'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/vfb'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+make[4]: Nothing to be done for `install-data-am'.
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c Xvfb '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: /usr/bin/install -c Xvfb /sources/buildmgr/pkgroot/usr/bin/Xvfb
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/vfb'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/vfb'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/vfb'
+Making install in xnest
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xnest'
+Making install in man
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xnest/man'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xnest/man'
+make[4]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+test -z "/usr/share/man/man5" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man5"
+ /usr/bin/install -c -m 644 Xnest.1 '/sources/buildmgr/pkgroot/usr/share/man/man1'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xnest/man'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xnest/man'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xnest'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/xnest'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+make[4]: Nothing to be done for `install-data-am'.
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c Xnest '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: /usr/bin/install -c Xnest /sources/buildmgr/pkgroot/usr/bin/Xnest
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xnest'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xnest'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/xnest'
+Making install in dmx
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx'
+Making install in input
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/input'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/input'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/input'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/input'
+Making install in config
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+make  install-recursive
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+Making install in man
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config/man'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config/man'
+make[6]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+test -z "/usr/share/man/man5" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man5"
+ /usr/bin/install -c -m 644 xdmxconfig.1 vdltodmx.1 dmxtodmx.1 '/sources/buildmgr/pkgroot/usr/share/man/man1'
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config/man'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config/man'
+make[5]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+make[6]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+make[6]: Nothing to be done for `install-data-am'.
+  /bin/sh ../../../libtool   --mode=install /usr/bin/install -c xdmxconfig vdltodmx dmxtodmx '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: /usr/bin/install -c xdmxconfig /sources/buildmgr/pkgroot/usr/bin/xdmxconfig
+libtool: install: /usr/bin/install -c vdltodmx /sources/buildmgr/pkgroot/usr/bin/vdltodmx
+libtool: install: /usr/bin/install -c dmxtodmx /sources/buildmgr/pkgroot/usr/bin/dmxtodmx
+make[6]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+make[5]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/config'
+Making install in examples
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/examples'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/examples'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+make[4]: Nothing to be done for `install-data-am'.
+  /bin/sh ../../../libtool   --mode=install /usr/bin/install -c dmxinfo dmxwininfo dmxreconfig dmxresize dmxaddscreen dmxrmscreen dmxaddinput dmxrminput '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: /usr/bin/install -c dmxinfo /sources/buildmgr/pkgroot/usr/bin/dmxinfo
+libtool: install: /usr/bin/install -c dmxwininfo /sources/buildmgr/pkgroot/usr/bin/dmxwininfo
+libtool: install: /usr/bin/install -c dmxreconfig /sources/buildmgr/pkgroot/usr/bin/dmxreconfig
+libtool: install: /usr/bin/install -c dmxresize /sources/buildmgr/pkgroot/usr/bin/dmxresize
+libtool: install: /usr/bin/install -c dmxaddscreen /sources/buildmgr/pkgroot/usr/bin/dmxaddscreen
+libtool: install: /usr/bin/install -c dmxrmscreen /sources/buildmgr/pkgroot/usr/bin/dmxrmscreen
+libtool: install: /usr/bin/install -c dmxaddinput /sources/buildmgr/pkgroot/usr/bin/dmxaddinput
+libtool: install: /usr/bin/install -c dmxrminput /sources/buildmgr/pkgroot/usr/bin/dmxrminput
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/examples'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/examples'
+Making install in doc
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doc'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doc'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doc'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doc'
+Making install in doxygen
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doxygen'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doxygen'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doxygen'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/doxygen'
+Making install in man
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/man'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/man'
+make[4]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man1" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man1"
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 Xdmx.1 '/sources/buildmgr/pkgroot/usr/share/man/man1'
+test -z "/usr/share/man/man5" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man5"
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/man'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/man'
+Making install in glxProxy
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/glxProxy'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/glxProxy'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/glxProxy'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx/glxProxy'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx'
+make[4]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw/dmx'
+test -z "/usr/bin" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/bin"
+make[4]: Nothing to be done for `install-data-am'.
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c Xdmx '/sources/buildmgr/pkgroot/usr/bin'
+libtool: install: /usr/bin/install -c Xdmx /sources/buildmgr/pkgroot/usr/bin/Xdmx
+make[4]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx'
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw/dmx'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/hw'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/hw'
+Making install in test
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2/test'
+Making install in .
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/test'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/test'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/test'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/test'
+Making install in xi2
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2/test/xi2'
+make[3]: Entering directory `/sources/builddir/xorg-server-1.11.2/test/xi2'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Leaving directory `/sources/builddir/xorg-server-1.11.2/test/xi2'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2/test/xi2'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2/test'
+make[1]: Entering directory `/sources/builddir/xorg-server-1.11.2'
+make[2]: Entering directory `/sources/builddir/xorg-server-1.11.2'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/aclocal" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/aclocal"
+test -z "/usr/lib/pkgconfig" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/pkgconfig"
+ /usr/bin/install -c -m 644 xorg-server.pc '/sources/buildmgr/pkgroot/usr/lib/pkgconfig'
+make[2]: Leaving directory `/sources/builddir/xorg-server-1.11.2'
+make[1]: Leaving directory `/sources/builddir/xorg-server-1.11.2'

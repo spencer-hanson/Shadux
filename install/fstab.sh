@@ -14,8 +14,8 @@ cat > $1 << "EOF"
 
 #File System   Mount-point   Type    Options             dump  fsck
 #					                       order
-/dev/sda1      /            ext4     defaults            1     1
-/dev/sda2      swap         swap     pri=1               0     0
+/dev/sda3      /            ext4     defaults            1     1
+/dev/sda4      swap         swap     pri=1               0     0
 
 proc           /proc        proc     nosuid,noexec,nodev 0     0
 sysfs          /sys         sysfs    nosuid,noexec,nodev 0     0

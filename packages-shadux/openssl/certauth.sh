@@ -22,10 +22,10 @@ fi
 
 if [ "$1" = "--install" ] ; then
 	echo Installing CertAuth...
+	mkdir openssl/certauth
+	cp data/certdata openssl/certauth
 	cd openssl
-	mkdir certauth
 	cd certauth
-	cp ../../data/certdata .
 cat > /bin/make-cert.pl << "EOF"
 #!/usr/bin/perl -w
 
@@ -256,8 +256,8 @@ EOF
 	unset SSLDIR
 	rm -r certs BLFS-ca-bundle*
 	cd ..
+	cd ..
 	echo Finished, Cleaning up...
-	rm -r certdata
 	rm -r certauth
 	echo Done!
 	exit

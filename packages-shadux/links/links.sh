@@ -25,7 +25,7 @@ if [ "$1" = "--install" ] ; then
         echo Installing links...
         cp data/links-*.tar* links
         cd links
-        tar xf linkw-*.tar*
+        tar xf links-*.tar*
 	cd links-*
 	./configure --prefix=/usr
 	make

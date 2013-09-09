@@ -36,7 +36,7 @@ if [ "$1" = "--install" ] ; then
 	install -v -m755 -d /usr/share/doc/parted-3.1/html
 	install -v -m644 doc/html/* /usr/share/doc/parted-3.1/html
 	install -v -m644 doc/{FAT,API,parted.{txt,html}} /usr/share/doc/parted-3.1
-	cd..
+	cd ..
         echo Finished, Cleaning up...
         rm parted-*.tar*
         rm -r parted-*

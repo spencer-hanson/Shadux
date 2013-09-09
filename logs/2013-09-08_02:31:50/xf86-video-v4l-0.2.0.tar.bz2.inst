@@ -1,0 +1,193 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognize dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 1572864
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking if RANDR is defined... yes
+checking if XV is defined... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for XORG... yes
+checking for ANSI C header files... (cached) yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/xf86-video-v4l-0.2.0'
+Making all in src
+make[2]: Entering directory `/sources/builddir/xf86-video-v4l-0.2.0/src'
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1   -g -O2 -MT v4l.lo -MD -MP -MF .deps/v4l.Tpo -c -o v4l.lo v4l.c
+mkdir .libs
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -g -O2 -MT v4l.lo -MD -MP -MF .deps/v4l.Tpo -c v4l.c  -fPIC -DPIC -o .libs/v4l.o
+v4l.c: In function 'V4lPutVideo':
+v4l.c:313:3: warning: 'Xfree' is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+v4l.c:321:6: warning: 'Xalloc' is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+v4l.c:326:3: warning: 'Xfree' is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+v4l.c:433:2: warning: 'Xfree' is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+v4l.c:440:2: warning: 'Xalloc' is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+v4l.c: In function 'V4lStopVideo':
+v4l.c:513:6: warning: 'Xfree' is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+v4l.c: In function 'v4l_add_enc':
+v4l.c:718:5: warning: 'Xalloc' is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+v4l.c: In function 'V4LBuildEncodings':
+v4l.c:741:5: warning: 'Xalloc' is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+v4l.c:745:5: warning: 'Xalloc' is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+v4l.c:749:5: warning: 'Xalloc' is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+v4l.c:815:2: warning: 'Xfree' is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+v4l.c:818:2: warning: 'Xfree' is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+v4l.c:821:2: warning: 'Xfree' is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+v4l.c: In function 'v4l_add_attr':
+v4l.c:842:5: warning: 'Xalloc' is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+v4l.c: In function 'V4LInit':
+v4l.c:921:2: warning: 'Xalloc' is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+v4l.c:931:6: warning: 'Xfree' is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+v4l.c:942:2: warning: 'Xrealloc' is deprecated (declared at /usr/include/xorg/os.h:230) [-Wdeprecated-declarations]
+v4l.c:943:2: warning: 'Xalloc' is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+v4l.c:979:2: warning: 'Xalloc' is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+mv -f .deps/v4l.Tpo .deps/v4l.Plo
+/bin/sh ../libtool --tag=CC   --mode=link gcc -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1   -g -O2 -module -avoid-version  -o v4l_drv.la -rpath /usr/lib/X11/modules/drivers v4l.lo  
+gcc -shared  .libs/v4l.o   -Wl,-soname -Wl,v4l_drv.so -o .libs/v4l_drv.so
+creating v4l_drv.la
+(cd .libs && rm -f v4l_drv.la && ln -s ../v4l_drv.la v4l_drv.la)
+make[2]: Leaving directory `/sources/builddir/xf86-video-v4l-0.2.0/src'
+Making all in man
+make[2]: Entering directory `/sources/builddir/xf86-video-v4l-0.2.0/man'
+sed -e 's|__vendorversion__|"xf86-video-v4l 0.2.0" "X Version 11"|' -e 's|__xorgversion__|"xf86-video-v4l 0.2.0" "X Version 11"|' -e 's|__xservername__|Xorg|g' -e 's|__xconfigfile__|xorg.conf|g' -e 's|__projectroot__|/usr|g' -e 's|__appmansuffix__|1|g' -e 's|__drivermansuffix__|4|g' -e 's|__adminmansuffix__|8|g' -e 's|__miscmansuffix__|7|g' -e 's|__filemansuffix__|5|g' < v4l.man > v4l.4
+make[2]: Leaving directory `/sources/builddir/xf86-video-v4l-0.2.0/man'
+make[2]: Entering directory `/sources/builddir/xf86-video-v4l-0.2.0'
+make[2]: Leaving directory `/sources/builddir/xf86-video-v4l-0.2.0'
+make[1]: Leaving directory `/sources/builddir/xf86-video-v4l-0.2.0'
+Making install in src
+make[1]: Entering directory `/sources/builddir/xf86-video-v4l-0.2.0/src'
+make[2]: Entering directory `/sources/builddir/xf86-video-v4l-0.2.0/src'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/drivers" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers"
+ /bin/sh ../libtool --mode=install /usr/bin/install -c  'v4l_drv.la' '/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/v4l_drv.la'
+/usr/bin/install -c .libs/v4l_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/v4l_drv.so
+/usr/bin/install -c .libs/v4l_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/v4l_drv.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/drivers'
+make[2]: Leaving directory `/sources/builddir/xf86-video-v4l-0.2.0/src'
+make[1]: Leaving directory `/sources/builddir/xf86-video-v4l-0.2.0/src'
+Making install in man
+make[1]: Entering directory `/sources/builddir/xf86-video-v4l-0.2.0/man'
+make[2]: Entering directory `/sources/builddir/xf86-video-v4l-0.2.0/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 'v4l.4' '/sources/buildmgr/pkgroot/usr/share/man/man4/v4l.4'
+make[2]: Leaving directory `/sources/builddir/xf86-video-v4l-0.2.0/man'
+make[1]: Leaving directory `/sources/builddir/xf86-video-v4l-0.2.0/man'
+make[1]: Entering directory `/sources/builddir/xf86-video-v4l-0.2.0'
+make[2]: Entering directory `/sources/builddir/xf86-video-v4l-0.2.0'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xf86-video-v4l-0.2.0'
+make[1]: Leaving directory `/sources/builddir/xf86-video-v4l-0.2.0'

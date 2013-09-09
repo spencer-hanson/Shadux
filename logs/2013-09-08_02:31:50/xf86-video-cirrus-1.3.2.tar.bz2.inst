@@ -1,0 +1,284 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking if xorg-macros used to generate configure is at least 1.2... yes, 1.2.1
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognize dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 1572864
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+(cached) (cached) checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking if RANDR is defined... yes
+checking if RENDER is defined... yes
+checking if XV is defined... yes
+checking if DPMSExtension is defined... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for XORG... yes
+checking whether XSERVER_LIBPCIACCESS is declared... yes
+checking xf1bpp.h usability... no
+checking xf1bpp.h presence... no
+checking for xf1bpp.h... no
+checking xf4bpp.h usability... no
+checking xf4bpp.h presence... no
+checking for xf4bpp.h... no
+checking for PCIACCESS... yes
+checking for ANSI C header files... (cached) yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating man/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+make  all-recursive
+make[1]: Entering directory `/sources/builddir/xf86-video-cirrus-1.3.2'
+Making all in src
+make[2]: Entering directory `/sources/builddir/xf86-video-cirrus-1.3.2/src'
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT alp_driver.lo -MD -MP -MF .deps/alp_driver.Tpo -c -o alp_driver.lo alp_driver.c
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT alp_hwcurs.lo -MD -MP -MF .deps/alp_hwcurs.Tpo -c -o alp_hwcurs.lo alp_hwcurs.c
+mkdir .libs
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT alp_driver.lo -MD -MP -MF .deps/alp_driver.Tpo -c alp_driver.c  -fPIC -DPIC -o .libs/alp_driver.o
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT alp_hwcurs.lo -MD -MP -MF .deps/alp_hwcurs.Tpo -c alp_hwcurs.c  -fPIC -DPIC -o .libs/alp_hwcurs.o
+alp_hwcurs.c: In function ‘AlpHWCursorInit’:
+alp_hwcurs.c:228:36: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+alp_hwcurs.c:228:59: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+alp_driver.c: In function ‘AlpFreeRec’:
+alp_driver.c:251:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+alp_driver.c: In function ‘AlpPreInit’:
+alp_driver.c:490:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+alp_driver.c:577:2: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+alp_driver.c: In function ‘AlpScreenInit’:
+alp_driver.c:1492:6: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+alp_driver.c: In function ‘AlpCloseScreen’:
+alp_driver.c:1816:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+mv -f .deps/alp_hwcurs.Tpo .deps/alp_hwcurs.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT alp_i2c.lo -MD -MP -MF .deps/alp_i2c.Tpo -c -o alp_i2c.lo alp_i2c.c
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT alp_i2c.lo -MD -MP -MF .deps/alp_i2c.Tpo -c alp_i2c.c  -fPIC -DPIC -o .libs/alp_i2c.o
+mv -f .deps/alp_i2c.Tpo .deps/alp_i2c.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT alp_xaa.lo -MD -MP -MF .deps/alp_xaa.Tpo -c -o alp_xaa.lo alp_xaa.c
+mv -f .deps/alp_driver.Tpo .deps/alp_driver.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT alp_xaam.lo -MD -MP -MF .deps/alp_xaam.Tpo -c -o alp_xaam.lo alp_xaam.c
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT alp_xaa.lo -MD -MP -MF .deps/alp_xaa.Tpo -c alp_xaa.c  -fPIC -DPIC -o .libs/alp_xaa.o
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT alp_xaam.lo -MD -MP -MF .deps/alp_xaam.Tpo -c alp_xaam.c  -fPIC -DPIC -o .libs/alp_xaam.o
+alp_xaa.c: In function ‘AlpSetupForSolidFill’:
+alp_xaa.c:169:26: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+alp_xaa.c: In function ‘AlpSubsequentMono8x8PatternFillRect’:
+alp_xaa.c:301:22: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+alp_xaa.c:302:22: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+alp_xaa.c:302:45: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+alp_xaam.c: In function ‘AlpXAAInitMMIO’:
+alp_xaam.c:254:47: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+mv -f .deps/alp_xaam.Tpo .deps/alp_xaam.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT cir_dga.lo -MD -MP -MF .deps/cir_dga.Tpo -c -o cir_dga.lo cir_dga.c
+mv -f .deps/alp_xaa.Tpo .deps/alp_xaa.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT cir_driver.lo -MD -MP -MF .deps/cir_driver.Tpo -c -o cir_driver.lo cir_driver.c
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT cir_dga.lo -MD -MP -MF .deps/cir_dga.Tpo -c cir_dga.c  -fPIC -DPIC -o .libs/cir_dga.o
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT cir_driver.lo -MD -MP -MF .deps/cir_driver.Tpo -c cir_driver.c  -fPIC -DPIC -o .libs/cir_driver.o
+cir_dga.c: In function ‘CirDGAInit’:
+cir_dga.c:86:7: warning: ‘Xrealloc’ is deprecated (declared at /usr/include/xorg/os.h:230) [-Wdeprecated-declarations]
+cir_dga.c:88:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+cir_driver.c: In function ‘CIRProbe’:
+cir_driver.c:241:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+cir_driver.c:283:5: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+cir_driver.c: In function ‘CirMapMem’:
+cir_driver.c:295:6: warning: unused variable ‘mmioFlags’ [-Wunused-variable]
+mv -f .deps/cir_driver.Tpo .deps/cir_driver.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT CirrusClk.lo -MD -MP -MF .deps/CirrusClk.Tpo -c -o CirrusClk.lo CirrusClk.c
+mv -f .deps/cir_dga.Tpo .deps/cir_dga.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT cir_shadow.lo -MD -MP -MF .deps/cir_shadow.Tpo -c -o cir_shadow.lo cir_shadow.c
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT CirrusClk.lo -MD -MP -MF .deps/CirrusClk.Tpo -c CirrusClk.c  -fPIC -DPIC -o .libs/CirrusClk.o
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT cir_shadow.lo -MD -MP -MF .deps/cir_shadow.Tpo -c cir_shadow.c  -fPIC -DPIC -o .libs/cir_shadow.o
+cir_shadow.c: In function ‘cirRefreshArea’:
+cir_shadow.c:36:21: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+cir_shadow.c:36:44: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+cir_shadow.c: In function ‘cirRefreshArea8’:
+cir_shadow.c:84:28: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+cir_shadow.c:85:26: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+cir_shadow.c:85:44: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+cir_shadow.c:88:28: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+cir_shadow.c:89:46: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+cir_shadow.c: In function ‘cirRefreshArea24’:
+cir_shadow.c:177:28: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+cir_shadow.c:178:26: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+cir_shadow.c:181:28: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+cir_shadow.c:182:46: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+mv -f .deps/CirrusClk.Tpo .deps/CirrusClk.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT lg_driver.lo -MD -MP -MF .deps/lg_driver.Tpo -c -o lg_driver.lo lg_driver.c
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT lg_driver.lo -MD -MP -MF .deps/lg_driver.Tpo -c lg_driver.c  -fPIC -DPIC -o .libs/lg_driver.o
+mv -f .deps/cir_shadow.Tpo .deps/cir_shadow.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT lg_hwcurs.lo -MD -MP -MF .deps/lg_hwcurs.Tpo -c -o lg_hwcurs.lo lg_hwcurs.c
+lg_driver.c: In function ‘LgFreeRec’:
+lg_driver.c:262:2: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+lg_driver.c: In function ‘LgDoDDC’:
+lg_driver.c:326:1: warning: label ‘unmap_out’ defined but not used [-Wunused-label]
+lg_driver.c: In function ‘LgPreInit’:
+lg_driver.c:457:2: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+lg_driver.c: In function ‘LgScreenInit’:
+lg_driver.c:1317:6: warning: ‘Xalloc’ is deprecated (declared at /usr/include/xorg/os.h:222) [-Wdeprecated-declarations]
+lg_driver.c: In function ‘LgCloseScreen’:
+lg_driver.c:1620:3: warning: ‘Xfree’ is deprecated (declared at /usr/include/xorg/os.h:235) [-Wdeprecated-declarations]
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT lg_hwcurs.lo -MD -MP -MF .deps/lg_hwcurs.Tpo -c lg_hwcurs.c  -fPIC -DPIC -o .libs/lg_hwcurs.o
+mv -f .deps/lg_hwcurs.Tpo .deps/lg_hwcurs.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT lg_i2c.lo -MD -MP -MF .deps/lg_i2c.Tpo -c -o lg_i2c.lo lg_i2c.c
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT lg_i2c.lo -MD -MP -MF .deps/lg_i2c.Tpo -c lg_i2c.c  -fPIC -DPIC -o .libs/lg_i2c.o
+mv -f .deps/lg_driver.Tpo .deps/lg_driver.Plo
+/bin/sh ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT lg_xaa.lo -MD -MP -MF .deps/lg_xaa.Tpo -c -o lg_xaa.lo lg_xaa.c
+mv -f .deps/lg_i2c.Tpo .deps/lg_i2c.Plo
+/bin/sh ../libtool --tag=CC   --mode=link gcc -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -module -avoid-version  -o cirrus_alpine.la -rpath /usr/lib/X11/modules/drivers alp_driver.lo alp_hwcurs.lo alp_i2c.lo alp_xaa.lo alp_xaam.lo  
+ gcc -DHAVE_CONFIG_H -I. -I.. -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1 -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -MT lg_xaa.lo -MD -MP -MF .deps/lg_xaa.Tpo -c lg_xaa.c  -fPIC -DPIC -o .libs/lg_xaa.o
+gcc -shared  .libs/alp_driver.o .libs/alp_hwcurs.o .libs/alp_i2c.o .libs/alp_xaa.o .libs/alp_xaam.o   -Wl,-soname -Wl,cirrus_alpine.so -o .libs/cirrus_alpine.so
+creating cirrus_alpine.la
+(cd .libs && rm -f cirrus_alpine.la && ln -s ../cirrus_alpine.la cirrus_alpine.la)
+/bin/sh ../libtool --tag=CC   --mode=link gcc -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -module -avoid-version  -o cirrus_drv.la -rpath /usr/lib/X11/modules/drivers cir_dga.lo cir_driver.lo CirrusClk.lo cir_shadow.lo  
+lg_xaa.c: In function ‘LgWaitQAvail’:
+lg_xaa.c:172:45: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+gcc -shared  .libs/cir_dga.o .libs/cir_driver.o .libs/CirrusClk.o .libs/cir_shadow.o   -Wl,-soname -Wl,cirrus_drv.so -o .libs/cirrus_drv.so
+mv -f .deps/lg_xaa.Tpo .deps/lg_xaa.Plo
+/bin/sh ../libtool --tag=CC   --mode=link gcc -fvisibility=hidden -I/usr/include/xorg -I/usr/include/pixman-1     -Wall -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -fno-strict-aliasing -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -g -O2 -module -avoid-version  -o cirrus_laguna.la -rpath /usr/lib/X11/modules/drivers lg_driver.lo lg_hwcurs.lo lg_i2c.lo lg_xaa.lo  
+creating cirrus_drv.la
+(cd .libs && rm -f cirrus_drv.la && ln -s ../cirrus_drv.la cirrus_drv.la)
+gcc -shared  .libs/lg_driver.o .libs/lg_hwcurs.o .libs/lg_i2c.o .libs/lg_xaa.o   -Wl,-soname -Wl,cirrus_laguna.so -o .libs/cirrus_laguna.so
+creating cirrus_laguna.la
+(cd .libs && rm -f cirrus_laguna.la && ln -s ../cirrus_laguna.la cirrus_laguna.la)
+make[2]: Leaving directory `/sources/builddir/xf86-video-cirrus-1.3.2/src'
+Making all in man
+make[2]: Entering directory `/sources/builddir/xf86-video-cirrus-1.3.2/man'
+sed -e 's|__vendorversion__|"xf86-video-cirrus 1.3.2" "X Version 11"|' -e 's|__xorgversion__|"xf86-video-cirrus 1.3.2" "X Version 11"|' -e 's|__xservername__|Xorg|g' -e 's|__xconfigfile__|xorg.conf|g' -e 's|__projectroot__|/usr|g' -e 's|__appmansuffix__|1|g' -e 's|__drivermansuffix__|4|g' -e 's|__adminmansuffix__|8|g' -e 's|__miscmansuffix__|7|g' -e 's|__filemansuffix__|5|g' < cirrus.man > cirrus.4
+make[2]: Leaving directory `/sources/builddir/xf86-video-cirrus-1.3.2/man'
+make[2]: Entering directory `/sources/builddir/xf86-video-cirrus-1.3.2'
+make[2]: Leaving directory `/sources/builddir/xf86-video-cirrus-1.3.2'
+make[1]: Leaving directory `/sources/builddir/xf86-video-cirrus-1.3.2'
+Making install in src
+make[1]: Entering directory `/sources/builddir/xf86-video-cirrus-1.3.2/src'
+make[2]: Entering directory `/sources/builddir/xf86-video-cirrus-1.3.2/src'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/lib/X11/modules/drivers" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers"
+test -z "/usr/lib/X11/modules/drivers" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   cirrus_alpine.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   cirrus_drv.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers'
+/usr/bin/install -c .libs/cirrus_drv.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/cirrus_drv.so
+/usr/bin/install -c .libs/cirrus_drv.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/cirrus_drv.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/drivers'
+test -z "/usr/lib/X11/modules/drivers" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   cirrus_laguna.la '/sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers'
+/usr/bin/install -c .libs/cirrus_laguna.so /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/cirrus_laguna.so
+/usr/bin/install -c .libs/cirrus_laguna.lai /sources/buildmgr/pkgroot/usr/lib/X11/modules/drivers/cirrus_laguna.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib/X11/modules/drivers'
+make[2]: Leaving directory `/sources/builddir/xf86-video-cirrus-1.3.2/src'
+make[1]: Leaving directory `/sources/builddir/xf86-video-cirrus-1.3.2/src'
+Making install in man
+make[1]: Entering directory `/sources/builddir/xf86-video-cirrus-1.3.2/man'
+make[2]: Entering directory `/sources/builddir/xf86-video-cirrus-1.3.2/man'
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/usr/share/man/man4" || /bin/mkdir -p "/sources/buildmgr/pkgroot/usr/share/man/man4"
+ /usr/bin/install -c -m 644 cirrus.4 '/sources/buildmgr/pkgroot/usr/share/man/man4'
+make[2]: Leaving directory `/sources/builddir/xf86-video-cirrus-1.3.2/man'
+make[1]: Leaving directory `/sources/builddir/xf86-video-cirrus-1.3.2/man'
+make[1]: Entering directory `/sources/builddir/xf86-video-cirrus-1.3.2'
+make[2]: Entering directory `/sources/builddir/xf86-video-cirrus-1.3.2'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/sources/builddir/xf86-video-cirrus-1.3.2'
+make[1]: Leaving directory `/sources/builddir/xf86-video-cirrus-1.3.2'
