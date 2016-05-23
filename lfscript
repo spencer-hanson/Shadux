@@ -1474,7 +1474,7 @@ verifyEnvironment() {
   PREREQ_FAIL="0"
 
   # Ability to compile
-  echo 'main(){}' > dummy.c && gcc -o dummy dummy.c
+  echo 'int main(){}' > dummy.c && gcc -o dummy dummy.c
   if [ ! -x dummy ]; then
     PREREQ_FAIL="1"
   fi
