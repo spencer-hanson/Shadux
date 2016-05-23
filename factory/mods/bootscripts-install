@@ -1,51 +1,54 @@
-# Last update: 2012-02-07 (LFS SVN-20120206)
+# Last update: 2014-06-07 (LFS SVN-20140604)
+
+# ********************************************
+# ********************************************
+# *** System Configuration and Bootscripts ***
+# ********************************************
+# ********************************************
 
 # =====================================
 # === General Network Configuration ===
 # =====================================
 
-# Creating Network Interface Configuration Files
+# --- Creating Network Interface Configuration Files ---
+# (*) Skipped, we assume you will install DHCP from BLFS
 
-# (*) It is impossible to create generic versions of these files. If you are
-#     not using a configuration tool like 'NetworkManager', you need to create
-#     these files manually.
+# --- Configuring the system hostname ---
+# (*) Set in rc.site
 
-# Creating the '/etc/resolv.conf' File
-cat > /etc/resolv.conf << "EOF"
-# Begin /etc/resolv.conf
-
-# -- Note --
-#  The Google Public IPv4 DNS servers used here should be usable on any machine
-#  connected to the internet. However, you may want to replace them with the
-#  adresses provided to you by your ISP.
-
-nameserver 8.8.8.8
-nameserver 8.8.4.4
-
-# End /etc/resolv.conf
-EOF
-
-# =========================================
-# === Customizing the '/etc/hosts' File ===
-# =========================================
+# --- Customizing the /etc/hosts File ---
+# (*) Only create an entry for localhost
 
 cat > /etc/hosts << "EOF"
 # Begin /etc/hosts
-
-# -- Note --
-#  A network manager (like 'NetworkManager') may update or overwrite this file
-#  automatically when it configures the network interface.
 
 127.0.0.1 localhost
 
 # End /etc/hosts
 EOF
 
-# ======================================
-# === How Do These Bootscripts Work? ===
-# ======================================
+## Creating the '/etc/resolv.conf' File
+#cat > /etc/resolv.conf << "EOF"
+## Begin /etc/resolv.conf
+#
+## -- Note --
+##  The Google Public IPv4 DNS servers used here should be usable on any machine
+##  connected to the internet. However, you may want to replace them with the
+##  adresses provided to you by your ISP.
+#
+#nameserver 8.8.8.8
+#nameserver 8.8.4.4
+#
+## End /etc/resolv.conf
+#EOF
 
-# Configuring Sysvinit
+
+# ===================================================
+# === System V Bootscript Usage and Configuration ===
+# ===================================================
+
+# --- Configuring Sysvinit ---
+
 cat > /etc/inittab << "EOF"
 # Begin /etc/inittab
 
@@ -75,17 +78,14 @@ su:S016:once:/sbin/sulogin
 # End /etc/inittab
 EOF
 
-# =======================================
-# === Configuring the system hostname ===
-# === Configuring the setclock Script ===
-# ===  Configuring the Linux Console  ===
-# === Configuring the sysklogd Script ===
-# =======================================
-# (*) See 'The rc.site File'...
+# --- Configuring the System Clock ---
+# (*) Set in rc.site
 
-# ==========================
-# === The 'rc.site' File ===
-# ==========================
+# --- Configuring the Linux Console ---
+# (*) Set in rc.site
+
+# --- The rc.site File ---
+# (*) The uncommented lines in this file have been modified from the original
 
 cat > /etc/sysconfig/rc.site << "EOF"
 # rc.site
@@ -123,8 +123,8 @@ cat > /etc/sysconfig/rc.site << "EOF"
 #WARNING_PREFIX="${WARNING} *** ${NORMAL}"
 
 # Interactive startup
-#IPROMPT="yes" # Whether to display the interactive boot promp
-#itime="3"    # The ammount of time (in seconds) to display the prompt
+#IPROMPT="yes" # Whether to display the interactive boot prompt
+#itime="3"    # The amount of time (in seconds) to display the prompt
 
 # The total length of the distro welcome string, without escape codes
 #wlen=$(echo "Welcome to ${DISTRO}" | wc -c )
@@ -140,8 +140,17 @@ cat > /etc/sysconfig/rc.site << "EOF"
 # Skip reading from the console
 #HEADLESS=yes
 
-# Skip cleaning /tmp
-#SKIPTMPCLEAN=yes
+# Write out fsck progress if yes
+#VERBOSE_FSCK=no
+
+# Speed up boot without waiting for settle in udev
+#OMIT_UDEV_SETTLE=y
+
+# Speed up boot without waiting for settle in udev_retry
+#OMIT_UDEV_RETRY_SETTLE=yes
+
+# Skip cleaning /tmp if yes
+#SKIPTMPCLEAN=no
 
 # For setclock
 UTC=1
@@ -163,9 +172,10 @@ HOSTNAME=localhost
 UNICODE=1
 KEYMAP="us-acentos"
 KEYMAP_CORRECTIONS="euro2"
-#FONT="lat0-16 -m 8859-15"
+FONT="lat0-16 -m 8859-15"
 #LEGACY_CHARSET=
 EOF
+
 
 # ====================================
 # === The Bash Shell Startup Files ===
@@ -175,12 +185,14 @@ EOF
 #     '/etc/profile.d/i18n.sh'.
 mkdir -pv /etc/profile.d
 
+# (*) Set locale to US English (UTF-8)
 cat > /etc/profile.d/i18n.sh << EOF
 # Set up i18n variables
 export LANG="en_US.UTF-8"
 EOF
 
-# (*) Minimal '/etc/profile' in case the 'postlfs' script will not be used.
+# (*) Minimal '/etc/profile' in case the 'postlfs' script from BLFS will not be
+#     installed.
 cat > /etc/profile << "EOF"
 # Minimal profile, which loads configuration from /etc/profile.d
 for script in /etc/profile.d/*.sh ; do
@@ -189,6 +201,7 @@ for script in /etc/profile.d/*.sh ; do
   fi
 done
 EOF
+
 
 # ========================================
 # === Creating the '/etc/inputrc' File ===
@@ -238,6 +251,13 @@ set bell-style none
 # End /etc/inputrc
 EOF
 
+
+# **************************************
+# **************************************
+# *** Making the LFS System Bootable ***
+# **************************************
+# **************************************
+
 # ======================================
 # === Creating the '/etc/fstab' File ===
 # ======================================
@@ -250,6 +270,7 @@ cat > /etc/fstab << "EOF"
 
 # file system  mount-point  type     options             dump  fsck
 #                                                              order
+
 rootfs         /            auto     defaults            0     0
 
 #/dev/<xxx>    /            <fff>    defaults            1     1
@@ -257,7 +278,7 @@ rootfs         /            auto     defaults            0     0
 
 proc           /proc        proc     nosuid,noexec,nodev 0     0
 sysfs          /sys         sysfs    nosuid,noexec,nodev 0     0
-devpts         /dev/pts     devpts   gid=4,mode=620      0     0
+devpts         /dev/pts     devpts   gid=5,mode=620      0     0
 tmpfs          /run         tmpfs    defaults            0     0
 devtmpfs       /dev         devtmpfs mode=0755,nosuid    0     0
 

@@ -1,2 +1,0 @@
-# (*) Required for proper text rendering in (for example) Gnome
-pango-querymodules > /etc/pango/pango.modules

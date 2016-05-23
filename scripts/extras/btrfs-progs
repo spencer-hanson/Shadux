@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # This file is part of LFScript. LFScript is released under the MIT license.
-# Copyright (C) 2007-2012 Marcel van den Boer
+# Copyright (C) 2007-2014 Marcel van den Boer
 
-WGETLIST="http://lfscript.org/sources/btrfs-progs_2012_01_27.tar.bz2"
-MD5SUMLIST="1afa2d828ec80cf21aa530ae2a8caf99"
-REQUIRES="attr"
+WGETLIST="http://lfscript.org/sources/btrfs-progs_20140613.tar.xz"
+MD5SUMLIST="b48fe5f7855a05f8d670f543171b9629"
+REQUIRES="asciidoc lzo xmlto"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

@@ -1,7 +1,7 @@
 /*
  * - BLFSFactory.java -
  *
- * Copyright (c) 2012 Marcel van den Boer
+ * Copyright (c) 2012-2014 Marcel van den Boer
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to
@@ -29,9 +29,11 @@ import java.io.IOException; /* FIXME: Factory should not perform I/O */
 import nl.marcelweb.util.Pair;
 
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.Set;
 import java.util.HashSet;
+import java.util.HashMap;
 
 public class BLFSFactory extends XMLFactory {
 
@@ -45,6 +47,9 @@ public class BLFSFactory extends XMLFactory {
         /* FIXME's */
         blacklist.add("postlfs/security/cacerts.xml"); // No MD5
         blacklist.add("general/prog/icedtea6.xml"); // No primary source
+
+        blacklist.add("general/prog/php.xml"); // No primary source
+        blacklist.add("general/sysutils/bluez.xml"); // heredoc error
     }
 
     public BLFSFactory(final String book, final String revision) {
@@ -91,21 +96,102 @@ public class BLFSFactory extends XMLFactory {
         final List<Pair<String, String>> allCommands = SemiXML.innerXML(
                 section, "userinput");
         for (final Pair<String, String> rawCommand : allCommands) {
-            final String command = SemiXML.asText(rawCommand.getA(),
+            String command = SemiXML.asText(rawCommand.getA(),
                     this.getEntities());
 
-            /* Add the command to the script. */
-            if (asRoot.contains(command)) {
-                script.putInstallation(command);
+            final List<String> finalCommands = new ArrayList<String>();
+            /* Parse new type of BLFS X window system multibuilds */
+            if (script.getName().indexOf("x7") == 0) {
+
+                // Remove commands that open and close an unneccessary subshell
+                if (command.equals("bash -e") || command.equals("exit")) {
+                    continue;
+                }
+
+                // Remove loop logic from installation commands
+                if (command.indexOf("for package in $(grep -v '^#' ../") == 0) {
+                    final String delim = "pushd $packagedir";
+                    final String endDelim = "popd";
+                    command = command.substring(command.indexOf(delim) + delim.length());
+                    command = command.substring(0, command.lastIndexOf(endDelim));
+
+                    // Rewrite references to current working directory
+                    command = command
+                            .replace("$packagedir", "$(basename \"$PWD\")");
+
+                    // Determine smallest indentation
+                    int smallestIndent = 80;
+                    final String[] indentedCommands = command.split("\n");
+                    for (final String indentedCommand : indentedCommands) {
+                        for (int i = 0; i < indentedCommand.length(); i++) {
+                            if (indentedCommand.charAt(i) != ' ') {
+                                smallestIndent = Math.min(smallestIndent, i);
+                                break;
+                            }
+                        }
+                    }
+
+                    // Remove white space around commands
+                    final StringBuilder newCommand = new StringBuilder();
+                    for (int j = 0; j < indentedCommands.length; j++) {
+                        final String indentedCommand = indentedCommands[j];
+
+                        if (indentedCommand.trim().length() == 0) {
+                            // Remove leading and trailing newlines
+                            if (j == 0 || j == indentedCommands.length - 1) {
+                                continue;
+                            }
+
+                            newCommand.append(indentedCommand.trim());
+                        } else {
+                            // Remove indentation
+                            newCommand.append(
+                                    indentedCommand.substring(smallestIndent));
+                        }
+
+                        newCommand.append("\n");
+                    }
+                    command = newCommand.toString().trim();
+                }
+
+                // Split command in compilation and installation
+                StringBuilder compile = new StringBuilder();
+                final String[] lines = command.split("\n");
+                for (final String line : lines) {
+                    if (line.indexOf("as_root") > -1) {
+                        if (compile.toString().length() > 0) {
+                            finalCommands.add(compile.toString().trim());
+                            compile = new StringBuilder();
+                        }
+
+                        asRoot.add(line);
+                        finalCommands.add(line);
+                    } else {
+                        compile.append(line).append("\n");
+                    }
+                }
+                if (compile.toString().length() > 0) {
+                    finalCommands.add(compile.toString().trim());
+                    compile = new StringBuilder();
+                }
+
             } else {
-                script.putCompilation(command);
+                finalCommands.add(command);
+            }
+
+            /* Add the command to the script. */
+            for (final String finalCommand : finalCommands) {
+                if (asRoot.contains(finalCommand)) {
+                    script.putInstallation(finalCommand);
+                } else {
+                    script.putCompilation(finalCommand);
+                }
             }
         }
     }
 
     private void parseBlfsSources(final String xml, final Script script)
             throws IOException {
-
         /* BLFS: Add primary source */
         String iNam = script.getName();
         String md5;
@@ -114,11 +200,13 @@ public class BLFSFactory extends XMLFactory {
             md5 = this.getEntities().get("&giflib-http-md5sum;");
         } else if (iNam.equals("gnucash")) { /* FIXME: package specific */
             md5 = this.getEntities().get("&gnucash-src-md5sum;");
+        } else if (iNam.equals("udev-extras")) { /* FIXME: package specific */
+            md5 = "da8083b30b44177445b21e8299af23a1"; //20140712: eudev-1.9.tar.gz
         } else {
             md5 = this.getEntities().get('&' + iNam + "-md5sum;");
         }
 
-        if (md5 == null) {
+        if (md5 == null && xml.indexOf("-size;") > -1) {
             /* Alternative internal name */
             iNam = xml.substring(0, xml.indexOf("-size;"));
             iNam = iNam.substring(iNam.lastIndexOf('&') + 1);
@@ -126,52 +214,44 @@ public class BLFSFactory extends XMLFactory {
             md5 = this.getEntities().get('&' + iNam + "-md5sum;");
         }
         if (md5 == null) {
-           throw new RuntimeException("Primary MD5 for " + script.getName()
-                    + " not found.");
+            md5 = "___PRIMARY_MD5_NOT_FOUND___";
+            //throw new RuntimeException("Primary MD5 for " + script.getName()
+            //        + " not found.");
         }
 
         String src = this.getEntities().get('&' + iNam + "-download-http;");
-        if (src == null || src.trim().length() == 0) {
+        if (iNam.equals("udev-extras")) {
+            src = "http://dev.gentoo.org/~blueness/eudev/eudev-1.9.tar.gz"; //20140712: eudev-1.9.tar.gz
+        } else if (src == null || src.trim().length() == 0) {
             src = this.getEntities().get('&' + iNam + "-download-ftp;");
         }
         if (src == null) {
-           throw new RuntimeException("Primary source for " + script.getName()
-                    + " not found.");
+            src = "___PRIMARY_SOURCE_NOT_FOUND___";
+//            throw new RuntimeException("Primary source for " + script.getName()
+//                    + " not found.");
         }
         script.setPrimarySource(src.trim(), md5.trim());
 
-        /* BLFS: Wgetlist */
-        if (md5.endsWith(".md5")) {
-            script.setPrimarySource(null, null);
-            final String wget
-                    = SemiXML.asText('&' + iNam + "-wget;", this.getEntities());
 
-            final List<String> list = SemiXML.loadList(this.book
-                    + "../auxfiles/xorg/"
-                    + wget.substring(wget.lastIndexOf('/')));
+        /* BLFS: Xorg */
+        if (script.getName().startsWith("x7")
+                && !script.getName().startsWith("x7driver")) {
+            if (xml.split("<literal>").length > 1) {
+                script.setPrimarySource(null, null);
 
-            final Map<String, String> md5s;
-            try {
-                md5s = SemiXML.loadReversedMap(
-                        this.book + "../auxfiles/xorg/"
-                            + md5.substring(md5.lastIndexOf('/')));
-            } catch (final Throwable t) {
-                throw new RuntimeException(t);
-            }
+                final String[] sources = SemiXML.asText(
+                        xml.split("<literal>")[1].split("</literal>")[0].trim(),
+                        this.getEntities()).split("\n");
 
-            for (final String entry : list) {
-                script.addSource(src + entry, md5s.get(entry));
-            }
+                for (final String line : sources) {
+                    final String[] source = line.split("  ");
+                    script.addSource(src + source[1], source[0]);
+                }
 
-            script.setMultiBuild(true);
-
-            System.err.println("INFO: '" + iNam + "' builds multiple packages");
-
-            if (!script.usedFiles().isEmpty()) {
-                System.err.println("WARNING: '" + iNam + "' has additional "
-                        + "sources besides the multipack sources");
+                script.setMultiBuild(true);
             }
         }
+
 
         /* BLFS: Add secondary sources */
         final Set<String> search = script.usedFiles();
@@ -204,19 +284,24 @@ public class BLFSFactory extends XMLFactory {
     }
 
     private void parseBlfsDependencies(final String xml, final Script script) {
+        final Map<String, List<String>> depBlackList
+                = Overrides.getInstance().getDependencyBlacklist();
 
         /*
          * Make sure the current script can be found as a dependency under it's
          * reference ID.
          */
         final List<String> refId = SemiXML.innerParameter(xml, "sect1", "id");
-        script.addReferenceID(refId.get(0));
 
+        if (refId.size() > 0) {
+            script.addReferenceID(refId.get(0));
+        }
 
         /* Find sections that contain REQUIRED dependencies */
-        final String[] headers = xml.split("<bridgehead renderas=\"sect4\">");
+        final String[] headers = xml.split("<bridgehead renderas=\"sect");
         for (final String header : headers) {
-            if (header.startsWith("Required")) {
+            if (header.startsWith("4\">Required")
+                    || header.startsWith("5\">Required")) {
 
                 /* Find sections after the header that define dependencies */
                 final List<Pair<String, String>> required = SemiXML.innerXML(
@@ -228,7 +313,19 @@ public class BLFSFactory extends XMLFactory {
                     final List<String> dependencies = SemiXML.innerParameter(
                             para.getA(), "xref", "linkend");
 
+                    addingDependencies:
                     for (final String dep : dependencies) {
+                        final List<String> blacklist = depBlackList.get(
+                            script.getName());
+
+                        if (blacklist != null) {
+                            for (final String blacklisted : blacklist) {
+                                if (dep.equals(blacklisted)) {
+                                    continue addingDependencies;
+                                }
+                            }
+                        }
+
                         script.addDependency(dep);
                     }
                 }

@@ -1,2 +1,0 @@
-# (*) Ensure that /var/lib/dbus/machine-id exists
-dbus-uuidgen --ensure

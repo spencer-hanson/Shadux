@@ -27,6 +27,7 @@ package org.lfscript;
 import org.lfscript.buildmgr.*;
 
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.HashSet;
@@ -46,15 +47,26 @@ class DepHandler {
         String packSearch = args[2];
         String excludeFile = args[3];
 
+        final List<String> depLevels = new ArrayList<String>();
         Set<String> build = new TreeSet<String>();
         DynamicScriptLoader loader = null;
 
+        boolean depLevelsDone = false;
         for (int i = 4; i < args.length; i++) {
-            build.add(args[i]);
+            if (!depLevelsDone && args[i].equals("packs")) {
+                depLevelsDone = true;
+                continue;
+            }
+
+            if (depLevelsDone) {
+                build.add(args[i]);
+            } else {
+                depLevels.add(args[i].toUpperCase());
+            }
         }
 
         try {
-            loader = new DynamicScriptLoader(build, scriptSearch);
+            loader = new DynamicScriptLoader(build, scriptSearch, depLevels);
         } catch (IllegalArgumentException iae) {
             ScriptLoaderException sle = (ScriptLoaderException)iae.getCause();
 
@@ -155,9 +167,12 @@ class DepHandler {
         } else if (runType.equals("next")) {
             String next = null;
             for (String fqn : buildOrder) {
-                File f = new File(packSearch, fqn + ".tgz");
                 Script s = loader.getScript(Script.getUnqualifiedName(fqn));
-                if (f.exists()) {
+                File f1 = new File(packSearch, fqn + ".txz");
+                File f2 = new File(packSearch, fqn + ".tgz");
+                if (f1.exists()) {
+                    continue;
+                } else if (f2.exists()) {
                     continue;
                 } else if (s.isGroup()) {
                     continue;

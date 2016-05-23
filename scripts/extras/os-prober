@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # This file is part of LFScript. LFScript is released under the MIT license.
-# Copyright (C) 2007-2012 Marcel van den Boer
+# Copyright (C) 2007-2014 Marcel van den Boer
 
-WGETLIST="http://ftp.de.debian.org/debian/pool/main/o/os-prober/os-prober_1.49.tar.gz"
-MD5SUMLIST="5a981493a7c16174e6454fcf6b39b1b5"
+WGETLIST="http://ftp.de.debian.org/debian/pool/main/o/os-prober/os-prober_1.63.tar.gz"
+MD5SUMLIST="16c999d00a925968c99a8ca8cc9a3c3a"
 REQUIRES="which"
 
 ###############################################
@@ -26,10 +26,10 @@ cp -v linux-boot-probes/common/*         ${FAKEROOT}/usr/lib/linux-boot-probes
 cp -v linux-boot-probes/mounted/common/* ${FAKEROOT}/usr/lib/linux-boot-probes/mounted
 cp -v linux-boot-probes/mounted/x86/*    ${FAKEROOT}/usr/lib/linux-boot-probes/mounted
 
-cp -v os-probes/common/*         ${FAKEROOT}/usr/lib/os-probes
-cp -v os-probes/init/common/*    ${FAKEROOT}/usr/lib/os-probes/init
-cp -v os-probes/mounted/common/* ${FAKEROOT}/usr/lib/os-probes/mounted
-cp -v os-probes/mounted/x86/*    ${FAKEROOT}/usr/lib/os-probes/mounted
+cp -v  os-probes/common/*         ${FAKEROOT}/usr/lib/os-probes
+cp -v  os-probes/init/common/*    ${FAKEROOT}/usr/lib/os-probes/init
+cp -v  os-probes/mounted/common/* ${FAKEROOT}/usr/lib/os-probes/mounted
+cp -vR os-probes/mounted/x86/*    ${FAKEROOT}/usr/lib/os-probes/mounted
 
 mkdir -pv ${FAKEROOT}/var/lib/os-prober
 

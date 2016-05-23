@@ -1,3 +1,2 @@
 # (*) Configure and use sample configuration
-cp -v /etc/nano/nanorc{.sample,}
-sed -i "s/^# include/include/g" /etc/nano/nanorc
+cp -v /etc/nanorc{.sample,}

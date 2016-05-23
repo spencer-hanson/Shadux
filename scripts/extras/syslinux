@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # This file is part of LFScript. LFScript is released under the MIT license.
-# Copyright (C) 2007-2012 Marcel van den Boer
+# Copyright (C) 2007-2014 Marcel van den Boer
 
-WGETLIST="http://www.kernel.org/pub/linux/utils/boot/syslinux/4.xx/syslinux-4.04.tar.bz2"
-MD5SUMLIST="a3936208767eb7ced65320abe2e33a10"
+WGETLIST="http://www.kernel.org/pub/linux/utils/boot/syslinux/4.xx/syslinux-4.07.tar.bz2"
+MD5SUMLIST="9ff6e1b94efab931fb4717b600d88779"
 REQUIRES="nasm python2"
 
 ###############################################
@@ -13,8 +13,6 @@ installation() { # INSTALLING SYSTEM SOFTWARE #
 
 make spotless
 
-sed -i 's@win32/syslinux.exe@@g' Makefile
-sed -i 's@win64/syslinux64.exe@@g' Makefile
 make
 
 make INSTALLROOT=${FAKEROOT} install

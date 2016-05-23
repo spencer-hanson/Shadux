@@ -1,7 +1,7 @@
 /*
  * - Script.java -
  *
- * Copyright (c) 2011-2012 Marcel van den Boer
+ * Copyright (c) 2011-2014 Marcel van den Boer
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to
@@ -33,6 +33,7 @@ import java.util.TreeSet;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
+import java.util.Calendar;
 
 /**
  * An instance of this class passively collects the various commands and
@@ -64,61 +65,13 @@ public class Script {
         this.delayPostInst = false;
         this.multibuild = false;
 
-        /* FIXME */
-               if (this.name.equals("libXau"))   { this.addDependency("pkgconfig"); /* required per instructions */
-        } else if (this.name.equals("glib2"))    { this.addDependency("pcre"); /* required per instructions */
-        } else if (this.name.equals("libdrm"))   { this.addDependency("xorg7-lib"); /* required per instructions */
-        } else if (this.name.equals("x7driver")) { this.addDependency("libdrm"); /* required per instructions */
-        } else if (this.name.equals("libXdmcp")) { this.addDependency("pkgconfig"); /* required per instructions */
-        } else if (this.name.equals("talloc"))   { this.addDependency("python"); /* required per instructions */
-        } else if (this.name.equals("x7app"))    { this.addDependency("mesalib"); /* required per instructions */
-        } else if (this.name.equals("wget"))     { this.addDependency("openssl"); /* required per instructions */
-        } else if (this.name.equals("gvfs"))     { this.addDependency("pkgconfig"); /* required per instructions */
-
-        } else if (this.name.equals("gnutls")) { this.addDependency("libtasn1"); /* Otherwise, will install own version in stead */
-
-        } else if (this.name.equals("networkmanager")) { this.addDependency("dhcpcd"); /* NM can not use DHCP otherwise */
-
-        } else if (this.name.equals("upower")) { this.addDependency("libusb"); /* required per instructions - The 'libusb' dependency used to be installed for 'udev-rebuild'. */
-
-        } else if (this.name.equals("consolekit")) { this.addDependency("polkit"); /* security */
-        } else if (this.name.equals("nss")) { this.addDependency("sqlite"); /* compatibility */
-
-        } else if (this.name.equals("gobject-introspection")) { this.addDependency("pkgconfig"); /* required per instructions */
-
-        } else if (this.name.equals("gconf")) {
-            this.addDependency("dbus-glib"); /* required per instructions */
-            this.addDependency("gtk+2"); /* forgot why */
-
-        } else if (this.name.equals("gdk-pixbuf")) {
-            this.addDependency("libtiff"); /* required per instructions */
-            this.addDependency("libjpeg"); /* required per instructions */
-            this.addDependency("libpng"); /* required per instructions */
-            this.addDependency("gobject-introspection"); /* avoids compilation order problems */
-
-        } else if (this.name.equals("atk")) { this.addDependency("gobject-introspection"); /* avoids compilation order problems */
-        } else if (this.name.equals("pango")) { this.addDependency("gobject-introspection"); /* avoids compilation order problems */
-
-        } else if (this.name.equals("gnome-doc-utils")) { this.addDependency("rarian"); /* required per instructions */
-        } else if (this.name.equals("sqlite"))          { this.addDependency("unzip"); /* required to extract source code */
-
-        } else if (this.name.equals("rarian"))    { this.addDependency("docbook"); /* Otherwise will get XML from internet, which fails */
-
-        } else if (this.name.equals("cairo"))           { this.addDependency("x-window-system"); /* required to build GTK+2 */
-        } else if (this.name.equals("libcanberra"))     { this.addDependency("mate-conf"); /* required to build Mate */
-        } else if (this.name.equals("libxml2"))         { this.addDependency("python"); /* required to build GNOME */
-        } else if (this.name.equals("libgnome"))        { this.addDependency("esound"); /* "recommended for Gnome" */
-        } else if (this.name.equals("libsoup")) { /* required to build Mate */
-            this.addDependency("libmatekeyring");
-            this.addDependency("mate-conf");
-            this.addDependency("libproxy");
-            this.addDependency("sqlite");
-
-        } else if (this.name.equals("usbutils") || this.name.equals("pciutils")) {
-            /* The 'update-...ids' script requires these to run */
-            this.addDependency("wget");
-            this.addDependency("which");
+        /* Extra dependencies */
+        final List<String> extraDependencies = Overrides.getInstance().getDependencies(name);
+        for (final String dependency : extraDependencies) {
+            this.addDependency(dependency);
         }
+
+        this.addReferenceID(this.name);
     }
 
     /**
@@ -192,12 +145,18 @@ public class Script {
      * Adds a dependency to this script.
      */
     public void addDependency(final String referenceID) {
+        this.dependencies.add(Script.translateDependency(referenceID));
+    }
+
+    private static String translateDependency(final String referenceID) {
         if (referenceID.equals("udev")) { /* BLFS:UPOWER */
-            this.dependencies.add("udev-rebuild");
-        } else if (referenceID.equals("gcc")) { /* BLFS:GOBJECT-INTROSPECTION */
-            /* Do not add gcc */
+            return "udev-rebuild";
+        } else if (referenceID.equals("python")) { /* BLFS:LIBXML2 */
+            return "python2";
+        } else if (referenceID.equals("x-window-system")) { /* BLFS */
+            return "xorg";
         } else {
-            this.dependencies.add(referenceID);
+            return referenceID;
         }
     }
 
@@ -211,6 +170,71 @@ public class Script {
     private final List<String> preinst = new ArrayList<String>();
     private final List<String> finalSystem = new ArrayList<String>();
     private final List<String> postinst = new ArrayList<String>();
+
+    private String filterBlacklistedCommands(final String command) {
+        if (command.indexOf("$XORG_CONFIG") > 0
+                || command.indexOf("${XORG_CONFIG}") > 0
+                || command.indexOf("$XORG_PREFIX") > 0
+                || command.indexOf("${XORG_PREFIX}") > 0) {
+            this.addDependency("xorg-env");
+        }
+
+        final Map<String, Map<String, String>> blacklist
+                = Overrides.getInstance().getCommandBlacklist();
+        final Set<String> keys = blacklist.keySet();
+        for (final String key : keys) {
+            if (this.name.equals(key) || key.equals("*")) {
+                final Map<String, String> blItemsExpl = blacklist.get(key);
+                final Set<String> blItems = blItemsExpl.keySet();
+                for (final String item : blItems) {
+                    final String reason = blItemsExpl.get(item);
+                    if (command.indexOf(item) > -1) {
+                        return Script.commentOut(command, reason);
+                    }
+                }
+            }
+        }
+
+        return command;
+    }
+
+    private static String commentOut(final String command, final String reason) {
+        final int newLineCount = Script.substringCount(command, "\n");
+        final int newLineCommentCount = Script.substringCount(command, "\n#");
+
+        
+        if (newLineCount != newLineCommentCount
+                || (newLineCount == 0 && command.charAt(0) != '#')) {
+            String retVal = "";
+
+            if (reason != null) {
+                retVal += "# (*) " + reason.replace("\n", "\n#     ") + "\n";
+            }
+
+            retVal += '#' + command.replace("\n", "\n#");
+
+            return retVal;
+        } else {
+            return command;
+        }
+    }
+
+    //http://stackoverflow.com/questions/767759/occurrences-of-substring-in-a-string
+    private static int substringCount(String str, String findStr) {
+        int lastIndex = 0;
+        int count = 0;
+
+        while (lastIndex != -1) {
+            lastIndex = str.indexOf(findStr, lastIndex);
+
+            if (lastIndex != -1) {
+                count++;
+                lastIndex += findStr.length();
+            }
+        }
+
+        return count;
+    }
 
     /**
      * Registers a command to be used in constructing the temporary toolchain.
@@ -249,7 +273,7 @@ public class Script {
             command = "#" + command;
         }
 
-        this.finalSystem.add(command);
+        this.finalSystem.add(this.filterBlacklistedCommands(command));
     }
 
     /**
@@ -266,9 +290,37 @@ public class Script {
             return;
         }
 
+        /* BLFS:DBUS */
+        if (command.indexOf("dbus-uuidgen") > -1) {
+            this.putPostInstallation(command, false);
+            return;
+        }
+
         /* BLFS:DOCBOOK */
         if (command.indexOf("xmlcatalog ") > -1) {
             this.putPostInstallation(command, false);
+            return;
+        }
+
+        /* BLFS:GSETTINGS */
+        if (command.indexOf("glib-compile-schemas ") > -1) {
+            this.putPostInstallation(command, true);
+            return;
+        }
+
+
+        if (command.indexOf("gtk-update-icon-cache") > -1) {
+            this.putPostInstallation(command, false);
+            return;
+        }
+        if (command.indexOf("update-desktop-database") > -1) {
+            this.putPostInstallation(command, false);
+            return;
+        }
+
+        /* BLFS:PANGO,GTK,GDK-PIXBUF */
+        if (command.indexOf(" --update-cache") > -1) {
+            this.putPostInstallation(command, true);
             return;
         }
 
@@ -285,8 +337,7 @@ public class Script {
 
         /* BLFS:METACITY, KDE, GNOME */
         command = command.replace("~/.xinitrc",
-                "/etc/X11/app-defaults/xinitrc.d/"
-                + this.getName() + ".xinitrc");
+                "/etc/alternatives/xinitrc/" + this.getName() + ".xinitrc");
 
         /* BLFS:LLVM */
         command = command.replace("/extrapaths.sh", "/" + this.name + ".sh");
@@ -295,25 +346,40 @@ public class Script {
             this.addDependency("postlfs");
         }
 
-        this.finalSystem.add(this.fakerootify(command));
+        this.finalSystem.add(this.filterBlacklistedCommands(
+                this.fakerootify(command)));
     }
 
     /**
      * Registers a pre-installation command.
      */
-    public void putPreInstallation(final String command) {
-        this.preinst.add(Script.removeDoubleAmps(command));
+    public void putPreInstallation(String command) {
+        command = this.filterBlacklistedCommands(
+                Script.removeDoubleAmps(command));
+
+        if (this.preinst.size() == 0 && Script.isCommentOrEmpty(command)) {
+            this.finalSystem.add(command);
+            return;
+        }
+
+        this.preinst.add(command);
     }
 
     /**
      * Registers a post-installation command.
      */
     public void putPostInstallation(String command, final boolean forceDelay) {
+        command = this.filterBlacklistedCommands(
+                Script.removeDoubleAmps(command));
+
+        if (this.postinst.size() == 0 && Script.isCommentOrEmpty(command)) {
+            this.finalSystem.add(command);
+            return;
+        }
+
         if (forceDelay) {
             this.delayPostInst = true;
         }
-
-        command = Script.removeDoubleAmps(command);
 
         /* ---- START SCRIPT SPECIFICS ---- */
 
@@ -323,14 +389,14 @@ public class Script {
         }
 
         /* BLFS:DESKTOP-FILE-UTILS */
-        if (command.indexOf("update-desktop-database ") > -1) {
+        if (command.indexOf("update-desktop-database") > -1) {
             this.delayPostInst = true;
         }
 
         /* BLFS:GDK-PIXBUF */
         if (command.indexOf("gdk-pixbuf-query-loaders ") > -1) {
             this.delayPostInst = false;
-        }        
+        }
 
         /* BLFS:DHCPCD */
         command = command
@@ -364,6 +430,9 @@ public class Script {
         } else if (command.indexOf("XORG_PREFIX") > -1) {
             this.putInstallation(command);
 
+        } else if (command.indexOf("~/") > -1) {
+            this.putInstallation(command);
+
         /* BLFS:ALSA-UTILS */
         } else if (command.startsWith("usermod ")) {
             this.postinst.add("#" + command);
@@ -391,11 +460,12 @@ public class Script {
      * required, and adds those dependencies to the dependency list.
      */
     private void extractExtraDependencies(final String command) {
+/*
         if (command.indexOf("pkg-config ") > -1
                 && !this.name.equals("pkgconfig")) {
             this.addDependency("pkgconfig");
         }
-
+*/
         if (command.indexOf("ORBit-2.0") > -1
                 && !this.name.equals("orbit2")) {
             this.addDependency("ORBit2");
@@ -452,6 +522,8 @@ public class Script {
 
             if (this.name.equals("sysklogd")) {
                 part = part.replace(" BINDIR=", " BINDIR=" + "${FAKEROOT}");
+            } else if (this.name.equals("unzip") || this.name.equals("zip")) {
+                part = part.replace(" MANDIR=", " MANDIR=" + "${FAKEROOT}");
             } else if (this.name.equals("acl") || this.name.equals("attr")) {
                 part = part.replace("make ", "make prefix=/usr ");
             } else if (this.name.equals("ppp")) {
@@ -473,11 +545,25 @@ public class Script {
         }
 
         part = part.replace(" /", " ${FAKEROOT}/");
+        part = part.replace(" ${FAKEROOT}/dev/null", " /dev/null");
+
         part = part.replace(" >/", " > ${FAKEROOT}/"); /* FIXME: Ncurses fix */
+
+    	/* FIXME: Fix glibc */
+    	if (this.name.equals("glibc")) {
+            part = part.replace("ZONEINFO=/", "ZONEINFO=${FAKEROOT}/");
+            part = part.replace("zic", "/tools/sbin/zic");
+        }
+
 
         /* BLFS:LLVM */
         part = part.replace("pathappend ${FAKEROOT}", "pathappend ");
         part = part.replace("ln -svf ${FAKEROOT}/", "ln -svf /");
+
+        /* BLFS:X7 */
+        part = part.replace("as_root ", "");
+
+        part = part.replace(" ~/", " ${FAKEROOT}/etc/skel/");
 
         return Script.restoreHereDoc(part, original);
     }
@@ -498,16 +584,32 @@ public class Script {
 
             int mStart;
             while ((mStart = retVal.indexOf(docStart, mSearch)) > -1) {
+                String eof = "\nEOF";
+
+                // Skip commentary
+                String[] cSrch = retVal.substring(mSearch, mStart).split("\n");
+                if (cSrch[cSrch.length - 1].substring(0,1).equals("#")) {
+                    eof = "\n";
+                }
+
+
                 mStart = retVal.indexOf('\n', mStart) + 1; /* Newline */
 
                 sb.append(retVal.substring(mSearch, mStart));
-                mSearch = retVal.indexOf("\nEOF", mStart);
+                mSearch = retVal.indexOf(eof, mStart);
 
                 int oStart = original.indexOf(docStart, oSearch);
                 oStart = original.indexOf('\n', oStart) + 1; /* Newline */
 
-                oSearch = original.indexOf("\nEOF", oStart);
+                oSearch = original.indexOf(eof, oStart);
+try {
                 sb.append(original.substring(oStart, oSearch));
+} catch (RuntimeException e) {
+    System.out.println(original);
+    System.out.println("----");
+    System.out.println(modified);
+    throw(e);
+}
             }
             retVal = sb.append(retVal.substring(mSearch)).toString();
         }
@@ -627,6 +729,27 @@ System.err.println("WARNING: " + this.name + " FIXME");
         return names;
     }
 
+    private static boolean isCommentOrEmpty(final List<String> commands) {
+        for (final String command : commands) {
+            if (!Script.isCommentOrEmpty(command)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private static boolean isCommentOrEmpty(final String command) {
+        final String[] lines = command.split("\n");
+        for (String line : lines) {
+            line = line.trim();
+
+            if (!line.equals("") && !line.substring(0,1).equals("#")) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     /* ------------------------------------------------------------------ */
     /* -------------------------- Write output -------------------------- */
     /* ------------------------------------------------------------------ */
@@ -676,7 +799,8 @@ System.err.println("WARNING: " + this.name + " FIXME");
             }
         } else if (withHeader) {
             sb.append("# This file is part of LFScript. LFScript is released ");
-            sb.append("under the MIT license.\n# Copyright (C) 2007-2012 ");
+            sb.append("under the MIT license.\n# Copyright (C) 2007-");
+            sb.append(Calendar.getInstance().get(Calendar.YEAR) + " ");
             sb.append("Marcel van den Boer\n\n");
         }
 
@@ -721,7 +845,11 @@ System.err.println("WARNING: " + this.name + " FIXME");
             sb.append("MD5SUMLIST=\"");
             for (int i = 0; i < md5s.size(); i++) {
                 if (md5s.get(i) == null || md5s.get(i).indexOf('-') > -1) {
-                    sb.append("dontverify");
+                    try {
+                        sb.append(Overrides.getInstance().getMD5(urls.get(i)));
+                    } catch (final RuntimeException e) {
+                        sb.append("dontverify");
+                    }
                 } else {
                     sb.append(md5s.get(i));
                 }
@@ -739,7 +867,8 @@ System.err.println("WARNING: " + this.name + " FIXME");
             /* Sort the dependencies by name */
             final Set<String> orderedDeps = new TreeSet<String>();
             for (final String dep : this.dependencies) {
-                final String depVal = Script.refIds.get(dep);
+                final String depVal = Script.refIds
+                        .get(Script.translateDependency(dep));
 
                 if (depVal == null) {
                     System.err.println("WARNING: Missing dependency '"
@@ -768,6 +897,29 @@ System.err.println("WARNING: " + this.name + " FIXME");
             sb.append("\"\n");
         }
 
+        /* Additional recommended dependencies */
+        final Map<String, String> recommendedBecause = Overrides.getInstance()
+                .getRecommendedDependencies(this.name);
+        final Set<String> recommended = recommendedBecause.keySet();
+        if (recommended.size() > 0) {
+
+            /* Write the list */
+            sb.append("RECOMMENDS=\"");
+
+            int i = 0;
+            for (final String dependency : recommended) {
+                sb.append(dependency);
+
+                if (i < recommended.size() - 1) {
+                    sb.append(' ');
+                }
+
+                i++;
+            }
+
+            sb.append("\"\n");
+        }
+
         /* Additional variables */
         if (this.preparation.size() == 0 && this.finalSystem.size() == 0) {
             sb.append("TAGS=\"group\"\n");
@@ -775,6 +927,8 @@ System.err.println("WARNING: " + this.name + " FIXME");
             sb.append("TAGS=\"multi\"\n");
         } else if (!this.preinst.isEmpty()) {
             sb.append("TAGS=\"preinst\"\n");
+        } else if (this.name.indexOf("kernel-") == 0) {
+            sb.append("TAGS=\"kernel\"\n");
         }
 
         if (this.postinst.size() > 0) {
@@ -782,6 +936,20 @@ System.err.println("WARNING: " + this.name + " FIXME");
                 sb.append("POSTINST=\"true\"\n");
             } else {
                 sb.append("POSTINST=\"now\"\n");
+            }
+        }
+
+        if (recommended.size() > 0) {
+
+            sb.append("\n");
+
+            /* Write comments explaining why */
+            for (final String dependency : recommended) {
+                sb.append("# (*) Install '")
+                        .append(dependency)
+                        .append("' because ")
+                        .append(recommendedBecause.get(dependency))
+                        .append("\n");
             }
         }
 
@@ -880,6 +1048,15 @@ System.err.println("WARNING: " + this.name + " FIXME");
         }
 
         return sb.toString();
+    }
+
+    public boolean isGroupScript() {
+        return (this.preparation.size() == 0 && this.finalSystem.size() == 0);
+    }
+
+    public boolean hasContents() {
+        return !(this.preparation.size() == 0 && this.finalSystem.size() == 0
+                && this.dependencies.isEmpty());
     }
 }
 

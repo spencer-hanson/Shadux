@@ -1,7 +1,7 @@
 /*
  * - SemiXML.java -
  *
- * Copyright (c) 2011-2012 Marcel van den Boer
+ * Copyright (c) 2011-2014 Marcel van den Boer
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to
@@ -88,8 +88,15 @@ public class SemiXML {
                     || character == 0x0A || character == 0x0D) {
                 sb.append((char)character);
             } else {
+                /*
                 throw new RuntimeException("Source not pure ASCII: Line "
-                        + sb.toString().split("\n").length);
+                        + sb.toString().split("\n").length + " of "
+                        + path);
+                */
+                System.out.println("WARNING: Source not pure ASCII.");
+                System.out.println("         "
+                        + sb.toString().split("\n").length + ": "
+                        + path);
             }
         }
 
@@ -229,7 +236,17 @@ public class SemiXML {
                     throw new RuntimeException("Whoooooooooooops!");
                 }
 
-                retVal.add(part.substring(dStart, part.indexOf(delim, dStart)));
+                try {
+                    retVal.add(part.substring(
+                            dStart, part.indexOf(delim, dStart)));
+                } catch (final Throwable t) {
+                    System.err.println("Delimeter error (XML syntax error?)");
+                    System.err.println("---> " + delim);
+                    System.err.println("---> " + dStart);
+                    System.err.println("---> " + part.indexOf(delim, dStart));
+                    System.err.println("---> " + part);
+                    throw new RuntimeException(t);
+                }
             }
         }
 
@@ -291,12 +308,19 @@ public class SemiXML {
         /* 1. Remove all XML tags */
         text = SemiXML.removeAll(text, "<", ">");
 
-        /* 2. Replace the XML built in entities  (1 of 2)*/
+        /* 2a. Replace the XML built in entities  (1 of 2)*/
         text = text.replace("&amp;", "<!-- AMPERSAND -->");
         text = text.replace("&gt;", ">");
         text = text.replace("&lt;", "<");
         text = text.replace("&quot;", "\"");
         text = text.replace("&apos;", "'");
+
+        /* 2b. Replace ASCII character entities */
+        for (int i = 32; i < 127; i++) {
+            if (text.indexOf("&#" + i + ";") > -1) {
+                text = text.replace("&#" + i + ";", "" + (char)i);            
+            }
+        }
 
         /* 3. Replace custom XML entities */
         final Set<String> keys = customEntities.keySet();
@@ -399,8 +423,12 @@ public class SemiXML {
 
                 if (entity.equals("&lt;")) {
                     value = value.replace(entity, "<"); /* FIXME */
+                } else if (entity.equals("&gt;")) {
+                    value = value.replace(entity, ">"); /* FIXME */
                 } else if (entity.equals("&apos;")) {
                     value = value.replace(entity, "'"); /* FIXME */
+                } else if (entity.equals("&quot;")) {
+                    value = value.replace(entity, "\""); /* FIXME */
                 } else if (entValue != null) {
                     value = value.replace(entity, entValue);
                 } else {

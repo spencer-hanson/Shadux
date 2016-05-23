@@ -1,7 +1,7 @@
 /*
  * - DynamicScriptLoader.java -
  *
- * Copyright (c) 2011 Marcel van den Boer
+ * Copyright (c) 2011-2014 Marcel van den Boer
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to
@@ -102,8 +102,8 @@ public class DynamicScriptLoader extends ScriptLoader {
      * @throws ScriptLoaderException if there are problems constructing
      *         <code>Script</code>s.
      */
-    public DynamicScriptLoader(Set<String> names, String search)
-            throws ScriptLoaderException {
+    public DynamicScriptLoader(Set<String> names, String search,
+            List<String> depLevels) throws ScriptLoaderException {
 
         super(search);
 
@@ -176,7 +176,8 @@ public class DynamicScriptLoader extends ScriptLoader {
         }
 
         /* Try to load the requested scripts, and all of it's dependencies. */
-        this.recursiveLoader(unqualified, new Stack<String>(), exception);
+        this.recursiveLoader(unqualified, new Stack<String>(), exception,
+                depLevels);
 
         /* Throw the ScriptLoaderException, if it now has entries. */
         if (exception.hasEntries()) {
@@ -186,7 +187,7 @@ public class DynamicScriptLoader extends ScriptLoader {
 
     /* Used only by the constructor */
     private void recursiveLoader(Set<String> unqualified, Stack<String> stack,
-            ScriptLoaderException exception) {
+            ScriptLoaderException exception, List<String> depLevels) {
         for (String unq : unqualified) {
 
             /*
@@ -255,7 +256,7 @@ public class DynamicScriptLoader extends ScriptLoader {
             } catch (IllegalArgumentException e) {
 
                 try {
-                    script = new Script(qlf, super.getSearch());
+                    script = new Script(qlf, super.getSearch(), depLevels);
                 } catch (ScriptNotFoundException snfe) {
                     exception.getNotFoundNames().add(qlf);
                     continue;
@@ -270,7 +271,7 @@ public class DynamicScriptLoader extends ScriptLoader {
                 stack.push(qlf);
                 try {
                     Set<String> depends = script.getDependencies();
-                    this.recursiveLoader(depends, stack, exception);
+                    this.recursiveLoader(depends, stack, exception, depLevels);
                 } finally {
                     /* Always pop(), also when exceptions are thrown */
                     stack.pop();

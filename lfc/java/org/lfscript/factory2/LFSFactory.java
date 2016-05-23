@@ -41,7 +41,8 @@ public class LFSFactory extends XMLFactory {
         blacklist.add("chapter02/creatingfilesystem.xml");
         blacklist.add("chapter02/mounting.xml");
         blacklist.add("chapter03/introduction.xml");
-        blacklist.add("chapter04/aboutlfs.xml");
+        blacklist.add("chapter02/aboutlfs.xml"); // Pre r10575
+        blacklist.add("chapter04/aboutlfs.xml"); // Post r10575
         blacklist.add("chapter04/aboutsbus.xml");
         blacklist.add("chapter05/toolchaintechnotes.xml");
         blacklist.add("chapter05/generalinstructions.xml");
@@ -68,11 +69,11 @@ public class LFSFactory extends XMLFactory {
     }
 
     @Override
-    public void buildAll(final String target, final boolean withHeader)
-            throws IOException {
+    public void buildAll(final String target, final boolean withHeader,
+            final boolean withGroups) throws IOException {
 
         /* Build and write scripts */
-        super.buildAll(target, withHeader);
+        super.buildAll(target, withHeader, withGroups);
 
         /* Write out 'buildbase.lfs' */
         this.buildbase.writeOut(target + "/buildbase.lfs", withHeader,

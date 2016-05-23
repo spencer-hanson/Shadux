@@ -1,8 +1,8 @@
 #!/bin/bash
-# Version 2011-05-30
+# Version 2014-07-20
 
 # Generic Compilation Script for Java projects (using Avian ProGuard and UPX)
-# Copyright (c) 2011 Marcel van den Boer
+# Copyright (c) 2011-2014 Marcel van den Boer
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -28,15 +28,26 @@
 set -e
 
 main() {
-    local DEFAULT_JAVA_HOME="/usr/lib/jvm/java-6-openjdk"
+    local DEFAULT_JAVA_HOME="/usr/lib/jvm/java-6-openjdk
+                             /usr/lib/jvm/java-7-openjdk-amd64
+                             /usr/lib/jvm/java-7-openjdk-armhf"
 
     if [ "${JAVA_HOME}" == "" ]; then
-        echo ""
-        echo "WARNING: Variable JAVA_HOME is not set."
-        echo "         Defaulting to '${DEFAULT_JAVA_HOME}'"
-        echo ""
+        echo -n "Autodetecting JAVA_HOME... "
 
-        export JAVA_HOME="${DEFAULT_JAVA_HOME}"
+        for dir in ${DEFAULT_JAVA_HOME}; do
+            if [ -d "${dir}" ]; then
+                export JAVA_HOME="${dir}"
+                echo "${JAVA_HOME}"
+                break
+            fi
+        done
+
+        if [ "${JAVA_HOME}" == "" ]; then
+            echo "Failed."
+            echo "Please set 'JAVA_HOME' manually."
+            exit 1
+        fi
     fi
 
     pushd java
@@ -107,12 +118,17 @@ rebuild_bin() {
         i?86)
             local ARCH="i386"
             local UPX_ARCH="${ARCH}"
-            local UPX_MD5="3cb26dc1681c3600dd9f6e8be98b85b5"
+            local UPX_MD5="15fc83267ca9ac88d9c2dbc359e2ab8e"
             ;;
         x86_64)
             local ARCH="x86_64"
             local UPX_ARCH="amd64"
-            local UPX_MD5="db52b8f1ad4e10ffafe6d33ad31c6501"
+            local UPX_MD5="5e0cf0d10624e64f8538eab5563b71af"
+            ;;
+        arm*)
+            local ARCH="arm"
+            local UPX_ARCH="armeb"
+            local UPX_MD5="447d96a1235f94a5e766ab988f56be81"
             ;;
         *)
             echo "Unknown architecture: $(uname -m)" >&2
@@ -120,7 +136,7 @@ rebuild_bin() {
     esac
 
     # Fetch UPX
-    local UPX_FOL="upx-3.07-${UPX_ARCH}_linux"
+    local UPX_FOL="upx-3.91-${UPX_ARCH}_linux"
     local TGZ="${UPX_FOL}.tar.bz2"
     if [ ! -r ${TGZ} ]; then
         echo "Downloading UPX..."
@@ -136,8 +152,8 @@ rebuild_bin() {
     cd ../3rdparty
 
     # Fetch ProGuard
-    local PRO_MD5="4c2f225d996349e3cf705b4aa671a6cb"
-    local PRO_VER="4.6"
+    local PRO_MD5="5feb242751faf361a0a45c2785f0d34d"
+    local PRO_VER="4.11"
     local PRO_FOL="proguard${PRO_VER}"
     local TGZ="${PRO_FOL}.tar.gz"
     if [ ! -r ${TGZ} ]; then
@@ -155,12 +171,12 @@ rebuild_bin() {
     cd ../3rdparty
 
     # Fetch Avian
-    local AVIAN_MD5="61961c14ed63e8d7b1dcf2851b50f46a"
+    local AVIAN_MD5="1ae35de2e1b5f0cba57b13f3556c85db"
     local AVIAN_FOL="avian"
-    local TGZ="${AVIAN_FOL}-0.5.tar.bz2"
+    local TGZ="${AVIAN_FOL}-1.0.1.tar.bz2"
     if [ ! -r ${TGZ} ]; then
         echo "Downloading Avian..."
-        wget http://oss.readytalk.com/avian/${TGZ}
+        wget http://oss.readytalk.com/avian-web/${TGZ}
         if [ "$(md5sum ${TGZ})" != "${AVIAN_MD5}  ${TGZ}" ]; then
             echo "MD5 checksum failure"
             return 1
@@ -198,7 +214,7 @@ rebuild_bin() {
     "${JAVA_HOME}/bin/jar" cf ../boot.jar *
     cd ../
 
-    ../build/linux-${ARCH}/binaryToObject boot.jar boot-jar.o \
+    ../build/linux-${ARCH}/binaryToObject/binaryToObject boot.jar boot-jar.o \
             _binary_boot_jar_start _binary_boot_jar_end linux ${ARCH}
 
     cp -v ../../../make/driver.cpp main.cpp

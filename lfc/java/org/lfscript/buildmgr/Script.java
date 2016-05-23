@@ -1,7 +1,7 @@
 /*
  * - Script.java -
  *
- * Copyright (c) 2011 Marcel van den Boer
+ * Copyright (c) 2011-2014 Marcel van den Boer
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to
@@ -26,6 +26,7 @@ package org.lfscript.buildmgr;
 
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.List;
 import java.io.File;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -58,7 +59,7 @@ public class Script {
      * @throws ScriptParserException if the selected file could not be parsed
      *         correctly.
      */
-    public Script(String qlf, String search)
+    public Script(String qlf, String search, List<String> depLevels)
             throws ScriptNotFoundException, ScriptParserException {
         this.name = qlf;
 
@@ -75,90 +76,50 @@ public class Script {
         /* Create dependency list */
         this.dependencies = new TreeSet<String>();
 
-        // Preferred implementation:
-        //String[] occur = contents.split("\n[ \t]*REQUIRES=\"");
-        // Alternative implementation:
-        String[] occur = contents.split("REQUIRES=\""); //TODO: FLAWED!!!
-        // End of alternative implementation
+        for (String depLevel : depLevels) {
+            String[] occur = contents.split(
+                    depLevel.toUpperCase()+"=\"");
+            if (occur.length == 2) {
+                String[] dependsArr = occur[1].split("\"");
 
-        if (occur.length == 2) {
-            String[] dependsArr = occur[1].split("\"");
+                if (dependsArr != null && dependsArr.length > 0) {
+                    String requires = dependsArr[0];
 
-            if (dependsArr != null && dependsArr.length > 0) {
-                String requires = dependsArr[0];
-
-                // Preferred implementation:
-                //requires = requires.replaceAll("\\s+", " ");
-                // Alternative implementation:
-                requires = requires.replace('\t', ' ');
-                requires = requires.replace('\n', ' ');
-                requires = requires.replace('\u000B', ' ');
-                requires = requires.replace('\f', ' ');
-                requires = requires.replace('\r', ' ');
-                while (requires.indexOf("  ") > -1) {
-                    requires = requires.replaceFirst("  ", " ");
-                }
-                // End of alternative implementation
-
-                String[] deps = null;
-                if (requires.indexOf(" ") > -1) {
-                    deps = requires.split(" ");
-                } else {
-                    deps = new String[] { requires };
-                }
-
-                for (String dep : deps) {
-                    if (Script.isUnqualifiedName(dep)) {
-                        this.dependencies.add(dep);
-                    } else {
-                        throw new ScriptParserException(qlf, "Dependency '" +
-                                dep + "' is not an unqualified name.");
+                    requires = requires.replace('\t', ' ');
+                    requires = requires.replace('\n', ' ');
+                    requires = requires.replace('\u000B', ' ');
+                    requires = requires.replace('\f', ' ');
+                    requires = requires.replace('\r', ' ');
+                    while (requires.indexOf("  ") > -1) {
+                        requires = requires.replaceFirst("  ", " ");
                     }
-                }
 
-            } else {
-                throw new ScriptParserException(qlf,
-                        "Unterminated REQUIRES variable.");
-            }
-        } else if (occur.length > 2) {
-            throw new ScriptParserException(qlf,
-                    "Multiple REQUIRES variables detected.");
-        }
-/*
-        String needle = "REQUIRES=\""; // TODO: "\\sREQUIRES(\\s*)=(\\s*)\"" ??
-        if (contents.indexOf(needle) != contents.lastIndexOf(needle)) {
-            throw new ScriptParserException(qlf,
-                    "Multiple REQUIRES variables detected.");
-        } else if(contents.indexOf(needle) > -1) {
-            String requires = contents.split(needle)[1].split("\"")[0];
+                    String[] deps = null;
+                    if (requires.indexOf(" ") > -1) {
+                        deps = requires.split(" ");
+                    } else {
+                        deps = new String[] { requires };
+                    }
 
-            requires = requires.replace('\t', ' ');
-            requires = requires.replace('\n', ' ');
-            requires = requires.replace('\u000B', ' ');
-            requires = requires.replace('\f', ' ');
-            requires = requires.replace('\r', ' ');
-            while (requires.indexOf("  ") > -1) {
-                requires = requires.replaceFirst("  ", " ");
-            }
+                    for (String dep : deps) {
+                        if (Script.isUnqualifiedName(dep)) {
+                            this.dependencies.add(dep);
+                        } else {
+                            throw new ScriptParserException(qlf, "Dependency '" +
+                                    dep + "' is not an unqualified name.");
+                        }
+                    }
 
-
-            String[] deps = null;
-            if (requires.indexOf(" ") > -1) {
-                deps = requires.split(" ");
-            } else {
-                deps = new String[] { requires };
-            }
-
-            for (String dep : deps) {
-                if (Script.isUnqualifiedName(dep)) {
-                    this.dependencies.add(dep);
                 } else {
-                    throw new ScriptParserException(qlf, "Dependency '" + dep +
-                            "' is not an unqualified name.");
+                    throw new ScriptParserException(qlf,
+                            "Unterminated REQUIRES variable.");
                 }
+            } else if (occur.length > 2) {
+                throw new ScriptParserException(qlf,
+                        "Multiple REQUIRES variables detected.");
             }
         }
-*/
+
         /* Parse tags */
         boolean group = false;
         String needle = "TAGS=\"";

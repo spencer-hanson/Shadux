@@ -1,7 +1,7 @@
 /*
  * - XStartConfigurator.java -
  *
- * Copyright (c) 2011-2012 Marcel van den Boer
+ * Copyright (c) 2011-2014 Marcel van den Boer
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to
@@ -34,14 +34,14 @@ import java.io.FileOutputStream;
 
 /**
  * @author Marcel van den Boer
- * @version 2012-01-24
+ * @version 2014-07-29
  */
 public class XStartConfigurator {
     public static Set<String> getWindowManagers() {
         final Set<String> retVal = new TreeSet<String>();
 
         final File[] contents
-                = (new File("/etc/X11/app-defaults/xinitrc.d")).listFiles();
+                = (new File("/etc/alternatives/xinitrc")).listFiles();
 
         if (contents == null) {
             return Collections.emptySet();

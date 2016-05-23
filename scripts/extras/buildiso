@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This file is part of LFScript. LFScript is released under the MIT license.
-# Copyright (C) 2007-2012 Marcel van den Boer
+# Copyright (C) 2007-2014 Marcel van den Boer
 
 WGETLIST="rootfs-$(uname -m).img"
 MD5SUMLIST="dontverify"
@@ -32,8 +32,8 @@ EOF
 cat > init.sh << "EndOfFile"
 #!/bin/busybox sh
 
-# Initramfs boot script 1.3.1 (2012-02-09)
-# Copyright (c) 2010-2012   Marcel van den Boer
+# Initramfs boot script 1.3.3 (2014-06-14)
+# Copyright (c) 2010-2014   Marcel van den Boer
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
@@ -192,13 +192,19 @@ for device in $(ls /dev); do
 done
 
 if [ "${DEVICE}" == "" ]; then
-    echo "FATAL: Boot medium not found."
+    echo "STOP: Boot medium not found."
     exec /bin/busybox sh
 fi
 
 # Mount the system image
 mount -t squashfs -o ro,loop /mnt/medium/boot/${ARCH}/root.sfs /mnt/system || {
-    echo "FATAL: Boot medium found, but system image is missing."
+    if [ -r /mnt/medium/boot/${ARCH}/root.sfs ]; then
+        echo "STOP: Unable to mount system image. The kernel probably lacks"
+        echo "      SquashFS support. You may need to recompile it."
+    else
+        echo "STOP: Unable to mount system image. It seems to be missing."
+    fi
+
     exec /bin/busybox sh
 }
 
@@ -298,8 +304,15 @@ mksquashfs mnt root.sfs -comp xz
 
 mkdir -p live/boot/{isolinux,$(uname -m)}
 cp -v /usr/share/syslinux/isolinux.bin live/boot/isolinux
-cp -v /boot/vmlinuz-*                  live/boot/$(uname -m)/vmlinuz
-cp -v /boot/config-*                   live/boot/$(uname -m)/config
+
+# Prefer kernels marked 'live'
+if [ -e mnt/boot/vmlinuz-*-live ]; then
+    cp -v mnt/boot/vmlinuz-*-live live/boot/$(uname -m)/vmlinuz
+    cp -v mnt/boot/config-*-live  live/boot/$(uname -m)/config
+else
+    cp -v mnt/boot/vmlinuz-*      live/boot/$(uname -m)/vmlinuz
+    cp -v mnt/boot/config-*       live/boot/$(uname -m)/config
+fi
 
 if [ -e "mnt/usr/share/live/medium" ]; then
     cp -vR mnt/usr/share/live/medium/* live
@@ -319,14 +332,14 @@ mv -v root.sfs live/boot/$(uname -m)
 mv -v id_label live/boot/$(uname -m)
 mv -v initramfs.cpio.gz live/boot/$(uname -m)/initram.fs
 
-mkisofs -o system-$(uname -m).iso     \
-        -b boot/isolinux/isolinux.bin \
-        -c boot.cat                   \
-        -no-emul-boot                 \
-        -boot-load-size 4             \
-        -boot-info-table              \
-        -joliet -l -R                 \
-        live
+xorrisofs -o system-$(uname -m).iso     \
+          -b boot/isolinux/isolinux.bin \
+          -c boot.cat                   \
+          -no-emul-boot                 \
+          -boot-load-size 4             \
+          -boot-info-table              \
+          -joliet -l -R                 \
+          live
 rm -rf live
 
 mkdir -p /sources/buildmgr/newpackages

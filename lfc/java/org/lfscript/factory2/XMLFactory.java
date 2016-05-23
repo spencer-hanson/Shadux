@@ -75,17 +75,21 @@ public abstract class XMLFactory {
         this.entities.put("&scriptfactory-rev;", revision);
     }
 
-    public void buildAll(final String target, final boolean withHeader)
-            throws IOException {
+    public void buildAll(final String target, final boolean withHeader,
+            final boolean withGroups) throws IOException {
 
         /* Recursively load instructions and scripts */
         final String indexFile = this.book + "index.xml";
         final String indexXml = SemiXML.loadXml(indexFile);
-        this.getScripts(indexFile, indexXml);
+        this.getScripts(indexFile, indexXml, null);
 
         /* Save scripts */
         final Set<String> scriptKeys = this.scripts.keySet();
         for (final String script : scriptKeys) {
+            if (!withGroups && this.scripts.get(script).isGroupScript()) {
+                continue;
+            }
+
             final String output = this.scripts.get(script).getType4BScript(
                     withHeader, this.getEntities(),
                     this instanceof BLFSFactory);
@@ -99,8 +103,8 @@ public abstract class XMLFactory {
     /**
      * Recursively loads all interconnected XML files.
      */
-    private void getScripts(final String path, final String xml)
-            throws IOException {
+    private Script getScripts(final String path, final String xml,
+            final String parentName) throws IOException {
 
         this.entities.putAll(SemiXML.getEntitiesFrom(path, xml, this.entities));
 
@@ -108,7 +112,8 @@ public abstract class XMLFactory {
          * Extract relevant instructions from the XML file and then determine
          * if they describe a software package...
          */
-        if (this.parseXML(path, xml) == null) {
+        Script script = this.parseXML(path, xml);
+        if (script == null) {
 
             /*
              * ... If not, then load any references to other XML files and
@@ -116,6 +121,33 @@ public abstract class XMLFactory {
              */
             final List<String> includes = SemiXML.innerParameter(xml,
                     "xi:include", "href");
+
+            /* Derive a package name from the xml filename */
+            String name = path.substring(path.lastIndexOf('/') + 1)
+                .replace("-pass2.xml", "")
+                .replace("-pass1.xml", "")
+                .replace(".xml", "");
+
+            if (parentName != null) {
+                name = parentName + "-" + name;
+            }
+
+            if (name.startsWith("index-")) {
+                name = name.substring("index-".length());
+            }
+
+            String namePrefix = name;
+
+            if (name.equals("x-installing")) {
+                name = "xorg";
+            } else if (name.equals("x-installing-x7driver")) {
+                name = "x7driver";
+            } else if (name.equals("x")) {
+                name = "x-xorg-lib-wm";
+            }
+
+            script = new Script(name);
+            boolean hasDependencies = false;
 
             processXMLfiles:
             for (final String include : includes) {
@@ -128,15 +160,53 @@ public abstract class XMLFactory {
                     }
                 }
 
-                this.getScripts(incPath, SemiXML.loadXml(incPath));
+                final Script linkedScript = this.getScripts(incPath,
+                        SemiXML.loadXml(incPath), namePrefix);
+
+                if (linkedScript != null && linkedScript.hasContents()) {
+                    hasDependencies = true;
+                    script.addDependency(linkedScript.getName());
+                }
+            }
+
+            if (hasDependencies && !name.equals("postlfs")) {
+                this.scripts.put(name, script);
             }
         }
+
+        return script;
     }
 
-    protected Script parseXML(final String pack, final String xml)
+    protected Script parseXML(final String pack, String xml)
             throws IOException {
-        final List<Pair<String, String>> install = SemiXML.innerXML(
-                xml, "sect2", " role=\"installation\"");
+
+        final String pwd = pack.substring(0, pack.lastIndexOf("/") + 1);
+        final List<String> includes = SemiXML.innerParameter(xml,
+           "xi:include", "href");
+        for (final String include : includes) {
+            if (include.indexOf("/xincludes/") == -1) {
+                continue;
+            }
+
+            final String externalXML = SemiXML.loadXml(pwd + include);
+
+            xml = xml.replace("href=\"" + include + "\"/>",
+                    "href=\"" + include + "\"/>" + externalXML);
+        }
+
+        /* Parse XML */
+        final String[] sectSearch = new String[] { "sect2", "sect3" };
+
+        String sectTag = "";
+        List<Pair<String, String>> install = Collections.emptyList();
+        for (final String sectOpt : sectSearch) {
+            sectTag = sectOpt;
+            install = SemiXML.innerXML(xml, sectOpt, " role=\"installation\"");
+
+            if (install.size() > 0) {
+                break;
+            }
+        }
 
         if (install.size() == 0) {
             return null;
@@ -167,7 +237,7 @@ public abstract class XMLFactory {
 
         /* Add configuration instructions */
         final List<Pair<String, String>> configuration = SemiXML.innerXML(
-                xml, "sect2", " role=\"configuration\"");
+                xml, sectTag, " role=\"configuration\"");
 
         if (configuration.size() > 1) {
             System.err.println("WARNING: Multiple configuration sections in '"
@@ -224,13 +294,13 @@ public abstract class XMLFactory {
             final XMLFactory factory;
             if (args[0].equals("lfs")) {
                 factory = new LFSFactory(args[1] + "/BOOK/", args[3]);
-                factory.buildAll(args[2], withHeader);
+                factory.buildAll(args[2], withHeader, false);
             } else {
                 final WikiFactory wiki
                         = new WikiFactory(args[1] + "/../../wiki.xml");
 
                 factory = new BLFSFactory(args[1] + "/BOOK/", args[3]);
-                factory.buildAll(args[2], withHeader);
+                factory.buildAll(args[2], withHeader, true);
 
                 wiki.saveAll(args[2]);
             }
