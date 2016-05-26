@@ -8,10 +8,12 @@
 # Copyright (C) 1999-2014, Gerard Beekmans
 
 WGETLIST="http://ftp.gnu.org/gnu/binutils/binutils-2.24.tar.bz2
-          http://www.linuxfromscratch.org/patches/lfs/development/binutils-2.26-upstream_fixes-3.patch"
+          http://www.linuxfromscratch.org/patches/downloads/binutils/binutils-2.24-load_gcc_lto_plugin_by_default-1.patch
+          http://www.linuxfromscratch.org/patches/downloads/binutils/binutils-2.24-lto_testsuite-1.patch"
 
 MD5SUMLIST="e0f71a7b2ddab0f8612336ac81d9636b
-            a595deb0713739b75bc78cb225fa910d"
+            48e4e96a60bfed41804aaecf4944f5d9
+            a6647fdb3cca512962bb1433bb6b4f9f"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #
