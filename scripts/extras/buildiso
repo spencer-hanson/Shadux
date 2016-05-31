@@ -18,13 +18,13 @@ MENU TITLE Select an option...
 TIMEOUT 300
 
 LABEL live
-    MENU LABEL ^Boot the live system ($(uname -m))
+    MENU LABEL ^Boot Shadux live system ($(uname -m))
     MENU DEFAULT
     KERNEL /boot/$(uname -m)/vmlinuz
-    APPEND initrd=/boot/$(uname -m)/initram.fs quiet
+    APPEND initrd=/boot/$(uname -m)/initram.fs quiet init=/bin/bash
 
 LABEL harddisk
-    MENU LABEL Boot from first ^Hard disk
+    MENU LABEL Boot from first ^Disk
     LOCALBOOT 0x80
 
 EOF
@@ -166,6 +166,10 @@ mknod /dev/sdd1 b  8 49  # |
 mknod /dev/sdd2 b  8 50  # |
 mknod /dev/sdd3 b  8 51  # |
 mknod /dev/sdd4 b  8 52  # +--------
+
+mknod /dev/sg   b  8 64
+mknod /dev/sg0  b  8 65
+mknod /dev/sg1  b  8 66
 
 # Create mount points for filesystems
 mkdir -p /mnt/medium
