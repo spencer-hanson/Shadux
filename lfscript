@@ -1474,14 +1474,16 @@ verifyEnvironment() {
   PREREQ_FAIL="0"
 
   # Ability to compile
-  echo 'main(){}' > dummy.c && gcc -o dummy dummy.c
+  echo 'int main(){}' > dummy.c && gcc -o dummy dummy.c
   if [ ! -x dummy ]; then
+    echo "Compile failure!"
     PREREQ_FAIL="1"
   fi
   rm -f dummy.c dummy
 
   # /bin/sh -> bash
   if [ "$(basename $(readlink -f /bin/sh))" != "bash" ]; then
+    echo "Symlink to /bin/sh fail!"
     PREREQ_FAIL="1"
   fi
 
