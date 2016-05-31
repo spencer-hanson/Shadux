@@ -9,7 +9,7 @@
 
 WGETLIST="http://ftp.gnu.org/gnu/glibc/glibc-2.19.tar.xz
           http://www.iana.org/time-zones/repository/releases/tzdata2014f.tar.gz
-          http://www.linuxfromscratch.org/patches/lfs/development/glibc-2.19-fhs-1.patch"
+          http://www.linuxfromscratch.org/patches/downloads/glibc/glibc-2.19-fhs-1.patch"
 MD5SUMLIST="e26b8cc666b162f999404b03970f14e4
             f333b2e8f876221a97871cae0c188aa5
             9a5997c3452909b1769918c759eff8a2"

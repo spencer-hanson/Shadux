@@ -9,11 +9,10 @@
 
 WGETLIST="http://www.python.org/ftp/python/2.7.8/Python-2.7.8.tar.xz
           http://docs.python.org/ftp/python/doc/2.7.8/python-2.7.8-docs-html.tar.bz2
-          http://www.linuxfromscratch.org/patches/blfs/svn/Python-2.7.8-skip_test_gdb-1.patch"
+          http://www.linuxfromscratch.org/patches/downloads/Python/Python-2.7.8-skip_test_gdb-1.patch"
 MD5SUMLIST="d235bdfa75b8396942e360a70487ee00
             2cf9ba96b2723a5268cd14432b15fdcf
-            dfc90877875b9ae6d06a379d88a24a03"
-
+            3f67da12181b5bc898a4eb1b2c89528e"
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #
 ###############################################
