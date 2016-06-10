@@ -15,7 +15,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 apt-get update
 apt-get upgrade -y
-apt-get install -y bison gawk m4
+apt-get install -y bison gawk m4 libncurses-dev
 rm /bin/sh
 ln -s /bin/bash /bin/sh
 

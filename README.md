@@ -42,6 +42,12 @@ add lspci and lsusb
 KERNEL NOTES
 ==================================
 Device Drivers --->
+ USB support --->
+  USB Wireless Device Management support
+  EHCI HCD USB 2.0
+  OHCI HCD support
+  UHCI HCD support
+  USB Mass Storage support
   Generic Driver Options --->
     Maintain a devtmpfs filesystem to mount at /dev
 Block devices --->
@@ -66,11 +72,11 @@ Network device support --->
   Wireless LAN --->
     Atheros Wireless Cards --->
       Atheros 5xxx wireless cards support
-Graphics Support --->
+Device Drivers ---> Graphics Support --->
   Direct Rendering Manager --->
     Intel 8xx/9xx/G3x/G4x/HD Graphics --->
       Enable modesetting on intel by default
-  Support for frame buffer devices --->
+Frame Buffer Device ---> Support for frame buffer devices --->
     VESA VGA graphics support
   Bootup logo --->
     Standard 224-color Linux logo
@@ -86,12 +92,6 @@ File systems --->
       Include support for ZLIB compressed file systems
       Include support for LZO compressed file systems
       Include support for XZ compressed file systems
-USB support --->
-  EHCI HCD USB 2.0
-  OHCI HCD support
-  UHCI HCD support
-  USB Mass Storage support
-File systems --->
   Second extended fs support
   Ext3 journalling file system support
   The Extended 4 (ext4) filesystem
@@ -112,4 +112,3 @@ File systems --->
       Include support for ZLIB compressed file systems
       Include support for LZO compressed file systems
       Include support for XZ compressed file systems
-
