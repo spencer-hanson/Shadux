@@ -6,12 +6,12 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 #Install dependencies
-if [ -d "depend" ]; then
+if [ ! -d "depend" ]; then
 	./util/dependencies.sh
 fi
 
 #Make sources folder
-if [ -d "sources" ]; then
+if [ ! -d "sources" ]; then
 	mkdir sources
 fi
 
