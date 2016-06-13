@@ -6,6 +6,9 @@ GMP="https://gmplib.org/download/gmp/gmp-6.1.0.tar.bz2"
 MPFR="http://www.mpfr.org/mpfr-current/mpfr-3.1.4.tar.bz2"
 MPC="ftp://ftp.gnu.org/gnu/mpc/mpc-1.0.3.tar.gz"
 
+mkdir depend
+cd depend
+
 mkdir dep.$DIR.tmp
 cd dep.$DIR.tmp
 
