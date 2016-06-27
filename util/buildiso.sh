@@ -19,7 +19,7 @@ mkdir -v install_overhead
 echo Mounting image file...
 mount -o loop sources/rootfs-$(uname -m).img install_root
 
-./lfscript -Bux "wget" -i install_root -I install_overhead -k kernel.config
+./lfscript -Bux "wget" -i install_root -I install_overhead -k kernel_64bit.config
 #echo Mounting $1 at ./SOS...
 #mkdir ./SOS
 #mount $1 ./SOS
@@ -38,5 +38,5 @@ mount -o loop sources/rootfs-$(uname -m).img install_root
 #EOF
 echo Unmouting image and creating iso file...
 umount install_root
-./lfscript -Bux buildiso -k kernel.config
+./lfscript -Bux buildiso -k kernel_64bit.config
 echo Done!

@@ -7,10 +7,10 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://alpha.gnu.org/gnu/bc/bc-1.06.95.tar.bz2
-          http://www.linuxfromscratch.org/patches/lfs/development/bc-1.06.95-memory_leak-1.patch"
-MD5SUMLIST="5126a721b73f97d715bb72c13c889035
-            877e81fba316fe487ec23501059d54b8"
+WGETLIST="$(./sources.sh bc)
+          $(./sources.sh bc_patch1)"
+MD5SUMLIST="$(./sources.sh -m bc)
+            $(./sources.sh -m bc_patch1)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

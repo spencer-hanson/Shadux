@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.42.11/e2fsprogs-1.42.11.tar.gz"
-MD5SUMLIST="412acbbd64a866c2ed1c729deaf4ae7c"
+WGETLIST="$(./sources.sh e2fs)"
+MD5SUMLIST="$(./sources.sh -m e2fs)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

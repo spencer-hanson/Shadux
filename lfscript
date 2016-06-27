@@ -1447,6 +1447,7 @@ verifyEnvironment() {
   if [ "${TMP_MEMTEST}" == "1" ]; then
     local MEMREQ_MB="950" # 1 GiB, with some slack
 
+
     local MEMSIZE_KB="$(grep MemTotal /proc/meminfo | awk '{print $2}')"
     local MEMSIZE_MB="$((${MEMSIZE_KB} / 1024))"
 
@@ -1642,16 +1643,6 @@ else
     displayMsg ERR "other."
     exit 1
   fi
-
-#  if [ "${TMP_SECINSTALL}" == "" ] &&
-#     [ "${TMP_RESUMEX}" == "" ] &&
-#     [ "${TMP_INSTALL}" == "" ]; then
-#    displayMsg KEY WARN "Consider using the '-C' switch to reset the environment"
-#    displayMsg WARN "after the compilation of each software package."
-#    displayMsg WARN "This ensures that software is not accidentally linked"
-#    displayMsg WARN "against software that is not a direct requirement."
-#    displayMsg WARN ""
-#  fi
 
   if [ "${TMP_RESUME}" != "1" ] && [ "${TMP_SECINSTALL}" != "" ]; then
     displayMsg ERR "The '-I' switch requires that at least the toolchain has"

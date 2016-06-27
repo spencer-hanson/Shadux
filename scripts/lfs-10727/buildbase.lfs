@@ -397,10 +397,10 @@ BUILD kernel
 echo SVN-20140821 > /etc/lfs-release
 
 cat > /etc/lsb-release << "EOF"
-DISTRIB_ID="Linux From Scratch"
-DISTRIB_RELEASE="SVN-20140821"
-DISTRIB_CODENAME="<your name here>"
-DISTRIB_DESCRIPTION="Linux From Scratch"
+DISTRIB_ID="Shadux Linux	"
+DISTRIB_RELEASE="SHX-1.2"
+DISTRIB_CODENAME="Shadux"
+DISTRIB_DESCRIPTION="Shadux Linux made by Spencer Hanson"
 EOF
 
 ##################################

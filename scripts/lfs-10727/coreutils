@@ -7,10 +7,10 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/coreutils/coreutils-8.23.tar.xz
-          http://www.linuxfromscratch.org/patches/downloads/coreutils/coreutils-8.23-i18n-1.patch"
-MD5SUMLIST="abed135279f87ad6762ce57ff6d89c41
-            587051bc411e0da9b3bf8984b49b364e"
+WGETLIST="$(./sources.sh coreutils)
+          $(./sources.sh coreutils_patch1)"
+MD5SUMLIST="$(./sources.sh -m coreutils)
+            $(./sources.sh -m coreutils_patch1)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

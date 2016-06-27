@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.xz"
-MD5SUMLIST="50f97f4159805e374639a73e2636f22e"
+WGETLIST="$(./sources.sh autoconf)"
+MD5SUMLIST="$(./sources.sh -m autoconf)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

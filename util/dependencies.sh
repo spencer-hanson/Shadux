@@ -18,7 +18,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 apt-get update
 apt-get upgrade -y
-apt-get install -y bison gawk m4 libncurses-dev
+apt-get install -y bison gawk m4 libncurses-dev default-jre make gcc g++
 rm /bin/sh
 ln -s /bin/bash /bin/sh
 

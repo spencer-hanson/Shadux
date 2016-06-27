@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/automake/automake-1.14.1.tar.xz"
-MD5SUMLIST="7fc29854c520f56b07aa232a0f880292"
+WGETLIST="$(./sources.sh automake)"
+MD5SUMLIST="$(./sources.sh -m automake)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

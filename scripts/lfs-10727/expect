@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://prdownloads.sourceforge.net/expect/expect5.45.tar.gz"
-MD5SUMLIST="44e1a4f4c877e9ddc5a542dfa7ecc92b"
+WGETLIST="$(./sources.sh expect)"
+MD5SUMLIST="$(./sources.sh -m expect)"
 
 ###################################################
 preparation() { # CONSTRUCTING A TEMPORARY SYSTEM #

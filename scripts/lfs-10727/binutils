@@ -7,13 +7,13 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/binutils/binutils-2.24.tar.bz2
-          http://www.linuxfromscratch.org/patches/downloads/binutils/binutils-2.24-load_gcc_lto_plugin_by_default-1.patch
-          http://www.linuxfromscratch.org/patches/downloads/binutils/binutils-2.24-lto_testsuite-1.patch"
+WGETLIST="$(./sources.sh binutils)
+          $(./sources.sh binutils_patch1)
+          $(./sources.sh binutils_patch2)"
 
-MD5SUMLIST="e0f71a7b2ddab0f8612336ac81d9636b
-            48e4e96a60bfed41804aaecf4944f5d9
-            a6647fdb3cca512962bb1433bb6b4f9f"
+MD5SUMLIST="$(./sources.sh -m binutils)
+            $(./sources.sh -m binutils_patch1)
+            $(./sources.sh -m binutils_patch2)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

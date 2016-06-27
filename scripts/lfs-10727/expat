@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://prdownloads.sourceforge.net/expat/expat-2.1.0.tar.gz"
-MD5SUMLIST="dd7dab7a5fea97d2a6a43f511449b7cd"
+WGETLIST="$(./sources.sh expat)"
+MD5SUMLIST="$(./sources.sh -m expat)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

@@ -7,10 +7,10 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/bash/bash-4.3.tar.gz
-         http://www.linuxfromscratch.org/patches/downloads/bash/bash-4.3-upstream_fixes-3.patch"
-MD5SUMLIST="81348932d5da294953e15d4814c74dd1
-            3266ce3d2f0aa647d4ef068e46899246"
+WGETLIST="$(./sources.sh bash)
+         $(./sources.sh bash_patch1)"
+MD5SUMLIST="$(./sources.sh -m bash)
+            $(./sources.sh -m bash_patch1)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #
