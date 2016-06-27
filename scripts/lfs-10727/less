@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://www.greenwoodsoftware.com/less/less-458.tar.gz"
-MD5SUMLIST="935b38aa2e73c888c210dedf8fd94f49"
+WGETLIST="$(./sources.sh less)"
+MD5SUMLIST="$(./sources.sh -m less)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

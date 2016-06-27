@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/m4/m4-1.4.17.tar.xz"
-MD5SUMLIST="12a3c829301a4fd6586a57d3fcf196dc"
+WGETLIST="$(./sources.sh m4)"
+MD5SUMLIST="$(./sources.sh -m m4)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

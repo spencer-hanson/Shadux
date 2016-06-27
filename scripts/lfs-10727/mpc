@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://www.multiprecision.org/mpc/download/mpc-1.0.2.tar.gz"
-MD5SUMLIST="68fadff3358fb3e7976c7a398a0af4c3"
+WGETLIST="$(./sources.sh mpc)"
+MD5SUMLIST="$(./sources.sh -m mpc)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

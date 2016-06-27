@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://download.savannah.gnu.org/releases/man-db/man-db-2.6.7.1.tar.xz"
-MD5SUMLIST="ce7b697f8e8016a085d9f5975ae6c4fb"
+WGETLIST="$(./sources.sh man)"
+MD5SUMLIST="$(./sources.sh -m man)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #
