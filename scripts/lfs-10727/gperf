@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/gperf/gperf-3.0.4.tar.gz"
-MD5SUMLIST="c1f1db32fb6598d6a93e6e88796a8632"
+WGETLIST="$(./sources.sh gperf)"
+MD5SUMLIST="$(./sources.sh -m gperf)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

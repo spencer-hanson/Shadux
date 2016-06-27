@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/gawk/gawk-4.1.1.tar.xz"
-MD5SUMLIST="a2a26543ce410eb74bc4a508349ed09a"
+WGETLIST="$(./sources.sh gawk)"
+MD5SUMLIST="$(./sources.sh -m gawk)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

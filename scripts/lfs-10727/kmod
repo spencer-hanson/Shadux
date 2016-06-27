@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-18.tar.xz"
-MD5SUMLIST="82835c7f01983634e06ca72b4ee30cc6"
+WGETLIST="$(./sources.sh kmod)"
+MD5SUMLIST="$(./sources.sh -m kmod)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

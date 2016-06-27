@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/grub/grub-2.00.tar.xz"
-MD5SUMLIST="a1043102fbc7bcedbf53e7ee3d17ab91"
+WGETLIST="$(./sources.sh grub)"
+MD5SUMLIST="$(./sources.sh -m grub)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

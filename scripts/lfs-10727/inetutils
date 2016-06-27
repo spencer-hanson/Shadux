@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/inetutils/inetutils-1.9.2.tar.gz"
-MD5SUMLIST="aa1a9a132259db83e66c1f3265065ba2"
+WGETLIST="$(./sources.sh inetutils)"
+MD5SUMLIST="$(./sources.sh -m inetutils)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

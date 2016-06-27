@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://launchpad.net/intltool/trunk/0.50.2/+download/intltool-0.50.2.tar.gz"
-MD5SUMLIST="23fbd879118253cb99aeac067da5f591"
+WGETLIST="$(./sources.sh intltool)"
+MD5SUMLIST="$(./sources.sh -m intltool)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

@@ -7,10 +7,10 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="https://www.kernel.org/pub/linux/utils/kbd/kbd-2.0.2.tar.gz
-          http://www.linuxfromscratch.org/patches/downloads/kbd/kbd-2.0.2-backspace-1.patch"
-MD5SUMLIST="ba56fb5bfd44acea83fc5dac4a9b7f15
-            f75cca16a38da6caa7d52151f7136895"
+WGETLIST="$(./sources.sh kbd)
+          $(./sources.sh kbd_patch1)"
+MD5SUMLIST="$(./sources.sh -m kbd)
+          $(./sources.sh -m kbd_patch1)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/gzip/gzip-1.6.tar.xz"
-MD5SUMLIST="da981f86677d58a106496e68de6f8995"
+WGETLIST="$(./sources.sh gzip)"
+MD5SUMLIST="$(./sources.sh -m gzip)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

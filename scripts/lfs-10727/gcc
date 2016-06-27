@@ -7,14 +7,14 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/gcc/gcc-4.9.1/gcc-4.9.1.tar.bz2
-          http://ftp.gnu.org/gnu//gmp/gmp-6.0.0a.tar.xz
-          http://www.mpfr.org/mpfr-3.1.2/mpfr-3.1.2.tar.xz
-          http://www.multiprecision.org/mpc/download/mpc-1.0.2.tar.gz"
-MD5SUMLIST="fddf71348546af523353bd43d34919c1
-            1e6da4e434553d2811437aa42c7f7c76
-            e3d203d188b8fe60bb6578dd3152e05c
-            68fadff3358fb3e7976c7a398a0af4c3"
+WGETLIST="$(./sources.sh gcc)
+          $(./sources.sh gmp)
+          $(./sources.sh mpfr)
+          $(./sources.sh mpc)"
+MD5SUMLIST="$(./sources.sh -m gcc)
+          $(./sources.sh -m gmp)
+          $(./sources.sh -m mpfr)
+          $(./sources.sh -m mpc)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

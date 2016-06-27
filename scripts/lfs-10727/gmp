@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu//gmp/gmp-6.0.0a.tar.xz"
-MD5SUMLIST="1e6da4e434553d2811437aa42c7f7c76"
+WGETLIST="$(./sources.sh gmp)"
+MD5SUMLIST="$(./sources.sh -m gmp)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

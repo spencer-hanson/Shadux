@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://prdownloads.sourceforge.net/flex/flex-2.5.39.tar.bz2"
-MD5SUMLIST="77d44c6bb8c0705e0017ab9a84a1502b"
+WGETLIST="$(./sources.sh flex)"
+MD5SUMLIST="$(./sources.sh -m flex)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

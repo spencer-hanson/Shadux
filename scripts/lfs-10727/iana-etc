@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://anduin.linuxfromscratch.org/sources/LFS/lfs-packages/conglomeration/iana-etc/iana-etc-2.30.tar.bz2"
-MD5SUMLIST="3ba3afb1d1b261383d247f46cb135ee8"
+WGETLIST="$(./sources.sh iana)"
+MD5SUMLIST="$(./sources.sh -m iana)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #
