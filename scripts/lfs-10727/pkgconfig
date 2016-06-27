@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz"
-MD5SUMLIST="aa3c86e67551adc3ac865160e34a2a0d"
+WGETLIST="$(./sources.sh pkgconfig)"
+MD5SUMLIST="$(./sources.sh -m pkgconfig)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

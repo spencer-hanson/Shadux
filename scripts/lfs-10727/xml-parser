@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.42_01.tar.gz"
-MD5SUMLIST="a4650aebcc464bb91113c2c356da8210"
+WGETLIST="$(./sources.sh xml_parser)"
+MD5SUMLIST="$(./sources.sh -m xml_parser)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu/patch/patch-2.7.1.tar.xz"
-MD5SUMLIST="e9ae5393426d3ad783a300a338c09b72"
+WGETLIST="$(./sources.sh patch)"
+MD5SUMLIST="$(./sources.sh -m patch)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

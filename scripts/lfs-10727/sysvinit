@@ -7,10 +7,10 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://download.savannah.gnu.org/releases/sysvinit/sysvinit-2.88dsf.tar.bz2
-          http://www.linuxfromscratch.org/patches/lfs/development/sysvinit-2.88dsf-consolidated-1.patch"
-MD5SUMLIST="6eda8a97b86e0a6f59dabbf25202aa6f
-            0b7b5ea568a878fdcc4057b2bf36e5cb"
+WGETLIST="$(./sources.sh sysvinit)
+          $(./sources.sh sysvinit_patch1)"
+MD5SUMLIST="$(./sources.sh -m sysvinit)
+          $(./sources.sh -m sysvinit_patch1)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

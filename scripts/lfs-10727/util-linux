@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="https://www.kernel.org/pub/linux/utils/util-linux/v2.25/util-linux-2.25.tar.xz"
-MD5SUMLIST="4c78fdef4cb882caafad61e33cafbc14"
+WGETLIST="$(./sources.sh util_linux)"
+MD5SUMLIST="$(./sources.sh -m util_linux)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

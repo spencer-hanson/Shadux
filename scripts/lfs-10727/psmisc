@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://downloads.sourceforge.net/project/psmisc/psmisc/psmisc-22.21.tar.gz"
-MD5SUMLIST="935c0fd6eb208288262b385fa656f1bf"
+WGETLIST="$(./sources.sh psmisc)"
+MD5SUMLIST="$(./sources.sh -m psmisc)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.tar.gz"
-MD5SUMLIST="e053094e8103165f98ddafe828f6ae4b"
+WGETLIST="$(./sources.sh sysklogd)"
+MD5SUMLIST="$(./sources.sh -m sysklogd)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

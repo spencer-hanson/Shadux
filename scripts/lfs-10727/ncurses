@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://ftp.gnu.org/gnu//ncurses/ncurses-5.9.tar.gz"
-MD5SUMLIST="8cb9c412e5f2d96bc6f459aa8c6282a1"
+WGETLIST="$(./sources.sh ncurses)"
+MD5SUMLIST="$(./sources.sh -m ncurses)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

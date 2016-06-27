@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://tukaani.org/xz/xz-5.0.5.tar.xz"
-MD5SUMLIST="aa17280f4521dbeebed0fbd11cd7fa30"
+WGETLIST="$(./sources.sh xz)"
+MD5SUMLIST="$(./sources.sh -m xz)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

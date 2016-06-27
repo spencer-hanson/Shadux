@@ -8,7 +8,7 @@
 # Copyright (C) 1999-2014, Gerard Beekmans
 
 WGETLIST="$(./sources.sh libpipeline)"
-MD5SUMLIST="$(./sources.sh -m libpipline)"
+MD5SUMLIST="$(./sources.sh -m libpipeline)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #

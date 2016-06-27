@@ -7,8 +7,8 @@
 # Linux From Scratch is released under the MIT license.
 # Copyright (C) 1999-2014, Gerard Beekmans
 
-WGETLIST="http://www.cpan.org/src/5.0/perl-5.20.0.tar.bz2"
-MD5SUMLIST="20cbecd4e9e880ee7a50a136c8b1484e"
+WGETLIST="$(./sources.sh perl)"
+MD5SUMLIST="$(./sources.sh -m perl)"
 
 ###############################################
 installation() { # INSTALLING SYSTEM SOFTWARE #
