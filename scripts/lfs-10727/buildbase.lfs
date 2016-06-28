@@ -363,6 +363,7 @@ BUILD eudev
 BUILD util-linux
 BUILD man-db
 BUILD vim
+BUILD wget
 
 #################################
 }; buildbase8() { # SHELL SCOPE #
@@ -394,7 +395,7 @@ BUILD kernel
 # The End #
 # ------- #
 
-echo SVN-20140821 > /etc/lfs-release
+#echo SVN-20140821 > /etc/lfs-release
 
 cat > /etc/lsb-release << "EOF"
 DISTRIB_ID="Shadux Linux	"

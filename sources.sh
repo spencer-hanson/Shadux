@@ -147,7 +147,6 @@ md5sums=(
 ["udev"]="c2d6b127f89261513b23b6d458484099"
 ["openssl"]=""
 ["squashfs"]=""
-
 ["libpipeline"]="242428c01dca255cdcb2195073a9c6ed"
 ["util_linux"]="4c78fdef4cb882caafad61e33cafbc14"
 ["glibc"]="e26b8cc666b162f999404b03970f14e4"
@@ -162,7 +161,7 @@ md5sums=(
 ["groff"]="9f4cd592a5efc7e36481d8d8d8af6d16"
 ["bc_patch1"]="877e81fba316fe487ec23501059d54b8"
 ["man_pages"]="9a2a288f1e481045c991e0cb476127d8"
-["wget"]=""
+["wget"]="7a279d5ac5594919124d5526e7143e28"
 ["psmisc"]="935c0fd6eb208288262b385fa656f1bf"
 ["diffutils"]="99180208ec2a82ce71f55b0d7389f1b3"
 ["gmp"]="1e6da4e434553d2811437aa42c7f7c76"
