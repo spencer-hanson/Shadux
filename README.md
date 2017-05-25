@@ -1,43 +1,36 @@
-Nano seems to be in the packages and in the compile script
-Don't forget to fix all of the requirements
-
+# Shadux
 
 INSTALL ORDER
 --------------
-
-openssl
-certauth
-openssh
-
-
-gpm
-links
-
-linuxpam
-shadow
-
-man
-------
+* openssl
+* certauth
+* openssh
+* gpm
+* links
+* linuxpam
+* shadow
+* man
 
 
 TODO 
-Hardened Linux from scratch
-Rebuild all the packages manually
-Recreate all build packages scripts
-Parted isn't built
-Break up usersys.sh into other scripts
-dhcpcd.sh download tarfile link
-
-Bootscripts builds certian packages to run on boot
-
-scripts/install.conf has building info
-iptables doesn't work
-no internet interfaces
-other users bash prompt look bad
-set hostname somewhere to Shadux
-charset data/locale thingy
-add apt-get/dpkg support
-add lspci and lsusb
+---------
+* Hardened Linux from scratch
+* Rebuild all the packages manually
+* Recreate all build packages scripts
+* Parted isn't built
+* Break up usersys.sh into other scripts
+* dhcpcd.sh download tarfile link
+* Bootscripts builds certian packages to run on boot
+* scripts/install.conf has building info
+* iptables doesn't work
+* no internet interfaces
+* other users bash prompt look bad
+* set hostname somewhere to Shadux
+* charset data/locale thingy
+* add apt-get/dpkg support
+* add lspci and lsusb
+* Nano seems to be in the packages and in the compile script
+* Don't forget to fix all of the requirements
 
 KERNEL NOTES
 ==================================
