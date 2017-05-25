@@ -41,7 +41,7 @@ add lspci and lsusb
 
 KERNEL NOTES
 ==================================
-
+~~~~
 
 Device Drivers --->
 
@@ -184,3 +184,4 @@ File systems --->
       Include support for LZO compressed file systems
 
       Include support for XZ compressed file systems
+ ~~~~
